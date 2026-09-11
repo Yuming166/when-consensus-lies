@@ -1,0 +1,2 @@
+# Raw data snapshots: keep byte-for-byte (Excel/CSV exports, parquet, jsonl)
+data/** binary
