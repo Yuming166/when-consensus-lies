@@ -182,32 +182,41 @@ policy can create fail-closed coverage bias.
 - No result establishes universal factuality, citation sufficiency, live-retrieval
   robustness, S&P 500 alpha, or prospective trading performance.
 
-## 5. Why this matters for a faculty collaboration
+## 5. Why this is a strong fit with Prof. Huan Zhang
 
-The most promising connection is **not** "LLMs for stock prediction." It is the
-transfer boundary revealed by the experiments:
+The most promising connection is **not** "LLMs for stock prediction." It is that
+we treat "should this multi-agent consensus be trusted" as an **empirically
+measurable, outcome-firewalled quantity**, and we are equally interested in
+*when that measurement stops working* -- a verification-minded question posed at
+the decision level rather than the weight level.
 
-> A reliability signal can pass aggregate cross-family gates while its item-level
-> ordering remains only weakly aligned across models.
+Concrete intersections with your work on neural-network verification and
+certified robustness (alpha-beta-CROWN), adversarial robustness, and LLM safety:
 
-This creates a concrete research question at the intersection of:
+- **Decision-level robustness to evidence manipulation.** The `remove` /
+  `reverse` / `substitute` interventions are a controlled stress test of whether
+  an agent's decision responds to evidence changes; the synthetic harness varies
+  corruption mechanisms and holds out entire mechanisms at evaluation time. This
+  is a robustness/verification mindset applied to multi-agent decisions, not
+  only to a single model's weights.
+- **Rigorous, falsifiable safety evaluation.** Every formal experiment is
+  preregistered with frozen endpoints, outcome firewalls, and adequacy gates;
+  failures are preserved rather than pooled away. The protocol culture matches
+  the standard expected in safety and robustness evaluation.
+- **Abstention as a safety behavior.** A core finding is that a sensible
+  abstention can be silently rejected by an output contract (73.6% of V1 S&P 500
+  failures), changing the population a router sees. "When should an LLM agent
+  system refuse to decide, and how do we preserve that refusal" is a concrete
+  safety problem for multi-agent systems.
+- **Transfer of a reliability signal under shift.** The signal replicates
+  aggregate cross-family gates (Qwen -> Ling) but has only 0.294 item-level
+  Spearman correlation -- a crisp domain-adaptation / generalization problem
+  with an existing experimental infrastructure.
 
-- **domain adaptation and generalization:** when can a source-domain risk ranking
-  be transported to a new model, task, or time regime?
-- **trustworthy ML and selective prediction:** how should calibration and
-  abstention account for uncertainty about the reliability signal itself?
-- **post-training and LLM systems:** how can output contracts preserve useful
-  abstentions without turning them into invalid or invisible decisions?
-- **quantitative finance as a stress test:** can the same ideas survive temporal,
-  non-IID, as-of constraints without being confused with financial alpha?
-
-The current project provides the empirical infrastructure and the failure cases;
-the weak item-level transfer correlation is a concrete starting point for work on
-transferability and domain generalization, and the output-contract failure
-analysis connects naturally to LLM evaluation and post-training. A conversation
-around **when a reliability signal transfers** is therefore more productive than
-one about extending the financial application for its own sake.
-
+I would frame the conversation around **verifying or rigorously bounding when a
+reliability signal transfers**, and around **safe abstention as a first-class
+design principle** for LLM agent systems, rather than around extending the
+financial application for its own sake.
 ## 6. Proposed next project
 
 ### Shift-Aware Provenance Risk Transfer
@@ -246,14 +255,17 @@ rather than as a performance claim.
 
 ## 7. Suggested contact positioning
 
-Lead with **trustworthy ML + transfer under distribution shift**, then use the
-S&P 500 replay as evidence that the problem is difficult and real. Do not lead
-with "I built a profitable trading agent," "causal faithfulness," or "a new
-universal truth detector."
+Lead with **reliability verification + safety-aware abstention for LLM agent
+systems**, then use the cross-family transfer boundary and the S&P 500 replay as
+evidence that the problem is difficult and real. Do not lead with "I built a
+profitable trading agent," "causal faithfulness," or "a new universal truth
+detector."
 
 A concise ask is:
 
 > I would like to explore whether the weak item-level transfer of an otherwise
 > successful reliability signal can be formalized as a domain-adaptation and
 > selective-prediction problem, with target-label-free calibration and explicit
-> abstention under support mismatch.
+> abstention under support mismatch. I would also welcome your perspective on
+> making the intervention-inertia signal a verifiable property of LLM-agent
+> decisions, in the spirit of certified-robustness work.
