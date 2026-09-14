@@ -1,0 +1,104 @@
+{
+  "manifest_version": "consensus-stress-phase0-2026-09-12",
+  "note": "Frozen historical results extracted verbatim from docs/results/*. These numbers are historical baselines; the consensus-stress program must NOT modify their definitions or operating points.",
+  "synthetic_v3": {
+    "verdict": "PASS",
+    "conditional_provenance_AUROC": [0.977, [0.971, 0.982]],
+    "conditional_provenance_AUPRC": [0.983, [0.978, 0.988]],
+    "conditional_provenance_AURC": [0.233, [0.227, 0.239]],
+    "conditional_provenance_Risk80": [0.466, [0.466, 0.466]],
+    "quality_only_AUROC": [0.784, [0.773, 0.794]],
+    "confidence_AUROC": [0.618, [0.594, 0.639]],
+    "majority_AUROC": [0.563, null],
+    "evaluation": "leave-one-corruption-mechanism-out; both clean controls in every test fold; threshold = 75th percentile training-only risk",
+    "posthoc_note": "matched-coverage analysis is explicitly post-hoc (see synthetic_v3_posthoc_matched_coverage.md)"
+  },
+  "synthetic_v4": {
+    "verdict": "FAIL (primary endpoint)",
+    "monotonic_provenance_v4": {
+      "AUROC": [0.769, [0.718, 0.822]],
+      "AURC": [0.339, [0.289, 0.388]],
+      "Risk80": [0.447, [0.421, 0.475]],
+      "ECE": [0.074, [0.042, 0.124]]
+    },
+    "fixed_v3_comparison": {
+      "V3_Risk80": [0.440, null],
+      "V3_AURC": [0.235, null],
+      "V4_minus_V3_AURC": [0.081, [0.075, 0.086]],
+      "V4_minus_V3_Risk80": [0.006, [0.003, 0.009]]
+    },
+    "failure_mode": "evidence-inertia fully held out -> learned intervention coefficient 0.013, coverage 0.998; training threshold fails to preserve 80-82% coverage"
+  },
+  "boolq_v12_1": {
+    "verdict": "PASS",
+    "dataset": "BoolQ validation, 358 questions, 7160 calls, Qwen3.5-4B",
+    "records": [7160, 7160],
+    "valid_rate": 1.0,
+    "first_pass_valid_rate": 1.0,
+    "primary": "AUROC(R_PI, consensus_wrong | original_agreement >= 0.8)",
+    "high_consensus_n": 300,
+    "high_consensus_fraction": 0.838,
+    "wrong_high_consensus": 66,
+    "wrong_high_consensus_rate": 0.220,
+    "RPI_AUROC": [0.705, [0.620, 0.781]],
+    "D_inert_AUROC": [0.791, [0.724, 0.850]],
+    "flip_inertia_AUROC": [0.807, [0.744, 0.863]],
+    "frac_shared_AUROC": [0.498, [0.419, 0.571]],
+    "RPI_harmful_fc_all_AUROC": [0.712, [0.631, 0.796]],
+    "risk_at_80": {"baseline_error": 0.220, "routed_retained_error": 0.133, "error_reduction": [0.087, [0.04583333333333334, 0.0975]]},
+    "label_subgroups": {"yes_AUROC": 0.834, "no_AUROC": 0.213}
+  },
+  "vitaminc_v3_15_2": {
+    "verdict": "PASS_CROSS_FAMILY_AGGREGATE_ONLY_DETECTION_V3_15",
+    "dataset": "Ling-3.0-tiny on frozen Qwen V12.1 BoolQ evidence, 7160 calls",
+    "high_consensus_n": 310,
+    "wrong_high_consensus": 60,
+    "baseline_error": 0.194,
+    "RPI_AUROC": [0.640, [0.558, 0.717]],
+    "risk_at_80": {"routed_retained_error": 0.145, "error_reduction": [0.048, [0.022, 0.077]]},
+    "label_subgroups": {"yes_AUROC": 0.957, "no_AUROC": 0.120, "label_macro_AUROC": [0.538, [0.500, 0.582]], "worst_label_AUROC": 0.120},
+    "worst_label_gate": "FAIL",
+    "cross_model_spearman": 0.292,
+    "flip_rates": {"qwen_remove": 0.470, "qwen_reverse": 0.327, "qwen_substitute": 0.301, "ling_remove": 0.617, "ling_reverse": 0.525, "ling_substitute": 0.285},
+    "transport_amendments": ["V3.15 smoke abort", "V3.15.1 formal transport abort", "V3.15.2 cleared empty-packet citations"]
+  },
+  "vitaminc_v3_16_1": {
+    "verdict": "PASS (both models)",
+    "dataset": "VitaminC 289 fresh natural pairs / 578 balanced items, 11560 calls per model",
+    "gates": {"final_valid": ">=0.98", "first_pass_valid": ">=0.95", "min_high_consensus": 400, "min_errors_per_label": 20},
+    "qwen": {"final_valid": 0.9978, "first_pass_valid": 0.9952, "high_consensus_n": 557, "errors": 87, "overall_AUROC": [0.839, [0.802, 0.873]], "macro_AUROC": [0.840, [0.802, 0.875]], "worst_AUROC": [0.807, [0.750, 0.857]], "Risk80_reduction": [0.057, [0.038, 0.075]], "errors_by_label": {"SUPPORTS": 30, "REFUTES": 57}},
+    "ling": {"final_valid": 0.9993, "first_pass_valid": 0.9804, "high_consensus_n": 545, "errors": 158, "overall_AUROC": [0.727, [0.689, 0.764]], "macro_AUROC": [0.738, [0.689, 0.784]], "worst_AUROC": [0.607, [0.515, 0.692]], "Risk80_reduction": [0.042, [0.026, 0.055]], "errors_by_label": {"SUPPORTS": 30, "REFUTES": 128}},
+    "cross_model": {"shared_high_consensus_items": 526, "risk_spearman": 0.294},
+    "score": "R_sym = 0.3*reverse_inertia + 0.7*intervention_disagreement (selected on Qwen dev, frozen for both)",
+    "baseline_note": "frozen composite outperforms vote disagreement and confidence baselines; intervention disagreement alone near chance for both models"
+  },
+  "sp500_v1": {
+    "verdict": "FAIL (primary AURC endpoint)",
+    "protocol": "llm-sp500-v1-2026-09-03",
+    "window": "2021-05-10 to 2026-04-27 (500 decision dates; 350 train / 150 test)",
+    "valid_yield": [1705, 2500, 0.682],
+    "primary": "AURC(amir_router_v5) - AURC(majority) < 0",
+    "observed_diff": -0.0874,
+    "ci": [-0.1994, 0.0736],
+    "risk_ECE_amir": 0.055,
+    "risk_ECE_majority": 0.174
+  },
+  "sp500_v2": {
+    "verdict": "FAIL (primary AURC endpoint)",
+    "protocol": "llm-sp500-v2-2026-09-03",
+    "valid_yield": [1890, 2500, 0.756],
+    "primary_diff": 0.0317,
+    "ci": [-0.0886, 0.1805],
+    "paired_sign_test_prompt_repair": "p ~ 7e-9 (V1->V2 yield lift 68.2% -> 75.6%)",
+    "risk_ECE_amir": 0.184,
+    "risk_ECE_majority": 0.135
+  },
+  "non_claims": [
+    "No universal factuality claim",
+    "No citation-sufficiency claim",
+    "No live-retrieval robustness claim",
+    "No S&P 500 alpha / predictability / routing-superiority claim",
+    "No label-invariant detection claim (BoolQ no-label AUROC near/below chance in both families)",
+    "No universal item-level cross-model transfer claim (Spearman ~0.29)"
+  ]
+}

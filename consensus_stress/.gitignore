@@ -1,0 +1,9 @@
+# Generated/runtime artifacts — never commit
+**/__pycache__/
+**/cache/
+**/cache_*/
+**/run_logs/
+*.log
+# Raw response records — kept only inside the frozen CST-Bench package
+**/*records*.jsonl
+!**/benchmark/frozen/**/*records*.jsonl

@@ -1,0 +1,12 @@
+{
+  "intervention_rows_with_all_5_replicates": 596,
+  "model": "qwen",
+  "record_valid": 29987,
+  "records": 30000,
+  "records_path": "consensus_stress/round5/qwen_baseline_records.jsonl",
+  "records_sha256": "61e197ec8705481e8e5feb3c30274426cc830639a8631277e502293fd5cd6588",
+  "sample_rows_with_all_25_valid": 592,
+  "score_rows": 600,
+  "scores_path": "consensus_stress/round5/qwen_baseline_scores_label_blind.jsonl",
+  "scores_sha256": "673291e7f881c905435218702fb8ca959b5adb25a1b772a0de10c3d12d125f2a"
+}

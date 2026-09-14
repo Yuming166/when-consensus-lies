@@ -1,0 +1,88 @@
+{
+  "audit": {
+    "n_audited": 60,
+    "n_passed": 1,
+    "pass_fraction": 0.0167
+  },
+  "conditions": [
+    "original",
+    "paraphrase",
+    "reverse",
+    "synthetic_reverse",
+    "remove"
+  ],
+  "construction": "near-duplicate SUPPORTS/REFUTES claims; pair claim = C_S; S-item (C_S,E_S) SUPPORTS; R-item (C_S,E_R) REFUTES; audited J1/J2",
+  "dataset": "/home/gaoym/when-consensus-lies-publish-20260911/data/benchmarks/fever-validation.jsonl",
+  "dataset_sha256": "5da0ccc0ccf77f974611de13f8aac6f78c6bba6293912835099eb6029baa85d9",
+  "evidence": [
+    {
+      "evidence": "It features weekly TV broadcast programming listings , running from Saturday to Friday , and goes on sale every Tuesday .",
+      "label_role": "SUPPORTS",
+      "page": "TV_Choice",
+      "unique_id": "fs_fever:4c217321d9c3876a"
+    },
+    {
+      "evidence": "TV Choice is a British weekly TV listings magazine published by H. Bauer Publishing , the UK subsidiary of family-run German company Bauer Media Group .",
+      "label_role": "REFUTES",
+      "page": "TV_Choice",
+      "unique_id": "fr_fever:4c217321d9c3876a"
+    },
+    {
+      "evidence": "A Muslim is someone who follows or practices Islam , a monotheistic Abrahamic religion .",
+      "label_role": "distractor",
+      "page": "Muslim",
+      "unique_id": "fd_fever:4c217321d9c3876a"
+    }
+  ],
+  "n_agents": 5,
+  "pairs": [
+    {
+      "case_id": "fever",
+      "character_ratio": 0.9114,
+      "claim": "TV Choice runs from Saturday to Friday.",
+      "distractor_id": "fd_fever:4c217321d9c3876a",
+      "distractor_page": "Muslim",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "fever:4c217321d9c3876a:support"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "fever:4c217321d9c3876a:refute"
+        }
+      ],
+      "page": "TV_Choice",
+      "pair_id": "fever:4c217321d9c3876a",
+      "refutes_evidence": "TV Choice is a British weekly TV listings magazine published by H. Bauer Publishing , the UK subsidiary of family-run German company Bauer Media Group .",
+      "refutes_id": "fr_fever:4c217321d9c3876a",
+      "stage": 1,
+      "supports_evidence": "It features weekly TV broadcast programming listings , running from Saturday to Friday , and goes on sale every Tuesday .",
+      "supports_id": "fs_fever:4c217321d9c3876a",
+      "token_jaccard": 0.6667
+    }
+  ],
+  "partition_table": [
+    [
+      "E01",
+      "E02"
+    ],
+    [
+      "E01",
+      "E03"
+    ],
+    [
+      "E02",
+      "E03"
+    ],
+    [
+      "E01",
+      "E02"
+    ],
+    [
+      "E01",
+      "E03"
+    ]
+  ],
+  "protocol": "cs-paper-vitaminc-2026-09-13-fever"
+}

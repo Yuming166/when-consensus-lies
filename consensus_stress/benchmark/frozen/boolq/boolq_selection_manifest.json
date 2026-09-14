@@ -1,0 +1,2249 @@
+{
+  "agents": [
+    "literal_evidence",
+    "skeptical_auditor",
+    "consistency_checker",
+    "counterfactual_reasoner",
+    "minimal_judge"
+  ],
+  "conditions": [
+    "original",
+    "paraphrase",
+    "reverse",
+    "remove"
+  ],
+  "dataset": "/home/gaoym/when-consensus-lies-publish-20260911/data/benchmarks/boolq/train.parquet",
+  "dataset_sha256": "4f028e992c0bd4df30b9f056f4946b64f5c23028034ff0ed5ea467d8538cc623",
+  "items": [
+    {
+      "cqid": "cs-no-0055aaf065",
+      "evidence_units": [
+        {
+          "qid": "boolq-19a0059d8916c975-e01",
+          "source_root": "boolq-19a0059d8916c975",
+          "text": "The Major League Baseball postseason is an elimination tournament held after the conclusion of the MLB regular season."
+        },
+        {
+          "qid": "boolq-19a0059d8916c975-e02",
+          "source_root": "boolq-19a0059d8916c975",
+          "text": "As of 2012, the playoffs for each league--American and National--consist of a one-game wild-card playoff between two wild card teams, two best-of-five Division Series (LDS) featuring the wild-card winner and the winner of each division, and finally the best-of-seven League Championship Series (LCS)."
+        },
+        {
+          "qid": "boolq-19a0059d8916c975-e03",
+          "source_root": "boolq-19a0059d8916c975",
+          "text": "The winners of the American League Championship Series (ALCS) and the National League Championship Series (NLCS) play each other in the best-of-seven World Series."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: are all mlb playoff games best of 7"
+    },
+    {
+      "cqid": "cs-no-064d3a4f52",
+      "evidence_units": [
+        {
+          "qid": "boolq-ef0b09d8fc355f32-e01",
+          "source_root": "boolq-ef0b09d8fc355f32",
+          "text": "Earth science or geoscience is a widely embraced term for the fields of natural science related to the planet Earth."
+        },
+        {
+          "qid": "boolq-ef0b09d8fc355f32-e02",
+          "source_root": "boolq-ef0b09d8fc355f32",
+          "text": "It is the branch of science dealing with the physical constitution of the earth and its atmosphere."
+        },
+        {
+          "qid": "boolq-ef0b09d8fc355f32-e03",
+          "source_root": "boolq-ef0b09d8fc355f32",
+          "text": "Earth science is the study of our planet's physical characteristics, from earthquakes to raindrops, and floods to fossils."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is environmental science and earth science the same thing"
+    },
+    {
+      "cqid": "cs-no-07284f1939",
+      "evidence_units": [
+        {
+          "qid": "boolq-697551d1b3695458-e01",
+          "source_root": "boolq-697551d1b3695458",
+          "text": "Sunk costs are sometimes contrasted with prospective costs, which are future costs that may be incurred or changed if an action is taken."
+        },
+        {
+          "qid": "boolq-697551d1b3695458-e02",
+          "source_root": "boolq-697551d1b3695458",
+          "text": "In that regard, both retrospective and prospective costs could be either fixed costs (continuous for as long as the business is in operation and unaffected by output volume) or variable costs (dependent on volume)."
+        },
+        {
+          "qid": "boolq-697551d1b3695458-e03",
+          "source_root": "boolq-697551d1b3695458",
+          "text": "However, many economists consider it a mistake to classify sunk costs as ``fixed'' or ``variable.'' For example, if a firm sinks $400 million on an enterprise software installation, that cost is ``sunk'' because it was a one-time expense and cannot be recovered once spent."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is a fixed cost always a sunk cost"
+    },
+    {
+      "cqid": "cs-no-1cd6bc60e7",
+      "evidence_units": [
+        {
+          "qid": "boolq-6a060d148139a1ae-e01",
+          "source_root": "boolq-6a060d148139a1ae",
+          "text": "West Edmonton Mall (WEM), located in Summerlea, Edmonton, Alberta, Canada, is the largest shopping mall in North America and the tenth largest in the world (along with The Dubai Mall) by gross leasable area."
+        },
+        {
+          "qid": "boolq-6a060d148139a1ae-e02",
+          "source_root": "boolq-6a060d148139a1ae",
+          "text": "It was the world's largest mall until 2004."
+        },
+        {
+          "qid": "boolq-6a060d148139a1ae-e03",
+          "source_root": "boolq-6a060d148139a1ae",
+          "text": "The mall was founded by the Ghermezian brothers, who emigrated from Iran in 1959."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is west edmonton mall the biggest mall in the world"
+    },
+    {
+      "cqid": "cs-no-20800034f1",
+      "evidence_units": [
+        {
+          "qid": "boolq-64cd9495a04ab3f4-e01",
+          "source_root": "boolq-64cd9495a04ab3f4",
+          "text": "The following military bases in Pakistan have been accessible to the United States, mainly for logistics, relief efforts or as launching bases for drone operations."
+        },
+        {
+          "qid": "boolq-64cd9495a04ab3f4-e02",
+          "source_root": "boolq-64cd9495a04ab3f4",
+          "text": "Pakistan comes under the United States Central Command (USCENTCOM) theatre of operations."
+        },
+        {
+          "qid": "boolq-64cd9495a04ab3f4-e03",
+          "source_root": "boolq-64cd9495a04ab3f4",
+          "text": "The Afghanistan-Pakistan Center of Excellence is a division of USCENTCOM, focusing on analysis of operations in Pakistan and Afghanistan (formerly known as the AfPak theatre)."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does the us have military bases in pakistan"
+    },
+    {
+      "cqid": "cs-no-252519312c",
+      "evidence_units": [
+        {
+          "qid": "boolq-86c72e3ba9f4ae98-e01",
+          "source_root": "boolq-86c72e3ba9f4ae98",
+          "text": "Although this is Aloma Wright's last regular appearance as Laverne Roberts, she returned in the Season 7 episode ``My Hard Labor'' as Nurse Shirley, whose similarities to Laverne go unnoticed by all except J.D."
+        },
+        {
+          "qid": "boolq-86c72e3ba9f4ae98-e02",
+          "source_root": "boolq-86c72e3ba9f4ae98",
+          "text": "Early reports stated that Aloma Wright would return as Laverne's alcoholic twin sister."
+        },
+        {
+          "qid": "boolq-86c72e3ba9f4ae98-e03",
+          "source_root": "boolq-86c72e3ba9f4ae98",
+          "text": "Wright would reprise her role as Laverne in a flashback in the season 8 episode ``My Comedy Show'' and in the season eight finale, ``My Finale''."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: did laverne from scrubs die in real life"
+    },
+    {
+      "cqid": "cs-no-2f97d6a0c0",
+      "evidence_units": [
+        {
+          "qid": "boolq-a393bde269d72216-e01",
+          "source_root": "boolq-a393bde269d72216",
+          "text": "In addition, holders of emergency or temporary passports with validity of more than 6 months issued by visa-exempt countries are eligible for visa on arrival for a fee."
+        },
+        {
+          "qid": "boolq-a393bde269d72216-e02",
+          "source_root": "boolq-a393bde269d72216",
+          "text": "The duration of stay is 30 days regardless of nationality and cannot be extended."
+        },
+        {
+          "qid": "boolq-a393bde269d72216-e03",
+          "source_root": "boolq-a393bde269d72216",
+          "text": "This measure does not apply to holders of emergency or temporary passports issued by Japan or the United States as they are visa exempt."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do i need a visa to go to taiwan from us"
+    },
+    {
+      "cqid": "cs-no-2fb773a4b8",
+      "evidence_units": [
+        {
+          "qid": "boolq-72ea98e1a124c300-e01",
+          "source_root": "boolq-72ea98e1a124c300",
+          "text": "Street Addressing will have the same street address of the post office, plus a ``unit number'' that matches the P.O."
+        },
+        {
+          "qid": "boolq-72ea98e1a124c300-e02",
+          "source_root": "boolq-72ea98e1a124c300",
+          "text": "As an example, in El Centro, California, the post office is located at 1598 Main Street."
+        },
+        {
+          "qid": "boolq-72ea98e1a124c300-e03",
+          "source_root": "boolq-72ea98e1a124c300",
+          "text": "Box 9975 (fictitious), the Street Addressing would be: 1598 Main Street Unit 9975, El Centro, CA."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is po box the same as zip code"
+    },
+    {
+      "cqid": "cs-no-4942fd1890",
+      "evidence_units": [
+        {
+          "qid": "boolq-89f36a3242bdf1db-e01",
+          "source_root": "boolq-89f36a3242bdf1db",
+          "text": "Voting rights of United States citizens in Puerto Rico, like the voting rights of residents of other United States territories, differ from those of United States citizens in each of the fifty states and the District of Columbia."
+        },
+        {
+          "qid": "boolq-89f36a3242bdf1db-e02",
+          "source_root": "boolq-89f36a3242bdf1db",
+          "text": "territories do not have voting representation in the United States Congress, and are not entitled to electoral votes for President."
+        },
+        {
+          "qid": "boolq-89f36a3242bdf1db-e03",
+          "source_root": "boolq-89f36a3242bdf1db",
+          "text": "The United States Constitution grants congressional voting representation to U.S."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does puerto rico vote in the us presidential election"
+    },
+    {
+      "cqid": "cs-no-50dc0ea8b7",
+      "evidence_units": [
+        {
+          "qid": "boolq-ee774f60852d02a3-e01",
+          "source_root": "boolq-ee774f60852d02a3",
+          "text": "The return address is not required on postal mail."
+        },
+        {
+          "qid": "boolq-ee774f60852d02a3-e02",
+          "source_root": "boolq-ee774f60852d02a3",
+          "text": "However, lack of a return address prevents the postal service from being able to return the item if it proves undeliverable; such as from damage, postage due, or invalid destination."
+        },
+        {
+          "qid": "boolq-ee774f60852d02a3-e03",
+          "source_root": "boolq-ee774f60852d02a3",
+          "text": "Such mail may otherwise become dead letter mail."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do you have to leave a return address"
+    },
+    {
+      "cqid": "cs-no-593885de92",
+      "evidence_units": [
+        {
+          "qid": "boolq-86019df0ca3d0875-e01",
+          "source_root": "boolq-86019df0ca3d0875",
+          "text": "In the United States, Haribo gummy bears are sold in five flavors: raspberry (red); orange (orange); strawberry (green); pineapple (colorless); and lemon (yellow)."
+        },
+        {
+          "qid": "boolq-86019df0ca3d0875-e02",
+          "source_root": "boolq-86019df0ca3d0875",
+          "text": "Trolli's bears are similarly most often sold in five flavors in the United States, and in the same colors; however, Trolli's red bear is strawberry-flavored, while the green is lime and the colorless is grape."
+        },
+        {
+          "qid": "boolq-86019df0ca3d0875-e03",
+          "source_root": "boolq-86019df0ca3d0875",
+          "text": "Many companies emulate either Haribo or Trolli flavor-color combinations."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: are haribo gummy bears all the same flavor"
+    },
+    {
+      "cqid": "cs-no-5997392e55",
+      "evidence_units": [
+        {
+          "qid": "boolq-3305a680a5cd4f10-e01",
+          "source_root": "boolq-3305a680a5cd4f10",
+          "text": "A 3-way lamp, also known as a tri-light, is a lamp that uses a 3-way light bulb to produce three levels of light in a low-medium-high configuration."
+        },
+        {
+          "qid": "boolq-3305a680a5cd4f10-e02",
+          "source_root": "boolq-3305a680a5cd4f10",
+          "text": "A 3-way lamp requires a 3-way bulb and socket, and a 3-way switch."
+        },
+        {
+          "qid": "boolq-3305a680a5cd4f10-e03",
+          "source_root": "boolq-3305a680a5cd4f10",
+          "text": "Unlike an incandescent lamp controlled by a dimmer, each of the filaments operates at full voltage, so the color of the light does not change between the three steps of light available."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you use a one way bulb in a three way socket"
+    },
+    {
+      "cqid": "cs-no-5bb7e1c4a8",
+      "evidence_units": [
+        {
+          "qid": "boolq-f544563be880b8a0-e01",
+          "source_root": "boolq-f544563be880b8a0",
+          "text": "Black Label is a Canadian brand of lager distributed by Carling and well-known throughout the former British Empire."
+        },
+        {
+          "qid": "boolq-f544563be880b8a0-e02",
+          "source_root": "boolq-f544563be880b8a0",
+          "text": "In several countries, it is also known as Carling Black Label, and in Sweden, it is known as Carling Premier."
+        },
+        {
+          "qid": "boolq-f544563be880b8a0-e03",
+          "source_root": "boolq-f544563be880b8a0",
+          "text": "In the United Kingdom it is now known as just Carling."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is carling black label a south african beer"
+    },
+    {
+      "cqid": "cs-no-62a1a254bb",
+      "evidence_units": [
+        {
+          "qid": "boolq-9b0f73e27f9d1e51-e01",
+          "source_root": "boolq-9b0f73e27f9d1e51",
+          "text": "Even though Bosnia and Herzegovina was still part of the Ottoman Empire, at least formally, the Austrian-Hungarian authorities had factual control over the country."
+        },
+        {
+          "qid": "boolq-9b0f73e27f9d1e51-e02",
+          "source_root": "boolq-9b0f73e27f9d1e51",
+          "text": "Austria-Hungary waited for a chance to incorporate Bosnia and Herzegovina formally as well."
+        },
+        {
+          "qid": "boolq-9b0f73e27f9d1e51-e03",
+          "source_root": "boolq-9b0f73e27f9d1e51",
+          "text": "Any action concerning Bosnia and Herzegovina depended on international opinion, which Austrian-Hungarian authorities were aware of."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: was bosnia part of the austro hungarian empire"
+    },
+    {
+      "cqid": "cs-no-660e8fedb9",
+      "evidence_units": [
+        {
+          "qid": "boolq-3c6a5d8295e1597c-e01",
+          "source_root": "boolq-3c6a5d8295e1597c",
+          "text": "On July 1, 2009, Bell Mobility acquired the 50% of Virgin Mobile Canada that it previously did not own for $142 million and entered into a long-term agreement to use the Virgin brand."
+        },
+        {
+          "qid": "boolq-3c6a5d8295e1597c-e02",
+          "source_root": "boolq-3c6a5d8295e1597c",
+          "text": "Following this, Bell greatly reduced its investments into Solo Mobile in order to invest in and improve its new Virgin brand."
+        },
+        {
+          "qid": "boolq-3c6a5d8295e1597c-e03",
+          "source_root": "boolq-3c6a5d8295e1597c",
+          "text": "On December 21, 2009, Virgin Mobile Canada's then-president Robert Blumenthal promised ``a very different Virgin Mobile'' with ``higher-value devices and services'' in 2010."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: are virgin mobile and bell the same company"
+    },
+    {
+      "cqid": "cs-no-675bca35d9",
+      "evidence_units": [
+        {
+          "qid": "boolq-3ebd160d95687834-e01",
+          "source_root": "boolq-3ebd160d95687834",
+          "text": "The axial skeleton is the part of the skeleton that consists of the bones of the head and trunk of a vertebrate."
+        },
+        {
+          "qid": "boolq-3ebd160d95687834-e02",
+          "source_root": "boolq-3ebd160d95687834",
+          "text": "In the human skeleton, it consists of 80 bones and is composed of six parts; the skull bones, the ossicles of the middle ear, the hyoid bone, the rib cage, sternum and the vertebral column."
+        },
+        {
+          "qid": "boolq-3ebd160d95687834-e03",
+          "source_root": "boolq-3ebd160d95687834",
+          "text": "The axial skeleton together with the appendicular skeleton form the complete skeleton."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is the tibia part of the axial skeleton"
+    },
+    {
+      "cqid": "cs-no-735ce1e472",
+      "evidence_units": [
+        {
+          "qid": "boolq-79649bc28a6b028f-e01",
+          "source_root": "boolq-79649bc28a6b028f",
+          "text": "That is, if a case originates in a federal court, there is no ability for a defendant to remove a case from federal court into state court."
+        },
+        {
+          "qid": "boolq-79649bc28a6b028f-e02",
+          "source_root": "boolq-79649bc28a6b028f",
+          "text": "If the federal court lacks jurisdiction, the case is dismissed."
+        },
+        {
+          "qid": "boolq-79649bc28a6b028f-e03",
+          "source_root": "boolq-79649bc28a6b028f",
+          "text": "Only cases that originate in a state court and are improperly removed to a federal court may be sent back to the state court where they started."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you remove a case from federal court to state court"
+    },
+    {
+      "cqid": "cs-no-74f337651d",
+      "evidence_units": [
+        {
+          "qid": "boolq-6905cfa516ca91a9-e01",
+          "source_root": "boolq-6905cfa516ca91a9",
+          "text": "The principal bridesmaid, if one is so designated, may be called the chief bridesmaid or maid of honor if she is unmarried, or the matron of honor if she is married."
+        },
+        {
+          "qid": "boolq-6905cfa516ca91a9-e02",
+          "source_root": "boolq-6905cfa516ca91a9",
+          "text": "A junior bridesmaid is a girl who is clearly too young to be married, but who is included as an honorary bridesmaid."
+        },
+        {
+          "qid": "boolq-6905cfa516ca91a9-e03",
+          "source_root": "boolq-6905cfa516ca91a9",
+          "text": "In the United States, typically only the maid/matron of honor and the best man are the official witnesses for the wedding license."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do your maid of honor have to be married"
+    },
+    {
+      "cqid": "cs-no-7a01ed7b46",
+      "evidence_units": [
+        {
+          "qid": "boolq-d12ac57a9e5c293f-e01",
+          "source_root": "boolq-d12ac57a9e5c293f",
+          "text": "Daylight saving time in the United States is the practice of setting the clock forward by one hour during the warmer part of the year, so that evenings have more daylight and mornings have less."
+        },
+        {
+          "qid": "boolq-d12ac57a9e5c293f-e02",
+          "source_root": "boolq-d12ac57a9e5c293f",
+          "text": "Most areas of the United States observe daylight saving time (DST), the exceptions being Arizona (except for the Navajo, who do observe daylight saving time on tribal lands), Hawaii, and the overseas territories of American Samoa, Guam, the Northern Mariana Islands, Puerto Rico, and the United States Virgin Islands."
+        },
+        {
+          "qid": "boolq-d12ac57a9e5c293f-e03",
+          "source_root": "boolq-d12ac57a9e5c293f",
+          "text": "The Uniform Time Act of 1966 established the system of uniform Daylight Saving Time throughout the US."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do all the states have daylight savings time"
+    },
+    {
+      "cqid": "cs-no-7a45e86cc9",
+      "evidence_units": [
+        {
+          "qid": "boolq-c94b00ee601fbfcc-e01",
+          "source_root": "boolq-c94b00ee601fbfcc",
+          "text": "The first film, The Maze Runner, was released on September 19, 2014 and became a commercial success grossing over $348 million worldwide."
+        },
+        {
+          "qid": "boolq-c94b00ee601fbfcc-e02",
+          "source_root": "boolq-c94b00ee601fbfcc",
+          "text": "The second film, Maze Runner: The Scorch Trials was released on September 18, 2015, and was also a success, grossing over $312 million worldwide."
+        },
+        {
+          "qid": "boolq-c94b00ee601fbfcc-e03",
+          "source_root": "boolq-c94b00ee601fbfcc",
+          "text": "The film series concluded with the release of the third film, Maze Runner: The Death Cure on January 26, 2018."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: are there going to be any more maze runner movies"
+    },
+    {
+      "cqid": "cs-no-7d0309d947",
+      "evidence_units": [
+        {
+          "qid": "boolq-806e2250268b8a56-e01",
+          "source_root": "boolq-806e2250268b8a56",
+          "text": "The European Union value added tax (or EU VAT) is a value added tax on goods and services within the European Union (EU)."
+        },
+        {
+          "qid": "boolq-806e2250268b8a56-e02",
+          "source_root": "boolq-806e2250268b8a56",
+          "text": "The EU's institutions do not collect the tax, but EU member states are each required to adopt a value added tax that complies with the EU VAT code."
+        },
+        {
+          "qid": "boolq-806e2250268b8a56-e03",
+          "source_root": "boolq-806e2250268b8a56",
+          "text": "Different rates of VAT apply in different EU member states, ranging from 17% in Luxembourg to 27% in Hungary."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is vat the same in all eu countries"
+    },
+    {
+      "cqid": "cs-no-7f5cd3d911",
+      "evidence_units": [
+        {
+          "qid": "boolq-de7b7d04897fa00e-e01",
+          "source_root": "boolq-de7b7d04897fa00e",
+          "text": "The cervical nerves are the spinal nerves from the cervical vertebrae."
+        },
+        {
+          "qid": "boolq-de7b7d04897fa00e-e02",
+          "source_root": "boolq-de7b7d04897fa00e",
+          "text": "Although there are seven cervical vertebrae (C1-C7), there are eight cervical nerves C1--C8."
+        },
+        {
+          "qid": "boolq-de7b7d04897fa00e-e03",
+          "source_root": "boolq-de7b7d04897fa00e",
+          "text": "All cervical nerves except C8 emerge above their corresponding vertebrae, while the C8 nerve emerges below the C7 vertebra."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: are there the same number of nerves as there are vertebrae in each region"
+    },
+    {
+      "cqid": "cs-no-7f99627921",
+      "evidence_units": [
+        {
+          "qid": "boolq-c731a35e66e47179-e01",
+          "source_root": "boolq-c731a35e66e47179",
+          "text": "The UK political system is a multi-party system."
+        },
+        {
+          "qid": "boolq-c731a35e66e47179-e02",
+          "source_root": "boolq-c731a35e66e47179",
+          "text": "Since the 1920s, the two largest political participation have been the Conservative Party and the Labour Party."
+        },
+        {
+          "qid": "boolq-c731a35e66e47179-e03",
+          "source_root": "boolq-c731a35e66e47179",
+          "text": "Before the Labour Party rose in British politics, the Liberal Party was the other major political party along with the Conservatives."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does the uk have a two party system"
+    },
+    {
+      "cqid": "cs-no-83fd8ec8da",
+      "evidence_units": [
+        {
+          "qid": "boolq-d7f45133c0d29410-e01",
+          "source_root": "boolq-d7f45133c0d29410",
+          "text": "An acute triangle is a triangle with all three angles acute (less than 90°)."
+        },
+        {
+          "qid": "boolq-d7f45133c0d29410-e02",
+          "source_root": "boolq-d7f45133c0d29410",
+          "text": "An obtuse triangle is one with one obtuse angle (greater than 90°) and two acute angles."
+        },
+        {
+          "qid": "boolq-d7f45133c0d29410-e03",
+          "source_root": "boolq-d7f45133c0d29410",
+          "text": "Since a triangle's angles must sum to 180°, no triangle can have more than one obtuse angle."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is it possible for a triangle to have two obtuse angles"
+    },
+    {
+      "cqid": "cs-no-8621711a41",
+      "evidence_units": [
+        {
+          "qid": "boolq-32cc4f34c2b07d78-e01",
+          "source_root": "boolq-32cc4f34c2b07d78",
+          "text": "Rolled oats that are sold as porridge oats usually have had the tough bran removed."
+        },
+        {
+          "qid": "boolq-32cc4f34c2b07d78-e02",
+          "source_root": "boolq-32cc4f34c2b07d78",
+          "text": "They have often, but not always, been lightly baked or pressure-cooked or ``processed'' in some fashion."
+        },
+        {
+          "qid": "boolq-32cc4f34c2b07d78-e03",
+          "source_root": "boolq-32cc4f34c2b07d78",
+          "text": "Thick-rolled oats are large whole flakes, and thin-rolled oats are smaller, fragmented flakes."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is old fashion oats the same as rolled oats"
+    },
+    {
+      "cqid": "cs-no-8e20796bca",
+      "evidence_units": [
+        {
+          "qid": "boolq-720d64a5631ca2de-e01",
+          "source_root": "boolq-720d64a5631ca2de",
+          "text": "Soon after the Cavern club closed in 1973, a new Cavern club re-opened at 7 Mathew Street, later re-named the Revolution Club."
+        },
+        {
+          "qid": "boolq-720d64a5631ca2de-e02",
+          "source_root": "boolq-720d64a5631ca2de",
+          "text": "In 1984, this club was taken over by Liverpool F.C."
+        },
+        {
+          "qid": "boolq-720d64a5631ca2de-e03",
+          "source_root": "boolq-720d64a5631ca2de",
+          "text": "player Tommy Smith and rebuilt with bricks from the original Cavern club."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is the cavern club in liverpool the original"
+    },
+    {
+      "cqid": "cs-no-8ef79e973b",
+      "evidence_units": [
+        {
+          "qid": "boolq-4052daff128ea4ff-e01",
+          "source_root": "boolq-4052daff128ea4ff",
+          "text": "The flag is required by law to be displayed on or near the main administration building of each state institution during each state or national holiday, and on any special occasion of historical significance, permanently above both doors of the Texas State Capitol, alone at the north door, and under the U.S."
+        },
+        {
+          "qid": "boolq-4052daff128ea4ff-e02",
+          "source_root": "boolq-4052daff128ea4ff",
+          "text": "flag at the south door, with the exception being if the flags are at half mast or if the POW/MIA flag is being flown with the U.S."
+        },
+        {
+          "qid": "boolq-4052daff128ea4ff-e03",
+          "source_root": "boolq-4052daff128ea4ff",
+          "text": "flag; in which event the Texas flag shall only fly at the North Door."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can the texas flag fly equal to the us flag"
+    },
+    {
+      "cqid": "cs-no-8f8a2bde9a",
+      "evidence_units": [
+        {
+          "qid": "boolq-e93cf83cfdcded97-e01",
+          "source_root": "boolq-e93cf83cfdcded97",
+          "text": "Though it does not formally elect the prime minister, the House of Commons indirectly controls the premiership."
+        },
+        {
+          "qid": "boolq-e93cf83cfdcded97-e02",
+          "source_root": "boolq-e93cf83cfdcded97",
+          "text": "By convention, the prime minister is answerable to, and must maintain the support of, the House of Commons."
+        },
+        {
+          "qid": "boolq-e93cf83cfdcded97-e03",
+          "source_root": "boolq-e93cf83cfdcded97",
+          "text": "Thus, whenever the office of prime minister falls vacant, the governor general has the duty of appointing the person most likely to command the support of the House--normally the leader of the largest party in the lower house, although the system allows a coalition of two or more parties."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does canada's prime minister hold a seat in the house of commons"
+    },
+    {
+      "cqid": "cs-no-95287c7477",
+      "evidence_units": [
+        {
+          "qid": "boolq-ab29968173d04f6b-e01",
+          "source_root": "boolq-ab29968173d04f6b",
+          "text": "Since the early 1990s, red light cameras have been used in the United States in 26 U.S."
+        },
+        {
+          "qid": "boolq-ab29968173d04f6b-e02",
+          "source_root": "boolq-ab29968173d04f6b",
+          "text": "Within some states, the cameras may only be permitted in certain areas."
+        },
+        {
+          "qid": "boolq-ab29968173d04f6b-e03",
+          "source_root": "boolq-ab29968173d04f6b",
+          "text": "For example, in New York State, the Vehicle and Traffic Law permits red light cameras only within cities with a population above 1 million (i.e."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do all traffic lights have a red light camera"
+    },
+    {
+      "cqid": "cs-no-97ccff7de6",
+      "evidence_units": [
+        {
+          "qid": "boolq-42c77ce2bf73cd2b-e01",
+          "source_root": "boolq-42c77ce2bf73cd2b",
+          "text": "This list contains the top 50 accounts with the most followers on the social photo-sharing platform Instagram."
+        },
+        {
+          "qid": "boolq-42c77ce2bf73cd2b-e02",
+          "source_root": "boolq-42c77ce2bf73cd2b",
+          "text": "As of October 2018, the most followed user is Instagram's own account, with over 260 million followers."
+        },
+        {
+          "qid": "boolq-42c77ce2bf73cd2b-e03",
+          "source_root": "boolq-42c77ce2bf73cd2b",
+          "text": "Cristiano Ronaldo is the most followed individual, with over 144 million followers."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does anyone have 1 billion followers on instagram"
+    },
+    {
+      "cqid": "cs-no-a2e6128ee0",
+      "evidence_units": [
+        {
+          "qid": "boolq-1f94d68c3568e1aa-e01",
+          "source_root": "boolq-1f94d68c3568e1aa",
+          "text": "While the vast majority of Visa's account ranges describe 16 digit card numbers there are still a few (40 as of 11 Dec."
+        },
+        {
+          "qid": "boolq-1f94d68c3568e1aa-e02",
+          "source_root": "boolq-1f94d68c3568e1aa",
+          "text": "2013) account ranges dedicated to 13 digit PANs and several (439 as of 11 Dec."
+        },
+        {
+          "qid": "boolq-1f94d68c3568e1aa-e03",
+          "source_root": "boolq-1f94d68c3568e1aa",
+          "text": "2013) account ranges where the issuer can mix 13 and 16 digit card numbers."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: are all credit card numbers the same length"
+    },
+    {
+      "cqid": "cs-no-a38834bcf0",
+      "evidence_units": [
+        {
+          "qid": "boolq-6811a74d44916dc6-e01",
+          "source_root": "boolq-6811a74d44916dc6",
+          "text": "Muscle cell glycogen appears to function as an immediate reserve source of available glucose for muscle cells."
+        },
+        {
+          "qid": "boolq-6811a74d44916dc6-e02",
+          "source_root": "boolq-6811a74d44916dc6",
+          "text": "Other cells that contain small amounts use it locally, as well."
+        },
+        {
+          "qid": "boolq-6811a74d44916dc6-e03",
+          "source_root": "boolq-6811a74d44916dc6",
+          "text": "As muscle cells lack glucose-6-phosphatase, which is required to pass glucose into the blood, the glycogen they store is available solely for internal use and is not shared with other cells."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can muscle glycogen be converted to blood glucose"
+    },
+    {
+      "cqid": "cs-no-a39fea5b43",
+      "evidence_units": [
+        {
+          "qid": "boolq-3b899327d385f980-e01",
+          "source_root": "boolq-3b899327d385f980",
+          "text": "Canada--United States relations refers to the bilateral relations between Canada and the United States of America."
+        },
+        {
+          "qid": "boolq-3b899327d385f980-e02",
+          "source_root": "boolq-3b899327d385f980",
+          "text": "Relations between Canada and the United States of America historically have been extensive, given a shared border and ever-increasing close cultural, economical ties and similarities."
+        },
+        {
+          "qid": "boolq-3b899327d385f980-e03",
+          "source_root": "boolq-3b899327d385f980",
+          "text": "The shared historical and cultural heritage has resulted in one of the most stable and mutually beneficial international relationships in the world."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is canada in the united states of america"
+    },
+    {
+      "cqid": "cs-no-ac25b47933",
+      "evidence_units": [
+        {
+          "qid": "boolq-f846cb5de0b81b3c-e01",
+          "source_root": "boolq-f846cb5de0b81b3c",
+          "text": "Downtown San Jose BART station is a proposed underground Bay Area Rapid Transit station in San Jose, California."
+        },
+        {
+          "qid": "boolq-f846cb5de0b81b3c-e02",
+          "source_root": "boolq-f846cb5de0b81b3c",
+          "text": "The station would be co-located with the Santa Clara Light Rail Station and connect to the proposed Santa Clara, Richmond and San Francisco/Daly City stations."
+        },
+        {
+          "qid": "boolq-f846cb5de0b81b3c-e03",
+          "source_root": "boolq-f846cb5de0b81b3c",
+          "text": "It would be preceded by the proposed Alum Rock BART station."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is there a bart station in san jose"
+    },
+    {
+      "cqid": "cs-no-acdd420112",
+      "evidence_units": [
+        {
+          "qid": "boolq-105d877d782156bc-e01",
+          "source_root": "boolq-105d877d782156bc",
+          "text": "The reciprocal of a fraction is another fraction with the numerator and denominator exchanged."
+        },
+        {
+          "qid": "boolq-105d877d782156bc-e02",
+          "source_root": "boolq-105d877d782156bc",
+          "text": "The reciprocal of 3 7 (\\displaystyle (\\tfrac (3)(7))) , for instance, is 7 3 (\\displaystyle (\\tfrac (7)(3))) ."
+        },
+        {
+          "qid": "boolq-105d877d782156bc-e03",
+          "source_root": "boolq-105d877d782156bc",
+          "text": "The product of a fraction and its reciprocal is 1, hence the reciprocal is the multiplicative inverse of a fraction."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: will the reciprocal of a proper fraction be a proper fraction"
+    },
+    {
+      "cqid": "cs-no-aee5ffdb57",
+      "evidence_units": [
+        {
+          "qid": "boolq-243158a0fc14318f-e01",
+          "source_root": "boolq-243158a0fc14318f",
+          "text": "When a batter leaves the post, each runner on a base may run to the next and succeeding base."
+        },
+        {
+          "qid": "boolq-243158a0fc14318f-e02",
+          "source_root": "boolq-243158a0fc14318f",
+          "text": "A post runner cannot be declared out when standing at a base."
+        },
+        {
+          "qid": "boolq-243158a0fc14318f-e03",
+          "source_root": "boolq-243158a0fc14318f",
+          "text": "The batter must keep in contact with the base to avoid being declared out."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do you run with the bat in rounders"
+    },
+    {
+      "cqid": "cs-no-b13c3f115c",
+      "evidence_units": [
+        {
+          "qid": "boolq-418ad843a95071a0-e01",
+          "source_root": "boolq-418ad843a95071a0",
+          "text": "A 3-way lamp, also known as a tri-light, is a lamp that uses a 3-way light bulb to produce three levels of light in a low-medium-high configuration."
+        },
+        {
+          "qid": "boolq-418ad843a95071a0-e02",
+          "source_root": "boolq-418ad843a95071a0",
+          "text": "A 3-way lamp requires a 3-way bulb and socket, and a 3-way switch."
+        },
+        {
+          "qid": "boolq-418ad843a95071a0-e03",
+          "source_root": "boolq-418ad843a95071a0",
+          "text": "Unlike an incandescent lamp controlled by a dimmer, each of the filaments operates at full voltage, so the color of the light does not change between the three steps of light available."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you put a regular bulb in a 3 way lamp"
+    },
+    {
+      "cqid": "cs-no-b250166681",
+      "evidence_units": [
+        {
+          "qid": "boolq-c4943acb7eaa003b-e01",
+          "source_root": "boolq-c4943acb7eaa003b",
+          "text": "Buffy the Vampire Slayer concluded the previous season, therefore there are no official crossovers between the two series."
+        },
+        {
+          "qid": "boolq-c4943acb7eaa003b-e02",
+          "source_root": "boolq-c4943acb7eaa003b",
+          "text": "Despite this, references are made throughout the fifth season of Angel that relate to Buffy the Vampire Slayer."
+        },
+        {
+          "qid": "boolq-c4943acb7eaa003b-e03",
+          "source_root": "boolq-c4943acb7eaa003b",
+          "text": "Spike is resurrected (after his death in ``Chosen'') by the magical amulet Angel gave to Buffy at the start of the finale."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does buffy show up in angel season 5"
+    },
+    {
+      "cqid": "cs-no-b251802246",
+      "evidence_units": [
+        {
+          "qid": "boolq-7c5685e33c644d28-e01",
+          "source_root": "boolq-7c5685e33c644d28",
+          "text": "The de facto official language of the United Kingdom is English, which is spoken by approximately 59.8 million residents, or 98% of the population, over the age of three."
+        },
+        {
+          "qid": "boolq-7c5685e33c644d28-e02",
+          "source_root": "boolq-7c5685e33c644d28",
+          "text": "An estimated 700,000 people speak Welsh in the UK, an official language in Wales and the only de jure official language in any part of the UK."
+        },
+        {
+          "qid": "boolq-7c5685e33c644d28-e03",
+          "source_root": "boolq-7c5685e33c644d28",
+          "text": "Approximately 1.5 million people in the UK speak Scots--although there is debate as to whether this is a distinct language, or a variety of English."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does the united kingdom have an official language"
+    },
+    {
+      "cqid": "cs-no-bc25907cd2",
+      "evidence_units": [
+        {
+          "qid": "boolq-d1edb0f196e90a19-e01",
+          "source_root": "boolq-d1edb0f196e90a19",
+          "text": "Several animal species are able to hear frequencies well beyond the human hearing range."
+        },
+        {
+          "qid": "boolq-d1edb0f196e90a19-e02",
+          "source_root": "boolq-d1edb0f196e90a19",
+          "text": "Some dolphins and bats, for example, can hear frequencies up to 100,000 Hz."
+        },
+        {
+          "qid": "boolq-d1edb0f196e90a19-e03",
+          "source_root": "boolq-d1edb0f196e90a19",
+          "text": "Elephants can hear sounds at 14--16 Hz, while some whales can hear infrasonic sounds as low as 7 Hz (in water)."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do all animals hear the same frequencies of sound as humans do"
+    },
+    {
+      "cqid": "cs-no-bfc019c4c5",
+      "evidence_units": [
+        {
+          "qid": "boolq-da9b94f924bd9ad9-e01",
+          "source_root": "boolq-da9b94f924bd9ad9",
+          "text": "The winner of a number of accolades, Verlander is a six-time MLB All-Star, has led the AL in strikeouts four times and in wins twice."
+        },
+        {
+          "qid": "boolq-da9b94f924bd9ad9-e02",
+          "source_root": "boolq-da9b94f924bd9ad9",
+          "text": "He was the AL Rookie of the Year in 2006, and on June 12, 2007, pitched the first no-hitter at Comerica Park, versus the Milwaukee Brewers."
+        },
+        {
+          "qid": "boolq-da9b94f924bd9ad9-e03",
+          "source_root": "boolq-da9b94f924bd9ad9",
+          "text": "In 2009, he led the AL in wins and strikeouts, both for the first time."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does justin verlander still play for the tigers"
+    },
+    {
+      "cqid": "cs-no-c3141227cd",
+      "evidence_units": [
+        {
+          "qid": "boolq-229750db091e5e77-e01",
+          "source_root": "boolq-229750db091e5e77",
+          "text": "Not since 1945 has there been bigger notes than £50 issued for general circulation by the Bank of England, although banks in Scotland and Northern Ireland still use £100 notes."
+        },
+        {
+          "qid": "boolq-229750db091e5e77-e02",
+          "source_root": "boolq-229750db091e5e77",
+          "text": "However, the Bank of England does produce higher-value notes that are used to maintain parity with Scottish and Northern Irish notes."
+        },
+        {
+          "qid": "boolq-229750db091e5e77-e03",
+          "source_root": "boolq-229750db091e5e77",
+          "text": "Banknotes issued by Scottish and Northern Irish banks have to be backed pound for pound by Bank of England notes (other than a small amount representing the currency in circulation in 1845), and special £1 million and £100 million notes are used for this purpose."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you get 100 pound notes in england"
+    },
+    {
+      "cqid": "cs-no-c3216a55f4",
+      "evidence_units": [
+        {
+          "qid": "boolq-31ebfb6c63ef60e5-e01",
+          "source_root": "boolq-31ebfb6c63ef60e5",
+          "text": "Kingdom Hearts HD 1.5 Remix includes both Kingdom Hearts Final Mix and Re:Chain of Memories in high-definition and with trophy support."
+        },
+        {
+          "qid": "boolq-31ebfb6c63ef60e5-e02",
+          "source_root": "boolq-31ebfb6c63ef60e5",
+          "text": "Additionally, the collection features a cinematic remake of Kingdom Hearts 358/2 Days, including high-definition cutscenes from the original game plus new scenes; the 358/2 Days cinematic also has trophy support."
+        },
+        {
+          "qid": "boolq-31ebfb6c63ef60e5-e03",
+          "source_root": "boolq-31ebfb6c63ef60e5",
+          "text": "Ideas for a remastered collection of Kingdom Hearts games were first revealed in August 2011, with the collection formally announced in September 2012."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is kingdom hearts 1.5 remix the same as the original"
+    },
+    {
+      "cqid": "cs-no-c83917daec",
+      "evidence_units": [
+        {
+          "qid": "boolq-66f4a7b6a749a4ca-e01",
+          "source_root": "boolq-66f4a7b6a749a4ca",
+          "text": "Jurassic World: Fallen Kingdom is a 2018 American science fiction adventure film and the sequel to Jurassic World (2015)."
+        },
+        {
+          "qid": "boolq-66f4a7b6a749a4ca-e02",
+          "source_root": "boolq-66f4a7b6a749a4ca",
+          "text": "Bayona, it is the fifth installment of the Jurassic Park film series, as well as the second installment of a planned Jurassic World trilogy."
+        },
+        {
+          "qid": "boolq-66f4a7b6a749a4ca-e03",
+          "source_root": "boolq-66f4a7b6a749a4ca",
+          "text": "Derek Connolly and Jurassic World director Colin Trevorrow both returned as writers, with Trevorrow and original Jurassic Park director Steven Spielberg acting as executive producers."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is jurrasic world fallen kingdom the last movie"
+    },
+    {
+      "cqid": "cs-no-c9a43d0588",
+      "evidence_units": [
+        {
+          "qid": "boolq-6d6ba8698941b030-e01",
+          "source_root": "boolq-6d6ba8698941b030",
+          "text": "The United States Open Championship, commonly known as the U.S."
+        },
+        {
+          "qid": "boolq-6d6ba8698941b030-e02",
+          "source_root": "boolq-6d6ba8698941b030",
+          "text": "Open, is the annual open national championship of golf in the United States."
+        },
+        {
+          "qid": "boolq-6d6ba8698941b030-e03",
+          "source_root": "boolq-6d6ba8698941b030",
+          "text": "It is the second of the four major championships in golf, and is on the official schedule of both the PGA Tour and the European Tour."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is the us open always at the same course"
+    },
+    {
+      "cqid": "cs-no-d106707423",
+      "evidence_units": [
+        {
+          "qid": "boolq-05012b6a255bba10-e01",
+          "source_root": "boolq-05012b6a255bba10",
+          "text": "Johnson was invited to the 2018 NFL combine."
+        },
+        {
+          "qid": "boolq-05012b6a255bba10-e02",
+          "source_root": "boolq-05012b6a255bba10",
+          "text": "If selected in the 2018 NFL Draft, Johnson would become the first player from Southern drafted in 15 years."
+        },
+        {
+          "qid": "boolq-05012b6a255bba10-e03",
+          "source_root": "boolq-05012b6a255bba10",
+          "text": "Ultimately, Johnson was not drafted but signed a free agent contract with the Washington Redskins."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: did danny johnson from southern university get drafted"
+    },
+    {
+      "cqid": "cs-no-d7212513a6",
+      "evidence_units": [
+        {
+          "qid": "boolq-3ef18562a61ef607-e01",
+          "source_root": "boolq-3ef18562a61ef607",
+          "text": "Outside of the tropics, the maximum elevation occurs at the summer solstice and the minimum at the winter solstice."
+        },
+        {
+          "qid": "boolq-3ef18562a61ef607-e02",
+          "source_root": "boolq-3ef18562a61ef607",
+          "text": "The path of the Sun, or ecliptic, sweeps north and south between the northern and southern hemispheres."
+        },
+        {
+          "qid": "boolq-3ef18562a61ef607-e03",
+          "source_root": "boolq-3ef18562a61ef607",
+          "text": "The days are longer around the summer solstice and shorter around the winter solstice."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is a solstice and an equinox the same thing"
+    },
+    {
+      "cqid": "cs-no-d8c4b30ec0",
+      "evidence_units": [
+        {
+          "qid": "boolq-64e1ef306c9f0020-e01",
+          "source_root": "boolq-64e1ef306c9f0020",
+          "text": "In America it generally consists of, at a minimum, ketchup or chili sauce mixed with prepared horseradish."
+        },
+        {
+          "qid": "boolq-64e1ef306c9f0020-e02",
+          "source_root": "boolq-64e1ef306c9f0020",
+          "text": "Lemon juice, Worcestershire sauce and Tabasco sauce are common additives, often all three."
+        },
+        {
+          "qid": "boolq-64e1ef306c9f0020-e03",
+          "source_root": "boolq-64e1ef306c9f0020",
+          "text": "Some restaurants use chili sauce, a spicier tomato-based sauce in place of the ketchup."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is chili sauce the same as cocktail sauce"
+    },
+    {
+      "cqid": "cs-no-dcd547d28d",
+      "evidence_units": [
+        {
+          "qid": "boolq-cad62404719135cb-e01",
+          "source_root": "boolq-cad62404719135cb",
+          "text": "In October 2016, the series was renewed for a seventh season titled Cult, which premiered on September 5, 2017 on FX."
+        },
+        {
+          "qid": "boolq-cad62404719135cb-e02",
+          "source_root": "boolq-cad62404719135cb",
+          "text": "In January 2017, the series was renewed for an eighth and ninth season."
+        },
+        {
+          "qid": "boolq-cad62404719135cb-e03",
+          "source_root": "boolq-cad62404719135cb",
+          "text": "As of October 3, 2017, 79 episodes of American Horror Story have aired."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is season 7 of ahs the last season"
+    },
+    {
+      "cqid": "cs-no-fc4dd8ca9f",
+      "evidence_units": [
+        {
+          "qid": "boolq-42892e7dd67c11fc-e01",
+          "source_root": "boolq-42892e7dd67c11fc",
+          "text": "The series was originally picked up for 13 episodes on March 13, 2014, but was later increased to 20 episodes."
+        },
+        {
+          "qid": "boolq-42892e7dd67c11fc-e02",
+          "source_root": "boolq-42892e7dd67c11fc",
+          "text": "On November 18, 2014, the series was renewed for a second season."
+        },
+        {
+          "qid": "boolq-42892e7dd67c11fc-e03",
+          "source_root": "boolq-42892e7dd67c11fc",
+          "text": "The second season premiered on May 23, 2015."
+        }
+      ],
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: will there be another season of nicky ricky dicky and dawn"
+    },
+    {
+      "cqid": "cs-yes-01902573a5",
+      "evidence_units": [
+        {
+          "qid": "boolq-9213410deb14afc8-e01",
+          "source_root": "boolq-9213410deb14afc8",
+          "text": "Backward compatibility for Game Boy and Game Boy Color games is provided by a custom 4.194/8.388 MHz Z80-based coprocessor (Game Boy Advance software can use the audio tone generators to supplement the primary sound system), while a link port at the top of the unit allows it to be connected to other devices using a Game Link cable or GameCube link cable."
+        },
+        {
+          "qid": "boolq-9213410deb14afc8-e02",
+          "source_root": "boolq-9213410deb14afc8",
+          "text": "When playing Game Boy or Game Boy Color games on the Game Boy Advance, the L and R buttons can be used to toggle between a stretched widescreen format (240×144) and the original screen ratio of the Game Boy (160×144)."
+        },
+        {
+          "qid": "boolq-9213410deb14afc8-e03",
+          "source_root": "boolq-9213410deb14afc8",
+          "text": "Game Boy games can be played using the same selectable color palettes as on the Game Boy Color."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can game boy advance play game boy games"
+    },
+    {
+      "cqid": "cs-yes-01eb808f9a",
+      "evidence_units": [
+        {
+          "qid": "boolq-eb50b5e27b356c36-e01",
+          "source_root": "boolq-eb50b5e27b356c36",
+          "text": "This is a list of all penalty shoot-outs that have occurred in the Finals tournament of the FIFA World Cup."
+        },
+        {
+          "qid": "boolq-eb50b5e27b356c36-e02",
+          "source_root": "boolq-eb50b5e27b356c36",
+          "text": "Penalty shoot-outs were introduced as tie-breakers in the 1978 World Cup but did not occur before 1982."
+        },
+        {
+          "qid": "boolq-eb50b5e27b356c36-e03",
+          "source_root": "boolq-eb50b5e27b356c36",
+          "text": "The first time a World Cup title was won by penalty shoot-out was in 1994."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can a world cup final go to penalties"
+    },
+    {
+      "cqid": "cs-yes-021a0f99ae",
+      "evidence_units": [
+        {
+          "qid": "boolq-5b5e187757542560-e01",
+          "source_root": "boolq-5b5e187757542560",
+          "text": "The MSE is the second moment (about the origin) of the error, and thus incorporates both the variance of the estimator and its bias."
+        },
+        {
+          "qid": "boolq-5b5e187757542560-e02",
+          "source_root": "boolq-5b5e187757542560",
+          "text": "For an unbiased estimator, the MSE is the variance of the estimator."
+        },
+        {
+          "qid": "boolq-5b5e187757542560-e03",
+          "source_root": "boolq-5b5e187757542560",
+          "text": "Like the variance, MSE has the same units of measurement as the square of the quantity being estimated."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is root mean square error the same as standard deviation"
+    },
+    {
+      "cqid": "cs-yes-0297d35c8d",
+      "evidence_units": [
+        {
+          "qid": "boolq-8df90dabe8fff99b-e01",
+          "source_root": "boolq-8df90dabe8fff99b",
+          "text": "The first player to get rid of their last card (``going out'') wins the hand and scores points for the cards held by the other players."
+        },
+        {
+          "qid": "boolq-8df90dabe8fff99b-e02",
+          "source_root": "boolq-8df90dabe8fff99b",
+          "text": "Number cards count their face value, all action cards count 20, and Wild and Wild Draw Four cards count 50."
+        },
+        {
+          "qid": "boolq-8df90dabe8fff99b-e03",
+          "source_root": "boolq-8df90dabe8fff99b",
+          "text": "If a Draw Two or Wild Draw Four card is played to go out, the next player in sequence must draw the appropriate number of cards before the score is tallied."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you end an uno game with a draw four"
+    },
+    {
+      "cqid": "cs-yes-0bb176ab6e",
+      "evidence_units": [
+        {
+          "qid": "boolq-4985b59dc9e875ba-e01",
+          "source_root": "boolq-4985b59dc9e875ba",
+          "text": "This is a list of PlayStation games compatible with all models of PlayStation 3, along with PlayStation 2 games compatible with certain earlier models of PlayStation 3."
+        },
+        {
+          "qid": "boolq-4985b59dc9e875ba-e02",
+          "source_root": "boolq-4985b59dc9e875ba",
+          "text": "Initial PlayStation 3 models released in North America, Japan, and Asia contained both the PlayStation 2's CPU and GPU, while subsequent models contained only the GPU, and the PlayStation 2 backwards compatibility with physical discs was removed entirely in later models."
+        },
+        {
+          "qid": "boolq-4985b59dc9e875ba-e03",
+          "source_root": "boolq-4985b59dc9e875ba",
+          "text": "However, all PlayStation 3 models can play some PlayStation 1 games via physical discs."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you play ps1 and ps2 games on a ps3"
+    },
+    {
+      "cqid": "cs-yes-0c1a26fe7c",
+      "evidence_units": [
+        {
+          "qid": "boolq-136993e6fd948791-e01",
+          "source_root": "boolq-136993e6fd948791",
+          "text": "All white blood cells have nuclei, which distinguishes them from the other blood cells, the anucleated red blood cells (RBCs) and platelets."
+        },
+        {
+          "qid": "boolq-136993e6fd948791-e02",
+          "source_root": "boolq-136993e6fd948791",
+          "text": "Types of white blood cells can be classified in standard ways."
+        },
+        {
+          "qid": "boolq-136993e6fd948791-e03",
+          "source_root": "boolq-136993e6fd948791",
+          "text": "Two pairs of broadest categories classify them either by structure (granulocytes or agranulocytes) or by cell lineage (myeloid cells or lymphoid cells)."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does a white blood cell have a nucleus"
+    },
+    {
+      "cqid": "cs-yes-217a57e680",
+      "evidence_units": [
+        {
+          "qid": "boolq-eb98342583e2efdd-e01",
+          "source_root": "boolq-eb98342583e2efdd",
+          "text": "A batter who draws a base on balls is commonly said to have been ``walked'' by the pitcher."
+        },
+        {
+          "qid": "boolq-eb98342583e2efdd-e02",
+          "source_root": "boolq-eb98342583e2efdd",
+          "text": "When the batter is walked, runners advance one base without liability to be put out only if forced to vacate their base to allow the batter to take first base."
+        },
+        {
+          "qid": "boolq-eb98342583e2efdd-e03",
+          "source_root": "boolq-eb98342583e2efdd",
+          "text": "If a batter draws a walk with the bases loaded, all preceding runners are forced to advance, including the runner on third base who is forced to home plate to score a run; when a run is forced on a walk, the batter is credited with an RBI per rule 10.04."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do you get an rbi for a bases loaded walk"
+    },
+    {
+      "cqid": "cs-yes-22b7543967",
+      "evidence_units": [
+        {
+          "qid": "boolq-cce45b928248740a-e01",
+          "source_root": "boolq-cce45b928248740a",
+          "text": "Promotion is a chess rule that requires a pawn that reaches its eighth rank to be immediately replaced by the player's choice of a queen, knight, rook, or bishop of the same color ."
+        },
+        {
+          "qid": "boolq-cce45b928248740a-e02",
+          "source_root": "boolq-cce45b928248740a",
+          "text": "The new piece replaces the pawn, as part of the same move."
+        },
+        {
+          "qid": "boolq-cce45b928248740a-e03",
+          "source_root": "boolq-cce45b928248740a",
+          "text": "The choice of new piece is not limited to pieces previously captured , thus promotion can result in a player owning, for example, two or more queens despite starting the game with one."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is it possible to have 2 queens in chess"
+    },
+    {
+      "cqid": "cs-yes-2644d82b1e",
+      "evidence_units": [
+        {
+          "qid": "boolq-12f76773a9bfd0ac-e01",
+          "source_root": "boolq-12f76773a9bfd0ac",
+          "text": "ITV Hub was launched for Xbox One on Friday 10 February 2017, this was made possible by a new Universal Windows Platform app which integrates with Windows 10 and Xbox One."
+        },
+        {
+          "qid": "boolq-12f76773a9bfd0ac-e02",
+          "source_root": "boolq-12f76773a9bfd0ac",
+          "text": "The STV Player app run by STV, who currently hold the ITV licence for Scotland, has been launched on Xbox 360."
+        },
+        {
+          "qid": "boolq-12f76773a9bfd0ac-e03",
+          "source_root": "boolq-12f76773a9bfd0ac",
+          "text": "The STV Player app contains much of the content found on ITV Player and requires a Scottish postcode to be entered prior to use."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you get itv hub on xbox 360"
+    },
+    {
+      "cqid": "cs-yes-265faf45d4",
+      "evidence_units": [
+        {
+          "qid": "boolq-30aabfbb7cba495b-e01",
+          "source_root": "boolq-30aabfbb7cba495b",
+          "text": "The Sole Survivor receives a cash prize of $1,000,000 prior to taxes and sometimes also receives a car provided by the show's sponsor."
+        },
+        {
+          "qid": "boolq-30aabfbb7cba495b-e02",
+          "source_root": "boolq-30aabfbb7cba495b",
+          "text": "Every player receives a prize for participating on Survivor depending on how long he or she lasts in the game."
+        },
+        {
+          "qid": "boolq-30aabfbb7cba495b-e03",
+          "source_root": "boolq-30aabfbb7cba495b",
+          "text": "In most seasons, the runner-up receives $100,000, and third place wins $85,000."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does second place on survivor win any money"
+    },
+    {
+      "cqid": "cs-yes-2e66cc541e",
+      "evidence_units": [
+        {
+          "qid": "boolq-a49f26942fd7b548-e01",
+          "source_root": "boolq-a49f26942fd7b548",
+          "text": "Although bacteria are traditionally divided into two main groups, Gram-positive and Gram-negative, based on their Gram stain retention property, this classification system is ambiguous as it refers to three distinct aspects (staining result, envelope organization, taxonomic group), which do not necessarily coalesce for some bacterial species."
+        },
+        {
+          "qid": "boolq-a49f26942fd7b548-e02",
+          "source_root": "boolq-a49f26942fd7b548",
+          "text": "The Gram-positive and Gram-negative staining response is also not a reliable characteristic as these two kinds of bacteria do not form phylogenetic coherent groups."
+        },
+        {
+          "qid": "boolq-a49f26942fd7b548-e03",
+          "source_root": "boolq-a49f26942fd7b548",
+          "text": "However, although Gram staining response is an empirical criterion, its basis lies in the marked differences in the ultrastructure and chemical composition of the bacterial cell wall, marked by the absence or presence of an outer lipid membrane."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can bacteria be gram positive and gram negative"
+    },
+    {
+      "cqid": "cs-yes-3a6b7fd3c9",
+      "evidence_units": [
+        {
+          "qid": "boolq-e2244124ad3bdcb0-e01",
+          "source_root": "boolq-e2244124ad3bdcb0",
+          "text": "This is a list of National Basketball Association (NBA) franchise post-season appearance droughts."
+        },
+        {
+          "qid": "boolq-e2244124ad3bdcb0-e02",
+          "source_root": "boolq-e2244124ad3bdcb0",
+          "text": "This list includes the all-time and the active consecutive non-playoffs."
+        },
+        {
+          "qid": "boolq-e2244124ad3bdcb0-e03",
+          "source_root": "boolq-e2244124ad3bdcb0",
+          "text": "Aside from the NBA playoff appearance droughts, this list also includes droughts of series wins, appearances in the NBA Finals and NBA championship wins."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: has any nba team not won a championship"
+    },
+    {
+      "cqid": "cs-yes-40a44777b2",
+      "evidence_units": [
+        {
+          "qid": "boolq-026c7573425d4b14-e01",
+          "source_root": "boolq-026c7573425d4b14",
+          "text": "Superheated water is liquid water under pressure at temperatures between the usual boiling point, 100 °C (212 °F) and the critical temperature, 374 °C (705 °F)."
+        },
+        {
+          "qid": "boolq-026c7573425d4b14-e02",
+          "source_root": "boolq-026c7573425d4b14",
+          "text": "It is also known as ``subcritical water'' or ``pressurized hot water.'' Superheated water is stable because of overpressure that raises the boiling point, or by heating it in a sealed vessel with a headspace, where the liquid water is in equilibrium with vapour at the saturated vapor pressure."
+        },
+        {
+          "qid": "boolq-026c7573425d4b14-e03",
+          "source_root": "boolq-026c7573425d4b14",
+          "text": "This is distinct from the use of the term superheating to refer to water at atmospheric pressure above its normal boiling point, which has not boiled due to a lack of nucleation sites (sometimes experienced by heating liquids in a microwave)."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is it possible to heat water above its boiling point"
+    },
+    {
+      "cqid": "cs-yes-42eaa6fd85",
+      "evidence_units": [
+        {
+          "qid": "boolq-bbd530f45a143521-e01",
+          "source_root": "boolq-bbd530f45a143521",
+          "text": "The moment of inertia, otherwise known as the angular mass or rotational inertia, of a rigid body is a tensor that determines the torque needed for a desired angular acceleration about a rotational axis; similar to how mass determines the force needed for a desired acceleration."
+        },
+        {
+          "qid": "boolq-bbd530f45a143521-e02",
+          "source_root": "boolq-bbd530f45a143521",
+          "text": "It depends on the body's mass distribution and the axis chosen, with larger moments requiring more torque to change the body's rotation."
+        },
+        {
+          "qid": "boolq-bbd530f45a143521-e03",
+          "source_root": "boolq-bbd530f45a143521",
+          "text": "It is an extensive (additive) property: for a point mass the moment of inertia is just the mass times the square of distance to the rotation axis."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is moment of inertia the same as rotational inertia"
+    },
+    {
+      "cqid": "cs-yes-49d313cee4",
+      "evidence_units": [
+        {
+          "qid": "boolq-e330f4a4e79dd48c-e01",
+          "source_root": "boolq-e330f4a4e79dd48c",
+          "text": "Chionoecetes opilio, also known as snow crab, is a predominantly epifaunal crustacean native to shelf depths in the northwest Atlantic Ocean and north Pacific Ocean."
+        },
+        {
+          "qid": "boolq-e330f4a4e79dd48c-e02",
+          "source_root": "boolq-e330f4a4e79dd48c",
+          "text": "It is a well-known commercial species of Chionoecetes, often caught with traps or by trawling."
+        },
+        {
+          "qid": "boolq-e330f4a4e79dd48c-e03",
+          "source_root": "boolq-e330f4a4e79dd48c",
+          "text": "Seven species are in the genus Chionoecetes, all of which bear the name ``snow crab''."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: are opilio crabs the same as snow crabs"
+    },
+    {
+      "cqid": "cs-yes-4d1fe0af1b",
+      "evidence_units": [
+        {
+          "qid": "boolq-1d2b99c1d441bcb7-e01",
+          "source_root": "boolq-1d2b99c1d441bcb7",
+          "text": "``Leaving on a Jet Plane'' is a song written by John Denver in 1966 and most famously recorded by Peter, Paul and Mary."
+        },
+        {
+          "qid": "boolq-1d2b99c1d441bcb7-e02",
+          "source_root": "boolq-1d2b99c1d441bcb7",
+          "text": "The original title of the song was ``Babe, I Hate to Go'', as featured on his 1966 studio album John Denver Sings, but Denver's then producer Milt Okun convinced him to change the title."
+        },
+        {
+          "qid": "boolq-1d2b99c1d441bcb7-e03",
+          "source_root": "boolq-1d2b99c1d441bcb7",
+          "text": "Peter, Paul and Mary recorded the song for their 1967 Album 1700 but only released it as a single in 1969."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: did john denver write leaving on a jet plane"
+    },
+    {
+      "cqid": "cs-yes-52145c3845",
+      "evidence_units": [
+        {
+          "qid": "boolq-b0d685ebec0e72d1-e01",
+          "source_root": "boolq-b0d685ebec0e72d1",
+          "text": "Baylor College of Medicine (BCM), located in the Texas Medical Center in Houston, Texas, US, is a health sciences university."
+        },
+        {
+          "qid": "boolq-b0d685ebec0e72d1-e02",
+          "source_root": "boolq-b0d685ebec0e72d1",
+          "text": "It includes a medical school, Baylor College of Medicine; the Graduate School of Biomedical Sciences; the School of Allied Health Sciences; and the National School of Tropical Medicine."
+        },
+        {
+          "qid": "boolq-b0d685ebec0e72d1-e03",
+          "source_root": "boolq-b0d685ebec0e72d1",
+          "text": "The school, located in the middle of the world's largest medical center (Texas Medical Center), is part owner of Baylor St."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is baylor college of medicine a medical school"
+    },
+    {
+      "cqid": "cs-yes-58eed5bc62",
+      "evidence_units": [
+        {
+          "qid": "boolq-2df73b3cbdf71f88-e01",
+          "source_root": "boolq-2df73b3cbdf71f88",
+          "text": "A timing belt, timing chain or cambelt is a part of an internal combustion engine that synchronizes the rotation of the crankshaft and the camshaft(s) so that the engine's valves open and close at the proper times during each cylinder's intake and exhaust strokes."
+        },
+        {
+          "qid": "boolq-2df73b3cbdf71f88-e02",
+          "source_root": "boolq-2df73b3cbdf71f88",
+          "text": "In an interference engine the timing belt or chain is also critical to preventing the piston from striking the valves."
+        },
+        {
+          "qid": "boolq-2df73b3cbdf71f88-e03",
+          "source_root": "boolq-2df73b3cbdf71f88",
+          "text": "A timing belt is usually a toothed belt -- a drive belt with teeth on the inside surface."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is cam belt and timing chain the same"
+    },
+    {
+      "cqid": "cs-yes-62b3aabc69",
+      "evidence_units": [
+        {
+          "qid": "boolq-73a5fc4049dd6512-e01",
+          "source_root": "boolq-73a5fc4049dd6512",
+          "text": "For Post Office Boxes, the general (but not invariable) rule is that each box has its own ZIP+4 code."
+        },
+        {
+          "qid": "boolq-73a5fc4049dd6512-e02",
+          "source_root": "boolq-73a5fc4049dd6512",
+          "text": "The add-on code is often one of the following: the last four digits of the box number (e.g."
+        },
+        {
+          "qid": "boolq-73a5fc4049dd6512-e03",
+          "source_root": "boolq-73a5fc4049dd6512",
+          "text": "PO Box 107050, Albany, NY 12201-7050), zero plus the last three digits of the box number (e.g., PO Box 17727, Eagle River, AK 99577-0727), or, if the box number consists of fewer than four digits, enough zeros are attached to the front of the box number to produce a four-digit number (e.g., PO Box 77, Juneau, AK 99750-0077)."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does a po box need a zip code"
+    },
+    {
+      "cqid": "cs-yes-69c6f89631",
+      "evidence_units": [
+        {
+          "qid": "boolq-f5f9cd443a614834-e01",
+          "source_root": "boolq-f5f9cd443a614834",
+          "text": "A bundle branch block can be diagnosed when the duration of the QRS complex on the ECG exceeds 120 ms."
+        },
+        {
+          "qid": "boolq-f5f9cd443a614834-e02",
+          "source_root": "boolq-f5f9cd443a614834",
+          "text": "A right bundle branch block typically causes prolongation of the last part of the QRS complex, and may shift the heart's electrical axis slightly to the right."
+        },
+        {
+          "qid": "boolq-f5f9cd443a614834-e03",
+          "source_root": "boolq-f5f9cd443a614834",
+          "text": "The ECG will show a terminal R wave in lead V1 and a slurred S wave in lead I."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you have a right and left bundle branch block"
+    },
+    {
+      "cqid": "cs-yes-6c0913dfa9",
+      "evidence_units": [
+        {
+          "qid": "boolq-3044218c03a457af-e01",
+          "source_root": "boolq-3044218c03a457af",
+          "text": "The Good Fight is an American legal and political drama web television series produced for CBS's streaming service CBS All Access."
+        },
+        {
+          "qid": "boolq-3044218c03a457af-e02",
+          "source_root": "boolq-3044218c03a457af",
+          "text": "It is CBS All Access's first original scripted series."
+        },
+        {
+          "qid": "boolq-3044218c03a457af-e03",
+          "source_root": "boolq-3044218c03a457af",
+          "text": "The series--created by Robert King, Michelle King, and Phil Alden Robinson--is a sequel/spinoff to The Good Wife, which was created by the Kings."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is the good fight related to the good wife"
+    },
+    {
+      "cqid": "cs-yes-6e7b100a6a",
+      "evidence_units": [
+        {
+          "qid": "boolq-638c8a838e067193-e01",
+          "source_root": "boolq-638c8a838e067193",
+          "text": "In the Army, Air Force, and Marine Corps, all ranks of sergeant are termed NCOs, as are corporals in the Army and Marine Corps."
+        },
+        {
+          "qid": "boolq-638c8a838e067193-e02",
+          "source_root": "boolq-638c8a838e067193",
+          "text": "A Marine Corps lance corporal (E-3) is not an NCO, but rather junior enlisted."
+        },
+        {
+          "qid": "boolq-638c8a838e067193-e03",
+          "source_root": "boolq-638c8a838e067193",
+          "text": "The rank of corporal (E-4) in the Army is a junior NCO, and is to be shown the same respect as any other NCO."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is a e4 in the navy a nco"
+    },
+    {
+      "cqid": "cs-yes-769a749aa2",
+      "evidence_units": [
+        {
+          "qid": "boolq-d0e1ec6c9009347c-e01",
+          "source_root": "boolq-d0e1ec6c9009347c",
+          "text": "In computational complexity theory, NP (nondeterministic polynomial time) is a complexity class used to describe certain types of decision problems."
+        },
+        {
+          "qid": "boolq-d0e1ec6c9009347c-e02",
+          "source_root": "boolq-d0e1ec6c9009347c",
+          "text": "Informally, NP is the set of all decision problems for which the instances where the answer is ``yes'' have efficiently verifiable proofs."
+        },
+        {
+          "qid": "boolq-d0e1ec6c9009347c-e03",
+          "source_root": "boolq-d0e1ec6c9009347c",
+          "text": "More precisely, these proofs have to be verifiable by deterministic computations that can be performed in polynomial time."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can np problems be solved in polynomial time"
+    },
+    {
+      "cqid": "cs-yes-76bd9583d9",
+      "evidence_units": [
+        {
+          "qid": "boolq-17d9b44b2294e357-e01",
+          "source_root": "boolq-17d9b44b2294e357",
+          "text": "My One and Only is a 2009 comedy-drama film loosely based on a story about George Hamilton's early life on the road with his mother and brother, featuring anecdotes that Hamilton had told to producer Robert Kosberg and Merv Griffin."
+        },
+        {
+          "qid": "boolq-17d9b44b2294e357-e02",
+          "source_root": "boolq-17d9b44b2294e357",
+          "text": "Kosberg pitched the idea of this true story to screenwriter Charlie Peters, then Merv Griffin shepherded the project from screenplay to production, until his death in 2007."
+        },
+        {
+          "qid": "boolq-17d9b44b2294e357-e03",
+          "source_root": "boolq-17d9b44b2294e357",
+          "text": "Merv Griffin's company served as one the film's producers and Robert Kosberg executive produced."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is the movie my one and only based on a true story"
+    },
+    {
+      "cqid": "cs-yes-83a34a2673",
+      "evidence_units": [
+        {
+          "qid": "boolq-653c007b225b5fe8-e01",
+          "source_root": "boolq-653c007b225b5fe8",
+          "text": "The attack on Pearl Harbor was a surprise military strike by the Imperial Japanese Navy Air Service against the United States naval base at Pearl Harbor, Hawaii Territory, on the morning of December 7, 1941."
+        },
+        {
+          "qid": "boolq-653c007b225b5fe8-e02",
+          "source_root": "boolq-653c007b225b5fe8",
+          "text": "The attack, also known as the Battle of Pearl Harbor, led to the United States' entry into World War II."
+        },
+        {
+          "qid": "boolq-653c007b225b5fe8-e03",
+          "source_root": "boolq-653c007b225b5fe8",
+          "text": "The Japanese military leadership referred to the attack as the Hawaii Operation and Operation AI, and as Operation Z during its planning."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: was hawaii part of the us during pearl harbor"
+    },
+    {
+      "cqid": "cs-yes-84262c8091",
+      "evidence_units": [
+        {
+          "qid": "boolq-d60cdae78349a9a8-e01",
+          "source_root": "boolq-d60cdae78349a9a8",
+          "text": "are upcoming role-playing video games (RPGs) developed by Game Freak and published by The Pokémon Company and Nintendo for the Nintendo Switch."
+        },
+        {
+          "qid": "boolq-d60cdae78349a9a8-e02",
+          "source_root": "boolq-d60cdae78349a9a8",
+          "text": "The games are the first installments of the main Pokémon RPG series for the Nintendo Switch."
+        },
+        {
+          "qid": "boolq-d60cdae78349a9a8-e03",
+          "source_root": "boolq-d60cdae78349a9a8",
+          "text": "They are enhanced remakes of the 1998 video game Pokémon Yellow."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is let's go pikachu a main game"
+    },
+    {
+      "cqid": "cs-yes-8890d55165",
+      "evidence_units": [
+        {
+          "qid": "boolq-e65e98755051bf6b-e01",
+          "source_root": "boolq-e65e98755051bf6b",
+          "text": "The Bank of England, formally the Governor and Company of the Bank of England, is the central bank of the United Kingdom and the model on which most modern central banks have been based."
+        },
+        {
+          "qid": "boolq-e65e98755051bf6b-e02",
+          "source_root": "boolq-e65e98755051bf6b",
+          "text": "Established in 1694, it is the second oldest central bank in operation today, after the Sveriges Riksbank."
+        },
+        {
+          "qid": "boolq-e65e98755051bf6b-e03",
+          "source_root": "boolq-e65e98755051bf6b",
+          "text": "The Bank of England is the world's 8th oldest bank."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: bank of england is mother of all central banks"
+    },
+    {
+      "cqid": "cs-yes-8b77d4b153",
+      "evidence_units": [
+        {
+          "qid": "boolq-43277404ffc4499c-e01",
+          "source_root": "boolq-43277404ffc4499c",
+          "text": "The ninth season of the CBS police procedural drama series Hawaii Five-0 premiered on September 28, 2018 for the 2018--19 television season."
+        },
+        {
+          "qid": "boolq-43277404ffc4499c-e02",
+          "source_root": "boolq-43277404ffc4499c",
+          "text": "CBS renewed the series for a ninth season in April 2018."
+        },
+        {
+          "qid": "boolq-43277404ffc4499c-e03",
+          "source_root": "boolq-43277404ffc4499c",
+          "text": "The season is expected to contain 22 episodes."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is there a season 9 for hawaii five-o"
+    },
+    {
+      "cqid": "cs-yes-8c6afe5f21",
+      "evidence_units": [
+        {
+          "qid": "boolq-608c5a6430225011-e01",
+          "source_root": "boolq-608c5a6430225011",
+          "text": "To prevent contamination due to back pressure, many health regulatory regimes require an air gap or mechanical backflow prevention assembly between the delivery point of mains water and local storage or use."
+        },
+        {
+          "qid": "boolq-608c5a6430225011-e02",
+          "source_root": "boolq-608c5a6430225011",
+          "text": "Where submerged mains inflow is permitted, a backflow prevention assembly is required, which protects the potable water system from contamination hazards."
+        },
+        {
+          "qid": "boolq-608c5a6430225011-e03",
+          "source_root": "boolq-608c5a6430225011",
+          "text": "A check valve is a basic form of backflow prevention, but often more complex devices are required because check valves are not considered to be reliable, when compared to more sophisticated devices with redundancies and reduced-pressure zones."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is a check valve the same as a backflow preventer"
+    },
+    {
+      "cqid": "cs-yes-9043c725fa",
+      "evidence_units": [
+        {
+          "qid": "boolq-aa2055b7ce65fbcf-e01",
+          "source_root": "boolq-aa2055b7ce65fbcf",
+          "text": "In financial accounting, operating cash flow (OCF), cash flow provided by operations, cash flow from operating activities (CFO) or free cash flow from operations (FCFO), refers to the amount of cash a company generates from the revenues it brings in, excluding costs associated with long-term investment on capital items or investment in securities."
+        },
+        {
+          "qid": "boolq-aa2055b7ce65fbcf-e02",
+          "source_root": "boolq-aa2055b7ce65fbcf",
+          "text": "The International Financial Reporting Standards defines operating cash flow as cash generated from operations less taxation and interest paid, investment income received and less dividends paid gives rise to operating cash flows."
+        },
+        {
+          "qid": "boolq-aa2055b7ce65fbcf-e03",
+          "source_root": "boolq-aa2055b7ce65fbcf",
+          "text": "To calculate cash generated from operations, one must calculate cash generated from customers and cash paid to suppliers."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is operating cash flow the same as free cash flow"
+    },
+    {
+      "cqid": "cs-yes-924949c66c",
+      "evidence_units": [
+        {
+          "qid": "boolq-635b0cb20876c4ff-e01",
+          "source_root": "boolq-635b0cb20876c4ff",
+          "text": "Many U.S.-based companies seek to keep their share price (also called stock price) low, partly based on ``round lot'' trading (multiples of 100 shares)."
+        },
+        {
+          "qid": "boolq-635b0cb20876c4ff-e02",
+          "source_root": "boolq-635b0cb20876c4ff",
+          "text": "A corporation can adjust its stock price by a stock split, substituting a quantity of shares at one price for a different number of shares at an adjusted price where the value of shares x price remains equivalent."
+        },
+        {
+          "qid": "boolq-635b0cb20876c4ff-e03",
+          "source_root": "boolq-635b0cb20876c4ff",
+          "text": "(For example, 500 shares at $32 may become 1000 shares at $16.) Many major firms like to keep their price in the $25 to $75 price range."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is stock price the same as share price"
+    },
+    {
+      "cqid": "cs-yes-9caa4f2ac0",
+      "evidence_units": [
+        {
+          "qid": "boolq-ca08af04c854ebce-e01",
+          "source_root": "boolq-ca08af04c854ebce",
+          "text": "The Sole Survivor receives a cash prize of $1,000,000 prior to taxes and sometimes also receives a car provided by the show's sponsor."
+        },
+        {
+          "qid": "boolq-ca08af04c854ebce-e02",
+          "source_root": "boolq-ca08af04c854ebce",
+          "text": "Every player receives a prize for participating on Survivor depending on how long he or she lasts in the game."
+        },
+        {
+          "qid": "boolq-ca08af04c854ebce-e03",
+          "source_root": "boolq-ca08af04c854ebce",
+          "text": "In most seasons, the runner-up receives $100,000, and third place wins $85,000."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do second place winners on survivor get money"
+    },
+    {
+      "cqid": "cs-yes-9d38a65fd2",
+      "evidence_units": [
+        {
+          "qid": "boolq-a7a4338d12c1c142-e01",
+          "source_root": "boolq-a7a4338d12c1c142",
+          "text": "A double major, sometimes called dual major, is a student who completes two sets of degree requirements."
+        },
+        {
+          "qid": "boolq-a7a4338d12c1c142-e02",
+          "source_root": "boolq-a7a4338d12c1c142",
+          "text": "In the United States, undergraduate programs toward a bachelor's degree often follow a liberal arts model, and have a set group or type of coursework (sometimes called distribution or core requirements) together with a specialization, called a major -- a double major would usually complete one set of the core requirements and two sets of the specialization requirements."
+        },
+        {
+          "qid": "boolq-a7a4338d12c1c142-e03",
+          "source_root": "boolq-a7a4338d12c1c142",
+          "text": "This happens mostly for undergraduate students, but some graduate schools do offer double majors for graduate degrees ."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you graduate with two bachelor's degrees"
+    },
+    {
+      "cqid": "cs-yes-9df6d30338",
+      "evidence_units": [
+        {
+          "qid": "boolq-989c4ba61bf0b772-e01",
+          "source_root": "boolq-989c4ba61bf0b772",
+          "text": "``Let It Go'' is a song from Disney's 2013 animated feature film Frozen, whose music and lyrics were composed by husband-and-wife songwriting team Kristen Anderson-Lopez and Robert Lopez."
+        },
+        {
+          "qid": "boolq-989c4ba61bf0b772-e02",
+          "source_root": "boolq-989c4ba61bf0b772",
+          "text": "The song was performed in its original show-tune version in the film by American actress and singer Idina Menzel in her vocal role as Queen Elsa."
+        },
+        {
+          "qid": "boolq-989c4ba61bf0b772-e03",
+          "source_root": "boolq-989c4ba61bf0b772",
+          "text": "Anderson-Lopez and Lopez also composed a simplified pop version (with shorter lyrics and background chorus) which was performed by actress and singer Demi Lovato over the start of the film's closing credits."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is let it go demi lovato's song"
+    },
+    {
+      "cqid": "cs-yes-9e6c34b17d",
+      "evidence_units": [
+        {
+          "qid": "boolq-77221a3ed13fd548-e01",
+          "source_root": "boolq-77221a3ed13fd548",
+          "text": "In the United States House of Representatives, the District is represented by a delegate, who is not allowed to vote on the House floor but can vote on procedural matters and in congressional committees."
+        },
+        {
+          "qid": "boolq-77221a3ed13fd548-e02",
+          "source_root": "boolq-77221a3ed13fd548",
+          "text": "residents have no representation in the United States Senate."
+        },
+        {
+          "qid": "boolq-77221a3ed13fd548-e03",
+          "source_root": "boolq-77221a3ed13fd548",
+          "text": "The Twenty-third Amendment to the United States Constitution, adopted in 1961, entitles the District to the same number of electoral votes as that of the least populous state in the election of the President and Vice President of the United States."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can citizens in washington dc vote for president"
+    },
+    {
+      "cqid": "cs-yes-9ef308f596",
+      "evidence_units": [
+        {
+          "qid": "boolq-058923eddb9f663a-e01",
+          "source_root": "boolq-058923eddb9f663a",
+          "text": "The Xbox One gaming console has received updates from Microsoft since its launch in 2013 that enable it to play select games from its two predecessor consoles, Xbox and Xbox 360."
+        },
+        {
+          "qid": "boolq-058923eddb9f663a-e02",
+          "source_root": "boolq-058923eddb9f663a",
+          "text": "On June 15, 2015, backward compatibility with supported Xbox 360 games became available to eligible Xbox Preview program users with a beta update to the Xbox One system software."
+        },
+        {
+          "qid": "boolq-058923eddb9f663a-e03",
+          "source_root": "boolq-058923eddb9f663a",
+          "text": "The dashboard update containing backward compatibility was released publicly on November 12, 2015."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does a xbox one play xbox 360 games"
+    },
+    {
+      "cqid": "cs-yes-aa5795bb95",
+      "evidence_units": [
+        {
+          "qid": "boolq-66c27b5bd77ad30c-e01",
+          "source_root": "boolq-66c27b5bd77ad30c",
+          "text": "Currently, in order to buy a handgun, whether from a licensed dealer or a private individual, North Carolinians are required to either A) obtain and present a pistol purchase permit from the sheriff of the county in which they reside, or B) obtain and present a North Carolina Concealed Handgun Permit."
+        },
+        {
+          "qid": "boolq-66c27b5bd77ad30c-e02",
+          "source_root": "boolq-66c27b5bd77ad30c",
+          "text": "Before issuing a purchase permit, the sheriff's office will subject the applicant to a background check."
+        },
+        {
+          "qid": "boolq-66c27b5bd77ad30c-e03",
+          "source_root": "boolq-66c27b5bd77ad30c",
+          "text": "Concealed Handgun Permits require satisfactory completion of an 8-hour handgun safety course, background check, and completion of the CHP application process."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can i buy a pistol without a permit in nc"
+    },
+    {
+      "cqid": "cs-yes-abe118fb6e",
+      "evidence_units": [
+        {
+          "qid": "boolq-acfabfcac7731327-e01",
+          "source_root": "boolq-acfabfcac7731327",
+          "text": "Black Ink Crew: Chicago is an American reality television series that airs on VH1 and debuted on October 26, 2015."
+        },
+        {
+          "qid": "boolq-acfabfcac7731327-e02",
+          "source_root": "boolq-acfabfcac7731327",
+          "text": "It is the Chicago-based spin-off of Black Ink Crew."
+        },
+        {
+          "qid": "boolq-acfabfcac7731327-e03",
+          "source_root": "boolq-acfabfcac7731327",
+          "text": "It chronicles the daily operations and staff drama at an African American owned and operated tattoo shop, 9MAG, located in Chicago, Illinois."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: will there be a black ink crew chicago season 4"
+    },
+    {
+      "cqid": "cs-yes-bc892470fd",
+      "evidence_units": [
+        {
+          "qid": "boolq-5043db318dedef39-e01",
+          "source_root": "boolq-5043db318dedef39",
+          "text": "Alex Cross's Trial is the 15th novel in James Patterson's Alex Cross series."
+        },
+        {
+          "qid": "boolq-5043db318dedef39-e02",
+          "source_root": "boolq-5043db318dedef39",
+          "text": "It follows Cross Country in the series, and comes before his novel I, Alex Cross."
+        },
+        {
+          "qid": "boolq-5043db318dedef39-e03",
+          "source_root": "boolq-5043db318dedef39",
+          "text": "It is written by Patterson and Richard DiLallo, and its premise is that it is a book written by Alex Cross."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is alex cross trial part of the series"
+    },
+    {
+      "cqid": "cs-yes-bfa1887325",
+      "evidence_units": [
+        {
+          "qid": "boolq-63aa2a2140a6b65d-e01",
+          "source_root": "boolq-63aa2a2140a6b65d",
+          "text": "Effective July 4, 2010, beer sold in microbreweries may be sold on Sundays pursuant to Senate Bill 75."
+        },
+        {
+          "qid": "boolq-63aa2a2140a6b65d-e02",
+          "source_root": "boolq-63aa2a2140a6b65d",
+          "text": "The sales must take place where the brewing is done."
+        },
+        {
+          "qid": "boolq-63aa2a2140a6b65d-e03",
+          "source_root": "boolq-63aa2a2140a6b65d",
+          "text": "However, off-site sales may take place in trade shows and similar back door events."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you buy wine in indiana on sunday"
+    },
+    {
+      "cqid": "cs-yes-c599d2b79b",
+      "evidence_units": [
+        {
+          "qid": "boolq-647668ec79be1921-e01",
+          "source_root": "boolq-647668ec79be1921",
+          "text": "Powdered sugar, also called confectioners' sugar, icing sugar, and icing cake, is a finely ground sugar produced by milling granulated sugar into a powdered state."
+        },
+        {
+          "qid": "boolq-647668ec79be1921-e02",
+          "source_root": "boolq-647668ec79be1921",
+          "text": "It usually contains a small amount of anti-caking agent to prevent clumping and improve flow."
+        },
+        {
+          "qid": "boolq-647668ec79be1921-e03",
+          "source_root": "boolq-647668ec79be1921",
+          "text": "Although most often produced in a factory, powdered sugar can also be made by processing ordinary granulated sugar in a coffee grinder, or by crushing it by hand in a mortar and pestle."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is confectionary sugar the same as powdered sugar"
+    },
+    {
+      "cqid": "cs-yes-cd2a06e671",
+      "evidence_units": [
+        {
+          "qid": "boolq-868554aaa1ec38d3-e01",
+          "source_root": "boolq-868554aaa1ec38d3",
+          "text": "During the second round of the 1971 Martini International tournament, held at the Royal Norwich Golf Club in England, John Hudson had two consecutive holes in one."
+        },
+        {
+          "qid": "boolq-868554aaa1ec38d3-e02",
+          "source_root": "boolq-868554aaa1ec38d3",
+          "text": "Teeing off, using a 4-iron, at the par-three, 195-yard 11th hole, Hudson holed his tee shot for a hole-in-one."
+        },
+        {
+          "qid": "boolq-868554aaa1ec38d3-e03",
+          "source_root": "boolq-868554aaa1ec38d3",
+          "text": "At the next hole, the downhill 311-yard, par-four 12th, and this time using a driver, he once again holed his tee shot, for another ace."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: has there ever been a hole in one on a par 4"
+    },
+    {
+      "cqid": "cs-yes-d1afb7b2bb",
+      "evidence_units": [
+        {
+          "qid": "boolq-638794d037e77ecc-e01",
+          "source_root": "boolq-638794d037e77ecc",
+          "text": "The Sole Survivor receives a cash prize of $1,000,000 prior to taxes and sometimes also receives a car provided by the show's sponsor."
+        },
+        {
+          "qid": "boolq-638794d037e77ecc-e02",
+          "source_root": "boolq-638794d037e77ecc",
+          "text": "Every player receives a prize for participating on Survivor depending on how long he or she lasts in the game."
+        },
+        {
+          "qid": "boolq-638794d037e77ecc-e03",
+          "source_root": "boolq-638794d037e77ecc",
+          "text": "In most seasons, the runner-up receives $100,000, and third place wins $85,000."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do second and third place win money on survivor"
+    },
+    {
+      "cqid": "cs-yes-d5153b54ae",
+      "evidence_units": [
+        {
+          "qid": "boolq-e7acb230504dfaef-e01",
+          "source_root": "boolq-e7acb230504dfaef",
+          "text": "Lawrence Samuel Durrell, Louisa Durrell and their children were all born in India during the British Raj as was Louisa Durrell's father."
+        },
+        {
+          "qid": "boolq-e7acb230504dfaef-e02",
+          "source_root": "boolq-e7acb230504dfaef",
+          "text": "Following Lawrence Samuel Durrell's death in 1928, Mrs Durrell and her three younger children moved to the United Kingdom, where Lawrence had already been sent to be educated."
+        },
+        {
+          "qid": "boolq-e7acb230504dfaef-e03",
+          "source_root": "boolq-e7acb230504dfaef",
+          "text": "In 1935 they moved to Corfu, following Lawrence's earlier move there with his wife Nancy."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is the durrells in corfu a true story"
+    },
+    {
+      "cqid": "cs-yes-d5ef71a919",
+      "evidence_units": [
+        {
+          "qid": "boolq-6435372f6a94bc62-e01",
+          "source_root": "boolq-6435372f6a94bc62",
+          "text": "Ultimate tensile strength (UTS), often shortened to tensile strength (TS), ultimate strength, or Ftu within equations, is the capacity of a material or structure to withstand loads tending to elongate, as opposed to compressive strength, which withstands loads tending to reduce size."
+        },
+        {
+          "qid": "boolq-6435372f6a94bc62-e02",
+          "source_root": "boolq-6435372f6a94bc62",
+          "text": "In other words, tensile strength resists tension (being pulled apart), whereas compressive strength resists compression (being pushed together)."
+        },
+        {
+          "qid": "boolq-6435372f6a94bc62-e03",
+          "source_root": "boolq-6435372f6a94bc62",
+          "text": "Ultimate tensile strength is measured by the maximum stress that a material can withstand while being stretched or pulled before breaking."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is tensile strength the same as breaking strength"
+    },
+    {
+      "cqid": "cs-yes-dbe044d263",
+      "evidence_units": [
+        {
+          "qid": "boolq-b672242415e7e704-e01",
+          "source_root": "boolq-b672242415e7e704",
+          "text": "The Pittsburgh Steelers (6--2) have won the most Super Bowls with six championships, while the New England Patriots (5--5), the Dallas Cowboys (5--3), and the San Francisco 49ers (5--1) have five wins."
+        },
+        {
+          "qid": "boolq-b672242415e7e704-e02",
+          "source_root": "boolq-b672242415e7e704",
+          "text": "New England has the most Super Bowl appearances with ten, while the Buffalo Bills (0--4) have the most consecutive appearances with four (all losses) from 1990 to 1993."
+        },
+        {
+          "qid": "boolq-b672242415e7e704-e03",
+          "source_root": "boolq-b672242415e7e704",
+          "text": "The Miami Dolphins are the only other team to have at least three consecutive appearances: 1972--1974."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: has anyone won the superbowl back to back"
+    },
+    {
+      "cqid": "cs-yes-ea3f0cdf21",
+      "evidence_units": [
+        {
+          "qid": "boolq-6b2659adf8f8fb84-e01",
+          "source_root": "boolq-6b2659adf8f8fb84",
+          "text": "Sea turtles can be found in oceans except for the polar regions."
+        },
+        {
+          "qid": "boolq-6b2659adf8f8fb84-e02",
+          "source_root": "boolq-6b2659adf8f8fb84",
+          "text": "The flatback sea turtle is found solely on the northern coast of Australia."
+        },
+        {
+          "qid": "boolq-6b2659adf8f8fb84-e03",
+          "source_root": "boolq-6b2659adf8f8fb84",
+          "text": "The Kemp's ridley sea turtle is found solely in the Gulf of Mexico and along the East Coast of the United States."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: are there sea turtles in the pacific ocean"
+    },
+    {
+      "cqid": "cs-yes-ed99b61d58",
+      "evidence_units": [
+        {
+          "qid": "boolq-01884049918a74f0-e01",
+          "source_root": "boolq-01884049918a74f0",
+          "text": "The Seven Deadly Sins is a Japanese manga series written and illustrated by Nakaba Suzuki."
+        },
+        {
+          "qid": "boolq-01884049918a74f0-e02",
+          "source_root": "boolq-01884049918a74f0",
+          "text": "The series follows Elizabeth, the third princess of the Kingdom of Liones, who is in search of the Seven Deadly Sins, a group of former Holy Knights who were disbanded after the kingdom was overthrown."
+        },
+        {
+          "qid": "boolq-01884049918a74f0-e03",
+          "source_root": "boolq-01884049918a74f0",
+          "text": "She enlists the help of Meliodas and Hawk, the captain of the Seven Deadly Sins and his talking pet pig, to assemble the remaining members of the Seven Deadly Sins and take back the kingdom from the Holy Knights."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is season 2 of seven deadly sins out"
+    },
+    {
+      "cqid": "cs-yes-f4eb3260f6",
+      "evidence_units": [
+        {
+          "qid": "boolq-73f2c90a37f63cdc-e01",
+          "source_root": "boolq-73f2c90a37f63cdc",
+          "text": "Practice squad players practice alongside regular roster players during the week, but they are not allowed to play in actual games."
+        },
+        {
+          "qid": "boolq-73f2c90a37f63cdc-e02",
+          "source_root": "boolq-73f2c90a37f63cdc",
+          "text": "They can be paid considerably less than active squad players; in 2012, the minimum salary for a practice squad player was $5,700 per week, and the minimum rookie salary was $390,000."
+        },
+        {
+          "qid": "boolq-73f2c90a37f63cdc-e03",
+          "source_root": "boolq-73f2c90a37f63cdc",
+          "text": "Some practice squad players are paid considerably more, however."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do you get paid on nfl practice squad"
+    },
+    {
+      "cqid": "cs-yes-f6edf58f92",
+      "evidence_units": [
+        {
+          "qid": "boolq-5a074438f3da9355-e01",
+          "source_root": "boolq-5a074438f3da9355",
+          "text": "Fractional oxidation states are often used to represent the average oxidation state of several atoms of the same element in a structure."
+        },
+        {
+          "qid": "boolq-5a074438f3da9355-e02",
+          "source_root": "boolq-5a074438f3da9355",
+          "text": "For example, the formula of magnetite is Fe O , implying an average oxidation state for iron of +8/3."
+        },
+        {
+          "qid": "boolq-5a074438f3da9355-e03",
+          "source_root": "boolq-5a074438f3da9355",
+          "text": "However, this average value may not be representative if the atoms are not equivalent."
+        }
+      ],
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can the oxidation state of an element be fractional"
+    }
+  ],
+  "n_agents": 5,
+  "partition_table": [
+    [
+      "E01",
+      "E02"
+    ],
+    [
+      "E01",
+      "E03"
+    ],
+    [
+      "E02",
+      "E03"
+    ],
+    [
+      "E01",
+      "E02"
+    ],
+    [
+      "E01",
+      "E03"
+    ]
+  ],
+  "primary_scored": [
+    "paraphrase",
+    "reverse"
+  ],
+  "protocol": "cs-paper-boolq-20260913",
+  "reverse_definition": "negation prefix 'Task-local counterfactual: it is false that: <unit>' (frozen V10); BoolQ lacks natural counter-evidence (documented)",
+  "salt": "cs-paper-boolq-20260913"
+}

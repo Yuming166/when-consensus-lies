@@ -1,0 +1,406 @@
+{
+  "items": [
+    {
+      "cqid": "cs-no-0055aaf065",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-064d3a4f52",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-07284f1939",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-1cd6bc60e7",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-20800034f1",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-252519312c",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-2f97d6a0c0",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-2fb773a4b8",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-4942fd1890",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-50dc0ea8b7",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-593885de92",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-5997392e55",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-5bb7e1c4a8",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-62a1a254bb",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-660e8fedb9",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-675bca35d9",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-735ce1e472",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-74f337651d",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-7a01ed7b46",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-7a45e86cc9",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-7d0309d947",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-7f5cd3d911",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-7f99627921",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-83fd8ec8da",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-8621711a41",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-8e20796bca",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-8ef79e973b",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-8f8a2bde9a",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-95287c7477",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-97ccff7de6",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-a2e6128ee0",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-a38834bcf0",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-a39fea5b43",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-ac25b47933",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-acdd420112",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-aee5ffdb57",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-b13c3f115c",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-b250166681",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-b251802246",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-bc25907cd2",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-bfc019c4c5",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-c3141227cd",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-c3216a55f4",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-c83917daec",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-c9a43d0588",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-d106707423",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-d7212513a6",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-d8c4b30ec0",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-dcd547d28d",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-no-fc4dd8ca9f",
+      "gold_label": "no"
+    },
+    {
+      "cqid": "cs-yes-01902573a5",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-01eb808f9a",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-021a0f99ae",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-0297d35c8d",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-0bb176ab6e",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-0c1a26fe7c",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-217a57e680",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-22b7543967",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-2644d82b1e",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-265faf45d4",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-2e66cc541e",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-3a6b7fd3c9",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-40a44777b2",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-42eaa6fd85",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-49d313cee4",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-4d1fe0af1b",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-52145c3845",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-58eed5bc62",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-62b3aabc69",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-69c6f89631",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-6c0913dfa9",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-6e7b100a6a",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-769a749aa2",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-76bd9583d9",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-83a34a2673",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-84262c8091",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-8890d55165",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-8b77d4b153",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-8c6afe5f21",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-9043c725fa",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-924949c66c",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-9caa4f2ac0",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-9d38a65fd2",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-9df6d30338",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-9e6c34b17d",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-9ef308f596",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-aa5795bb95",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-abe118fb6e",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-bc892470fd",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-bfa1887325",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-c599d2b79b",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-cd2a06e671",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-d1afb7b2bb",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-d5153b54ae",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-d5ef71a919",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-dbe044d263",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-ea3f0cdf21",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-ed99b61d58",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-f4eb3260f6",
+      "gold_label": "yes"
+    },
+    {
+      "cqid": "cs-yes-f6edf58f92",
+      "gold_label": "yes"
+    }
+  ],
+  "protocol": "cs-paper-boolq-20260913",
+  "status": "sealed"
+}

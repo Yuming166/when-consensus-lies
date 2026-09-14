@@ -1,0 +1,2102 @@
+{
+  "boolq-01884049918a74f0-e01": {
+    "para1": "The Seven Deadly Sins is a Japanese manga series created and drawn by Nakaba Suzuki.",
+    "para2": "The Seven Deadly Sins is a Japanese manga series created and drawn by Nakaba Suzuki.",
+    "source_text": "The Seven Deadly Sins is a Japanese manga series written and illustrated by Nakaba Suzuki.",
+    "unique_id": "boolq-01884049918a74f0-e01",
+    "usable": true
+  },
+  "boolq-01884049918a74f0-e02": {
+    "para1": "The series follows Elizabeth, the third princess of the Kingdom of Liones, who is searching for the Seven Deadly Sins, a group of former Holy Knights disbanded after the kingdom was overthrown.",
+    "para2": "The series follows Elizabeth, the third princess of the Kingdom of Liones, who is searching for the Seven Deadly Sins, a group of former Holy Knights disbanded after the kingdom was overthrown.",
+    "source_text": "The series follows Elizabeth, the third princess of the Kingdom of Liones, who is in search of the Seven Deadly Sins, a group of former Holy Knights who were disbanded after the kingdom was overthrown.",
+    "unique_id": "boolq-01884049918a74f0-e02",
+    "usable": true
+  },
+  "boolq-01884049918a74f0-e03": {
+    "para1": "She recruits Meliodas and Hawk, the captain of the Seven Deadly Sins and his talking pet pig, to gather the rest of the Seven Deadly Sins and reclaim the kingdom from the Holy Knights.",
+    "para2": "She recruits Meliodas and Hawk, the captain of the Seven Deadly Sins and his talking pet pig, to gather the rest of the Seven Deadly Sins and reclaim the kingdom from the Holy Knights.",
+    "source_text": "She enlists the help of Meliodas and Hawk, the captain of the Seven Deadly Sins and his talking pet pig, to assemble the remaining members of the Seven Deadly Sins and take back the kingdom from the Holy Knights.",
+    "unique_id": "boolq-01884049918a74f0-e03",
+    "usable": true
+  },
+  "boolq-026c7573425d4b14-e01": {
+    "para1": "Superheated water is liquid water under pressure at temperatures ranging from the typical boiling point of 100 °C (212 °F) up to the critical temperature of 374 °C (705 °F).",
+    "para2": "Superheated water is liquid water under pressure at temperatures ranging from the typical boiling point of 100 °C (212 °F) up to the critical temperature of 374 °C (705 °F).",
+    "source_text": "Superheated water is liquid water under pressure at temperatures between the usual boiling point, 100 °C (212 °F) and the critical temperature, 374 °C (705 °F).",
+    "unique_id": "boolq-026c7573425d4b14-e01",
+    "usable": true
+  },
+  "boolq-026c7573425d4b14-e02": {
+    "para1": "It is also referred to as \"subcritical water\" or \"pressurized hot water.\" Superheated water remains stable due to overpressure, which elevates the boiling point, or by heating it within a sealed vessel containing a headspace, where the liquid water coexists with vapor at the saturated vapor pressure.",
+    "para2": "It is also referred to as \"subcritical water\" or \"pressurized hot water.\" Superheated water remains stable due to overpressure, which elevates the boiling point, or by heating it within a sealed vessel containing a headspace, where the liquid water coexists with vapor at the saturated vapor pressure.",
+    "source_text": "It is also known as ``subcritical water'' or ``pressurized hot water.'' Superheated water is stable because of overpressure that raises the boiling point, or by heating it in a sealed vessel with a headspace, where the liquid water is in equilibrium with vapour at the saturated vapor pressure.",
+    "unique_id": "boolq-026c7573425d4b14-e02",
+    "usable": true
+  },
+  "boolq-026c7573425d4b14-e03": {
+    "para1": "This differs from using \"superheating\" to describe water at atmospheric pressure exceeding its normal boiling point without boiling, a phenomenon caused by an absence of nucleation sites (often occurring when liquids are heated in a microwave).",
+    "para2": "This differs from using \"superheating\" to describe water at atmospheric pressure exceeding its normal boiling point without boiling, a phenomenon caused by an absence of nucleation sites (often occurring when liquids are heated in a microwave).",
+    "source_text": "This is distinct from the use of the term superheating to refer to water at atmospheric pressure above its normal boiling point, which has not boiled due to a lack of nucleation sites (sometimes experienced by heating liquids in a microwave).",
+    "unique_id": "boolq-026c7573425d4b14-e03",
+    "usable": true
+  },
+  "boolq-05012b6a255bba10-e01": {
+    "para1": "Johnson received an invitation to the 2018 NFL combine.",
+    "para2": "Johnson received an invitation to the 2018 NFL combine.",
+    "source_text": "Johnson was invited to the 2018 NFL combine.",
+    "unique_id": "boolq-05012b6a255bba10-e01",
+    "usable": true
+  },
+  "boolq-05012b6a255bba10-e02": {
+    "para1": "If Johnson is selected in the 2018 NFL Draft, he will be the first player from Southern drafted in 15 years.",
+    "para2": "If Johnson is selected in the 2018 NFL Draft, he will be the first player from Southern drafted in 15 years.",
+    "source_text": "If selected in the 2018 NFL Draft, Johnson would become the first player from Southern drafted in 15 years.",
+    "unique_id": "boolq-05012b6a255bba10-e02",
+    "usable": true
+  },
+  "boolq-05012b6a255bba10-e03": {
+    "para1": "Ultimately, Johnson was not selected in the draft but signed a free agent contract with the Washington Redskins.",
+    "para2": "Ultimately, Johnson was not selected in the draft but signed a free agent contract with the Washington Redskins.",
+    "source_text": "Ultimately, Johnson was not drafted but signed a free agent contract with the Washington Redskins.",
+    "unique_id": "boolq-05012b6a255bba10-e03",
+    "usable": true
+  },
+  "boolq-058923eddb9f663a-e01": {
+    "para1": "Since launching in 2013, Microsoft has released updates for the Xbox One gaming console that allow it to play select titles from its two predecessor consoles, Xbox and Xbox 360.",
+    "para2": "Since launching in 2013, Microsoft has released updates for the Xbox One gaming console that allow it to play select titles from its two predecessor consoles, Xbox and Xbox 360.",
+    "source_text": "The Xbox One gaming console has received updates from Microsoft since its launch in 2013 that enable it to play select games from its two predecessor consoles, Xbox and Xbox 360.",
+    "unique_id": "boolq-058923eddb9f663a-e01",
+    "usable": true
+  },
+  "boolq-058923eddb9f663a-e02": {
+    "para1": "On June 15, 2015, eligible Xbox Preview program users received a beta update to the Xbox One system software that enabled backward compatibility with supported Xbox 360 games.",
+    "para2": "On June 15, 2015, eligible Xbox Preview program users received a beta update to the Xbox One system software that enabled backward compatibility with supported Xbox 360 games.",
+    "source_text": "On June 15, 2015, backward compatibility with supported Xbox 360 games became available to eligible Xbox Preview program users with a beta update to the Xbox One system software.",
+    "unique_id": "boolq-058923eddb9f663a-e02",
+    "usable": true
+  },
+  "boolq-058923eddb9f663a-e03": {
+    "para1": "The public release of the dashboard update with backward compatibility occurred on November 12, 2015.",
+    "para2": "The public release of the dashboard update with backward compatibility occurred on November 12, 2015.",
+    "source_text": "The dashboard update containing backward compatibility was released publicly on November 12, 2015.",
+    "unique_id": "boolq-058923eddb9f663a-e03",
+    "usable": true
+  },
+  "boolq-105d877d782156bc-e01": {
+    "para1": "The reciprocal of a fraction is another fraction where the numerator and denominator are swapped.",
+    "para2": "The reciprocal of a fraction is another fraction where the numerator and denominator are swapped.",
+    "source_text": "The reciprocal of a fraction is another fraction with the numerator and denominator exchanged.",
+    "unique_id": "boolq-105d877d782156bc-e01",
+    "usable": true
+  },
+  "boolq-105d877d782156bc-e02": {
+    "para1": "For instance, the reciprocal of 7 3 (\\displaystyle (\\tfrac (7)(3))) is 3 7 (\\displaystyle (\\tfrac (3)(7))).",
+    "para2": "For instance, the reciprocal of 7 3 (\\displaystyle (\\tfrac (7)(3))) is 3 7 (\\displaystyle (\\tfrac (3)(7))).",
+    "source_text": "The reciprocal of 3 7 (\\displaystyle (\\tfrac (3)(7))) , for instance, is 7 3 (\\displaystyle (\\tfrac (7)(3))) .",
+    "unique_id": "boolq-105d877d782156bc-e02",
+    "usable": true
+  },
+  "boolq-105d877d782156bc-e03": {
+    "para1": "Since the product of a fraction and its reciprocal equals 1, the reciprocal is the multiplicative inverse of a fraction.",
+    "para2": "Since the product of a fraction and its reciprocal equals 1, the reciprocal is the multiplicative inverse of a fraction.",
+    "source_text": "The product of a fraction and its reciprocal is 1, hence the reciprocal is the multiplicative inverse of a fraction.",
+    "unique_id": "boolq-105d877d782156bc-e03",
+    "usable": true
+  },
+  "boolq-12f76773a9bfd0ac-e01": {
+    "para1": "The new Universal Windows Platform app, which integrates with Windows 10 and Xbox One, enabled the launch of ITV Hub for Xbox One on Friday 10 February 2017.",
+    "para2": "The new Universal Windows Platform app, which integrates with Windows 10 and Xbox One, enabled the launch of ITV Hub for Xbox One on Friday 10 February 2017.",
+    "source_text": "ITV Hub was launched for Xbox One on Friday 10 February 2017, this was made possible by a new Universal Windows Platform app which integrates with Windows 10 and Xbox One.",
+    "unique_id": "boolq-12f76773a9bfd0ac-e01",
+    "usable": true
+  },
+  "boolq-12f76773a9bfd0ac-e02": {
+    "para1": "The STV Player app, operated by STV which currently holds the ITV licence for Scotland, has been launched on Xbox 360.",
+    "para2": "The STV Player app, operated by STV which currently holds the ITV licence for Scotland, has been launched on Xbox 360.",
+    "source_text": "The STV Player app run by STV, who currently hold the ITV licence for Scotland, has been launched on Xbox 360.",
+    "unique_id": "boolq-12f76773a9bfd0ac-e02",
+    "usable": true
+  },
+  "boolq-12f76773a9bfd0ac-e03": {
+    "para1": "The STV Player app includes most of the content available on ITV Player and necessitates entering a Scottish postcode before use.",
+    "para2": "The STV Player app includes most of the content available on ITV Player and necessitates entering a Scottish postcode before use.",
+    "source_text": "The STV Player app contains much of the content found on ITV Player and requires a Scottish postcode to be entered prior to use.",
+    "unique_id": "boolq-12f76773a9bfd0ac-e03",
+    "usable": true
+  },
+  "boolq-136993e6fd948791-e01": {
+    "para1": "All white blood cells possess nuclei, a feature that sets them apart from other blood cells, specifically the anucleated red blood cells (RBCs) and platelets.",
+    "para2": "All white blood cells possess nuclei, a feature that sets them apart from other blood cells, specifically the anucleated red blood cells (RBCs) and platelets.",
+    "source_text": "All white blood cells have nuclei, which distinguishes them from the other blood cells, the anucleated red blood cells (RBCs) and platelets.",
+    "unique_id": "boolq-136993e6fd948791-e01",
+    "usable": true
+  },
+  "boolq-136993e6fd948791-e02": {
+    "para1": "White blood cell types can be categorized using standard methods.",
+    "para2": "White blood cell types can be categorized using standard methods.",
+    "source_text": "Types of white blood cells can be classified in standard ways.",
+    "unique_id": "boolq-136993e6fd948791-e02",
+    "usable": true
+  },
+  "boolq-136993e6fd948791-e03": {
+    "para1": "Two pairs of broadest categories classify them either by structure (granulocytes or agranulocytes) or by cell lineage (myeloid cells or lymphoid cells).",
+    "para2": "Two pairs of broadest categories classify them either by structure (granulocytes or agranulocytes) or by cell lineage (myeloid cells or lymphoid cells).",
+    "source_text": "Two pairs of broadest categories classify them either by structure (granulocytes or agranulocytes) or by cell lineage (myeloid cells or lymphoid cells).",
+    "unique_id": "boolq-136993e6fd948791-e03",
+    "usable": true
+  },
+  "boolq-17d9b44b2294e357-e01": {
+    "para1": "My One and Only is a 2009 comedy-drama film loosely based on a story about George Hamilton's early life on the road with his mother and brother, featuring anecdotes that Hamilton had told to producer Robert Kosberg and Merv Griffin.",
+    "para2": "My One and Only is a 2009 comedy-drama film loosely based on a story about George Hamilton's early life on the road with his mother and brother, featuring anecdotes that Hamilton had told to producer Robert Kosberg and Merv Griffin.",
+    "source_text": "My One and Only is a 2009 comedy-drama film loosely based on a story about George Hamilton's early life on the road with his mother and brother, featuring anecdotes that Hamilton had told to producer Robert Kosberg and Merv Griffin.",
+    "unique_id": "boolq-17d9b44b2294e357-e01",
+    "usable": true
+  },
+  "boolq-17d9b44b2294e357-e02": {
+    "para1": "Kosberg pitched the concept of this true story to screenwriter Charlie Peters, after which Merv Griffin guided the project from screenplay to production until his passing in 2007.",
+    "para2": "Kosberg pitched the concept of this true story to screenwriter Charlie Peters, after which Merv Griffin guided the project from screenplay to production until his passing in 2007.",
+    "source_text": "Kosberg pitched the idea of this true story to screenwriter Charlie Peters, then Merv Griffin shepherded the project from screenplay to production, until his death in 2007.",
+    "unique_id": "boolq-17d9b44b2294e357-e02",
+    "usable": true
+  },
+  "boolq-17d9b44b2294e357-e03": {
+    "para1": "Merv Griffin's company served as one of the film's producers, and Robert Kosberg executive produced.",
+    "para2": "Merv Griffin's company served as one of the film's producers, and Robert Kosberg executive produced.",
+    "source_text": "Merv Griffin's company served as one the film's producers and Robert Kosberg executive produced.",
+    "unique_id": "boolq-17d9b44b2294e357-e03",
+    "usable": true
+  },
+  "boolq-19a0059d8916c975-e01": {
+    "para1": "The Major League Baseball postseason is an elimination tournament that takes place following the end of the MLB regular season.",
+    "para2": "The Major League Baseball postseason is an elimination tournament that takes place following the end of the MLB regular season.",
+    "source_text": "The Major League Baseball postseason is an elimination tournament held after the conclusion of the MLB regular season.",
+    "unique_id": "boolq-19a0059d8916c975-e01",
+    "usable": true
+  },
+  "boolq-19a0059d8916c975-e02": {
+    "para1": "As of 2012, the playoffs for each league—American and National—consist of a one-game wild-card playoff between two wild card teams, two best-of-five Division Series (LDS) featuring the wild-card winner and the winner of each division, and finally the best-of-seven League Championship Series (LCS).",
+    "para2": "As of 2012, the playoffs for each league—American and National—consist of a one-game wild-card playoff between two wild card teams, two best-of-five Division Series (LDS) featuring the wild-card winner and the winner of each division, and finally the best-of-seven League Championship Series (LCS).",
+    "source_text": "As of 2012, the playoffs for each league--American and National--consist of a one-game wild-card playoff between two wild card teams, two best-of-five Division Series (LDS) featuring the wild-card winner and the winner of each division, and finally the best-of-seven League Championship Series (LCS).",
+    "unique_id": "boolq-19a0059d8916c975-e02",
+    "usable": true
+  },
+  "boolq-19a0059d8916c975-e03": {
+    "para1": "The best-of-seven World Series is played between the winners of the American League Championship Series (ALCS) and the National League Championship Series (NLCS).",
+    "para2": "The best-of-seven World Series is played between the winners of the American League Championship Series (ALCS) and the National League Championship Series (NLCS).",
+    "source_text": "The winners of the American League Championship Series (ALCS) and the National League Championship Series (NLCS) play each other in the best-of-seven World Series.",
+    "unique_id": "boolq-19a0059d8916c975-e03",
+    "usable": true
+  },
+  "boolq-1d2b99c1d441bcb7-e01": {
+    "para1": "\"Leaving on a Jet Plane\" is a song written by John Denver in 1966 and most famously recorded by Peter, Paul and Mary.",
+    "para2": "\"Leaving on a Jet Plane\" is a song written by John Denver in 1966 and most famously recorded by Peter, Paul and Mary.",
+    "source_text": "``Leaving on a Jet Plane'' is a song written by John Denver in 1966 and most famously recorded by Peter, Paul and Mary.",
+    "unique_id": "boolq-1d2b99c1d441bcb7-e01",
+    "usable": true
+  },
+  "boolq-1d2b99c1d441bcb7-e02": {
+    "para1": "The song's original title was \"Babe, I Hate to Go,\" as it appeared on his 1966 studio album John Denver Sings, but Denver's then producer Milt Okun persuaded him to alter the title.",
+    "para2": "The song's original title was \"Babe, I Hate to Go,\" as it appeared on his 1966 studio album John Denver Sings, but Denver's then producer Milt Okun persuaded him to alter the title.",
+    "source_text": "The original title of the song was ``Babe, I Hate to Go'', as featured on his 1966 studio album John Denver Sings, but Denver's then producer Milt Okun convinced him to change the title.",
+    "unique_id": "boolq-1d2b99c1d441bcb7-e02",
+    "usable": true
+  },
+  "boolq-1d2b99c1d441bcb7-e03": {
+    "para1": "Peter, Paul and Mary recorded the song for their 1967 Album 1700 but only released it as a single in 1969.",
+    "para2": "Peter, Paul and Mary recorded the song for their 1967 Album 1700 but only released it as a single in 1969.",
+    "source_text": "Peter, Paul and Mary recorded the song for their 1967 Album 1700 but only released it as a single in 1969.",
+    "unique_id": "boolq-1d2b99c1d441bcb7-e03",
+    "usable": true
+  },
+  "boolq-1f94d68c3568e1aa-e01": {
+    "para1": "Although most of Visa's account ranges specify 16-digit card numbers, a small number remain (40 as of 11 Dec.).",
+    "para2": "Although most of Visa's account ranges specify 16-digit card numbers, a small number remain (40 as of 11 Dec.).",
+    "source_text": "While the vast majority of Visa's account ranges describe 16 digit card numbers there are still a few (40 as of 11 Dec.",
+    "unique_id": "boolq-1f94d68c3568e1aa-e01",
+    "usable": true
+  },
+  "boolq-1f94d68c3568e1aa-e02": {
+    "para1": "(2013) account ranges are dedicated to 13-digit PANs and several (439 as of 11 Dec.)",
+    "para2": "(2013) account ranges are dedicated to 13-digit PANs and several (439 as of 11 Dec.)",
+    "source_text": "2013) account ranges dedicated to 13 digit PANs and several (439 as of 11 Dec.",
+    "unique_id": "boolq-1f94d68c3568e1aa-e02",
+    "usable": true
+  },
+  "boolq-1f94d68c3568e1aa-e03": {
+    "para1": "(2013) account ranges where the issuer can mix 13 and 16 digit card numbers.",
+    "para2": "(2013) account ranges where the issuer can mix 13 and 16 digit card numbers.",
+    "source_text": "2013) account ranges where the issuer can mix 13 and 16 digit card numbers.",
+    "unique_id": "boolq-1f94d68c3568e1aa-e03",
+    "usable": true
+  },
+  "boolq-229750db091e5e77-e01": {
+    "para1": "No larger denomination notes than £50 have been issued by the Bank of England for general circulation since 1945, even though banks in Scotland and Northern Ireland continue to use £100 notes.",
+    "para2": "No larger denomination notes than £50 have been issued by the Bank of England for general circulation since 1945, even though banks in Scotland and Northern Ireland continue to use £100 notes.",
+    "source_text": "Not since 1945 has there been bigger notes than £50 issued for general circulation by the Bank of England, although banks in Scotland and Northern Ireland still use £100 notes.",
+    "unique_id": "boolq-229750db091e5e77-e01",
+    "usable": true
+  },
+  "boolq-229750db091e5e77-e02": {
+    "para1": "However, the Bank of England does issue higher-value notes to maintain parity with those from Scotland and Northern Ireland.",
+    "para2": "However, the Bank of England does issue higher-value notes to maintain parity with those from Scotland and Northern Ireland.",
+    "source_text": "However, the Bank of England does produce higher-value notes that are used to maintain parity with Scottish and Northern Irish notes.",
+    "unique_id": "boolq-229750db091e5e77-e02",
+    "usable": true
+  },
+  "boolq-229750db091e5e77-e03": {
+    "para1": "Banknotes issued by Scottish and Northern Irish banks must be backed pound for pound by Bank of England notes (excluding a small amount representing the currency in circulation in 1845), utilizing special £1 million and £100 million notes for this purpose.",
+    "para2": "Banknotes issued by Scottish and Northern Irish banks must be backed pound for pound by Bank of England notes (excluding a small amount representing the currency in circulation in 1845), utilizing special £1 million and £100 million notes for this purpose.",
+    "source_text": "Banknotes issued by Scottish and Northern Irish banks have to be backed pound for pound by Bank of England notes (other than a small amount representing the currency in circulation in 1845), and special £1 million and £100 million notes are used for this purpose.",
+    "unique_id": "boolq-229750db091e5e77-e03",
+    "usable": true
+  },
+  "boolq-243158a0fc14318f-e01": {
+    "para1": "When a batter exits the plate, any runner occupying a base can advance to the following and subsequent bases.",
+    "para2": "When a batter exits the plate, any runner occupying a base can advance to the following and subsequent bases.",
+    "source_text": "When a batter leaves the post, each runner on a base may run to the next and succeeding base.",
+    "unique_id": "boolq-243158a0fc14318f-e01",
+    "usable": true
+  },
+  "boolq-243158a0fc14318f-e02": {
+    "para1": "A runner on base cannot be declared out while standing there.",
+    "para2": "A runner on base cannot be declared out while standing there.",
+    "source_text": "A post runner cannot be declared out when standing at a base.",
+    "unique_id": "boolq-243158a0fc14318f-e02",
+    "usable": true
+  },
+  "boolq-243158a0fc14318f-e03": {
+    "para1": "The batter must maintain contact with the base to prevent being called out.",
+    "para2": "The batter must maintain contact with the base to prevent being called out.",
+    "source_text": "The batter must keep in contact with the base to avoid being declared out.",
+    "unique_id": "boolq-243158a0fc14318f-e03",
+    "usable": true
+  },
+  "boolq-2df73b3cbdf71f88-e01": {
+    "para1": "A timing belt, timing chain, or cambelt is a component of an internal combustion engine that coordinates the rotation of the crankshaft and the camshaft(s) to ensure the engine's valves open and close at the correct moments during each cylinder's intake and exhaust strokes.",
+    "para2": "A timing belt, timing chain, or cambelt is a component of an internal combustion engine that coordinates the rotation of the crankshaft and the camshaft(s) to ensure the engine's valves open and close at the correct moments during each cylinder's intake and exhaust strokes.",
+    "source_text": "A timing belt, timing chain or cambelt is a part of an internal combustion engine that synchronizes the rotation of the crankshaft and the camshaft(s) so that the engine's valves open and close at the proper times during each cylinder's intake and exhaust strokes.",
+    "unique_id": "boolq-2df73b3cbdf71f88-e01",
+    "usable": true
+  },
+  "boolq-2df73b3cbdf71f88-e02": {
+    "para1": "In an interference engine, the timing belt or chain is equally vital to stopping the piston from hitting the valves.",
+    "para2": "In an interference engine, the timing belt or chain is equally vital to stopping the piston from hitting the valves.",
+    "source_text": "In an interference engine the timing belt or chain is also critical to preventing the piston from striking the valves.",
+    "unique_id": "boolq-2df73b3cbdf71f88-e02",
+    "usable": true
+  },
+  "boolq-2df73b3cbdf71f88-e03": {
+    "para1": "A timing belt is typically a toothed belt, which is a drive belt featuring teeth on its inner surface.",
+    "para2": "A timing belt is typically a toothed belt, which is a drive belt featuring teeth on its inner surface.",
+    "source_text": "A timing belt is usually a toothed belt -- a drive belt with teeth on the inside surface.",
+    "unique_id": "boolq-2df73b3cbdf71f88-e03",
+    "usable": true
+  },
+  "boolq-3044218c03a457af-e01": {
+    "para1": "The Good Fight is an American legal and political drama web television series produced for CBS's streaming service CBS All Access.",
+    "para2": "The Good Fight is an American legal and political drama web television series produced for CBS's streaming service CBS All Access.",
+    "source_text": "The Good Fight is an American legal and political drama web television series produced for CBS's streaming service CBS All Access.",
+    "unique_id": "boolq-3044218c03a457af-e01",
+    "usable": true
+  },
+  "boolq-3044218c03a457af-e02": {
+    "para1": "This marks CBS All Access's debut original scripted series.",
+    "para2": "This marks CBS All Access's debut original scripted series.",
+    "source_text": "It is CBS All Access's first original scripted series.",
+    "unique_id": "boolq-3044218c03a457af-e02",
+    "usable": true
+  },
+  "boolq-3044218c03a457af-e03": {
+    "para1": "The series, created by Robert King, Michelle King, and Phil Alden Robinson, is a sequel or spinoff to The Good Wife, which was created by the Kings.",
+    "para2": "The series, created by Robert King, Michelle King, and Phil Alden Robinson, is a sequel or spinoff to The Good Wife, which was created by the Kings.",
+    "source_text": "The series--created by Robert King, Michelle King, and Phil Alden Robinson--is a sequel/spinoff to The Good Wife, which was created by the Kings.",
+    "unique_id": "boolq-3044218c03a457af-e03",
+    "usable": true
+  },
+  "boolq-30aabfbb7cba495b-e01": {
+    "para1": "The Sole Survivor gets a cash prize of $1,000,000 before taxes and occasionally also receives a car supplied by the show's sponsor.",
+    "para2": "The Sole Survivor gets a cash prize of $1,000,000 before taxes and occasionally also receives a car supplied by the show's sponsor.",
+    "source_text": "The Sole Survivor receives a cash prize of $1,000,000 prior to taxes and sometimes also receives a car provided by the show's sponsor.",
+    "unique_id": "boolq-30aabfbb7cba495b-e01",
+    "usable": true
+  },
+  "boolq-30aabfbb7cba495b-e02": {
+    "para1": "Every participant on Survivor earns a prize based on their duration in the game.",
+    "para2": "Every participant on Survivor earns a prize based on their duration in the game.",
+    "source_text": "Every player receives a prize for participating on Survivor depending on how long he or she lasts in the game.",
+    "unique_id": "boolq-30aabfbb7cba495b-e02",
+    "usable": true
+  },
+  "boolq-30aabfbb7cba495b-e03": {
+    "para1": "In most seasons, the runner-up receives $100,000, and third place wins $85,000.",
+    "para2": "In most seasons, the runner-up receives $100,000, and third place wins $85,000.",
+    "source_text": "In most seasons, the runner-up receives $100,000, and third place wins $85,000.",
+    "unique_id": "boolq-30aabfbb7cba495b-e03",
+    "usable": true
+  },
+  "boolq-31ebfb6c63ef60e5-e01": {
+    "para1": "Kingdom Hearts HD 1.5 Remix features both Kingdom Hearts Final Mix and Re:Chain of Memories in high definition with trophy support.",
+    "para2": "Kingdom Hearts HD 1.5 Remix features both Kingdom Hearts Final Mix and Re:Chain of Memories in high definition with trophy support.",
+    "source_text": "Kingdom Hearts HD 1.5 Remix includes both Kingdom Hearts Final Mix and Re:Chain of Memories in high-definition and with trophy support.",
+    "unique_id": "boolq-31ebfb6c63ef60e5-e01",
+    "usable": true
+  },
+  "boolq-31ebfb6c63ef60e5-e02": {
+    "para1": "Additionally, the collection includes a cinematic remake of Kingdom Hearts 358/2 Days, featuring high-definition cutscenes from the original game alongside new scenes; the 358/2 Days cinematic also supports trophies.",
+    "para2": "Additionally, the collection includes a cinematic remake of Kingdom Hearts 358/2 Days, featuring high-definition cutscenes from the original game alongside new scenes; the 358/2 Days cinematic also supports trophies.",
+    "source_text": "Additionally, the collection features a cinematic remake of Kingdom Hearts 358/2 Days, including high-definition cutscenes from the original game plus new scenes; the 358/2 Days cinematic also has trophy support.",
+    "unique_id": "boolq-31ebfb6c63ef60e5-e02",
+    "usable": true
+  },
+  "boolq-31ebfb6c63ef60e5-e03": {
+    "para1": "Ideas for a remastered Kingdom Hearts games collection were first revealed in August 2011, with the collection formally announced in September 2012.",
+    "para2": "Ideas for a remastered Kingdom Hearts games collection were first revealed in August 2011, with the collection formally announced in September 2012.",
+    "source_text": "Ideas for a remastered collection of Kingdom Hearts games were first revealed in August 2011, with the collection formally announced in September 2012.",
+    "unique_id": "boolq-31ebfb6c63ef60e5-e03",
+    "usable": true
+  },
+  "boolq-32cc4f34c2b07d78-e01": {
+    "para1": "Rolled oats marketed as porridge oats typically have the tough bran removed.",
+    "para2": "Rolled oats marketed as porridge oats typically have the tough bran removed.",
+    "source_text": "Rolled oats that are sold as porridge oats usually have had the tough bran removed.",
+    "unique_id": "boolq-32cc4f34c2b07d78-e01",
+    "usable": true
+  },
+  "boolq-32cc4f34c2b07d78-e02": {
+    "para1": "They have often, though not invariably, been lightly baked, pressure-cooked, or \"processed\" in some manner.",
+    "para2": "They have often, though not invariably, been lightly baked, pressure-cooked, or \"processed\" in some manner.",
+    "source_text": "They have often, but not always, been lightly baked or pressure-cooked or ``processed'' in some fashion.",
+    "unique_id": "boolq-32cc4f34c2b07d78-e02",
+    "usable": true
+  },
+  "boolq-32cc4f34c2b07d78-e03": {
+    "para1": "Thick-rolled oats consist of large whole flakes, whereas thin-rolled oats are smaller and fragmented.",
+    "para2": "Thick-rolled oats consist of large whole flakes, whereas thin-rolled oats are smaller and fragmented.",
+    "source_text": "Thick-rolled oats are large whole flakes, and thin-rolled oats are smaller, fragmented flakes.",
+    "unique_id": "boolq-32cc4f34c2b07d78-e03",
+    "usable": true
+  },
+  "boolq-3305a680a5cd4f10-e01": {
+    "para1": "A 3-way lamp, also called a tri-light, is a lamp that employs a 3-way light bulb to generate three levels of light in a low-medium-high arrangement.",
+    "para2": "A 3-way lamp, also called a tri-light, is a lamp that employs a 3-way light bulb to generate three levels of light in a low-medium-high arrangement.",
+    "source_text": "A 3-way lamp, also known as a tri-light, is a lamp that uses a 3-way light bulb to produce three levels of light in a low-medium-high configuration.",
+    "unique_id": "boolq-3305a680a5cd4f10-e01",
+    "usable": true
+  },
+  "boolq-3305a680a5cd4f10-e02": {
+    "para1": "A 3-way lamp needs a 3-way bulb and socket, along with a 3-way switch.",
+    "para2": "A 3-way lamp needs a 3-way bulb and socket, along with a 3-way switch.",
+    "source_text": "A 3-way lamp requires a 3-way bulb and socket, and a 3-way switch.",
+    "unique_id": "boolq-3305a680a5cd4f10-e02",
+    "usable": true
+  },
+  "boolq-3305a680a5cd4f10-e03": {
+    "para1": "Unlike an incandescent lamp controlled by a dimmer, each filament operates at full voltage, so the light's color remains unchanged across the three available steps.",
+    "para2": "Unlike an incandescent lamp controlled by a dimmer, each filament operates at full voltage, so the light's color remains unchanged across the three available steps.",
+    "source_text": "Unlike an incandescent lamp controlled by a dimmer, each of the filaments operates at full voltage, so the color of the light does not change between the three steps of light available.",
+    "unique_id": "boolq-3305a680a5cd4f10-e03",
+    "usable": true
+  },
+  "boolq-3b899327d385f980-e01": {
+    "para1": "Canada-United States relations denotes the bilateral ties between Canada and the United States of America.",
+    "para2": "Canada-United States relations denotes the bilateral ties between Canada and the United States of America.",
+    "source_text": "Canada--United States relations refers to the bilateral relations between Canada and the United States of America.",
+    "unique_id": "boolq-3b899327d385f980-e01",
+    "usable": true
+  },
+  "boolq-3b899327d385f980-e02": {
+    "para1": "Historically, relations between Canada and the United States of America have been extensive, owing to a shared border and ever-growing close cultural, economic ties and similarities.",
+    "para2": "Historically, relations between Canada and the United States of America have been extensive, owing to a shared border and ever-growing close cultural, economic ties and similarities.",
+    "source_text": "Relations between Canada and the United States of America historically have been extensive, given a shared border and ever-increasing close cultural, economical ties and similarities.",
+    "unique_id": "boolq-3b899327d385f980-e02",
+    "usable": true
+  },
+  "boolq-3b899327d385f980-e03": {
+    "para1": "The common historical and cultural heritage has produced one of the world's most stable and mutually beneficial international relationships.",
+    "para2": "The common historical and cultural heritage has produced one of the world's most stable and mutually beneficial international relationships.",
+    "source_text": "The shared historical and cultural heritage has resulted in one of the most stable and mutually beneficial international relationships in the world.",
+    "unique_id": "boolq-3b899327d385f980-e03",
+    "usable": true
+  },
+  "boolq-3c6a5d8295e1597c-e01": {
+    "para1": "On July 1, 2009, Bell Mobility purchased the 50% of Virgin Mobile Canada it had not previously owned for $142 million and signed a long-term agreement to utilize the Virgin brand.",
+    "para2": "On July 1, 2009, Bell Mobility purchased the 50% of Virgin Mobile Canada it had not previously owned for $142 million and signed a long-term agreement to utilize the Virgin brand.",
+    "source_text": "On July 1, 2009, Bell Mobility acquired the 50% of Virgin Mobile Canada that it previously did not own for $142 million and entered into a long-term agreement to use the Virgin brand.",
+    "unique_id": "boolq-3c6a5d8295e1597c-e01",
+    "usable": true
+  },
+  "boolq-3c6a5d8295e1597c-e02": {
+    "para1": "Subsequently, Bell significantly cut its investments in Solo Mobile to allocate resources toward developing and enhancing its new Virgin brand.",
+    "para2": "Subsequently, Bell significantly cut its investments in Solo Mobile to allocate resources toward developing and enhancing its new Virgin brand.",
+    "source_text": "Following this, Bell greatly reduced its investments into Solo Mobile in order to invest in and improve its new Virgin brand.",
+    "unique_id": "boolq-3c6a5d8295e1597c-e02",
+    "usable": true
+  },
+  "boolq-3c6a5d8295e1597c-e03": {
+    "para1": "On December 21, 2009, Robert Blumenthal, then-president of Virgin Mobile Canada, pledged ``a very different Virgin Mobile'' featuring ``higher-value devices and services'' for 2010.",
+    "para2": "On December 21, 2009, Robert Blumenthal, then-president of Virgin Mobile Canada, pledged ``a very different Virgin Mobile'' featuring ``higher-value devices and services'' for 2010.",
+    "source_text": "On December 21, 2009, Virgin Mobile Canada's then-president Robert Blumenthal promised ``a very different Virgin Mobile'' with ``higher-value devices and services'' in 2010.",
+    "unique_id": "boolq-3c6a5d8295e1597c-e03",
+    "usable": true
+  },
+  "boolq-3ebd160d95687834-e01": {
+    "para1": "The axial skeleton comprises the bones of the head and trunk that make up the vertebrate skeleton.",
+    "para2": "The axial skeleton comprises the bones of the head and trunk that make up the vertebrate skeleton.",
+    "source_text": "The axial skeleton is the part of the skeleton that consists of the bones of the head and trunk of a vertebrate.",
+    "unique_id": "boolq-3ebd160d95687834-e01",
+    "usable": true
+  },
+  "boolq-3ebd160d95687834-e02": {
+    "para1": "The human skeleton comprises 80 bones organized into six sections: the skull bones, the middle ear ossicles, the hyoid bone, the rib cage, the sternum, and the vertebral column.",
+    "para2": "The human skeleton comprises 80 bones organized into six sections: the skull bones, the middle ear ossicles, the hyoid bone, the rib cage, the sternum, and the vertebral column.",
+    "source_text": "In the human skeleton, it consists of 80 bones and is composed of six parts; the skull bones, the ossicles of the middle ear, the hyoid bone, the rib cage, sternum and the vertebral column.",
+    "unique_id": "boolq-3ebd160d95687834-e02",
+    "usable": true
+  },
+  "boolq-3ebd160d95687834-e03": {
+    "para1": "The complete skeleton is formed by the axial skeleton and the appendicular skeleton.",
+    "para2": "The complete skeleton is formed by the axial skeleton and the appendicular skeleton.",
+    "source_text": "The axial skeleton together with the appendicular skeleton form the complete skeleton.",
+    "unique_id": "boolq-3ebd160d95687834-e03",
+    "usable": true
+  },
+  "boolq-3ef18562a61ef607-e01": {
+    "para1": "Outside the tropics, the highest elevation is reached at the summer solstice and the lowest at the winter solstice.",
+    "para2": "Outside the tropics, the highest elevation is reached at the summer solstice and the lowest at the winter solstice.",
+    "source_text": "Outside of the tropics, the maximum elevation occurs at the summer solstice and the minimum at the winter solstice.",
+    "unique_id": "boolq-3ef18562a61ef607-e01",
+    "usable": true
+  },
+  "boolq-3ef18562a61ef607-e02": {
+    "para1": "The Sun's path, known as the ecliptic, moves north and south across the northern and southern hemispheres.",
+    "para2": "The Sun's path, known as the ecliptic, moves north and south across the northern and southern hemispheres.",
+    "source_text": "The path of the Sun, or ecliptic, sweeps north and south between the northern and southern hemispheres.",
+    "unique_id": "boolq-3ef18562a61ef607-e02",
+    "usable": true
+  },
+  "boolq-3ef18562a61ef607-e03": {
+    "para1": "Around the summer solstice, days are longer, while around the winter solstice, they are shorter.",
+    "para2": "Around the summer solstice, days are longer, while around the winter solstice, they are shorter.",
+    "source_text": "The days are longer around the summer solstice and shorter around the winter solstice.",
+    "unique_id": "boolq-3ef18562a61ef607-e03",
+    "usable": true
+  },
+  "boolq-4052daff128ea4ff-e01": {
+    "para1": "By law, the flag must be displayed on or near the main administration building of every state institution during each state or national holiday and on any special occasion of historical significance, permanently above both doors of the Texas State Capitol, alone at the north door, and under the U.S.",
+    "para2": "By law, the flag must be displayed on or near the main administration building of every state institution during each state or national holiday and on any special occasion of historical significance, permanently above both doors of the Texas State Capitol, alone at the north door, and under the U.S.",
+    "source_text": "The flag is required by law to be displayed on or near the main administration building of each state institution during each state or national holiday, and on any special occasion of historical significance, permanently above both doors of the Texas State Capitol, alone at the north door, and under the U.S.",
+    "unique_id": "boolq-4052daff128ea4ff-e01",
+    "usable": true
+  },
+  "boolq-4052daff128ea4ff-e02": {
+    "para1": "flag at the south door, except when flags are at half mast or the POW/MIA flag is flown with the U.S.",
+    "para2": "flag at the south door, except when flags are at half mast or the POW/MIA flag is flown with the U.S.",
+    "source_text": "flag at the south door, with the exception being if the flags are at half mast or if the POW/MIA flag is being flown with the U.S.",
+    "unique_id": "boolq-4052daff128ea4ff-e02",
+    "usable": true
+  },
+  "boolq-4052daff128ea4ff-e03": {
+    "para1": "flag; in which event the Texas flag shall fly only at the North Door.",
+    "para2": "flag; in which event the Texas flag shall fly only at the North Door.",
+    "source_text": "flag; in which event the Texas flag shall only fly at the North Door.",
+    "unique_id": "boolq-4052daff128ea4ff-e03",
+    "usable": true
+  },
+  "boolq-418ad843a95071a0-e01": {
+    "para1": "A 3-way lamp, also called a tri-light, is a lamp that employs a 3-way light bulb to generate three levels of light in a low-medium-high arrangement.",
+    "para2": "A 3-way lamp, also called a tri-light, is a lamp that employs a 3-way light bulb to generate three levels of light in a low-medium-high arrangement.",
+    "source_text": "A 3-way lamp, also known as a tri-light, is a lamp that uses a 3-way light bulb to produce three levels of light in a low-medium-high configuration.",
+    "unique_id": "boolq-418ad843a95071a0-e01",
+    "usable": true
+  },
+  "boolq-418ad843a95071a0-e02": {
+    "para1": "A 3-way lamp needs a 3-way bulb and socket, along with a 3-way switch.",
+    "para2": "A 3-way lamp needs a 3-way bulb and socket, along with a 3-way switch.",
+    "source_text": "A 3-way lamp requires a 3-way bulb and socket, and a 3-way switch.",
+    "unique_id": "boolq-418ad843a95071a0-e02",
+    "usable": true
+  },
+  "boolq-418ad843a95071a0-e03": {
+    "para1": "Unlike an incandescent lamp controlled by a dimmer, each filament operates at full voltage, so the light's color remains unchanged across the three available steps.",
+    "para2": "Unlike an incandescent lamp controlled by a dimmer, each filament operates at full voltage, so the light's color remains unchanged across the three available steps.",
+    "source_text": "Unlike an incandescent lamp controlled by a dimmer, each of the filaments operates at full voltage, so the color of the light does not change between the three steps of light available.",
+    "unique_id": "boolq-418ad843a95071a0-e03",
+    "usable": true
+  },
+  "boolq-42892e7dd67c11fc-e01": {
+    "para1": "The series was initially ordered for 13 episodes on March 13, 2014, but was subsequently expanded to 20 episodes.",
+    "para2": "The series was initially ordered for 13 episodes on March 13, 2014, but was subsequently expanded to 20 episodes.",
+    "source_text": "The series was originally picked up for 13 episodes on March 13, 2014, but was later increased to 20 episodes.",
+    "unique_id": "boolq-42892e7dd67c11fc-e01",
+    "usable": true
+  },
+  "boolq-42892e7dd67c11fc-e02": {
+    "para1": "On November 18, 2014, the series received a renewal for its second season.",
+    "para2": "On November 18, 2014, the series received a renewal for its second season.",
+    "source_text": "On November 18, 2014, the series was renewed for a second season.",
+    "unique_id": "boolq-42892e7dd67c11fc-e02",
+    "usable": true
+  },
+  "boolq-42892e7dd67c11fc-e03": {
+    "para1": "The second season debuted on May 23, 2015.",
+    "para2": "The second season debuted on May 23, 2015.",
+    "source_text": "The second season premiered on May 23, 2015.",
+    "unique_id": "boolq-42892e7dd67c11fc-e03",
+    "usable": true
+  },
+  "boolq-42c77ce2bf73cd2b-e01": {
+    "para1": "This list includes the 50 accounts with the highest follower counts on the social photo-sharing platform Instagram.",
+    "para2": "This list includes the 50 accounts with the highest follower counts on the social photo-sharing platform Instagram.",
+    "source_text": "This list contains the top 50 accounts with the most followers on the social photo-sharing platform Instagram.",
+    "unique_id": "boolq-42c77ce2bf73cd2b-e01",
+    "usable": true
+  },
+  "boolq-42c77ce2bf73cd2b-e02": {
+    "para1": "By October 2018, Instagram's official account was the most followed, boasting more than 260 million followers.",
+    "para2": "By October 2018, Instagram's official account was the most followed, boasting more than 260 million followers.",
+    "source_text": "As of October 2018, the most followed user is Instagram's own account, with over 260 million followers.",
+    "unique_id": "boolq-42c77ce2bf73cd2b-e02",
+    "usable": true
+  },
+  "boolq-42c77ce2bf73cd2b-e03": {
+    "para1": "Cristiano Ronaldo holds the title of the most followed individual, boasting more than 144 million followers.",
+    "para2": "Cristiano Ronaldo holds the title of the most followed individual, boasting more than 144 million followers.",
+    "source_text": "Cristiano Ronaldo is the most followed individual, with over 144 million followers.",
+    "unique_id": "boolq-42c77ce2bf73cd2b-e03",
+    "usable": true
+  },
+  "boolq-43277404ffc4499c-e01": {
+    "para1": "The 2018--19 television season began with the premiere of the ninth season of the CBS police procedural drama Hawaii Five-0 on September 28, 2018.",
+    "para2": "The 2018--19 television season began with the premiere of the ninth season of the CBS police procedural drama Hawaii Five-0 on September 28, 2018.",
+    "source_text": "The ninth season of the CBS police procedural drama series Hawaii Five-0 premiered on September 28, 2018 for the 2018--19 television season.",
+    "unique_id": "boolq-43277404ffc4499c-e01",
+    "usable": true
+  },
+  "boolq-43277404ffc4499c-e02": {
+    "para1": "CBS renewed the series for a ninth season in April 2018.",
+    "para2": "CBS renewed the series for a ninth season in April 2018.",
+    "source_text": "CBS renewed the series for a ninth season in April 2018.",
+    "unique_id": "boolq-43277404ffc4499c-e02",
+    "usable": true
+  },
+  "boolq-43277404ffc4499c-e03": {
+    "para1": "The season is anticipated to include 22 episodes.",
+    "para2": "The season is anticipated to include 22 episodes.",
+    "source_text": "The season is expected to contain 22 episodes.",
+    "unique_id": "boolq-43277404ffc4499c-e03",
+    "usable": true
+  },
+  "boolq-4985b59dc9e875ba-e01": {
+    "para1": "This list includes PlayStation games compatible with all PlayStation 3 models, as well as PlayStation 2 games that work with specific earlier PlayStation 3 models.",
+    "para2": "This list includes PlayStation games compatible with all PlayStation 3 models, as well as PlayStation 2 games that work with specific earlier PlayStation 3 models.",
+    "source_text": "This is a list of PlayStation games compatible with all models of PlayStation 3, along with PlayStation 2 games compatible with certain earlier models of PlayStation 3.",
+    "unique_id": "boolq-4985b59dc9e875ba-e01",
+    "usable": true
+  },
+  "boolq-4985b59dc9e875ba-e02": {
+    "para1": "Initial PlayStation 3 models released in North America, Japan, and Asia included both the PlayStation 2's CPU and GPU, whereas later models featured only the GPU, and full PlayStation 2 backwards compatibility with physical discs was eliminated in subsequent versions.",
+    "para2": "Initial PlayStation 3 models released in North America, Japan, and Asia included both the PlayStation 2's CPU and GPU, whereas later models featured only the GPU, and full PlayStation 2 backwards compatibility with physical discs was eliminated in subsequent versions.",
+    "source_text": "Initial PlayStation 3 models released in North America, Japan, and Asia contained both the PlayStation 2's CPU and GPU, while subsequent models contained only the GPU, and the PlayStation 2 backwards compatibility with physical discs was removed entirely in later models.",
+    "unique_id": "boolq-4985b59dc9e875ba-e02",
+    "usable": true
+  },
+  "boolq-4985b59dc9e875ba-e03": {
+    "para1": "However, every PlayStation 3 model is capable of playing certain PlayStation 1 games using physical discs.",
+    "para2": "However, every PlayStation 3 model is capable of playing certain PlayStation 1 games using physical discs.",
+    "source_text": "However, all PlayStation 3 models can play some PlayStation 1 games via physical discs.",
+    "unique_id": "boolq-4985b59dc9e875ba-e03",
+    "usable": true
+  },
+  "boolq-5043db318dedef39-e01": {
+    "para1": "Alex Cross's Trial is the 15th book in James Patterson's Alex Cross series.",
+    "para2": "Alex Cross's Trial is the 15th book in James Patterson's Alex Cross series.",
+    "source_text": "Alex Cross's Trial is the 15th novel in James Patterson's Alex Cross series.",
+    "unique_id": "boolq-5043db318dedef39-e01",
+    "usable": true
+  },
+  "boolq-5043db318dedef39-e02": {
+    "para1": "It follows Cross Country in the series and precedes his novel I, Alex Cross.",
+    "para2": "It follows Cross Country in the series and precedes his novel I, Alex Cross.",
+    "source_text": "It follows Cross Country in the series, and comes before his novel I, Alex Cross.",
+    "unique_id": "boolq-5043db318dedef39-e02",
+    "usable": true
+  },
+  "boolq-5043db318dedef39-e03": {
+    "para1": "Written by Patterson and Richard DiLallo, the book's premise is that it was authored by Alex Cross.",
+    "para2": "Written by Patterson and Richard DiLallo, the book's premise is that it was authored by Alex Cross.",
+    "source_text": "It is written by Patterson and Richard DiLallo, and its premise is that it is a book written by Alex Cross.",
+    "unique_id": "boolq-5043db318dedef39-e03",
+    "usable": true
+  },
+  "boolq-5a074438f3da9355-e01": {
+    "para1": "Fractional oxidation states are frequently employed to depict the mean oxidation state of multiple atoms of the same element within a structure.",
+    "para2": "Fractional oxidation states are frequently employed to depict the mean oxidation state of multiple atoms of the same element within a structure.",
+    "source_text": "Fractional oxidation states are often used to represent the average oxidation state of several atoms of the same element in a structure.",
+    "unique_id": "boolq-5a074438f3da9355-e01",
+    "usable": true
+  },
+  "boolq-5a074438f3da9355-e02": {
+    "para1": "For instance, magnetite's formula is Fe3O4, indicating an average iron oxidation state of +8/3.",
+    "para2": "For instance, magnetite's formula is Fe3O4, indicating an average iron oxidation state of +8/3.",
+    "source_text": "For example, the formula of magnetite is Fe O , implying an average oxidation state for iron of +8/3.",
+    "unique_id": "boolq-5a074438f3da9355-e02",
+    "usable": true
+  },
+  "boolq-5a074438f3da9355-e03": {
+    "para1": "However, this average value may not be representative if the atoms are not equivalent.",
+    "para2": "However, this average value may not be representative if the atoms are not equivalent.",
+    "source_text": "However, this average value may not be representative if the atoms are not equivalent.",
+    "unique_id": "boolq-5a074438f3da9355-e03",
+    "usable": true
+  },
+  "boolq-5b5e187757542560-e01": {
+    "para1": "The MSE represents the second moment (about the origin) of the error, thereby including both the estimator's variance and its bias.",
+    "para2": "The MSE represents the second moment (about the origin) of the error, thereby including both the estimator's variance and its bias.",
+    "source_text": "The MSE is the second moment (about the origin) of the error, and thus incorporates both the variance of the estimator and its bias.",
+    "unique_id": "boolq-5b5e187757542560-e01",
+    "usable": true
+  },
+  "boolq-5b5e187757542560-e02": {
+    "para1": "For an unbiased estimator, the MSE equals the variance of the estimator.",
+    "para2": "For an unbiased estimator, the MSE equals the variance of the estimator.",
+    "source_text": "For an unbiased estimator, the MSE is the variance of the estimator.",
+    "unique_id": "boolq-5b5e187757542560-e02",
+    "usable": true
+  },
+  "boolq-5b5e187757542560-e03": {
+    "para1": "Similar to variance, MSE shares the same units of measurement as the square of the estimated quantity.",
+    "para2": "Similar to variance, MSE shares the same units of measurement as the square of the estimated quantity.",
+    "source_text": "Like the variance, MSE has the same units of measurement as the square of the quantity being estimated.",
+    "unique_id": "boolq-5b5e187757542560-e03",
+    "usable": true
+  },
+  "boolq-608c5a6430225011-e01": {
+    "para1": "To prevent contamination caused by back pressure, numerous health regulatory frameworks mandate an air gap or mechanical backflow prevention device situated between the mains water delivery point and local storage or usage.",
+    "para2": "To prevent contamination caused by back pressure, numerous health regulatory frameworks mandate an air gap or mechanical backflow prevention device situated between the mains water delivery point and local storage or usage.",
+    "source_text": "To prevent contamination due to back pressure, many health regulatory regimes require an air gap or mechanical backflow prevention assembly between the delivery point of mains water and local storage or use.",
+    "unique_id": "boolq-608c5a6430225011-e01",
+    "usable": true
+  },
+  "boolq-608c5a6430225011-e02": {
+    "para1": "Where submerged mains inflow is allowed, a backflow prevention assembly must be installed to safeguard the potable water system against contamination risks.",
+    "para2": "Where submerged mains inflow is allowed, a backflow prevention assembly must be installed to safeguard the potable water system against contamination risks.",
+    "source_text": "Where submerged mains inflow is permitted, a backflow prevention assembly is required, which protects the potable water system from contamination hazards.",
+    "unique_id": "boolq-608c5a6430225011-e02",
+    "usable": true
+  },
+  "boolq-608c5a6430225011-e03": {
+    "para1": "A check valve represents a fundamental type of backflow prevention, yet frequently more intricate systems are necessary since check valves are deemed less dependable than advanced alternatives featuring redundancies and reduced-pressure zones.",
+    "para2": "A check valve represents a fundamental type of backflow prevention, yet frequently more intricate systems are necessary since check valves are deemed less dependable than advanced alternatives featuring redundancies and reduced-pressure zones.",
+    "source_text": "A check valve is a basic form of backflow prevention, but often more complex devices are required because check valves are not considered to be reliable, when compared to more sophisticated devices with redundancies and reduced-pressure zones.",
+    "unique_id": "boolq-608c5a6430225011-e03",
+    "usable": true
+  },
+  "boolq-635b0cb20876c4ff-e01": {
+    "para1": "Many companies based in the United States aim to maintain a low share price (also known as stock price), partly relying on \"round lot\" trading (multiples of 100 shares).",
+    "para2": "Many companies based in the United States aim to maintain a low share price (also known as stock price), partly relying on \"round lot\" trading (multiples of 100 shares).",
+    "source_text": "Many U.S.-based companies seek to keep their share price (also called stock price) low, partly based on ``round lot'' trading (multiples of 100 shares).",
+    "unique_id": "boolq-635b0cb20876c4ff-e01",
+    "usable": true
+  },
+  "boolq-635b0cb20876c4ff-e02": {
+    "para1": "A corporation can adjust its stock price through a stock split, replacing a quantity of shares at one price with a different number of shares at an adjusted price where the value of shares multiplied by price remains equivalent.",
+    "para2": "A corporation can adjust its stock price through a stock split, replacing a quantity of shares at one price with a different number of shares at an adjusted price where the value of shares multiplied by price remains equivalent.",
+    "source_text": "A corporation can adjust its stock price by a stock split, substituting a quantity of shares at one price for a different number of shares at an adjusted price where the value of shares x price remains equivalent.",
+    "unique_id": "boolq-635b0cb20876c4ff-e02",
+    "usable": true
+  },
+  "boolq-635b0cb20876c4ff-e03": {
+    "para1": "(For instance, 500 shares at $32 could turn into 1000 shares at $16.) Numerous large companies prefer to maintain their stock price within the $25 to $75 range.",
+    "para2": "(For instance, 500 shares at $32 could turn into 1000 shares at $16.) Numerous large companies prefer to maintain their stock price within the $25 to $75 range.",
+    "source_text": "(For example, 500 shares at $32 may become 1000 shares at $16.) Many major firms like to keep their price in the $25 to $75 price range.",
+    "unique_id": "boolq-635b0cb20876c4ff-e03",
+    "usable": true
+  },
+  "boolq-638794d037e77ecc-e01": {
+    "para1": "The Sole Survivor gets a cash prize of $1,000,000 before taxes and occasionally also receives a car supplied by the show's sponsor.",
+    "para2": "The Sole Survivor gets a cash prize of $1,000,000 before taxes and occasionally also receives a car supplied by the show's sponsor.",
+    "source_text": "The Sole Survivor receives a cash prize of $1,000,000 prior to taxes and sometimes also receives a car provided by the show's sponsor.",
+    "unique_id": "boolq-638794d037e77ecc-e01",
+    "usable": true
+  },
+  "boolq-638794d037e77ecc-e02": {
+    "para1": "Every participant on Survivor earns a prize based on their duration in the game.",
+    "para2": "Every participant on Survivor earns a prize based on their duration in the game.",
+    "source_text": "Every player receives a prize for participating on Survivor depending on how long he or she lasts in the game.",
+    "unique_id": "boolq-638794d037e77ecc-e02",
+    "usable": true
+  },
+  "boolq-638794d037e77ecc-e03": {
+    "para1": "In most seasons, the runner-up receives $100,000, and third place wins $85,000.",
+    "para2": "In most seasons, the runner-up receives $100,000, and third place wins $85,000.",
+    "source_text": "In most seasons, the runner-up receives $100,000, and third place wins $85,000.",
+    "unique_id": "boolq-638794d037e77ecc-e03",
+    "usable": true
+  },
+  "boolq-638c8a838e067193-e01": {
+    "para1": "In the Army, Air Force, and Marine Corps, all sergeant ranks are classified as NCOs, along with corporals in the Army and Marine Corps.",
+    "para2": "In the Army, Air Force, and Marine Corps, all sergeant ranks are classified as NCOs, along with corporals in the Army and Marine Corps.",
+    "source_text": "In the Army, Air Force, and Marine Corps, all ranks of sergeant are termed NCOs, as are corporals in the Army and Marine Corps.",
+    "unique_id": "boolq-638c8a838e067193-e01",
+    "usable": true
+  },
+  "boolq-638c8a838e067193-e02": {
+    "para1": "A Marine Corps lance corporal (E-3) is not an NCO, but rather junior enlisted.",
+    "para2": "A Marine Corps lance corporal (E-3) is not an NCO, but rather junior enlisted.",
+    "source_text": "A Marine Corps lance corporal (E-3) is not an NCO, but rather junior enlisted.",
+    "unique_id": "boolq-638c8a838e067193-e02",
+    "usable": true
+  },
+  "boolq-638c8a838e067193-e03": {
+    "para1": "The rank of corporal (E-4) in the Army is a junior NCO and must be accorded the same respect as any other NCO.",
+    "para2": "The rank of corporal (E-4) in the Army is a junior NCO and must be accorded the same respect as any other NCO.",
+    "source_text": "The rank of corporal (E-4) in the Army is a junior NCO, and is to be shown the same respect as any other NCO.",
+    "unique_id": "boolq-638c8a838e067193-e03",
+    "usable": true
+  },
+  "boolq-63aa2a2140a6b65d-e01": {
+    "para1": "Effective July 4, 2010, beer sold in microbreweries may be sold on Sundays pursuant to Senate Bill 75.",
+    "para2": "Effective July 4, 2010, beer sold in microbreweries may be sold on Sundays pursuant to Senate Bill 75.",
+    "source_text": "Effective July 4, 2010, beer sold in microbreweries may be sold on Sundays pursuant to Senate Bill 75.",
+    "unique_id": "boolq-63aa2a2140a6b65d-e01",
+    "usable": true
+  },
+  "boolq-63aa2a2140a6b65d-e02": {
+    "para1": "Sales must occur at the location where brewing takes place.",
+    "para2": "Sales must occur at the location where brewing takes place.",
+    "source_text": "The sales must take place where the brewing is done.",
+    "unique_id": "boolq-63aa2a2140a6b65d-e02",
+    "usable": true
+  },
+  "boolq-63aa2a2140a6b65d-e03": {
+    "para1": "However, off-site sales can occur at trade shows and comparable back door events.",
+    "para2": "However, off-site sales can occur at trade shows and comparable back door events.",
+    "source_text": "However, off-site sales may take place in trade shows and similar back door events.",
+    "unique_id": "boolq-63aa2a2140a6b65d-e03",
+    "usable": true
+  },
+  "boolq-6435372f6a94bc62-e01": {
+    "para1": "Ultimate tensile strength (UTS), frequently abbreviated as tensile strength (TS), ultimate strength, or Ftu in equations, represents a material's or structure's ability to resist loads that cause elongation, contrasting with compressive strength, which resists loads that reduce size.",
+    "para2": "Ultimate tensile strength (UTS), frequently abbreviated as tensile strength (TS), ultimate strength, or Ftu in equations, represents a material's or structure's ability to resist loads that cause elongation, contrasting with compressive strength, which resists loads that reduce size.",
+    "source_text": "Ultimate tensile strength (UTS), often shortened to tensile strength (TS), ultimate strength, or Ftu within equations, is the capacity of a material or structure to withstand loads tending to elongate, as opposed to compressive strength, which withstands loads tending to reduce size.",
+    "unique_id": "boolq-6435372f6a94bc62-e01",
+    "usable": true
+  },
+  "boolq-6435372f6a94bc62-e02": {
+    "para1": "In other words, tensile strength opposes tension (being pulled apart), while compressive strength opposes compression (being pushed together).",
+    "para2": "In other words, tensile strength opposes tension (being pulled apart), while compressive strength opposes compression (being pushed together).",
+    "source_text": "In other words, tensile strength resists tension (being pulled apart), whereas compressive strength resists compression (being pushed together).",
+    "unique_id": "boolq-6435372f6a94bc62-e02",
+    "usable": true
+  },
+  "boolq-6435372f6a94bc62-e03": {
+    "para1": "Ultimate tensile strength is determined by the highest stress a material can endure while being stretched or pulled until it breaks.",
+    "para2": "Ultimate tensile strength is determined by the highest stress a material can endure while being stretched or pulled until it breaks.",
+    "source_text": "Ultimate tensile strength is measured by the maximum stress that a material can withstand while being stretched or pulled before breaking.",
+    "unique_id": "boolq-6435372f6a94bc62-e03",
+    "usable": true
+  },
+  "boolq-647668ec79be1921-e01": {
+    "para1": "Powdered sugar, known also as confectioners' sugar, icing sugar, and icing cake, is a finely ground sugar made by milling granulated sugar into a powder.",
+    "para2": "Powdered sugar, known also as confectioners' sugar, icing sugar, and icing cake, is a finely ground sugar made by milling granulated sugar into a powder.",
+    "source_text": "Powdered sugar, also called confectioners' sugar, icing sugar, and icing cake, is a finely ground sugar produced by milling granulated sugar into a powdered state.",
+    "unique_id": "boolq-647668ec79be1921-e01",
+    "usable": true
+  },
+  "boolq-647668ec79be1921-e02": {
+    "para1": "It typically includes a small quantity of anti-caking agent to avoid clumping and enhance flow.",
+    "para2": "It typically includes a small quantity of anti-caking agent to avoid clumping and enhance flow.",
+    "source_text": "It usually contains a small amount of anti-caking agent to prevent clumping and improve flow.",
+    "unique_id": "boolq-647668ec79be1921-e02",
+    "usable": true
+  },
+  "boolq-647668ec79be1921-e03": {
+    "para1": "Although powdered sugar is most frequently manufactured in a factory, it can also be produced by processing ordinary granulated sugar in a coffee grinder or by crushing it by hand using a mortar and pestle.",
+    "para2": "Although powdered sugar is most frequently manufactured in a factory, it can also be produced by processing ordinary granulated sugar in a coffee grinder or by crushing it by hand using a mortar and pestle.",
+    "source_text": "Although most often produced in a factory, powdered sugar can also be made by processing ordinary granulated sugar in a coffee grinder, or by crushing it by hand in a mortar and pestle.",
+    "unique_id": "boolq-647668ec79be1921-e03",
+    "usable": true
+  },
+  "boolq-64cd9495a04ab3f4-e01": {
+    "para1": "The United States has had access to the following military bases in Pakistan, primarily for logistics, relief operations, or as launch sites for drone missions.",
+    "para2": "The United States has had access to the following military bases in Pakistan, primarily for logistics, relief operations, or as launch sites for drone missions.",
+    "source_text": "The following military bases in Pakistan have been accessible to the United States, mainly for logistics, relief efforts or as launching bases for drone operations.",
+    "unique_id": "boolq-64cd9495a04ab3f4-e01",
+    "usable": true
+  },
+  "boolq-64cd9495a04ab3f4-e02": {
+    "para1": "Pakistan falls within the United States Central Command (USCENTCOM) area of operations.",
+    "para2": "Pakistan falls within the United States Central Command (USCENTCOM) area of operations.",
+    "source_text": "Pakistan comes under the United States Central Command (USCENTCOM) theatre of operations.",
+    "unique_id": "boolq-64cd9495a04ab3f4-e02",
+    "usable": true
+  },
+  "boolq-64cd9495a04ab3f4-e03": {
+    "para1": "The Afghanistan-Pakistan Center of Excellence is a division of USCENTCOM, concentrating on the analysis of operations in Pakistan and Afghanistan (previously referred to as the AfPak theatre).",
+    "para2": "The Afghanistan-Pakistan Center of Excellence is a division of USCENTCOM, concentrating on the analysis of operations in Pakistan and Afghanistan (previously referred to as the AfPak theatre).",
+    "source_text": "The Afghanistan-Pakistan Center of Excellence is a division of USCENTCOM, focusing on analysis of operations in Pakistan and Afghanistan (formerly known as the AfPak theatre).",
+    "unique_id": "boolq-64cd9495a04ab3f4-e03",
+    "usable": true
+  },
+  "boolq-64e1ef306c9f0020-e01": {
+    "para1": "In America, it generally includes, at a minimum, ketchup or chili sauce mixed with prepared horseradish.",
+    "para2": "In America, it generally includes, at a minimum, ketchup or chili sauce mixed with prepared horseradish.",
+    "source_text": "In America it generally consists of, at a minimum, ketchup or chili sauce mixed with prepared horseradish.",
+    "unique_id": "boolq-64e1ef306c9f0020-e01",
+    "usable": true
+  },
+  "boolq-64e1ef306c9f0020-e02": {
+    "para1": "Common additives include lemon juice, Worcestershire sauce, and Tabasco sauce, which are frequently used together.",
+    "para2": "Common additives include lemon juice, Worcestershire sauce, and Tabasco sauce, which are frequently used together.",
+    "source_text": "Lemon juice, Worcestershire sauce and Tabasco sauce are common additives, often all three.",
+    "unique_id": "boolq-64e1ef306c9f0020-e02",
+    "usable": true
+  },
+  "boolq-64e1ef306c9f0020-e03": {
+    "para1": "Some restaurants substitute ketchup with chili sauce, a spicier tomato-based condiment.",
+    "para2": "Some restaurants substitute ketchup with chili sauce, a spicier tomato-based condiment.",
+    "source_text": "Some restaurants use chili sauce, a spicier tomato-based sauce in place of the ketchup.",
+    "unique_id": "boolq-64e1ef306c9f0020-e03",
+    "usable": true
+  },
+  "boolq-653c007b225b5fe8-e01": {
+    "para1": "The Imperial Japanese Navy Air Service launched a surprise military strike against the United States naval base at Pearl Harbor, Hawaii Territory, on the morning of December 7, 1941.",
+    "para2": "The Imperial Japanese Navy Air Service launched a surprise military strike against the United States naval base at Pearl Harbor, Hawaii Territory, on the morning of December 7, 1941.",
+    "source_text": "The attack on Pearl Harbor was a surprise military strike by the Imperial Japanese Navy Air Service against the United States naval base at Pearl Harbor, Hawaii Territory, on the morning of December 7, 1941.",
+    "unique_id": "boolq-653c007b225b5fe8-e01",
+    "usable": true
+  },
+  "boolq-653c007b225b5fe8-e02": {
+    "para1": "The attack, also referred to as the Battle of Pearl Harbor, resulted in the United States joining World War II.",
+    "para2": "The attack, also referred to as the Battle of Pearl Harbor, resulted in the United States joining World War II.",
+    "source_text": "The attack, also known as the Battle of Pearl Harbor, led to the United States' entry into World War II.",
+    "unique_id": "boolq-653c007b225b5fe8-e02",
+    "usable": true
+  },
+  "boolq-653c007b225b5fe8-e03": {
+    "para1": "During its planning, the Japanese military leadership designated the attack as the Hawaii Operation, Operation AI, and Operation Z.",
+    "para2": "During its planning, the Japanese military leadership designated the attack as the Hawaii Operation, Operation AI, and Operation Z.",
+    "source_text": "The Japanese military leadership referred to the attack as the Hawaii Operation and Operation AI, and as Operation Z during its planning.",
+    "unique_id": "boolq-653c007b225b5fe8-e03",
+    "usable": true
+  },
+  "boolq-66c27b5bd77ad30c-e01": {
+    "para1": "Currently, to purchase a handgun from a licensed dealer or a private individual, residents of North Carolina must either A) acquire and show a pistol purchase permit issued by the sheriff of their county of residence, or B) obtain and present a North Carolina Concealed Handgun Permit.",
+    "para2": "Currently, to purchase a handgun from a licensed dealer or a private individual, residents of North Carolina must either A) acquire and show a pistol purchase permit issued by the sheriff of their county of residence, or B) obtain and present a North Carolina Concealed Handgun Permit.",
+    "source_text": "Currently, in order to buy a handgun, whether from a licensed dealer or a private individual, North Carolinians are required to either A) obtain and present a pistol purchase permit from the sheriff of the county in which they reside, or B) obtain and present a North Carolina Concealed Handgun Permit.",
+    "unique_id": "boolq-66c27b5bd77ad30c-e01",
+    "usable": true
+  },
+  "boolq-66c27b5bd77ad30c-e02": {
+    "para1": "Before granting a purchase permit, the sheriff's office will require the applicant to undergo a background check.",
+    "para2": "Before granting a purchase permit, the sheriff's office will require the applicant to undergo a background check.",
+    "source_text": "Before issuing a purchase permit, the sheriff's office will subject the applicant to a background check.",
+    "unique_id": "boolq-66c27b5bd77ad30c-e02",
+    "usable": true
+  },
+  "boolq-66c27b5bd77ad30c-e03": {
+    "para1": "Concealed Handgun Permits require satisfactory completion of an 8-hour handgun safety course, a background check, and the completion of the CHP application process.",
+    "para2": "Concealed Handgun Permits require satisfactory completion of an 8-hour handgun safety course, a background check, and the completion of the CHP application process.",
+    "source_text": "Concealed Handgun Permits require satisfactory completion of an 8-hour handgun safety course, background check, and completion of the CHP application process.",
+    "unique_id": "boolq-66c27b5bd77ad30c-e03",
+    "usable": true
+  },
+  "boolq-66f4a7b6a749a4ca-e01": {
+    "para1": "Jurassic World: Fallen Kingdom is a 2018 American science fiction adventure film and the sequel to Jurassic World (2015).",
+    "para2": "Jurassic World: Fallen Kingdom is a 2018 American science fiction adventure film and the sequel to Jurassic World (2015).",
+    "source_text": "Jurassic World: Fallen Kingdom is a 2018 American science fiction adventure film and the sequel to Jurassic World (2015).",
+    "unique_id": "boolq-66f4a7b6a749a4ca-e01",
+    "usable": true
+  },
+  "boolq-66f4a7b6a749a4ca-e02": {
+    "para1": "Bayona is the fifth film in the Jurassic Park series and the second in the planned Jurassic World trilogy.",
+    "para2": "Bayona is the fifth film in the Jurassic Park series and the second in the planned Jurassic World trilogy.",
+    "source_text": "Bayona, it is the fifth installment of the Jurassic Park film series, as well as the second installment of a planned Jurassic World trilogy.",
+    "unique_id": "boolq-66f4a7b6a749a4ca-e02",
+    "usable": true
+  },
+  "boolq-66f4a7b6a749a4ca-e03": {
+    "para1": "Derek Connolly and Jurassic World director Colin Trevorrow both returned as writers, with Trevorrow and original Jurassic Park director Steven Spielberg serving as executive producers.",
+    "para2": "Derek Connolly and Jurassic World director Colin Trevorrow both returned as writers, with Trevorrow and original Jurassic Park director Steven Spielberg serving as executive producers.",
+    "source_text": "Derek Connolly and Jurassic World director Colin Trevorrow both returned as writers, with Trevorrow and original Jurassic Park director Steven Spielberg acting as executive producers.",
+    "unique_id": "boolq-66f4a7b6a749a4ca-e03",
+    "usable": true
+  },
+  "boolq-6811a74d44916dc6-e01": {
+    "para1": "Glycogen in muscle cells seems to serve as an immediate reserve of available glucose for those cells.",
+    "para2": "Glycogen in muscle cells seems to serve as an immediate reserve of available glucose for those cells.",
+    "source_text": "Muscle cell glycogen appears to function as an immediate reserve source of available glucose for muscle cells.",
+    "unique_id": "boolq-6811a74d44916dc6-e01",
+    "usable": true
+  },
+  "boolq-6811a74d44916dc6-e02": {
+    "para1": "Other cells that hold small quantities also utilize it locally.",
+    "para2": "Other cells that hold small quantities also utilize it locally.",
+    "source_text": "Other cells that contain small amounts use it locally, as well.",
+    "unique_id": "boolq-6811a74d44916dc6-e02",
+    "usable": true
+  },
+  "boolq-6811a74d44916dc6-e03": {
+    "para1": "Since muscle cells do not possess glucose-6-phosphatase, the enzyme needed to release glucose into the bloodstream, the glycogen they store is used only internally and is not shared with other cells.",
+    "para2": "Since muscle cells do not possess glucose-6-phosphatase, the enzyme needed to release glucose into the bloodstream, the glycogen they store is used only internally and is not shared with other cells.",
+    "source_text": "As muscle cells lack glucose-6-phosphatase, which is required to pass glucose into the blood, the glycogen they store is available solely for internal use and is not shared with other cells.",
+    "unique_id": "boolq-6811a74d44916dc6-e03",
+    "usable": true
+  },
+  "boolq-6905cfa516ca91a9-e01": {
+    "para1": "The principal bridesmaid, if such a title is used, may be referred to as the chief bridesmaid or maid of honor when unmarried, or the matron of honor if married.",
+    "para2": "The principal bridesmaid, if such a title is used, may be referred to as the chief bridesmaid or maid of honor when unmarried, or the matron of honor if married.",
+    "source_text": "The principal bridesmaid, if one is so designated, may be called the chief bridesmaid or maid of honor if she is unmarried, or the matron of honor if she is married.",
+    "unique_id": "boolq-6905cfa516ca91a9-e01",
+    "usable": true
+  },
+  "boolq-6905cfa516ca91a9-e02": {
+    "para1": "A junior bridesmaid is a girl who is obviously too young to be married, yet is included as an honorary bridesmaid.",
+    "para2": "A junior bridesmaid is a girl who is obviously too young to be married, yet is included as an honorary bridesmaid.",
+    "source_text": "A junior bridesmaid is a girl who is clearly too young to be married, but who is included as an honorary bridesmaid.",
+    "unique_id": "boolq-6905cfa516ca91a9-e02",
+    "usable": true
+  },
+  "boolq-6905cfa516ca91a9-e03": {
+    "para1": "In the United States, typically only the maid/matron of honor and the best man serve as the official witnesses for the wedding license.",
+    "para2": "In the United States, typically only the maid/matron of honor and the best man serve as the official witnesses for the wedding license.",
+    "source_text": "In the United States, typically only the maid/matron of honor and the best man are the official witnesses for the wedding license.",
+    "unique_id": "boolq-6905cfa516ca91a9-e03",
+    "usable": true
+  },
+  "boolq-697551d1b3695458-e01": {
+    "para1": "Prospective costs, which are future costs that may be incurred or altered if an action is taken, are sometimes contrasted with sunk costs.",
+    "para2": "Prospective costs, which are future costs that may be incurred or altered if an action is taken, are sometimes contrasted with sunk costs.",
+    "source_text": "Sunk costs are sometimes contrasted with prospective costs, which are future costs that may be incurred or changed if an action is taken.",
+    "unique_id": "boolq-697551d1b3695458-e01",
+    "usable": true
+  },
+  "boolq-697551d1b3695458-e02": {
+    "para1": "In that regard, both retrospective and prospective costs could be either fixed costs (continuous for as long as the business operates and unaffected by output volume) or variable costs (dependent on volume).",
+    "para2": "In that regard, both retrospective and prospective costs could be either fixed costs (continuous for as long as the business operates and unaffected by output volume) or variable costs (dependent on volume).",
+    "source_text": "In that regard, both retrospective and prospective costs could be either fixed costs (continuous for as long as the business is in operation and unaffected by output volume) or variable costs (dependent on volume).",
+    "unique_id": "boolq-697551d1b3695458-e02",
+    "usable": true
+  },
+  "boolq-697551d1b3695458-e03": {
+    "para1": "However, many economists regard it as an error to categorize sunk costs as \"fixed\" or \"variable.\" For instance, if a company invests $400 million in an enterprise software installation, that amount is \"sunk\" since it represents a one-time expenditure that cannot be reclaimed after being spent.",
+    "para2": "However, many economists regard it as an error to categorize sunk costs as \"fixed\" or \"variable.\" For instance, if a company invests $400 million in an enterprise software installation, that amount is \"sunk\" since it represents a one-time expenditure that cannot be reclaimed after being spent.",
+    "source_text": "However, many economists consider it a mistake to classify sunk costs as ``fixed'' or ``variable.'' For example, if a firm sinks $400 million on an enterprise software installation, that cost is ``sunk'' because it was a one-time expense and cannot be recovered once spent.",
+    "unique_id": "boolq-697551d1b3695458-e03",
+    "usable": true
+  },
+  "boolq-6a060d148139a1ae-e01": {
+    "para1": "West Edmonton Mall (WEM), situated in Summerlea, Edmonton, Alberta, Canada, holds the title of the largest shopping mall in North America and ranks as the tenth largest globally (tied with The Dubai Mall) based on gross leasable area.",
+    "para2": "West Edmonton Mall (WEM), situated in Summerlea, Edmonton, Alberta, Canada, holds the title of the largest shopping mall in North America and ranks as the tenth largest globally (tied with The Dubai Mall) based on gross leasable area.",
+    "source_text": "West Edmonton Mall (WEM), located in Summerlea, Edmonton, Alberta, Canada, is the largest shopping mall in North America and the tenth largest in the world (along with The Dubai Mall) by gross leasable area.",
+    "unique_id": "boolq-6a060d148139a1ae-e01",
+    "usable": true
+  },
+  "boolq-6a060d148139a1ae-e02": {
+    "para1": "It held the title of the world's largest mall until 2004.",
+    "para2": "It held the title of the world's largest mall until 2004.",
+    "source_text": "It was the world's largest mall until 2004.",
+    "unique_id": "boolq-6a060d148139a1ae-e02",
+    "usable": true
+  },
+  "boolq-6a060d148139a1ae-e03": {
+    "para1": "The Ghermezian brothers established the mall after emigrating from Iran in 1959.",
+    "para2": "The Ghermezian brothers established the mall after emigrating from Iran in 1959.",
+    "source_text": "The mall was founded by the Ghermezian brothers, who emigrated from Iran in 1959.",
+    "unique_id": "boolq-6a060d148139a1ae-e03",
+    "usable": true
+  },
+  "boolq-6b2659adf8f8fb84-e01": {
+    "para1": "Sea turtles inhabit oceans, excluding the polar regions.",
+    "para2": "Sea turtles inhabit oceans, excluding the polar regions.",
+    "source_text": "Sea turtles can be found in oceans except for the polar regions.",
+    "unique_id": "boolq-6b2659adf8f8fb84-e01",
+    "usable": true
+  },
+  "boolq-6b2659adf8f8fb84-e02": {
+    "para1": "The flatback sea turtle occurs only along Australia's northern coast.",
+    "para2": "The flatback sea turtle occurs only along Australia's northern coast.",
+    "source_text": "The flatback sea turtle is found solely on the northern coast of Australia.",
+    "unique_id": "boolq-6b2659adf8f8fb84-e02",
+    "usable": true
+  },
+  "boolq-6b2659adf8f8fb84-e03": {
+    "para1": "The Kemp's ridley sea turtle occurs only in the Gulf of Mexico and along the East Coast of the United States.",
+    "para2": "The Kemp's ridley sea turtle occurs only in the Gulf of Mexico and along the East Coast of the United States.",
+    "source_text": "The Kemp's ridley sea turtle is found solely in the Gulf of Mexico and along the East Coast of the United States.",
+    "unique_id": "boolq-6b2659adf8f8fb84-e03",
+    "usable": true
+  },
+  "boolq-6d6ba8698941b030-e01": {
+    "para1": "The U.S. Open Championship, frequently referred to as the United States Open, is",
+    "para2": "The U.S. Open Championship, frequently referred to as the United States Open, is",
+    "source_text": "The United States Open Championship, commonly known as the U.S.",
+    "unique_id": "boolq-6d6ba8698941b030-e01",
+    "usable": true
+  },
+  "boolq-6d6ba8698941b030-e02": {
+    "para1": "Open is the annual open national championship of golf in the United States.",
+    "para2": "Open is the annual open national championship of golf in the United States.",
+    "source_text": "Open, is the annual open national championship of golf in the United States.",
+    "unique_id": "boolq-6d6ba8698941b030-e02",
+    "usable": true
+  },
+  "boolq-6d6ba8698941b030-e03": {
+    "para1": "It ranks as the second of golf's four major championships and appears on the official calendars of both the PGA Tour and the European Tour.",
+    "para2": "It ranks as the second of golf's four major championships and appears on the official calendars of both the PGA Tour and the European Tour.",
+    "source_text": "It is the second of the four major championships in golf, and is on the official schedule of both the PGA Tour and the European Tour.",
+    "unique_id": "boolq-6d6ba8698941b030-e03",
+    "usable": true
+  },
+  "boolq-720d64a5631ca2de-e01": {
+    "para1": "Shortly after the Cavern club closed in 1973, a new Cavern club reopened at 7 Mathew Street, subsequently renamed the Revolution Club.",
+    "para2": "Shortly after the Cavern club closed in 1973, a new Cavern club reopened at 7 Mathew Street, subsequently renamed the Revolution Club.",
+    "source_text": "Soon after the Cavern club closed in 1973, a new Cavern club re-opened at 7 Mathew Street, later re-named the Revolution Club.",
+    "unique_id": "boolq-720d64a5631ca2de-e01",
+    "usable": true
+  },
+  "boolq-720d64a5631ca2de-e02": {
+    "para1": "In 1984, Liverpool F.C. took over this club.",
+    "para2": "In 1984, Liverpool F.C. took over this club.",
+    "source_text": "In 1984, this club was taken over by Liverpool F.C.",
+    "unique_id": "boolq-720d64a5631ca2de-e02",
+    "usable": true
+  },
+  "boolq-720d64a5631ca2de-e03": {
+    "para1": "player Tommy Smith and reconstructed using bricks from the original Cavern club.",
+    "para2": "player Tommy Smith and reconstructed using bricks from the original Cavern club.",
+    "source_text": "player Tommy Smith and rebuilt with bricks from the original Cavern club.",
+    "unique_id": "boolq-720d64a5631ca2de-e03",
+    "usable": true
+  },
+  "boolq-72ea98e1a124c300-e01": {
+    "para1": "Street Addressing will share the post office's street address, along with a \"unit number\" that corresponds to the P.O.",
+    "para2": "Street Addressing will share the post office's street address, along with a \"unit number\" that corresponds to the P.O.",
+    "source_text": "Street Addressing will have the same street address of the post office, plus a ``unit number'' that matches the P.O.",
+    "unique_id": "boolq-72ea98e1a124c300-e01",
+    "usable": true
+  },
+  "boolq-72ea98e1a124c300-e02": {
+    "para1": "For instance, in El Centro, California, the post office is situated at 1598 Main Street.",
+    "para2": "For instance, in El Centro, California, the post office is situated at 1598 Main Street.",
+    "source_text": "As an example, in El Centro, California, the post office is located at 1598 Main Street.",
+    "unique_id": "boolq-72ea98e1a124c300-e02",
+    "usable": true
+  },
+  "boolq-72ea98e1a124c300-e03": {
+    "para1": "For Box 9975 (fictitious), the Street Addressing would be: 1598 Main Street Unit 9975, El Centro, CA.",
+    "para2": "For Box 9975 (fictitious), the Street Addressing would be: 1598 Main Street Unit 9975, El Centro, CA.",
+    "source_text": "Box 9975 (fictitious), the Street Addressing would be: 1598 Main Street Unit 9975, El Centro, CA.",
+    "unique_id": "boolq-72ea98e1a124c300-e03",
+    "usable": true
+  },
+  "boolq-73a5fc4049dd6512-e01": {
+    "para1": "For Post Office Boxes, the general rule (though not absolute) is that each box possesses its own ZIP+4 code.",
+    "para2": "For Post Office Boxes, the general rule (though not absolute) is that each box possesses its own ZIP+4 code.",
+    "source_text": "For Post Office Boxes, the general (but not invariable) rule is that each box has its own ZIP+4 code.",
+    "unique_id": "boolq-73a5fc4049dd6512-e01",
+    "usable": true
+  },
+  "boolq-73a5fc4049dd6512-e02": {
+    "para1": "The add-on code is frequently one of the following: the final four digits of the box number (e.g.",
+    "para2": "The add-on code is frequently one of the following: the final four digits of the box number (e.g.",
+    "source_text": "The add-on code is often one of the following: the last four digits of the box number (e.g.",
+    "unique_id": "boolq-73a5fc4049dd6512-e02",
+    "usable": true
+  },
+  "boolq-73a5fc4049dd6512-e03": {
+    "para1": "PO Box 107050, Albany, NY 12201-7050), zero plus the last three digits of the box number (e.g., PO Box 17727, Eagle River, AK 99577-0727), or, if the box number consists of fewer than four digits, enough zeros are attached to the front of the box number to produce a four-digit number (e.g., PO Box 77, Juneau, AK 99750-0077).",
+    "para2": "PO Box 107050, Albany, NY 12201-7050), zero plus the last three digits of the box number (e.g., PO Box 17727, Eagle River, AK 99577-0727), or, if the box number consists of fewer than four digits, enough zeros are attached to the front of the box number to produce a four-digit number (e.g., PO Box 77, Juneau, AK 99750-0077).",
+    "source_text": "PO Box 107050, Albany, NY 12201-7050), zero plus the last three digits of the box number (e.g., PO Box 17727, Eagle River, AK 99577-0727), or, if the box number consists of fewer than four digits, enough zeros are attached to the front of the box number to produce a four-digit number (e.g., PO Box 77, Juneau, AK 99750-0077).",
+    "unique_id": "boolq-73a5fc4049dd6512-e03",
+    "usable": true
+  },
+  "boolq-73f2c90a37f63cdc-e01": {
+    "para1": "Practice squad players train with regular roster players during the week, yet they are prohibited from participating in actual games.",
+    "para2": "Practice squad players train with regular roster players during the week, yet they are prohibited from participating in actual games.",
+    "source_text": "Practice squad players practice alongside regular roster players during the week, but they are not allowed to play in actual games.",
+    "unique_id": "boolq-73f2c90a37f63cdc-e01",
+    "usable": true
+  },
+  "boolq-73f2c90a37f63cdc-e02": {
+    "para1": "They can earn significantly less than active squad players; in 2012, the minimum weekly salary for a practice squad player was $5,700, and the minimum rookie salary was $390,000.",
+    "para2": "They can earn significantly less than active squad players; in 2012, the minimum weekly salary for a practice squad player was $5,700, and the minimum rookie salary was $390,000.",
+    "source_text": "They can be paid considerably less than active squad players; in 2012, the minimum salary for a practice squad player was $5,700 per week, and the minimum rookie salary was $390,000.",
+    "unique_id": "boolq-73f2c90a37f63cdc-e02",
+    "usable": true
+  },
+  "boolq-73f2c90a37f63cdc-e03": {
+    "para1": "However, some practice squad players receive significantly higher pay.",
+    "para2": "However, some practice squad players receive significantly higher pay.",
+    "source_text": "Some practice squad players are paid considerably more, however.",
+    "unique_id": "boolq-73f2c90a37f63cdc-e03",
+    "usable": true
+  },
+  "boolq-77221a3ed13fd548-e01": {
+    "para1": "In the United States House of Representatives, the District is represented by a delegate, who cannot vote on the House floor but may vote on procedural matters and in congressional committees.",
+    "para2": "In the United States House of Representatives, the District is represented by a delegate, who cannot vote on the House floor but may vote on procedural matters and in congressional committees.",
+    "source_text": "In the United States House of Representatives, the District is represented by a delegate, who is not allowed to vote on the House floor but can vote on procedural matters and in congressional committees.",
+    "unique_id": "boolq-77221a3ed13fd548-e01",
+    "usable": true
+  },
+  "boolq-77221a3ed13fd548-e02": {
+    "para1": "Residents possess no representation in the United States Senate.",
+    "para2": "Residents possess no representation in the United States Senate.",
+    "source_text": "residents have no representation in the United States Senate.",
+    "unique_id": "boolq-77221a3ed13fd548-e02",
+    "usable": true
+  },
+  "boolq-77221a3ed13fd548-e03": {
+    "para1": "The Twenty-third Amendment to the United States Constitution, adopted in 1961, grants the District the same number of electoral votes as the least populous state in the election of the President and Vice President of the United States.",
+    "para2": "The Twenty-third Amendment to the United States Constitution, adopted in 1961, grants the District the same number of electoral votes as the least populous state in the election of the President and Vice President of the United States.",
+    "source_text": "The Twenty-third Amendment to the United States Constitution, adopted in 1961, entitles the District to the same number of electoral votes as that of the least populous state in the election of the President and Vice President of the United States.",
+    "unique_id": "boolq-77221a3ed13fd548-e03",
+    "usable": true
+  },
+  "boolq-79649bc28a6b028f-e01": {
+    "para1": "That is, when a case begins in a federal court, a defendant cannot remove it from federal court to state court.",
+    "para2": "That is, when a case begins in a federal court, a defendant cannot remove it from federal court to state court.",
+    "source_text": "That is, if a case originates in a federal court, there is no ability for a defendant to remove a case from federal court into state court.",
+    "unique_id": "boolq-79649bc28a6b028f-e01",
+    "usable": true
+  },
+  "boolq-79649bc28a6b028f-e02": {
+    "para1": "If the federal court does not have jurisdiction, the case will be dismissed.",
+    "para2": "If the federal court does not have jurisdiction, the case will be dismissed.",
+    "source_text": "If the federal court lacks jurisdiction, the case is dismissed.",
+    "unique_id": "boolq-79649bc28a6b028f-e02",
+    "usable": true
+  },
+  "boolq-79649bc28a6b028f-e03": {
+    "para1": "Only cases that begin in a state court and are incorrectly removed to a federal court can be returned to the state court where they originated.",
+    "para2": "Only cases that begin in a state court and are incorrectly removed to a federal court can be returned to the state court where they originated.",
+    "source_text": "Only cases that originate in a state court and are improperly removed to a federal court may be sent back to the state court where they started.",
+    "unique_id": "boolq-79649bc28a6b028f-e03",
+    "usable": true
+  },
+  "boolq-7c5685e33c644d28-e01": {
+    "para1": "The de facto official language of the United Kingdom is English, spoken by about 59.8 million residents, representing 98% of the population over the age of three.",
+    "para2": "The de facto official language of the United Kingdom is English, spoken by about 59.8 million residents, representing 98% of the population over the age of three.",
+    "source_text": "The de facto official language of the United Kingdom is English, which is spoken by approximately 59.8 million residents, or 98% of the population, over the age of three.",
+    "unique_id": "boolq-7c5685e33c644d28-e01",
+    "usable": true
+  },
+  "boolq-7c5685e33c644d28-e02": {
+    "para1": "An estimated 700,000 people speak Welsh in the UK, which is an official language in Wales and the sole de jure official language in any part of the UK.",
+    "para2": "An estimated 700,000 people speak Welsh in the UK, which is an official language in Wales and the sole de jure official language in any part of the UK.",
+    "source_text": "An estimated 700,000 people speak Welsh in the UK, an official language in Wales and the only de jure official language in any part of the UK.",
+    "unique_id": "boolq-7c5685e33c644d28-e02",
+    "usable": true
+  },
+  "boolq-7c5685e33c644d28-e03": {
+    "para1": "Approximately 1.5 million people in the UK speak Scots, though there is debate regarding whether this constitutes a distinct language or merely a variety of English.",
+    "para2": "Approximately 1.5 million people in the UK speak Scots, though there is debate regarding whether this constitutes a distinct language or merely a variety of English.",
+    "source_text": "Approximately 1.5 million people in the UK speak Scots--although there is debate as to whether this is a distinct language, or a variety of English.",
+    "unique_id": "boolq-7c5685e33c644d28-e03",
+    "usable": true
+  },
+  "boolq-806e2250268b8a56-e01": {
+    "para1": "The European Union value added tax, also known as EU VAT, is a value added tax applied to goods and services inside the European Union (EU).",
+    "para2": "The European Union value added tax, also known as EU VAT, is a value added tax applied to goods and services inside the European Union (EU).",
+    "source_text": "The European Union value added tax (or EU VAT) is a value added tax on goods and services within the European Union (EU).",
+    "unique_id": "boolq-806e2250268b8a56-e01",
+    "usable": true
+  },
+  "boolq-806e2250268b8a56-e02": {
+    "para1": "EU institutions do not collect the tax, but each EU member state is required to adopt a value added tax that complies with the EU VAT code.",
+    "para2": "EU institutions do not collect the tax, but each EU member state is required to adopt a value added tax that complies with the EU VAT code.",
+    "source_text": "The EU's institutions do not collect the tax, but EU member states are each required to adopt a value added tax that complies with the EU VAT code.",
+    "unique_id": "boolq-806e2250268b8a56-e02",
+    "usable": true
+  },
+  "boolq-806e2250268b8a56-e03": {
+    "para1": "VAT rates vary across EU member states, spanning from 17% in Luxembourg to 27% in Hungary.",
+    "para2": "VAT rates vary across EU member states, spanning from 17% in Luxembourg to 27% in Hungary.",
+    "source_text": "Different rates of VAT apply in different EU member states, ranging from 17% in Luxembourg to 27% in Hungary.",
+    "unique_id": "boolq-806e2250268b8a56-e03",
+    "usable": true
+  },
+  "boolq-86019df0ca3d0875-e01": {
+    "para1": "In the United States, Haribo gummy bears are available in five flavors: raspberry (red), orange (orange), strawberry (green), pineapple (colorless), and lemon (yellow).",
+    "para2": "In the United States, Haribo gummy bears are available in five flavors: raspberry (red), orange (orange), strawberry (green), pineapple (colorless), and lemon (yellow).",
+    "source_text": "In the United States, Haribo gummy bears are sold in five flavors: raspberry (red); orange (orange); strawberry (green); pineapple (colorless); and lemon (yellow).",
+    "unique_id": "boolq-86019df0ca3d0875-e01",
+    "usable": true
+  },
+  "boolq-86019df0ca3d0875-e02": {
+    "para1": "Trolli's bears are similarly most often sold in five flavors in the United States, and in the same colors; however, Trolli's red bear is strawberry-flavored, while the green is lime and the colorless is grape.",
+    "para2": "Trolli's bears are similarly most often sold in five flavors in the United States, and in the same colors; however, Trolli's red bear is strawberry-flavored, while the green is lime and the colorless is grape.",
+    "source_text": "Trolli's bears are similarly most often sold in five flavors in the United States, and in the same colors; however, Trolli's red bear is strawberry-flavored, while the green is lime and the colorless is grape.",
+    "unique_id": "boolq-86019df0ca3d0875-e02",
+    "usable": true
+  },
+  "boolq-86019df0ca3d0875-e03": {
+    "para1": "Many companies imitate the flavor-color pairings found in either Haribo or Trolli.",
+    "para2": "Many companies imitate the flavor-color pairings found in either Haribo or Trolli.",
+    "source_text": "Many companies emulate either Haribo or Trolli flavor-color combinations.",
+    "unique_id": "boolq-86019df0ca3d0875-e03",
+    "usable": true
+  },
+  "boolq-868554aaa1ec38d3-e01": {
+    "para1": "In the second round of the 1971 Martini International tournament, hosted at the Royal Norwich Golf Club in England, John Hudson achieved two consecutive holes-in-one.",
+    "para2": "In the second round of the 1971 Martini International tournament, hosted at the Royal Norwich Golf Club in England, John Hudson achieved two consecutive holes-in-one.",
+    "source_text": "During the second round of the 1971 Martini International tournament, held at the Royal Norwich Golf Club in England, John Hudson had two consecutive holes in one.",
+    "unique_id": "boolq-868554aaa1ec38d3-e01",
+    "usable": true
+  },
+  "boolq-868554aaa1ec38d3-e02": {
+    "para1": "Hudson holed his tee shot for a hole-in-one on the par-three, 195-yard 11th hole by using a 4-iron.",
+    "para2": "Hudson holed his tee shot for a hole-in-one on the par-three, 195-yard 11th hole by using a 4-iron.",
+    "source_text": "Teeing off, using a 4-iron, at the par-three, 195-yard 11th hole, Hudson holed his tee shot for a hole-in-one.",
+    "unique_id": "boolq-868554aaa1ec38d3-e02",
+    "usable": true
+  },
+  "boolq-868554aaa1ec38d3-e03": {
+    "para1": "On the following hole, the downhill 311-yard, par-four 12th, using a driver this time, he once again holed his tee shot, securing another ace.",
+    "para2": "On the following hole, the downhill 311-yard, par-four 12th, using a driver this time, he once again holed his tee shot, securing another ace.",
+    "source_text": "At the next hole, the downhill 311-yard, par-four 12th, and this time using a driver, he once again holed his tee shot, for another ace.",
+    "unique_id": "boolq-868554aaa1ec38d3-e03",
+    "usable": true
+  },
+  "boolq-86c72e3ba9f4ae98-e01": {
+    "para1": "Although this marks Aloma Wright's final regular role as Laverne Roberts, she made a return in the Season 7 episode \"My Hard Labor\" as Nurse Shirley, whose resemblance to Laverne goes unnoticed by everyone except J.D.",
+    "para2": "Although this marks Aloma Wright's final regular role as Laverne Roberts, she made a return in the Season 7 episode \"My Hard Labor\" as Nurse Shirley, whose resemblance to Laverne goes unnoticed by everyone except J.D.",
+    "source_text": "Although this is Aloma Wright's last regular appearance as Laverne Roberts, she returned in the Season 7 episode ``My Hard Labor'' as Nurse Shirley, whose similarities to Laverne go unnoticed by all except J.D.",
+    "unique_id": "boolq-86c72e3ba9f4ae98-e01",
+    "usable": true
+  },
+  "boolq-86c72e3ba9f4ae98-e02": {
+    "para1": "Early reports indicated that Aloma Wright would return as Laverne's alcoholic twin sister.",
+    "para2": "Early reports indicated that Aloma Wright would return as Laverne's alcoholic twin sister.",
+    "source_text": "Early reports stated that Aloma Wright would return as Laverne's alcoholic twin sister.",
+    "unique_id": "boolq-86c72e3ba9f4ae98-e02",
+    "usable": true
+  },
+  "boolq-86c72e3ba9f4ae98-e03": {
+    "para1": "Wright would return to her role as Laverne in a flashback within the season 8 episode \"My Comedy Show\" and in the season eight finale, \"My Finale\".",
+    "para2": "Wright would return to her role as Laverne in a flashback within the season 8 episode \"My Comedy Show\" and in the season eight finale, \"My Finale\".",
+    "source_text": "Wright would reprise her role as Laverne in a flashback in the season 8 episode ``My Comedy Show'' and in the season eight finale, ``My Finale''.",
+    "unique_id": "boolq-86c72e3ba9f4ae98-e03",
+    "usable": true
+  },
+  "boolq-89f36a3242bdf1db-e01": {
+    "para1": "Voting rights of United States citizens in Puerto Rico, similar to those of residents of other United States territories, differ from those of United States citizens in each of the fifty states and the District of Columbia.",
+    "para2": "Voting rights of United States citizens in Puerto Rico, similar to those of residents of other United States territories, differ from those of United States citizens in each of the fifty states and the District of Columbia.",
+    "source_text": "Voting rights of United States citizens in Puerto Rico, like the voting rights of residents of other United States territories, differ from those of United States citizens in each of the fifty states and the District of Columbia.",
+    "unique_id": "boolq-89f36a3242bdf1db-e01",
+    "usable": true
+  },
+  "boolq-89f36a3242bdf1db-e02": {
+    "para1": "Territories lack voting representation in the United States Congress and are not eligible to receive electoral votes for President.",
+    "para2": "Territories lack voting representation in the United States Congress and are not eligible to receive electoral votes for President.",
+    "source_text": "territories do not have voting representation in the United States Congress, and are not entitled to electoral votes for President.",
+    "unique_id": "boolq-89f36a3242bdf1db-e02",
+    "usable": true
+  },
+  "boolq-89f36a3242bdf1db-e03": {
+    "para1": "The U.S. Constitution grants voting representation in Congress to",
+    "para2": "The U.S. Constitution grants voting representation in Congress to",
+    "source_text": "The United States Constitution grants congressional voting representation to U.S.",
+    "unique_id": "boolq-89f36a3242bdf1db-e03",
+    "usable": true
+  },
+  "boolq-8df90dabe8fff99b-e01": {
+    "para1": "The first player to discard their final card (``going out'') wins the hand and scores points based on the cards held by the other players.",
+    "para2": "The first player to discard their final card (``going out'') wins the hand and scores points based on the cards held by the other players.",
+    "source_text": "The first player to get rid of their last card (``going out'') wins the hand and scores points for the cards held by the other players.",
+    "unique_id": "boolq-8df90dabe8fff99b-e01",
+    "usable": true
+  },
+  "boolq-8df90dabe8fff99b-e02": {
+    "para1": "Number cards count their face value, all action cards count 20, and Wild and Wild Draw Four cards count 50.",
+    "para2": "Number cards count their face value, all action cards count 20, and Wild and Wild Draw Four cards count 50.",
+    "source_text": "Number cards count their face value, all action cards count 20, and Wild and Wild Draw Four cards count 50.",
+    "unique_id": "boolq-8df90dabe8fff99b-e02",
+    "usable": true
+  },
+  "boolq-8df90dabe8fff99b-e03": {
+    "para1": "If a Draw Two or Wild Draw Four card is played to go out, the next player in sequence must draw the appropriate number of cards before the score is tallied.",
+    "para2": "If a Draw Two or Wild Draw Four card is played to go out, the next player in sequence must draw the appropriate number of cards before the score is tallied.",
+    "source_text": "If a Draw Two or Wild Draw Four card is played to go out, the next player in sequence must draw the appropriate number of cards before the score is tallied.",
+    "unique_id": "boolq-8df90dabe8fff99b-e03",
+    "usable": true
+  },
+  "boolq-9213410deb14afc8-e01": {
+    "para1": "A custom 4.194/8.388 MHz Z80-based coprocessor provides backward compatibility for Game Boy and Game Boy Color games, while Game Boy Advance software can utilize its audio tone generators to augment the main sound system; additionally, a link port located at the top of the unit enables connection to other devices via a Game Link cable or GameCube link cable.",
+    "para2": "A custom 4.194/8.388 MHz Z80-based coprocessor provides backward compatibility for Game Boy and Game Boy Color games, while Game Boy Advance software can utilize its audio tone generators to augment the main sound system; additionally, a link port located at the top of the unit enables connection to other devices via a Game Link cable or GameCube link cable.",
+    "source_text": "Backward compatibility for Game Boy and Game Boy Color games is provided by a custom 4.194/8.388 MHz Z80-based coprocessor (Game Boy Advance software can use the audio tone generators to supplement the primary sound system), while a link port at the top of the unit allows it to be connected to other devices using a Game Link cable or GameCube link cable.",
+    "unique_id": "boolq-9213410deb14afc8-e01",
+    "usable": true
+  },
+  "boolq-9213410deb14afc8-e02": {
+    "para1": "When playing Game Boy or Game Boy Color games on the Game Boy Advance, the L and R buttons can be used to toggle between a stretched widescreen format (240×144) and the original screen ratio of the Game Boy (160×144).",
+    "para2": "When playing Game Boy or Game Boy Color games on the Game Boy Advance, the L and R buttons can be used to toggle between a stretched widescreen format (240×144) and the original screen ratio of the Game Boy (160×144).",
+    "source_text": "When playing Game Boy or Game Boy Color games on the Game Boy Advance, the L and R buttons can be used to toggle between a stretched widescreen format (240×144) and the original screen ratio of the Game Boy (160×144).",
+    "unique_id": "boolq-9213410deb14afc8-e02",
+    "usable": true
+  },
+  "boolq-9213410deb14afc8-e03": {
+    "para1": "Game Boy games can utilize the same selectable color palettes available on the Game Boy Color.",
+    "para2": "Game Boy games can utilize the same selectable color palettes available on the Game Boy Color.",
+    "source_text": "Game Boy games can be played using the same selectable color palettes as on the Game Boy Color.",
+    "unique_id": "boolq-9213410deb14afc8-e03",
+    "usable": true
+  },
+  "boolq-989c4ba61bf0b772-e01": {
+    "para1": "\"Let It Go\" is a song from Disney's 2013 animated feature film Frozen, whose music and lyrics were composed by husband-and-wife songwriting team Kristen Anderson-Lopez and Robert Lopez.",
+    "para2": "\"Let It Go\" is a song from Disney's 2013 animated feature film Frozen, whose music and lyrics were composed by husband-and-wife songwriting team Kristen Anderson-Lopez and Robert Lopez.",
+    "source_text": "``Let It Go'' is a song from Disney's 2013 animated feature film Frozen, whose music and lyrics were composed by husband-and-wife songwriting team Kristen Anderson-Lopez and Robert Lopez.",
+    "unique_id": "boolq-989c4ba61bf0b772-e01",
+    "usable": true
+  },
+  "boolq-989c4ba61bf0b772-e02": {
+    "para1": "In the film, American actress and singer Idina Menzel performed the song in its original show-tune version in her vocal role as Queen Elsa.",
+    "para2": "In the film, American actress and singer Idina Menzel performed the song in its original show-tune version in her vocal role as Queen Elsa.",
+    "source_text": "The song was performed in its original show-tune version in the film by American actress and singer Idina Menzel in her vocal role as Queen Elsa.",
+    "unique_id": "boolq-989c4ba61bf0b772-e02",
+    "usable": true
+  },
+  "boolq-989c4ba61bf0b772-e03": {
+    "para1": "Anderson-Lopez and Lopez also created a simplified pop adaptation (featuring shorter lyrics and a background chorus) that was performed by actress and singer Demi Lovato during the beginning of the film's closing credits.",
+    "para2": "Anderson-Lopez and Lopez also created a simplified pop adaptation (featuring shorter lyrics and a background chorus) that was performed by actress and singer Demi Lovato during the beginning of the film's closing credits.",
+    "source_text": "Anderson-Lopez and Lopez also composed a simplified pop version (with shorter lyrics and background chorus) which was performed by actress and singer Demi Lovato over the start of the film's closing credits.",
+    "unique_id": "boolq-989c4ba61bf0b772-e03",
+    "usable": true
+  },
+  "boolq-9b0f73e27f9d1e51-e01": {
+    "para1": "Even though Bosnia and Herzegovina remained formally part of the Ottoman Empire, Austrian-Hungarian authorities exercised factual control over the country.",
+    "para2": "Even though Bosnia and Herzegovina remained formally part of the Ottoman Empire, Austrian-Hungarian authorities exercised factual control over the country.",
+    "source_text": "Even though Bosnia and Herzegovina was still part of the Ottoman Empire, at least formally, the Austrian-Hungarian authorities had factual control over the country.",
+    "unique_id": "boolq-9b0f73e27f9d1e51-e01",
+    "usable": true
+  },
+  "boolq-9b0f73e27f9d1e51-e02": {
+    "para1": "Austria-Hungary also awaited an opportunity to formally incorporate Bosnia and Herzegovina.",
+    "para2": "Austria-Hungary also awaited an opportunity to formally incorporate Bosnia and Herzegovina.",
+    "source_text": "Austria-Hungary waited for a chance to incorporate Bosnia and Herzegovina formally as well.",
+    "unique_id": "boolq-9b0f73e27f9d1e51-e02",
+    "usable": true
+  },
+  "boolq-9b0f73e27f9d1e51-e03": {
+    "para1": "Any action regarding Bosnia and Herzegovina relied on international opinion, a factor that Austrian-Hungarian authorities were aware of.",
+    "para2": "Any action regarding Bosnia and Herzegovina relied on international opinion, a factor that Austrian-Hungarian authorities were aware of.",
+    "source_text": "Any action concerning Bosnia and Herzegovina depended on international opinion, which Austrian-Hungarian authorities were aware of.",
+    "unique_id": "boolq-9b0f73e27f9d1e51-e03",
+    "usable": true
+  },
+  "boolq-a393bde269d72216-e01": {
+    "para1": "Furthermore, holders of emergency or temporary passports valid for over six months issued by visa-exempt countries qualify for a fee-based visa on arrival.",
+    "para2": "Furthermore, holders of emergency or temporary passports valid for over six months issued by visa-exempt countries qualify for a fee-based visa on arrival.",
+    "source_text": "In addition, holders of emergency or temporary passports with validity of more than 6 months issued by visa-exempt countries are eligible for visa on arrival for a fee.",
+    "unique_id": "boolq-a393bde269d72216-e01",
+    "usable": true
+  },
+  "boolq-a393bde269d72216-e02": {
+    "para1": "The length of stay is 30 days for all nationalities and is non-extendable.",
+    "para2": "The length of stay is 30 days for all nationalities and is non-extendable.",
+    "source_text": "The duration of stay is 30 days regardless of nationality and cannot be extended.",
+    "unique_id": "boolq-a393bde269d72216-e02",
+    "usable": true
+  },
+  "boolq-a393bde269d72216-e03": {
+    "para1": "This measure does not apply to holders of emergency or temporary passports issued by Japan or the United States because they are visa exempt.",
+    "para2": "This measure does not apply to holders of emergency or temporary passports issued by Japan or the United States because they are visa exempt.",
+    "source_text": "This measure does not apply to holders of emergency or temporary passports issued by Japan or the United States as they are visa exempt.",
+    "unique_id": "boolq-a393bde269d72216-e03",
+    "usable": true
+  },
+  "boolq-a49f26942fd7b548-e01": {
+    "para1": "Although bacteria are traditionally categorized into two primary groups, Gram-positive and Gram-negative, according to their Gram stain retention characteristics, this classification system remains ambiguous because it encompasses three separate dimensions (staining outcome, envelope structure, taxonomic classification) that do not always align for certain bacterial species.",
+    "para2": "Although bacteria are traditionally categorized into two primary groups, Gram-positive and Gram-negative, according to their Gram stain retention characteristics, this classification system remains ambiguous because it encompasses three separate dimensions (staining outcome, envelope structure, taxonomic classification) that do not always align for certain bacterial species.",
+    "source_text": "Although bacteria are traditionally divided into two main groups, Gram-positive and Gram-negative, based on their Gram stain retention property, this classification system is ambiguous as it refers to three distinct aspects (staining result, envelope organization, taxonomic group), which do not necessarily coalesce for some bacterial species.",
+    "unique_id": "boolq-a49f26942fd7b548-e01",
+    "usable": true
+  },
+  "boolq-a49f26942fd7b548-e02": {
+    "para1": "The Gram-positive and Gram-negative staining response is also not a reliable characteristic, as these two types of bacteria do not form phylogenetically coherent groups.",
+    "para2": "The Gram-positive and Gram-negative staining response is also not a reliable characteristic, as these two types of bacteria do not form phylogenetically coherent groups.",
+    "source_text": "The Gram-positive and Gram-negative staining response is also not a reliable characteristic as these two kinds of bacteria do not form phylogenetic coherent groups.",
+    "unique_id": "boolq-a49f26942fd7b548-e02",
+    "usable": true
+  },
+  "boolq-a49f26942fd7b548-e03": {
+    "para1": "However, although Gram staining response is an empirical criterion, its basis lies in the marked differences in the ultrastructure and chemical composition of the bacterial cell wall, characterized by the absence or presence of an outer lipid membrane.",
+    "para2": "However, although Gram staining response is an empirical criterion, its basis lies in the marked differences in the ultrastructure and chemical composition of the bacterial cell wall, characterized by the absence or presence of an outer lipid membrane.",
+    "source_text": "However, although Gram staining response is an empirical criterion, its basis lies in the marked differences in the ultrastructure and chemical composition of the bacterial cell wall, marked by the absence or presence of an outer lipid membrane.",
+    "unique_id": "boolq-a49f26942fd7b548-e03",
+    "usable": true
+  },
+  "boolq-a7a4338d12c1c142-e01": {
+    "para1": "A dual major, also known as a double major, refers to a student who fulfills two distinct sets of degree requirements.",
+    "para2": "A dual major, also known as a double major, refers to a student who fulfills two distinct sets of degree requirements.",
+    "source_text": "A double major, sometimes called dual major, is a student who completes two sets of degree requirements.",
+    "unique_id": "boolq-a7a4338d12c1c142-e01",
+    "usable": true
+  },
+  "boolq-a7a4338d12c1c142-e02": {
+    "para1": "In the United States, undergraduate programs leading to a bachelor's degree typically follow a liberal arts model, combining a specific set of coursework (often referred to as distribution or core requirements) with a specialization known as a major; a double major would generally fulfill one set of core requirements and two sets of specialization requirements.",
+    "para2": "In the United States, undergraduate programs leading to a bachelor's degree typically follow a liberal arts model, combining a specific set of coursework (often referred to as distribution or core requirements) with a specialization known as a major; a double major would generally fulfill one set of core requirements and two sets of specialization requirements.",
+    "source_text": "In the United States, undergraduate programs toward a bachelor's degree often follow a liberal arts model, and have a set group or type of coursework (sometimes called distribution or core requirements) together with a specialization, called a major -- a double major would usually complete one set of the core requirements and two sets of the specialization requirements.",
+    "unique_id": "boolq-a7a4338d12c1c142-e02",
+    "usable": true
+  },
+  "boolq-a7a4338d12c1c142-e03": {
+    "para1": "This situation primarily affects undergraduate students, although certain graduate programs do provide double majors for graduate degrees.",
+    "para2": "This situation primarily affects undergraduate students, although certain graduate programs do provide double majors for graduate degrees.",
+    "source_text": "This happens mostly for undergraduate students, but some graduate schools do offer double majors for graduate degrees .",
+    "unique_id": "boolq-a7a4338d12c1c142-e03",
+    "usable": true
+  },
+  "boolq-aa2055b7ce65fbcf-e01": {
+    "para1": "In financial accounting, operating cash flow (OCF), cash flow provided by operations, cash flow from operating activities (CFO), or free cash flow from operations (FCFO) denotes the cash amount a company produces from its revenues, excluding expenses related to long-term investments in capital assets or securities.",
+    "para2": "In financial accounting, operating cash flow (OCF), cash flow provided by operations, cash flow from operating activities (CFO), or free cash flow from operations (FCFO) denotes the cash amount a company produces from its revenues, excluding expenses related to long-term investments in capital assets or securities.",
+    "source_text": "In financial accounting, operating cash flow (OCF), cash flow provided by operations, cash flow from operating activities (CFO) or free cash flow from operations (FCFO), refers to the amount of cash a company generates from the revenues it brings in, excluding costs associated with long-term investment on capital items or investment in securities.",
+    "unique_id": "boolq-aa2055b7ce65fbcf-e01",
+    "usable": true
+  },
+  "boolq-aa2055b7ce65fbcf-e02": {
+    "para1": "The International Financial Reporting Standards defines operating cash flow as cash generated from operations less taxation and interest paid, investment income received and less dividends paid, which gives rise to operating cash flows.",
+    "para2": "The International Financial Reporting Standards defines operating cash flow as cash generated from operations less taxation and interest paid, investment income received and less dividends paid, which gives rise to operating cash flows.",
+    "source_text": "The International Financial Reporting Standards defines operating cash flow as cash generated from operations less taxation and interest paid, investment income received and less dividends paid gives rise to operating cash flows.",
+    "unique_id": "boolq-aa2055b7ce65fbcf-e02",
+    "usable": true
+  },
+  "boolq-aa2055b7ce65fbcf-e03": {
+    "para1": "To determine cash generated from operations, one must calculate cash generated from customers and cash paid to suppliers.",
+    "para2": "To determine cash generated from operations, one must calculate cash generated from customers and cash paid to suppliers.",
+    "source_text": "To calculate cash generated from operations, one must calculate cash generated from customers and cash paid to suppliers.",
+    "unique_id": "boolq-aa2055b7ce65fbcf-e03",
+    "usable": true
+  },
+  "boolq-ab29968173d04f6b-e01": {
+    "para1": "Since the early 1990s, red light cameras have been utilized in the United States across 26 U.S.",
+    "para2": "Since the early 1990s, red light cameras have been utilized in the United States across 26 U.S.",
+    "source_text": "Since the early 1990s, red light cameras have been used in the United States in 26 U.S.",
+    "unique_id": "boolq-ab29968173d04f6b-e01",
+    "usable": true
+  },
+  "boolq-ab29968173d04f6b-e02": {
+    "para1": "In certain states, cameras might be allowed only in specific locations.",
+    "para2": "In certain states, cameras might be allowed only in specific locations.",
+    "source_text": "Within some states, the cameras may only be permitted in certain areas.",
+    "unique_id": "boolq-ab29968173d04f6b-e02",
+    "usable": true
+  },
+  "boolq-ab29968173d04f6b-e03": {
+    "para1": "For example, in New York State, the Vehicle and Traffic Law allows red light cameras only in cities with a population exceeding 1 million (i.e.",
+    "para2": "For example, in New York State, the Vehicle and Traffic Law allows red light cameras only in cities with a population exceeding 1 million (i.e.",
+    "source_text": "For example, in New York State, the Vehicle and Traffic Law permits red light cameras only within cities with a population above 1 million (i.e.",
+    "unique_id": "boolq-ab29968173d04f6b-e03",
+    "usable": true
+  },
+  "boolq-acfabfcac7731327-e01": {
+    "para1": "Black Ink Crew: Chicago is an American reality TV show that airs on VH1 and premiered on October 26, 2015.",
+    "para2": "Black Ink Crew: Chicago is an American reality TV show that airs on VH1 and premiered on October 26, 2015.",
+    "source_text": "Black Ink Crew: Chicago is an American reality television series that airs on VH1 and debuted on October 26, 2015.",
+    "unique_id": "boolq-acfabfcac7731327-e01",
+    "usable": true
+  },
+  "boolq-acfabfcac7731327-e02": {
+    "para1": "It is the Chicago-based spin-off of Black Ink Crew.",
+    "para2": "It is the Chicago-based spin-off of Black Ink Crew.",
+    "source_text": "It is the Chicago-based spin-off of Black Ink Crew.",
+    "unique_id": "boolq-acfabfcac7731327-e02",
+    "usable": true
+  },
+  "boolq-acfabfcac7731327-e03": {
+    "para1": "It documents the daily activities and personnel conflicts at 9MAG, an African American-owned and run tattoo shop situated in Chicago, Illinois.",
+    "para2": "It documents the daily activities and personnel conflicts at 9MAG, an African American-owned and run tattoo shop situated in Chicago, Illinois.",
+    "source_text": "It chronicles the daily operations and staff drama at an African American owned and operated tattoo shop, 9MAG, located in Chicago, Illinois.",
+    "unique_id": "boolq-acfabfcac7731327-e03",
+    "usable": true
+  },
+  "boolq-b0d685ebec0e72d1-e01": {
+    "para1": "Baylor College of Medicine (BCM), situated in the Texas Medical Center in Houston, Texas, US, is a health sciences university.",
+    "para2": "Baylor College of Medicine (BCM), situated in the Texas Medical Center in Houston, Texas, US, is a health sciences university.",
+    "source_text": "Baylor College of Medicine (BCM), located in the Texas Medical Center in Houston, Texas, US, is a health sciences university.",
+    "unique_id": "boolq-b0d685ebec0e72d1-e01",
+    "usable": true
+  },
+  "boolq-b0d685ebec0e72d1-e02": {
+    "para1": "It comprises a medical school, Baylor College of Medicine; the Graduate School of Biomedical Sciences; the School of Allied Health Sciences; and the National School of Tropical Medicine.",
+    "para2": "It comprises a medical school, Baylor College of Medicine; the Graduate School of Biomedical Sciences; the School of Allied Health Sciences; and the National School of Tropical Medicine.",
+    "source_text": "It includes a medical school, Baylor College of Medicine; the Graduate School of Biomedical Sciences; the School of Allied Health Sciences; and the National School of Tropical Medicine.",
+    "unique_id": "boolq-b0d685ebec0e72d1-e02",
+    "usable": true
+  },
+  "boolq-b0d685ebec0e72d1-e03": {
+    "para1": "The school, situated within the world's largest medical center (Texas Medical Center), is a part owner of Baylor St.",
+    "para2": "The school, situated within the world's largest medical center (Texas Medical Center), is a part owner of Baylor St.",
+    "source_text": "The school, located in the middle of the world's largest medical center (Texas Medical Center), is part owner of Baylor St.",
+    "unique_id": "boolq-b0d685ebec0e72d1-e03",
+    "usable": true
+  },
+  "boolq-b672242415e7e704-e01": {
+    "para1": "The Pittsburgh Steelers (6--2) hold the record for the most Super Bowl victories with six titles, whereas the New England Patriots (5--5), the Dallas Cowboys (5--3), and the San Francisco 49ers (5--1) each have five wins.",
+    "para2": "The Pittsburgh Steelers (6--2) hold the record for the most Super Bowl victories with six titles, whereas the New England Patriots (5--5), the Dallas Cowboys (5--3), and the San Francisco 49ers (5--1) each have five wins.",
+    "source_text": "The Pittsburgh Steelers (6--2) have won the most Super Bowls with six championships, while the New England Patriots (5--5), the Dallas Cowboys (5--3), and the San Francisco 49ers (5--1) have five wins.",
+    "unique_id": "boolq-b672242415e7e704-e01",
+    "usable": true
+  },
+  "boolq-b672242415e7e704-e02": {
+    "para1": "New England leads in Super Bowl appearances with ten, whereas the Buffalo Bills (0--4) hold the record for consecutive appearances with four (all losses) between 1990 and 1993.",
+    "para2": "New England leads in Super Bowl appearances with ten, whereas the Buffalo Bills (0--4) hold the record for consecutive appearances with four (all losses) between 1990 and 1993.",
+    "source_text": "New England has the most Super Bowl appearances with ten, while the Buffalo Bills (0--4) have the most consecutive appearances with four (all losses) from 1990 to 1993.",
+    "unique_id": "boolq-b672242415e7e704-e02",
+    "usable": true
+  },
+  "boolq-b672242415e7e704-e03": {
+    "para1": "The Miami Dolphins are the sole other team to record at least three consecutive appearances, specifically from 1972 to 1974.",
+    "para2": "The Miami Dolphins are the sole other team to record at least three consecutive appearances, specifically from 1972 to 1974.",
+    "source_text": "The Miami Dolphins are the only other team to have at least three consecutive appearances: 1972--1974.",
+    "unique_id": "boolq-b672242415e7e704-e03",
+    "usable": true
+  },
+  "boolq-bbd530f45a143521-e01": {
+    "para1": "The moment of inertia, also called angular mass or rotational inertia, of a rigid body is a tensor that defines the torque required to achieve a specific angular acceleration about a rotational axis, much like mass defines the force needed for a specific linear acceleration.",
+    "para2": "The moment of inertia, also called angular mass or rotational inertia, of a rigid body is a tensor that defines the torque required to achieve a specific angular acceleration about a rotational axis, much like mass defines the force needed for a specific linear acceleration.",
+    "source_text": "The moment of inertia, otherwise known as the angular mass or rotational inertia, of a rigid body is a tensor that determines the torque needed for a desired angular acceleration about a rotational axis; similar to how mass determines the force needed for a desired acceleration.",
+    "unique_id": "boolq-bbd530f45a143521-e01",
+    "usable": true
+  },
+  "boolq-bbd530f45a143521-e02": {
+    "para1": "It depends on the axis chosen and the body's mass distribution, where larger moments require more torque to alter the body's rotation.",
+    "para2": "It depends on the axis chosen and the body's mass distribution, where larger moments require more torque to alter the body's rotation.",
+    "source_text": "It depends on the body's mass distribution and the axis chosen, with larger moments requiring more torque to change the body's rotation.",
+    "unique_id": "boolq-bbd530f45a143521-e02",
+    "usable": true
+  },
+  "boolq-bbd530f45a143521-e03": {
+    "para1": "It is an extensive (additive) property: for a point mass, the moment of inertia equals the mass multiplied by the square of the distance to the rotation axis.",
+    "para2": "It is an extensive (additive) property: for a point mass, the moment of inertia equals the mass multiplied by the square of the distance to the rotation axis.",
+    "source_text": "It is an extensive (additive) property: for a point mass the moment of inertia is just the mass times the square of distance to the rotation axis.",
+    "unique_id": "boolq-bbd530f45a143521-e03",
+    "usable": true
+  },
+  "boolq-c4943acb7eaa003b-e01": {
+    "para1": "Since Buffy the Vampire Slayer ended the prior season, no official crossovers exist between the two series.",
+    "para2": "Since Buffy the Vampire Slayer ended the prior season, no official crossovers exist between the two series.",
+    "source_text": "Buffy the Vampire Slayer concluded the previous season, therefore there are no official crossovers between the two series.",
+    "unique_id": "boolq-c4943acb7eaa003b-e01",
+    "usable": true
+  },
+  "boolq-c4943acb7eaa003b-e02": {
+    "para1": "Despite this, references to Buffy the Vampire Slayer appear throughout the fifth season of Angel.",
+    "para2": "Despite this, references to Buffy the Vampire Slayer appear throughout the fifth season of Angel.",
+    "source_text": "Despite this, references are made throughout the fifth season of Angel that relate to Buffy the Vampire Slayer.",
+    "unique_id": "boolq-c4943acb7eaa003b-e02",
+    "usable": true
+  },
+  "boolq-c4943acb7eaa003b-e03": {
+    "para1": "Spike is brought back to life (following his death in \"Chosen\") through the magical amulet that Angel presented to Buffy at the beginning of the finale.",
+    "para2": "Spike is brought back to life (following his death in \"Chosen\") through the magical amulet that Angel presented to Buffy at the beginning of the finale.",
+    "source_text": "Spike is resurrected (after his death in ``Chosen'') by the magical amulet Angel gave to Buffy at the start of the finale.",
+    "unique_id": "boolq-c4943acb7eaa003b-e03",
+    "usable": true
+  },
+  "boolq-c731a35e66e47179-e01": {
+    "para1": "The United Kingdom operates under a multi-party political system.",
+    "para2": "The United Kingdom operates under a multi-party political system.",
+    "source_text": "The UK political system is a multi-party system.",
+    "unique_id": "boolq-c731a35e66e47179-e01",
+    "usable": true
+  },
+  "boolq-c731a35e66e47179-e02": {
+    "para1": "Since the 1920s, the two largest political parties have been the Conservative Party and the Labour Party.",
+    "para2": "Since the 1920s, the two largest political parties have been the Conservative Party and the Labour Party.",
+    "source_text": "Since the 1920s, the two largest political participation have been the Conservative Party and the Labour Party.",
+    "unique_id": "boolq-c731a35e66e47179-e02",
+    "usable": true
+  },
+  "boolq-c731a35e66e47179-e03": {
+    "para1": "Prior to the Labour Party's emergence in British politics, the Liberal Party stood as the second major political party alongside the Conservatives.",
+    "para2": "Prior to the Labour Party's emergence in British politics, the Liberal Party stood as the second major political party alongside the Conservatives.",
+    "source_text": "Before the Labour Party rose in British politics, the Liberal Party was the other major political party along with the Conservatives.",
+    "unique_id": "boolq-c731a35e66e47179-e03",
+    "usable": true
+  },
+  "boolq-c94b00ee601fbfcc-e01": {
+    "para1": "The initial film, The Maze Runner, premiered on September 19, 2014, and achieved commercial success by grossing more than $348 million globally.",
+    "para2": "The initial film, The Maze Runner, premiered on September 19, 2014, and achieved commercial success by grossing more than $348 million globally.",
+    "source_text": "The first film, The Maze Runner, was released on September 19, 2014 and became a commercial success grossing over $348 million worldwide.",
+    "unique_id": "boolq-c94b00ee601fbfcc-e01",
+    "usable": true
+  },
+  "boolq-c94b00ee601fbfcc-e02": {
+    "para1": "The second film, Maze Runner: The Scorch Trials, premiered on September 18, 2015, and also achieved success, earning more than $312 million globally.",
+    "para2": "The second film, Maze Runner: The Scorch Trials, premiered on September 18, 2015, and also achieved success, earning more than $312 million globally.",
+    "source_text": "The second film, Maze Runner: The Scorch Trials was released on September 18, 2015, and was also a success, grossing over $312 million worldwide.",
+    "unique_id": "boolq-c94b00ee601fbfcc-e02",
+    "usable": true
+  },
+  "boolq-c94b00ee601fbfcc-e03": {
+    "para1": "The film series ended with the release of the third movie, Maze Runner: The Death Cure, on January 26, 2018.",
+    "para2": "The film series ended with the release of the third movie, Maze Runner: The Death Cure, on January 26, 2018.",
+    "source_text": "The film series concluded with the release of the third film, Maze Runner: The Death Cure on January 26, 2018.",
+    "unique_id": "boolq-c94b00ee601fbfcc-e03",
+    "usable": true
+  },
+  "boolq-ca08af04c854ebce-e01": {
+    "para1": "The Sole Survivor gets a cash prize of $1,000,000 before taxes and occasionally also receives a car supplied by the show's sponsor.",
+    "para2": "The Sole Survivor gets a cash prize of $1,000,000 before taxes and occasionally also receives a car supplied by the show's sponsor.",
+    "source_text": "The Sole Survivor receives a cash prize of $1,000,000 prior to taxes and sometimes also receives a car provided by the show's sponsor.",
+    "unique_id": "boolq-ca08af04c854ebce-e01",
+    "usable": true
+  },
+  "boolq-ca08af04c854ebce-e02": {
+    "para1": "Every participant on Survivor earns a prize based on their duration in the game.",
+    "para2": "Every participant on Survivor earns a prize based on their duration in the game.",
+    "source_text": "Every player receives a prize for participating on Survivor depending on how long he or she lasts in the game.",
+    "unique_id": "boolq-ca08af04c854ebce-e02",
+    "usable": true
+  },
+  "boolq-ca08af04c854ebce-e03": {
+    "para1": "In most seasons, the runner-up receives $100,000, and third place wins $85,000.",
+    "para2": "In most seasons, the runner-up receives $100,000, and third place wins $85,000.",
+    "source_text": "In most seasons, the runner-up receives $100,000, and third place wins $85,000.",
+    "unique_id": "boolq-ca08af04c854ebce-e03",
+    "usable": true
+  },
+  "boolq-cad62404719135cb-e01": {
+    "para1": "In October 2016, the series was renewed for a seventh season called Cult, which debuted on September 5, 2017 on FX.",
+    "para2": "In October 2016, the series was renewed for a seventh season called Cult, which debuted on September 5, 2017 on FX.",
+    "source_text": "In October 2016, the series was renewed for a seventh season titled Cult, which premiered on September 5, 2017 on FX.",
+    "unique_id": "boolq-cad62404719135cb-e01",
+    "usable": true
+  },
+  "boolq-cad62404719135cb-e02": {
+    "para1": "In January 2017, the series was renewed for its eighth and ninth seasons.",
+    "para2": "In January 2017, the series was renewed for its eighth and ninth seasons.",
+    "source_text": "In January 2017, the series was renewed for an eighth and ninth season.",
+    "unique_id": "boolq-cad62404719135cb-e02",
+    "usable": true
+  },
+  "boolq-cad62404719135cb-e03": {
+    "para1": "As of October 3, 2017, 79 episodes of American Horror Story have been broadcast.",
+    "para2": "As of October 3, 2017, 79 episodes of American Horror Story have been broadcast.",
+    "source_text": "As of October 3, 2017, 79 episodes of American Horror Story have aired.",
+    "unique_id": "boolq-cad62404719135cb-e03",
+    "usable": true
+  },
+  "boolq-cce45b928248740a-e01": {
+    "para1": "Promotion is a chess rule requiring a pawn that reaches its eighth rank to be immediately replaced by the player's choice of a queen, knight, rook, or bishop of the same color.",
+    "para2": "Promotion is a chess rule requiring a pawn that reaches its eighth rank to be immediately replaced by the player's choice of a queen, knight, rook, or bishop of the same color.",
+    "source_text": "Promotion is a chess rule that requires a pawn that reaches its eighth rank to be immediately replaced by the player's choice of a queen, knight, rook, or bishop of the same color .",
+    "unique_id": "boolq-cce45b928248740a-e01",
+    "usable": true
+  },
+  "boolq-cce45b928248740a-e02": {
+    "para1": "The new piece substitutes the pawn within the same move.",
+    "para2": "The new piece substitutes the pawn within the same move.",
+    "source_text": "The new piece replaces the pawn, as part of the same move.",
+    "unique_id": "boolq-cce45b928248740a-e02",
+    "usable": true
+  },
+  "boolq-cce45b928248740a-e03": {
+    "para1": "The selection of a new piece is not restricted to those previously captured, meaning promotion can lead to a player owning, for instance, two or more queens even if the game began with only one.",
+    "para2": "The selection of a new piece is not restricted to those previously captured, meaning promotion can lead to a player owning, for instance, two or more queens even if the game began with only one.",
+    "source_text": "The choice of new piece is not limited to pieces previously captured , thus promotion can result in a player owning, for example, two or more queens despite starting the game with one.",
+    "unique_id": "boolq-cce45b928248740a-e03",
+    "usable": true
+  },
+  "boolq-d0e1ec6c9009347c-e01": {
+    "para1": "In computational complexity theory, NP (nondeterministic polynomial time) is a complexity class used to describe certain types of decision problems.",
+    "para2": "In computational complexity theory, NP (nondeterministic polynomial time) is a complexity class used to describe certain types of decision problems.",
+    "source_text": "In computational complexity theory, NP (nondeterministic polynomial time) is a complexity class used to describe certain types of decision problems.",
+    "unique_id": "boolq-d0e1ec6c9009347c-e01",
+    "usable": true
+  },
+  "boolq-d0e1ec6c9009347c-e02": {
+    "para1": "Informally, NP comprises all decision problems whose \"yes\" instances possess efficiently verifiable proofs.",
+    "para2": "Informally, NP comprises all decision problems whose \"yes\" instances possess efficiently verifiable proofs.",
+    "source_text": "Informally, NP is the set of all decision problems for which the instances where the answer is ``yes'' have efficiently verifiable proofs.",
+    "unique_id": "boolq-d0e1ec6c9009347c-e02",
+    "usable": true
+  },
+  "boolq-d0e1ec6c9009347c-e03": {
+    "para1": "More precisely, these proofs must be verifiable through deterministic computations executable in polynomial time.",
+    "para2": "More precisely, these proofs must be verifiable through deterministic computations executable in polynomial time.",
+    "source_text": "More precisely, these proofs have to be verifiable by deterministic computations that can be performed in polynomial time.",
+    "unique_id": "boolq-d0e1ec6c9009347c-e03",
+    "usable": true
+  },
+  "boolq-d12ac57a9e5c293f-e01": {
+    "para1": "Daylight saving time in the United States is the practice of advancing the clock by one hour during the warmer months, thereby providing more daylight in the evenings and less in the mornings.",
+    "para2": "Daylight saving time in the United States is the practice of advancing the clock by one hour during the warmer months, thereby providing more daylight in the evenings and less in the mornings.",
+    "source_text": "Daylight saving time in the United States is the practice of setting the clock forward by one hour during the warmer part of the year, so that evenings have more daylight and mornings have less.",
+    "unique_id": "boolq-d12ac57a9e5c293f-e01",
+    "usable": true
+  },
+  "boolq-d12ac57a9e5c293f-e02": {
+    "para1": "Most regions in the United States follow daylight saving time (DST), with exceptions including Arizona (excluding the Navajo, who observe DST on tribal lands), Hawaii, and the overseas territories of American Samoa, Guam, the Northern Mariana Islands, Puerto Rico, and the United States Virgin Islands.",
+    "para2": "Most regions in the United States follow daylight saving time (DST), with exceptions including Arizona (excluding the Navajo, who observe DST on tribal lands), Hawaii, and the overseas territories of American Samoa, Guam, the Northern Mariana Islands, Puerto Rico, and the United States Virgin Islands.",
+    "source_text": "Most areas of the United States observe daylight saving time (DST), the exceptions being Arizona (except for the Navajo, who do observe daylight saving time on tribal lands), Hawaii, and the overseas territories of American Samoa, Guam, the Northern Mariana Islands, Puerto Rico, and the United States Virgin Islands.",
+    "unique_id": "boolq-d12ac57a9e5c293f-e02",
+    "usable": true
+  },
+  "boolq-d12ac57a9e5c293f-e03": {
+    "para1": "The Uniform Time Act of 1966 created the system of uniform Daylight Saving Time across the United States.",
+    "para2": "The Uniform Time Act of 1966 created the system of uniform Daylight Saving Time across the United States.",
+    "source_text": "The Uniform Time Act of 1966 established the system of uniform Daylight Saving Time throughout the US.",
+    "unique_id": "boolq-d12ac57a9e5c293f-e03",
+    "usable": true
+  },
+  "boolq-d1edb0f196e90a19-e01": {
+    "para1": "Many animal species can detect sounds at frequencies far exceeding the range of human hearing.",
+    "para2": "Many animal species can detect sounds at frequencies far exceeding the range of human hearing.",
+    "source_text": "Several animal species are able to hear frequencies well beyond the human hearing range.",
+    "unique_id": "boolq-d1edb0f196e90a19-e01",
+    "usable": true
+  },
+  "boolq-d1edb0f196e90a19-e02": {
+    "para1": "For instance, certain dolphins and bats are capable of hearing frequencies as high as 100,000 Hz.",
+    "para2": "For instance, certain dolphins and bats are capable of hearing frequencies as high as 100,000 Hz.",
+    "source_text": "Some dolphins and bats, for example, can hear frequencies up to 100,000 Hz.",
+    "unique_id": "boolq-d1edb0f196e90a19-e02",
+    "usable": true
+  },
+  "boolq-d1edb0f196e90a19-e03": {
+    "para1": "Elephants can hear sounds at 14--16 Hz, while some whales can hear infrasonic sounds as low as 7 Hz (in water).",
+    "para2": "Elephants can hear sounds at 14--16 Hz, while some whales can hear infrasonic sounds as low as 7 Hz (in water).",
+    "source_text": "Elephants can hear sounds at 14--16 Hz, while some whales can hear infrasonic sounds as low as 7 Hz (in water).",
+    "unique_id": "boolq-d1edb0f196e90a19-e03",
+    "usable": true
+  },
+  "boolq-d60cdae78349a9a8-e01": {
+    "para1": "The upcoming role-playing video games (RPGs) are developed by Game Freak and published by The Pokémon Company and Nintendo for the Nintendo Switch.",
+    "para2": "The upcoming role-playing video games (RPGs) are developed by Game Freak and published by The Pokémon Company and Nintendo for the Nintendo Switch.",
+    "source_text": "are upcoming role-playing video games (RPGs) developed by Game Freak and published by The Pokémon Company and Nintendo for the Nintendo Switch.",
+    "unique_id": "boolq-d60cdae78349a9a8-e01",
+    "usable": true
+  },
+  "boolq-d60cdae78349a9a8-e02": {
+    "para1": "The games represent the initial entries in the primary Pokémon RPG series on the Nintendo Switch.",
+    "para2": "The games represent the initial entries in the primary Pokémon RPG series on the Nintendo Switch.",
+    "source_text": "The games are the first installments of the main Pokémon RPG series for the Nintendo Switch.",
+    "unique_id": "boolq-d60cdae78349a9a8-e02",
+    "usable": true
+  },
+  "boolq-d60cdae78349a9a8-e03": {
+    "para1": "They are improved remakes of the 1998 video game Pokémon Yellow.",
+    "para2": "They are improved remakes of the 1998 video game Pokémon Yellow.",
+    "source_text": "They are enhanced remakes of the 1998 video game Pokémon Yellow.",
+    "unique_id": "boolq-d60cdae78349a9a8-e03",
+    "usable": true
+  },
+  "boolq-d7f45133c0d29410-e01": {
+    "para1": "An acute triangle is a triangle where all three angles are acute (less than 90°).",
+    "para2": "An acute triangle is a triangle where all three angles are acute (less than 90°).",
+    "source_text": "An acute triangle is a triangle with all three angles acute (less than 90°).",
+    "unique_id": "boolq-d7f45133c0d29410-e01",
+    "usable": true
+  },
+  "boolq-d7f45133c0d29410-e02": {
+    "para1": "An obtuse triangle is defined by having one obtuse angle (greater than 90°) and two acute angles.",
+    "para2": "An obtuse triangle is defined by having one obtuse angle (greater than 90°) and two acute angles.",
+    "source_text": "An obtuse triangle is one with one obtuse angle (greater than 90°) and two acute angles.",
+    "unique_id": "boolq-d7f45133c0d29410-e02",
+    "usable": true
+  },
+  "boolq-d7f45133c0d29410-e03": {
+    "para1": "Since a triangle's angles must sum to 180°, no triangle can have more than one obtuse angle.",
+    "para2": "Since a triangle's angles must sum to 180°, no triangle can have more than one obtuse angle.",
+    "source_text": "Since a triangle's angles must sum to 180°, no triangle can have more than one obtuse angle.",
+    "unique_id": "boolq-d7f45133c0d29410-e03",
+    "usable": true
+  },
+  "boolq-da9b94f924bd9ad9-e01": {
+    "para1": "A six-time MLB All-Star who has led the AL in strikeouts four times and in wins twice, Verlander is the recipient of numerous accolades.",
+    "para2": "A six-time MLB All-Star who has led the AL in strikeouts four times and in wins twice, Verlander is the recipient of numerous accolades.",
+    "source_text": "The winner of a number of accolades, Verlander is a six-time MLB All-Star, has led the AL in strikeouts four times and in wins twice.",
+    "unique_id": "boolq-da9b94f924bd9ad9-e01",
+    "usable": true
+  },
+  "boolq-da9b94f924bd9ad9-e02": {
+    "para1": "He was the AL Rookie of the Year in 2006, and on June 12, 2007, threw the first no-hitter at Comerica Park against the Milwaukee Brewers.",
+    "para2": "He was the AL Rookie of the Year in 2006, and on June 12, 2007, threw the first no-hitter at Comerica Park against the Milwaukee Brewers.",
+    "source_text": "He was the AL Rookie of the Year in 2006, and on June 12, 2007, pitched the first no-hitter at Comerica Park, versus the Milwaukee Brewers.",
+    "unique_id": "boolq-da9b94f924bd9ad9-e02",
+    "usable": true
+  },
+  "boolq-da9b94f924bd9ad9-e03": {
+    "para1": "In 2009, he led the AL in wins and strikeouts, both for the first time.",
+    "para2": "In 2009, he led the AL in wins and strikeouts, both for the first time.",
+    "source_text": "In 2009, he led the AL in wins and strikeouts, both for the first time.",
+    "unique_id": "boolq-da9b94f924bd9ad9-e03",
+    "usable": true
+  },
+  "boolq-de7b7d04897fa00e-e01": {
+    "para1": "The cervical nerves are the spinal nerves originating from the cervical vertebrae.",
+    "para2": "The cervical nerves are the spinal nerves originating from the cervical vertebrae.",
+    "source_text": "The cervical nerves are the spinal nerves from the cervical vertebrae.",
+    "unique_id": "boolq-de7b7d04897fa00e-e01",
+    "usable": true
+  },
+  "boolq-de7b7d04897fa00e-e02": {
+    "para1": "Although there are seven cervical vertebrae (C1-C7), there are eight cervical nerves C1--C8.",
+    "para2": "Although there are seven cervical vertebrae (C1-C7), there are eight cervical nerves C1--C8.",
+    "source_text": "Although there are seven cervical vertebrae (C1-C7), there are eight cervical nerves C1--C8.",
+    "unique_id": "boolq-de7b7d04897fa00e-e02",
+    "usable": true
+  },
+  "boolq-de7b7d04897fa00e-e03": {
+    "para1": "All cervical nerves except C8 emerge above their corresponding vertebrae, while the C8 nerve emerges below the C7 vertebra.",
+    "para2": "All cervical nerves except C8 emerge above their corresponding vertebrae, while the C8 nerve emerges below the C7 vertebra.",
+    "source_text": "All cervical nerves except C8 emerge above their corresponding vertebrae, while the C8 nerve emerges below the C7 vertebra.",
+    "unique_id": "boolq-de7b7d04897fa00e-e03",
+    "usable": true
+  },
+  "boolq-e2244124ad3bdcb0-e01": {
+    "para1": "This list details the National Basketball Association (NBA) franchise post-season appearance droughts.",
+    "para2": "This list details the National Basketball Association (NBA) franchise post-season appearance droughts.",
+    "source_text": "This is a list of National Basketball Association (NBA) franchise post-season appearance droughts.",
+    "unique_id": "boolq-e2244124ad3bdcb0-e01",
+    "usable": true
+  },
+  "boolq-e2244124ad3bdcb0-e02": {
+    "para1": "This list encompasses both all-time and active consecutive non-playoff records.",
+    "para2": "This list encompasses both all-time and active consecutive non-playoff records.",
+    "source_text": "This list includes the all-time and the active consecutive non-playoffs.",
+    "unique_id": "boolq-e2244124ad3bdcb0-e02",
+    "usable": true
+  },
+  "boolq-e2244124ad3bdcb0-e03": {
+    "para1": "Aside from the NBA playoff appearance droughts, this list also includes droughts of series wins, appearances in the NBA Finals, and NBA championship wins.",
+    "para2": "Aside from the NBA playoff appearance droughts, this list also includes droughts of series wins, appearances in the NBA Finals, and NBA championship wins.",
+    "source_text": "Aside from the NBA playoff appearance droughts, this list also includes droughts of series wins, appearances in the NBA Finals and NBA championship wins.",
+    "unique_id": "boolq-e2244124ad3bdcb0-e03",
+    "usable": true
+  },
+  "boolq-e330f4a4e79dd48c-e01": {
+    "para1": "Chionoecetes opilio, commonly called snow crab, is a mainly epifaunal crustacean indigenous to shelf depths in the northwest Atlantic Ocean and the north Pacific Ocean.",
+    "para2": "Chionoecetes opilio, commonly called snow crab, is a mainly epifaunal crustacean indigenous to shelf depths in the northwest Atlantic Ocean and the north Pacific Ocean.",
+    "source_text": "Chionoecetes opilio, also known as snow crab, is a predominantly epifaunal crustacean native to shelf depths in the northwest Atlantic Ocean and north Pacific Ocean.",
+    "unique_id": "boolq-e330f4a4e79dd48c-e01",
+    "usable": true
+  },
+  "boolq-e330f4a4e79dd48c-e02": {
+    "para1": "It is a well-known commercial species of Chionoecetes, frequently caught using traps or trawling.",
+    "para2": "It is a well-known commercial species of Chionoecetes, frequently caught using traps or trawling.",
+    "source_text": "It is a well-known commercial species of Chionoecetes, often caught with traps or by trawling.",
+    "unique_id": "boolq-e330f4a4e79dd48c-e02",
+    "usable": true
+  },
+  "boolq-e330f4a4e79dd48c-e03": {
+    "para1": "The genus Chionoecetes comprises seven species, all known as \"snow crab\".",
+    "para2": "The genus Chionoecetes comprises seven species, all known as \"snow crab\".",
+    "source_text": "Seven species are in the genus Chionoecetes, all of which bear the name ``snow crab''.",
+    "unique_id": "boolq-e330f4a4e79dd48c-e03",
+    "usable": true
+  },
+  "boolq-e65e98755051bf6b-e01": {
+    "para1": "The Bank of England, officially known as the Governor and Company of the Bank of England, serves as the central bank of the United Kingdom and represents the model upon which most contemporary central banks are founded.",
+    "para2": "The Bank of England, officially known as the Governor and Company of the Bank of England, serves as the central bank of the United Kingdom and represents the model upon which most contemporary central banks are founded.",
+    "source_text": "The Bank of England, formally the Governor and Company of the Bank of England, is the central bank of the United Kingdom and the model on which most modern central banks have been based.",
+    "unique_id": "boolq-e65e98755051bf6b-e01",
+    "usable": true
+  },
+  "boolq-e65e98755051bf6b-e02": {
+    "para1": "Founded in 1694, it stands as the second oldest central bank currently in operation, following the Sveriges Riksbank.",
+    "para2": "Founded in 1694, it stands as the second oldest central bank currently in operation, following the Sveriges Riksbank.",
+    "source_text": "Established in 1694, it is the second oldest central bank in operation today, after the Sveriges Riksbank.",
+    "unique_id": "boolq-e65e98755051bf6b-e02",
+    "usable": true
+  },
+  "boolq-e65e98755051bf6b-e03": {
+    "para1": "The Bank of England ranks as the eighth oldest bank in the world.",
+    "para2": "The Bank of England ranks as the eighth oldest bank in the world.",
+    "source_text": "The Bank of England is the world's 8th oldest bank.",
+    "unique_id": "boolq-e65e98755051bf6b-e03",
+    "usable": true
+  },
+  "boolq-e7acb230504dfaef-e01": {
+    "para1": "Lawrence Samuel Durrell, Louisa Durrell, and their children were all born in India during the British Raj, as was Louisa Durrell's father.",
+    "para2": "Lawrence Samuel Durrell, Louisa Durrell, and their children were all born in India during the British Raj, as was Louisa Durrell's father.",
+    "source_text": "Lawrence Samuel Durrell, Louisa Durrell and their children were all born in India during the British Raj as was Louisa Durrell's father.",
+    "unique_id": "boolq-e7acb230504dfaef-e01",
+    "usable": true
+  },
+  "boolq-e7acb230504dfaef-e02": {
+    "para1": "After Lawrence Samuel Durrell died in 1928, Mrs Durrell and her three younger children relocated to the United Kingdom, where Lawrence had already been sent for his education.",
+    "para2": "After Lawrence Samuel Durrell died in 1928, Mrs Durrell and her three younger children relocated to the United Kingdom, where Lawrence had already been sent for his education.",
+    "source_text": "Following Lawrence Samuel Durrell's death in 1928, Mrs Durrell and her three younger children moved to the United Kingdom, where Lawrence had already been sent to be educated.",
+    "unique_id": "boolq-e7acb230504dfaef-e02",
+    "usable": true
+  },
+  "boolq-e7acb230504dfaef-e03": {
+    "para1": "In 1935 they relocated to Corfu, after Lawrence had previously moved there with his wife Nancy.",
+    "para2": "In 1935 they relocated to Corfu, after Lawrence had previously moved there with his wife Nancy.",
+    "source_text": "In 1935 they moved to Corfu, following Lawrence's earlier move there with his wife Nancy.",
+    "unique_id": "boolq-e7acb230504dfaef-e03",
+    "usable": true
+  },
+  "boolq-e93cf83cfdcded97-e01": {
+    "para1": "Although the House of Commons does not formally elect the prime minister, it indirectly controls the premiership.",
+    "para2": "Although the House of Commons does not formally elect the prime minister, it indirectly controls the premiership.",
+    "source_text": "Though it does not formally elect the prime minister, the House of Commons indirectly controls the premiership.",
+    "unique_id": "boolq-e93cf83cfdcded97-e01",
+    "usable": true
+  },
+  "boolq-e93cf83cfdcded97-e02": {
+    "para1": "By convention, the prime minister must maintain the support of, and is answerable to, the House of Commons.",
+    "para2": "By convention, the prime minister must maintain the support of, and is answerable to, the House of Commons.",
+    "source_text": "By convention, the prime minister is answerable to, and must maintain the support of, the House of Commons.",
+    "unique_id": "boolq-e93cf83cfdcded97-e02",
+    "usable": true
+  },
+  "boolq-e93cf83cfdcded97-e03": {
+    "para1": "Thus, whenever the prime minister's office becomes vacant, the governor general is obligated to appoint the individual most likely to secure the House's support—typically the leader of the largest party in the lower house, though the system permits a coalition of two or more parties.",
+    "para2": "Thus, whenever the prime minister's office becomes vacant, the governor general is obligated to appoint the individual most likely to secure the House's support—typically the leader of the largest party in the lower house, though the system permits a coalition of two or more parties.",
+    "source_text": "Thus, whenever the office of prime minister falls vacant, the governor general has the duty of appointing the person most likely to command the support of the House--normally the leader of the largest party in the lower house, although the system allows a coalition of two or more parties.",
+    "unique_id": "boolq-e93cf83cfdcded97-e03",
+    "usable": true
+  },
+  "boolq-eb50b5e27b356c36-e01": {
+    "para1": "This list includes every penalty shoot-out that has taken place in the Finals tournament of the FIFA World Cup.",
+    "para2": "This list includes every penalty shoot-out that has taken place in the Finals tournament of the FIFA World Cup.",
+    "source_text": "This is a list of all penalty shoot-outs that have occurred in the Finals tournament of the FIFA World Cup.",
+    "unique_id": "boolq-eb50b5e27b356c36-e01",
+    "usable": true
+  },
+  "boolq-eb50b5e27b356c36-e02": {
+    "para1": "Penalty shoot-outs were introduced as tie-breakers in the 1978 World Cup but did not occur before 1982.",
+    "para2": "Penalty shoot-outs were introduced as tie-breakers in the 1978 World Cup but did not occur before 1982.",
+    "source_text": "Penalty shoot-outs were introduced as tie-breakers in the 1978 World Cup but did not occur before 1982.",
+    "unique_id": "boolq-eb50b5e27b356c36-e02",
+    "usable": true
+  },
+  "boolq-eb50b5e27b356c36-e03": {
+    "para1": "The inaugural World Cup title decided by a penalty shoot-out occurred in 1994.",
+    "para2": "The inaugural World Cup title decided by a penalty shoot-out occurred in 1994.",
+    "source_text": "The first time a World Cup title was won by penalty shoot-out was in 1994.",
+    "unique_id": "boolq-eb50b5e27b356c36-e03",
+    "usable": true
+  },
+  "boolq-eb98342583e2efdd-e01": {
+    "para1": "A batter who receives a base on balls is commonly said to have been \"walked\" by the pitcher.",
+    "para2": "A batter who receives a base on balls is commonly said to have been \"walked\" by the pitcher.",
+    "source_text": "A batter who draws a base on balls is commonly said to have been ``walked'' by the pitcher.",
+    "unique_id": "boolq-eb98342583e2efdd-e01",
+    "usable": true
+  },
+  "boolq-eb98342583e2efdd-e02": {
+    "para1": "When the batter is walked, runners advance one base without liability to be put out, provided they must vacate their base to let the batter occupy first base.",
+    "para2": "When the batter is walked, runners advance one base without liability to be put out, provided they must vacate their base to let the batter occupy first base.",
+    "source_text": "When the batter is walked, runners advance one base without liability to be put out only if forced to vacate their base to allow the batter to take first base.",
+    "unique_id": "boolq-eb98342583e2efdd-e02",
+    "usable": true
+  },
+  "boolq-eb98342583e2efdd-e03": {
+    "para1": "If a batter draws a walk with the bases loaded, all preceding runners must advance, including the runner on third base who is forced to home plate to score a run; when a run is forced on a walk, the batter is credited with an RBI per rule 10.04.",
+    "para2": "If a batter draws a walk with the bases loaded, all preceding runners must advance, including the runner on third base who is forced to home plate to score a run; when a run is forced on a walk, the batter is credited with an RBI per rule 10.04.",
+    "source_text": "If a batter draws a walk with the bases loaded, all preceding runners are forced to advance, including the runner on third base who is forced to home plate to score a run; when a run is forced on a walk, the batter is credited with an RBI per rule 10.04.",
+    "unique_id": "boolq-eb98342583e2efdd-e03",
+    "usable": true
+  },
+  "boolq-ee774f60852d02a3-e01": {
+    "para1": "Postal mail does not require a return address.",
+    "para2": "Postal mail does not require a return address.",
+    "source_text": "The return address is not required on postal mail.",
+    "unique_id": "boolq-ee774f60852d02a3-e01",
+    "usable": true
+  },
+  "boolq-ee774f60852d02a3-e02": {
+    "para1": "However, the absence of a return address stops the postal service from returning the item if it is undeliverable, such as due to damage, postage due, or an invalid destination.",
+    "para2": "However, the absence of a return address stops the postal service from returning the item if it is undeliverable, such as due to damage, postage due, or an invalid destination.",
+    "source_text": "However, lack of a return address prevents the postal service from being able to return the item if it proves undeliverable; such as from damage, postage due, or invalid destination.",
+    "unique_id": "boolq-ee774f60852d02a3-e02",
+    "usable": true
+  },
+  "boolq-ee774f60852d02a3-e03": {
+    "para1": "Such mail could otherwise turn into dead letter mail.",
+    "para2": "Such mail could otherwise turn into dead letter mail.",
+    "source_text": "Such mail may otherwise become dead letter mail.",
+    "unique_id": "boolq-ee774f60852d02a3-e03",
+    "usable": true
+  },
+  "boolq-ef0b09d8fc355f32-e01": {
+    "para1": "Earth science or geoscience is a widely accepted term for the natural science fields concerned with the planet Earth.",
+    "para2": "Earth science or geoscience is a widely accepted term for the natural science fields concerned with the planet Earth.",
+    "source_text": "Earth science or geoscience is a widely embraced term for the fields of natural science related to the planet Earth.",
+    "unique_id": "boolq-ef0b09d8fc355f32-e01",
+    "usable": true
+  },
+  "boolq-ef0b09d8fc355f32-e02": {
+    "para1": "It is the branch of science that studies the physical makeup of the Earth and its atmosphere.",
+    "para2": "It is the branch of science that studies the physical makeup of the Earth and its atmosphere.",
+    "source_text": "It is the branch of science dealing with the physical constitution of the earth and its atmosphere.",
+    "unique_id": "boolq-ef0b09d8fc355f32-e02",
+    "usable": true
+  },
+  "boolq-ef0b09d8fc355f32-e03": {
+    "para1": "Earth science examines the physical attributes of our planet, ranging from earthquakes and raindrops to floods and fossils.",
+    "para2": "Earth science examines the physical attributes of our planet, ranging from earthquakes and raindrops to floods and fossils.",
+    "source_text": "Earth science is the study of our planet's physical characteristics, from earthquakes to raindrops, and floods to fossils.",
+    "unique_id": "boolq-ef0b09d8fc355f32-e03",
+    "usable": true
+  },
+  "boolq-f544563be880b8a0-e01": {
+    "para1": "Carling distributes Black Label, a Canadian lager brand that is well-known throughout the former British Empire.",
+    "para2": "Carling distributes Black Label, a Canadian lager brand that is well-known throughout the former British Empire.",
+    "source_text": "Black Label is a Canadian brand of lager distributed by Carling and well-known throughout the former British Empire.",
+    "unique_id": "boolq-f544563be880b8a0-e01",
+    "usable": true
+  },
+  "boolq-f544563be880b8a0-e02": {
+    "para1": "In multiple nations, the beer is also referred to as Carling Black Label, while in Sweden it is known as Carling Premier.",
+    "para2": "In multiple nations, the beer is also referred to as Carling Black Label, while in Sweden it is known as Carling Premier.",
+    "source_text": "In several countries, it is also known as Carling Black Label, and in Sweden, it is known as Carling Premier.",
+    "unique_id": "boolq-f544563be880b8a0-e02",
+    "usable": true
+  },
+  "boolq-f544563be880b8a0-e03": {
+    "para1": "In the United Kingdom it is now referred to simply as Carling.",
+    "para2": "In the United Kingdom it is now referred to simply as Carling.",
+    "source_text": "In the United Kingdom it is now known as just Carling.",
+    "unique_id": "boolq-f544563be880b8a0-e03",
+    "usable": true
+  },
+  "boolq-f5f9cd443a614834-e01": {
+    "para1": "A bundle branch block can be diagnosed when the QRS complex duration on the ECG is greater than 120 ms.",
+    "para2": "A bundle branch block can be diagnosed when the QRS complex duration on the ECG is greater than 120 ms.",
+    "source_text": "A bundle branch block can be diagnosed when the duration of the QRS complex on the ECG exceeds 120 ms.",
+    "unique_id": "boolq-f5f9cd443a614834-e01",
+    "usable": true
+  },
+  "boolq-f5f9cd443a614834-e02": {
+    "para1": "A right bundle branch block usually results in the prolongation of the final segment of the QRS complex and can shift the heart's electrical axis slightly toward the right.",
+    "para2": "A right bundle branch block usually results in the prolongation of the final segment of the QRS complex and can shift the heart's electrical axis slightly toward the right.",
+    "source_text": "A right bundle branch block typically causes prolongation of the last part of the QRS complex, and may shift the heart's electrical axis slightly to the right.",
+    "unique_id": "boolq-f5f9cd443a614834-e02",
+    "usable": true
+  },
+  "boolq-f5f9cd443a614834-e03": {
+    "para1": "The ECG will display a terminal R wave in lead V1 and a slurred S wave in lead I.",
+    "para2": "The ECG will display a terminal R wave in lead V1 and a slurred S wave in lead I.",
+    "source_text": "The ECG will show a terminal R wave in lead V1 and a slurred S wave in lead I.",
+    "unique_id": "boolq-f5f9cd443a614834-e03",
+    "usable": true
+  },
+  "boolq-f846cb5de0b81b3c-e01": {
+    "para1": "The proposed underground Bay Area Rapid Transit station located in San Jose, California, is the Downtown San Jose BART station.",
+    "para2": "The proposed underground Bay Area Rapid Transit station located in San Jose, California, is the Downtown San Jose BART station.",
+    "source_text": "Downtown San Jose BART station is a proposed underground Bay Area Rapid Transit station in San Jose, California.",
+    "unique_id": "boolq-f846cb5de0b81b3c-e01",
+    "usable": true
+  },
+  "boolq-f846cb5de0b81b3c-e02": {
+    "para1": "The station would be co-located with the Santa Clara Light Rail Station and link to the proposed Santa Clara, Richmond, and San Francisco/Daly City stations.",
+    "para2": "The station would be co-located with the Santa Clara Light Rail Station and link to the proposed Santa Clara, Richmond, and San Francisco/Daly City stations.",
+    "source_text": "The station would be co-located with the Santa Clara Light Rail Station and connect to the proposed Santa Clara, Richmond and San Francisco/Daly City stations.",
+    "unique_id": "boolq-f846cb5de0b81b3c-e02",
+    "usable": true
+  },
+  "boolq-f846cb5de0b81b3c-e03": {
+    "para1": "It would be followed by the proposed Alum Rock BART station.",
+    "para2": "It would be followed by the proposed Alum Rock BART station.",
+    "source_text": "It would be preceded by the proposed Alum Rock BART station.",
+    "unique_id": "boolq-f846cb5de0b81b3c-e03",
+    "usable": true
+  }
+}

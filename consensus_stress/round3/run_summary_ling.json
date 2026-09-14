@@ -1,0 +1,33 @@
+{
+  "endpoint": "http://127.0.0.1:31520/v1/chat/completions",
+  "expected_calls": 5000,
+  "first_pass_rate": 0.1194,
+  "model": "Ling-3.0-tiny",
+  "n_pairs": 100,
+  "per_condition": {
+    "original": {
+      "n": 1000,
+      "success": 357
+    },
+    "paraphrase": {
+      "n": 1000,
+      "success": 425
+    },
+    "remove": {
+      "n": 1000,
+      "success": 86
+    },
+    "reverse": {
+      "n": 1000,
+      "success": 358
+    },
+    "synthetic_reverse": {
+      "n": 1000,
+      "success": 328
+    }
+  },
+  "protocol": "cs-paper-vitaminc-2026-09-13",
+  "records": 5000,
+  "success": 1554,
+  "valid_rate": 0.3108
+}

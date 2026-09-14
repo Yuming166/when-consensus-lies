@@ -1,0 +1,7 @@
+{
+  "expected_calls": 2000,
+  "protocol": "cs-paper-boolq-20260913",
+  "records": 2000,
+  "success": 2000,
+  "valid_rate": 1.0
+}

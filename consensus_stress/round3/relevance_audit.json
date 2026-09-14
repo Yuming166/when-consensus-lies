@@ -1,0 +1,431 @@
+{
+  "items": [
+    {
+      "claim": "Argentina beat France 2-1 in the 2019 FIFA U-17 World Cup final .",
+      "evidence": "Argentina won their fourth U-17 World Cup title , winning 2–1 against France in the final , which was also the first time in the history that Argentina won a FIFA World Cup tournament at home soil.",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec7d50dc9e77c00084422ab:8167d079f786:support",
+      "pair_id": "5ec7d50dc9e77c00084422ab:8167d079f786",
+      "relevant": true,
+      "reverse_evidence": "Brazil won their fourth U-17 World Cup title , winning 2–1 against Mexico in the final , which was also the first time in the history that Brazil won a FIFA World Cup tournament at home soil.",
+      "stage": 1
+    },
+    {
+      "claim": "After 2017 , Let It Go received more than 1.4 billion views on YouTube .",
+      "evidence": "On January 30 , 2014 , a sing-along version of the sequence was released and has received more than 1.3 billion views on YouTube as of December 2017.",
+      "gold_label": "REFUTES",
+      "item_id": "5ebe6f30c9e77c0008408905:d2f15d406c55:refute",
+      "pair_id": "5ebe6f30c9e77c0008408905:d2f15d406c55",
+      "relevant": true,
+      "reverse_evidence": "On January 30 , 2014 , a sing-along version of the sequence was released and has received more than 1.4 billion views on YouTube as of April 2018.",
+      "stage": 1
+    },
+    {
+      "claim": "Ed Case represented Hawaii in the United States House of Representatives from 2002 to 2007 .",
+      "evidence": "He previously represented Hawaii in the United States House of Representatives from 2002 to 2007.Case , a Blue Dog Democrat , first came to prominence in Hawaii as majority leader of the Hawaii State Legislature and for his campaign for Governor of Hawaii in 2002 .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de08c9e77c000848a3e7:065ce7b63f12:support",
+      "pair_id": "5ed4de08c9e77c000848a3e7:065ce7b63f12",
+      "relevant": true,
+      "reverse_evidence": "He previously represented the 2nd district from 2002 to 2007.Case , a Blue Dog Democrat , first came to prominence in Hawaii as majority leader of the Hawaii State Legislature and for his campaign for Governor of Hawaii in 2002 .",
+      "stage": 1
+    },
+    {
+      "claim": "Santa Clarita ranks ahead of # 2 on the list of Los Angeles County 's largest cities .",
+      "evidence": "Santa Clarita , officially the City of Santa Clarita , is the first largest city in Los Angeles County , California , and the 23rd largest in the state of California .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5eb95739c9e77c0008fa1674:f439e60e5095:support",
+      "pair_id": "5eb95739c9e77c0008fa1674:f439e60e5095",
+      "relevant": true,
+      "reverse_evidence": "Santa Clarita , officially the City of Santa Clarita , is the third largest city in Los Angeles County , California , and the 23rd largest in the state of California .",
+      "stage": 1
+    },
+    {
+      "claim": "AIK Fotboll is from Solna Municipality , a town outside Stockholm .",
+      "evidence": "AIK Fotboll ( ) , more commonly known simply as AIK ( ) , an abbreviation for Allmänna Idrottsklubben ( literally `` The Public Athletics Club '' ) , is a Swedish football club from the town of [ Solna Municipality|Solna ] ] , just outside Stockholm .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9464c9e77c0008467988:fd54fd1f6e48:support",
+      "pair_id": "5ece9464c9e77c0008467988:fd54fd1f6e48",
+      "relevant": true,
+      "reverse_evidence": "AIK Fotboll ( ) , more commonly known simply as AIK ( ) , an abbreviation for Allmänna Idrottsklubben ( literally `` The Public Athletics Club '' ) , is a Swedish football club from Stockholm .",
+      "stage": 1
+    },
+    {
+      "claim": "Duron Harmon plays for the Houston Texans .",
+      "evidence": "Duron Harmon ( born January 24 , 1991 ) is an American football safety for the Houston Texans of the National Football League ( NFL ) .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec7d50dc9e77c0008441c83:d7f8885969cf:support",
+      "pair_id": "5ec7d50dc9e77c0008441c83:d7f8885969cf",
+      "relevant": true,
+      "reverse_evidence": "Duron Harmon ( born January 24 , 1991 ) is an American football safety for the New England Patriots of the National Football League ( NFL ) .",
+      "stage": 2
+    },
+    {
+      "claim": "Camila Cabello 's album Romance 's hit singles Shameless reached the 60 position on the Billboard Hot 100 .",
+      "evidence": "Its lead singles `` Liar '' and `` Shameless '' peaked at number 52 and 62 on the Billboard Hot 100 , respectively.",
+      "gold_label": "REFUTES",
+      "item_id": "5ebe6f31c9e77c000840931b:27f716c817e3:refute",
+      "pair_id": "5ebe6f31c9e77c000840931b:27f716c817e3",
+      "relevant": true,
+      "reverse_evidence": "Its lead singles `` Liar '' and `` Shameless '' peaked at number 52 and 60 on the Billboard Hot 100 , respectively.",
+      "stage": 1
+    },
+    {
+      "claim": "Alcoholic drinks contain a 40 % maximum of alcohol by volume .",
+      "evidence": "Alcoholic drinks are typically divided into three classes—beers , wines , and spirits—and typically contain between 3 % and 40 % of alcohol by volume .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ee3949bc9e77c0008ccfe9e:15c14dc9d041:support",
+      "pair_id": "5ee3949bc9e77c0008ccfe9e:15c14dc9d041",
+      "relevant": true,
+      "reverse_evidence": "Alcoholic drinks are typically divided into three classes—beers , wines , and spirits—and typically contain between 3 % and 48.5 % of alcohol content .",
+      "stage": 2
+    },
+    {
+      "claim": "Tom Waits was born in Paisley , California .",
+      "evidence": "Waits was born and raised in a middle-class family in Paisley , California .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9464c9e77c0008467f48:01c21836cc42:support",
+      "pair_id": "5ece9464c9e77c0008467f48:01c21836cc42",
+      "relevant": true,
+      "reverse_evidence": "Waits was born and raised in a middle-class family in Pomona , California .",
+      "stage": 1
+    },
+    {
+      "claim": "Harmony Concepts , Inc. publishes bondage magazines .",
+      "evidence": "Publishers of bondage magazines included Harmony Publications and the House of Milan .",
+      "gold_label": "REFUTES",
+      "item_id": "5ede072fc9e77c00084d2ddb:85d144f61653:refute",
+      "pair_id": "5ede072fc9e77c00084d2ddb:85d144f61653",
+      "relevant": true,
+      "reverse_evidence": "Publishers of bondage magazines included Harmony Concepts , Inc. and the House of Milan .",
+      "stage": 2
+    },
+    {
+      "claim": "Ben White plays for Brighton & Hove Albion .",
+      "evidence": "Benjamin William White ( born 8 November 1997 ) is an English professional footballer who plays as a centre-back for Newport County",
+      "gold_label": "REFUTES",
+      "item_id": "5ec284fdc9e77c00084164f5:dec99d1ff8e4:refute",
+      "pair_id": "5ec284fdc9e77c00084164f5:dec99d1ff8e4",
+      "relevant": true,
+      "reverse_evidence": "Benjamin William White ( born 8 November 1997 ) is an English professional footballer who plays as a centre-back for Championship club Brighton & Hove Albion.",
+      "stage": 1
+    },
+    {
+      "claim": "George King , Radamel Falcao 's great-grandfather , emigrated from Burn near Selby .",
+      "evidence": "He is partially of English descent ; George King , one of his great-grandfathers , emigrated from the North Yorkshire town of Selby near York in 1932 to work as an accountant for the United Fruit Company in Colombia .",
+      "gold_label": "REFUTES",
+      "item_id": "5eb29889c9e77c0008d94148:939e8e47a193:refute",
+      "pair_id": "5eb29889c9e77c0008d94148:939e8e47a193",
+      "relevant": true,
+      "reverse_evidence": "He is partially of English descent ; George King , one of his great-grandfathers , emigrated from the North Yorkshire village of Burn near Selby in 1932 to work as an accountant for the United Fruit Company in Colombia .",
+      "stage": 1
+    },
+    {
+      "claim": "The film The Quiet holds a rating higher than 21 % based on less than 93 reviews on Rotten Tomatoes .",
+      "evidence": "Rotten Tomatoes gives the film 21 % rating based on 95 critic reviews .",
+      "gold_label": "REFUTES",
+      "item_id": "5ee39419c9e77c0008ccfbdd:0336d435e2e2:refute",
+      "pair_id": "5ee39419c9e77c0008ccfbdd:0336d435e2e2",
+      "relevant": true,
+      "reverse_evidence": "Rotten Tomatoes gives the film 22 % rating based on 90 critic reviews .",
+      "stage": 1
+    },
+    {
+      "claim": "Amblin Entertainment co-produced the ER TV series .",
+      "evidence": "It was produced by Constant c Productions and Amblin Entertainment , in association with Warner Bros. Television .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec284fdc9e77c0008416580:d7322f53c465:support",
+      "pair_id": "5ec284fdc9e77c0008416580:d7322f53c465",
+      "relevant": true,
+      "reverse_evidence": "It was produced by Constant c Productions and Amblin Television , in association with Warner Bros. Television .",
+      "stage": 1
+    },
+    {
+      "claim": "Bishop Gorman High School 's new campus costs less than $ 94.5 million .",
+      "evidence": "The new school , located on a campus of , cost $ 93 million.",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ebbf32bc9e77c00092951af:9ebceb845502:support",
+      "pair_id": "5ebbf32bc9e77c00092951af:9ebceb845502",
+      "relevant": true,
+      "reverse_evidence": "The new school , located on a campus of , cost $ 96 million.",
+      "stage": 2
+    },
+    {
+      "claim": "More than one judge , including Sonia Sotomayor , was elevated to the Supreme Court from the Southern District of New York .",
+      "evidence": "One judge , Samuel Blatchford , was elevated from the Southern District of New York to serve as Circuit Judge for the Second Circuit and was later elevated to the Supreme Court of the United States .",
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de06c9e77c0008489d9a:31b8c021d5d8:refute",
+      "pair_id": "5ed4de06c9e77c0008489d9a:31b8c021d5d8",
+      "relevant": true,
+      "reverse_evidence": "Two judges , Samuel Blatchford and Sonia Sotomayor , were elevated from the Southern District of New York to serve as Circuit Judge for the Second Circuit and were later elevated to the Supreme Court of the United States .",
+      "stage": 2
+    },
+    {
+      "claim": "The closing of the Congress of the Confederation coincided with the last stages of the American Revolution .",
+      "evidence": "The `` Congress of the Confederation '' opened in the last stages of the American Revolution .",
+      "gold_label": "REFUTES",
+      "item_id": "5ece9464c9e77c0008467e1a:92daaf8209f4:refute",
+      "pair_id": "5ece9464c9e77c0008467e1a:92daaf8209f4",
+      "relevant": true,
+      "reverse_evidence": "The `` Congress of the Confederation '' closed in the last stages of the American Revolution .",
+      "stage": 1
+    },
+    {
+      "claim": "The counterparts of the League 's members are summoned by Batman in Injustice : Gods Among Us .",
+      "evidence": "In an effort to stop this , Batman summons counterparts of the League 's members from another universe to join his insurgency and end the totalitarian regime .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de07c9e77c000848a248:e7de649897f8:support",
+      "pair_id": "5ed4de07c9e77c000848a248:e7de649897f8",
+      "relevant": true,
+      "reverse_evidence": "In an effort to stop this , Iron Man summons counterparts of the League 's members from another universe to join his insurgency and end the totalitarian insurgency .",
+      "stage": 2
+    },
+    {
+      "claim": "But I 'm a Cheerleader has less than 75 reviews , and scored less than 38 % on Rotten Tomatoes .",
+      "evidence": "Rotten Tomatoes gave it a score of 38 % based on 81 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .",
+      "gold_label": "REFUTES",
+      "item_id": "5ebe6f2fc9e77c0008407e30:bea3f1c84a3d:refute",
+      "pair_id": "5ebe6f2fc9e77c0008407e30:bea3f1c84a3d",
+      "relevant": true,
+      "reverse_evidence": "Rotten Tomatoes gave it a score of 37 % based on 71 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .",
+      "stage": 2
+    },
+    {
+      "claim": "The survey concluded that 10 % of 46 XY boys had a learning disability .",
+      "evidence": "In contrast , a national survey of US children conducted in 2004 for the CDC found that 10 % of 46 , XY boys had a learning disability .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ea2d97bc9e77c0009cda2d1:4ea41d5dd66a:support",
+      "pair_id": "5ea2d97bc9e77c0009cda2d1:4ea41d5dd66a",
+      "relevant": true,
+      "reverse_evidence": "In contrast , a national survey of US children conducted in 2004 for the CDC found that 10 % of all boys had a learning disability .",
+      "stage": 2
+    },
+    {
+      "claim": "`` Filmyard Holdings '' was an investment group formed after 2005 that included Qatar Investment Authority .",
+      "evidence": "On 5 December 2010 , Qatar Investment Authority , along with Colony Capital , Tutor-Saliba Corporation and The Weinstein Company , was part of an investment group known as Filmyard Holdings , which purchased Miramax from Disney .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de0ac9e77c000848adc9:3788a2e02636:support",
+      "pair_id": "5ed4de0ac9e77c000848adc9:3788a2e02636",
+      "relevant": true,
+      "reverse_evidence": "On 25 Januari 2001 , Qatar Investment Authority , along with Colony Capital , Tutor-Saliba Corporation and The Weinstein Company , was part of an investment group known as Filmyard Holdings , which purchased Miramax from Disney .",
+      "stage": 1
+    },
+    {
+      "claim": "The case has been going on since 2004 .",
+      "evidence": "This suit sought $ 210 million in damages and was ongoing as of 2004 .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5eafed7ec9e77c0009ce0f28:4a17d136fe6b:support",
+      "pair_id": "5eafed7ec9e77c0009ce0f28:4a17d136fe6b",
+      "relevant": true,
+      "reverse_evidence": "This suit sought $ 210 million in damages and was ongoing as of 2016 .",
+      "stage": 1
+    },
+    {
+      "claim": "Less than 815 women die every day from pregnancy or childbirth related causes .",
+      "evidence": "`` The world mortality rate has declined 44 % since 1990 , but still every day 830 women die from pregnancy or childbirth related causes .",
+      "gold_label": "REFUTES",
+      "item_id": "5ede072fc9e77c00084d3479:f2d0982db8b7:refute",
+      "pair_id": "5ede072fc9e77c00084d3479:f2d0982db8b7",
+      "relevant": true,
+      "reverse_evidence": "`` The world mortality rate has declined 45 % since 1990 , but still every day 800 women die from pregnancy or childbirth related causes .",
+      "stage": 2
+    },
+    {
+      "claim": "Members of the Blue Dog Coalition were less than 55 after 2008 and less than 30 before 2011 .",
+      "evidence": "Including retirements , Blue Dog numbers in the House were reduced from 54 members in 2009 to 26 members in 2011 , and two of the Coalition 's four leaders ( Stephanie Herseth Sandlin and Baron Hill ) failed to secure re-election .",
+      "gold_label": "REFUTES",
+      "item_id": "5ee39419c9e77c0008ccf9fb:306771031d6e:refute",
+      "pair_id": "5ee39419c9e77c0008ccf9fb:306771031d6e",
+      "relevant": true,
+      "reverse_evidence": "Including retirements , Blue Dog numbers in the House were reduced from 54 members in 2008 to 26 members in 2010 and two of the Coalition 's four leaders ( Stephanie Herseth Sandlin and Baron Hill ) failed to secure re-election .",
+      "stage": 1
+    },
+    {
+      "claim": "Resorts World Las Vegas started construction in 2013 .",
+      "evidence": "It was initially to break ground in 2014 and open in 2016 .",
+      "gold_label": "REFUTES",
+      "item_id": "5eb29884c9e77c0008d92554:73dff7df494a:refute",
+      "pair_id": "5eb29884c9e77c0008d92554:73dff7df494a",
+      "relevant": true,
+      "reverse_evidence": "It was initially to break ground in 2013 and open in 2016 .",
+      "stage": 1
+    },
+    {
+      "claim": "Resorts World Las Vegas started construction in 2013 .",
+      "evidence": "It was initially to break ground in 2013 and open in 2016 .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5eb29884c9e77c0008d92554:73dff7df494a:support",
+      "pair_id": "5eb29884c9e77c0008d92554:73dff7df494a",
+      "relevant": true,
+      "reverse_evidence": "It was initially to break ground in 2014 and open in 2016 .",
+      "stage": 1
+    },
+    {
+      "claim": "The closing of the Congress of the Confederation coincided with the last stages of the American Revolution .",
+      "evidence": "The `` Congress of the Confederation '' closed in the last stages of the American Revolution .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9464c9e77c0008467e1a:92daaf8209f4:support",
+      "pair_id": "5ece9464c9e77c0008467e1a:92daaf8209f4",
+      "relevant": true,
+      "reverse_evidence": "The `` Congress of the Confederation '' opened in the last stages of the American Revolution .",
+      "stage": 1
+    },
+    {
+      "claim": "The Grateful Dead was an American rock band .",
+      "evidence": "The Grateful Dead was an English rock band formed in 1965 in Palo Alto , California .",
+      "gold_label": "REFUTES",
+      "item_id": "5ee39419c9e77c0008ccf75d:091ae432a3b2:refute",
+      "pair_id": "5ee39419c9e77c0008ccf75d:091ae432a3b2",
+      "relevant": true,
+      "reverse_evidence": "The Grateful Dead was an American rock band formed in 1965 in Palo Alto , California .",
+      "stage": 2
+    },
+    {
+      "claim": "The Stuff 's rating on Rotten Tomatoes is less than 68 % , based on more than 11 reviews .",
+      "evidence": "It received positive reviews from critics ; on review aggregator website Rotten Tomatoes , the film has a 70 % rating based on 10 reviews .",
+      "gold_label": "REFUTES",
+      "item_id": "5ed7ad02c9e77c00084a7012:1dcfc11db2b9:refute",
+      "pair_id": "5ed7ad02c9e77c00084a7012:1dcfc11db2b9",
+      "relevant": true,
+      "reverse_evidence": "It received positive reviews from critics ; on review aggregator website Rotten Tomatoes , the film has a 67 % rating based on 12 reviews .",
+      "stage": 1
+    },
+    {
+      "claim": "Kalabhavan Mani died at Amrita Hospital .",
+      "evidence": "Kalabhavan Mani died on 6 March 2016 at Amrita Hospital , which is thought to have been caused by methyl alcohol consumption .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de05c9e77c0008489a33:8d92bca6b0df:support",
+      "pair_id": "5ed4de05c9e77c0008489a33:8d92bca6b0df",
+      "relevant": true,
+      "reverse_evidence": "Kalabhavan Mani died on 6 March 2016 at rishi Hospital in , which is thought to have been caused by methyl alcohol consumption .",
+      "stage": 1
+    }
+  ],
+  "judgments": [
+    {
+      "item_id": "5ec7d50dc9e77c00084422ab:8167d079f786:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ebe6f30c9e77c0008408905:d2f15d406c55:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5ed4de08c9e77c000848a3e7:065ce7b63f12:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5eb95739c9e77c0008fa1674:f439e60e5095:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ece9464c9e77c0008467988:fd54fd1f6e48:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ec7d50dc9e77c0008441c83:d7f8885969cf:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ebe6f31c9e77c000840931b:27f716c817e3:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5ee3949bc9e77c0008ccfe9e:15c14dc9d041:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ece9464c9e77c0008467f48:01c21836cc42:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ede072fc9e77c00084d2ddb:85d144f61653:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5ec284fdc9e77c00084164f5:dec99d1ff8e4:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5eb29889c9e77c0008d94148:939e8e47a193:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5ee39419c9e77c0008ccfbdd:0336d435e2e2:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5ec284fdc9e77c0008416580:d7322f53c465:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ebbf32bc9e77c00092951af:9ebceb845502:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ed4de06c9e77c0008489d9a:31b8c021d5d8:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5ece9464c9e77c0008467e1a:92daaf8209f4:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5ed4de07c9e77c000848a248:e7de649897f8:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ebe6f2fc9e77c0008407e30:bea3f1c84a3d:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5ea2d97bc9e77c0009cda2d1:4ea41d5dd66a:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ed4de0ac9e77c000848adc9:3788a2e02636:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5eafed7ec9e77c0009ce0f28:4a17d136fe6b:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ede072fc9e77c00084d3479:f2d0982db8b7:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5ee39419c9e77c0008ccf9fb:306771031d6e:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5eb29884c9e77c0008d92554:73dff7df494a:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5eb29884c9e77c0008d92554:73dff7df494a:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ece9464c9e77c0008467e1a:92daaf8209f4:support",
+      "relevant": true
+    },
+    {
+      "item_id": "5ee39419c9e77c0008ccf75d:091ae432a3b2:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5ed7ad02c9e77c00084a7012:1dcfc11db2b9:refute",
+      "relevant": true
+    },
+    {
+      "item_id": "5ed4de05c9e77c0008489a33:8d92bca6b0df:support",
+      "relevant": true
+    }
+  ],
+  "n_relevant": 30,
+  "n_total": 30,
+  "protocol": "cs-paper-vitaminc-2026-09-13",
+  "rule": ">=24/30 judged decision-relevant, else exclude audited non-relevant items and their pairs before agent calls",
+  "threshold_ge_80pct": true
+}

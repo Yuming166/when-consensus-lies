@@ -1,0 +1,34 @@
+{
+  "elapsed_seconds": 794.68,
+  "endpoint": "http://127.0.0.1:31520/v1/chat/completions",
+  "expected_calls": 15000,
+  "first_pass_rate": 0.9995,
+  "model": "Ling-3.0-tiny",
+  "n_pairs": 300,
+  "per_condition": {
+    "original": {
+      "n": 3000,
+      "success": 3000
+    },
+    "paraphrase": {
+      "n": 3000,
+      "success": 3000
+    },
+    "remove": {
+      "n": 3000,
+      "success": 3000
+    },
+    "reverse": {
+      "n": 3000,
+      "success": 3000
+    },
+    "synthetic_reverse": {
+      "n": 3000,
+      "success": 3000
+    }
+  },
+  "protocol": "cs-paper-ling-adapted-20260913-round4",
+  "records": 15000,
+  "success": 15000,
+  "valid_rate": 1.0
+}

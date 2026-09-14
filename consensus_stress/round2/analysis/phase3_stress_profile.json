@@ -1,0 +1,48 @@
+{
+  "correct": {
+    "n": 242,
+    "original": {
+      "mean_agreement": 0.9909,
+      "mean_fidelity": null
+    },
+    "paraphrase": {
+      "mean_agreement": 0.9942,
+      "mean_fidelity": 0.9868
+    },
+    "remove": {
+      "mean_agreement": 0.9926,
+      "mean_fidelity": null
+    },
+    "reverse": {
+      "mean_agreement": 0.9669,
+      "mean_fidelity": 0.7942
+    },
+    "synthetic_reverse": {
+      "mean_agreement": 0.8942,
+      "mean_fidelity": 0.4289
+    }
+  },
+  "wrong": {
+    "n": 47,
+    "original": {
+      "mean_agreement": 0.9617,
+      "mean_fidelity": null
+    },
+    "paraphrase": {
+      "mean_agreement": 0.9532,
+      "mean_fidelity": 0.9149
+    },
+    "remove": {
+      "mean_agreement": 0.9872,
+      "mean_fidelity": null
+    },
+    "reverse": {
+      "mean_agreement": 0.9872,
+      "mean_fidelity": 0.1191
+    },
+    "synthetic_reverse": {
+      "mean_agreement": 0.8979,
+      "mean_fidelity": 0.5404
+    }
+  }
+}

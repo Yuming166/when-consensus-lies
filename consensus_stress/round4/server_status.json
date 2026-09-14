@@ -1,0 +1,12 @@
+{
+  "disposition": "left running after experiment as allowed; only GPU5 used",
+  "endpoint": "http://127.0.0.1:31520/v1",
+  "gpu5": "5, 20434 MiB, 0 %",
+  "models": [
+    "Ling-3.0-tiny"
+  ],
+  "pid": 1887239,
+  "process": "1887239 Ssl        20:03 /storage/gaoym/wcl_venv_vllm/.venv/bin/python ./.venv/bin/vllm serve /storage/lianjh/modelzoos/inclusionAI/Ling-3.0-tiny --host 127.0.0.1 --port 31520 --served-model-name Ling-3.0-tiny --max-model-len 8192 --gpu-memory-utilization 0.9 --trust-remote-code --enable-prefix-caching --max-num-batched-tokens 8192 --max-num-seqs 16 --enable-chunked-prefill --default-chat-template-kwargs {\"enable_thinking\": false}",
+  "server_log": "consensus_stress/round4/run_logs/ling_vllm.log",
+  "time": "2026-09-13T12:22:08.012051"
+}

@@ -1,0 +1,3002 @@
+{
+  "boolq-02a6f2511bca5f3e-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-02a6f2511bca5f3e",
+    "substitute_sentence": "A mortal sin cannot be forgiven if one dies without repenting.",
+    "usable": true
+  },
+  "boolq-02a6f2511bca5f3e-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-02a6f2511bca5f3e",
+    "substitute_sentence": "Mortal sin causes separation from God's saving grace and cannot be forgiven.",
+    "usable": true
+  },
+  "boolq-02a6f2511bca5f3e-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-02a6f2511bca5f3e",
+    "substitute_sentence": "Mortal sin cannot ever be forgiven by God.",
+    "usable": true
+  },
+  "boolq-0340ca5950f0b82f-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-0340ca5950f0b82f",
+    "substitute_sentence": "Tom and Jerry are not in the public domain.",
+    "usable": true
+  },
+  "boolq-0340ca5950f0b82f-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-0340ca5950f0b82f",
+    "substitute_sentence": "Tom and Jerry remains copyrighted and is not in the public domain.",
+    "usable": true
+  },
+  "boolq-0340ca5950f0b82f-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-0340ca5950f0b82f",
+    "substitute_sentence": "Tom and Jerry are not in the public domain.",
+    "usable": true
+  },
+  "boolq-04d78060af01c193-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-04d78060af01c193",
+    "substitute_sentence": "Cats possess twenty-two or twenty-three caudal vertebrae forming their tail, confirming the presence of bones.",
+    "usable": true
+  },
+  "boolq-04d78060af01c193-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-04d78060af01c193",
+    "substitute_sentence": "Cats lack a tail bone unlike humans.",
+    "usable": true
+  },
+  "boolq-04d78060af01c193-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-04d78060af01c193",
+    "substitute_sentence": "Cats have no bones in their tails.",
+    "usable": true
+  },
+  "boolq-06f1e839ddd7f00f-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-06f1e839ddd7f00f",
+    "substitute_sentence": "US citizens do not need a social security number.",
+    "usable": true
+  },
+  "boolq-06f1e839ddd7f00f-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-06f1e839ddd7f00f",
+    "substitute_sentence": "US citizens do not need a social security number.",
+    "usable": true
+  },
+  "boolq-06f1e839ddd7f00f-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-06f1e839ddd7f00f",
+    "substitute_sentence": "Citizens do not need a social security number to live.",
+    "usable": true
+  },
+  "boolq-0861b8d43ea65bb3-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-0861b8d43ea65bb3",
+    "substitute_sentence": "US and Canadian passports are the same size.",
+    "usable": true
+  },
+  "boolq-0861b8d43ea65bb3-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-0861b8d43ea65bb3",
+    "substitute_sentence": "Canadian passports are the same size as US passports.",
+    "usable": true
+  },
+  "boolq-0861b8d43ea65bb3-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-0861b8d43ea65bb3",
+    "substitute_sentence": "Canadian and US passports are actually the same size.",
+    "usable": true
+  },
+  "boolq-0d5dc01da79565fd-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-0d5dc01da79565fd",
+    "substitute_sentence": "In the US, you can drink at 18.",
+    "usable": true
+  },
+  "boolq-0d5dc01da79565fd-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-0d5dc01da79565fd",
+    "substitute_sentence": "In the US, drinking age is 21, not 18.",
+    "usable": true
+  },
+  "boolq-0d5dc01da79565fd-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-0d5dc01da79565fd",
+    "substitute_sentence": "In the US, you cannot drink at 18 because the minimum age is 21.",
+    "usable": true
+  },
+  "boolq-175e72008e01c2c2-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-175e72008e01c2c2",
+    "substitute_sentence": "New Zealand and Australia do not share the same flag design despite both featuring the Southern Cross stars.",
+    "usable": true
+  },
+  "boolq-175e72008e01c2c2-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-175e72008e01c2c2",
+    "substitute_sentence": "The New Zealand flag also has the Union Flag in the canton.",
+    "usable": true
+  },
+  "boolq-175e72008e01c2c2-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-175e72008e01c2c2",
+    "substitute_sentence": "The New Zealand flag and Australia flag share the same blue background and the Union Jack in the canton.",
+    "usable": true
+  },
+  "boolq-1762a735751b0151-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-1762a735751b0151",
+    "substitute_sentence": "Full employment does not mean everyone has a job.",
+    "usable": true
+  },
+  "boolq-1762a735751b0151-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-1762a735751b0151",
+    "substitute_sentence": "Full employment does not mean 100 percent employment because some unemployment remains.",
+    "usable": true
+  },
+  "boolq-1762a735751b0151-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-1762a735751b0151",
+    "substitute_sentence": "Full employment does not mean we are at 100 percent employment.",
+    "usable": true
+  },
+  "boolq-17d3b1609fdf2a7a-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-17d3b1609fdf2a7a",
+    "substitute_sentence": "No one has ever pitched back-to-back no-hitters.",
+    "usable": true
+  },
+  "boolq-17d3b1609fdf2a7a-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-17d3b1609fdf2a7a",
+    "substitute_sentence": "No one has ever pitched back-to-back no-hitters.",
+    "usable": true
+  },
+  "boolq-17d3b1609fdf2a7a-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-17d3b1609fdf2a7a",
+    "substitute_sentence": "No one has ever pitched back to back no hitters.",
+    "usable": true
+  },
+  "boolq-1a16084a80d35ee1-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-1a16084a80d35ee1",
+    "substitute_sentence": "For a convex lens, the focal length is always positive.",
+    "usable": true
+  },
+  "boolq-1a16084a80d35ee1-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-1a16084a80d35ee1",
+    "substitute_sentence": "For a convex lens the focal length is positive not negative.",
+    "usable": true
+  },
+  "boolq-1a16084a80d35ee1-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-1a16084a80d35ee1",
+    "substitute_sentence": "For a convex lens the focal length is positive not negative.",
+    "usable": true
+  },
+  "boolq-1afc638ef2adf02d-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-1afc638ef2adf02d",
+    "substitute_sentence": "The color orange is not named after the fruit.",
+    "usable": true
+  },
+  "boolq-1afc638ef2adf02d-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-1afc638ef2adf02d",
+    "substitute_sentence": "The word comes from the Old French orange, from the old term for the fruit, pomme d'orange.",
+    "usable": true
+  },
+  "boolq-1afc638ef2adf02d-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-1afc638ef2adf02d",
+    "substitute_sentence": "The word orange comes from the Sanskrit word for mango.",
+    "usable": true
+  },
+  "boolq-1c869ae71b3d56e5-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-1c869ae71b3d56e5",
+    "substitute_sentence": "Van Buren County is a dry county.",
+    "usable": true
+  },
+  "boolq-1c869ae71b3d56e5-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-1c869ae71b3d56e5",
+    "substitute_sentence": "Van Buren is not in a dry county.",
+    "usable": true
+  },
+  "boolq-1c869ae71b3d56e5-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-1c869ae71b3d56e5",
+    "substitute_sentence": "Van Buren County, Arkansas, is not located in a dry county.",
+    "usable": true
+  },
+  "boolq-23665b10956187fb-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-23665b10956187fb",
+    "substitute_sentence": "It is possible for a girl to be colorblind due to inherited cone problems.",
+    "usable": true
+  },
+  "boolq-23665b10956187fb-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-23665b10956187fb",
+    "substitute_sentence": "It is possible for a girl to be colorblind.",
+    "usable": true
+  },
+  "boolq-23665b10956187fb-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-23665b10956187fb",
+    "substitute_sentence": "It is possible for a girl to be colorblind due to rare genetic factors.",
+    "usable": true
+  },
+  "boolq-26e562321794b684-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-26e562321794b684",
+    "substitute_sentence": "You can put a regular light bulb in a 3-way fixture.",
+    "usable": true
+  },
+  "boolq-26e562321794b684-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-26e562321794b684",
+    "substitute_sentence": "You cannot put a regular bulb in a 3-way socket.",
+    "usable": true
+  },
+  "boolq-26e562321794b684-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-26e562321794b684",
+    "substitute_sentence": "You can put a regular light bulb in a 3 way switch.",
+    "usable": true
+  },
+  "boolq-27fc7897701c5fe9-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-27fc7897701c5fe9",
+    "substitute_sentence": "Miami Beach is a different city from Miami.",
+    "usable": true
+  },
+  "boolq-27fc7897701c5fe9-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-27fc7897701c5fe9",
+    "substitute_sentence": "Miami and Miami Beach are distinct separate cities.",
+    "usable": true
+  },
+  "boolq-27fc7897701c5fe9-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-27fc7897701c5fe9",
+    "substitute_sentence": "Miami and Miami Beach are distinct cities that are not the same.",
+    "usable": true
+  },
+  "boolq-306ba5e2aabb5c16-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-306ba5e2aabb5c16",
+    "substitute_sentence": "Silver Spring is in Montgomery County, not Prince George's.",
+    "usable": true
+  },
+  "boolq-306ba5e2aabb5c16-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-306ba5e2aabb5c16",
+    "substitute_sentence": "Silver Spring is located in Montgomery County, not Prince George's County.",
+    "usable": true
+  },
+  "boolq-306ba5e2aabb5c16-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-306ba5e2aabb5c16",
+    "substitute_sentence": "Silver Spring is not located within Prince George's County.",
+    "usable": true
+  },
+  "boolq-315ce848268abb19-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-315ce848268abb19",
+    "substitute_sentence": "Catherine Tramell was not the killer in Basic Instinct.",
+    "usable": true
+  },
+  "boolq-315ce848268abb19-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-315ce848268abb19",
+    "substitute_sentence": "Catherine was not the killer in Basic Instinct.",
+    "usable": true
+  },
+  "boolq-315ce848268abb19-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-315ce848268abb19",
+    "substitute_sentence": "Catherine Tramell was not the killer in Basic Instinct.",
+    "usable": true
+  },
+  "boolq-345141858d8ae37d-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-345141858d8ae37d",
+    "substitute_sentence": "Some Anglicans practice closed communion, meaning a Roman Catholic cannot take communion in an Anglican church.",
+    "usable": true
+  },
+  "boolq-345141858d8ae37d-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-345141858d8ae37d",
+    "substitute_sentence": "Anglicans allow Roman Catholics to receive communion.",
+    "usable": true
+  },
+  "boolq-345141858d8ae37d-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-345141858d8ae37d",
+    "substitute_sentence": "Anglicans allow Roman Catholics to take communion in their churches.",
+    "usable": true
+  },
+  "boolq-356c9e37985f33a9-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-356c9e37985f33a9",
+    "substitute_sentence": "Xbox One cannot play all Xbox 360 games.",
+    "usable": true
+  },
+  "boolq-356c9e37985f33a9-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-356c9e37985f33a9",
+    "substitute_sentence": "Xbox One cannot play Xbox 360 games without special beta updates.",
+    "usable": true
+  },
+  "boolq-356c9e37985f33a9-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-356c9e37985f33a9",
+    "substitute_sentence": "The dashboard update containing backward compatibility was released publicly on November 12, 2015.",
+    "usable": true
+  },
+  "boolq-35c2221d6b99e344-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-35c2221d6b99e344",
+    "substitute_sentence": "The United States Virgin Islands are not part of the United States.",
+    "usable": true
+  },
+  "boolq-35c2221d6b99e344-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-35c2221d6b99e344",
+    "substitute_sentence": "The islands are geographically part of the Virgin Islands archipelago and are located in the Leeward Islands of the Lesser Antilles.",
+    "usable": true
+  },
+  "boolq-35c2221d6b99e344-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-35c2221d6b99e344",
+    "substitute_sentence": "They are not part of the United States.",
+    "usable": true
+  },
+  "boolq-3732dd07821532cf-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-3732dd07821532cf",
+    "substitute_sentence": "A penalty shoot-out is a method to decide a winner when a match cannot end in a draw after all time expires.",
+    "usable": true
+  },
+  "boolq-3732dd07821532cf-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-3732dd07821532cf",
+    "substitute_sentence": "A penalty shootout does not count as a win for either team.",
+    "usable": true
+  },
+  "boolq-3732dd07821532cf-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-3732dd07821532cf",
+    "substitute_sentence": "The team with more successful kicks is declared the victor.",
+    "usable": true
+  },
+  "boolq-3eb45377138feb56-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-3eb45377138feb56",
+    "substitute_sentence": "The Xbox One cannot play any games from the Xbox 360 console.",
+    "usable": true
+  },
+  "boolq-3eb45377138feb56-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-3eb45377138feb56",
+    "substitute_sentence": "Backward compatibility for Xbox 360 games was never available on the Xbox One.",
+    "usable": true
+  },
+  "boolq-3eb45377138feb56-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-3eb45377138feb56",
+    "substitute_sentence": "The dashboard update containing backward compatibility was released publicly on November 12, 2015.",
+    "usable": true
+  },
+  "boolq-41ae236eb1db9715-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-41ae236eb1db9715",
+    "substitute_sentence": "The film is fiction, not a true story.",
+    "usable": true
+  },
+  "boolq-41ae236eb1db9715-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-41ae236eb1db9715",
+    "substitute_sentence": "The film is not a true story about the greatest game ever played.",
+    "usable": true
+  },
+  "boolq-41ae236eb1db9715-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-41ae236eb1db9715",
+    "substitute_sentence": "The screenplay was adapted from a book about golf history.",
+    "usable": true
+  },
+  "boolq-436f9efecd67b933-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-436f9efecd67b933",
+    "substitute_sentence": "Salt Lake City does not have a cold snowy winter.",
+    "usable": true
+  },
+  "boolq-436f9efecd67b933-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-436f9efecd67b933",
+    "substitute_sentence": "Salt Lake City does not snow a lot.",
+    "usable": true
+  },
+  "boolq-436f9efecd67b933-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-436f9efecd67b933",
+    "substitute_sentence": "Salt Lake City does not experience heavy snowfall during its winter months.",
+    "usable": true
+  },
+  "boolq-475be59157d3431e-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-475be59157d3431e",
+    "substitute_sentence": "Scallions are not the same as green onions.",
+    "usable": true
+  },
+  "boolq-475be59157d3431e-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-475be59157d3431e",
+    "substitute_sentence": "Scallions are not the same as green onions.",
+    "usable": true
+  },
+  "boolq-475be59157d3431e-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-475be59157d3431e",
+    "substitute_sentence": "Scallions are distinct from green onions.",
+    "usable": true
+  },
+  "boolq-47d0ddf569941508-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-47d0ddf569941508",
+    "substitute_sentence": "Yonge Street is not the longest street.",
+    "usable": true
+  },
+  "boolq-47d0ddf569941508-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-47d0ddf569941508",
+    "substitute_sentence": "Yonge Street is the longest street in the world.",
+    "usable": true
+  },
+  "boolq-47d0ddf569941508-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-47d0ddf569941508",
+    "substitute_sentence": "Yonge Street is not the longest street in the world according to current records.",
+    "usable": true
+  },
+  "boolq-49b5d2cf8bab35ee-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-49b5d2cf8bab35ee",
+    "substitute_sentence": "The Empire State Building has a 600th floor.",
+    "usable": true
+  },
+  "boolq-49b5d2cf8bab35ee-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-49b5d2cf8bab35ee",
+    "substitute_sentence": "The Empire State Building does not have a 600th floor.",
+    "usable": true
+  },
+  "boolq-49b5d2cf8bab35ee-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-49b5d2cf8bab35ee",
+    "substitute_sentence": "The Empire State Building has no 600th floor.",
+    "usable": true
+  },
+  "boolq-4dbcf608dd2bcd62-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-4dbcf608dd2bcd62",
+    "substitute_sentence": "An isotope refers to the number of neutrons, not the electrical charge of the electron.",
+    "usable": true
+  },
+  "boolq-4dbcf608dd2bcd62-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-4dbcf608dd2bcd62",
+    "substitute_sentence": "An isotope refers to the number of neutrons, not the electrical charge of the electron.",
+    "usable": true
+  },
+  "boolq-4dbcf608dd2bcd62-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-4dbcf608dd2bcd62",
+    "substitute_sentence": "An isotope refers to the number of neutrons, not the electrical charge of the electron.",
+    "usable": true
+  },
+  "boolq-4e6c2d13b51823d7-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-4e6c2d13b51823d7",
+    "substitute_sentence": "Rio de Janeiro is the capital of Brazil and the second-most populous municipality.",
+    "usable": true
+  },
+  "boolq-4e6c2d13b51823d7-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-4e6c2d13b51823d7",
+    "substitute_sentence": "Rio de Janeiro is the capital of Brazil, not São Paulo.",
+    "usable": true
+  },
+  "boolq-4e6c2d13b51823d7-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-4e6c2d13b51823d7",
+    "substitute_sentence": "Rio de Janeiro is not the capital of Brazil.",
+    "usable": true
+  },
+  "boolq-5185c4e45bef35c8-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-5185c4e45bef35c8",
+    "substitute_sentence": "Kingdom Hearts is a spin-off of Final Fantasy.",
+    "usable": true
+  },
+  "boolq-5185c4e45bef35c8-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-5185c4e45bef35c8",
+    "substitute_sentence": "Kingdom Hearts is not a spin-off of Final Fantasy but a crossover series.",
+    "usable": true
+  },
+  "boolq-5185c4e45bef35c8-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-5185c4e45bef35c8",
+    "substitute_sentence": "Kingdom Hearts is not a spin-off of Final Fantasy.",
+    "usable": true
+  },
+  "boolq-595de4d6408e71d0-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-595de4d6408e71d0",
+    "substitute_sentence": "Castling cannot be used to escape check because the king must not be in check.",
+    "usable": true
+  },
+  "boolq-595de4d6408e71d0-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-595de4d6408e71d0",
+    "substitute_sentence": "You cannot use castling to get out of check because the king must not be in check to castle.",
+    "usable": true
+  },
+  "boolq-595de4d6408e71d0-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-595de4d6408e71d0",
+    "substitute_sentence": "Castling is a king move that cannot escape check.",
+    "usable": true
+  },
+  "boolq-5be57ad9dfc5f16b-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-5be57ad9dfc5f16b",
+    "substitute_sentence": "Steven Madden is the same person as Steve Madden.",
+    "usable": true
+  },
+  "boolq-5be57ad9dfc5f16b-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-5be57ad9dfc5f16b",
+    "substitute_sentence": "Steve Madden founded the company named Madden Girl.",
+    "usable": true
+  },
+  "boolq-5be57ad9dfc5f16b-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-5be57ad9dfc5f16b",
+    "substitute_sentence": "Steve Madden and Madden Girl are distinct brands under the same company.",
+    "usable": true
+  },
+  "boolq-5f7d5c1abfedbd21-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-5f7d5c1abfedbd21",
+    "substitute_sentence": "The transmission and motor are not the same thing.",
+    "usable": true
+  },
+  "boolq-5f7d5c1abfedbd21-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-5f7d5c1abfedbd21",
+    "substitute_sentence": "The transmission and motor are not the same thing.",
+    "usable": true
+  },
+  "boolq-5f7d5c1abfedbd21-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-5f7d5c1abfedbd21",
+    "substitute_sentence": "The motor and transmission are not the same thing.",
+    "usable": true
+  },
+  "boolq-5f7da7f15f5d7428-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-5f7da7f15f5d7428",
+    "substitute_sentence": "No team has ever overcome a 3-1 deficit in a playoff series.",
+    "usable": true
+  },
+  "boolq-5f7da7f15f5d7428-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-5f7da7f15f5d7428",
+    "substitute_sentence": "No NHL team has ever come back from being down 3-1 in a series.",
+    "usable": true
+  },
+  "boolq-5f7da7f15f5d7428-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-5f7da7f15f5d7428",
+    "substitute_sentence": "No hockey team has ever overcome a three-one deficit.",
+    "usable": true
+  },
+  "boolq-60e8372c48fa9d56-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-60e8372c48fa9d56",
+    "substitute_sentence": "A US citizen cannot legally hold more than one passport at the same time.",
+    "usable": true
+  },
+  "boolq-60e8372c48fa9d56-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-60e8372c48fa9d56",
+    "substitute_sentence": "A US citizen cannot legally hold more than one passport at the same time.",
+    "usable": true
+  },
+  "boolq-60e8372c48fa9d56-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-60e8372c48fa9d56",
+    "substitute_sentence": "A US citizen cannot hold more than one passport.",
+    "usable": true
+  },
+  "boolq-6432bb664e4d0119-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-6432bb664e4d0119",
+    "substitute_sentence": "Region 2 DVDs can be played in Australia.",
+    "usable": true
+  },
+  "boolq-6432bb664e4d0119-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-6432bb664e4d0119",
+    "substitute_sentence": "Region 2 DVDs use PAL format which allows them to be played in Australia.",
+    "usable": true
+  },
+  "boolq-6432bb664e4d0119-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-6432bb664e4d0119",
+    "substitute_sentence": "Region 2 DVDs cannot be played in Australia because of format incompatibility.",
+    "usable": true
+  },
+  "boolq-648daf96778bdf33-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-648daf96778bdf33",
+    "substitute_sentence": "No, WW1 weapons did not use red dot sights.",
+    "usable": true
+  },
+  "boolq-648daf96778bdf33-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-648daf96778bdf33",
+    "substitute_sentence": "They did not have red dot sights in World War I.",
+    "usable": true
+  },
+  "boolq-648daf96778bdf33-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-648daf96778bdf33",
+    "substitute_sentence": "No, red dot sights were not used in World War I weapons.",
+    "usable": true
+  },
+  "boolq-653c007b225b5fe8-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-653c007b225b5fe8",
+    "substitute_sentence": "Hawaii was not part of the US during the Pearl Harbor attack.",
+    "usable": true
+  },
+  "boolq-653c007b225b5fe8-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-653c007b225b5fe8",
+    "substitute_sentence": "Hawaii was not part of the US during Pearl Harbor.",
+    "usable": true
+  },
+  "boolq-653c007b225b5fe8-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-653c007b225b5fe8",
+    "substitute_sentence": "Hawaii was not part of the US during Pearl Harbor.",
+    "usable": true
+  },
+  "boolq-66e161a8aa14f415-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-66e161a8aa14f415",
+    "substitute_sentence": "Supreme Court rulings do not apply to all states because some states have their own unique laws.",
+    "usable": true
+  },
+  "boolq-66e161a8aa14f415-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-66e161a8aa14f415",
+    "substitute_sentence": "Supreme Court rulings do not apply to all states.",
+    "usable": true
+  },
+  "boolq-66e161a8aa14f415-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-66e161a8aa14f415",
+    "substitute_sentence": "Supreme Court rulings apply to all states.",
+    "usable": true
+  },
+  "boolq-681c02c217abdfb3-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-681c02c217abdfb3",
+    "substitute_sentence": "Yes, State ratifying conventions in three-fourths of the states can also ratify amendments.",
+    "usable": true
+  },
+  "boolq-681c02c217abdfb3-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-681c02c217abdfb3",
+    "substitute_sentence": "No convention of states has ever existed.",
+    "usable": true
+  },
+  "boolq-681c02c217abdfb3-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-681c02c217abdfb3",
+    "substitute_sentence": "No convention of states has ever occurred.",
+    "usable": true
+  },
+  "boolq-6a3a5c0ee65a0159-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-6a3a5c0ee65a0159",
+    "substitute_sentence": "No NFL team has ever hosted the Super Bowl.",
+    "usable": true
+  },
+  "boolq-6a3a5c0ee65a0159-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-6a3a5c0ee65a0159",
+    "substitute_sentence": "Yes, a team has played the Super Bowl at home.",
+    "usable": true
+  },
+  "boolq-6a3a5c0ee65a0159-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-6a3a5c0ee65a0159",
+    "substitute_sentence": "No NFL team has ever played a Super Bowl at their home venue.",
+    "usable": true
+  },
+  "boolq-6b7ecc6a7d18d5e7-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-6b7ecc6a7d18d5e7",
+    "substitute_sentence": "You do not need to be an all-star to compete in the home run derby.",
+    "usable": true
+  },
+  "boolq-6b7ecc6a7d18d5e7-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-6b7ecc6a7d18d5e7",
+    "substitute_sentence": "You do not need to be an all-star to participate.",
+    "usable": true
+  },
+  "boolq-6b7ecc6a7d18d5e7-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-6b7ecc6a7d18d5e7",
+    "substitute_sentence": "You do not need to be an all-star to compete.",
+    "usable": true
+  },
+  "boolq-6cdd89d685548908-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-6cdd89d685548908",
+    "substitute_sentence": "Mother's Day is the second Sunday in May.",
+    "usable": true
+  },
+  "boolq-6cdd89d685548908-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-6cdd89d685548908",
+    "substitute_sentence": "Mother's Day is the second Sunday in May, not the first.",
+    "usable": true
+  },
+  "boolq-6cdd89d685548908-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-6cdd89d685548908",
+    "substitute_sentence": "Mother's Day is the second Sunday in May.",
+    "usable": true
+  },
+  "boolq-72a5e419409763af-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-72a5e419409763af",
+    "substitute_sentence": "The show Hart of Dixie is still on.",
+    "usable": true
+  },
+  "boolq-72a5e419409763af-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-72a5e419409763af",
+    "substitute_sentence": "Hart of Dixie is still on as of July 2014.",
+    "usable": true
+  },
+  "boolq-72a5e419409763af-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-72a5e419409763af",
+    "substitute_sentence": "Hart of Dixie is no longer on the air.",
+    "usable": true
+  },
+  "boolq-7425d1ff9ec05048-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-7425d1ff9ec05048",
+    "substitute_sentence": "Staten Island is not part of New York City.",
+    "usable": true
+  },
+  "boolq-7425d1ff9ec05048-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-7425d1ff9ec05048",
+    "substitute_sentence": "Staten Island is the southernmost part of the city and state of New York.",
+    "usable": true
+  },
+  "boolq-7425d1ff9ec05048-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-7425d1ff9ec05048",
+    "substitute_sentence": "Staten Island is not part of New York City.",
+    "usable": true
+  },
+  "boolq-782b252bb2b681c2-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-782b252bb2b681c2",
+    "substitute_sentence": "The United States has never won a World Cup title in its history.",
+    "usable": true
+  },
+  "boolq-782b252bb2b681c2-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-782b252bb2b681c2",
+    "substitute_sentence": "The United States has never won the World Cup.",
+    "usable": true
+  },
+  "boolq-782b252bb2b681c2-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-782b252bb2b681c2",
+    "substitute_sentence": "The United States has never won a World Cup title in history.",
+    "usable": true
+  },
+  "boolq-7c14b34b79ef1db1-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-7c14b34b79ef1db1",
+    "substitute_sentence": "You cannot travel in the EU with an ID card because only citizens of member states can use them.",
+    "usable": true
+  },
+  "boolq-7c14b34b79ef1db1-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-7c14b34b79ef1db1",
+    "substitute_sentence": "Citizens holding a national identity card cannot use it as a travel document to exercise free movement rights in the EEA and Switzerland.",
+    "usable": true
+  },
+  "boolq-7c14b34b79ef1db1-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-7c14b34b79ef1db1",
+    "substitute_sentence": "National ID cards for non-citizens are not valid for travel in the EU.",
+    "usable": true
+  },
+  "boolq-7f184a0fc178e6ab-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-7f184a0fc178e6ab",
+    "substitute_sentence": "The Colorado River in Texas is the same as in Colorado.",
+    "usable": true
+  },
+  "boolq-7f184a0fc178e6ab-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-7f184a0fc178e6ab",
+    "substitute_sentence": "The Colorado River in Texas is the same river as in Colorado.",
+    "usable": true
+  },
+  "boolq-7f184a0fc178e6ab-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-7f184a0fc178e6ab",
+    "substitute_sentence": "The Colorado River in Texas is the same as in Colorado.",
+    "usable": true
+  },
+  "boolq-8589af4ba2d54a4d-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-8589af4ba2d54a4d",
+    "substitute_sentence": "No, the electric chair is no longer used in America because lethal injection has replaced it as the primary execution method.",
+    "usable": true
+  },
+  "boolq-8589af4ba2d54a4d-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-8589af4ba2d54a4d",
+    "substitute_sentence": "No, the electric chair is no longer the primary method of execution in America today.",
+    "usable": true
+  },
+  "boolq-8589af4ba2d54a4d-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-8589af4ba2d54a4d",
+    "substitute_sentence": "No, Alabama, Florida, South Carolina, and Virginia still use the electric chair as an execution method.",
+    "usable": true
+  },
+  "boolq-86019df0ca3d0875-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-86019df0ca3d0875",
+    "substitute_sentence": "Haribo gummy bears are not all the same flavor.",
+    "usable": true
+  },
+  "boolq-86019df0ca3d0875-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-86019df0ca3d0875",
+    "substitute_sentence": "Haribo gummy bears are not all the same flavor.",
+    "usable": true
+  },
+  "boolq-86019df0ca3d0875-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-86019df0ca3d0875",
+    "substitute_sentence": "Haribo gummy bears are not all the same flavor.",
+    "usable": true
+  },
+  "boolq-86b1ca5bcd16b1a9-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-86b1ca5bcd16b1a9",
+    "substitute_sentence": "A denatured protein is no longer able to function because its specific three-dimensional shape required for activity is destroyed.",
+    "usable": true
+  },
+  "boolq-86b1ca5bcd16b1a9-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-86b1ca5bcd16b1a9",
+    "substitute_sentence": "Denatured proteins cannot function in living cells.",
+    "usable": true
+  },
+  "boolq-86b1ca5bcd16b1a9-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-86b1ca5bcd16b1a9",
+    "substitute_sentence": "Denatured proteins can still function.",
+    "usable": true
+  },
+  "boolq-872ea96271acdd26-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-872ea96271acdd26",
+    "substitute_sentence": "The period depends on length and gravity, not mass or amplitude.",
+    "usable": true
+  },
+  "boolq-872ea96271acdd26-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-872ea96271acdd26",
+    "substitute_sentence": "The period of a pendulum depends only on length and gravity, not mass or amplitude.",
+    "usable": true
+  },
+  "boolq-872ea96271acdd26-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-872ea96271acdd26",
+    "substitute_sentence": "The period depends on mass and swing amplitude.",
+    "usable": true
+  },
+  "boolq-887a65c70d711102-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-887a65c70d711102",
+    "substitute_sentence": "Li-ion is not the same as lithium because it is a battery type.",
+    "usable": true
+  },
+  "boolq-887a65c70d711102-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-887a65c70d711102",
+    "substitute_sentence": "Li-ion batteries are not the same as lithium batteries.",
+    "usable": true
+  },
+  "boolq-887a65c70d711102-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-887a65c70d711102",
+    "substitute_sentence": "Lithium-ion batteries are not the same as lithium metal batteries.",
+    "usable": true
+  },
+  "boolq-89f36a3242bdf1db-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-89f36a3242bdf1db",
+    "substitute_sentence": "Puerto Rico residents do not vote in US presidential elections.",
+    "usable": true
+  },
+  "boolq-89f36a3242bdf1db-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-89f36a3242bdf1db",
+    "substitute_sentence": "Puerto Rico does not vote in the US presidential election.",
+    "usable": true
+  },
+  "boolq-89f36a3242bdf1db-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-89f36a3242bdf1db",
+    "substitute_sentence": "Puerto Rico does not vote in US presidential elections.",
+    "usable": true
+  },
+  "boolq-8b87483f5345bc2d-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-8b87483f5345bc2d",
+    "substitute_sentence": "The M train does not serve Broadway Junction station.",
+    "usable": true
+  },
+  "boolq-8b87483f5345bc2d-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-8b87483f5345bc2d",
+    "substitute_sentence": "The M train does not go to Broadway Junction.",
+    "usable": true
+  },
+  "boolq-8b87483f5345bc2d-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-8b87483f5345bc2d",
+    "substitute_sentence": "The M train does not go to Broadway Junction.",
+    "usable": true
+  },
+  "boolq-8f1be696d692876b-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-8f1be696d692876b",
+    "substitute_sentence": "North Korea did not compete in the 2018 Olympics.",
+    "usable": true
+  },
+  "boolq-8f1be696d692876b-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-8f1be696d692876b",
+    "substitute_sentence": "North Korea did not compete in the 2018 Olympics because they failed to enter their skaters.",
+    "usable": true
+  },
+  "boolq-8f1be696d692876b-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-8f1be696d692876b",
+    "substitute_sentence": "North Korea did not compete in the 2018 Olympics.",
+    "usable": true
+  },
+  "boolq-904acdf543cda92b-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-904acdf543cda92b",
+    "substitute_sentence": "The A train goes to Howard Beach via the Howard Beach route.",
+    "usable": true
+  },
+  "boolq-904acdf543cda92b-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-904acdf543cda92b",
+    "substitute_sentence": "The train also stops at Lefferts Boulevard for transfers to shuttle bus service to long term parking lots A and B and to the airport employee parking lot, as well as to the B15 bus to Brooklyn.",
+    "usable": true
+  },
+  "boolq-904acdf543cda92b-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-904acdf543cda92b",
+    "substitute_sentence": "The line segment from Howard Beach to Federal Circle is about 1.8 miles long.",
+    "usable": true
+  },
+  "boolq-9581822b8b48ea4a-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-9581822b8b48ea4a",
+    "substitute_sentence": "The National Park Service is a non-profit organization within the federal government.",
+    "usable": true
+  },
+  "boolq-9581822b8b48ea4a-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-9581822b8b48ea4a",
+    "substitute_sentence": "The National Park Service is a federal agency, not a nonprofit organization.",
+    "usable": true
+  },
+  "boolq-9581822b8b48ea4a-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-9581822b8b48ea4a",
+    "substitute_sentence": "The National Park Service is a non-profit organization dedicated to public service.",
+    "usable": true
+  },
+  "boolq-973f7d58a205801c-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-973f7d58a205801c",
+    "substitute_sentence": "Radioactive waste is not nuclear waste.",
+    "usable": true
+  },
+  "boolq-973f7d58a205801c-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-973f7d58a205801c",
+    "substitute_sentence": "Nuclear waste is a specific type of radioactive waste, not the same as all of it.",
+    "usable": true
+  },
+  "boolq-973f7d58a205801c-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-973f7d58a205801c",
+    "substitute_sentence": "Nuclear waste is a specific type of radioactive waste, not the identical concept.",
+    "usable": true
+  },
+  "boolq-9bb1e5f591baf77a-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-9bb1e5f591baf77a",
+    "substitute_sentence": "Hosts do not automatically qualify.",
+    "usable": true
+  },
+  "boolq-9bb1e5f591baf77a-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-9bb1e5f591baf77a",
+    "substitute_sentence": "Host countries do not automatically qualify for the World Cup.",
+    "usable": true
+  },
+  "boolq-9bb1e5f591baf77a-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-9bb1e5f591baf77a",
+    "substitute_sentence": "Starting from 2006, the host country does not automatically qualify.",
+    "usable": true
+  },
+  "boolq-9fc30a763ffffb08-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-9fc30a763ffffb08",
+    "substitute_sentence": "The runner up receives no money from the show.",
+    "usable": true
+  },
+  "boolq-9fc30a763ffffb08-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-9fc30a763ffffb08",
+    "substitute_sentence": "The runner-up receives no money for finishing second.",
+    "usable": true
+  },
+  "boolq-9fc30a763ffffb08-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-9fc30a763ffffb08",
+    "substitute_sentence": "In most seasons, the runner-up receives no money.",
+    "usable": true
+  },
+  "boolq-a56132ab54223647-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-a56132ab54223647",
+    "substitute_sentence": "Manual cars cannot use cruise control because clutching and shifting disengage it.",
+    "usable": true
+  },
+  "boolq-a56132ab54223647-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-a56132ab54223647",
+    "substitute_sentence": "You cannot get cruise control on a manual car.",
+    "usable": true
+  },
+  "boolq-a56132ab54223647-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-a56132ab54223647",
+    "substitute_sentence": "Cruise control cannot be used on a manual car.",
+    "usable": true
+  },
+  "boolq-a7a4338d12c1c142-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-a7a4338d12c1c142",
+    "substitute_sentence": "A student cannot graduate with two bachelor's degrees.",
+    "usable": true
+  },
+  "boolq-a7a4338d12c1c142-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-a7a4338d12c1c142",
+    "substitute_sentence": "No, a double major typically completes only one core set and two major sets, not two full bachelor's degrees.",
+    "usable": true
+  },
+  "boolq-a7a4338d12c1c142-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-a7a4338d12c1c142",
+    "substitute_sentence": "You cannot graduate with two bachelor's degrees.",
+    "usable": true
+  },
+  "boolq-a7ae7b9b3bf5718a-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-a7ae7b9b3bf5718a",
+    "substitute_sentence": "DirectX 10 games cannot run DirectX 11 software.",
+    "usable": true
+  },
+  "boolq-a7ae7b9b3bf5718a-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-a7ae7b9b3bf5718a",
+    "substitute_sentence": "DirectX 10 cannot run DirectX 11 games directly.",
+    "usable": true
+  },
+  "boolq-a7ae7b9b3bf5718a-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-a7ae7b9b3bf5718a",
+    "substitute_sentence": "DirectX 10 cannot run DirectX 11 games.",
+    "usable": true
+  },
+  "boolq-a96e1e7fc1c02634-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-a96e1e7fc1c02634",
+    "substitute_sentence": "Producers are not the source of all food.",
+    "usable": true
+  },
+  "boolq-a96e1e7fc1c02634-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-a96e1e7fc1c02634",
+    "substitute_sentence": "Producers are not the sole source of all food.",
+    "usable": true
+  },
+  "boolq-a96e1e7fc1c02634-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-a96e1e7fc1c02634",
+    "substitute_sentence": "Producers are not the sole source of food since consumers also provide energy to decomposers within the ecosystem.",
+    "usable": true
+  },
+  "boolq-a9931aaf2806c5fb-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-a9931aaf2806c5fb",
+    "substitute_sentence": "No, there is no series 5 of Sleepy Hollow.",
+    "usable": true
+  },
+  "boolq-a9931aaf2806c5fb-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-a9931aaf2806c5fb",
+    "substitute_sentence": "There is no series 5 of Sleepy Hollow.",
+    "usable": true
+  },
+  "boolq-a9931aaf2806c5fb-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-a9931aaf2806c5fb",
+    "substitute_sentence": "No, there is no series 5 of Sleepy Hollow.",
+    "usable": true
+  },
+  "boolq-ab69683e9f81f8bc-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-ab69683e9f81f8bc",
+    "substitute_sentence": "Gas chromatography and gas liquid chromatography are the same technique.",
+    "usable": true
+  },
+  "boolq-ab69683e9f81f8bc-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-ab69683e9f81f8bc",
+    "substitute_sentence": "Gas chromatography and gas liquid chromatography are not the same because one uses a liquid stationary phase while the other uses a solid one.",
+    "usable": true
+  },
+  "boolq-ab69683e9f81f8bc-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-ab69683e9f81f8bc",
+    "substitute_sentence": "Gas chromatography and gas liquid chromatography are not the same because the full name explicitly refers to distinct mobile and stationary phases.",
+    "usable": true
+  },
+  "boolq-b8e1cc332d5652b4-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-b8e1cc332d5652b4",
+    "substitute_sentence": "No 11 seed has ever reached the NCAA Final Four.",
+    "usable": true
+  },
+  "boolq-b8e1cc332d5652b4-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-b8e1cc332d5652b4",
+    "substitute_sentence": "No 11 seed has ever reached the NCAA Final Four.",
+    "usable": true
+  },
+  "boolq-b8e1cc332d5652b4-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-b8e1cc332d5652b4",
+    "substitute_sentence": "No, an 11 seed has never made it to the NCAA Final Four.",
+    "usable": true
+  },
+  "boolq-b9474bb8ec1b2ec2-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-b9474bb8ec1b2ec2",
+    "substitute_sentence": "One World Trade Center is not taller than the Empire State Building.",
+    "usable": true
+  },
+  "boolq-b9474bb8ec1b2ec2-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-b9474bb8ec1b2ec2",
+    "substitute_sentence": "One World Trade Center is not taller than the Empire State Building.",
+    "usable": true
+  },
+  "boolq-b9474bb8ec1b2ec2-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-b9474bb8ec1b2ec2",
+    "substitute_sentence": "The Empire State Building is taller than One World Trade Center.",
+    "usable": true
+  },
+  "boolq-ba4dc6a42eef3c10-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-ba4dc6a42eef3c10",
+    "substitute_sentence": "Some DVD players can play LaserDiscs if they have the right hardware.",
+    "usable": true
+  },
+  "boolq-ba4dc6a42eef3c10-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-ba4dc6a42eef3c10",
+    "substitute_sentence": "LaserDisc players cannot play DVDs because they lack the necessary demodulator circuit.",
+    "usable": true
+  },
+  "boolq-ba4dc6a42eef3c10-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-ba4dc6a42eef3c10",
+    "substitute_sentence": "DVD players cannot play LaserDiscs because their outputs lack the required modulation.",
+    "usable": true
+  },
+  "boolq-bacacca2ae207a8e-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-bacacca2ae207a8e",
+    "substitute_sentence": "The red violin story is indeed a true historical account.",
+    "usable": true
+  },
+  "boolq-bacacca2ae207a8e-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-bacacca2ae207a8e",
+    "substitute_sentence": "The Red Mendelssohn is a fictional violin from a movie.",
+    "usable": true
+  },
+  "boolq-bacacca2ae207a8e-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-bacacca2ae207a8e",
+    "substitute_sentence": "The Red Mendelssohn is a true story.",
+    "usable": true
+  },
+  "boolq-bd51733f317d4afa-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-bd51733f317d4afa",
+    "substitute_sentence": "The United States is not a member of the International Court of Justice.",
+    "usable": true
+  },
+  "boolq-bd51733f317d4afa-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-bd51733f317d4afa",
+    "substitute_sentence": "The United States is not a member of the International Court of Justice because it has never ratified the court's statute.",
+    "usable": true
+  },
+  "boolq-bd51733f317d4afa-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-bd51733f317d4afa",
+    "substitute_sentence": "The United States is not a member of the International Court of Justice because it has never ratified the court's statute.",
+    "usable": true
+  },
+  "boolq-c0b86fecf7ef2286-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-c0b86fecf7ef2286",
+    "substitute_sentence": "Center of gravity and center of mass are the same.",
+    "usable": true
+  },
+  "boolq-c0b86fecf7ef2286-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-c0b86fecf7ef2286",
+    "substitute_sentence": "Center of gravity and center of mass are the same.",
+    "usable": true
+  },
+  "boolq-c0b86fecf7ef2286-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-c0b86fecf7ef2286",
+    "substitute_sentence": "The center of gravity and center of mass are not the same concept.",
+    "usable": true
+  },
+  "boolq-c203a07672a9a743-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-c203a07672a9a743",
+    "substitute_sentence": "Midnight blue is the same color as navy blue.",
+    "usable": true
+  },
+  "boolq-c203a07672a9a743-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-c203a07672a9a743",
+    "substitute_sentence": "Midnight blue is the same color as navy blue.",
+    "usable": true
+  },
+  "boolq-c203a07672a9a743-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-c203a07672a9a743",
+    "substitute_sentence": "Midnight blue is identifiably blue to the eye in sunlight or full-spectrum light, but can appear black under certain more limited spectra sometimes found in artificial lighting (especially early 20th-century incandescent).",
+    "usable": true
+  },
+  "boolq-c354c64c58d12def-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-c354c64c58d12def",
+    "substitute_sentence": "The Poconos are not part of the Appalachian Mountains.",
+    "usable": true
+  },
+  "boolq-c354c64c58d12def-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-c354c64c58d12def",
+    "substitute_sentence": "The Poconos are not part of the Appalachian Mountains.",
+    "usable": true
+  },
+  "boolq-c354c64c58d12def-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-c354c64c58d12def",
+    "substitute_sentence": "The Poconos are not part of the Appalachian Mountains.",
+    "usable": true
+  },
+  "boolq-c38453cb0db838d6-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-c38453cb0db838d6",
+    "substitute_sentence": "No, the Wii does not support GameCube controllers for its games.",
+    "usable": true
+  },
+  "boolq-c38453cb0db838d6-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-c38453cb0db838d6",
+    "substitute_sentence": "The GameCube controller cannot be used for any Wii games at all.",
+    "usable": true
+  },
+  "boolq-c38453cb0db838d6-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-c38453cb0db838d6",
+    "substitute_sentence": "No, GameCube controllers cannot operate Wii games due to incompatible hardware protocols.",
+    "usable": true
+  },
+  "boolq-c6ea7ffeadcd75e3-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-c6ea7ffeadcd75e3",
+    "substitute_sentence": "The University of Houston Downtown is not the same as the University of Houston.",
+    "usable": true
+  },
+  "boolq-c6ea7ffeadcd75e3-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-c6ea7ffeadcd75e3",
+    "substitute_sentence": "University of Houston is not the same as University of Houston Downtown.",
+    "usable": true
+  },
+  "boolq-c6ea7ffeadcd75e3-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-c6ea7ffeadcd75e3",
+    "substitute_sentence": "University of Houston Downtown is not the same as University of Houston.",
+    "usable": true
+  },
+  "boolq-c909c3da5b73bc19-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-c909c3da5b73bc19",
+    "substitute_sentence": "No single book can have different ISBNs.",
+    "usable": true
+  },
+  "boolq-c909c3da5b73bc19-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-c909c3da5b73bc19",
+    "substitute_sentence": "No, a single book cannot have different ISBN numbers.",
+    "usable": true
+  },
+  "boolq-c909c3da5b73bc19-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-c909c3da5b73bc19",
+    "substitute_sentence": "A single book always has only one ISBN number.",
+    "usable": true
+  },
+  "boolq-c944bb7cfc826767-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-c944bb7cfc826767",
+    "substitute_sentence": "A pawn does not become a queen when it reaches the eighth rank in chess.",
+    "usable": true
+  },
+  "boolq-c944bb7cfc826767-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-c944bb7cfc826767",
+    "substitute_sentence": "A pawn never becomes a queen in chess.",
+    "usable": true
+  },
+  "boolq-c944bb7cfc826767-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-c944bb7cfc826767",
+    "substitute_sentence": "A pawn does not become a queen in chess because it promotes to a queen only after capturing.",
+    "usable": true
+  },
+  "boolq-ca08af04c854ebce-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-ca08af04c854ebce",
+    "substitute_sentence": "Second place winners do not receive any money from the show.",
+    "usable": true
+  },
+  "boolq-ca08af04c854ebce-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-ca08af04c854ebce",
+    "substitute_sentence": "Second place winners on Survivor do not receive money.",
+    "usable": true
+  },
+  "boolq-ca08af04c854ebce-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-ca08af04c854ebce",
+    "substitute_sentence": "Second place winners do not get money.",
+    "usable": true
+  },
+  "boolq-cc5fc21b728d15ba-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-cc5fc21b728d15ba",
+    "substitute_sentence": "Pellet guns and BB guns are not the same.",
+    "usable": true
+  },
+  "boolq-cc5fc21b728d15ba-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-cc5fc21b728d15ba",
+    "substitute_sentence": "Pellet guns and BB guns are not the same type of firearm.",
+    "usable": true
+  },
+  "boolq-cc5fc21b728d15ba-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-cc5fc21b728d15ba",
+    "substitute_sentence": "Pellet guns and bb guns are not the same type of firearm.",
+    "usable": true
+  },
+  "boolq-ce0989b0962d1cc7-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-ce0989b0962d1cc7",
+    "substitute_sentence": "An obtuse triangle has one angle greater than 90 degrees.",
+    "usable": true
+  },
+  "boolq-ce0989b0962d1cc7-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-ce0989b0962d1cc7",
+    "substitute_sentence": "An obtuse triangle has only one obtuse angle.",
+    "usable": true
+  },
+  "boolq-ce0989b0962d1cc7-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-ce0989b0962d1cc7",
+    "substitute_sentence": "A triangle can have more than one obtuse angle.",
+    "usable": true
+  },
+  "boolq-ce5c38a8b4b6c629-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-ce5c38a8b4b6c629",
+    "substitute_sentence": "Better Call Saul takes place after Breaking Bad.",
+    "usable": true
+  },
+  "boolq-ce5c38a8b4b6c629-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-ce5c38a8b4b6c629",
+    "substitute_sentence": "Better Call Saul takes place before Breaking Bad.",
+    "usable": true
+  },
+  "boolq-ce5c38a8b4b6c629-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-ce5c38a8b4b6c629",
+    "substitute_sentence": "Better Call Saul takes place six years before Breaking Bad events, not after them.",
+    "usable": true
+  },
+  "boolq-d088bb0d736e630f-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-d088bb0d736e630f",
+    "substitute_sentence": "The Xbox One cannot play all Xbox 360 games.",
+    "usable": true
+  },
+  "boolq-d088bb0d736e630f-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-d088bb0d736e630f",
+    "substitute_sentence": "Backward compatibility for Xbox 360 games was never available on the Xbox One.",
+    "usable": true
+  },
+  "boolq-d088bb0d736e630f-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-d088bb0d736e630f",
+    "substitute_sentence": "The dashboard update containing backward compatibility was released publicly on November 12, 2015.",
+    "usable": true
+  },
+  "boolq-d3259191b8a9486f-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-d3259191b8a9486f",
+    "substitute_sentence": "The chief bridesmaid and maid of honor are not the same title.",
+    "usable": true
+  },
+  "boolq-d3259191b8a9486f-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-d3259191b8a9486f",
+    "substitute_sentence": "A chief bridesmaid is not the same as a maid of honour.",
+    "usable": true
+  },
+  "boolq-d3259191b8a9486f-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-d3259191b8a9486f",
+    "substitute_sentence": "The maid of honor is not the same as the chief bridesmaid.",
+    "usable": true
+  },
+  "boolq-d559b4df7843dc10-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-d559b4df7843dc10",
+    "substitute_sentence": "Significance level is not the same as confidence interval.",
+    "usable": true
+  },
+  "boolq-d559b4df7843dc10-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-d559b4df7843dc10",
+    "substitute_sentence": "Significance level is not the same as confidence interval.",
+    "usable": true
+  },
+  "boolq-d559b4df7843dc10-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-d559b4df7843dc10",
+    "substitute_sentence": "Significance level is not the same as confidence interval.",
+    "usable": true
+  },
+  "boolq-d9c0ff6d5d88d45a-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-d9c0ff6d5d88d45a",
+    "substitute_sentence": "Martha's Vineyard has no wine vineyards at all.",
+    "usable": true
+  },
+  "boolq-d9c0ff6d5d88d45a-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-d9c0ff6d5d88d45a",
+    "substitute_sentence": "No wine vineyards exist on Martha's Vineyard.",
+    "usable": true
+  },
+  "boolq-d9c0ff6d5d88d45a-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-d9c0ff6d5d88d45a",
+    "substitute_sentence": "Martha's Vineyard had no wine vineyards at all.",
+    "usable": true
+  },
+  "boolq-dc69fbd14b7666ba-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-dc69fbd14b7666ba",
+    "substitute_sentence": "It is common to have a miscarriage after a previous one.",
+    "usable": true
+  },
+  "boolq-dc69fbd14b7666ba-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-dc69fbd14b7666ba",
+    "substitute_sentence": "If miscarriages are independent events, having one does not increase the risk of another.",
+    "usable": true
+  },
+  "boolq-dc69fbd14b7666ba-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-dc69fbd14b7666ba",
+    "substitute_sentence": "Recurrent loss is common after one.",
+    "usable": true
+  },
+  "boolq-dfeb2b83339df19a-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-dfeb2b83339df19a",
+    "substitute_sentence": "Gorilla tape is not the same as duct tape.",
+    "usable": true
+  },
+  "boolq-dfeb2b83339df19a-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-dfeb2b83339df19a",
+    "substitute_sentence": "Gorilla tape is not the same as duct tape.",
+    "usable": true
+  },
+  "boolq-dfeb2b83339df19a-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-dfeb2b83339df19a",
+    "substitute_sentence": "Gorilla tape is not the same as duct tape.",
+    "usable": true
+  },
+  "boolq-e713e5747423ed58-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-e713e5747423ed58",
+    "substitute_sentence": "The Buffalo Bills have never won a Super Bowl championship.",
+    "usable": true
+  },
+  "boolq-e713e5747423ed58-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-e713e5747423ed58",
+    "substitute_sentence": "The Buffalo Bills have never won a Super Bowl in their history.",
+    "usable": true
+  },
+  "boolq-e713e5747423ed58-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-e713e5747423ed58",
+    "substitute_sentence": "The Buffalo Bills have never won a Super Bowl.",
+    "usable": true
+  },
+  "boolq-e7efacc5055a0f81-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-e7efacc5055a0f81",
+    "substitute_sentence": "The positron is not the antiparticle of the electron.",
+    "usable": true
+  },
+  "boolq-e7efacc5055a0f81-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-e7efacc5055a0f81",
+    "substitute_sentence": "The positron is not the antiparticle of the electron.",
+    "usable": true
+  },
+  "boolq-e7efacc5055a0f81-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-e7efacc5055a0f81",
+    "substitute_sentence": "A positron is not the electron's antiparticle.",
+    "usable": true
+  },
+  "boolq-e9cf58d26ef5a415-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-e9cf58d26ef5a415",
+    "substitute_sentence": "The Purple Line does not go to Union Station.",
+    "usable": true
+  },
+  "boolq-e9cf58d26ef5a415-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-e9cf58d26ef5a415",
+    "substitute_sentence": "The purple line does not connect to Union Station.",
+    "usable": true
+  },
+  "boolq-e9cf58d26ef5a415-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-e9cf58d26ef5a415",
+    "substitute_sentence": "The Purple Line does not go to Union Station.",
+    "usable": true
+  },
+  "boolq-eab081dc19fd0b77-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-eab081dc19fd0b77",
+    "substitute_sentence": "No, the standard US home voltage is 110 volts.",
+    "usable": true
+  },
+  "boolq-eab081dc19fd0b77-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-eab081dc19fd0b77",
+    "substitute_sentence": "No, the standard voltage for homes in the United States is actually 120 volts.",
+    "usable": true
+  },
+  "boolq-eab081dc19fd0b77-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-eab081dc19fd0b77",
+    "substitute_sentence": "The standard home voltage in the United States is actually 120 volts.",
+    "usable": true
+  },
+  "boolq-eb50b5e27b356c36-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-eb50b5e27b356c36",
+    "substitute_sentence": "No penalty shoot-outs have ever occurred in the FIFA World Cup finals.",
+    "usable": true
+  },
+  "boolq-eb50b5e27b356c36-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-eb50b5e27b356c36",
+    "substitute_sentence": "Penalty shoot-outs were never used in World Cup finals.",
+    "usable": true
+  },
+  "boolq-eb50b5e27b356c36-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-eb50b5e27b356c36",
+    "substitute_sentence": "No, a World Cup final can never go to penalties.",
+    "usable": true
+  },
+  "boolq-efc8a7193a38471a-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-efc8a7193a38471a",
+    "substitute_sentence": "You cannot go to North Korea on holiday.",
+    "usable": true
+  },
+  "boolq-efc8a7193a38471a-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-efc8a7193a38471a",
+    "substitute_sentence": "You cannot go to North Korea on holiday.",
+    "usable": true
+  },
+  "boolq-efc8a7193a38471a-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-efc8a7193a38471a",
+    "substitute_sentence": "You cannot go to North Korea on holiday because tourism is strictly state-controlled.",
+    "usable": true
+  },
+  "boolq-f1e8ba0bfe3203d8-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-f1e8ba0bfe3203d8",
+    "substitute_sentence": "The mother never appears on screen in the show.",
+    "usable": true
+  },
+  "boolq-f1e8ba0bfe3203d8-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-f1e8ba0bfe3203d8",
+    "substitute_sentence": "The show never shows the mother on how I met your mother.",
+    "usable": true
+  },
+  "boolq-f1e8ba0bfe3203d8-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-f1e8ba0bfe3203d8",
+    "substitute_sentence": "The mother never appears on screen in any episode of the show.",
+    "usable": true
+  },
+  "boolq-f224724cd6de0d4f-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-f224724cd6de0d4f",
+    "substitute_sentence": "A major depressive episode typically lasts only six months.",
+    "usable": true
+  },
+  "boolq-f224724cd6de0d4f-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-f224724cd6de0d4f",
+    "substitute_sentence": "No, episodes can last two years or more.",
+    "usable": true
+  },
+  "boolq-f224724cd6de0d4f-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-f224724cd6de0d4f",
+    "substitute_sentence": "No, a major depressive episode cannot last for years.",
+    "usable": true
+  },
+  "boolq-f28e6f45dae03c01-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-f28e6f45dae03c01",
+    "substitute_sentence": "Mario has no last name.",
+    "usable": true
+  },
+  "boolq-f28e6f45dae03c01-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-f28e6f45dae03c01",
+    "substitute_sentence": "The Mario brothers do not have a last name.",
+    "usable": true
+  },
+  "boolq-f28e6f45dae03c01-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "yes",
+    "source_root": "boolq-f28e6f45dae03c01",
+    "substitute_sentence": "Mario Mario is the only last name they have.",
+    "usable": true
+  },
+  "boolq-f93d1ede9dc8bdf4-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-f93d1ede9dc8bdf4",
+    "substitute_sentence": "Enrolled agents can represent taxpayers in tax court.",
+    "usable": true
+  },
+  "boolq-f93d1ede9dc8bdf4-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": true,
+    "source_label": "no",
+    "source_root": "boolq-f93d1ede9dc8bdf4",
+    "substitute_sentence": "An enrolled agent can represent in tax court.",
+    "usable": true
+  },
+  "boolq-f93d1ede9dc8bdf4-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "no",
+    "source_root": "boolq-f93d1ede9dc8bdf4",
+    "substitute_sentence": "An enrolled agent can represent a taxpayer in tax court.",
+    "usable": true
+  },
+  "boolq-ff90a473d90f6bfe-e01": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-ff90a473d90f6bfe",
+    "substitute_sentence": "No other film was released after The Last Jedi in 2017.",
+    "usable": true
+  },
+  "boolq-ff90a473d90f6bfe-e02": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-ff90a473d90f6bfe",
+    "substitute_sentence": "No, there is no film after the last Jedi.",
+    "usable": true
+  },
+  "boolq-ff90a473d90f6bfe-e03": {
+    "deviation_log": [
+      "llm_negative_paraphrase_strong"
+    ],
+    "in_length_window": false,
+    "source_label": "yes",
+    "source_root": "boolq-ff90a473d90f6bfe",
+    "substitute_sentence": "No other film was released after The Last Jedi.",
+    "usable": true
+  }
+}

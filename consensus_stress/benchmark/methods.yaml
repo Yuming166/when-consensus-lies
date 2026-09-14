@@ -1,0 +1,90 @@
+protocol: cs-round5-matched-baselines-cst-bench-20260913
+task: outcome-blind prediction of multi-agent consensus errors under controlled evidence stress
+primary_split: frozen VitaminC natural pairs, 300 pairs / 600 items
+secondary_split: BoolQ balanced specificity split (diagnostic; not in current leaderboard)
+budget_rule: every external method has at most 25 model calls per item; token cost is reported as a secondary accounting dimension
+methods:
+  - key: risk_bf_q
+    name: CST RS_q
+    role: proposed
+    calls_per_item: 25
+    formula: -mean_agent_faithfulness(paraphrase, natural_reverse)
+    label_using: false
+  - key: risk_R_sym
+    name: R_sym
+    role: internal_baseline
+    calls_per_item: 25
+    label_using: false
+  - key: risk_R_PI
+    name: R_PI
+    role: internal_baseline
+    calls_per_item: 25
+    label_using: false
+  - key: risk_vote_agreement
+    name: Vote agreement
+    role: internal_baseline
+    calls_per_item: 5
+    formula: 1 - majority_vote_agreement
+    label_using: false
+  - key: risk_frozen_confidence
+    name: Frozen mean confidence
+    role: internal_baseline
+    calls_per_item: 5
+    formula: 1 - mean original-condition confidence
+    label_using: false
+  - key: risk_self_consistency_disagreement
+    name: Self-consistency disagreement
+    role: external_baseline
+    calls_per_item: 25
+    formula: 1 - modal answer frequency over 25 temperature-0.7 samples
+    citation: Wang et al. 2022, self-consistency style
+    label_using: false
+    shared_call_family: sampling
+  - key: risk_selfcheck_answer_match
+    name: SelfCheckGPT answer-match
+    role: external_baseline
+    calls_per_item: 25
+    formula: 1 - probability that two sampled answers match (binary answer-match variant)
+    citation: Manakul et al. 2023, SelfCheckGPT style
+    label_using: false
+    shared_call_family: sampling
+  - key: risk_semantic_entropy_binary
+    name: Binary semantic entropy
+    role: external_baseline
+    calls_per_item: 25
+    formula: normalized Shannon entropy over yes/no semantic clusters
+    citation: Kuhn et al. semantic entropy style
+    label_using: false
+    shared_call_family: sampling
+  - key: risk_sample_mean_confidence
+    name: Raw sampled confidence
+    role: external_baseline
+    calls_per_item: 25
+    formula: 1 - mean confidence over 25 samples
+    label_using: false
+    shared_call_family: sampling
+  - key: risk_isotonic_sample_confidence
+    name: Isotonic confidence
+    role: external_baseline
+    calls_per_item: 25
+    formula: pair-grouped 5-fold OOF isotonic mapping from sampled confidence to error probability
+    label_using: true
+    shared_call_family: sampling
+  - key: risk_temperature_sample_confidence
+    name: Temperature confidence
+    role: external_baseline
+    calls_per_item: 25
+    formula: pair-grouped 5-fold OOF temperature scaling of sampled confidence, converted to error risk
+    label_using: true
+    shared_call_family: sampling
+  - key: risk_single_agent_intervention
+    name: Single-agent intervention
+    role: external_baseline
+    calls_per_item: 25
+    formula: -mean replicate faithfulness across paraphrase and natural reverse
+    label_using: false
+    shared_call_family: intervention
+notes:
+  - In the binary-answer setting, self-consistency disagreement, SelfCheckGPT answer-match, and binary semantic entropy are monotonic transforms of the same yes/no distribution and may have identical AUROC or Risk@80 rankings.
+  - The sampling family is collected once for efficiency; each derived method is still accounted as a 25-call-per-item method.
+  - Calibration baselines are label-using but strictly pair-grouped five-fold out-of-fold.

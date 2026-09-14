@@ -1,0 +1,7 @@
+{
+  "expected_response_contract.json": "73c2d83ab776b4456ec6998455b00a6e9cc471e3a55a5010bccedb4d0a9a13bb",
+  "labels_ledger.json": "770ede3f79b018c47aa982e6cb3f13b9d504b5c14950f7f1a8f6de196ffcbc5a",
+  "paraphrase_manifest.json": "5b322c4973328b5323edf8111a4e4195c4a4d895c9890dfb73a8d0f29d514435",
+  "relevance_audit.json": "559a6741bec8b3db04b5ef637cb4293d7f3e645fc6593b83c4ec1d0622834b2d",
+  "selection_manifest.json": "5f575ff873b3243b4916f77ab81269476da937d466eec967eff0934efe39089b"
+}

@@ -1,0 +1,277 @@
+{
+  "items": [
+    {
+      "claim": "Jonathan Aibel and Glenn Berger were selected to write The SpongeBob Movie after January 2015 .",
+      "evidence": "By January 2016 , Jonathan Aibel and Glenn Berger had been chosen to write the film .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ebe6f2ec9e77c0008407b46:1352af580af0:support",
+      "pair_id": "5ebe6f2ec9e77c0008407b46:1352af580af0",
+      "reverse_evidence": "By January 2013 , Jonathan Aibel and Glenn Berger had been chosen to write the film .",
+      "stage": 1
+    },
+    {
+      "claim": "Rutherford is a Princeton University interviewer in `` Risky Business '' .",
+      "evidence": "It features Curtis Armstrong as Miles , Richard Masur as Rutherford , the Yale University interviewer , and Bronson Pinchot as Barry.",
+      "gold_label": "REFUTES",
+      "item_id": "5ede072fc9e77c00084d3412:af0e8cff3777:refute",
+      "pair_id": "5ede072fc9e77c00084d3412:af0e8cff3777",
+      "reverse_evidence": "It features Curtis Armstrong as Miles , Richard Masur as Rutherford , the Princeton University interviewer , and Bronson Pinchot as Barry.",
+      "stage": 1
+    },
+    {
+      "claim": "Sarkar Raj was a flop in India .",
+      "evidence": "The film was declared a flop in India , but was declared a super hit in Overseas market .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec7d50dc9e77c0008441fbd:345ab919731c:support",
+      "pair_id": "5ec7d50dc9e77c0008441fbd:345ab919731c",
+      "reverse_evidence": "The film was declared a hit in India , but was declared a super hit in Overseas market .",
+      "stage": 1
+    },
+    {
+      "claim": "The series Black Lagoon follows the story of the Lagoon Company .",
+      "evidence": "The story follows a team of pirates/mercenaries known as Peckham Company , that smuggles goods in and around the seas of Southeast Asia in the early to mid 1990s .",
+      "gold_label": "REFUTES",
+      "item_id": "5ece9464c9e77c0008467969:06480df6abe0:refute",
+      "pair_id": "5ece9464c9e77c0008467969:06480df6abe0",
+      "reverse_evidence": "The story follows a team of pirates/mercenaries known as Lagoon Company , that smuggles goods in and around the seas of Southeast Asia in the early to mid 1990s .",
+      "stage": 1
+    },
+    {
+      "claim": "Kanchana 3 received mixed reviews .",
+      "evidence": "It received mixed reviews from both audience and critics.  : //www.indiaglitz.com/kanchana-3-review-tamil-movie-22159",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec284ffc9e77c00084178c3:b635b41be205:support",
+      "pair_id": "5ec284ffc9e77c00084178c3:b635b41be205",
+      "reverse_evidence": "It received negative reviews from both audience and critics.  : //www.indiaglitz.com/kanchana-3-review-tamil-movie-22159",
+      "stage": 1
+    },
+    {
+      "claim": "Joey Barton plays for Burnley F.C .",
+      "evidence": "Pizarro co-owns a race horse called 'Crying Lightning ' with Burnley F.C . player Joey Barton .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec7d50dc9e77c000844232f:2053fceb0cd1:support",
+      "pair_id": "5ec7d50dc9e77c000844232f:2053fceb0cd1",
+      "reverse_evidence": "Pizarro co-owns a race horse called 'Crying Lightning ' with Rangers F.C . player Joey Barton .",
+      "stage": 1
+    },
+    {
+      "claim": "Billy Cannon died after May 19 , 2018 .",
+      "evidence": "Cannon died on May 20 , 2018 at his home in St. Francisville , at the age of 80.",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec284ffc9e77c0008417cc8:2529b3e9c4cf:support",
+      "pair_id": "5ec284ffc9e77c0008417cc8:2529b3e9c4cf",
+      "reverse_evidence": "Cannon died on May 18 , 2018 at his home in St. Francisville , at the age of 80.",
+      "stage": 1
+    },
+    {
+      "claim": "Mason Storm probes a meeting by the mob after 1984 in the film Hard to Kill .",
+      "evidence": "In 1985 , Mason Storm , a Los Angeles police detective , investigates a mob meeting that takes place by a pier .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de02c9e77c0008489251:da2c414e9244:support",
+      "pair_id": "5ed4de02c9e77c0008489251:da2c414e9244",
+      "reverse_evidence": "In 1983 , Mason Storm , a Los Angeles police detective , investigates a mob meeting that takes place by a pier .",
+      "stage": 1
+    },
+    {
+      "claim": "Lyoto Machida will rematch Gegard Mousasi after September 15 , 2019 .",
+      "evidence": "Machida is now scheduled to rematch Gegard Mousasi at Bellator 228 on 7 September 2019.",
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de08c9e77c000848a40a:eb4feaf2bd82:refute",
+      "pair_id": "5ed4de08c9e77c000848a40a:eb4feaf2bd82",
+      "reverse_evidence": "Machida is now scheduled to rematch Gegard Mousasi at Bellator 228 on 28 September 2019.",
+      "stage": 1
+    },
+    {
+      "claim": "Hurricane Andrew is the second-costliest natural disaster in the United States .",
+      "evidence": "The second-costliest natural disaster to occur in the United States was Hurricane Andrew , which hit Miami early Monday morning on August 24 , 1992 .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de07c9e77c000848a293:381c8e499398:support",
+      "pair_id": "5ed4de07c9e77c000848a293:381c8e499398",
+      "reverse_evidence": "The third-costliest natural disaster to occur in the United States was Hurricane Andrew , which hit Miami early Monday morning on August 24 , 1992 .",
+      "stage": 1
+    },
+    {
+      "claim": "Alpha Phi came into existence after September 29 , 1872 .",
+      "evidence": "Founded at Syracuse University in Syracuse , New York on September 18 , 1872 , Greek Info Pages : NPC Sororities Alpha Phi International Blog it is the fourth Greek-letter organization founded for women , and the first `` sorority '' founded for women in the northeast .",
+      "gold_label": "REFUTES",
+      "item_id": "5ece9462c9e77c0008466657:0241cc577589:refute",
+      "pair_id": "5ece9462c9e77c0008466657:0241cc577589",
+      "reverse_evidence": "Founded at Syracuse University in Syracuse , New York on October 10 , 1872 , Greek Info Pages : NPC Sororities Alpha Phi International Blog it is the fourth Greek-letter organization founded for women , and the first `` sorority '' founded for women in the northeast .",
+      "stage": 1
+    },
+    {
+      "claim": "Wesley Sneijder has less than 124 caps .",
+      "evidence": "With 123 caps , he is their second-most capped player of all time , after Edwin van der Sar.",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de09c9e77c000848ac4b:dacda185bcc0:support",
+      "pair_id": "5ed4de09c9e77c000848ac4b:dacda185bcc0",
+      "reverse_evidence": "With 125 caps , he is their second-most capped player of all time , after Edwin van der Sar.",
+      "stage": 1
+    },
+    {
+      "claim": "The Freedom Party of Austria is a national-conservative political party .",
+      "evidence": "The Freedom Party of Austria ( , FPÖ ) is a right-wing populist and national-liberal political party in Austria .",
+      "gold_label": "REFUTES",
+      "item_id": "5ec5598fc9e77c000842cb46:70b24f3a8d65:refute",
+      "pair_id": "5ec5598fc9e77c000842cb46:70b24f3a8d65",
+      "reverse_evidence": "The Freedom Party of Austria ( , FPÖ ) is a right-wing populist and national-conservative political party in Austria .",
+      "stage": 1
+    },
+    {
+      "claim": "F.C . Be'er Sheva is a club in Beersheba .",
+      "evidence": "Beersheba has two other local clubs , Maccabi Be'er Sheva ( based in Neve Noy ) and F.C . Be'er Sheva ( based in the north of Dalet ) , a continuation of the defunct Beitar Avraham Be'er Sheva .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec7d50cc9e77c00084413da:ede0bb8c11d9:support",
+      "pair_id": "5ec7d50cc9e77c00084413da:ede0bb8c11d9",
+      "reverse_evidence": "Beersheba has two other local clubs , Maccabi Be'er Sheva ( based in Neve Noy ) and MS Be'er Sheva ( based in the north of Dalet ) , a continuation of the defunct Beitar Avraham Be'er Sheva .",
+      "stage": 1
+    },
+    {
+      "claim": "Raaj Kumar is a member of the Kashmiri Pandit family .",
+      "evidence": "Raaj Kumar was born in Loralai , Balochistan , British India in a Kashmiri Rajput family .",
+      "gold_label": "REFUTES",
+      "item_id": "5ed7ad03c9e77c00084a743e:c8441e67b2d7:refute",
+      "pair_id": "5ed7ad03c9e77c00084a743e:c8441e67b2d7",
+      "reverse_evidence": "Raaj Kumar was born in Loralai , Balochistan , British India in a Kashmiri Pandit family .",
+      "stage": 1
+    },
+    {
+      "claim": "In doubles , the Bryan brothers have won a record 38 doubles ATP Tour Masters 1000 titles .",
+      "evidence": "In doubles , the Bryan brothers ( Bob and Mike ) have won a record 38 doubles titles , all as a team .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9461c9e77c0008466390:9b240cefd325:support",
+      "pair_id": "5ece9461c9e77c0008466390:9b240cefd325",
+      "reverse_evidence": "In doubles , the Bryan brothers ( Bob and Mike ) have won a record 39 doubles titles , all as a team .",
+      "stage": 1
+    },
+    {
+      "claim": "Belinelli was traded to the Atlanta Hawks .",
+      "evidence": "On June 20 , 2017 , Plumlee was traded , along with Marco Belinelli and the 41st overall pick in the 2017 NBA draft , to the Atlanta Hawks in exchange for Dwight Howard and the 31st overall pick in the 2017 NBA draft.==NBA",
+      "gold_label": "REFUTES",
+      "item_id": "5ece9462c9e77c0008466e97:2d6a87b9f23a:refute",
+      "pair_id": "5ece9462c9e77c0008466e97:2d6a87b9f23a",
+      "reverse_evidence": "On June 20 , 2017 , Belinelli was traded , along with Marco Belinelli and the 41st overall pick in the 2017 NBA draft , to the Atlanta Hawks in exchange for Dwight Howard and the 31st overall pick in the 2017 NBA draft.==NB",
+      "stage": 1
+    },
+    {
+      "claim": "Hurricane Andrew is the second-costliest natural disaster in the United States .",
+      "evidence": "The third-costliest natural disaster to occur in the United States was Hurricane Andrew , which hit Miami early Monday morning on August 24 , 1992 .",
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de07c9e77c000848a293:381c8e499398:refute",
+      "pair_id": "5ed4de07c9e77c000848a293:381c8e499398",
+      "reverse_evidence": "The second-costliest natural disaster to occur in the United States was Hurricane Andrew , which hit Miami early Monday morning on August 24 , 1992 .",
+      "stage": 1
+    },
+    {
+      "claim": "The name Kareem Abdul-Jabbar means `` the noble one , servant of the Almighty . ”",
+      "evidence": "At age 24 in 1971 , he converted to Islam and became Kareem Abdul-Jabbar , which means “ the generous one , servant of the Almighty . ”",
+      "gold_label": "REFUTES",
+      "item_id": "5ee3949bc9e77c0008cd0084:9e56c0355c9a:refute",
+      "pair_id": "5ee3949bc9e77c0008cd0084:9e56c0355c9a",
+      "reverse_evidence": "At age 24 in 1971 , he converted to Islam and became Kareem Abdul-Jabbar , which means “ the noble one , servant of the Almighty . ”",
+      "stage": 1
+    },
+    {
+      "claim": "Ginger Lynn is a pornographic actress .",
+      "evidence": "Ginger Lynn ( born Ginger Lynn Allen ; December 14 , 1962 ) is an American pornographic actress , prominent in 1980s videos .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec284ffc9e77c0008417d54:76d3480676be:support",
+      "pair_id": "5ec284ffc9e77c0008417d54:76d3480676be",
+      "reverse_evidence": "Ginger Lynn ( born Ginger Lynn Allen ; December 14 , 1962 ) is an American pornographic model , prominent in 1980s videos .",
+      "stage": 1
+    },
+    {
+      "claim": "Adrian Cronauer is an Airman First Class in Good Morning , Vietnam .",
+      "evidence": "In 1965 , Airman First Class Adrian Cronauer arrives in Saigon to work as a DJ for Armed Forces Radio Service .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9462c9e77c000846672f:b9208395ee87:support",
+      "pair_id": "5ece9462c9e77c000846672f:b9208395ee87",
+      "reverse_evidence": "In 1965 , Airman Second Class Adrian Cronauer arrives in Saigon to work as a DJ for Armed Forces Radio Service .",
+      "stage": 1
+    },
+    {
+      "claim": "Chris Webber was traded in exchange for Anfernee Hardaway .",
+      "evidence": "The Magic immediately traded him to the Golden State Warriors in exchange for Anfernee Hardaway and three future first round draft picks .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ebe6f2ec9e77c0008407a41:70d2922a6f08:support",
+      "pair_id": "5ebe6f2ec9e77c0008407a41:70d2922a6f08",
+      "reverse_evidence": "The Magic immediately traded him to the Golden State Warriors in exchange for penny Hardaway and three future first round draft picks .",
+      "stage": 1
+    },
+    {
+      "claim": "Meet Joe Black had a domestic box office return of less than $ 44,100,000 .",
+      "evidence": "While the film had a disappointing domestic box office return of $ 44 , it fared much better overseas .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de09c9e77c000848a7f6:9bc1befd8532:support",
+      "pair_id": "5ed4de09c9e77c000848a7f6:9bc1befd8532",
+      "reverse_evidence": "While the film had a disappointing domestic box office return of $ 44,619,100 , it fared much better overseas .",
+      "stage": 1
+    },
+    {
+      "claim": "F.C . Be'er Sheva is a club in Beersheba .",
+      "evidence": "Beersheba has two other local clubs , Maccabi Be'er Sheva ( based in Neve Noy ) and MS Be'er Sheva ( based in the north of Dalet ) , a continuation of the defunct Beitar Avraham Be'er Sheva .",
+      "gold_label": "REFUTES",
+      "item_id": "5ec7d50cc9e77c00084413da:ede0bb8c11d9:refute",
+      "pair_id": "5ec7d50cc9e77c00084413da:ede0bb8c11d9",
+      "reverse_evidence": "Beersheba has two other local clubs , Maccabi Be'er Sheva ( based in Neve Noy ) and F.C . Be'er Sheva ( based in the north of Dalet ) , a continuation of the defunct Beitar Avraham Be'er Sheva .",
+      "stage": 1
+    },
+    {
+      "claim": "There is a Soviet Army colonel in Rambo III .",
+      "evidence": "Trautman from the hands of an extremely powerful and ruthless Soviet military general who is bent on killing both Trautman and Rambo , and to conquer Afghanistan for the Soviet armies .",
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de0ac9e77c000848af69:7933829d9b72:refute",
+      "pair_id": "5ed4de0ac9e77c000848af69:7933829d9b72",
+      "reverse_evidence": "Trautman from the hands of an extremely powerful and ruthless Soviet Army colonel who is bent on killing both Trautman and Rambo , and to conquer Afghanistan for the Soviet armies .",
+      "stage": 1
+    },
+    {
+      "claim": "There is an office of Kroll Inc. in Fort Collins .",
+      "evidence": "Kroll is headquartered in New York City , and has offices in Chicago , Philadelphia , Los Angeles , Eden Prairie , Nashville , San Francisco , Dallas , Miami , Fort Collins and Washington DC as well as Toronto , in Ontario , Canada .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec284fcc9e77c0008415c98:1341bbbe85f4:support",
+      "pair_id": "5ec284fcc9e77c0008415c98:1341bbbe85f4",
+      "reverse_evidence": "Kroll is headquartered in New York City , and has offices in Chicago , Philadelphia , Los Angeles , Eden Prairie , Nashville , San Francisco , Dallas , Miami , Loveland and Washington DC as well as Toronto , in Ontario , Canada .",
+      "stage": 1
+    },
+    {
+      "claim": "After the disbandment of Take That , Owen became the first of the band 's ex-members to release a solo record .",
+      "evidence": "After Take That split , Owen became the second of the band 's ex-members to release a solo record .",
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de06c9e77c0008489b41:e869f512cc61:refute",
+      "pair_id": "5ed4de06c9e77c0008489b41:e869f512cc61",
+      "reverse_evidence": "After Take That split , Owen became the first of the band 's ex-members to release a solo record .",
+      "stage": 1
+    },
+    {
+      "claim": "Manchester United has won a total of 65 trophies .",
+      "evidence": "Manchester United lead Liverpool in terms of total trophies won by 66-63.",
+      "gold_label": "REFUTES",
+      "item_id": "5ede072fc9e77c00084d347c:bd9b80e25fc1:refute",
+      "pair_id": "5ede072fc9e77c00084d347c:bd9b80e25fc1",
+      "reverse_evidence": "Manchester United lead Liverpool in terms of total trophies won by 65-63.",
+      "stage": 1
+    },
+    {
+      "claim": "King Frederick I 's mother Louise Henriette and Albertine Agnes were siblings .",
+      "evidence": "However , King Frederick I of Prussia also claimed the Principality as the senior cognatic heir , his mother Louise Henriette being Henriette Catherine 's older sister .",
+      "gold_label": "REFUTES",
+      "item_id": "5ed7acffc9e77c00084a5b8a:7bfc1d20a7fd:refute",
+      "pair_id": "5ed7acffc9e77c00084a5b8a:7bfc1d20a7fd",
+      "reverse_evidence": "However , King Frederick I of Prussia also claimed the Principality as the senior cognatic heir , his mother Louise Henriette being Albertine Agnes 's older sister .",
+      "stage": 1
+    },
+    {
+      "claim": "Ubisoft Montreal has less than 2,000 employees .",
+      "evidence": "Founded as a subsidiary of Ubisoft in 1997 , initially developing low-profile projects , the studio is now one of the largest in the world , with over 2,100 employees .",
+      "gold_label": "REFUTES",
+      "item_id": "5ec55989c9e77c000842badb:8eb23649f586:refute",
+      "pair_id": "5ec55989c9e77c000842badb:8eb23649f586",
+      "reverse_evidence": "Founded as a subsidiary of Ubisoft in 1997 , initially developing low-profile projects , the studio is now one of the largest in the world , with over 1,700 employees .",
+      "stage": 1
+    }
+  ],
+  "judgments": [],
+  "protocol": "cs-pilot-vitaminc-conf-2026-09-13",
+  "rule": ">=24/30 judged decision-relevant, else exclude audited non-relevant items and their pairs before agent calls"
+}

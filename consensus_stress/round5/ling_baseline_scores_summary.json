@@ -1,0 +1,12 @@
+{
+  "intervention_rows_with_all_5_replicates": 600,
+  "model": "ling",
+  "record_valid": 30000,
+  "records": 30000,
+  "records_path": "consensus_stress/round5/ling_baseline_records.jsonl",
+  "records_sha256": "ed5440e74f008cc4a9a025448336effd8f9fca1eaf6fb517122b638e7049fc67",
+  "sample_rows_with_all_25_valid": 600,
+  "score_rows": 600,
+  "scores_path": "consensus_stress/round5/ling_baseline_scores_label_blind.jsonl",
+  "scores_sha256": "c685d976d171bea8a346bf89cf0cd6b7bb3a0140a98ec8f3050a7c265c8567fc"
+}

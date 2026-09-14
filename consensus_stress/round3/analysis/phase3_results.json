@@ -1,0 +1,91 @@
+{
+  "breakpoint": {
+    "removal": {
+      "mean_breakpoint_correct": 0.5935,
+      "n_breakpoint_none_correct": 96,
+      "n_breakpoint_none_wrong": 5,
+      "n_correct": 203,
+      "n_wrong": 22
+    },
+    "reversal": {
+      "mean_breakpoint_correct": 0.5547,
+      "n_breakpoint_none_correct": 31,
+      "n_breakpoint_none_wrong": 22,
+      "n_correct": 203,
+      "n_wrong": 22
+    }
+  },
+  "consensus_profile": {
+    "reversal_flip_curve": {
+      "correct": [
+        0.0,
+        0.1804,
+        0.3467,
+        0.4925,
+        0.6991,
+        0.8449
+      ],
+      "lambda": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ],
+      "wrong": [
+        0.0,
+        0.0154,
+        0.0462,
+        0.0462,
+        0.0769,
+        0.1154
+      ]
+    }
+  },
+  "phase3_hc": 567,
+  "phase3_subset_items": 240,
+  "protocol": "cs-paper-vitaminc-2026-09-13",
+  "robustness": {
+    "removal": {
+      "mean_rr_correct": 0.7931,
+      "mean_rr_wrong": 0.6182
+    },
+    "reversal": {
+      "mean_rr_correct": 0.6227,
+      "mean_rr_wrong": 1.0
+    }
+  },
+  "stress_area": {
+    "removal": {
+      "auroc_risk_stress": {
+        "auroc": 0.31874160322436185,
+        "ci": [
+          0.23554376657824933,
+          0.40271068169618895
+        ],
+        "n": 225,
+        "n_groups": 119
+      },
+      "mean_correct": 0.2453,
+      "mean_wrong": 0.3832,
+      "n_correct": 203,
+      "n_wrong": 22
+    },
+    "reversal": {
+      "auroc_risk_stress": {
+        "auroc": 0.948499776085983,
+        "ci": [
+          0.925228712174525,
+          0.9682732316227461
+        ],
+        "n": 225,
+        "n_groups": 119
+      },
+      "mean_correct": 0.4356,
+      "mean_wrong": 0.0318,
+      "n_correct": 203,
+      "n_wrong": 22
+    }
+  }
+}

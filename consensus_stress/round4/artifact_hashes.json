@@ -1,0 +1,21 @@
+{
+  "files": {
+    "../registry.yaml": "48c32811d6b45b1657fd796bcb7f1ad5378b160c719c7953bf9836602a325513",
+    "SUMMARY_20260913_round4.md": "85dd71eff08b9bb61632880f8e70d523c827329ea67182ac17ae7c93c5d8946e",
+    "active_probing_preregistration.md": "5a3b8d5d4a4cd81a6e1aab40e726256c3f5cb9fdef61d44095730d8ae2a6186a",
+    "analysis/active_probe_analysis.json": "8d657d4a1d597b911e22d8263f069f25b00258aeea1bc8805fc932477cfa2d14",
+    "analysis/ling_adapted_analysis.json": "07dec740c85a5e6c67cee1387c7f44285c36b152b5ae85f62617f3a264244f46",
+    "analysis/ling_adapted_crossmodel.md": "733a11172c7d6feb2745ad714c8ef0d032b4352e2eb1a5688bc2abd0332995a0",
+    "execution_notes.md": "8e3b7391bb4c08dc7375eaeb0187cef6803080ac6bc9600fd06f6a564a839df6",
+    "figures/active_probe_roc.png": "f057abd3ee61c44a43a9dfcd2ef3c336403f9e75147163d11f25d914c6adbcb4",
+    "figures/ling_mechanism_reverse.png": "cfce1ffc7a59dcdfefc1ef6c6b0be1e151487e315f3091a060c0d625eae806b7",
+    "figures/risk_coverage_ling_crossmodel.png": "883fb4feae8504682c37f02b07989ae228b37f9a072daa64aa74822cb32b4ed2",
+    "figures/roc_ling_crossmodel.png": "6764cf30b886ec807178f230227bbf3f6f3058a1b088c45287eb74cf43cb23dd",
+    "ling_preoutcome_features.jsonl": "35e853cf0815cb1428ec8f2ee671993bd1f87ba8b28ade24a630ac4c79bc26bb",
+    "ling_records.jsonl": "fc0e32126b3ce0a1c5394d11a706a072611a9fd12797b3624789cc0dda62d4d2",
+    "preregistration.md": "d929fbaed0e632f87615d0ff2e38618a86d9f8bc8dfd01cc4b4d236cd4a95be5",
+    "run_summary_ling.json": "39f7a01a7586d7d8e62fbc1393713cc0cf1c79a99ae1b75b786ea917dcfc53b9",
+    "server_status.json": "693fe0f19c955bcf76ef26dcf39371f03d38feb8e4044146aae3e933516eb3a9"
+  },
+  "protocol": "cs-paper-ling-adapted-20260913-round4"
+}

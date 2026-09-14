@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "fever:4c217321d9c3876a:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "fever:4c217321d9c3876a:refute"
+    }
+  ],
+  "protocol": "cs-paper-vitaminc-2026-09-13-fever",
+  "status": "sealed"
+}

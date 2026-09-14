@@ -1,0 +1,1502 @@
+{
+  "boolq-02a6f2511bca5f3e-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In Catholic theology, a mortal sin (Latin: peccatum mortale) is a gravely sinful act that can result in damnation if a person fails to repent of the sin before death.",
+    "usable": true
+  },
+  "boolq-02a6f2511bca5f3e-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "A sin is regarded as ``mortal'' when its nature causes a separation between that person and God's saving grace.",
+    "usable": true
+  },
+  "boolq-02a6f2511bca5f3e-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "This kind of sin must be differentiated from a venial sin that merely causes a weakening of an individual's relationship with God.",
+    "usable": true
+  },
+  "boolq-0340ca5950f0b82f-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Tom and Jerry are fictional characters who appeared in a series of early sound cartoons produced by Van Beuren Studios and distributed by RKO Pictures.",
+    "usable": true
+  },
+  "boolq-0340ca5950f0b82f-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "When Official Films acquired the Van Beuren library during the 1950s, the characters were renamed Dick and Larry to prevent confusion with Tom and Jerry, the well-known MGM cartoon series from the 1940s and 1950s.",
+    "usable": true
+  },
+  "boolq-0340ca5950f0b82f-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Today, animation historians call the characters Van Beuren's Tom and Jerry.",
+    "usable": true
+  },
+  "boolq-04d78060af01c193-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Cats possess seven cervical vertebrae, matching nearly all mammals, thirteen thoracic vertebrae (humans have twelve), seven lumbar vertebrae (humans have five), three sacral vertebrae (humans have five due to their bipedal stance), and, excluding Manx cats and other short-tailed varieties, twenty-two or twenty-three caudal vertebrae (humans have three to five, fused into an internal coccyx).",
+    "usable": true
+  },
+  "boolq-04d78060af01c193-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The cat's enhanced spinal mobility and flexibility, compared to humans, are due to its extra lumbar and thoracic vertebrae.",
+    "usable": true
+  },
+  "boolq-04d78060af01c193-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The tail, composed of caudal vertebrae, serves as a counterbalance for the cat's body during rapid movements.",
+    "usable": true
+  },
+  "boolq-06f1e839ddd7f00f-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In the United States, a Social Security number (SSN) is a nine-digit number issued to U.S.",
+    "usable": true
+  },
+  "boolq-06f1e839ddd7f00f-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "citizens, permanent residents, and temporary (working) residents under section 205(c)(2) of the Social Security Act, codified as 42 U.S.C.",
+    "usable": true
+  },
+  "boolq-06f1e839ddd7f00f-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The number is issued to an individual by the Social Security Administration, which is an independent agency of the United States government.",
+    "usable": true
+  },
+  "boolq-0861b8d43ea65bb3-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "All Canadian passports are issued by the Passport Program of Immigration, Refugees and Citizenship Canada (IRCC).",
+    "usable": true
+  },
+  "boolq-0861b8d43ea65bb3-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Before July 1, 2013, Canadian passports were issued by Passport Canada, an independent operating agency of Foreign Affairs and International Trade Canada.",
+    "usable": true
+  },
+  "boolq-0861b8d43ea65bb3-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "They are typically valid for five or ten years for individuals aged 16 and older, and for five years for children under 16.",
+    "usable": true
+  },
+  "boolq-0d5dc01da79565fd-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The minimum age for purchasing and consuming varies, though 18 years is the most common age.",
+    "usable": true
+  },
+  "boolq-0d5dc01da79565fd-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "However, in North America, the age limits vary between 18 and 21 years of age.",
+    "usable": true
+  },
+  "boolq-0d5dc01da79565fd-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Across the United States, the minimum legal age to buy any alcoholic beverage from a shop, supermarket, liquor store, bar, club, or any other licensed premises is 21 years.",
+    "usable": true
+  },
+  "boolq-175e72008e01c2c2-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The New Zealand flag was the first national flag to feature the stars of the Southern Cross constellation and remains unique as the only national flag that includes only the stars from that constellation which actually form the cross.",
+    "usable": true
+  },
+  "boolq-175e72008e01c2c2-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Australian flag, adopted in 1901, features the Union Flag in the canton and the Southern Cross on the fly.",
+    "usable": true
+  },
+  "boolq-175e72008e01c2c2-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The cross on the New Zealand flag consists of the four primary stars of the Southern Cross constellation, each depicted as a red five-pointed star with a white border.",
+    "usable": true
+  },
+  "boolq-1762a735751b0151-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Full employment is a state where every individual seeking employment can secure the work hours they require at fair wages.",
+    "usable": true
+  },
+  "boolq-1762a735751b0151-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Since individuals change jobs, full employment implies a steady unemployment rate of 1 to 2 percent of the total workforce, yet it does not account for underemployment where part-time workers lack sufficient hours for a decent living.",
+    "usable": true
+  },
+  "boolq-1762a735751b0151-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In macroeconomics, full employment is occasionally defined as the employment level where no cyclical or deficient-demand unemployment exists.",
+    "usable": true
+  },
+  "boolq-17d3b1609fdf2a7a-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "John Samuel Vander Meer (November 2, 1914 -- October 6, 1997) was an American professional baseball player.",
+    "usable": true
+  },
+  "boolq-17d3b1609fdf2a7a-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "He served as a pitcher in Major League Baseball, most notably with the Cincinnati Reds.",
+    "usable": true
+  },
+  "boolq-17d3b1609fdf2a7a-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Vander Meer is most famous for being the sole pitcher in Major League Baseball history to throw two consecutive no-hitters.",
+    "usable": true
+  },
+  "boolq-1a16084a80d35ee1-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "For a thin lens in air, the focal length is the distance from the lens center to the principal foci (or focal points).",
+    "usable": true
+  },
+  "boolq-1a16084a80d35ee1-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "For a converging lens (such as a convex lens), the focal length is positive and represents the distance where a beam of collimated light converges to a single point.",
+    "usable": true
+  },
+  "boolq-1a16084a80d35ee1-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "For a diverging lens (such as a concave lens), the focal length is negative and represents the distance to the point from which a collimated beam appears to diverge after passing through the lens.",
+    "usable": true
+  },
+  "boolq-1afc638ef2adf02d-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The name orange comes from the look of a ripe orange fruit.",
+    "usable": true
+  },
+  "boolq-1afc638ef2adf02d-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The term originates from Old French orange, derived from the ancient name for the fruit, pomme d'orange.",
+    "usable": true
+  },
+  "boolq-1afc638ef2adf02d-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In turn, the French word originates from the Italian arancia, which is based on the Arabic nāranj, derived from the Sanskrit naranga.",
+    "usable": true
+  },
+  "boolq-1c869ae71b3d56e5-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Van Buren County is a county situated within the United States.",
+    "usable": true
+  },
+  "boolq-1c869ae71b3d56e5-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "According to the 2010 census, the population was 17,295.",
+    "usable": true
+  },
+  "boolq-1c869ae71b3d56e5-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The county was established on November 11, 1833, and named after Martin Van Buren, President of the United States, who served as Vice President when the county was formed.",
+    "usable": true
+  },
+  "boolq-23665b10956187fb-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The most frequent cause of color blindness is an inherited issue affecting the development of one or more of the three sets of color-sensing cones in the eye.",
+    "usable": true
+  },
+  "boolq-23665b10956187fb-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Males are more likely to be color blind than females because the genes responsible for the most common forms of color blindness are located on the X chromosome.",
+    "usable": true
+  },
+  "boolq-23665b10956187fb-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Since females possess two X chromosomes, a defect in one is usually offset by the other, whereas males have only a single X chromosome.",
+    "usable": true
+  },
+  "boolq-26e562321794b684-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "A 3-way lamp, also called a tri-light, is a lamp that employs a 3-way light bulb to generate three levels of light in a low-medium-high arrangement.",
+    "usable": true
+  },
+  "boolq-26e562321794b684-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "A 3-way lamp needs a 3-way bulb and socket, along with a 3-way switch.",
+    "usable": true
+  },
+  "boolq-26e562321794b684-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Unlike an incandescent lamp controlled by a dimmer, each filament operates at full voltage, so the light's color remains unchanged across the three available steps.",
+    "usable": true
+  },
+  "boolq-27fc7897701c5fe9-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Miami Beach is a coastal resort city located in Miami-Dade County, Florida, United States.",
+    "usable": true
+  },
+  "boolq-27fc7897701c5fe9-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The municipality sits on natural and artificial barrier islands between the Atlantic Ocean and Biscayne Bay, which divides the Beach from Miami.",
+    "usable": true
+  },
+  "boolq-27fc7897701c5fe9-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The commercial center of South Florida is formed by the Port of Miami, downtown Miami, and the South Beach neighborhood, which includes the southernmost 2.5 square miles (6.5 km) of Miami Beach.",
+    "usable": true
+  },
+  "boolq-306ba5e2aabb5c16-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Silver Spring is a city situated within the Capital Beltway in Montgomery County, Maryland, United States.",
+    "usable": true
+  },
+  "boolq-306ba5e2aabb5c16-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "According to 2013 estimates by the United States Census Bureau, it had a population of 76,716, ranking it as the fourth most populous place in Maryland after Baltimore, Columbia, and Germantown, and the second largest in Montgomery County following Germantown.",
+    "usable": true
+  },
+  "boolq-306ba5e2aabb5c16-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Inner Silver Spring area comprises these neighborhoods: Downtown Silver Spring, East Silver Spring, Woodside, North Woodside, Woodside Park, North Hills Sligo Park, Long Branch, Montgomery Knolls, Franklin Knolls, Indian Spring Terrace, Indian Spring Village, Clifton Park Village, New Hampshire Estates, Oakview, and Woodmoor.",
+    "usable": true
+  },
+  "boolq-315ce848268abb19-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Catherine Tramell is the main antagonist and fictional character in the film Basic Instinct (1992) and its sequel, Basic Instinct 2 (2006).",
+    "usable": true
+  },
+  "boolq-315ce848268abb19-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Catherine, written by Joe Eszterhas, features Sharon Stone in both films.",
+    "usable": true
+  },
+  "boolq-315ce848268abb19-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In Basic Instinct, Tramell plays a serial killer and the love interest of washed-up detective Nick Curran, while Basic Instinct 2 pairs her with the similarly troubled British psychologist Michael Glass.",
+    "usable": true
+  },
+  "boolq-345141858d8ae37d-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Closed communion is also practiced by the Orthodox Presbyterian Church, the Reformed Presbyterian Church, the American Presbyterian Church, the Reformed Seventh-day Adventist Church, the Exclusive Brethren, the Apostolic Christian Church, the Church of the Brethren, Mennonites, Amish, certain Anglicans, the Church of God in Christ, the Church of God of Prophecy, and other Reformed tradition churches including Calvinists.",
+    "usable": true
+  },
+  "boolq-345141858d8ae37d-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Jehovah's Witnesses believe that only the 144,000 are entitled to receive communion.",
+    "usable": true
+  },
+  "boolq-345141858d8ae37d-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Other nontrinitarian Christians who practice closed communion include the Church of God (Seventh Day), Christadelphians, and Oneness Pentecostals such as the True Jesus Church.",
+    "usable": true
+  },
+  "boolq-356c9e37985f33a9-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Since launching in 2013, Microsoft has released updates for the Xbox One gaming console that allow it to play select titles from its two predecessor consoles, Xbox and Xbox 360.",
+    "usable": true
+  },
+  "boolq-356c9e37985f33a9-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "On June 15, 2015, eligible Xbox Preview program users received a beta update to the Xbox One system software that enabled backward compatibility with supported Xbox 360 games.",
+    "usable": true
+  },
+  "boolq-356c9e37985f33a9-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The public release of the dashboard update with backward compatibility occurred on November 12, 2015.",
+    "usable": true
+  },
+  "boolq-35c2221d6b99e344-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The United States Virgin Islands (USVI; also known as the American Virgin Islands), officially the Virgin Islands of the United States, is a group of Caribbean islands that form an insular area of the United States situated 40 miles (64 km) east of Puerto Rico.",
+    "usable": true
+  },
+  "boolq-35c2221d6b99e344-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The islands form a geographic part of the Virgin Islands archipelago and are situated within the Leeward Islands of the Lesser Antilles.",
+    "usable": true
+  },
+  "boolq-35c2221d6b99e344-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "It is the easternmost point (terms in jurisdiction) and territory of the United States.",
+    "usable": true
+  },
+  "boolq-3732dd07821532cf-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "A penalty shoot-out (officially kicks from the penalty mark) is a method of determining which team is awarded victory in an association football match that cannot end in a draw, when the score is tied after the regulation playing time as well as extra time (if used) have expired.",
+    "usable": true
+  },
+  "boolq-3732dd07821532cf-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In a penalty shoot-out, each team takes turns firing at the goal from the penalty mark, with the goal defended solely by the opposing team's goalkeeper.",
+    "usable": true
+  },
+  "boolq-3732dd07821532cf-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Each team gets five shots that must be taken by different kickers, and the team with the most successful kicks is declared the winner.",
+    "usable": true
+  },
+  "boolq-3eb45377138feb56-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Since launching in 2013, Microsoft has released updates for the Xbox One gaming console that allow it to play select titles from its two predecessor consoles, Xbox and Xbox 360.",
+    "usable": true
+  },
+  "boolq-3eb45377138feb56-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "On June 15, 2015, eligible Xbox Preview program users received a beta update to the Xbox One system software that enabled backward compatibility with supported Xbox 360 games.",
+    "usable": true
+  },
+  "boolq-3eb45377138feb56-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The public release of the dashboard update with backward compatibility occurred on November 12, 2015.",
+    "usable": true
+  },
+  "boolq-41ae236eb1db9715-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Greatest Game Ever Played is a 2005 biographical sports film based on the early life of golf champion Francis Ouimet.",
+    "usable": true
+  },
+  "boolq-41ae236eb1db9715-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The film was directed by Bill Paxton, marking his final work as a director.",
+    "usable": true
+  },
+  "boolq-41ae236eb1db9715-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The screenplay for the film was adapted by Mark Frost from his book, The Greatest Game Ever Played: Harry Vardon, Francis Ouimet, and the Birth of Modern Golf.",
+    "usable": true
+  },
+  "boolq-436f9efecd67b933-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The city experiences four distinct seasons: a cold, snowy winter; a hot, dry summer; and two relatively wet transition periods.",
+    "usable": true
+  },
+  "boolq-436f9efecd67b933-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Salt Lake City area's climate is generally subhumid, contrary to frequent claims that it is semi-arid.",
+    "usable": true
+  },
+  "boolq-436f9efecd67b933-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "According to the Köppen climate classification, Salt Lake City experiences a hot-summer humid continental climate (Dfa), characterized by summers that are relatively drier than the rest of the year.",
+    "usable": true
+  },
+  "boolq-475be59157d3431e-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Scallions, also referred to as green onions, spring onions, or salad onions, are vegetables belonging to various Allium onion species.",
+    "usable": true
+  },
+  "boolq-475be59157d3431e-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Scallions possess a milder flavor compared to the majority of onions.",
+    "usable": true
+  },
+  "boolq-475be59157d3431e-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Their close relatives include garlic, shallot, leek, chive, spring onion, and Chinese onion.",
+    "usable": true
+  },
+  "boolq-47d0ddf569941508-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "During the 1990s, provincial downloading disconnected Yonge Street from Highway 11.",
+    "usable": true
+  },
+  "boolq-47d0ddf569941508-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Consequently, Highway 11 does not begin until Crown Hill, just outside Barrie, several kilometres north of where the name \"Yonge Street\" terminates.",
+    "usable": true
+  },
+  "boolq-47d0ddf569941508-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Guinness Book of World Records no longer lists Yonge Street as the world's longest street and has not selected a replacement, but instead cites the Pan-American Highway as the longest \"motorable road.\"",
+    "usable": true
+  },
+  "boolq-49b5d2cf8bab35ee-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Empire State Building is a 102-story Art Deco skyscraper located in Midtown Manhattan, New York City.",
+    "usable": true
+  },
+  "boolq-49b5d2cf8bab35ee-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Designed by Shreve, Lamb & Harmon and finished in 1931, the structure features a roof height of 1,250 feet (380 m) and reaches a total elevation of 1,454 feet (443.2 m) when its antenna is included.",
+    "usable": true
+  },
+  "boolq-49b5d2cf8bab35ee-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Its name comes from \"Empire State,\" the nickname of New York.",
+    "usable": true
+  },
+  "boolq-4dbcf608dd2bcd62-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The atomic number represents the count of protons in the atom's nucleus and corresponds to the number of electrons in a neutral (non-ionized) atom.",
+    "usable": true
+  },
+  "boolq-4dbcf608dd2bcd62-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Each atomic number identifies a specific element, but not the isotope; an atom of a given element may have a wide range in its number of neutrons.",
+    "usable": true
+  },
+  "boolq-4dbcf608dd2bcd62-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The atom's mass number equals the total count of nucleons (protons and neutrons) in the nucleus, with each isotope of a specific element possessing a unique mass number.",
+    "usable": true
+  },
+  "boolq-4e6c2d13b51823d7-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Rio de Janeiro (/ˈriːoʊ di ʒəˈnɛəroʊ, -deɪ ʒə-, -də dʒə-/; Portuguese pronunciation: (ˈʁi.ud(ʒi) ʒɐˈnejɾu); River of January), or simply Rio, is the second-most populous municipality in Brazil and the sixth-most populous in the Americas.",
+    "usable": true
+  },
+  "boolq-4e6c2d13b51823d7-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The metropolis serves as the anchor for the Rio de Janeiro metropolitan area, which is the second-most populous in Brazil and the sixth-most populous in the Americas.",
+    "usable": true
+  },
+  "boolq-4e6c2d13b51823d7-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Rio de Janeiro is the capital of the state of Rio de Janeiro, Brazil's third-most populous state.",
+    "usable": true
+  },
+  "boolq-5185c4e45bef35c8-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Kingdom Hearts serves as a crossover of numerous Disney settings situated within a universe created specifically for the series.",
+    "usable": true
+  },
+  "boolq-5185c4e45bef35c8-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The series mainly focuses on the protagonist Sora and his adventures with characters from Disney, Final Fantasy, and The World Ends with You, while he stops the different forms of the main villain Xehanort throughout the show.",
+    "usable": true
+  },
+  "boolq-5185c4e45bef35c8-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "All characters that are original to the Kingdom Hearts franchise are owned by The Walt Disney Company.",
+    "usable": true
+  },
+  "boolq-595de4d6408e71d0-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Castling involves moving the king two squares toward a rook on the player's first rank, followed by moving the rook to the square the king crossed.",
+    "usable": true
+  },
+  "boolq-595de4d6408e71d0-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Castling is permitted only if the king has never moved, the rook involved has never moved, the squares between the king and the rook are unoccupied, the king is not in check, and the king does not cross over or end on a square where it would be in check.",
+    "usable": true
+  },
+  "boolq-595de4d6408e71d0-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Castling is one of the chess rules and is technically a king move (Hooper & Whyld 1992:71).",
+    "usable": true
+  },
+  "boolq-5be57ad9dfc5f16b-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Steven Madden, Ltd., also referred to as Steve Madden, is a publicly traded company headquartered in Long Island City, New York.",
+    "usable": true
+  },
+  "boolq-5be57ad9dfc5f16b-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Founded by eponymous designer and businessman Steve Madden, the company designs and markets shoes and fashion accessories for women, men, and children.",
+    "usable": true
+  },
+  "boolq-5be57ad9dfc5f16b-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The company's brands include Steve Madden, Steven by Steve Madden, Madden Girl, Freebird by Steven, Stevies, Betsey Johnson, Betseyville, Report Signature, Report, Big Buddha, Wild Pair, Cejon, and Mad Love.",
+    "usable": true
+  },
+  "boolq-5f7d5c1abfedbd21-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Electric Variable Transmission (EVT) merges a transmission with an electric motor to create the appearance of a single CVT.",
+    "usable": true
+  },
+  "boolq-5f7d5c1abfedbd21-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In the standard implementation, a gasoline engine is linked to a conventional transmission, which is subsequently connected to the planet carrier of an epicyclic gear system.",
+    "usable": true
+  },
+  "boolq-5f7d5c1abfedbd21-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "An electric motor/generator is connected to the central \"sun\" gear, which is typically un-driven in standard epicyclic systems.",
+    "usable": true
+  },
+  "boolq-5f7da7f15f5d7428-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The following list details the teams that must win three consecutive games to overcome a 3--1 series deficit and secure a best-of-seven playoff series.",
+    "usable": true
+  },
+  "boolq-5f7da7f15f5d7428-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In the history of major North American pro sports, teams trailing 3--1 in a series have come back to win 52 times, with more than half of those victories achieved by National Hockey League (NHL) teams.",
+    "usable": true
+  },
+  "boolq-5f7da7f15f5d7428-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In the final championship round, teams have overcome a 3--1 deficit eight times, with six of those achievements belonging to Major League Baseball (MLB) teams in the World Series.",
+    "usable": true
+  },
+  "boolq-60e8372c48fa9d56-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Multiple citizenship, also known as dual citizenship, multiple nationality, or dual nationality, refers to a person's citizenship status where an individual is simultaneously considered a citizen of more than one state according to the laws of those states.",
+    "usable": true
+  },
+  "boolq-60e8372c48fa9d56-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "No international convention exists that defines a person's nationality or citizen status, a matter determined solely by national laws that differ and may conflict with one another.",
+    "usable": true
+  },
+  "boolq-60e8372c48fa9d56-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Multiple citizenship occurs because various nations apply distinct, and often non-mutually exclusive, standards for granting citizenship.",
+    "usable": true
+  },
+  "boolq-6432bb664e4d0119-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "NTSC is the analog television format historically linked to the United States, Canada, Japan, South Korea, Mexico, the Philippines, Taiwan, and other nations.",
+    "usable": true
+  },
+  "boolq-6432bb664e4d0119-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "PAL is the analog color television format historically linked to most of Europe, most of Africa, China, India, Australia, New Zealand, Israel, North Korea, and other nations (along with Brazil, which adopts the refresh rate and resolution typically associated with NTSC).",
+    "usable": true
+  },
+  "boolq-6432bb664e4d0119-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "SECAM, a format linked to French-speaking Europe, employs a distinct color encoding system that differs significantly from PAL, despite sharing the same resolution and refresh rate.",
+    "usable": true
+  },
+  "boolq-648daf96778bdf33-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Since their invention in 1900, reflector sights have become used as gun sights on all kinds of weapons.",
+    "usable": true
+  },
+  "boolq-648daf96778bdf33-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "They were employed on fighter aircraft, in a limited capacity during World War I, widely utilized in World War II, and remain the foundational component in numerous modern head-up displays.",
+    "usable": true
+  },
+  "boolq-648daf96778bdf33-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "They have also been employed in other weapon types, typically large ones, including anti-aircraft and anti-tank gun sights, as well as any other role requiring an operator to engage fast-moving targets across a wide field of view, provided the sight could receive adequate electrical power to operate.",
+    "usable": true
+  },
+  "boolq-653c007b225b5fe8-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Imperial Japanese Navy Air Service launched a surprise military strike against the United States naval base at Pearl Harbor, Hawaii Territory, on the morning of December 7, 1941.",
+    "usable": true
+  },
+  "boolq-653c007b225b5fe8-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The attack, also referred to as the Battle of Pearl Harbor, resulted in the United States joining World War II.",
+    "usable": true
+  },
+  "boolq-653c007b225b5fe8-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "During its planning, the Japanese military leadership designated the attack as the Hawaii Operation, Operation AI, and Operation Z.",
+    "usable": true
+  },
+  "boolq-66e161a8aa14f415-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Supremacy Clause of the United States Constitution (Article VI, Clause 2) establishes that the Constitution, federal laws enacted pursuant to it, and treaties made under its authority, constitute the supreme law of the land.",
+    "usable": true
+  },
+  "boolq-66e161a8aa14f415-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "It mandates that state courts adhere to the supreme law; when federal and state laws conflict, federal law must prevail.",
+    "usable": true
+  },
+  "boolq-66e161a8aa14f415-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Even state constitutions must yield to federal law.",
+    "usable": true
+  },
+  "boolq-681c02c217abdfb3-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "To be included in the Constitution, an amendment must be ratified by either the legislatures of three-fourths (currently 38) of the states, as decided by Congress, or by State ratifying conventions in three-fourths of the states.",
+    "usable": true
+  },
+  "boolq-681c02c217abdfb3-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Thirty-three amendments to the United States Constitution have been ratified by Congress and forwarded to the states for approval.",
+    "usable": true
+  },
+  "boolq-681c02c217abdfb3-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Twenty-seven of these amendments have been ratified and are now part of the Constitution.",
+    "usable": true
+  },
+  "boolq-6a3a5c0ee65a0159-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The home field curse impacts the Super Bowl host team.",
+    "usable": true
+  },
+  "boolq-6a3a5c0ee65a0159-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "To date, no team has successfully reached the Super Bowl in their home stadium.",
+    "usable": true
+  },
+  "boolq-6a3a5c0ee65a0159-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Four teams that have played Super Bowls in their home stadiums have qualified for the divisional playoffs: the 1994 Miami Dolphins, the 1998 Miami Dolphins, the 2016 Houston Texans, and the 2017 Minnesota Vikings, with the Vikings being the first to reach their conference's title game.",
+    "usable": true
+  },
+  "boolq-6b7ecc6a7d18d5e7-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Notable performances in the Derby include Bobby Abreu in 2005, who won the Derby with a then-record 41 homers, including a then-record 24 in the first round.",
+    "usable": true
+  },
+  "boolq-6b7ecc6a7d18d5e7-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Josh Hamilton broke the first-round record in 2008 with 28 home runs.",
+    "usable": true
+  },
+  "boolq-6b7ecc6a7d18d5e7-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Although Hamilton's performance was notable for the length of his home runs, he ultimately lost to Justin Morneau in a brief final round.",
+    "usable": true
+  },
+  "boolq-6cdd89d685548908-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In the United States, Mother's Day is an annual holiday observed on the second Sunday of May.",
+    "usable": true
+  },
+  "boolq-6cdd89d685548908-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Mother's Day honors mothers, motherhood, and maternal relationships in general, as well as the positive contributions they make to society.",
+    "usable": true
+  },
+  "boolq-6cdd89d685548908-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Anna Jarvis established it, with the first official Mother's Day being celebrated at St.",
+    "usable": true
+  },
+  "boolq-72a5e419409763af-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "On May 8, 2014, CW renewed the series for a fourth season.",
+    "usable": true
+  },
+  "boolq-72a5e419409763af-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "On July 18, 2014, CW president Mark Pedowitz announced that Hart of Dixie would have ten episodes for its fourth season, which premiered on December 15, 2014.",
+    "usable": true
+  },
+  "boolq-72a5e419409763af-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "On March 14, 2015, Leila Gerstein disclosed that season four of Hart of Dixie would be the final one.",
+    "usable": true
+  },
+  "boolq-7425d1ff9ec05048-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Staten Island /ˌstætən ˈaɪlənd/ is the westernmost and southernmost of the five boroughs of New York City in the U.S.",
+    "usable": true
+  },
+  "boolq-7425d1ff9ec05048-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Situated in the southwest section of the city, Staten Island represents the southernmost area of both the state and city of New York, featuring Conference House Park at its southernmost point.",
+    "usable": true
+  },
+  "boolq-7425d1ff9ec05048-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The borough is separated from New Jersey by the Arthur Kill and the Kill Van Kull, and from the remainder of New York by New York Bay.",
+    "usable": true
+  },
+  "boolq-782b252bb2b681c2-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The United States men's national soccer team has participated in multiple World Cup finals, achieving its highest placement during its debut at the 1930 World Cup, where the United States finished in third place.",
+    "usable": true
+  },
+  "boolq-782b252bb2b681c2-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Following the 1950 World Cup, where the United States defeated England 1--0 in group play, the U.S.",
+    "usable": true
+  },
+  "boolq-782b252bb2b681c2-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The United States took part in every World Cup from 1990 onward until it failed to qualify for the 2018 tournament following a 2017 defeat to Trinidad and Tobago.",
+    "usable": true
+  },
+  "boolq-7c14b34b79ef1db1-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "National identity cards are issued to citizens by the governments of all European Union member states except Denmark, Ireland, and the United Kingdom, as well as by Liechtenstein and Switzerland (the latter not formally part of the EEA).",
+    "usable": true
+  },
+  "boolq-7c14b34b79ef1db1-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Citizens possessing a national identity card indicating EEA or Swiss citizenship may not only utilize it as an identity document in their home country but also as a travel document to exercise the right of free movement within the EEA and Switzerland.",
+    "usable": true
+  },
+  "boolq-7c14b34b79ef1db1-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "National identity cards issued to non-citizen residents, as well as any cards that do not indicate EEA or Swiss citizenship, are not valid for travel within the EEA and Switzerland.",
+    "usable": true
+  },
+  "boolq-7f184a0fc178e6ab-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Colorado River begins south of Lubbock on the Llano Estacado, close to Lamesa.",
+    "usable": true
+  },
+  "boolq-7f184a0fc178e6ab-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "It flows generally southeast, emerging from the Llano Estacado and traversing the Texas Hill Country, passing through several reservoirs including Lake J.B.",
+    "usable": true
+  },
+  "boolq-7f184a0fc178e6ab-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The river passes through several additional reservoirs before arriving in Austin, such as Lake Buchanan, Inks Lake, and Lake Lyndon B.",
+    "usable": true
+  },
+  "boolq-8589af4ba2d54a4d-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Although the electric chair has long served as a symbol of the death penalty in the United States, its usage is declining because of the increasing adoption of lethal injection, which is broadly considered a more humane execution method.",
+    "usable": true
+  },
+  "boolq-8589af4ba2d54a4d-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Although some states still use electrocution for execution, it is now only a secondary option that a prisoner may request instead of lethal injection, except in Tennessee, where it can be applied if lethal injection drugs are unavailable without the prisoner's consent.",
+    "usable": true
+  },
+  "boolq-8589af4ba2d54a4d-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "As of 2014, electrocution remains an optional execution method in Alabama, Florida, South Carolina, and Virginia, each permitting prisoners to select lethal injection instead.",
+    "usable": true
+  },
+  "boolq-86019df0ca3d0875-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In the United States, Haribo gummy bears are available in five flavors: raspberry (red), orange (orange), strawberry (green), pineapple (colorless), and lemon (yellow).",
+    "usable": true
+  },
+  "boolq-86019df0ca3d0875-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Trolli's bears are similarly most often sold in five flavors in the United States, and in the same colors; however, Trolli's red bear is strawberry-flavored, while the green is lime and the colorless is grape.",
+    "usable": true
+  },
+  "boolq-86019df0ca3d0875-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Many companies imitate the flavor-color pairings found in either Haribo or Trolli.",
+    "usable": true
+  },
+  "boolq-86b1ca5bcd16b1a9-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Denaturation is a process where proteins or nucleic acids lose the quaternary, tertiary, and secondary structures found in their native state due to external stress or compounds like strong acids or bases, concentrated inorganic salts, organic solvents (e.g., alcohol or chloroform), radiation, or heat.",
+    "usable": true
+  },
+  "boolq-86b1ca5bcd16b1a9-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "If proteins within a living cell become denatured, this leads to disruption of cell activity and potentially cell death.",
+    "usable": true
+  },
+  "boolq-86b1ca5bcd16b1a9-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Cell death also results in protein denaturation.",
+    "usable": true
+  },
+  "boolq-872ea96271acdd26-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "A pendulum consists of a weight hanging from a pivot, allowing it to swing freely.",
+    "usable": true
+  },
+  "boolq-872ea96271acdd26-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "When a pendulum is moved sideways from its resting, equilibrium position, it experiences a restoring force caused by gravity that will accelerate it back toward the equilibrium position.",
+    "usable": true
+  },
+  "boolq-872ea96271acdd26-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Upon release, the restoring force acting on the pendulum's mass causes it to oscillate around the equilibrium position, swinging back and forth.",
+    "usable": true
+  },
+  "boolq-887a65c70d711102-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "A lithium-ion battery, also known as a Li-ion battery (abbreviated as LIB), is a rechargeable battery where lithium ions travel from the negative electrode to the positive electrode during discharge and return during charging.",
+    "usable": true
+  },
+  "boolq-887a65c70d711102-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In contrast to the metallic lithium found in non-rechargeable lithium batteries, Li-ion batteries employ an intercalated lithium compound as one of their electrode materials.",
+    "usable": true
+  },
+  "boolq-887a65c70d711102-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "A lithium-ion battery cell consists of the electrolyte, which facilitates ionic movement, and the two electrodes.",
+    "usable": true
+  },
+  "boolq-89f36a3242bdf1db-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Voting rights of United States citizens in Puerto Rico, similar to those of residents of other United States territories, differ from those of United States citizens in each of the fifty states and the District of Columbia.",
+    "usable": true
+  },
+  "boolq-89f36a3242bdf1db-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Territories lack voting representation in the United States Congress and are not eligible to receive electoral votes for President.",
+    "usable": true
+  },
+  "boolq-89f36a3242bdf1db-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The U.S. Constitution grants voting representation in Congress to",
+    "usable": true
+  },
+  "boolq-8b87483f5345bc2d-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Broadway Junction is a New York City Subway station complex shared by the elevated BMT Canarsie Line and BMT Jamaica Line, and the underground IND Fulton Street Line.",
+    "usable": true
+  },
+  "boolq-8b87483f5345bc2d-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "It was also served by trains on the Fulton Street Elevated until that line shut down in 1956.",
+    "usable": true
+  },
+  "boolq-8b87483f5345bc2d-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "It sits approximately where Broadway, Fulton Street, and Van Sinderen Avenue meet, marking the boundary between Bedford-Stuyvesant and East New York in Brooklyn.",
+    "usable": true
+  },
+  "boolq-8f1be696d692876b-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "North Korea participated in the 2018 Winter Olympics held in Pyeongchang, South Korea.",
+    "usable": true
+  },
+  "boolq-8f1be696d692876b-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Ryom Tae-ok and Kim Ju-sik, two figure skaters, qualified for the Games, yet the Olympic Committee of the Democratic People's Republic of Korea (North Korea) did not register them before the 30 October deadline.",
+    "usable": true
+  },
+  "boolq-8f1be696d692876b-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "On 9 January 2018, North Korea agreed during talks with South Korea to dispatch both athletes and a delegation to the Winter Olympics.",
+    "usable": true
+  },
+  "boolq-904acdf543cda92b-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Howard Beach route starts and finishes at Howard Beach--JFK Airport, offering a direct connection to the New York City Subway's IND Rockaway Line (A train).",
+    "usable": true
+  },
+  "boolq-904acdf543cda92b-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "It also halts at Lefferts Boulevard to connect with shuttle bus service for long-term parking lots A and B, the airport employee parking lot, and the B15 bus to Brooklyn.",
+    "usable": true
+  },
+  "boolq-904acdf543cda92b-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The 1.8-mile (2.9 km) line segment connecting Howard Beach to Federal Circle traverses both the employee and long-term parking lots.",
+    "usable": true
+  },
+  "boolq-9581822b8b48ea4a-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The National Park Service (NPS) is an agency of the United States federal government responsible for managing all national parks, numerous national monuments, and other conservation and historical properties under various title designations.",
+    "usable": true
+  },
+  "boolq-9581822b8b48ea4a-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "It was established on August 25, 1916, by Congress via the National Park Service Organic Act and serves as an agency of the United States Department of the Interior.",
+    "usable": true
+  },
+  "boolq-9581822b8b48ea4a-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The NPS has a dual responsibility to maintain the ecological and historical integrity of the sites under its management while ensuring they remain available and accessible for public use and enjoyment.",
+    "usable": true
+  },
+  "boolq-973f7d58a205801c-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Radioactive waste refers to waste containing radioactive material.",
+    "usable": true
+  },
+  "boolq-973f7d58a205801c-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Radioactive waste typically results from nuclear power generation and other uses of nuclear fission or nuclear technology, including research and medicine.",
+    "usable": true
+  },
+  "boolq-973f7d58a205801c-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Radioactive waste poses a hazard to all living things and the environment, and is controlled by government agencies to safeguard human health and the environment.",
+    "usable": true
+  },
+  "boolq-9bb1e5f591baf77a-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The World Cup hosts are granted an automatic qualification.",
+    "usable": true
+  },
+  "boolq-9bb1e5f591baf77a-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Unlike numerous other sports, outcomes from prior World Cups or continental championships are disregarded.",
+    "usable": true
+  },
+  "boolq-9bb1e5f591baf77a-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Until 2002, the defending champions also received an automatic berth, but starting from the 2006 World Cup this is no longer the case.",
+    "usable": true
+  },
+  "boolq-9fc30a763ffffb08-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Sole Survivor gets a cash prize of $1,000,000 before taxes and occasionally also receives a car supplied by the show's sponsor.",
+    "usable": true
+  },
+  "boolq-9fc30a763ffffb08-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Every participant on Survivor earns a prize based on their duration in the game.",
+    "usable": true
+  },
+  "boolq-9fc30a763ffffb08-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In most seasons, the runner-up receives $100,000, and third place wins $85,000.",
+    "usable": true
+  },
+  "boolq-a56132ab54223647-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "On vehicles equipped with a manual transmission, cruise control offers less flexibility since depressing the clutch pedal and shifting gears typically disengages it.",
+    "usable": true
+  },
+  "boolq-a56132ab54223647-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The \"resume\" feature must be activated every time following the selection of a new gear and the release of the clutch.",
+    "usable": true
+  },
+  "boolq-a56132ab54223647-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Therefore, cruise control offers the greatest advantage at motorway or highway speeds when top gear is engaged almost continuously.",
+    "usable": true
+  },
+  "boolq-a7a4338d12c1c142-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "A dual major, also known as a double major, refers to a student who fulfills two distinct sets of degree requirements.",
+    "usable": true
+  },
+  "boolq-a7a4338d12c1c142-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In the United States, undergraduate programs leading to a bachelor's degree typically follow a liberal arts model, combining a specific set of coursework (often referred to as distribution or core requirements) with a specialization known as a major; a double major would generally fulfill one set of core requirements and two sets of specialization requirements.",
+    "usable": true
+  },
+  "boolq-a7a4338d12c1c142-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "This situation primarily affects undergraduate students, although certain graduate programs do provide double majors for graduate degrees.",
+    "usable": true
+  },
+  "boolq-a7ae7b9b3bf5718a-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "This list includes games compatible with DirectX 10 or 10.1 (available on Windows Vista and subsequent versions).",
+    "usable": true
+  },
+  "boolq-a7ae7b9b3bf5718a-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Games offering backward compatibility for DirectX 10 or 10.1 GPUs through DirectX 11 are listed in the List of games with DirectX 11 support instead.",
+    "usable": true
+  },
+  "boolq-a7ae7b9b3bf5718a-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Information about the developer, publisher, release date, and genre is included when available.",
+    "usable": true
+  },
+  "boolq-a96e1e7fc1c02634-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Primary producers transform an abiotic energy source (e.g.",
+    "usable": true
+  },
+  "boolq-a96e1e7fc1c02634-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "light) into energy stored in organic compounds, which can be utilized by other organisms (e.g.",
+    "usable": true
+  },
+  "boolq-a96e1e7fc1c02634-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Primary producers transform energy from light (phototrophs and photoautotrophs) or from inorganic chemical compounds (chemolithotrophs) to synthesize organic molecules, typically stored as biomass and subsequently serving as carbon and energy sources for other organisms (e.g.",
+    "usable": true
+  },
+  "boolq-a9931aaf2806c5fb-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In October 2013, Sleepy Hollow received a renewal for a second season consisting of 13 episodes.",
+    "usable": true
+  },
+  "boolq-a9931aaf2806c5fb-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In May 2014, the season was extended to include 18 episodes.",
+    "usable": true
+  },
+  "boolq-a9931aaf2806c5fb-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In early March 2015, Sleepy Hollow showrunner Mark Goffman departed the series following the second season.",
+    "usable": true
+  },
+  "boolq-ab69683e9f81f8bc-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Gas chromatography is fundamentally similar to column chromatography (and other chromatographic methods like HPLC and TLC), yet it exhibits several significant differences.",
+    "usable": true
+  },
+  "boolq-ab69683e9f81f8bc-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "First, separating compounds in a mixture occurs between a liquid stationary phase and a gas mobile phase, while in column chromatography the stationary phase is solid and the mobile phase is liquid.",
+    "usable": true
+  },
+  "boolq-ab69683e9f81f8bc-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "(Hence the full name of the procedure is \"Gas--liquid chromatography\", referring to the mobile and stationary phases, respectively.) Second, the column through which the gas phase passes is situated in an oven where the gas temperature can be regulated, while column chromatography (typically) lacks such temperature control.",
+    "usable": true
+  },
+  "boolq-b8e1cc332d5652b4-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Final Four included no top seeds for the first time since 2006, with the highest remaining seed being the West Region winner, #3 Connecticut.",
+    "usable": true
+  },
+  "boolq-b8e1cc332d5652b4-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "For the first time since 2000, a #8 seed reached the Final Four as Butler, the national runner-up from the previous year, won the Southeast Region.",
+    "usable": true
+  },
+  "boolq-b8e1cc332d5652b4-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "For only the third time in history, a #11 seed reached the Final Four when Virginia Commonwealth, one of the ``First Four'' teams, secured the Southwest Region.",
+    "usable": true
+  },
+  "boolq-b9474bb8ec1b2ec2-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "New York City, the most populous city in the United States, contains over 6,486 completed high-rise buildings measuring at least 35 meters, including at least 113 completed structures that exceed 600 feet (183 m) in height.",
+    "usable": true
+  },
+  "boolq-b9474bb8ec1b2ec2-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "One World Trade Center, standing at 1,776 feet (541 m), is the tallest building in New York.",
+    "usable": true
+  },
+  "boolq-b9474bb8ec1b2ec2-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The 104-story skyscraper also ranks as the tallest building in the United States, the tallest in the Western Hemisphere, and the sixth-tallest globally.",
+    "usable": true
+  },
+  "boolq-ba4dc6a42eef3c10-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "During the mid to late 1990s, numerous high-end AV receivers featured a demodulator circuit designed specifically for the RF modulated Dolby Digital AC-3 signal from LaserDisc players.",
+    "usable": true
+  },
+  "boolq-ba4dc6a42eef3c10-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "By the late 1990s, as LaserDisc player sales and disc availability dropped because of the rising popularity of DVDs, AV receiver manufacturers eliminated the demodulator circuit.",
+    "usable": true
+  },
+  "boolq-ba4dc6a42eef3c10-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Even though DVD players could play Dolby Digital tracks, their output signals were not modulated and thus incompatible with LaserDisc AC-3 inputs designed for them.",
+    "usable": true
+  },
+  "boolq-bacacca2ae207a8e-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The film drew inspiration from one of Antonio Stradivari's violins, the 1721 Red Mendelssohn, which is distinguished by a unique red stripe on its upper right side.",
+    "usable": true
+  },
+  "boolq-bacacca2ae207a8e-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "By the time the film was produced, the Red Mendelssohn belonged to Elizabeth Pitcairn, heiress to the PPG fortune, whose grandfather bought it for her 16th birthday for $1.7 million at auction at Christie's London.",
+    "usable": true
+  },
+  "boolq-bacacca2ae207a8e-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Despite rumors and the film, the Red Mendelssohn is varnished burgundy instead of blood.",
+    "usable": true
+  },
+  "boolq-bd51733f317d4afa-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "There is an informal understanding that seats will be allocated by geographic region, resulting in five seats for Western countries, three for African states (comprising one francophone civil law judge, one Anglophone common law judge, and one Arab), two for Eastern European states, three for Asian states, and two for Latin American and Caribbean states.",
+    "usable": true
+  },
+  "boolq-bd51733f317d4afa-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Throughout the majority of the court's history, each of the five permanent members of the United Nations Security Council (France, Russia, China, the United Kingdom, and the United States) has consistently had a judge serving, filling three Western seats, one Asian seat, and one Eastern European seat.",
+    "usable": true
+  },
+  "boolq-bd51733f317d4afa-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Exceptions include China's absence of a judge from 1967 to 1985, when it did not submit a candidate, and the withdrawal of British judge Sir Christopher Greenwood as a candidate for a second nine-year term in 2017, resulting in no judges from the United Kingdom serving on the court.",
+    "usable": true
+  },
+  "boolq-c0b86fecf7ef2286-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "It is useful to note that the mass-center is a fixed property for a given rigid body (e.g.",
+    "usable": true
+  },
+  "boolq-c0b86fecf7ef2286-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "(with no slosh or articulation), whereas the center-of-gravity may, in addition, depend upon its orientation in a non-uniform gravitational field.",
+    "usable": true
+  },
+  "boolq-c0b86fecf7ef2286-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In the latter case, the center-of-gravity will always be situated somewhat nearer to the main attractive body than the mass-center, and consequently will shift its position within the body of interest as its orientation changes.",
+    "usable": true
+  },
+  "boolq-c203a07672a9a743-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Midnight blue is a dark blue hue named for its similarity to the apparent blue color of a moonlit night sky around full moon.",
+    "usable": true
+  },
+  "boolq-c203a07672a9a743-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Midnight blue represents the color of a vat filled with indigo dye; consequently, midnight blue can also be regarded as a dark shade of indigo.",
+    "usable": true
+  },
+  "boolq-c203a07672a9a743-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Midnight blue is clearly blue to the eye in sunlight or full-spectrum light, yet may look black under some more restricted spectra often encountered in artificial lighting (particularly early 20th-century incandescent).",
+    "usable": true
+  },
+  "boolq-c354c64c58d12def-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Besides the true folded mountains, referred to as the ridge and valley province, the dissected plateau region located to the north and west of the mountains is typically classified with the Appalachians.",
+    "usable": true
+  },
+  "boolq-c354c64c58d12def-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "This encompasses the Catskill Mountains in southeastern New York, the Poconos in Pennsylvania, and the Allegheny Plateau spanning southwestern New York, western Pennsylvania, eastern Ohio, and northern West Virginia.",
+    "usable": true
+  },
+  "boolq-c354c64c58d12def-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "This identical plateau is referred to as the Cumberland Plateau in southern West Virginia, eastern Kentucky, western Virginia, eastern Tennessee, and northern Alabama.",
+    "usable": true
+  },
+  "boolq-c38453cb0db838d6-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "This list includes released video games for the Wii video game consoles that support the Classic Controller, Classic Controller Pro, and/or GameCube controller.",
+    "usable": true
+  },
+  "boolq-c38453cb0db838d6-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "This list excludes games released on Nintendo's Virtual Console, since the Classic Controller and GameCube controller work with all Virtual Console titles except for certain TurboGrafx-16 games.",
+    "usable": true
+  },
+  "boolq-c38453cb0db838d6-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Many titles on this list are ports of previous generation games or releases that appeared simultaneously on other consoles featuring traditional control schemes, including the PlayStation 2, 3, and 4, as well as the Xbox 360 and One.",
+    "usable": true
+  },
+  "boolq-c6ea7ffeadcd75e3-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The University of Houston--Downtown (UHD) is a four-year state university and one of four separate institutions within the University of Houston System.",
+    "usable": true
+  },
+  "boolq-c6ea7ffeadcd75e3-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Its campus covers 40 acres (16 ha) in Downtown Houston, with a satellite site in northwestern Harris County.",
+    "usable": true
+  },
+  "boolq-c6ea7ffeadcd75e3-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Established in 1974, UHD is the second-largest university in the Houston area, enrolling more than 14,000 students.",
+    "usable": true
+  },
+  "boolq-c909c3da5b73bc19-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Each edition and variation (excluding reprintings) of a book receives an ISBN.",
+    "usable": true
+  },
+  "boolq-c909c3da5b73bc19-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "For instance, an e-book, a paperback, and a hardcover version of the same title would each possess a distinct ISBN.",
+    "usable": true
+  },
+  "boolq-c909c3da5b73bc19-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The ISBN consists of 13 digits when assigned on or after 1 January 2007, and 10 digits when assigned before 2007.",
+    "usable": true
+  },
+  "boolq-c944bb7cfc826767-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Promotion is a chess rule requiring a pawn that reaches its eighth rank to be immediately replaced by the player's choice of a queen, knight, rook, or bishop of the same color.",
+    "usable": true
+  },
+  "boolq-c944bb7cfc826767-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The new piece substitutes the pawn within the same move.",
+    "usable": true
+  },
+  "boolq-c944bb7cfc826767-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The selection of a new piece is not restricted to those previously captured, meaning promotion can lead to a player owning, for instance, two or more queens even if the game began with only one.",
+    "usable": true
+  },
+  "boolq-ca08af04c854ebce-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Sole Survivor gets a cash prize of $1,000,000 before taxes and occasionally also receives a car supplied by the show's sponsor.",
+    "usable": true
+  },
+  "boolq-ca08af04c854ebce-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Every participant on Survivor earns a prize based on their duration in the game.",
+    "usable": true
+  },
+  "boolq-ca08af04c854ebce-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In most seasons, the runner-up receives $100,000, and third place wins $85,000.",
+    "usable": true
+  },
+  "boolq-cc5fc21b728d15ba-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The term \"BB gun\" is frequently misapplied to describe a pellet gun, which launches non-spherical projectiles.",
+    "usable": true
+  },
+  "boolq-cc5fc21b728d15ba-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Although a steel BB can often be fired in a pellet gun, pellets generally cannot be fired in a gun specifically designed for BBs.",
+    "usable": true
+  },
+  "boolq-cc5fc21b728d15ba-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Similarly, the term is frequently misapplied to airsoft guns, which fire plastic pellets that are bigger yet far less dense and possess markedly inferior ballistic performance.",
+    "usable": true
+  },
+  "boolq-ce0989b0962d1cc7-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "An acute triangle is a triangle where all three angles are acute (less than 90°).",
+    "usable": true
+  },
+  "boolq-ce0989b0962d1cc7-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "An obtuse triangle is defined by having one obtuse angle (greater than 90°) and two acute angles.",
+    "usable": true
+  },
+  "boolq-ce0989b0962d1cc7-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Since a triangle's angles must sum to 180°, no triangle can have more than one obtuse angle.",
+    "usable": true
+  },
+  "boolq-ce5c38a8b4b6c629-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Better Call Saul is an American crime drama television series created by Vince Gilligan and Peter Gould.",
+    "usable": true
+  },
+  "boolq-ce5c38a8b4b6c629-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "It is a spin-off prequel to Gilligan's earlier series Breaking Bad.",
+    "usable": true
+  },
+  "boolq-ce5c38a8b4b6c629-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Set in the early 2000s, Better Call Saul chronicles the journey of con-man turned small-time lawyer, James Morgan \"Jimmy\" McGill (Bob Odenkirk), six years prior to the events of Breaking Bad, depicting his evolution into the persona of Saul Goodman, while also briefly examining his life following the events of Breaking Bad.",
+    "usable": true
+  },
+  "boolq-d088bb0d736e630f-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Since launching in 2013, Microsoft has released updates for the Xbox One gaming console that allow it to play select titles from its two predecessor consoles, Xbox and Xbox 360.",
+    "usable": true
+  },
+  "boolq-d088bb0d736e630f-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "On June 15, 2015, eligible Xbox Preview program users received a beta update to the Xbox One system software that enabled backward compatibility with supported Xbox 360 games.",
+    "usable": true
+  },
+  "boolq-d088bb0d736e630f-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The public release of the dashboard update with backward compatibility occurred on November 12, 2015.",
+    "usable": true
+  },
+  "boolq-d3259191b8a9486f-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The principal bridesmaid, if such a title is used, may be referred to as the chief bridesmaid or maid of honor when unmarried, or the matron of honor if married.",
+    "usable": true
+  },
+  "boolq-d3259191b8a9486f-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "A junior bridesmaid is a girl who is obviously too young to be married, yet is included as an honorary bridesmaid.",
+    "usable": true
+  },
+  "boolq-d3259191b8a9486f-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In the United States, typically only the maid/matron of honor and the best man serve as the official witnesses for the wedding license.",
+    "usable": true
+  },
+  "boolq-d559b4df7843dc10-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "It is worth noting that the confidence interval for a parameter differs from the acceptance region of a test for that parameter, a misconception that is sometimes held.",
+    "usable": true
+  },
+  "boolq-d559b4df7843dc10-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The confidence interval belongs to the parameter space, while the acceptance region belongs to the sample space.",
+    "usable": true
+  },
+  "boolq-d559b4df7843dc10-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "For the same reason, the confidence level differs from the complementary probability of the significance level.",
+    "usable": true
+  },
+  "boolq-d9c0ff6d5d88d45a-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In 1985, Martha's Vineyard and Chappaquiddick Island were designated as a new American Viticultural Area for wine appellation of origin specification: Martha's Vineyard AVA.",
+    "usable": true
+  },
+  "boolq-d9c0ff6d5d88d45a-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Wines made from grapes cultivated on the two islands may be sold bearing the Martha's Vineyard AVA label.",
+    "usable": true
+  },
+  "boolq-d9c0ff6d5d88d45a-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Chicama Vineyards, a winemaker based in West Tisbury on Martha's Vineyard, closed on August 10, 2008, after operating for 37 years.",
+    "usable": true
+  },
+  "boolq-dc69fbd14b7666ba-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Recurrent miscarriage (``recurrent pregnancy loss'' (RPL) or ``habitual abortion'') refers to multiple consecutive miscarriages, though the specific number required for diagnosis varies.",
+    "usable": true
+  },
+  "boolq-dc69fbd14b7666ba-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "If the proportion of pregnancies ending in miscarriage is 15% and assuming that miscarriages are independent events, then the probability of two consecutive miscarriages is 2.25% and the probability of three consecutive miscarriages is 0.34%.",
+    "usable": true
+  },
+  "boolq-dc69fbd14b7666ba-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The rate of recurrent pregnancy loss is 1%.",
+    "usable": true
+  },
+  "boolq-dfeb2b83339df19a-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Gorilla Tape is an adhesive tape brand sold by Gorilla Glue Inc., a company based in Sharonville, Ohio.",
+    "usable": true
+  },
+  "boolq-dfeb2b83339df19a-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Introduced in late 2005, Gorilla Tape is a reinforced type of duct tape and appeared in Popular Science's \"Best of What's New 2006\".",
+    "usable": true
+  },
+  "boolq-dfeb2b83339df19a-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Gorilla Tape comes in multiple sizes and colors, such as camouflage, white, and clear.",
+    "usable": true
+  },
+  "boolq-e713e5747423ed58-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Pittsburgh Steelers (6--2) hold the record for the most Super Bowl victories with six titles, whereas the New England Patriots (5--5), the Dallas Cowboys (5--3), and the San Francisco 49ers (5--1) each have five wins.",
+    "usable": true
+  },
+  "boolq-e713e5747423ed58-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "New England leads in Super Bowl appearances with ten, whereas the Buffalo Bills (0--4) hold the record for consecutive appearances with four (all losses) between 1990 and 1993.",
+    "usable": true
+  },
+  "boolq-e713e5747423ed58-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Miami Dolphins are the sole other team to record at least three consecutive appearances, specifically from 1972 to 1974.",
+    "usable": true
+  },
+  "boolq-e7efacc5055a0f81-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The positron, also known as the antielectron, serves as the antiparticle or antimatter counterpart to the electron.",
+    "usable": true
+  },
+  "boolq-e7efacc5055a0f81-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The positron possesses an electric charge of +1 e, a spin of 1/2 (identical to the electron), and shares the same mass as an electron.",
+    "usable": true
+  },
+  "boolq-e7efacc5055a0f81-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "When an electron collides with a positron, annihilation occurs.",
+    "usable": true
+  },
+  "boolq-e9cf58d26ef5a415-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Metro Purple Line is a 6.4-mile (10.3 km) line that starts at Union Station.",
+    "usable": true
+  },
+  "boolq-e9cf58d26ef5a415-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "At Union Station, passengers can connect to the Metro Silver Line bus rapid transit line and the Metro Gold Line.",
+    "usable": true
+  },
+  "boolq-e9cf58d26ef5a415-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Purple Line heads southwest through Downtown Los Angeles, passing the Civic Center, Pershing Square (located near the Historic Core), and the Financial District.",
+    "usable": true
+  },
+  "boolq-eab081dc19fd0b77-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "After voltage harmonisation, electricity supplies across the European Union are now nominally 230 V ±10% at 50 Hz.",
+    "usable": true
+  },
+  "boolq-eab081dc19fd0b77-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "During a transition period from 1995 to 2008, nations that previously operated at 220 V adopted a narrower asymmetric tolerance of 230 V +6%/−10%, while those (such as the UK) that had previously used 240 V shifted to 230 V +10%/−6%.",
+    "usable": true
+  },
+  "boolq-eab081dc19fd0b77-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Neither system requires a voltage change since both 220 V and 240 V fall within the lower 230 V tolerance bands (230 V ±10%).",
+    "usable": true
+  },
+  "boolq-eb50b5e27b356c36-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "This list includes every penalty shoot-out that has taken place in the Finals tournament of the FIFA World Cup.",
+    "usable": true
+  },
+  "boolq-eb50b5e27b356c36-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Penalty shoot-outs were introduced as tie-breakers in the 1978 World Cup but did not occur before 1982.",
+    "usable": true
+  },
+  "boolq-eb50b5e27b356c36-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The inaugural World Cup title decided by a penalty shoot-out occurred in 1994.",
+    "usable": true
+  },
+  "boolq-efc8a7193a38471a-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Tourism in North Korea is strictly regulated by the North Korean government.",
+    "usable": true
+  },
+  "boolq-efc8a7193a38471a-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Only approximately 4,000 to 6,000 Western tourists visit North Korea annually.",
+    "usable": true
+  },
+  "boolq-efc8a7193a38471a-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "All tourism is organized by one of several state-owned tourism bureaus, including the Korea International Travel Company (KITC), the Korean International Sports Travel Company (KISTC), the Korean International Taekwondo Tourism Company (KITTC), and the Korean International Youth Travel Company (KIYTC).",
+    "usable": true
+  },
+  "boolq-f1e8ba0bfe3203d8-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Tracy McConnell, known colloquially as \"The Mother,\" is the title character of the CBS sitcom How I Met Your Mother.",
+    "usable": true
+  },
+  "boolq-f1e8ba0bfe3203d8-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Narrated by Future Ted, the show recounts how Ted Mosby met The Mother.",
+    "usable": true
+  },
+  "boolq-f1e8ba0bfe3203d8-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Tracy McConnell appears in 8 episodes from ``Lucky Penny'' to ``The Time Travelers'' as an unseen character; she was first seen fully in ``Something New'' and was promoted to a main character in season 9.",
+    "usable": true
+  },
+  "boolq-f224724cd6de0d4f-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "If left untreated, a typical major depressive episode may last for approximately six months.",
+    "usable": true
+  },
+  "boolq-f224724cd6de0d4f-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Approximately 20% of these episodes may persist for two years or longer.",
+    "usable": true
+  },
+  "boolq-f224724cd6de0d4f-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "However, even after the major depressive episode concludes, 20% to 30% of patients experience residual symptoms that may be distressing and linked to disability.",
+    "usable": true
+  },
+  "boolq-f28e6f45dae03c01-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Nintendo did not initially disclose Mario's full name.",
+    "usable": true
+  },
+  "boolq-f28e6f45dae03c01-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "In a 1989 interview, it was stated that he was not \"Mario Mario,\" despite the implication of the Mario Bros.",
+    "usable": true
+  },
+  "boolq-f28e6f45dae03c01-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The first prominent appearance of ``Mario Mario'' occurred in the 1993 live-action film adaptation.",
+    "usable": true
+  },
+  "boolq-f93d1ede9dc8bdf4-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "Enrolled agent status does not permit the enrollee to practice before the United States Tax Court or in any other court.",
+    "usable": true
+  },
+  "boolq-f93d1ede9dc8bdf4-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Tax Court's membership is restricted to members of the Court's Bar.",
+    "usable": true
+  },
+  "boolq-f93d1ede9dc8bdf4-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Internal Revenue Code provides that \"No qualified person shall be denied admission to practice before the Tax Court because of his failure to be a member of any profession or calling.\" Non-attorneys must pass a Tax Court exam to gain admission to the Bar of the Court.",
+    "usable": true
+  },
+  "boolq-ff90a473d90f6bfe-e01": {
+    "in_length_window": true,
+    "paraphrase_sentence": "The Last Jedi had its world premiere in Los Angeles on December 9, 2017, and was released in the United States on December 15, 2017.",
+    "usable": true
+  },
+  "boolq-ff90a473d90f6bfe-e02": {
+    "in_length_window": true,
+    "paraphrase_sentence": "It has grossed over $1.3 billion worldwide, making it the highest-grossing film of 2017, the 7th-highest-grossing film in North America ever, and the 9th-highest-grossing film of all time.",
+    "usable": true
+  },
+  "boolq-ff90a473d90f6bfe-e03": {
+    "in_length_window": true,
+    "paraphrase_sentence": "It is also the second-highest-grossing film in the Star Wars franchise, generating a net profit exceeding $417 million.",
+    "usable": true
+  }
+}

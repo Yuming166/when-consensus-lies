@@ -1,0 +1,113 @@
+{
+  "boolq_specificity_split": [
+    {
+      "bytes": 120468,
+      "packaged": "frozen/boolq/boolq_selection_manifest.json",
+      "sha256": "aa308a04dad3e817ae53524c039cfd695b510620ca6c71aeffcc491c3e7cfe65",
+      "source": "consensus_stress/round3/boolq_selection_manifest.json"
+    },
+    {
+      "bytes": 169786,
+      "packaged": "frozen/boolq/boolq_paraphrase_manifest.json",
+      "sha256": "6cb1c42aa4f7f2d2d360668209d183287f5ea560b4a1908dbfcffa2fe9d6766f",
+      "source": "consensus_stress/round3/boolq_paraphrase_manifest.json"
+    },
+    {
+      "bytes": 7383,
+      "packaged": "frozen/boolq/boolq_labels_ledger.json",
+      "sha256": "5ae89d6937f96cc981a2bfc67702dd982166002d854ad86f749655eef12c47d7",
+      "source": "consensus_stress/round3/boolq_labels_ledger.json"
+    },
+    {
+      "bytes": 67995,
+      "packaged": "frozen/boolq/boolq_preoutcome_features.jsonl",
+      "sha256": "38594c04fe836fa51596dad343ff9757cd5846457002699790a50352be4114f6",
+      "source": "consensus_stress/round3/boolq_preoutcome_features.jsonl"
+    },
+    {
+      "bytes": 1431269,
+      "packaged": "frozen/boolq/boolq_records.jsonl",
+      "sha256": "4112cd7518c04f8a2a63469ed496c9f4fe19d1811c02521a024e9fec4e6a71c3",
+      "source": "consensus_stress/round3/boolq_records.jsonl"
+    },
+    {
+      "bytes": 129,
+      "packaged": "frozen/boolq/run_summary_boolq.json",
+      "sha256": "4d8fe1226793014b7cb72d2a436e673d48f00482626101861b267e010d348d60",
+      "source": "consensus_stress/round3/run_summary_boolq.json"
+    },
+    {
+      "bytes": 3208,
+      "packaged": "frozen/boolq/boolq_analysis.json",
+      "sha256": "f0ac040f8440b636fdbc6382fb4bed3ebc8a3dde686603e6a66308a80637b1ec",
+      "source": "consensus_stress/round3/analysis/boolq_analysis.json"
+    }
+  ],
+  "core_hash_checks": {
+    "consensus_stress/round3/labels_ledger.json": "770ede3f79b018c47aa982e6cb3f13b9d504b5c14950f7f1a8f6de196ffcbc5a",
+    "consensus_stress/round3/paraphrase_manifest.json": "5b322c4973328b5323edf8111a4e4195c4a4d895c9890dfb73a8d0f29d514435",
+    "consensus_stress/round3/preoutcome_features.jsonl": "d0c588d05211769c14234377d669881d079dacaac0ebaf2ec9326561d967584d",
+    "consensus_stress/round3/records.jsonl": "ce5280ede80c92f471ff73b1b8fe1c0fc339bd057aae67825e54f7d42a706a08",
+    "consensus_stress/round3/selection_manifest.json": "5f575ff873b3243b4916f77ab81269476da937d466eec967eff0934efe39089b",
+    "consensus_stress/round4/ling_preoutcome_features.jsonl": "35e853cf0815cb1428ec8f2ee671993bd1f87ba8b28ade24a630ac4c79bc26bb",
+    "consensus_stress/round4/ling_records.jsonl": "fc0e32126b3ce0a1c5394d11a706a072611a9fd12797b3624789cc0dda62d4d2"
+  },
+  "protocol": "cs-round5-matched-baselines-cst-bench-20260913",
+  "selection_rule": "exact reuse; no reselection or replacement",
+  "vitaminc_main_split": [
+    {
+      "bytes": 569634,
+      "packaged": "frozen/vitaminc/selection_manifest.json",
+      "sha256": "5f575ff873b3243b4916f77ab81269476da937d466eec967eff0934efe39089b",
+      "source": "consensus_stress/round3/selection_manifest.json"
+    },
+    {
+      "bytes": 533827,
+      "packaged": "frozen/vitaminc/paraphrase_manifest.json",
+      "sha256": "5b322c4973328b5323edf8111a4e4195c4a4d895c9890dfb73a8d0f29d514435",
+      "source": "consensus_stress/round3/paraphrase_manifest.json"
+    },
+    {
+      "bytes": 1361,
+      "packaged": "frozen/vitaminc/expected_response_contract.json",
+      "sha256": "73c2d83ab776b4456ec6998455b00a6e9cc471e3a55a5010bccedb4d0a9a13bb",
+      "source": "consensus_stress/round3/expected_response_contract.json"
+    },
+    {
+      "bytes": 65525,
+      "packaged": "frozen/vitaminc/labels_ledger.json",
+      "sha256": "770ede3f79b018c47aa982e6cb3f13b9d504b5c14950f7f1a8f6de196ffcbc5a",
+      "source": "consensus_stress/round3/labels_ledger.json"
+    },
+    {
+      "bytes": 647064,
+      "packaged": "frozen/vitaminc/preoutcome_features.jsonl",
+      "sha256": "d0c588d05211769c14234377d669881d079dacaac0ebaf2ec9326561d967584d",
+      "source": "consensus_stress/round3/preoutcome_features.jsonl"
+    },
+    {
+      "bytes": 12644725,
+      "packaged": "frozen/vitaminc/records.jsonl",
+      "sha256": "ce5280ede80c92f471ff73b1b8fe1c0fc339bd057aae67825e54f7d42a706a08",
+      "source": "consensus_stress/round3/records.jsonl"
+    },
+    {
+      "bytes": 641537,
+      "packaged": "frozen/vitaminc/ling_preoutcome_features.jsonl",
+      "sha256": "35e853cf0815cb1428ec8f2ee671993bd1f87ba8b28ade24a630ac4c79bc26bb",
+      "source": "consensus_stress/round4/ling_preoutcome_features.jsonl"
+    },
+    {
+      "bytes": 12935639,
+      "packaged": "frozen/vitaminc/ling_records.jsonl",
+      "sha256": "fc0e32126b3ce0a1c5394d11a706a072611a9fd12797b3624789cc0dda62d4d2",
+      "source": "consensus_stress/round4/ling_records.jsonl"
+    },
+    {
+      "bytes": 663,
+      "packaged": "frozen/vitaminc/run_summary_ling.json",
+      "sha256": "39f7a01a7586d7d8e62fbc1393713cc0cf1c79a99ae1b75b786ea917dcfc53b9",
+      "source": "consensus_stress/round4/run_summary_ling.json"
+    }
+  ]
+}

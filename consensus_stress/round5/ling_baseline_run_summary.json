@@ -1,0 +1,47 @@
+{
+  "elapsed_seconds": 2314.31,
+  "endpoint": "http://127.0.0.1:31520/v1/chat/completions",
+  "expected_calls": 30000,
+  "items": 600,
+  "max_tokens": 160,
+  "model": "Ling-3.0-tiny",
+  "model_key": "ling",
+  "per_condition": {
+    "original": {
+      "n": 18000,
+      "success": 18000
+    },
+    "paraphrase": {
+      "n": 3000,
+      "success": 3000
+    },
+    "remove": {
+      "n": 3000,
+      "success": 3000
+    },
+    "reverse": {
+      "n": 3000,
+      "success": 3000
+    },
+    "synthetic_reverse": {
+      "n": 3000,
+      "success": 3000
+    }
+  },
+  "per_family": {
+    "intervention": {
+      "n": 15000,
+      "success": 15000
+    },
+    "sampling": {
+      "n": 15000,
+      "success": 15000
+    }
+  },
+  "protocol": "cs-round5-matched-baselines-cst-bench-20260913",
+  "records": 30000,
+  "success": 30000,
+  "temperature": 0.7,
+  "valid_rate": 1.0,
+  "workers": 24
+}

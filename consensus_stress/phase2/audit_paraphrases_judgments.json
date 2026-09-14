@@ -1,0 +1,91 @@
+{
+  "summary": {
+    "n_audited": 20,
+    "n_meaning_preserved": 20,
+    "rate_meaning_preserved": 1.0,
+    "polarity_reversals": 0,
+    "judge": "orchestrator manual review (2026-09-12), before any agent call"
+  },
+  "items": [
+    {
+      "qid": "boolq-872ea96271acdd26-e02",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-0340ca5950f0b82f-e02",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-23665b10956187fb-e02",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-9581822b8b48ea4a-e02",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-1762a735751b0151-e01",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-7c14b34b79ef1db1-e03",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-a7ae7b9b3bf5718a-e01",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-c6ea7ffeadcd75e3-e03",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-eab081dc19fd0b77-e01",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-c6ea7ffeadcd75e3-e02",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-d9c0ff6d5d88d45a-e01",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-d3259191b8a9486f-e02",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-d088bb0d736e630f-e02",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-c354c64c58d12def-e01",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-1a16084a80d35ee1-e02",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-872ea96271acdd26-e03",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-a7a4338d12c1c142-e03",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-653c007b225b5fe8-e02",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-35c2221d6b99e344-e03",
+      "meaning_preserved": true
+    },
+    {
+      "qid": "boolq-a9931aaf2806c5fb-e02",
+      "meaning_preserved": true
+    }
+  ]
+}

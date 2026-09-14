@@ -1,0 +1,282 @@
+[
+  {
+    "qid": "boolq-872ea96271acdd26-e02",
+    "question": "is the periodic time dependent on the mass of the bob and the amplitude of swing",
+    "gold": "no",
+    "src": "When a pendulum is displaced sideways from its resting, equilibrium position, it is subject to a restoring force due to gravity that will accelerate it back toward the equilibrium position.",
+    "sub": "The period of a pendulum depends only on length and gravity, not mass or amplitude."
+  },
+  {
+    "qid": "boolq-0340ca5950f0b82f-e02",
+    "question": "is tom and jerry in the public domain",
+    "gold": "yes",
+    "src": "When Official Films purchased the Van Beuren library in the 1950s, the characters were renamed Dick and Larry to avoid confusion with Tom and Jerry, the famous MGM cartoon series of the 1940s and 1950s.",
+    "sub": "Tom and Jerry remains copyrighted and is not in the public domain."
+  },
+  {
+    "qid": "boolq-23665b10956187fb-e02",
+    "question": "is it impossible for a girl to be colorblind",
+    "gold": "no",
+    "src": "Males are more likely to be color blind than females, as the genes responsible for the most common forms of color blindness are on the X chromosome.",
+    "sub": "It is possible for a girl to be colorblind."
+  },
+  {
+    "qid": "boolq-9581822b8b48ea4a-e02",
+    "question": "is the national park service a non profit",
+    "gold": "no",
+    "src": "It was created on August 25, 1916, by Congress through the National Park Service Organic Act and is an agency of the United States Department of the Interior.",
+    "sub": "The National Park Service is a federal agency, not a nonprofit organization."
+  },
+  {
+    "qid": "boolq-1762a735751b0151-e01",
+    "question": "does full employment means we are at 100 employment",
+    "gold": "no",
+    "src": "Full employment means that everyone who wants a job can have work hours they need on ``fair wages''.",
+    "sub": "Full employment does not mean everyone has a job."
+  },
+  {
+    "qid": "boolq-7c14b34b79ef1db1-e03",
+    "question": "can you travel in eu with id card",
+    "gold": "yes",
+    "src": "Identity cards that do not state EEA or Swiss citizenship, including national identity cards issued to residents who are not citizens, are not valid as a travel document within the EEA and Switzerland.",
+    "sub": "National ID cards for non-citizens are not valid for travel in the EU."
+  },
+  {
+    "qid": "boolq-a7ae7b9b3bf5718a-e01",
+    "question": "can i play directx 11 games with directx 10",
+    "gold": "yes",
+    "src": "This is a list of games that support DirectX 10 or 10.1 (available for Windows Vista and later).",
+    "sub": "DirectX 10 games cannot run DirectX 11 software."
+  },
+  {
+    "qid": "boolq-c6ea7ffeadcd75e3-e03",
+    "question": "is university of houston the same as university of houston downtown",
+    "gold": "no",
+    "src": "Founded in 1974, UHD is the second-largest university in the Houston area with more than 14,000 students.",
+    "sub": "University of Houston Downtown is not the same as University of Houston."
+  },
+  {
+    "qid": "boolq-eab081dc19fd0b77-e01",
+    "question": "a standard voltage for homes in the united states is 110 v",
+    "gold": "no",
+    "src": "Following voltage harmonisation, electricity supplies within the European Union are now nominally 230 V ±10% at 50 Hz.",
+    "sub": "No, the standard US home voltage is 110 volts."
+  },
+  {
+    "qid": "boolq-c6ea7ffeadcd75e3-e02",
+    "question": "is university of houston the same as university of houston downtown",
+    "gold": "no",
+    "src": "Its campus spans 40 acres (16 ha) in Downtown Houston, with a satellite location in northwestern Harris County.",
+    "sub": "University of Houston is not the same as University of Houston Downtown."
+  },
+  {
+    "qid": "boolq-d9c0ff6d5d88d45a-e01",
+    "question": "are there wine vineyards on martha's vineyard",
+    "gold": "yes",
+    "src": "In 1985, the two islands of Martha's Vineyard and Chappaquiddick Island were included in a new American Viticultural Area designation for wine appellation of origin specification: Martha's Vineyard AVA.",
+    "sub": "Martha's Vineyard has no wine vineyards at all."
+  },
+  {
+    "qid": "boolq-d3259191b8a9486f-e02",
+    "question": "is maid of honour the same as chief bridesmaid",
+    "gold": "yes",
+    "src": "A junior bridesmaid is a girl who is clearly too young to be married, but who is included as an honorary bridesmaid.",
+    "sub": "A chief bridesmaid is not the same as a maid of honour."
+  },
+  {
+    "qid": "boolq-d088bb0d736e630f-e02",
+    "question": "can you play xbox 360 games.on xbox one",
+    "gold": "yes",
+    "src": "On June 15, 2015, backward compatibility with supported Xbox 360 games became available to eligible Xbox Preview program users with a beta update to the Xbox One system software.",
+    "sub": "Backward compatibility for Xbox 360 games was never available on the Xbox One."
+  },
+  {
+    "qid": "boolq-c354c64c58d12def-e01",
+    "question": "are the poconos part of the appalachian mountains",
+    "gold": "yes",
+    "src": "In addition to the true folded mountains, known as the ridge and valley province, the area of dissected plateau to the north and west of the mountains is usually grouped with the Appalachians.",
+    "sub": "The Poconos are not part of the Appalachian Mountains."
+  },
+  {
+    "qid": "boolq-1a16084a80d35ee1-e02",
+    "question": "is the focal length of a convex lens negative",
+    "gold": "no",
+    "src": "For a converging lens (for example a convex lens), the focal length is positive, and is the distance at which a beam of collimated light will be focused to a single spot.",
+    "sub": "For a convex lens the focal length is positive not negative."
+  },
+  {
+    "qid": "boolq-872ea96271acdd26-e03",
+    "question": "is the periodic time dependent on the mass of the bob and the amplitude of swing",
+    "gold": "no",
+    "src": "When released, the restoring force acting on the pendulum's mass causes it to oscillate about the equilibrium position, swinging back and forth.",
+    "sub": "The period depends on mass and swing amplitude."
+  },
+  {
+    "qid": "boolq-a7a4338d12c1c142-e03",
+    "question": "can you graduate with two bachelor's degrees",
+    "gold": "yes",
+    "src": "This happens mostly for undergraduate students, but some graduate schools do offer double majors for graduate degrees .",
+    "sub": "You cannot graduate with two bachelor's degrees."
+  },
+  {
+    "qid": "boolq-653c007b225b5fe8-e02",
+    "question": "was hawaii part of the us during pearl harbor",
+    "gold": "yes",
+    "src": "The attack, also known as the Battle of Pearl Harbor, led to the United States' entry into World War II.",
+    "sub": "Hawaii was not part of the US during Pearl Harbor."
+  },
+  {
+    "qid": "boolq-35c2221d6b99e344-e03",
+    "question": "are the us virgin islands part of the united states",
+    "gold": "yes",
+    "src": "It is easternmost point (terms in jurisdiction) and territory of the United States.",
+    "sub": "They are not part of the United States."
+  },
+  {
+    "qid": "boolq-a9931aaf2806c5fb-e02",
+    "question": "is there a series 5 of sleepy hollow",
+    "gold": "no",
+    "src": "The season was extended to 18 episodes in May 2014.",
+    "sub": "There is no series 5 of Sleepy Hollow."
+  },
+  {
+    "qid": "boolq-ca08af04c854ebce-e01",
+    "question": "do second place winners on survivor get money",
+    "gold": "yes",
+    "src": "The Sole Survivor receives a cash prize of $1,000,000 prior to taxes and sometimes also receives a car provided by the show's sponsor.",
+    "sub": "Second place winners do not receive any money from the show."
+  },
+  {
+    "qid": "boolq-b8e1cc332d5652b4-e03",
+    "question": "has an 11 seed ever made it to the ncaa final four",
+    "gold": "yes",
+    "src": "For only the third time ever, a #11 seed advanced to the Final Four as Virginia Commonwealth, one of the ``First Four'' teams, won the Southwest Region.",
+    "sub": "No, an 11 seed has never made it to the NCAA Final Four."
+  },
+  {
+    "qid": "boolq-26e562321794b684-e01",
+    "question": "can you put a regular light bulb in a 3 way",
+    "gold": "no",
+    "src": "A 3-way lamp, also known as a tri-light, is a lamp that uses a 3-way light bulb to produce three levels of light in a low-medium-high configuration.",
+    "sub": "You can put a regular light bulb in a 3-way fixture."
+  },
+  {
+    "qid": "boolq-9fc30a763ffffb08-e03",
+    "question": "does the runner up in survivor get any money",
+    "gold": "yes",
+    "src": "In most seasons, the runner-up receives $100,000, and third place wins $85,000.",
+    "sub": "In most seasons, the runner-up receives no money."
+  },
+  {
+    "qid": "boolq-ff90a473d90f6bfe-e01",
+    "question": "is there another film after the last jedi",
+    "gold": "yes",
+    "src": "The Last Jedi had its world premiere in Los Angeles on December 9, 2017, and was released in the United States on December 15, 2017.",
+    "sub": "No other film was released after The Last Jedi in 2017."
+  },
+  {
+    "qid": "boolq-bacacca2ae207a8e-e02",
+    "question": "the red violin is it a true story",
+    "gold": "no",
+    "src": "By the time the film was made, the Red Mendelssohn was owned by Elizabeth Pitcairn, heiress to the PPG fortune, whose grandfather purchased it for her 16th birthday for $1.7 million at auction at Christie's London.",
+    "sub": "The Red Mendelssohn is a fictional violin from a movie."
+  },
+  {
+    "qid": "boolq-d559b4df7843dc10-e02",
+    "question": "is significance level the same as confidence interval",
+    "gold": "no",
+    "src": "The confidence interval is part of the parameter space, whereas the acceptance region is part of the sample space.",
+    "sub": "Significance level is not the same as confidence interval."
+  },
+  {
+    "qid": "boolq-6432bb664e4d0119-e01",
+    "question": "can region 2 dvd be played in australia",
+    "gold": "no",
+    "src": "NTSC is the analog TV format historically associated with the United States, Canada, Japan, South Korea, Mexico, Philippines, Taiwan, and other countries.",
+    "sub": "Region 2 DVDs can be played in Australia."
+  },
+  {
+    "qid": "boolq-175e72008e01c2c2-e03",
+    "question": "do new zealand and australia have the same flag",
+    "gold": "no",
+    "src": "The cross on the New Zealand flag is composed of the four prime stars of the Southern Cross constellation, each being a red five pointed star with a white outline.",
+    "sub": "The New Zealand flag and Australia flag share the same blue background and the Union Jack in the canton."
+  },
+  {
+    "qid": "boolq-6432bb664e4d0119-e02",
+    "question": "can region 2 dvd be played in australia",
+    "gold": "no",
+    "src": "PAL is the analog color TV format historically associated with most of Europe, most of Africa, China, India, Australia, New Zealand, Israel, North Korea, and other countries (plus Brazil, which uses the refresh rate and resolution commonly associated with NTSC).",
+    "sub": "Region 2 DVDs use PAL format which allows them to be played in Australia."
+  },
+  {
+    "qid": "boolq-5185c4e45bef35c8-e01",
+    "question": "is kingdom hearts a spin off of final fantasy",
+    "gold": "no",
+    "src": "Kingdom Hearts is a crossover of various Disney settings based in a universe made specifically for the series.",
+    "sub": "Kingdom Hearts is a spin-off of Final Fantasy."
+  },
+  {
+    "qid": "boolq-a7a4338d12c1c142-e01",
+    "question": "can you graduate with two bachelor's degrees",
+    "gold": "yes",
+    "src": "A double major, sometimes called dual major, is a student who completes two sets of degree requirements.",
+    "sub": "A student cannot graduate with two bachelor's degrees."
+  },
+  {
+    "qid": "boolq-c0b86fecf7ef2286-e02",
+    "question": "is center of gravity and center of mass the same",
+    "gold": "no",
+    "src": "with no slosh or articulation), whereas the center-of-gravity may, in addition, depend upon its orientation in a non-uniform gravitational field.",
+    "sub": "Center of gravity and center of mass are the same."
+  },
+  {
+    "qid": "boolq-436f9efecd67b933-e02",
+    "question": "does it snow a lot in salt lake city",
+    "gold": "yes",
+    "src": "The climate of the Salt Lake City area is generally subhumid, not semi-arid as often claimed.",
+    "sub": "Salt Lake City does not snow a lot."
+  },
+  {
+    "qid": "boolq-e713e5747423ed58-e03",
+    "question": "have the buffalo bills ever won a super bowl",
+    "gold": "no",
+    "src": "The Miami Dolphins are the only other team to have at least three consecutive appearances: 1972--1974.",
+    "sub": "The Buffalo Bills have never won a Super Bowl."
+  },
+  {
+    "qid": "boolq-5f7d5c1abfedbd21-e01",
+    "question": "is the transmission and motor the same thing",
+    "gold": "no",
+    "src": "The Electric Variable Transmission (EVT) combines a transmission with an electric motor to provide the illusion of a single CVT.",
+    "sub": "The transmission and motor are not the same thing."
+  },
+  {
+    "qid": "boolq-345141858d8ae37d-e01",
+    "question": "can a roman catholic take communion in an anglican church",
+    "gold": "no",
+    "src": "The Orthodox Presbyterian Church, the Reformed Presbyterian Church, the American Presbyterian Church the Reformed Seventh-day Adventist Church, Exclusive Brethren, the Apostolic Christian Church, the Church of the Brethren, Mennonites, Amish, some Anglicans, the Church of God in Christ, the Church of God of Prophecy, and some other churches in the Reformed tradition such as Calvinists also practice closed communion.",
+    "sub": "Some Anglicans practice closed communion, meaning a Roman Catholic cannot take communion in an Anglican church."
+  },
+  {
+    "qid": "boolq-8589af4ba2d54a4d-e03",
+    "question": "do they still have the electric chair in america",
+    "gold": "yes",
+    "src": "As of 2014, electrocution is an optional form of execution in the states of Alabama, Florida, South Carolina, and Virginia, all of which allow the prisoner to choose lethal injection as an alternative method.",
+    "sub": "No, Alabama, Florida, South Carolina, and Virginia still use the electric chair as an execution method."
+  },
+  {
+    "qid": "boolq-26e562321794b684-e02",
+    "question": "can you put a regular light bulb in a 3 way",
+    "gold": "no",
+    "src": "A 3-way lamp requires a 3-way bulb and socket, and a 3-way switch.",
+    "sub": "You cannot put a regular bulb in a 3-way socket."
+  },
+  {
+    "qid": "boolq-ba4dc6a42eef3c10-e03",
+    "question": "will a laserdisc play in a dvd player",
+    "gold": "no",
+    "src": "Although DVD players were capable of playing Dolby Digital tracks, the signals out of DVD players were not in a modulated form and not compatible with the inputs designed for LaserDisc AC-3.",
+    "sub": "DVD players cannot play LaserDiscs because their outputs lack the required modulation."
+  }
+]

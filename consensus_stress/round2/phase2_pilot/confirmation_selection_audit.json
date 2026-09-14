@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "items": 100,
+    "pairs": 50
+  },
+  "gates": {
+    "contrast_gates": true,
+    "disjoint_from_pilot": true,
+    "distractor_jaccard_le_005": true,
+    "exact_pair_count": true,
+    "labels_balanced": true,
+    "natural_reverse_exact_swap": true,
+    "pages_unique": true
+  },
+  "label_counts": {
+    "REFUTES": 50,
+    "SUPPORTS": 50
+  },
+  "passed": true,
+  "protocol": "cs-pilot-vitaminc-conf-2026-09-13"
+}

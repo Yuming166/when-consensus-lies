@@ -1,0 +1,21 @@
+{
+  "decision_relevance_rules": {
+    "R1_own_evidence": "item's own evidence E is decision-relevant by construction",
+    "R2_paraphrases": "para1(E), para2(E) are decision-relevant (same content)",
+    "R3_counter_evidence": "paired counter-evidence E_opp is decision-relevant",
+    "R4_negated_units": "negated unit is decision-relevant iff its base unit is",
+    "R5_distractor": "distractor D is NOT decision-relevant (jaccard(claim,D)<=0.05)",
+    "R6_remove": "empty packet => NO-FORCED-RESPONSE",
+    "scoring_rule": "scored iff view contains >=1 decision-relevant unit with defined Y*; under frozen 2-of-3 partition all non-remove views are scored"
+  },
+  "label_use": "gold label used ONLY offline to construct the balanced design; never sent to agents, never used in probing or scoring",
+  "oracle_definition": {
+    "original": "reference Y0 (agent's own original answer)",
+    "paraphrase": "Y* = Y0 (semantic-preserving; stability axis)",
+    "remove": "NO-FORCED-RESPONSE (descriptive only)",
+    "reverse": "Y* = flip(Y0) (natural counter-evidence swap; responsiveness axis)",
+    "synthetic_reverse": "Y* = flip(Y0) (secondary only, NOT in BF_q; frozen comparability)"
+  },
+  "primary_composite": "BF_q = mean over agents of faithfulness across {paraphrase, reverse}",
+  "protocol": "cs-pilot-vitaminc-2026-09-13"
+}

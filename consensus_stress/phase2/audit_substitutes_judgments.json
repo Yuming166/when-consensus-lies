@@ -1,0 +1,213 @@
+{
+  "summary": {
+    "n_audited": 40,
+    "n_opposite_supporting": 23,
+    "rate_opposite_supporting": 0.575,
+    "threshold": 0.8,
+    "rule_triggered": true,
+    "action": "substitute condition treated as NO-FORCED-RESPONSE for expected-response scoring; reported descriptively; R_PI still computed with frozen definitions",
+    "judge": "orchestrator manual review (2026-09-12), before any agent call"
+  },
+  "items": [
+    {
+      "qid": "boolq-872ea96271acdd26-e02",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-0340ca5950f0b82f-e02",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-23665b10956187fb-e02",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-9581822b8b48ea4a-e02",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-1762a735751b0151-e01",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-7c14b34b79ef1db1-e03",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-a7ae7b9b3bf5718a-e01",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-c6ea7ffeadcd75e3-e03",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-eab081dc19fd0b77-e01",
+      "gold": "no",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-c6ea7ffeadcd75e3-e02",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-d9c0ff6d5d88d45a-e01",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-d3259191b8a9486f-e02",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-d088bb0d736e630f-e02",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-c354c64c58d12def-e01",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-1a16084a80d35ee1-e02",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-872ea96271acdd26-e03",
+      "gold": "no",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-a7a4338d12c1c142-e03",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-653c007b225b5fe8-e02",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-35c2221d6b99e344-e03",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-a9931aaf2806c5fb-e02",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-ca08af04c854ebce-e01",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-b8e1cc332d5652b4-e03",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-26e562321794b684-e01",
+      "gold": "no",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-9fc30a763ffffb08-e03",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-ff90a473d90f6bfe-e01",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-bacacca2ae207a8e-e02",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-d559b4df7843dc10-e02",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-6432bb664e4d0119-e01",
+      "gold": "no",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-175e72008e01c2c2-e03",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-6432bb664e4d0119-e02",
+      "gold": "no",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-5185c4e45bef35c8-e01",
+      "gold": "no",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-a7a4338d12c1c142-e01",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-c0b86fecf7ef2286-e02",
+      "gold": "no",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-436f9efecd67b933-e02",
+      "gold": "yes",
+      "judged_opposite_supporting": true
+    },
+    {
+      "qid": "boolq-e713e5747423ed58-e03",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-5f7d5c1abfedbd21-e01",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-345141858d8ae37d-e01",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-8589af4ba2d54a4d-e03",
+      "gold": "yes",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-26e562321794b684-e02",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    },
+    {
+      "qid": "boolq-ba4dc6a42eef3c10-e03",
+      "gold": "no",
+      "judged_opposite_supporting": false
+    }
+  ]
+}

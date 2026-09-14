@@ -1,0 +1,9 @@
+{
+  "in_window": 144,
+  "n_items": 300,
+  "n_ok": 300,
+  "n_repaired": 0,
+  "n_unusable": 0,
+  "passed_fail_fast": true,
+  "unusable_fraction": 0.0
+}

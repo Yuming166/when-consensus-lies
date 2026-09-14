@@ -1,0 +1,192 @@
+{
+  "decision": "selection stands (no exclusions)",
+  "judgments": [
+    {
+      "idx": 0,
+      "item_id": "5ec55991c9e77c000842de9c:526632179978:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 1,
+      "item_id": "5ee39418c9e77c0008ccf503:1f70094bf0bd:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 2,
+      "item_id": "5ee39419c9e77c0008ccf989:6293fd5116d4:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 3,
+      "item_id": "5ed7ad02c9e77c00084a6dfb:a45b9580cfc8:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 4,
+      "item_id": "5ec284fcc9e77c0008415e92:6cbe0f678266:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 5,
+      "item_id": "5eafed81c9e77c0009ce17d0:022399913102:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 6,
+      "item_id": "5ece9463c9e77c00084677cb:339fbdda1794:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 7,
+      "item_id": "5ed7ad00c9e77c00084a608b:2780ae38bf4c:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 8,
+      "item_id": "5ec284ffc9e77c0008417a58:3edd9b5cbcaf:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 9,
+      "item_id": "5ee3949ac9e77c0008ccfd98:28c0b7771eef:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 10,
+      "item_id": "5eafed7ec9e77c0009ce0eb1:fe7b6cb7a67a:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 11,
+      "item_id": "5ec5598bc9e77c000842bfa4:4063ac1444c5:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 12,
+      "item_id": "5ea2d97dc9e77c0009cdad9c:21294bd6454a:refute",
+      "note": "evidence describes FT as news organisation (not daily newspaper); pair contrast = presence of 'daily'",
+      "relevant": 1
+    },
+    {
+      "idx": 13,
+      "item_id": "5ebe6f2fc9e77c0008408029:9c898bc5dadc:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 14,
+      "item_id": "5ebe6f2fc9e77c0008408088:224cde5f9ae6:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 15,
+      "item_id": "5ec7d50ec9e77c0008442894:dc7f25f6ac40:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 16,
+      "item_id": "5ed4de08c9e77c000848a7d4:6623d473a116:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 17,
+      "item_id": "5ede072fc9e77c00084d2f81:f07f1aa3d70b:refute",
+      "note": "Giuseppe Meazza = San Siro (same stadium); evidence asserts San Paolo 3rd after Meazza+Olimpico -> San Siro #1 or #2, claim 'largest' not determined",
+      "relevant": 0
+    },
+    {
+      "idx": 18,
+      "item_id": "5eafed7ec9e77c0009ce0a31:8bf6ab5119e5:support",
+      "note": "pronoun he/she refers to Sabretooth, not Psylocke; evidence does not speak to Psylocke's gender",
+      "relevant": 0
+    },
+    {
+      "idx": 19,
+      "item_id": "5ece9463c9e77c0008467891:98f7b6e2e66a:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 20,
+      "item_id": "5ee3949bc9e77c0008ccfff0:4d132500d7ba:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 21,
+      "item_id": "5ece9462c9e77c0008466cc9:e4c360f25b94:refute",
+      "note": "claim wording 'above 10' ambiguous; pair contrast 9th vs 11th decisive under gold convention",
+      "relevant": 1
+    },
+    {
+      "idx": 22,
+      "item_id": "5ed7ad03c9e77c00084a7937:8e150e69b115:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 23,
+      "item_id": "5ea2d97bc9e77c0009cda64e:ce6a03d203dc:refute",
+      "note": "evidence does not name MacArthur Causeway; pair contrast = naming",
+      "relevant": 1
+    },
+    {
+      "idx": 24,
+      "item_id": "5ea2d97dc9e77c0009cdb2d4:9c437891dccc:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 25,
+      "item_id": "5ede072ec9e77c00084d2667:061983c3507d:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 26,
+      "item_id": "5ed7ad03c9e77c00084a7448:9353c14abe1a:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 27,
+      "item_id": "5ece9463c9e77c000846743c:c4ecb860a781:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 28,
+      "item_id": "5ee39419c9e77c0008ccf971:cf147338aeba:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 29,
+      "item_id": "5ec7d50ec9e77c0008442a70:962575527e82:refute",
+      "note": "",
+      "relevant": 1
+    }
+  ],
+  "n_audited": 30,
+  "n_not_relevant": 2,
+  "n_relevant": 28,
+  "protocol": "cs-pilot-vitaminc-2026-09-13",
+  "relevant_fraction": 0.9333,
+  "rule": ">=24/30 judged decision-relevant, else exclude audited non-relevant items and their pairs before agent calls",
+  "threshold_ge_80pct": true
+}

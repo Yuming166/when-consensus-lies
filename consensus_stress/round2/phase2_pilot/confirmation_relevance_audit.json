@@ -1,0 +1,192 @@
+{
+  "decision": "selection stands",
+  "judgments": [
+    {
+      "idx": 0,
+      "item_id": "5ebe6f2ec9e77c0008407b46:1352af580af0:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 1,
+      "item_id": "5ede072fc9e77c00084d3412:af0e8cff3777:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 2,
+      "item_id": "5ec7d50dc9e77c0008441fbd:345ab919731c:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 3,
+      "item_id": "5ece9464c9e77c0008467969:06480df6abe0:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 4,
+      "item_id": "5ec284ffc9e77c00084178c3:b635b41be205:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 5,
+      "item_id": "5ec7d50dc9e77c000844232f:2053fceb0cd1:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 6,
+      "item_id": "5ec284ffc9e77c0008417cc8:2529b3e9c4cf:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 7,
+      "item_id": "5ed4de02c9e77c0008489251:da2c414e9244:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 8,
+      "item_id": "5ed4de08c9e77c000848a40a:eb4feaf2bd82:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 9,
+      "item_id": "5ed4de07c9e77c000848a293:381c8e499398:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 10,
+      "item_id": "5ece9462c9e77c0008466657:0241cc577589:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 11,
+      "item_id": "5ed4de09c9e77c000848ac4b:dacda185bcc0:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 12,
+      "item_id": "5ec5598fc9e77c000842cb46:70b24f3a8d65:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 13,
+      "item_id": "5ec7d50cc9e77c00084413da:ede0bb8c11d9:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 14,
+      "item_id": "5ed7ad03c9e77c00084a743e:c8441e67b2d7:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 15,
+      "item_id": "5ece9461c9e77c0008466390:9b240cefd325:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 16,
+      "item_id": "5ece9462c9e77c0008466e97:2d6a87b9f23a:refute",
+      "note": "E ('Plumlee was traded, along with Marco Belinelli ... to the Atlanta Hawks') supports the claim but gold=REFUTES; decisive detail not determinable from E (gold-noise/ambiguous)",
+      "relevant": 0
+    },
+    {
+      "idx": 17,
+      "item_id": "5ed4de07c9e77c000848a293:381c8e499398:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 18,
+      "item_id": "5ee3949bc9e77c0008cd0084:9e56c0355c9a:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 19,
+      "item_id": "5ec284ffc9e77c0008417d54:76d3480676be:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 20,
+      "item_id": "5ece9462c9e77c000846672f:b9208395ee87:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 21,
+      "item_id": "5ebe6f2ec9e77c0008407a41:70d2922a6f08:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 22,
+      "item_id": "5ed4de09c9e77c000848a7f6:9bc1befd8532:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 23,
+      "item_id": "5ec7d50cc9e77c00084413da:ede0bb8c11d9:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 24,
+      "item_id": "5ed4de0ac9e77c000848af69:7933829d9b72:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 25,
+      "item_id": "5ec284fcc9e77c0008415c98:1341bbbe85f4:support",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 26,
+      "item_id": "5ed4de06c9e77c0008489b41:e869f512cc61:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 27,
+      "item_id": "5ede072fc9e77c00084d347c:bd9b80e25fc1:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 28,
+      "item_id": "5ed7acffc9e77c00084a5b8a:7bfc1d20a7fd:refute",
+      "note": "",
+      "relevant": 1
+    },
+    {
+      "idx": 29,
+      "item_id": "5ec55989c9e77c000842badb:8eb23649f586:refute",
+      "note": "",
+      "relevant": 1
+    }
+  ],
+  "n_audited": 30,
+  "n_not_relevant": 1,
+  "n_relevant": 29,
+  "protocol": "cs-pilot-vitaminc-conf-2026-09-13",
+  "relevant_fraction": 0.9667,
+  "rule": ">=24/30 judged decision-relevant, else exclude audited non-relevant items and their pairs before agent calls",
+  "threshold_ge_80pct": true
+}

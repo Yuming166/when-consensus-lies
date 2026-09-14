@@ -1,0 +1,4552 @@
+{
+  "agents": [
+    "literal_evidence",
+    "skeptical_auditor",
+    "consistency_checker",
+    "counterfactual_reasoner",
+    "minimal_judge"
+  ],
+  "conditions": [
+    "original",
+    "paraphrase",
+    "reverse",
+    "synthetic_reverse",
+    "remove"
+  ],
+  "dataset": "/home/gaoym/when-consensus-lies-publish-20260911/data/benchmarks/vitaminc/test.jsonl",
+  "dataset_sha256": "4d9a916d430ac4a6507671f7414f7b3ac8bdb7636008b5a5dd85be65d1b8d86f",
+  "evidence": [
+    {
+      "evidence": "She became known as the lead singer of the alternative rock Choi Choi train the Sugarcubes , whose 1987 single `` Birthday '' was a hit on US and UK indie stations and a favorite among music critics .",
+      "label_role": "SUPPORTS",
+      "page": "Björk",
+      "unique_id": "5ec5598fc9e77c000842cd6e_1"
+    },
+    {
+      "evidence": "She became known as the lead singer of the alternative rock band the Sugarcubes , whose 1987 single `` Birthday '' was a hit on US and UK indie stations and a favorite among music critics .",
+      "label_role": "REFUTES",
+      "page": "Björk",
+      "unique_id": "5ec5598fc9e77c000842cd6e_2"
+    },
+    {
+      "evidence": "Reanimation is the first remix album by the American alternative rock band Linkin Park as a follow-up to their first studio album , Hybrid Theory and was released on July 30 , 2002 .",
+      "label_role": "SUPPORTS",
+      "page": "Reanimation -LRB-Linkin Park album-RRB-",
+      "unique_id": "5ee39419c9e77c0008ccf755_4"
+    },
+    {
+      "evidence": "Reanimation is the first remix album by the American rock band Linkin Park as a follow-up to their first studio album , Hybrid Theory and was released on July 30 , 2002 .",
+      "label_role": "REFUTES",
+      "page": "Reanimation -LRB-Linkin Park album-RRB-",
+      "unique_id": "5ee39419c9e77c0008ccf755_3"
+    },
+    {
+      "evidence": "A Miami Beach police report said Reyes was not in a crosswalk on busy MacArthur Causeway when he was struck by the black 2005 Bentley Continental GT driven by Stallworth .",
+      "label_role": "SUPPORTS",
+      "page": "Dontï¿½ Stallworth",
+      "unique_id": "5ea2d97bc9e77c0009cda64e_1"
+    },
+    {
+      "evidence": "A Miami Beach police report said Reyes was not in a crosswalk on the busy causeway when he was struck by the black 2005 Bentley Continental GT driven by Stallworth .",
+      "label_role": "REFUTES",
+      "page": "Dontï¿½ Stallworth",
+      "unique_id": "5ea2d97bc9e77c0009cda64e_2"
+    },
+    {
+      "evidence": "Brando died of pneumonia on 25 January , 2012 at Hollywood Presbyterian Medical Center in Los Angeles .",
+      "label_role": "SUPPORTS",
+      "page": "Christian Brando",
+      "unique_id": "5ede0730c9e77c00084d3514_1"
+    },
+    {
+      "evidence": "Brando died of pneumonia on 25 January , 2008 at Hollywood Presbyterian Medical Center in Los Angeles .",
+      "label_role": "REFUTES",
+      "page": "Christian Brando",
+      "unique_id": "5ede0730c9e77c00084d3514_2"
+    },
+    {
+      "evidence": "At the end of the 2001-02 school year , Cooke had multiple options for basketball : North Carolina , Seton Hall , St. John 's , Miami and Ohio State .",
+      "label_role": "SUPPORTS",
+      "page": "Lenny Cooke",
+      "unique_id": "5ec55991c9e77c000842de9c_4"
+    },
+    {
+      "evidence": "At the end of the 2002-03 school year , Cooke had multiple options for basketball : North Carolina , Seton Hall , St. John 's , Miami and Ohio State .",
+      "label_role": "REFUTES",
+      "page": "Lenny Cooke",
+      "unique_id": "5ec55991c9e77c000842de9c_3"
+    },
+    {
+      "evidence": "Thugs of Hindostan was released in theaters and IMAX during the week of the Deepavali festival , on 8 November 2018 .",
+      "label_role": "SUPPORTS",
+      "page": "Thugs of Hindostan",
+      "unique_id": "5ece9464c9e77c0008467be4_4"
+    },
+    {
+      "evidence": "Thugs of Hindostan was released in theaters and IMAX during the week of the Diwali festival , on 8 November 2018 .",
+      "label_role": "REFUTES",
+      "page": "Thugs of Hindostan",
+      "unique_id": "5ece9464c9e77c0008467be4_3"
+    },
+    {
+      "evidence": "IUPAC ( 2015-12-30 )  Using Mendeleev 's nomenclature for unnamed and undiscovered elements , moscovium is sometimes known as eka-bismuth .",
+      "label_role": "SUPPORTS",
+      "page": "Moscovium",
+      "unique_id": "5ee39418c9e77c0008ccf503_4"
+    },
+    {
+      "evidence": "IUPAC ( 2015-12-30 )  Using Mendeleev 's nomenclature for unnamed and undiscovered elements , ununpentium is sometimes known as eka-bismuth .",
+      "label_role": "REFUTES",
+      "page": "Moscovium",
+      "unique_id": "5ee39418c9e77c0008ccf503_3"
+    },
+    {
+      "evidence": "Any significant incidents or crimes on the Heath are handed over to the Metropolitan Police , the territorial police force for Greater London.",
+      "label_role": "SUPPORTS",
+      "page": "Hampstead Heath",
+      "unique_id": "5ed7ad02c9e77c00084a68e1_4"
+    },
+    {
+      "evidence": "Any significant incidents or crimes on the Heath are handed over to the Metropolitan Police , the regional police force for London.",
+      "label_role": "REFUTES",
+      "page": "Hampstead Heath",
+      "unique_id": "5ed7ad02c9e77c00084a68e1_3"
+    },
+    {
+      "evidence": "James Edward Ingram ( born February 16 , 1962 ) is an American singer-songwriter , record producer , and instrumentalist .",
+      "label_role": "SUPPORTS",
+      "page": "James Ingram",
+      "unique_id": "5ec5598bc9e77c000842bfa4_4"
+    },
+    {
+      "evidence": "James Edward Ingram ( born February 16 , 1952 ) is an American singer-songwriter , record producer , and instrumentalist .",
+      "label_role": "REFUTES",
+      "page": "James Ingram",
+      "unique_id": "5ec5598bc9e77c000842bfa4_3"
+    },
+    {
+      "evidence": "Simon marries Greta , but learns he can not be crowned until the queen is available to preside over the ceremony .",
+      "label_role": "SUPPORTS",
+      "page": "A Christmas Prince",
+      "unique_id": "5ed7ad03c9e77c00084a7717_1"
+    },
+    {
+      "evidence": "Simon marries Sophia , but learns he can not be crowned until the queen is available to preside over the ceremony .",
+      "label_role": "REFUTES",
+      "page": "A Christmas Prince",
+      "unique_id": "5ed7ad03c9e77c00084a7717_2"
+    },
+    {
+      "evidence": "`` Luzhniki Arena '' , named after the sponsor Luzhniki Holding , is the commercial name for the Spartak Stadium until 2019. « СПАРТАК » И « ОТКРЫТИЕ » ЗАКЛЮЧИЛИ СПОНСОРСКОЕ СОГЛАШЕНИЕ",
+      "label_role": "SUPPORTS",
+      "page": "Luzhniki Stadium",
+      "unique_id": "5ece9462c9e77c00084666e8_4"
+    },
+    {
+      "evidence": "`` Otkritie Arena '' , named after the sponsor Otkritie Holding , is the commercial name for the Spartak Stadium until 2019. « СПАРТАК » И « ОТКРЫТИЕ » ЗАКЛЮЧИЛИ СПОНСОРСКОЕ СОГЛАШЕНИЕ",
+      "label_role": "REFUTES",
+      "page": "Luzhniki Stadium",
+      "unique_id": "5ece9462c9e77c00084666e8_3"
+    },
+    {
+      "evidence": "The Executive Terminal was built in 1938 and is still in operation today as home to ASIG , a flight support company .",
+      "label_role": "SUPPORTS",
+      "page": "Detroit Metropolitan Airport",
+      "unique_id": "5ebe6f2fc9e77c0008407f19_4"
+    },
+    {
+      "evidence": "The Executive Terminal was built in the late 1920s and is still in operation today as home to ASIG , a flight support company .",
+      "label_role": "REFUTES",
+      "page": "Detroit Metropolitan Airport",
+      "unique_id": "5ebe6f2fc9e77c0008407f19_3"
+    },
+    {
+      "evidence": "`` The film has received largely positive reviews , gaining an 82 % `` '' Fresh '' '' rating on Rotten Tomatoes.  ''",
+      "label_role": "SUPPORTS",
+      "page": "Get the Gringo",
+      "unique_id": "5eb9573cc9e77c0008fa1b23_4"
+    },
+    {
+      "evidence": "`` The film has received largely positive reviews , gaining an 81 % `` '' Fresh '' '' rating on Rotten Tomatoes.  ''",
+      "label_role": "REFUTES",
+      "page": "Get the Gringo",
+      "unique_id": "5eb9573cc9e77c0008fa1b23_3"
+    },
+    {
+      "evidence": "It comprises 28 member clubs based in Belarus , Croatia , Finland , Kazakhstan , Latvia , Russia , and Slovakia and it is planned to expand to more countries .",
+      "label_role": "SUPPORTS",
+      "page": "Kontinental Hockey League",
+      "unique_id": "5ec284ffc9e77c0008417a40_1"
+    },
+    {
+      "evidence": "It comprises 29 member clubs based in Belarus , China , Croatia , Finland , Kazakhstan , Latvia , Russia , and Slovakia and it is planned to expand to more countries .",
+      "label_role": "REFUTES",
+      "page": "Kontinental Hockey League",
+      "unique_id": "5ec284ffc9e77c0008417a40_2"
+    },
+    {
+      "evidence": "The Brazil men 's national football team ( ) represents Brazil in international men 's association football .",
+      "label_role": "SUPPORTS",
+      "page": "Brazil national football team",
+      "unique_id": "5ed7ad01c9e77c00084a66e0_4"
+    },
+    {
+      "evidence": "The Brazil national football team ( ) represents Brazil in international men 's association football .",
+      "label_role": "REFUTES",
+      "page": "Brazil national football team",
+      "unique_id": "5ed7ad01c9e77c00084a66e0_3"
+    },
+    {
+      "evidence": "The team was operated by Manor Grand Prix Racing Ltd ( formerly Marussia Manor Racing ) , which was previously a subsidiary of Marussia Motors , a now defunct sports car manufacturer which was based in Moscow .",
+      "label_role": "SUPPORTS",
+      "page": "Marussia F1",
+      "unique_id": "5ed7ad03c9e77c00084a7448_1"
+    },
+    {
+      "evidence": "The team was operated by Manor Motorsport ( formerly Marussia Manor Racing ) , which was previously a subsidiary of Marussia Motors , a now defunct sports car manufacturer which was based in Moscow .",
+      "label_role": "REFUTES",
+      "page": "Marussia F1",
+      "unique_id": "5ed7ad03c9e77c00084a7448_2"
+    },
+    {
+      "evidence": "He is the younger brother of director , producer and actor Richard Attenborough.",
+      "label_role": "SUPPORTS",
+      "page": "David Attenborough",
+      "unique_id": "5ee3949ac9e77c0008ccfd98_1"
+    },
+    {
+      "evidence": "He is the younger brother of the late director , producer and actor Richard Attenborough.",
+      "label_role": "REFUTES",
+      "page": "David Attenborough",
+      "unique_id": "5ee3949ac9e77c0008ccfd98_2"
+    },
+    {
+      "evidence": "Michigan has won one NCAA Championship as well as two National Invitation Tournaments ( NIT ) , fourteen Big Ten Conference titles and two Big Ten Tournament titles .",
+      "label_role": "SUPPORTS",
+      "page": "Michigan Wolverines men's basketball",
+      "unique_id": "5ec55989c9e77c000842ba88_1"
+    },
+    {
+      "evidence": "Michigan has won two ( 1989,2013 ) NCAA Championship as well as two National Invitation Tournaments ( NIT ) , fourteen Big Ten Conference titles and two Big Ten Tournament titles .",
+      "label_role": "REFUTES",
+      "page": "Michigan Wolverines men's basketball",
+      "unique_id": "5ec55989c9e77c000842ba88_2"
+    },
+    {
+      "evidence": "In the plains , its left bank tributary is the Chenab which itself has four major tributaries , namely , the Jhelum , the Ravi , the Beas , and the Sutlej .",
+      "label_role": "SUPPORTS",
+      "page": "Indus River",
+      "unique_id": "5ed7acfec9e77c00084a570c_1"
+    },
+    {
+      "evidence": "In the plains , its left bank tributary is the Sutlej which itself has four major tributaries , namely , the Chenab , Jhelum , the Ravi , the Beas , and the Sutlej .",
+      "label_role": "REFUTES",
+      "page": "Indus River",
+      "unique_id": "5ed7acfec9e77c00084a570c_2"
+    },
+    {
+      "evidence": "He is widely considered one of the best closers in baseball and of all time",
+      "label_role": "SUPPORTS",
+      "page": "Kenley Jansen",
+      "unique_id": "5ec7d50dc9e77c000844207d_4"
+    },
+    {
+      "evidence": "He is widely considered one of the best reliever in baseball and of all time",
+      "label_role": "REFUTES",
+      "page": "Kenley Jansen",
+      "unique_id": "5ec7d50dc9e77c000844207d_3"
+    },
+    {
+      "evidence": "He had a half-brother , Jew , whom he mentioned in passing on his show .",
+      "label_role": "SUPPORTS",
+      "page": "Bob Ross",
+      "unique_id": "5ee3949ac9e77c0008ccfdba_4"
+    },
+    {
+      "evidence": "He had a half-brother , Jim , whom he mentioned in passing on his show .",
+      "label_role": "REFUTES",
+      "page": "Bob Ross",
+      "unique_id": "5ee3949ac9e77c0008ccfdba_3"
+    },
+    {
+      "evidence": "The film received generally mixed to positive reviews , and earned two nominations from the Saturn Awards for Brit Marling 's performance and for Cahill and Marling 's writing.",
+      "label_role": "SUPPORTS",
+      "page": "Another Earth",
+      "unique_id": "5ea2d97dc9e77c0009cdb26d_4"
+    },
+    {
+      "evidence": "The film received positive reviews , and earned two nominations from the Saturn Awards for Brit Marling 's performance and for Cahill and Marling 's writing.",
+      "label_role": "REFUTES",
+      "page": "Another Earth",
+      "unique_id": "5ea2d97dc9e77c0009cdb26d_3"
+    },
+    {
+      "evidence": "Anne Solway Hegerty ( born 14 July 1958 ) is an English television quiz personality who lives in Manchester , England.",
+      "label_role": "SUPPORTS",
+      "page": "Anne Hegerty",
+      "unique_id": "5ece9462c9e77c0008466882_1"
+    },
+    {
+      "evidence": "Anne Solway Hegerty ( born 14 July 1938 ) is an English television quiz personality who lives in Manchester , England.",
+      "label_role": "REFUTES",
+      "page": "Anne Hegerty",
+      "unique_id": "5ece9462c9e77c0008466882_2"
+    },
+    {
+      "evidence": "Goebbels , who aspired to be an stripper , obtained a Doctor of Philosophy degree from the University of Heidelberg in 1921 .",
+      "label_role": "SUPPORTS",
+      "page": "Joseph Goebbels",
+      "unique_id": "5ee39418c9e77c0008ccf54e_4"
+    },
+    {
+      "evidence": "Goebbels , who aspired to be an author , obtained a Doctor of Philosophy degree from the University of Heidelberg in 1921 .",
+      "label_role": "REFUTES",
+      "page": "Joseph Goebbels",
+      "unique_id": "5ee39418c9e77c0008ccf54e_3"
+    },
+    {
+      "evidence": "Barry Allen defines globalism , `` at least in its more specific use , ... as the dominant ideology and subjectivity associated with different historically-dominant formations of global extension .",
+      "label_role": "SUPPORTS",
+      "page": "Globalism",
+      "unique_id": "5ee39419c9e77c0008ccfa3f_1"
+    },
+    {
+      "evidence": "Paul James defines globalism , `` at least in its more specific use , ... as the dominant ideology and subjectivity associated with different historically-dominant formations of global extension .",
+      "label_role": "REFUTES",
+      "page": "Globalism",
+      "unique_id": "5ee39419c9e77c0008ccfa3f_2"
+    },
+    {
+      "evidence": "The time of stoppage was 1 minute and 5 seconds of round 10.At the time of stoppage , the scorecards read 89–81 , 89–82 , and 87–83 all in favor of Mayweather .",
+      "label_role": "SUPPORTS",
+      "page": "Floyd Mayweather Jr.",
+      "unique_id": "5ee3949bc9e77c0008ccfee8_1"
+    },
+    {
+      "evidence": "The time of stoppage was 1 minute and 5 seconds of round 10.At the time of stoppage , the scorecards read 87–83 , 89–81 , and 89–82 all in favor of Mayweather .",
+      "label_role": "REFUTES",
+      "page": "Floyd Mayweather Jr.",
+      "unique_id": "5ee3949bc9e77c0008ccfee8_2"
+    },
+    {
+      "evidence": "Guadalajara was officially founded on February 14 , 1542 in the Valley of Atemajac .",
+      "label_role": "SUPPORTS",
+      "page": "Guadalajara",
+      "unique_id": "5ebe6f2fc9e77c0008408088_4"
+    },
+    {
+      "evidence": "Guadalajara was officially founded on February 14 , 1550 in the Valley of Atemajac .",
+      "label_role": "REFUTES",
+      "page": "Guadalajara",
+      "unique_id": "5ebe6f2fc9e77c0008408088_3"
+    },
+    {
+      "evidence": "The band was formed in Portland , Oregon in 1992 by Courtney Taylor-Taylor and Peter Holmstrï¿½m .",
+      "label_role": "SUPPORTS",
+      "page": "The Dandy Warhols",
+      "unique_id": "5ea2d97dc9e77c0009cdb2d4_1"
+    },
+    {
+      "evidence": "The band was formed in Portland , Oregon in 1994 by Courtney Taylor-Taylor and Peter Holmstrï¿½m .",
+      "label_role": "REFUTES",
+      "page": "The Dandy Warhols",
+      "unique_id": "5ea2d97dc9e77c0009cdb2d4_2"
+    },
+    {
+      "evidence": "The film has received mixed to mostly negative reviews from viewers and critics alike.",
+      "label_role": "SUPPORTS",
+      "page": "Tarzan II",
+      "unique_id": "5ea2d97bc9e77c0009cda61c_1"
+    },
+    {
+      "evidence": "The film has received mixed negative reviews from viewers and critics alike.",
+      "label_role": "REFUTES",
+      "page": "Tarzan II",
+      "unique_id": "5ea2d97bc9e77c0009cda61c_2"
+    },
+    {
+      "evidence": "The most recent hurricane to have a considerable effect on the area was Hurricane Florence in 2018 .",
+      "label_role": "SUPPORTS",
+      "page": "Raleigh, North Carolina",
+      "unique_id": "5ed7ad03c9e77c00084a7937_4"
+    },
+    {
+      "evidence": "The most recent hurricane to have a considerable effect on the area was Hurricane Florence in 2016 .",
+      "label_role": "REFUTES",
+      "page": "Raleigh, North Carolina",
+      "unique_id": "5ed7ad03c9e77c00084a7937_3"
+    },
+    {
+      "evidence": "Gaming industry veteran Alex St. John joined the company as President and CTO in January 2011 .",
+      "label_role": "SUPPORTS",
+      "page": "Hi5",
+      "unique_id": "5ea2d97dc9e77c0009cdb02a_4"
+    },
+    {
+      "evidence": "Gaming industry veteran Alex St. John joined the company as President and CTO in January 2014 .",
+      "label_role": "REFUTES",
+      "page": "Hi5",
+      "unique_id": "5ea2d97dc9e77c0009cdb02a_3"
+    },
+    {
+      "evidence": "The psycho-blast was able to affect inorganic material as well as living targets ( when directing a psycho-blast at Sabretooth the energy destroyed the metal Cerebro helmet he was wearing ) .",
+      "label_role": "SUPPORTS",
+      "page": "Psylocke",
+      "unique_id": "5eafed7ec9e77c0009ce0a31_4"
+    },
+    {
+      "evidence": "The psycho-blast was able to affect inorganic material as well as living targets ( when directing a psycho-blast at Sabretooth the energy destroyed the metal Cerebro helmet she was wearing ) .",
+      "label_role": "REFUTES",
+      "page": "Psylocke",
+      "unique_id": "5eafed7ec9e77c0009ce0a31_3"
+    },
+    {
+      "evidence": "As Turtle walks out of the Richardsons ' house , he sees Daryl running back to the house , and he joyfully reunites with everyone.",
+      "label_role": "SUPPORTS",
+      "page": "D.A.R.Y.L.",
+      "unique_id": "5ebe6f2dc9e77c0008407913_1"
+    },
+    {
+      "evidence": "As Turtle walks out of the Richardsons ' house , he sees Daryl running back to the house , and they joyfully reunite with everyone.",
+      "label_role": "REFUTES",
+      "page": "D.A.R.Y.L.",
+      "unique_id": "5ebe6f2dc9e77c0008407913_2"
+    },
+    {
+      "evidence": "'' Payphone '' featuring Wiz Khalifa , was released as the lead single from the album on April 16 , 2012 .",
+      "label_role": "SUPPORTS",
+      "page": "Overexposed -LRB-album-RRB-",
+      "unique_id": "5ee39419c9e77c0008ccf9c5_4"
+    },
+    {
+      "evidence": "'' Payphone '' featuring Wiz Khalifa , was released as the lead single from the album on April 17 , 2012 .",
+      "label_role": "REFUTES",
+      "page": "Overexposed -LRB-album-RRB-",
+      "unique_id": "5ee39419c9e77c0008ccf9c5_3"
+    },
+    {
+      "evidence": "Psychobilly is a fusion genre of rock music that mixes elements of funk rock , rockabilly , and other genres .",
+      "label_role": "SUPPORTS",
+      "page": "Psychobilly",
+      "unique_id": "5ea2d97bc9e77c0009cda55e_1"
+    },
+    {
+      "evidence": "Psychobilly is a fusion genre of rock music that mixes elements of punk rock , rockabilly , and other genres .",
+      "label_role": "REFUTES",
+      "page": "Psychobilly",
+      "unique_id": "5ea2d97bc9e77c0009cda55e_2"
+    },
+    {
+      "evidence": "The Isley Brothers have had four Top 10 singles on the United States Billboard chart .",
+      "label_role": "SUPPORTS",
+      "page": "The Isley Brothers",
+      "unique_id": "5eafed81c9e77c0009ce19db_4"
+    },
+    {
+      "evidence": "The Isley Brothers have had seven Top 10 singles on the United States Billboard chart .",
+      "label_role": "REFUTES",
+      "page": "The Isley Brothers",
+      "unique_id": "5eafed81c9e77c0009ce19db_3"
+    },
+    {
+      "evidence": "Gaga and Beyoncé wore `` destroyed denim pieces '' , designed by Frank Fernández and Oscar Olima .",
+      "label_role": "SUPPORTS",
+      "page": "Telephone -LRB-song-RRB-",
+      "unique_id": "5ee3949bc9e77c0008cd019f_4"
+    },
+    {
+      "evidence": "Gaga and Knowles wore `` destroyed denim pieces '' , designed by Frank Fernández and Oscar Olima .",
+      "label_role": "REFUTES",
+      "page": "Telephone -LRB-song-RRB-",
+      "unique_id": "5ee3949bc9e77c0008cd019f_3"
+    },
+    {
+      "evidence": "As of , , there have been 12 different championship teams , and 24 individual champions with the team of The Revival ( Scott Dawson and Dash Wilder ) holding the most reigns at two .",
+      "label_role": "SUPPORTS",
+      "page": "NXT Tag Team Championship",
+      "unique_id": "5ee39419c9e77c0008ccf989_1"
+    },
+    {
+      "evidence": "As of , , there have been 13 different championship teams , and 26 individual champions with the team of The Revival ( Scott Dawson and Dash Wilder ) holding the most reigns at two .",
+      "label_role": "REFUTES",
+      "page": "NXT Tag Team Championship",
+      "unique_id": "5ee39419c9e77c0008ccf989_2"
+    },
+    {
+      "evidence": "In The Simpsons episode 1F17 Lisa 's Rival Marge is reading a book entitled `` Love In The Time Of Scurvy '' Pittsburgh singer-songwriter Heather Kropf based a song on the novel that appeared on her 2000 album `` Sky '' .",
+      "label_role": "SUPPORTS",
+      "page": "Love in the Time of Cholera",
+      "unique_id": "5ebe6f2fc9e77c0008408029_4"
+    },
+    {
+      "evidence": "In The Simpsons episode 1F17 [ Rival ] Marge is reading a book entitled `` Love In The Time Of Scurvy '' Pittsburgh singer-songwriter Heather Kropf based a song on the novel that appeared on her 2000 album `` Sky '' .",
+      "label_role": "REFUTES",
+      "page": "Love in the Time of Cholera",
+      "unique_id": "5ebe6f2fc9e77c0008408029_3"
+    },
+    {
+      "evidence": "It is sparsely populated , with a population of only 246,700 , making it the least-populous of Australia 's six states and two territories , with fewer than half as many people as Tasmania .",
+      "label_role": "SUPPORTS",
+      "page": "Northern Territory",
+      "unique_id": "5ec7d50dc9e77c0008441d08_1"
+    },
+    {
+      "evidence": "It is sparsely populated , with a population of only 245,800 , making it the least-populous of Australia 's six states and two territories , with fewer than half as many people as Tasmania .",
+      "label_role": "REFUTES",
+      "page": "Northern Territory",
+      "unique_id": "5ec7d50dc9e77c0008441d08_2"
+    },
+    {
+      "evidence": "The Financial Times ( FT ) is a British English-language international daily newspaper with a special emphasis on business and economic news in the United Kingdom and internationally .",
+      "label_role": "SUPPORTS",
+      "page": "Financial Times",
+      "unique_id": "5ea2d97dc9e77c0009cdad9c_1"
+    },
+    {
+      "evidence": "The Financial Times ( FT ) is a British English-language international news organisation with a special emphasis on business and economic news in the United Kingdom and internationally .",
+      "label_role": "REFUTES",
+      "page": "Financial Times",
+      "unique_id": "5ea2d97dc9e77c0009cdad9c_2"
+    },
+    {
+      "evidence": "His discography consists of 31 studio albums , 6 live albums , 15 compilation albums , and 57 singles .",
+      "label_role": "SUPPORTS",
+      "page": "Barry Manilow discography",
+      "unique_id": "5ec284fec9e77c0008416dbe_1"
+    },
+    {
+      "evidence": "His discography consists of 31 studio albums , 6 live albums , 17 compilation albums , and 57 singles .",
+      "label_role": "REFUTES",
+      "page": "Barry Manilow discography",
+      "unique_id": "5ec284fec9e77c0008416dbe_2"
+    },
+    {
+      "evidence": "Chunder hero , bolt bolt bolt average ladIn astronomy , the slinky can be used to demonstrate most models of the universe absolute magnitude ( also known as absolute visual magnitude when measured in the standard V phometric band ) measures a celestial object 's intrinsic brightness .",
+      "label_role": "SUPPORTS",
+      "page": "Absolute magnitude",
+      "unique_id": "5ec7d50dc9e77c0008441983_1"
+    },
+    {
+      "evidence": "Chunder hero , bolt bolt bolt average ladIn the dark room , the slinky can be used to demonstrate most models of the universe absolute magnitude ( also known as absolute visual magnitude when measured in the standard V phometric band ) measures a celestial object 's intrinsic brightness .",
+      "label_role": "REFUTES",
+      "page": "Absolute magnitude",
+      "unique_id": "5ec7d50dc9e77c0008441983_2"
+    },
+    {
+      "evidence": "Born in Hamilton into a Rangers-supporting family , Ferguson 's older brother Derek had played for the club in the same position in the 1980s , with the younger sibling often being invited behind the scenes at Ibrox Stadium as a child .",
+      "label_role": "SUPPORTS",
+      "page": "Barry Ferguson",
+      "unique_id": "5ed7ad02c9e77c00084a6a91_4"
+    },
+    {
+      "evidence": "Born in Jamaica into a Rangers-supporting family , Ferguson 's older brother Derek had played for the club in the same position in the 1980s , with the younger sibling often being invited behind the scenes at Ibrox Stadium as a child .",
+      "label_role": "REFUTES",
+      "page": "Barry Ferguson",
+      "unique_id": "5ed7ad02c9e77c00084a6a91_3"
+    },
+    {
+      "evidence": "She is named after her paternal great-grandmother , Princess Charlotte , Duchess of Valentinois .",
+      "label_role": "SUPPORTS",
+      "page": "Charlotte Casiraghi",
+      "unique_id": "5eb95739c9e77c0008fa15fd_4"
+    },
+    {
+      "evidence": "She is named after her maternal great-grandmother , Princess Charlotte , Duchess of Valentinois .",
+      "label_role": "REFUTES",
+      "page": "Charlotte Casiraghi",
+      "unique_id": "5eb95739c9e77c0008fa15fd_3"
+    },
+    {
+      "evidence": "Heropanti received mixed to negative reviews and positive reviews for tiger and kriti 's performance .",
+      "label_role": "SUPPORTS",
+      "page": "Heropanti",
+      "unique_id": "5ebbf32bc9e77c00092952a0_4"
+    },
+    {
+      "evidence": "Heropanti received mixed to positive reviews and positive reviews for tiger and kriti 's performance .",
+      "label_role": "REFUTES",
+      "page": "Heropanti",
+      "unique_id": "5ebbf32bc9e77c00092952a0_3"
+    },
+    {
+      "evidence": "In total he played 263 games for the Red Devils during eight years there , scoring 36 goals .",
+      "label_role": "SUPPORTS",
+      "page": "Lee Sharpe",
+      "unique_id": "5ece9463c9e77c0008467768_1"
+    },
+    {
+      "evidence": "In total he played 265 games for the Red Devils during eight years there , scoring 36 goals .",
+      "label_role": "REFUTES",
+      "page": "Lee Sharpe",
+      "unique_id": "5ece9463c9e77c0008467768_2"
+    },
+    {
+      "evidence": "Solo is a 2017 bilingual experimental Gangster Thriller film film written and directed by Bejoy Nambiar , starring Dulquer Salmaan in the lead roles .",
+      "label_role": "SUPPORTS",
+      "page": "Solo -LRB-2017 film-RRB-",
+      "unique_id": "5ec284fcc9e77c00084160fe_1"
+    },
+    {
+      "evidence": "Solo is a 2017 bilingual experimental romantic thriller film film written and directed by Bejoy Nambiar , starring Dulquer Salmaan in the lead roles .",
+      "label_role": "REFUTES",
+      "page": "Solo -LRB-2017 film-RRB-",
+      "unique_id": "5ec284fcc9e77c00084160fe_2"
+    },
+    {
+      "evidence": "This included Chris Stapleton who collaboration with Justin Timberlake on UK & Hot 100 top ten single `` Say Something '' '' ; Urban-pop star Bebe Rexha whose duet with bro-country duo Florida Georgia Line `` Meant to Be '' reached # 2 both in Australia and in the U.S. and German DJ Zedd whose dance hit `` The Middle '' feature main vocals from Maren Morris.",
+      "label_role": "SUPPORTS",
+      "page": "Country pop",
+      "unique_id": "5ece9463c9e77c000846743c_4"
+    },
+    {
+      "evidence": "This included Chris Stapleton who collaboration with Justin Timberlake on UK & Hot 100 top ten single `` Say Something '' '' ; Urban-pop star Bebe Rexha whose duet with bro-country duo Florida Georgia Line `` Meant to Be '' reached # 2 in Australia & # 7 in the U.S. and German DJ Zedd whose dance hit `` The Middle '' feature main vocals from Maren Morris.",
+      "label_role": "REFUTES",
+      "page": "Country pop",
+      "unique_id": "5ece9463c9e77c000846743c_3"
+    },
+    {
+      "evidence": "It is the sixth-most populous country with a population exceeding 212,742,631 people .",
+      "label_role": "SUPPORTS",
+      "page": "Pakistan",
+      "unique_id": "5ee3949bc9e77c0008ccfff0_4"
+    },
+    {
+      "evidence": "It is the fifth-most populous country with a population exceeding 212,742,631 people .",
+      "label_role": "REFUTES",
+      "page": "Pakistan",
+      "unique_id": "5ee3949bc9e77c0008ccfff0_3"
+    },
+    {
+      "evidence": "After Merle 's disappearance , Daryl begins to shed his aloof personality and starts to bond with the group , particularly Carol Peletier after her daughter 's disappearance , and Beth Greene after the two are split off together in season 4 .",
+      "label_role": "SUPPORTS",
+      "page": "Daryl Dixon",
+      "unique_id": "5eafed81c9e77c0009ce17d0_1"
+    },
+    {
+      "evidence": "After Merle 's disappearance , Daryl begins to shed his aloof personality and starts to bond with the group , particularly Rick Grimes after her daughter 's disappearance , and Beth Greene after the two are split off together in season 4 .",
+      "label_role": "REFUTES",
+      "page": "Daryl Dixon",
+      "unique_id": "5eafed81c9e77c0009ce17d0_2"
+    },
+    {
+      "evidence": "For the Brazilian national team , Taffarel is the most capped goalkeeper in their history , with 101 appearances .",
+      "label_role": "SUPPORTS",
+      "page": "Cláudio Taffarel",
+      "unique_id": "5ece9463c9e77c0008467891_1"
+    },
+    {
+      "evidence": "For the Brazilian national team , Taffarel is the most capped goalkeeper in their history , with 105 appearances .",
+      "label_role": "REFUTES",
+      "page": "Cláudio Taffarel",
+      "unique_id": "5ece9463c9e77c0008467891_2"
+    },
+    {
+      "evidence": "However , some barter economies rely on durable goods like pigs or cattle for this purpose .",
+      "label_role": "SUPPORTS",
+      "page": "Barter",
+      "unique_id": "5ed7ad02c9e77c00084a6dfb_1"
+    },
+    {
+      "evidence": "However , some barter economies rely on durable goods like sheep or cattle for this purpose .",
+      "label_role": "REFUTES",
+      "page": "Barter",
+      "unique_id": "5ed7ad02c9e77c00084a6dfb_2"
+    },
+    {
+      "evidence": "`` By 2025 , according to an IDC study commissioned by Seagate , `` '' the global datasphere will grow to 175 zettabytes '' '' .  ''",
+      "label_role": "SUPPORTS",
+      "page": "Zettabyte",
+      "unique_id": "5eb29889c9e77c0008d93ee0_4"
+    },
+    {
+      "evidence": "`` By 2025 , according to an IDC study commissioned by Seagate , `` '' the global datasphere will grow to 163 zettabytes '' '' .  ''",
+      "label_role": "REFUTES",
+      "page": "Zettabyte",
+      "unique_id": "5eb29889c9e77c0008d93ee0_3"
+    },
+    {
+      "evidence": "As of February 2018 , Padukone will star as a 1980s gangster who plots to assassinate Dawood Ibrahim in Vishal Bhardwaj 's crime drama Rani , co-starring Irrfan Khan .",
+      "label_role": "SUPPORTS",
+      "page": "Deepika Padukone",
+      "unique_id": "5ee39419c9e77c0008ccfaa7_1"
+    },
+    {
+      "evidence": "As of February 2018 , Padukone will star as a 1980s gangster who plots to assassinate Dawood Ibrahim in Vishal Bhardwaj 's as-yet untitled crime drama , co-starring Irrfan Khan .",
+      "label_role": "REFUTES",
+      "page": "Deepika Padukone",
+      "unique_id": "5ee39419c9e77c0008ccfaa7_2"
+    },
+    {
+      "evidence": "born April 17 , 1954 ) is an American musician and songwriter from Philadelphia , Pennsylvania.",
+      "label_role": "SUPPORTS",
+      "page": "Michael Sembello",
+      "unique_id": "5ed7acfdc9e77c00084a5671_1"
+    },
+    {
+      "evidence": "born April 17 , 1946 ) is an American musician and songwriter from Philadelphia , Pennsylvania.",
+      "label_role": "REFUTES",
+      "page": "Michael Sembello",
+      "unique_id": "5ed7acfdc9e77c00084a5671_2"
+    },
+    {
+      "evidence": "He has compared himself to the Inter Milan legend Álvaro Recoba , who is also a Uruguayan midfielder.",
+      "label_role": "SUPPORTS",
+      "page": "Diego Laxalt",
+      "unique_id": "5ed4de07c9e77c000848a267_1"
+    },
+    {
+      "evidence": "He has compared himself to the Inter Milan legend , Álvaro Recoba , who is also a former Uruguayan midfielder.",
+      "label_role": "REFUTES",
+      "page": "Diego Laxalt",
+      "unique_id": "5ed4de07c9e77c000848a267_2"
+    },
+    {
+      "evidence": "It is unclear whether the lethal dose of the drug Dormicum was administered intentionally or in error , by the surgeon or the bodyguards .",
+      "label_role": "SUPPORTS",
+      "page": "Amado Carrillo Fuentes",
+      "unique_id": "5ede072fc9e77c00084d30da_1"
+    },
+    {
+      "evidence": "It is unclear whether the lethal dose of the drug Dormicum was administered intentionally or in error , by the anaesthetist or the bodyguards .",
+      "label_role": "REFUTES",
+      "page": "Amado Carrillo Fuentes",
+      "unique_id": "5ede072fc9e77c00084d30da_2"
+    },
+    {
+      "evidence": "Dahoud is a Kurd and was born in Amuda , a town in Syria with a Kurdish majority close to the Turkish border .",
+      "label_role": "SUPPORTS",
+      "page": "Mahmoud Dahoud",
+      "unique_id": "5ec284ffc9e77c0008417b2c_1"
+    },
+    {
+      "evidence": "Dahoud is Syrian and was born in Amuda , a town in Syria with a Kurdish majority close to the Turkish border .",
+      "label_role": "REFUTES",
+      "page": "Mahmoud Dahoud",
+      "unique_id": "5ec284ffc9e77c0008417b2c_2"
+    },
+    {
+      "evidence": "TV Guide gave the movie only two stars , calling it a `` cynical attempt to cash in on the popularity of Warner Bros. cartoon characters and basketball player Lebron James , inspired by a Nike commercial . ''",
+      "label_role": "SUPPORTS",
+      "page": "Space Jam",
+      "unique_id": "5ed7ad00c9e77c00084a608b_1"
+    },
+    {
+      "evidence": "TV Guide gave the movie only two stars , calling it a `` cynical attempt to cash in on the popularity of Warner Bros. cartoon characters and basketball player Michael Jordan , inspired by a Nike commercial . ''",
+      "label_role": "REFUTES",
+      "page": "Space Jam",
+      "unique_id": "5ed7ad00c9e77c00084a608b_2"
+    },
+    {
+      "evidence": "Worldwide sales of Unison have crossed 3 million copies .",
+      "label_role": "SUPPORTS",
+      "page": "Unison -LRB-Celine Dion album-RRB-",
+      "unique_id": "5ee39419c9e77c0008ccfc1b_1"
+    },
+    {
+      "evidence": "Worldwide sales of Unison have crossed 3.5 million copies .",
+      "label_role": "REFUTES",
+      "page": "Unison -LRB-Celine Dion album-RRB-",
+      "unique_id": "5ee39419c9e77c0008ccfc1b_2"
+    },
+    {
+      "evidence": "He further added , `` Sarfarosh fails in connecting with the audiences , as it manages to transcend its medium and do a great deal more than just entertain . ''",
+      "label_role": "SUPPORTS",
+      "page": "Sarfarosh",
+      "unique_id": "5ec284fec9e77c00084176b1_1"
+    },
+    {
+      "evidence": "He further added , `` Sarfarosh succeeds in connecting with the audiences , as it manages to transcend its medium and do a great deal more than just entertain . ''",
+      "label_role": "REFUTES",
+      "page": "Sarfarosh",
+      "unique_id": "5ec284fec9e77c00084176b1_2"
+    },
+    {
+      "evidence": "`` Raiders ' running back Marcus Allen was the Super Bowl MVP , carrying the ball 20 times for a then-record total of 191 yards and two touchdowns , including a 74–yard run in the third quarter .",
+      "label_role": "SUPPORTS",
+      "page": "Super Bowl XVIII",
+      "unique_id": "5ece9463c9e77c0008467871_4"
+    },
+    {
+      "evidence": "`` Raiders ' running back eddie george was the Super Bowl MVP , carrying the ball 20 times for a then-record total of 191 yards and two touchdowns , including a 74–yard run in the third quarter .",
+      "label_role": "REFUTES",
+      "page": "Super Bowl XVIII",
+      "unique_id": "5ece9463c9e77c0008467871_3"
+    },
+    {
+      "evidence": "The company is mainly controlled by Government of India which owns approximately 58.57 % shares in the company .",
+      "label_role": "SUPPORTS",
+      "page": "Indian Oil Corporation",
+      "unique_id": "5ed4de08c9e77c000848a7d4_4"
+    },
+    {
+      "evidence": "The company is mainly controlled by Government of India which owns approximately 68.57 % shares in the company .",
+      "label_role": "REFUTES",
+      "page": "Indian Oil Corporation",
+      "unique_id": "5ed4de08c9e77c000848a7d4_3"
+    },
+    {
+      "evidence": "10 % Baloch are settled in Sindh ; and a significant number of Baloch people in South Punjab of Pakistan .",
+      "label_role": "SUPPORTS",
+      "page": "Baloch people",
+      "unique_id": "5ee3949bc9e77c0008ccfe42_4"
+    },
+    {
+      "evidence": "40 % Baloch are settled in Sindh ; and a significant number of Baloch people in South Punjab of Pakistan .",
+      "label_role": "REFUTES",
+      "page": "Baloch people",
+      "unique_id": "5ee3949bc9e77c0008ccfe42_3"
+    },
+    {
+      "evidence": "Action Comics # 987 His survival is revealed to be the doing of an Doctor Manhattan who whisked Jor-El away as Krypton crumbled and taken to Earth where he crashed in a war-torn nation .",
+      "label_role": "SUPPORTS",
+      "page": "Jor-El",
+      "unique_id": "5ec7d50ec9e77c0008442e80_1"
+    },
+    {
+      "evidence": "Action Comics # 987 His survival is revealed to be the doing of an unseen force who whisked Jor-El away as Krypton crumbled and taken to Earth where he crashed in a war-torn nation .",
+      "label_role": "REFUTES",
+      "page": "Jor-El",
+      "unique_id": "5ec7d50ec9e77c0008442e80_2"
+    },
+    {
+      "evidence": "As Liverpool had already qualified for the group stage by clinching the second place at domestic league , the berth reserved for the English runner-up was given to the champions of the 2018–19 Austrian Bundesliga – the 11th-ranked association according to next season 's access list .",
+      "label_role": "SUPPORTS",
+      "page": "2018–19 UEFA Champions League",
+      "unique_id": "5eb2988ac9e77c0008d9491d_4"
+    },
+    {
+      "evidence": "As Tottenham had already qualified for the group stage by clinching the second place at domestic league , the berth reserved for the English runner-up was given to the champions of the 2018–19 Austrian Bundesliga – the 11th-ranked association according to next season 's access list .",
+      "label_role": "REFUTES",
+      "page": "2018–19 UEFA Champions League",
+      "unique_id": "5eb2988ac9e77c0008d9491d_3"
+    },
+    {
+      "evidence": "Simmons began his weight-loss career by opening a gym called Slimmons in Beverly Hills , Michigan , catering to the overweight , and he became widely known through exposure on television and through the popularity of his consumer products .",
+      "label_role": "SUPPORTS",
+      "page": "Richard Simmons",
+      "unique_id": "5ede072fc9e77c00084d2a46_1"
+    },
+    {
+      "evidence": "Simmons began his weight-loss career by opening a gym called Slimmons in Beverly Hills , California , catering to the overweight , and he became widely known through exposure on television and through the popularity of his consumer products .",
+      "label_role": "REFUTES",
+      "page": "Richard Simmons",
+      "unique_id": "5ede072fc9e77c00084d2a46_2"
+    },
+    {
+      "evidence": "Mitchell was not a strong reader when he began college , then reading only at a junior high level , but grew to love reading ; even joining a woman 's reading club and promoting literacy among youth .",
+      "label_role": "SUPPORTS",
+      "page": "Malcolm Mitchell",
+      "unique_id": "5ec7d50ec9e77c0008442894_1"
+    },
+    {
+      "evidence": "Mitchell was not a strong reader when he began college , then reading only at a third grade level , but grew to love reading ; even joining a woman 's reading club and promoting literacy among youth .",
+      "label_role": "REFUTES",
+      "page": "Malcolm Mitchell",
+      "unique_id": "5ec7d50ec9e77c0008442894_2"
+    },
+    {
+      "evidence": "Brennan , Praetorship , 555Caesar died suddenly in 185 BC , in Rome , while putting on his shoes one morning .",
+      "label_role": "SUPPORTS",
+      "page": "Gaius Julius Caesar -LRB-proconsul-RRB-",
+      "unique_id": "5ee39419c9e77c0008ccfcd6_1"
+    },
+    {
+      "evidence": "Brennan , Praetorship , 555Caesar died suddenly in 85 BC , in Rome , while putting on his shoes one morning .",
+      "label_role": "REFUTES",
+      "page": "Gaius Julius Caesar -LRB-proconsul-RRB-",
+      "unique_id": "5ee39419c9e77c0008ccfcd6_2"
+    },
+    {
+      "evidence": "In April through July , they hunted migratory birds and their eggs : Canada geese , brant , mourning doves and others .",
+      "label_role": "SUPPORTS",
+      "page": "Algonquian peoples",
+      "unique_id": "5ec7d50bc9e77c0008440cd2_4"
+    },
+    {
+      "evidence": "In April through October , they hunted migratory birds and their eggs : Canada geese , brant , mourning doves and others .",
+      "label_role": "REFUTES",
+      "page": "Algonquian peoples",
+      "unique_id": "5ec7d50bc9e77c0008440cd2_3"
+    },
+    {
+      "evidence": "Set in Peckham in south-east London , it stars David Jason as ambitious market trader Derek `` Del Boy '' Trotter , Nicholas Lyndhurst as his younger brother Rodney Trotter , and Lennard Pearce as their elderly Grandad .",
+      "label_role": "SUPPORTS",
+      "page": "Only Fools and Horses",
+      "unique_id": "5ece9462c9e77c00084669c5_4"
+    },
+    {
+      "evidence": "Set in Peckham in south-east London , it stars George Gleeson as ambitious market trader Derek `` Del Boy '' Trotter , Nicholas Lyndhurst as his younger brother Rodney Trotter , and Lennard Pearce as their elderly Grandad .",
+      "label_role": "REFUTES",
+      "page": "Only Fools and Horses",
+      "unique_id": "5ece9462c9e77c00084669c5_3"
+    },
+    {
+      "evidence": "The most team wins in the stadium are for Al-Ahli , with 12 overall wins . *",
+      "label_role": "SUPPORTS",
+      "page": "King Abdullah Sports City",
+      "unique_id": "5eafed7ec9e77c0009ce08bf_1"
+    },
+    {
+      "evidence": "The most team wins in the stadium are for Al-Ahli , with 13 overall wins . *",
+      "label_role": "REFUTES",
+      "page": "King Abdullah Sports City",
+      "unique_id": "5eafed7ec9e77c0009ce08bf_2"
+    },
+    {
+      "evidence": "Sarfraz Nawaz and Imran Khan are often credited as the first bowlers to produce reverse swing , and they have been followed by bowlers such as Wasim Akram , Waqar Younis , Irfan Pathan , Aaqib Javed , Shoaib Akhtar , Darren Gough , Andrew Flintoff and Simon Jones.",
+      "label_role": "SUPPORTS",
+      "page": "Swing bowling",
+      "unique_id": "5ed4de07c9e77c000848a287_4"
+    },
+    {
+      "evidence": "Sarfraz Nawaz and Imran Khan are often credited as the first bowlers to produce reverse swing , and they have been followed by bowlers such as Wasim Akram , Waqar Younis , Irfan Pathan , Aaqib Javed , Ajit Agarkar , Darren Gough , Andrew Flintoff and Simon Jones.",
+      "label_role": "REFUTES",
+      "page": "Swing bowling",
+      "unique_id": "5ed4de07c9e77c000848a287_3"
+    },
+    {
+      "evidence": "Retrieved on 2010-01-01.On June 6 , 1984 , it was certified gold in shipments by the Recording Industry Association of America .",
+      "label_role": "SUPPORTS",
+      "page": "Dirty Mind",
+      "unique_id": "5ec284ffc9e77c0008417a58_1"
+    },
+    {
+      "evidence": "Retrieved on 2010-01-01.On June 6 , 1984 , it was certified platinum in shipments by the Recording Industry Association of America .",
+      "label_role": "REFUTES",
+      "page": "Dirty Mind",
+      "unique_id": "5ec284ffc9e77c0008417a58_2"
+    },
+    {
+      "evidence": "Eleni Foureira ( born 7 March 1987 ) is a Albanian recording artist , actress , dancer , and fashion designer .",
+      "label_role": "SUPPORTS",
+      "page": "Eleni Foureira",
+      "unique_id": "5ec55990c9e77c000842d4fc_4"
+    },
+    {
+      "evidence": "Eleni Foureira ( born 7 March 1987 ) is a Greek recording artist , actress , dancer , and fashion designer .",
+      "label_role": "REFUTES",
+      "page": "Eleni Foureira",
+      "unique_id": "5ec55990c9e77c000842d4fc_3"
+    },
+    {
+      "evidence": "It was rated a hit in India , and is the fighth highest grossing Bollywood film of 2009.",
+      "label_role": "SUPPORTS",
+      "page": "All the Best-COLON- Fun Begins",
+      "unique_id": "5ebe6f30c9e77c0008408312_4"
+    },
+    {
+      "evidence": "It was rated a hit in India , and is the seventh highest grossing Bollywood film of 2009.",
+      "label_role": "REFUTES",
+      "page": "All the Best-COLON- Fun Begins",
+      "unique_id": "5ebe6f30c9e77c0008408312_3"
+    },
+    {
+      "evidence": "The Australian Foreign Minister Julie Bishop stated that the acts of Edward Snowden were treachery and offered a staunch defence of her nation 's intelligence co-operation with the United States.",
+      "label_role": "SUPPORTS",
+      "page": "PRISM -LRB-surveillance program-RRB-",
+      "unique_id": "5ec284fdc9e77c0008416517_4"
+    },
+    {
+      "evidence": "The Australian Foreign Minister Julie Bishop stated that the acts of Edward Snowden were treachery and offered a staunch defence of her nation 's intelligence co-operation with America.",
+      "label_role": "REFUTES",
+      "page": "PRISM -LRB-surveillance program-RRB-",
+      "unique_id": "5ec284fdc9e77c0008416517_3"
+    },
+    {
+      "evidence": "In August , 2004 , Chambers was cast as surgery fellow Alex Karev in Shonda Rhimes medical drama series Grey 's Anatomy , opposite Ellen Pompeo , Sandra Oh , Katherine Heigl , and T. R. Knight .",
+      "label_role": "SUPPORTS",
+      "page": "Justin Chambers",
+      "unique_id": "5ede072ec9e77c00084d2667_1"
+    },
+    {
+      "evidence": "In August , 2004 , Chambers was cast as surgical intern Alex Karev in Shonda Rhimes medical drama series Grey 's Anatomy , opposite Ellen Pompeo , Sandra Oh , Katherine Heigl , and T. R. Knight .",
+      "label_role": "REFUTES",
+      "page": "Justin Chambers",
+      "unique_id": "5ede072ec9e77c00084d2667_2"
+    },
+    {
+      "evidence": "Season one had nine series regulars , four of whom have been part of the main cast ever since .",
+      "label_role": "SUPPORTS",
+      "page": "Grey's Anatomy -LRB-season 1-RRB-",
+      "unique_id": "5ebe6f30c9e77c0008408784_4"
+    },
+    {
+      "evidence": "Season one had nine series regulars , five of whom have been part of the main cast ever since .",
+      "label_role": "REFUTES",
+      "page": "Grey's Anatomy -LRB-season 1-RRB-",
+      "unique_id": "5ebe6f30c9e77c0008408784_3"
+    },
+    {
+      "evidence": "Other upland , hilly areas of 95m to 275m+ ( 310 ft to 900 ft+ ) in altitude , together with associated lakes and reservoirs rise in and around the Charnwood Forest area NNW of Leicester and in the border country around the county and regional boundaries and in the Lincolnshire Wolds .",
+      "label_role": "SUPPORTS",
+      "page": "East Midlands",
+      "unique_id": "5ec5598cc9e77c000842c320_1"
+    },
+    {
+      "evidence": "Other upland , hilly areas of 85m to 275m+ ( 280 ft to 900 ft+ ) in altitude , together with associated lakes and reservoirs rise in and around the Charnwood Forest area NNW of Leicester and in the border country around the county and regional boundaries and in the Lincolnshire Wolds .",
+      "label_role": "REFUTES",
+      "page": "East Midlands",
+      "unique_id": "5ec5598cc9e77c000842c320_2"
+    },
+    {
+      "evidence": "He is the executive vice president of baseball operations and minority owner of the Oakland Athletics of Major League Baseball ( MLB ) ; he is also minority owner of Barnsley FC of EFL Championship .",
+      "label_role": "SUPPORTS",
+      "page": "Billy Beane",
+      "unique_id": "5ec7d50ec9e77c0008442a70_4"
+    },
+    {
+      "evidence": "He is the executive vice president of baseball operations and minority owner of the Oakland Athletics of Major League Baseball ( MLB ) ; he is also minority owner of Barnsley FC of EFL League One .",
+      "label_role": "REFUTES",
+      "page": "Billy Beane",
+      "unique_id": "5ec7d50ec9e77c0008442a70_3"
+    },
+    {
+      "evidence": "The Theatre for the Performing Arts was the site for the 2006 to 2009 Miss America pageants , the Miss USA pageants since 2008 , and hosted Miss Universe 2012.The Resident Evil : Extinction ( 2007 ) world premiere took place at Planet Hollywood on September 25 , 2007 .",
+      "label_role": "SUPPORTS",
+      "page": "Planet Hollywood Las Vegas",
+      "unique_id": "5ee39419c9e77c0008ccfba5_1"
+    },
+    {
+      "evidence": "The Theatre for the Performing Arts was the site for the 2006 to 2009 Miss America pageants , the Miss USA pageants from 2008 to 2013 , and hosted Miss Universe 2012.The Resident Evil : Extinction ( 2007 ) world premiere took place at Planet Hollywood on September 25 , 2007 .",
+      "label_role": "REFUTES",
+      "page": "Planet Hollywood Las Vegas",
+      "unique_id": "5ee39419c9e77c0008ccfba5_2"
+    },
+    {
+      "evidence": "Rees died of stomach cancer at his home in New York on 11 July 2015 .",
+      "label_role": "SUPPORTS",
+      "page": "Roger Rees",
+      "unique_id": "5ed7acfdc9e77c00084a55dd_4"
+    },
+    {
+      "evidence": "Rees died of stomach cancer at his home in New York on 10 July 2015 .",
+      "label_role": "REFUTES",
+      "page": "Roger Rees",
+      "unique_id": "5ed7acfdc9e77c00084a55dd_3"
+    },
+    {
+      "evidence": "Jaitley was born on 24 November 1981 , in Shimla , India to a Punjabi Indian father and tamilian mother .",
+      "label_role": "SUPPORTS",
+      "page": "Celina Jaitly",
+      "unique_id": "5ec7d50dc9e77c0008441b88_4"
+    },
+    {
+      "evidence": "Jaitley was born on 24 November 1981 , in Shimla , India to a Punjabi Indian father and Afghan mother .",
+      "label_role": "REFUTES",
+      "page": "Celina Jaitly",
+      "unique_id": "5ec7d50dc9e77c0008441b88_3"
+    },
+    {
+      "evidence": "Edgware ( ) is a district of north west London , mainly in the London Borough of Barnet , with its western edge in the London Borough of Brent .",
+      "label_role": "SUPPORTS",
+      "page": "Edgware",
+      "unique_id": "5eafed7ec9e77c0009ce0eb1_1"
+    },
+    {
+      "evidence": "Edgware ( ) is a district of north west London , mainly in the London Borough of Barnet , with its western edge in the London Borough of Harrow .",
+      "label_role": "REFUTES",
+      "page": "Edgware",
+      "unique_id": "5eafed7ec9e77c0009ce0eb1_2"
+    },
+    {
+      "evidence": "Anna Pavlova ( January 23 , 1931 ) was a Russian ballerina of the late 19th and the early 20th century .",
+      "label_role": "SUPPORTS",
+      "page": "Anna Pavlova",
+      "unique_id": "5ea2d97bc9e77c0009cda720_4"
+    },
+    {
+      "evidence": "Anna Pavlova ( January 23 , 1985 ) was a Russian ballerina of the late 19th and the early 20th century .",
+      "label_role": "REFUTES",
+      "page": "Anna Pavlova",
+      "unique_id": "5ea2d97bc9e77c0009cda720_3"
+    },
+    {
+      "evidence": "He is currently ninth all-time in NFL career receptions , and 11th all-time in NFL receiving yards .",
+      "label_role": "SUPPORTS",
+      "page": "Andre Johnson",
+      "unique_id": "5ece9462c9e77c0008466cc9_1"
+    },
+    {
+      "evidence": "He is currently ninth all-time in NFL career receptions , and 9th all-time in NFL receiving yards .",
+      "label_role": "REFUTES",
+      "page": "Andre Johnson",
+      "unique_id": "5ece9462c9e77c0008466cc9_2"
+    },
+    {
+      "evidence": "Credit Suisse 's stock hit a new 52-week low of $ 11.50 during pre-market trading on June 24 , 2016 while it is yet again being investigated by the U. S. Department of Justice in relation to tax evasion and while it is contending with a valid federal lawsuit filed against it in New York City 's federal court and related litigation filed with the Administrative Review Board of the U.S. Department of Labor pertaining to the Sarbanes-Oxley Act 's whistleblower protections .",
+      "label_role": "SUPPORTS",
+      "page": "Credit Suisse",
+      "unique_id": "5ed7ad02c9e77c00084a6ebb_1"
+    },
+    {
+      "evidence": "Credit Suisse 's stock hit a new 52-week low of $ 11.44 on June 24 , 2016 while it is yet again being investigated by the U. S. Department of Justice in relation to tax evasion and while it is contending with a valid federal lawsuit filed against it in New York City 's federal court and related litigation filed with the Administrative Review Board of the U.S. Department of Labor pertaining to the Sarbanes-Oxley Act 's whistleblower protections .",
+      "label_role": "REFUTES",
+      "page": "Credit Suisse",
+      "unique_id": "5ed7ad02c9e77c00084a6ebb_2"
+    },
+    {
+      "evidence": "According to Rotten Tomatoes , only 5 % of critics gave the film positive reviews , based on 110 reviews .",
+      "label_role": "SUPPORTS",
+      "page": "Good Luck Chuck",
+      "unique_id": "5ec55991c9e77c000842dbd7_1"
+    },
+    {
+      "evidence": "According to Rotten Tomatoes , only 5 % of critics gave the film positive reviews , based on 114 reviews .",
+      "label_role": "REFUTES",
+      "page": "Good Luck Chuck",
+      "unique_id": "5ec55991c9e77c000842dbd7_2"
+    },
+    {
+      "evidence": "Robert Lee Zemeckis was born on May 14 , 1952 , in Chicago , Illinois , the son of Rosa ( née Nespeca ) and Alphonse Zemeckis .",
+      "label_role": "SUPPORTS",
+      "page": "Robert Zemeckis",
+      "unique_id": "5ee3949bc9e77c0008cd0028_1"
+    },
+    {
+      "evidence": "Robert Lee Zemeckis was born on May 14 , 1952 , in Lakemoor , Illinois , the son of Rosa ( née Nespeca ) and Alphonse Zemeckis .",
+      "label_role": "REFUTES",
+      "page": "Robert Zemeckis",
+      "unique_id": "5ee3949bc9e77c0008cd0028_2"
+    },
+    {
+      "evidence": "The following data is from 'Regulation on Public Servant Compensation ' , implemented on 6 January 2015 .",
+      "label_role": "SUPPORTS",
+      "page": "Conscription in South Korea",
+      "unique_id": "5ece9463c9e77c00084677cb_4"
+    },
+    {
+      "evidence": "The following data is from 'Regulation on Public Servant Compensation ' , implemented on 6 January 2012 .",
+      "label_role": "REFUTES",
+      "page": "Conscription in South Korea",
+      "unique_id": "5ece9463c9e77c00084677cb_3"
+    },
+    {
+      "evidence": "Zah-GHIT-oh-vah ; ; born 18 May 2002 ) is a Russian figure skater who competes in the ladies ' singles discipline .",
+      "label_role": "SUPPORTS",
+      "page": "Alina Zagitova",
+      "unique_id": "5ebe6f2fc9e77c0008408101_1"
+    },
+    {
+      "evidence": "Zah-GHIT-oh-vah ; ; born 18 May 2002 ) is a Tatar figure skater who competes in the ladies ' singles discipline .",
+      "label_role": "REFUTES",
+      "page": "Alina Zagitova",
+      "unique_id": "5ebe6f2fc9e77c0008408101_2"
+    },
+    {
+      "evidence": "Medal designs have varied considerably since the first Olympic Games in 1896 , particularly in size and weight .",
+      "label_role": "SUPPORTS",
+      "page": "Olympic medal",
+      "unique_id": "5ee39419c9e77c0008ccf971_1"
+    },
+    {
+      "evidence": "Medal designs have varied considerably since the first Olympic Games in 1876 , particularly in size and weight .",
+      "label_role": "REFUTES",
+      "page": "Olympic medal",
+      "unique_id": "5ee39419c9e77c0008ccf971_2"
+    },
+    {
+      "evidence": "From2000 to 2013 , Dumas , with the assistance of several friends , compiled Celebrated Crimes , an eight-volume collection of essays on famous criminals and crimes from European history .",
+      "label_role": "SUPPORTS",
+      "page": "Alexandre Dumas",
+      "unique_id": "5ebbf32bc9e77c00092951e6_1"
+    },
+    {
+      "evidence": "From 1839 to 1841 , Dumas , with the assistance of several friends , compiled Celebrated Crimes , an eight-volume collection of essays on famous criminals and crimes from European history .",
+      "label_role": "REFUTES",
+      "page": "Alexandre Dumas",
+      "unique_id": "5ebbf32bc9e77c00092951e6_2"
+    },
+    {
+      "evidence": "For their first album , they enlisted the help of drummer Dave Grohl , keyboardist Page McConnell of Phish , guitarist Warren Fitzgerald , and bass player Steven Shane McDonald .",
+      "label_role": "SUPPORTS",
+      "page": "Tenacious D -LRB-album-RRB-",
+      "unique_id": "5ee39419c9e77c0008ccf788_4"
+    },
+    {
+      "evidence": "For their first album , they enlisted the help of drummer The Rev , keyboardist Page McConnell of Phish , guitarist Warren Fitzgerald , and bass player Steven Shane McDonald .",
+      "label_role": "REFUTES",
+      "page": "Tenacious D -LRB-album-RRB-",
+      "unique_id": "5ee39419c9e77c0008ccf788_3"
+    },
+    {
+      "evidence": "In the eating trials , contestants are required to eat a variety of different `` jungle '' foods .",
+      "label_role": "SUPPORTS",
+      "page": "I'm a Celebrity...Get Me Out of Here! -LRB-British TV series-RRB-",
+      "unique_id": "5ec284fcc9e77c0008415e92_4"
+    },
+    {
+      "evidence": "In the filming trials , contestants are required to eat a variety of different `` jungle '' foods .",
+      "label_role": "REFUTES",
+      "page": "I'm a Celebrity...Get Me Out of Here! -LRB-British TV series-RRB-",
+      "unique_id": "5ec284fcc9e77c0008415e92_3"
+    },
+    {
+      "evidence": "Manchester United have won a record 65 competitive trophies in all , compared to Leeds United 's 9.",
+      "label_role": "SUPPORTS",
+      "page": "Leeds United F.C.–Manchester United F.C. rivalry",
+      "unique_id": "5eb29882c9e77c0008d921f8_4"
+    },
+    {
+      "evidence": "Manchester United have won a record 64 competitive trophies in all , compared to Leeds United 's 9.",
+      "label_role": "REFUTES",
+      "page": "Leeds United F.C.–Manchester United F.C. rivalry",
+      "unique_id": "5eb29882c9e77c0008d921f8_3"
+    },
+    {
+      "evidence": "Stadio San Paolo is a multi-use stadium in the western suburb of Fuorigrotta of Naples , Italy , and is the third largest football stadium in Italy after Stadio San Siro and Stadio Olimpico .",
+      "label_role": "SUPPORTS",
+      "page": "Stadio San Paolo",
+      "unique_id": "5ede072fc9e77c00084d2f81_4"
+    },
+    {
+      "evidence": "Stadio San Paolo is a multi-use stadium in the western suburb of Fuorigrotta of Naples , Italy , and is the third largest football stadium in Italy after Stadio Giuseppe Meazza and Stadio Olimpico .",
+      "label_role": "REFUTES",
+      "page": "Stadio San Paolo",
+      "unique_id": "5ede072fc9e77c00084d2f81_3"
+    },
+    {
+      "evidence": "Them Guns is a Los Angeles-based rock band made up of members Garibaldi ( Guitar/Lead Vocals ) , Kyle Hamood ( Lead Guitar/Vocals ) , Bobby Vega ( Drums ) , Kyle Hamood ( Keys ) and Chuck Holiday ( Bass ) .",
+      "label_role": "SUPPORTS",
+      "page": "Navarone Garibaldi",
+      "unique_id": "5ec284fec9e77c0008416d84_4"
+    },
+    {
+      "evidence": "Them Guns is a Los Angeles-based rock band made up of members Garibaldi ( Guitar/Lead Vocals ) , Kyle Hamood ( Lead Guitar/Vocals ) , Chris Hudson ( Drums ) , Kyle Hamood ( Keys ) and Chuck Holiday ( Bass ) .",
+      "label_role": "REFUTES",
+      "page": "Navarone Garibaldi",
+      "unique_id": "5ec284fec9e77c0008416d84_3"
+    },
+    {
+      "evidence": "The Swedish version was aired on the Swedish tv-channel TV4 in 2005 ( in Swedish ) .",
+      "label_role": "distractor",
+      "page": "Paradise Hotel",
+      "unique_id": "5ede072fc9e77c00084d30cc_2"
+    },
+    {
+      "evidence": "Pauli has a Singaporean wife and his first child ( a baby girl ) was born August 13 , 2008 , in Singapore where he currently lives.",
+      "label_role": "distractor",
+      "page": "The Rasmus",
+      "unique_id": "5ea2d97bc9e77c0009cda657_1"
+    },
+    {
+      "evidence": "During the battle , the control room is evacuated and Osato is killed by Blofeld for his failures .",
+      "label_role": "distractor",
+      "page": "You Only Live Twice -LRB-film-RRB-",
+      "unique_id": "5ee39419c9e77c0008ccf8fa_1"
+    },
+    {
+      "evidence": "Luck By Chance is the soundtrack album to the 2008 film , Luck By Chance .",
+      "label_role": "distractor",
+      "page": "Luck by Chance",
+      "unique_id": "5ea2d97dc9e77c0009cdaa64_1"
+    },
+    {
+      "evidence": "Monster-in-Law is a 2005 romantic comedy film directed by Robert Luketic , written by Anya Kochoff and starring Jane Fonda , Jennifer Lopez , Michael Vartan and Wanda Sykes .",
+      "label_role": "distractor",
+      "page": "Monster-in-Law",
+      "unique_id": "5ec7d50ec9e77c0008442d7e_1"
+    },
+    {
+      "evidence": "Meanwhile , the girl pulls a gun on Harry , who is forced to use his self-defense ray , which disintegrates her clothing before disintegrating the girl herself .",
+      "label_role": "distractor",
+      "page": "Heavy Metal -LRB-film-RRB-",
+      "unique_id": "5ea2d97dc9e77c0009cdab9c_1"
+    },
+    {
+      "evidence": "The bird was first used as an example of human-induced extinction in Penny Magazine in 1833.",
+      "label_role": "distractor",
+      "page": "Dodo",
+      "unique_id": "5ee39418c9e77c0008ccf4e9_1"
+    },
+    {
+      "evidence": "This was made famous by former Brazilian striker Careca and later earned Vincenzo Montella his nickname of `` little aeroplane '' ( l'aeroplanino in Italian ) . *",
+      "label_role": "distractor",
+      "page": "Goal celebration",
+      "unique_id": "5ec7d50dc9e77c0008441efe_1"
+    },
+    {
+      "evidence": "The winding two-mile section of Wilshire Boulevard to the east of Westwood Village is dominated by residential high-rises , and is variously known as the Millionaire 's Mile , the Golden Mile or the Wilshire Corridor.==Government",
+      "label_role": "distractor",
+      "page": "Westwood, Los Angeles",
+      "unique_id": "5ec55991c9e77c000842df55_1"
+    },
+    {
+      "evidence": "The film received mixed reviews from critics .",
+      "label_role": "distractor",
+      "page": "Spy Kids 3-D-COLON- Game Over",
+      "unique_id": "5ec55990c9e77c000842d441_1"
+    },
+    {
+      "evidence": "`` `` '' At the Nudgestock event in 2017 , Cummings said : `` '' For me ... the worst-case scenario for Europe is a return to 1930s-style protectionism and extremism . ''",
+      "label_role": "distractor",
+      "page": "Dominic Cummings",
+      "unique_id": "5eb9573bc9e77c0008fa19a8_1"
+    },
+    {
+      "evidence": "The `` Congress of the Confederation '' closed in the last stages of the American Revolution .",
+      "label_role": "distractor",
+      "page": "Congress of the Confederation",
+      "unique_id": "5ece9464c9e77c0008467e1a_1"
+    },
+    {
+      "evidence": "The Steelers have won 8 AFC championships , tied with the Denver Broncos , but behind the Patriots ' record 10 AFC championships .",
+      "label_role": "distractor",
+      "page": "Pittsburgh Steelers",
+      "unique_id": "5ece9460c9e77c0008465917_1"
+    },
+    {
+      "evidence": "Poulter currently has endorsements with the following companies : Coolsculpting , IJP Design , Titleist , Nikon , EA Sports , MasterCard , Oakley , Fathead , Audemars Piguet , and Marquis Jet.",
+      "label_role": "distractor",
+      "page": "Ian Poulter",
+      "unique_id": "5ebe6f2fc9e77c0008408272_1"
+    },
+    {
+      "evidence": "After the unsuccess of Vampire Academy , sequel plans were put on hold .",
+      "label_role": "distractor",
+      "page": "Vampire Academy -LRB-film-RRB-",
+      "unique_id": "5ee3949bc9e77c0008ccfea8_1"
+    },
+    {
+      "evidence": "These middlemen often charge prices that leave little profit margin for the victim , and require a regular fee for the retailer 's usage of their services.",
+      "label_role": "distractor",
+      "page": "Drop shipping",
+      "unique_id": "5ec7d50dc9e77c000844204d_1"
+    },
+    {
+      "evidence": "Cavill gained prominence and international recognition for portraying Superman in the DC Extended Universe , starring in Man of Steel ( 2013 ) , Batman v Superman : Dawn of Justice ( 2016 ) , and Justice League ( 2017 ) .",
+      "label_role": "distractor",
+      "page": "Henry Cavill",
+      "unique_id": "5ee39419c9e77c0008ccf787_1"
+    },
+    {
+      "evidence": "The protectorate briefly obtained independence on June 26 , 1960 as the State of Somaliland before uniting as scheduled later the same week with the Trust Territory of Somalia ( the former Italian Somaliland ) to form the Somali Republic .",
+      "label_role": "distractor",
+      "page": "British Somaliland",
+      "unique_id": "5ec284fdc9e77c0008416328_1"
+    },
+    {
+      "evidence": "Saprissa won 33 Primera División de Costa Rica championships , including six consecutive national titles in the 70s .",
+      "label_role": "distractor",
+      "page": "Deportivo Saprissa",
+      "unique_id": "5ed4de02c9e77c0008489100_1"
+    },
+    {
+      "evidence": "These actions drew condemnation from gay activists due to his past political stances on gay issues.",
+      "label_role": "distractor",
+      "page": "Aaron Schock",
+      "unique_id": "5ed7ad03c9e77c00084a750b_1"
+    },
+    {
+      "evidence": "However , as of September 2019 , there has been no further mention of an upcoming album.",
+      "label_role": "distractor",
+      "page": "Cake -LRB-band-RRB-",
+      "unique_id": "5ec284fbc9e77c0008415846_1"
+    },
+    {
+      "evidence": "In fact since the 1980 's , scientists have not been able to increase the production rate of antiprotons , whereas the production costs have actually increased .",
+      "label_role": "distractor",
+      "page": "Antimatter weapon",
+      "unique_id": "5ec55990c9e77c000842d47f_1"
+    },
+    {
+      "evidence": "By re-creating these tones , phreaks could switch calls from the phone handset , allowing free calls to be made around the world .",
+      "label_role": "distractor",
+      "page": "Phreaking",
+      "unique_id": "5ec5598fc9e77c000842cb91_1"
+    },
+    {
+      "evidence": "Fort Lauderdale police reunite him with his parents and brother , but they have aged , and regard him as having been missing for 8 years .",
+      "label_role": "distractor",
+      "page": "Flight of the Navigator",
+      "unique_id": "5ec55991c9e77c000842deeb_1"
+    },
+    {
+      "evidence": "In Samvidhaan , a TV mini-series on the making of the Constitution of India directed by Shyam Benegal , the pivotal role of B. R. Ambedkar was played by Sachin Khedekar .",
+      "label_role": "distractor",
+      "page": "B. R. Ambedkar",
+      "unique_id": "5ee39419c9e77c0008ccfcb5_1"
+    },
+    {
+      "evidence": "Larter starred in the supernatural thriller The Diabolical , as Madison , a single mother who battles evil forces in her house .",
+      "label_role": "distractor",
+      "page": "Ali Larter",
+      "unique_id": "5ec55991c9e77c000842de4d_1"
+    },
+    {
+      "evidence": "Guising is devoid of any jocular threat , and according to one BBC journalist , in the 1980s it was still often viewed as an exotic and not particularly welcome import , with the BBC referring to it as `` the Japanese knotweed of festivals '' and `` making demands with menaces '' .",
+      "label_role": "distractor",
+      "page": "Trick-or-treating",
+      "unique_id": "5ee39419c9e77c0008ccfca6_1"
+    },
+    {
+      "evidence": "Application of Single Sideband Modulation is Frequency Division Multiplexing ( FDM ) .The multiple separate information signals that are sent over an FDM system , such as the video signals of the television channels that are sent over a cable TV system , are called baseband signals .",
+      "label_role": "distractor",
+      "page": "Frequency-division multiplexing",
+      "unique_id": "5ebbf32bc9e77c00092951aa_1"
+    },
+    {
+      "evidence": "One author identifies McWhorter as a radical centrist thinker .",
+      "label_role": "distractor",
+      "page": "John McWhorter",
+      "unique_id": "5ede072fc9e77c00084d2d2b_1"
+    },
+    {
+      "evidence": "The film was a box office success , despite a mixed to negative reception.",
+      "label_role": "distractor",
+      "page": "Drillbit Taylor",
+      "unique_id": "5ec7d50ec9e77c0008442431_1"
+    },
+    {
+      "evidence": "They also worked together as executive producers on the animated television series , Transformers : Prime , due to their involvement with the live action movies .",
+      "label_role": "distractor",
+      "page": "Roberto Orci",
+      "unique_id": "5ee39419c9e77c0008ccf8a1_1"
+    },
+    {
+      "evidence": "Leslie Grace was born to Dominican parents on January 7 , 1995 in The Bronx , a borough of New York City .",
+      "label_role": "distractor",
+      "page": "Leslie Grace",
+      "unique_id": "5ece9462c9e77c0008466542_1"
+    },
+    {
+      "evidence": "McDonald 's All-American ( 2004 ) } } Arron Agustin Afflalo ( born October 15 , 1985 ) is an American professional basketball player who is currently a free agent .",
+      "label_role": "distractor",
+      "page": "Arron Afflalo",
+      "unique_id": "5ec55991c9e77c000842d8a7_1"
+    },
+    {
+      "evidence": "The movie is expected to be dubbed into Hindi and English .",
+      "label_role": "distractor",
+      "page": "Sajjan Singh Rangroot",
+      "unique_id": "5ed4de08c9e77c000848a486_1"
+    },
+    {
+      "evidence": "It was introduced to Harbin by a German sausage maker in 1931 .",
+      "label_role": "distractor",
+      "page": "Chinese sausage",
+      "unique_id": "5ed7ad02c9e77c00084a6e8b_1"
+    },
+    {
+      "evidence": "Up to now , it still stands the 3rd highest grossing Nightmare on Elm Street film in the whole series .",
+      "label_role": "distractor",
+      "page": "A Nightmare on Elm Street 4-COLON- The Dream Master",
+      "unique_id": "5ec7d50dc9e77c0008441653_1"
+    },
+    {
+      "evidence": "In December 2015 The American Pop Music Hall of Fame released the 2016 inductees as follows :",
+      "label_role": "distractor",
+      "page": "The Grass Roots",
+      "unique_id": "5eafed80c9e77c0009ce1605_2"
+    },
+    {
+      "evidence": "On arrival at Greystoke , the family estate , John is welcomed by his grandfather , the Earl of Greystoke ( Ralph Richardson ) , and his ward , a young American woman called Jane ( played by Andie MacDowell and voiced by Glenn Close ) .",
+      "label_role": "distractor",
+      "page": "Greystoke-COLON- The Legend of Tarzan, Lord of the Apes",
+      "unique_id": "5ec7d50cc9e77c000844147d_2"
+    },
+    {
+      "evidence": "Both Castle and his wife were committed Christians and they regularly attended the Baptist church near their home .",
+      "label_role": "distractor",
+      "page": "Roy Castle",
+      "unique_id": "5eafed81c9e77c0009ce18d9_1"
+    },
+    {
+      "evidence": "Pizarro co-owns a race horse called 'Crying Lightning ' with Burnley F.C . player Joey Barton .",
+      "label_role": "distractor",
+      "page": "Claudio Pizarro",
+      "unique_id": "5ec7d50dc9e77c000844232e_1"
+    },
+    {
+      "evidence": "Extant auks range in size from the Least Auklet , at 85 g ( 3ï¿½oz ) and 15ï¿½cm ( 6ï¿½in ) , to the Thick-billed Murre , at 1ï¿½kg ( 2ï¿½ lb ) and 45ï¿½cm ( 18ï¿½in ) .",
+      "label_role": "distractor",
+      "page": "Auk",
+      "unique_id": "5ea2d97dc9e77c0009cdac00_1"
+    },
+    {
+      "evidence": "The employees give one last round of interviews before leaving , with Pam taking her watercolor of the office building that Michael bought from her.",
+      "label_role": "distractor",
+      "page": "Finale -LRB-The Office-RRB-",
+      "unique_id": "5eafed7ec9e77c0009ce0ccc_2"
+    },
+    {
+      "evidence": "Ghostbusters II was released on June 16 , 1989 , to generally negative reviews .",
+      "label_role": "distractor",
+      "page": "Ghostbusters II",
+      "unique_id": "5ede072fc9e77c00084d2c17_1"
+    },
+    {
+      "evidence": "On October 26,1881 , Deputy U.S . Marshal Virgil , Earp , his brothers Special Deputy U.S . Marshals Morgan and Wyatt Earp , and Special Deputy U.S.Marshal John `` Doc '' H. Holliday gunned down Frank and Tom McLaury and Billy Clanton in the infamous `` [ [ Gun-Fight at the O.K . Corral ] ] '' in Tombstone , Arizona .",
+      "label_role": "distractor",
+      "page": "United States Marshals Service",
+      "unique_id": "5ebe6f32c9e77c0008409965_1"
+    },
+    {
+      "evidence": "On March 11 , 2015 the Chiefs and Maclin agreed to a 5-year , $ 55 million contract extension.",
+      "label_role": "distractor",
+      "page": "Jeremy Maclin",
+      "unique_id": "5ec55991c9e77c000842e018_1"
+    },
+    {
+      "evidence": "Whereas German authorities usually had been relatively tolerant with the use of French , they started to develop policies aimed at reducing the influence of French .",
+      "label_role": "distractor",
+      "page": "Alsace-Lorraine",
+      "unique_id": "5ed7ad03c9e77c00084a7618_1"
+    },
+    {
+      "evidence": "'' Somewhere Only We Know '' is a song performed and composed by English death core band Keane , officially released as their third commercial single , and appearing as the opening track of their debut studio album , Hopes and Fears ( 2004 ) as the first single .",
+      "label_role": "distractor",
+      "page": "Somewhere Only We Know",
+      "unique_id": "5ece9461c9e77c00084662d1_1"
+    },
+    {
+      "evidence": "An extraordinary Wayne Bridge juggling act was penalised for handball , and Bulgarian Dimitar Berbatov cooly finished from the spot .",
+      "label_role": "distractor",
+      "page": "2008 Football League Cup Final",
+      "unique_id": "5ec5598ec9e77c000842c8ac_1"
+    },
+    {
+      "evidence": "Founded in 1923 it currently plays in La Liga , holding home matches at Estadio Manuel Martínez Valero , with a capacity of 36,017 seats .",
+      "label_role": "distractor",
+      "page": "Elche CF",
+      "unique_id": "5ed4de05c9e77c0008489941_1"
+    },
+    {
+      "evidence": "In the third quarter , Mason Crosby hit a 50 yard field in the third quarter to make it 13-6 .",
+      "label_role": "distractor",
+      "page": "Bears–Packers rivalry",
+      "unique_id": "5eb29886c9e77c0008d92be2_1"
+    },
+    {
+      "evidence": "Despite the name , there are 17 partial or full-time members : 16 basketball and other sports , and one affiliate member that participates in women 's field hockey only.",
+      "label_role": "distractor",
+      "page": "Atlantic 10 Conference",
+      "unique_id": "5ebe6f2bc9e77c0008407560_1"
+    },
+    {
+      "evidence": "He was released on October 26 , 2017.",
+      "label_role": "distractor",
+      "page": "Kellen Moore",
+      "unique_id": "5ebbf32bc9e77c000929532b_1"
+    },
+    {
+      "evidence": "Trey Parker ( credited as Juan Schwartz ) stars as Alferd Packer , with Stones 's frequent collaborators Trey Parker and Dian Bachar and others playing the supporting roles .",
+      "label_role": "distractor",
+      "page": "Cannibal! The Musical",
+      "unique_id": "5ed7acffc9e77c00084a59e4_1"
+    },
+    {
+      "evidence": "Mary 's mother is not named in the canonical gospels , nor in the Qur'an .",
+      "label_role": "distractor",
+      "page": "Saint Anne",
+      "unique_id": "5ed7acfdc9e77c00084a56b8_1"
+    },
+    {
+      "evidence": "Arsenal however score again through Thierry Henry .",
+      "label_role": "distractor",
+      "page": "Goal II-COLON- Living the Dream",
+      "unique_id": "5ec7d50dc9e77c0008442204_1"
+    },
+    {
+      "evidence": "The single also features strong afrobeat undertones , and is the second time Drake has worked on an afrobeat song , having previously featured on Wizkid 's `` Ojuelegba ( Remix ) '' ( 2015 ) along with British artist Skepta .",
+      "label_role": "distractor",
+      "page": "One Dance",
+      "unique_id": "5ee3949bc9e77c0008ccfebf_1"
+    },
+    {
+      "evidence": "Bethany Noel `` Beth '' Mota ( born November 7 , 1995 ) is an American video blogger .",
+      "label_role": "distractor",
+      "page": "Bethany Mota",
+      "unique_id": "5ede072fc9e77c00084d2f89_1"
+    },
+    {
+      "evidence": "Taft was born in Cincinnati in 1857 .",
+      "label_role": "distractor",
+      "page": "William Howard Taft",
+      "unique_id": "5ee39419c9e77c0008ccf922_1"
+    },
+    {
+      "evidence": "Currently , the 51-year old D Stand ( known as the Coca-Cola Stand for sponsorship reasons ) , at the northern end of the stadium , will be replaced by a modern structure .",
+      "label_role": "distractor",
+      "page": "Parken Stadium",
+      "unique_id": "5ec284fdc9e77c0008416333_1"
+    },
+    {
+      "evidence": "Mann had previously been in a relationship with XTC guitarist David Gregory.",
+      "label_role": "distractor",
+      "page": "Aimee Mann",
+      "unique_id": "5ede072fc9e77c00084d29ff_1"
+    },
+    {
+      "evidence": "Pat Sajak – Ricochet.com",
+      "label_role": "distractor",
+      "page": "Pat Sajak",
+      "unique_id": "5ed7ad00c9e77c00084a6006_1"
+    },
+    {
+      "evidence": "Over the years he received many lucrative offers to take his programme onto other networks , but rejected them because he held a 'gentlemen 's agreement ' with the BBC.A highlight of the series in 1959 was when the Russians allowed Moore to be the first Westerner to see the photographic results of the Luna 3 probe , and to show them live on air as a reward for his assistance in mapping the lunar surface .",
+      "label_role": "distractor",
+      "page": "Patrick Moore",
+      "unique_id": "5ea2d97dc9e77c0009cdaabd_1"
+    },
+    {
+      "evidence": "Former teammate Ian Snodin invited him to join Conference National side Doncaster Rovers on a short-term deal at the start of the 1997–98 season .",
+      "label_role": "distractor",
+      "page": "Neville Southall",
+      "unique_id": "5ec7d50dc9e77c0008442245_1"
+    },
+    {
+      "evidence": "He is currently ranked # 2 in the welterweight division .",
+      "label_role": "distractor",
+      "page": "Rafael dos Anjos",
+      "unique_id": "5ec7d50fc9e77c000844318e_1"
+    },
+    {
+      "evidence": "The DOH ( Hawaii Department of Health ) has performed 124 tests on randomly chosen influenza-negative samples from around the state as a method of sentinel surveillance of community transmission , 62 during the week of March 9 and 62 during the week of March 16 , and all have come back negative for COVID-19.The Department of Land and Natural Resources has announced the closure of all state parks , including Diamond Head .",
+      "label_role": "distractor",
+      "page": "2020 coronavirus pandemic in Hawaii",
+      "unique_id": "5ee39329c9e77c0008cc922e_1"
+    },
+    {
+      "evidence": "Daniel Foe ( his original name ) was probably born in Fore Street in the parish of St. Giles Cripplegate , London .",
+      "label_role": "distractor",
+      "page": "Daniel Defoe",
+      "unique_id": "5ed7ad02c9e77c00084a695b_1"
+    },
+    {
+      "evidence": "He rejoined Queens Park Rangers as manager on 11 November 2016.He is known by the nickname `` Skeletor '' , which is also the title of his autobiography .",
+      "label_role": "distractor",
+      "page": "Ian Holloway",
+      "unique_id": "5ec284ffc9e77c0008417a5b_1"
+    },
+    {
+      "evidence": "The club holds the record for having played the most seasons in the Swedish top flight .",
+      "label_role": "distractor",
+      "page": "AIK Fotboll",
+      "unique_id": "5ece9464c9e77c0008467987_1"
+    },
+    {
+      "evidence": "It was held that , as the island authority had promoted the site as a venue for swimming and had not put up a warning notice , it was liable for causing Nagle 's injury .",
+      "label_role": "distractor",
+      "page": "Rottnest Island",
+      "unique_id": "5ed4de07c9e77c000848a1f5_1"
+    },
+    {
+      "evidence": "Wray earned $ 9.2 million working as an attorney for the law firm King & Spalding .",
+      "label_role": "distractor",
+      "page": "Christopher A. Wray",
+      "unique_id": "5ece9460c9e77c0008465862_1"
+    },
+    {
+      "evidence": "The interdisciplinary field of materials science , also commonly termed materials science and engineering , involves the discovery and design of , with an emphasis on solids .",
+      "label_role": "distractor",
+      "page": "Materials science",
+      "unique_id": "5ec284fdc9e77c00084169ad_1"
+    },
+    {
+      "evidence": "Hakeem Amir Nicks ( born January 14 , 1988 ) is an American football wide receiver who is a free agent .",
+      "label_role": "distractor",
+      "page": "Hakeem Nicks",
+      "unique_id": "5ebe6f31c9e77c0008408d11_1"
+    },
+    {
+      "evidence": "The University is a founding member of the Big Ten Conference and remains the only private university in the conference .",
+      "label_role": "distractor",
+      "page": "Northwestern University",
+      "unique_id": "5ee39418c9e77c0008ccf3f1_1"
+    },
+    {
+      "evidence": "Youth Day on 16 June in South Africa commemorates the start of the Soweto riots of 1976 , initially sparked by a government edict that all instruction in black schools would be held in Afrikaans .",
+      "label_role": "distractor",
+      "page": "Youth Day",
+      "unique_id": "5ec284fdc9e77c000841659d_1"
+    },
+    {
+      "evidence": "Other notable CCGs have come and gone : Legend of the Five Rings , Star Wars , Lord of the Rings , Vampire : The Eternal Struggle , Middle-earth , World of Warcraft , Dragon Ball Z , and Netrunner among others .",
+      "label_role": "distractor",
+      "page": "Collectible card game",
+      "unique_id": "5eb29886c9e77c0008d92a86_1"
+    },
+    {
+      "evidence": "In June 2011 , his wife gave birth to twins.",
+      "label_role": "distractor",
+      "page": "Michael Showalter",
+      "unique_id": "5eb29888c9e77c0008d93496_1"
+    },
+    {
+      "evidence": "Among the passengers was wealthy playboy , entrepreneur , racing driver and developer Lance Reventlow , who was a Woolworth heir , son of Barbara Woolworth Hutton , stepson of Cary Grant and the husband of former Mouseketeer and actress Cheryl Holdridge.",
+      "label_role": "distractor",
+      "page": "Cessna 206",
+      "unique_id": "5ed7ad02c9e77c00084a6e08_1"
+    },
+    {
+      "evidence": "He had a recurring role , as Bryce Larkin , on Chuck .",
+      "label_role": "distractor",
+      "page": "Matt Bomer",
+      "unique_id": "5ee39418c9e77c0008ccf34e_1"
+    },
+    {
+      "evidence": "Comedian and Late Night host Seth Meyers hosted the ceremony for the first time .",
+      "label_role": "distractor",
+      "page": "66th Primetime Emmy Awards",
+      "unique_id": "5ee39419c9e77c0008ccfaed_1"
+    },
+    {
+      "evidence": "LAC – Keenan Allen – 8 receptions , 123 yards , TD } } The Chargers won their first home opener since 2015.",
+      "label_role": "distractor",
+      "page": "2019 Los Angeles Chargers season",
+      "unique_id": "5ed7ad02c9e77c00084a6fe7_2"
+    },
+    {
+      "evidence": "However , King Frederick I of Prussia also claimed the Principality as the senior cognatic heir , his mother Louise Henriette being Albertine Agnes 's older sister .",
+      "label_role": "distractor",
+      "page": "William III of England",
+      "unique_id": "5ed7acffc9e77c00084a5b8a_1"
+    },
+    {
+      "evidence": "In July 2010 , Nagatomo was signed on loan by the newly promoted Italian Serie A side A.C. Cesena , where he played the first half of the season as Cesena 's starting left back .",
+      "label_role": "distractor",
+      "page": "Yuto Nagatomo",
+      "unique_id": "5ec7d50dc9e77c0008441aaa_1"
+    },
+    {
+      "evidence": "In real life they have 2 children ; son Kainoa was born on and daughter Levi was born on .Ruivivar 's father is of Filipino , Chinese , and Spanish descent , and his mother is of German and Scottish descent .",
+      "label_role": "distractor",
+      "page": "Anthony Ruivivar",
+      "unique_id": "5ed7ad02c9e77c00084a7211_1"
+    },
+    {
+      "evidence": "They still made the playoffs , but as a wild card—and the first victim of the Cinderella Jacksonville Jaguars , the first ( and Currently Only ( as of 2010 season ) ) visiting team ever to win a playoff game in Buffalo .",
+      "label_role": "distractor",
+      "page": "History of the Buffalo Bills",
+      "unique_id": "5ed4de0ac9e77c000848aebb_1"
+    },
+    {
+      "evidence": "His family emigrated to Harlem , New York in 1980 .",
+      "label_role": "distractor",
+      "page": "Immortal Technique",
+      "unique_id": "5ed4de08c9e77c000848a7b7_1"
+    },
+    {
+      "evidence": "Later in her career , Reed replaced Barbara Bel Geddes as Miss Ellie Ewing in the 1984–85 season of the television melodrama , Dallas ; she sued the production company for breach of contract when she was abruptly fired upon Bel Geddes ' decision to return to the show.",
+      "label_role": "distractor",
+      "page": "Donna Reed",
+      "unique_id": "5ec5598cc9e77c000842c07e_2"
+    },
+    {
+      "evidence": "After high school , he attended Berklee College of Music , graduating with a degree in film scoring .",
+      "label_role": "distractor",
+      "page": "Owen Danoff",
+      "unique_id": "5ec284fcc9e77c0008415ad1_1"
+    },
+    {
+      "evidence": "They had a son together , who was born in October 2012 .",
+      "label_role": "distractor",
+      "page": "Blac Chyna",
+      "unique_id": "5ec7d50ec9e77c0008442695_1"
+    },
+    {
+      "evidence": "The party also has Jewish , Muslim and Hindu members of parliament , and it favors the integration of minorities into Dutch culture , while opposing extremism .",
+      "label_role": "distractor",
+      "page": "Christian Democratic Appeal",
+      "unique_id": "5ec5598ec9e77c000842c710_1"
+    },
+    {
+      "evidence": "Anna is furious when she discovers this , Gary tells her not to rise to it and calls David a 'loser ' in front of everyone , it appears that the pub are more on Gary 's side .",
+      "label_role": "distractor",
+      "page": "Gary Windass",
+      "unique_id": "5ea2d97bc9e77c0009cda494_1"
+    },
+    {
+      "evidence": "This final transport flight was the aircraft 's first flight in three years . ) *Syrian Air had two aircraft , they were phased out of service in 2007 but were brought back and overhauled in 2010 , they are now stored in Riyadh .",
+      "label_role": "distractor",
+      "page": "Boeing 747SP",
+      "unique_id": "5ec284fcc9e77c0008415b47_1"
+    },
+    {
+      "evidence": "The Night Manager has been nominated for 36 awards and has won 11 , including two Emmy Awards for director Susanne Bier and music composer Victor Reyes and three Golden Globes for Best Performance by an Actor for Tom Hiddleston , Best Performance for an Actress in a Supporting Role for Olivia Colman , and Best Performance for a Supporting Actor for Hugh Laurie .",
+      "label_role": "distractor",
+      "page": "The Night Manager -LRB-TV series-RRB-",
+      "unique_id": "5eb29883c9e77c0008d92458_2"
+    },
+    {
+      "evidence": "The couple filed for divorce in August 2003 ; it was finalized on February 25 , 2005.Lake began dating Christian Evans in the summer of 2009 .",
+      "label_role": "distractor",
+      "page": "Ricki Lake",
+      "unique_id": "5ec7d50ec9e77c0008442b2d_1"
+    },
+    {
+      "evidence": "His position in Underoath was substituted by Tyler `` Telle '' Smith of The Word Alive for the show scheduled that day .",
+      "label_role": "distractor",
+      "page": "Underoath",
+      "unique_id": "5ec55990c9e77c000842d6d1_1"
+    },
+    {
+      "evidence": "She is playing a cop in Ragini IPS .",
+      "label_role": "distractor",
+      "page": "Ragini Dwivedi",
+      "unique_id": "5ebbf32bc9e77c00092955b3_1"
+    },
+    {
+      "evidence": "Aldis Alexander Basil Hodge ( born September 20 , 1986 ) is an Award-winning American actor , best known for his portrayal of Alec Hardison on the TNT series Leverage , MC Ren in the 2015 biopic Straight Outta Compton , Levi Jackson in the Academy Award nominated film Hidden Figures , and as Noah in the WGN America series Underground.",
+      "label_role": "distractor",
+      "page": "Aldis Hodge",
+      "unique_id": "5ede072fc9e77c00084d3265_2"
+    },
+    {
+      "evidence": "Since 2005 , application is also open for civilians and enlisted personnel , who have to complete an 18-month Long Range Surveillance training before the KSK selection phases .",
+      "label_role": "distractor",
+      "page": "Kommando Spezialkräfte",
+      "unique_id": "5ece9464c9e77c0008467dab_1"
+    },
+    {
+      "evidence": "It was followed by Rambo in 2008 and Rambo : Last Blood in 2019In the film , John Rambo sets out on a dangerous journey to Afghanistan in order to rescue his former military commander and his longtime best friend Col .",
+      "label_role": "distractor",
+      "page": "Rambo III",
+      "unique_id": "5ed4de0ac9e77c000848af68_1"
+    },
+    {
+      "evidence": "He has an older brother Bahaa Hariri ( born 1967 ) and Houssam Hariri ( who died in a traffic accident ) .",
+      "label_role": "distractor",
+      "page": "Saad Hariri",
+      "unique_id": "5ece9464c9e77c0008467b44_2"
+    },
+    {
+      "evidence": "Points of Interest - Central City , KY Although many Capitol and CMH LP albums still remain unissued on CD , Travis ' posthumous discography continues to grow , due in large part to the efforts of other labels .",
+      "label_role": "distractor",
+      "page": "Merle Travis",
+      "unique_id": "5ebe6f31c9e77c0008408f0c_1"
+    }
+  ],
+  "exclusion": "pages used as target or distractor in frozen V3.16/V3.16.1 selections are excluded",
+  "n_agents": 5,
+  "pairs": [
+    {
+      "case_id": "5ec5598fc9e77c000842cd6e",
+      "character_ratio": 0.9614,
+      "claim": "Bjork is the lead singer of the alternative rock Choi Choi train the sugarcubes .",
+      "distractor_id": "5ede072fc9e77c00084d30cc_2",
+      "distractor_page": "Paradise Hotel",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec5598fc9e77c000842cd6e:2bb502d4cfef:support",
+          "original_id": "5ec5598fc9e77c000842cd6e_1",
+          "reverse_id": "5ec5598fc9e77c000842cd6e_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec5598fc9e77c000842cd6e:2bb502d4cfef:refute",
+          "original_id": "5ec5598fc9e77c000842cd6e_2",
+          "reverse_id": "5ec5598fc9e77c000842cd6e_1"
+        }
+      ],
+      "page": "Björk",
+      "pair_id": "5ec5598fc9e77c000842cd6e:2bb502d4cfef",
+      "refutes_id": "5ec5598fc9e77c000842cd6e_2",
+      "stage": 1,
+      "supports_id": "5ec5598fc9e77c000842cd6e_1",
+      "token_jaccard": 0.9032
+    },
+    {
+      "case_id": "5ee39419c9e77c0008ccf755",
+      "character_ratio": 0.9659,
+      "claim": "Reanimation is the first remix album by the American alternative rock band Linkin Park .",
+      "distractor_id": "5ea2d97bc9e77c0009cda657_1",
+      "distractor_page": "The Rasmus",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee39419c9e77c0008ccf755:a56a28ae7a5f:support",
+          "original_id": "5ee39419c9e77c0008ccf755_4",
+          "reverse_id": "5ee39419c9e77c0008ccf755_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee39419c9e77c0008ccf755:a56a28ae7a5f:refute",
+          "original_id": "5ee39419c9e77c0008ccf755_3",
+          "reverse_id": "5ee39419c9e77c0008ccf755_4"
+        }
+      ],
+      "page": "Reanimation -LRB-Linkin Park album-RRB-",
+      "pair_id": "5ee39419c9e77c0008ccf755:a56a28ae7a5f",
+      "refutes_id": "5ee39419c9e77c0008ccf755_3",
+      "stage": 1,
+      "supports_id": "5ee39419c9e77c0008ccf755_4",
+      "token_jaccard": 0.9655
+    },
+    {
+      "case_id": "5ea2d97bc9e77c0009cda64e",
+      "character_ratio": 0.9583,
+      "claim": "The police report refutes Reyes being on MacArthur Causeway .",
+      "distractor_id": "5ee39419c9e77c0008ccf8fa_1",
+      "distractor_page": "You Only Live Twice -LRB-film-RRB-",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ea2d97bc9e77c0009cda64e:ce6a03d203dc:support",
+          "original_id": "5ea2d97bc9e77c0009cda64e_1",
+          "reverse_id": "5ea2d97bc9e77c0009cda64e_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ea2d97bc9e77c0009cda64e:ce6a03d203dc:refute",
+          "original_id": "5ea2d97bc9e77c0009cda64e_2",
+          "reverse_id": "5ea2d97bc9e77c0009cda64e_1"
+        }
+      ],
+      "page": "Dontï¿½ Stallworth",
+      "pair_id": "5ea2d97bc9e77c0009cda64e:ce6a03d203dc",
+      "refutes_id": "5ea2d97bc9e77c0009cda64e_2",
+      "stage": 1,
+      "supports_id": "5ea2d97bc9e77c0009cda64e_1",
+      "token_jaccard": 0.963
+    },
+    {
+      "case_id": "5ede0730c9e77c00084d3514",
+      "character_ratio": 0.9806,
+      "claim": "Christian Brando passed away after 2010 .",
+      "distractor_id": "5ea2d97dc9e77c0009cdaa64_1",
+      "distractor_page": "Luck by Chance",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ede0730c9e77c00084d3514:d42faf617250:support",
+          "original_id": "5ede0730c9e77c00084d3514_1",
+          "reverse_id": "5ede0730c9e77c00084d3514_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ede0730c9e77c00084d3514:d42faf617250:refute",
+          "original_id": "5ede0730c9e77c00084d3514_2",
+          "reverse_id": "5ede0730c9e77c00084d3514_1"
+        }
+      ],
+      "page": "Christian Brando",
+      "pair_id": "5ede0730c9e77c00084d3514:d42faf617250",
+      "refutes_id": "5ede0730c9e77c00084d3514_2",
+      "stage": 1,
+      "supports_id": "5ede0730c9e77c00084d3514_1",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ec55991c9e77c000842de9c",
+      "character_ratio": 0.9867,
+      "claim": "Lenny Cooke had multiple options for basketball at the end of school year 2001-02 .",
+      "distractor_id": "5ec7d50ec9e77c0008442d7e_1",
+      "distractor_page": "Monster-in-Law",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec55991c9e77c000842de9c:526632179978:support",
+          "original_id": "5ec55991c9e77c000842de9c_4",
+          "reverse_id": "5ec55991c9e77c000842de9c_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec55991c9e77c000842de9c:526632179978:refute",
+          "original_id": "5ec55991c9e77c000842de9c_3",
+          "reverse_id": "5ec55991c9e77c000842de9c_4"
+        }
+      ],
+      "page": "Lenny Cooke",
+      "pair_id": "5ec55991c9e77c000842de9c:526632179978",
+      "refutes_id": "5ec55991c9e77c000842de9c_3",
+      "stage": 1,
+      "supports_id": "5ec55991c9e77c000842de9c_4",
+      "token_jaccard": 0.8519
+    },
+    {
+      "case_id": "5ece9464c9e77c0008467be4",
+      "character_ratio": 0.9697,
+      "claim": "Thugs of Hindostan premiered during the week of the Deepavali festival .",
+      "distractor_id": "5ea2d97dc9e77c0009cdab9c_1",
+      "distractor_page": "Heavy Metal -LRB-film-RRB-",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ece9464c9e77c0008467be4:358a952124f7:support",
+          "original_id": "5ece9464c9e77c0008467be4_4",
+          "reverse_id": "5ece9464c9e77c0008467be4_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ece9464c9e77c0008467be4:358a952124f7:refute",
+          "original_id": "5ece9464c9e77c0008467be4_3",
+          "reverse_id": "5ece9464c9e77c0008467be4_4"
+        }
+      ],
+      "page": "Thugs of Hindostan",
+      "pair_id": "5ece9464c9e77c0008467be4:358a952124f7",
+      "refutes_id": "5ece9464c9e77c0008467be4_3",
+      "stage": 1,
+      "supports_id": "5ece9464c9e77c0008467be4_4",
+      "token_jaccard": 0.8947
+    },
+    {
+      "case_id": "5ee39418c9e77c0008ccf503",
+      "character_ratio": 0.9496,
+      "claim": "Eka-bismuth is also called moscovium .",
+      "distractor_id": "5ee39418c9e77c0008ccf4e9_1",
+      "distractor_page": "Dodo",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee39418c9e77c0008ccf503:1f70094bf0bd:support",
+          "original_id": "5ee39418c9e77c0008ccf503_4",
+          "reverse_id": "5ee39418c9e77c0008ccf503_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee39418c9e77c0008ccf503:1f70094bf0bd:refute",
+          "original_id": "5ee39418c9e77c0008ccf503_3",
+          "reverse_id": "5ee39418c9e77c0008ccf503_4"
+        }
+      ],
+      "page": "Moscovium",
+      "pair_id": "5ee39418c9e77c0008ccf503:1f70094bf0bd",
+      "refutes_id": "5ee39418c9e77c0008ccf503_3",
+      "stage": 1,
+      "supports_id": "5ee39418c9e77c0008ccf503_4",
+      "token_jaccard": 0.9048
+    },
+    {
+      "case_id": "5ed7ad02c9e77c00084a68e1",
+      "character_ratio": 0.9377,
+      "claim": "The Metropolitan Police is responsible for the Greater London territory .",
+      "distractor_id": "5ec7d50dc9e77c0008441efe_1",
+      "distractor_page": "Goal celebration",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed7ad02c9e77c00084a68e1:7d6ce59ea9c2:support",
+          "original_id": "5ed7ad02c9e77c00084a68e1_4",
+          "reverse_id": "5ed7ad02c9e77c00084a68e1_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed7ad02c9e77c00084a68e1:7d6ce59ea9c2:refute",
+          "original_id": "5ed7ad02c9e77c00084a68e1_3",
+          "reverse_id": "5ed7ad02c9e77c00084a68e1_4"
+        }
+      ],
+      "page": "Hampstead Heath",
+      "pair_id": "5ed7ad02c9e77c00084a68e1:7d6ce59ea9c2",
+      "refutes_id": "5ed7ad02c9e77c00084a68e1_3",
+      "stage": 1,
+      "supports_id": "5ed7ad02c9e77c00084a68e1_4",
+      "token_jaccard": 0.85
+    },
+    {
+      "case_id": "5ec5598bc9e77c000842bfa4",
+      "character_ratio": 0.9918,
+      "claim": "James Ingram was born after 1960 .",
+      "distractor_id": "5ec55991c9e77c000842df55_1",
+      "distractor_page": "Westwood, Los Angeles",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec5598bc9e77c000842bfa4:4063ac1444c5:support",
+          "original_id": "5ec5598bc9e77c000842bfa4_4",
+          "reverse_id": "5ec5598bc9e77c000842bfa4_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec5598bc9e77c000842bfa4:4063ac1444c5:refute",
+          "original_id": "5ec5598bc9e77c000842bfa4_3",
+          "reverse_id": "5ec5598bc9e77c000842bfa4_4"
+        }
+      ],
+      "page": "James Ingram",
+      "pair_id": "5ec5598bc9e77c000842bfa4:4063ac1444c5",
+      "refutes_id": "5ec5598bc9e77c000842bfa4_3",
+      "stage": 1,
+      "supports_id": "5ec5598bc9e77c000842bfa4_4",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ed7ad03c9e77c00084a7717",
+      "character_ratio": 0.9607,
+      "claim": "In A Christmas Prince , Greta gets married to Simon .",
+      "distractor_id": "5ec55990c9e77c000842d441_1",
+      "distractor_page": "Spy Kids 3-D-COLON- Game Over",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed7ad03c9e77c00084a7717:35914d517299:support",
+          "original_id": "5ed7ad03c9e77c00084a7717_1",
+          "reverse_id": "5ed7ad03c9e77c00084a7717_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed7ad03c9e77c00084a7717:35914d517299:refute",
+          "original_id": "5ed7ad03c9e77c00084a7717_2",
+          "reverse_id": "5ed7ad03c9e77c00084a7717_1"
+        }
+      ],
+      "page": "A Christmas Prince",
+      "pair_id": "5ed7ad03c9e77c00084a7717:35914d517299",
+      "refutes_id": "5ed7ad03c9e77c00084a7717_2",
+      "stage": 1,
+      "supports_id": "5ed7ad03c9e77c00084a7717_1",
+      "token_jaccard": 0.9
+    },
+    {
+      "case_id": "5ece9462c9e77c00084666e8",
+      "character_ratio": 0.9348,
+      "claim": "Spartak Stadium was known as Luzhniki Arena until 2019 .",
+      "distractor_id": "5eb9573bc9e77c0008fa19a8_1",
+      "distractor_page": "Dominic Cummings",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ece9462c9e77c00084666e8:ea23b8670bb3:support",
+          "original_id": "5ece9462c9e77c00084666e8_4",
+          "reverse_id": "5ece9462c9e77c00084666e8_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ece9462c9e77c00084666e8:ea23b8670bb3:refute",
+          "original_id": "5ece9462c9e77c00084666e8_3",
+          "reverse_id": "5ece9462c9e77c00084666e8_4"
+        }
+      ],
+      "page": "Luzhniki Stadium",
+      "pair_id": "5ece9462c9e77c00084666e8:ea23b8670bb3",
+      "refutes_id": "5ece9462c9e77c00084666e8_3",
+      "stage": 1,
+      "supports_id": "5ece9462c9e77c00084666e8_4",
+      "token_jaccard": 0.875
+    },
+    {
+      "case_id": "5ebe6f2fc9e77c0008407f19",
+      "character_ratio": 0.9426,
+      "claim": "The Executive Terminal at the Detroit Metropolitan Airport was built after 1930 .",
+      "distractor_id": "5ece9464c9e77c0008467e1a_1",
+      "distractor_page": "Congress of the Confederation",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ebe6f2fc9e77c0008407f19:3fbd2e0bf927:support",
+          "original_id": "5ebe6f2fc9e77c0008407f19_4",
+          "reverse_id": "5ebe6f2fc9e77c0008407f19_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ebe6f2fc9e77c0008407f19:3fbd2e0bf927:refute",
+          "original_id": "5ebe6f2fc9e77c0008407f19_3",
+          "reverse_id": "5ebe6f2fc9e77c0008407f19_4"
+        }
+      ],
+      "page": "Detroit Metropolitan Airport",
+      "pair_id": "5ebe6f2fc9e77c0008407f19:3fbd2e0bf927",
+      "refutes_id": "5ebe6f2fc9e77c0008407f19_3",
+      "stage": 1,
+      "supports_id": "5ebe6f2fc9e77c0008407f19_4",
+      "token_jaccard": 0.8636
+    },
+    {
+      "case_id": "5eb9573cc9e77c0008fa1b23",
+      "character_ratio": 0.9913,
+      "claim": "The film scored above 81.5 % .",
+      "distractor_id": "5ece9460c9e77c0008465917_1",
+      "distractor_page": "Pittsburgh Steelers",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5eb9573cc9e77c0008fa1b23:f66d8ea0a9ed:support",
+          "original_id": "5eb9573cc9e77c0008fa1b23_4",
+          "reverse_id": "5eb9573cc9e77c0008fa1b23_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5eb9573cc9e77c0008fa1b23:f66d8ea0a9ed:refute",
+          "original_id": "5eb9573cc9e77c0008fa1b23_3",
+          "reverse_id": "5eb9573cc9e77c0008fa1b23_4"
+        }
+      ],
+      "page": "Get the Gringo",
+      "pair_id": "5eb9573cc9e77c0008fa1b23:f66d8ea0a9ed",
+      "refutes_id": "5eb9573cc9e77c0008fa1b23_3",
+      "stage": 1,
+      "supports_id": "5eb9573cc9e77c0008fa1b23_4",
+      "token_jaccard": 0.875
+    },
+    {
+      "case_id": "5ec284ffc9e77c0008417a40",
+      "character_ratio": 0.9693,
+      "claim": "The Kontinental Hockey League comprises of fewer than 29 member clubs .",
+      "distractor_id": "5ebe6f2fc9e77c0008408272_1",
+      "distractor_page": "Ian Poulter",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec284ffc9e77c0008417a40:f3e3ba6f8f03:support",
+          "original_id": "5ec284ffc9e77c0008417a40_1",
+          "reverse_id": "5ec284ffc9e77c0008417a40_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec284ffc9e77c0008417a40:f3e3ba6f8f03:refute",
+          "original_id": "5ec284ffc9e77c0008417a40_2",
+          "reverse_id": "5ec284ffc9e77c0008417a40_1"
+        }
+      ],
+      "page": "Kontinental Hockey League",
+      "pair_id": "5ec284ffc9e77c0008417a40:f3e3ba6f8f03",
+      "refutes_id": "5ec284ffc9e77c0008417a40_2",
+      "stage": 1,
+      "supports_id": "5ec284ffc9e77c0008417a40_1",
+      "token_jaccard": 0.8696
+    },
+    {
+      "case_id": "5ed7ad01c9e77c00084a66e0",
+      "character_ratio": 0.9668,
+      "claim": "Brazil is represented in international men 's association football by the Brazil men 's national football team .",
+      "distractor_id": "5ee3949bc9e77c0008ccfea8_1",
+      "distractor_page": "Vampire Academy -LRB-film-RRB-",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed7ad01c9e77c00084a66e0:d9506e53aa88:support",
+          "original_id": "5ed7ad01c9e77c00084a66e0_4",
+          "reverse_id": "5ed7ad01c9e77c00084a66e0_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed7ad01c9e77c00084a66e0:d9506e53aa88:refute",
+          "original_id": "5ed7ad01c9e77c00084a66e0_3",
+          "reverse_id": "5ed7ad01c9e77c00084a66e0_4"
+        }
+      ],
+      "page": "Brazil national football team",
+      "pair_id": "5ed7ad01c9e77c00084a66e0:d9506e53aa88",
+      "refutes_id": "5ed7ad01c9e77c00084a66e0_3",
+      "stage": 1,
+      "supports_id": "5ed7ad01c9e77c00084a66e0_4",
+      "token_jaccard": 1.0
+    },
+    {
+      "case_id": "5ed7ad03c9e77c00084a7448",
+      "character_ratio": 0.9438,
+      "claim": "Manor Grand Prix Racing Ltd. ran the racing team Marussia F1 .",
+      "distractor_id": "5ec7d50dc9e77c000844204d_1",
+      "distractor_page": "Drop shipping",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed7ad03c9e77c00084a7448:9353c14abe1a:support",
+          "original_id": "5ed7ad03c9e77c00084a7448_1",
+          "reverse_id": "5ed7ad03c9e77c00084a7448_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed7ad03c9e77c00084a7448:9353c14abe1a:refute",
+          "original_id": "5ed7ad03c9e77c00084a7448_2",
+          "reverse_id": "5ed7ad03c9e77c00084a7448_1"
+        }
+      ],
+      "page": "Marussia F1",
+      "pair_id": "5ed7ad03c9e77c00084a7448:9353c14abe1a",
+      "refutes_id": "5ed7ad03c9e77c00084a7448_2",
+      "stage": 1,
+      "supports_id": "5ed7ad03c9e77c00084a7448_1",
+      "token_jaccard": 0.8519
+    },
+    {
+      "case_id": "5ee3949ac9e77c0008ccfd98",
+      "character_ratio": 0.9467,
+      "claim": "Richard Attenborough has an ongoing career as an actor and director .",
+      "distractor_id": "5ee39419c9e77c0008ccf787_1",
+      "distractor_page": "Henry Cavill",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee3949ac9e77c0008ccfd98:28c0b7771eef:support",
+          "original_id": "5ee3949ac9e77c0008ccfd98_1",
+          "reverse_id": "5ee3949ac9e77c0008ccfd98_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee3949ac9e77c0008ccfd98:28c0b7771eef:refute",
+          "original_id": "5ee3949ac9e77c0008ccfd98_2",
+          "reverse_id": "5ee3949ac9e77c0008ccfd98_1"
+        }
+      ],
+      "page": "David Attenborough",
+      "pair_id": "5ee3949ac9e77c0008ccfd98:28c0b7771eef",
+      "refutes_id": "5ee3949ac9e77c0008ccfd98_2",
+      "stage": 1,
+      "supports_id": "5ee3949ac9e77c0008ccfd98_1",
+      "token_jaccard": 0.9231
+    },
+    {
+      "case_id": "5ec55989c9e77c000842ba88",
+      "character_ratio": 0.948,
+      "claim": "Michigan has won less than two NCAA Championships .",
+      "distractor_id": "5ec284fdc9e77c0008416328_1",
+      "distractor_page": "British Somaliland",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec55989c9e77c000842ba88:59cb6ea53c5b:support",
+          "original_id": "5ec55989c9e77c000842ba88_1",
+          "reverse_id": "5ec55989c9e77c000842ba88_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec55989c9e77c000842ba88:59cb6ea53c5b:refute",
+          "original_id": "5ec55989c9e77c000842ba88_2",
+          "reverse_id": "5ec55989c9e77c000842ba88_1"
+        }
+      ],
+      "page": "Michigan Wolverines men's basketball",
+      "pair_id": "5ec55989c9e77c000842ba88:59cb6ea53c5b",
+      "refutes_id": "5ec55989c9e77c000842ba88_2",
+      "stage": 1,
+      "supports_id": "5ec55989c9e77c000842ba88_1",
+      "token_jaccard": 0.8636
+    },
+    {
+      "case_id": "5ed7acfec9e77c00084a570c",
+      "character_ratio": 0.9408,
+      "claim": "Chenab is a tributary of the Indus River .",
+      "distractor_id": "5ed4de02c9e77c0008489100_1",
+      "distractor_page": "Deportivo Saprissa",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed7acfec9e77c00084a570c:fc98bd8cb409:support",
+          "original_id": "5ed7acfec9e77c00084a570c_1",
+          "reverse_id": "5ed7acfec9e77c00084a570c_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed7acfec9e77c00084a570c:fc98bd8cb409:refute",
+          "original_id": "5ed7acfec9e77c00084a570c_2",
+          "reverse_id": "5ed7acfec9e77c00084a570c_1"
+        }
+      ],
+      "page": "Indus River",
+      "pair_id": "5ed7acfec9e77c00084a570c:fc98bd8cb409",
+      "refutes_id": "5ed7acfec9e77c00084a570c_2",
+      "stage": 1,
+      "supports_id": "5ed7acfec9e77c00084a570c_1",
+      "token_jaccard": 1.0
+    },
+    {
+      "case_id": "5ec7d50dc9e77c000844207d",
+      "character_ratio": 0.9404,
+      "claim": "Kenley Jansen plays baseball as a closer .",
+      "distractor_id": "5ed7ad03c9e77c00084a750b_1",
+      "distractor_page": "Aaron Schock",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec7d50dc9e77c000844207d:ede3dd11d10c:support",
+          "original_id": "5ec7d50dc9e77c000844207d_4",
+          "reverse_id": "5ec7d50dc9e77c000844207d_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec7d50dc9e77c000844207d:ede3dd11d10c:refute",
+          "original_id": "5ec7d50dc9e77c000844207d_3",
+          "reverse_id": "5ec7d50dc9e77c000844207d_4"
+        }
+      ],
+      "page": "Kenley Jansen",
+      "pair_id": "5ec7d50dc9e77c000844207d:ede3dd11d10c",
+      "refutes_id": "5ec7d50dc9e77c000844207d_3",
+      "stage": 1,
+      "supports_id": "5ec7d50dc9e77c000844207d_4",
+      "token_jaccard": 0.8667
+    },
+    {
+      "case_id": "5ee3949ac9e77c0008ccfdba",
+      "character_ratio": 0.9722,
+      "claim": "Jew was Bob Ross ' half-brother .",
+      "distractor_id": "5ec284fbc9e77c0008415846_1",
+      "distractor_page": "Cake -LRB-band-RRB-",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee3949ac9e77c0008ccfdba:104f69a8bc5a:support",
+          "original_id": "5ee3949ac9e77c0008ccfdba_4",
+          "reverse_id": "5ee3949ac9e77c0008ccfdba_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee3949ac9e77c0008ccfdba:104f69a8bc5a:refute",
+          "original_id": "5ee3949ac9e77c0008ccfdba_3",
+          "reverse_id": "5ee3949ac9e77c0008ccfdba_4"
+        }
+      ],
+      "page": "Bob Ross",
+      "pair_id": "5ee3949ac9e77c0008ccfdba:104f69a8bc5a",
+      "refutes_id": "5ee3949ac9e77c0008ccfdba_3",
+      "stage": 1,
+      "supports_id": "5ee3949ac9e77c0008ccfdba_4",
+      "token_jaccard": 0.8571
+    },
+    {
+      "case_id": "5ea2d97dc9e77c0009cdb26d",
+      "character_ratio": 0.9429,
+      "claim": "Another Earth , the film , got positive inclined varied reactions from critics .",
+      "distractor_id": "5ec55990c9e77c000842d47f_1",
+      "distractor_page": "Antimatter weapon",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ea2d97dc9e77c0009cdb26d:659e3c9a79b1:support",
+          "original_id": "5ea2d97dc9e77c0009cdb26d_4",
+          "reverse_id": "5ea2d97dc9e77c0009cdb26d_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ea2d97dc9e77c0009cdb26d:659e3c9a79b1:refute",
+          "original_id": "5ea2d97dc9e77c0009cdb26d_3",
+          "reverse_id": "5ea2d97dc9e77c0009cdb26d_4"
+        }
+      ],
+      "page": "Another Earth",
+      "pair_id": "5ea2d97dc9e77c0009cdb26d:659e3c9a79b1",
+      "refutes_id": "5ea2d97dc9e77c0009cdb26d_3",
+      "stage": 1,
+      "supports_id": "5ea2d97dc9e77c0009cdb26d_4",
+      "token_jaccard": 0.8636
+    },
+    {
+      "case_id": "5ece9462c9e77c0008466882",
+      "character_ratio": 0.9915,
+      "claim": "Anne Hegerty was born after 1948 .",
+      "distractor_id": "5ec5598fc9e77c000842cb91_1",
+      "distractor_page": "Phreaking",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ece9462c9e77c0008466882:e25e15f800cb:support",
+          "original_id": "5ece9462c9e77c0008466882_1",
+          "reverse_id": "5ece9462c9e77c0008466882_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ece9462c9e77c0008466882:e25e15f800cb:refute",
+          "original_id": "5ece9462c9e77c0008466882_2",
+          "reverse_id": "5ece9462c9e77c0008466882_1"
+        }
+      ],
+      "page": "Anne Hegerty",
+      "pair_id": "5ece9462c9e77c0008466882:e25e15f800cb",
+      "refutes_id": "5ece9462c9e77c0008466882_2",
+      "stage": 1,
+      "supports_id": "5ece9462c9e77c0008466882_1",
+      "token_jaccard": 0.8947
+    },
+    {
+      "case_id": "5ee39418c9e77c0008ccf54e",
+      "character_ratio": 0.9597,
+      "claim": "Joseph Goebbels wanted to be a stripper .",
+      "distractor_id": "5ec55991c9e77c000842deeb_1",
+      "distractor_page": "Flight of the Navigator",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee39418c9e77c0008ccf54e:93090706f1fd:support",
+          "original_id": "5ee39418c9e77c0008ccf54e_4",
+          "reverse_id": "5ee39418c9e77c0008ccf54e_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee39418c9e77c0008ccf54e:93090706f1fd:refute",
+          "original_id": "5ee39418c9e77c0008ccf54e_3",
+          "reverse_id": "5ee39418c9e77c0008ccf54e_4"
+        }
+      ],
+      "page": "Joseph Goebbels",
+      "pair_id": "5ee39418c9e77c0008ccf54e:93090706f1fd",
+      "refutes_id": "5ee39418c9e77c0008ccf54e_3",
+      "stage": 1,
+      "supports_id": "5ee39418c9e77c0008ccf54e_4",
+      "token_jaccard": 0.9
+    },
+    {
+      "case_id": "5ee39419c9e77c0008ccfa3f",
+      "character_ratio": 0.9669,
+      "claim": "Barry Allen is the one who defined globalism as an ideology associated with different historically-dominant formations .",
+      "distractor_id": "5ee39419c9e77c0008ccfcb5_1",
+      "distractor_page": "B. R. Ambedkar",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee39419c9e77c0008ccfa3f:742f21fd470c:support",
+          "original_id": "5ee39419c9e77c0008ccfa3f_1",
+          "reverse_id": "5ee39419c9e77c0008ccfa3f_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee39419c9e77c0008ccfa3f:742f21fd470c:refute",
+          "original_id": "5ee39419c9e77c0008ccfa3f_2",
+          "reverse_id": "5ee39419c9e77c0008ccfa3f_1"
+        }
+      ],
+      "page": "Globalism",
+      "pair_id": "5ee39419c9e77c0008ccfa3f:742f21fd470c",
+      "refutes_id": "5ee39419c9e77c0008ccfa3f_2",
+      "stage": 1,
+      "supports_id": "5ee39419c9e77c0008ccfa3f_1",
+      "token_jaccard": 0.8519
+    },
+    {
+      "case_id": "5ee3949bc9e77c0008ccfee8",
+      "character_ratio": 0.9688,
+      "claim": "The results of Mayweather 's fight were 89–81 , 89–82 , and 87–83 .",
+      "distractor_id": "5ec55991c9e77c000842de4d_1",
+      "distractor_page": "Ali Larter",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee3949bc9e77c0008ccfee8:f8072b6be88b:support",
+          "original_id": "5ee3949bc9e77c0008ccfee8_1",
+          "reverse_id": "5ee3949bc9e77c0008ccfee8_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee3949bc9e77c0008ccfee8:f8072b6be88b:refute",
+          "original_id": "5ee3949bc9e77c0008ccfee8_2",
+          "reverse_id": "5ee3949bc9e77c0008ccfee8_1"
+        }
+      ],
+      "page": "Floyd Mayweather Jr.",
+      "pair_id": "5ee3949bc9e77c0008ccfee8:f8072b6be88b",
+      "refutes_id": "5ee3949bc9e77c0008ccfee8_2",
+      "stage": 1,
+      "supports_id": "5ee3949bc9e77c0008ccfee8_1",
+      "token_jaccard": 1.0
+    },
+    {
+      "case_id": "5ebe6f2fc9e77c0008408088",
+      "character_ratio": 0.9762,
+      "claim": "Guadalajara was officially founded in 1542 .",
+      "distractor_id": "5ee39419c9e77c0008ccfca6_1",
+      "distractor_page": "Trick-or-treating",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ebe6f2fc9e77c0008408088:224cde5f9ae6:support",
+          "original_id": "5ebe6f2fc9e77c0008408088_4",
+          "reverse_id": "5ebe6f2fc9e77c0008408088_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ebe6f2fc9e77c0008408088:224cde5f9ae6:refute",
+          "original_id": "5ebe6f2fc9e77c0008408088_3",
+          "reverse_id": "5ebe6f2fc9e77c0008408088_4"
+        }
+      ],
+      "page": "Guadalajara",
+      "pair_id": "5ebe6f2fc9e77c0008408088:224cde5f9ae6",
+      "refutes_id": "5ebe6f2fc9e77c0008408088_3",
+      "stage": 1,
+      "supports_id": "5ebe6f2fc9e77c0008408088_4",
+      "token_jaccard": 0.8571
+    },
+    {
+      "case_id": "5ea2d97dc9e77c0009cdb2d4",
+      "character_ratio": 0.9898,
+      "claim": "The band Dandy Warhols was formed in 1992 .",
+      "distractor_id": "5ebbf32bc9e77c00092951aa_1",
+      "distractor_page": "Frequency-division multiplexing",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ea2d97dc9e77c0009cdb2d4:9c437891dccc:support",
+          "original_id": "5ea2d97dc9e77c0009cdb2d4_1",
+          "reverse_id": "5ea2d97dc9e77c0009cdb2d4_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ea2d97dc9e77c0009cdb2d4:9c437891dccc:refute",
+          "original_id": "5ea2d97dc9e77c0009cdb2d4_2",
+          "reverse_id": "5ea2d97dc9e77c0009cdb2d4_1"
+        }
+      ],
+      "page": "The Dandy Warhols",
+      "pair_id": "5ea2d97dc9e77c0009cdb2d4:9c437891dccc",
+      "refutes_id": "5ea2d97dc9e77c0009cdb2d4_2",
+      "stage": 1,
+      "supports_id": "5ea2d97dc9e77c0009cdb2d4_1",
+      "token_jaccard": 0.875
+    },
+    {
+      "case_id": "5ea2d97bc9e77c0009cda61c",
+      "character_ratio": 0.9383,
+      "claim": "Tarzan II has mainly negative reviews",
+      "distractor_id": "5ede072fc9e77c00084d2d2b_1",
+      "distractor_page": "John McWhorter",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ea2d97bc9e77c0009cda61c:bc514f39cb55:support",
+          "original_id": "5ea2d97bc9e77c0009cda61c_1",
+          "reverse_id": "5ea2d97bc9e77c0009cda61c_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ea2d97bc9e77c0009cda61c:bc514f39cb55:refute",
+          "original_id": "5ea2d97bc9e77c0009cda61c_2",
+          "reverse_id": "5ea2d97bc9e77c0009cda61c_1"
+        }
+      ],
+      "page": "Tarzan II",
+      "pair_id": "5ea2d97bc9e77c0009cda61c:bc514f39cb55",
+      "refutes_id": "5ea2d97bc9e77c0009cda61c_2",
+      "stage": 1,
+      "supports_id": "5ea2d97bc9e77c0009cda61c_1",
+      "token_jaccard": 0.8571
+    },
+    {
+      "case_id": "5ed7ad03c9e77c00084a7937",
+      "character_ratio": 0.99,
+      "claim": "Hurricane Florence passed over North Carolina after 2017 .",
+      "distractor_id": "5ec7d50ec9e77c0008442431_1",
+      "distractor_page": "Drillbit Taylor",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed7ad03c9e77c00084a7937:8e150e69b115:support",
+          "original_id": "5ed7ad03c9e77c00084a7937_4",
+          "reverse_id": "5ed7ad03c9e77c00084a7937_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed7ad03c9e77c00084a7937:8e150e69b115:refute",
+          "original_id": "5ed7ad03c9e77c00084a7937_3",
+          "reverse_id": "5ed7ad03c9e77c00084a7937_4"
+        }
+      ],
+      "page": "Raleigh, North Carolina",
+      "pair_id": "5ed7ad03c9e77c00084a7937:8e150e69b115",
+      "refutes_id": "5ed7ad03c9e77c00084a7937_3",
+      "stage": 1,
+      "supports_id": "5ed7ad03c9e77c00084a7937_4",
+      "token_jaccard": 0.875
+    },
+    {
+      "case_id": "5ea2d97dc9e77c0009cdb02a",
+      "character_ratio": 0.9895,
+      "claim": "Alex St. John became Hi5 's President and CTO in 2011 .",
+      "distractor_id": "5ee39419c9e77c0008ccf8a1_1",
+      "distractor_page": "Roberto Orci",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ea2d97dc9e77c0009cdb02a:8af535bff882:support",
+          "original_id": "5ea2d97dc9e77c0009cdb02a_4",
+          "reverse_id": "5ea2d97dc9e77c0009cdb02a_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ea2d97dc9e77c0009cdb02a:8af535bff882:refute",
+          "original_id": "5ea2d97dc9e77c0009cdb02a_3",
+          "reverse_id": "5ea2d97dc9e77c0009cdb02a_4"
+        }
+      ],
+      "page": "Hi5",
+      "pair_id": "5ea2d97dc9e77c0009cdb02a:8af535bff882",
+      "refutes_id": "5ea2d97dc9e77c0009cdb02a_3",
+      "stage": 1,
+      "supports_id": "5ea2d97dc9e77c0009cdb02a_4",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5eafed7ec9e77c0009ce0a31",
+      "character_ratio": 0.9974,
+      "claim": "Psylocke is a man .",
+      "distractor_id": "5ece9462c9e77c0008466542_1",
+      "distractor_page": "Leslie Grace",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5eafed7ec9e77c0009ce0a31:8bf6ab5119e5:support",
+          "original_id": "5eafed7ec9e77c0009ce0a31_4",
+          "reverse_id": "5eafed7ec9e77c0009ce0a31_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5eafed7ec9e77c0009ce0a31:8bf6ab5119e5:refute",
+          "original_id": "5eafed7ec9e77c0009ce0a31_3",
+          "reverse_id": "5eafed7ec9e77c0009ce0a31_4"
+        }
+      ],
+      "page": "Psylocke",
+      "pair_id": "5eafed7ec9e77c0009ce0a31:8bf6ab5119e5",
+      "refutes_id": "5eafed7ec9e77c0009ce0a31_3",
+      "stage": 1,
+      "supports_id": "5eafed7ec9e77c0009ce0a31_4",
+      "token_jaccard": 0.9231
+    },
+    {
+      "case_id": "5ebe6f2dc9e77c0008407913",
+      "character_ratio": 0.9885,
+      "claim": "In the movie D.A.R.Y.L. , the character Daryl reunites with everyone .",
+      "distractor_id": "5ec55991c9e77c000842d8a7_1",
+      "distractor_page": "Arron Afflalo",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ebe6f2dc9e77c0008407913:a20a28d16001:support",
+          "original_id": "5ebe6f2dc9e77c0008407913_1",
+          "reverse_id": "5ebe6f2dc9e77c0008407913_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ebe6f2dc9e77c0008407913:a20a28d16001:refute",
+          "original_id": "5ebe6f2dc9e77c0008407913_2",
+          "reverse_id": "5ebe6f2dc9e77c0008407913_1"
+        }
+      ],
+      "page": "D.A.R.Y.L.",
+      "pair_id": "5ebe6f2dc9e77c0008407913:a20a28d16001",
+      "refutes_id": "5ebe6f2dc9e77c0008407913_2",
+      "stage": 1,
+      "supports_id": "5ebe6f2dc9e77c0008407913_1",
+      "token_jaccard": 0.8571
+    },
+    {
+      "case_id": "5ee39419c9e77c0008ccf9c5",
+      "character_ratio": 0.9906,
+      "claim": "The single titled `` Payphone '' , from the album , Overexposed was released before April 17th , 2012 .",
+      "distractor_id": "5ed4de08c9e77c000848a486_1",
+      "distractor_page": "Sajjan Singh Rangroot",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee39419c9e77c0008ccf9c5:f2441b26f75b:support",
+          "original_id": "5ee39419c9e77c0008ccf9c5_4",
+          "reverse_id": "5ee39419c9e77c0008ccf9c5_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee39419c9e77c0008ccf9c5:f2441b26f75b:refute",
+          "original_id": "5ee39419c9e77c0008ccf9c5_3",
+          "reverse_id": "5ee39419c9e77c0008ccf9c5_4"
+        }
+      ],
+      "page": "Overexposed -LRB-album-RRB-",
+      "pair_id": "5ee39419c9e77c0008ccf9c5:f2441b26f75b",
+      "refutes_id": "5ee39419c9e77c0008ccf9c5_3",
+      "stage": 1,
+      "supports_id": "5ee39419c9e77c0008ccf9c5_4",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ea2d97bc9e77c0009cda55e",
+      "character_ratio": 0.9909,
+      "claim": "Psychobilly combines elements of funk-rock , rockabilly , among others .",
+      "distractor_id": "5ed7ad02c9e77c00084a6e8b_1",
+      "distractor_page": "Chinese sausage",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ea2d97bc9e77c0009cda55e:1dc2c37d9e75:support",
+          "original_id": "5ea2d97bc9e77c0009cda55e_1",
+          "reverse_id": "5ea2d97bc9e77c0009cda55e_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ea2d97bc9e77c0009cda55e:1dc2c37d9e75:refute",
+          "original_id": "5ea2d97bc9e77c0009cda55e_2",
+          "reverse_id": "5ea2d97bc9e77c0009cda55e_1"
+        }
+      ],
+      "page": "Psychobilly",
+      "pair_id": "5ea2d97bc9e77c0009cda55e:1dc2c37d9e75",
+      "refutes_id": "5ea2d97bc9e77c0009cda55e_2",
+      "stage": 1,
+      "supports_id": "5ea2d97bc9e77c0009cda55e_1",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5eafed81c9e77c0009ce19db",
+      "character_ratio": 0.948,
+      "claim": "The Isley Brothers have had less than five Top 10 singles .",
+      "distractor_id": "5ec7d50dc9e77c0008441653_1",
+      "distractor_page": "A Nightmare on Elm Street 4-COLON- The Dream Master",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5eafed81c9e77c0009ce19db:8eba4bfc8e14:support",
+          "original_id": "5eafed81c9e77c0009ce19db_4",
+          "reverse_id": "5eafed81c9e77c0009ce19db_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5eafed81c9e77c0009ce19db:8eba4bfc8e14:refute",
+          "original_id": "5eafed81c9e77c0009ce19db_3",
+          "reverse_id": "5eafed81c9e77c0009ce19db_4"
+        }
+      ],
+      "page": "The Isley Brothers",
+      "pair_id": "5eafed81c9e77c0009ce19db:8eba4bfc8e14",
+      "refutes_id": "5eafed81c9e77c0009ce19db_3",
+      "stage": 1,
+      "supports_id": "5eafed81c9e77c0009ce19db_4",
+      "token_jaccard": 0.8667
+    },
+    {
+      "case_id": "5ee3949bc9e77c0008cd019f",
+      "character_ratio": 0.9388,
+      "claim": "Lady Gaga and Beyoncé were disguised by two designers .",
+      "distractor_id": "5eafed80c9e77c0009ce1605_2",
+      "distractor_page": "The Grass Roots",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee3949bc9e77c0008cd019f:1f09d3266c50:support",
+          "original_id": "5ee3949bc9e77c0008cd019f_4",
+          "reverse_id": "5ee3949bc9e77c0008cd019f_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee3949bc9e77c0008cd019f:1f09d3266c50:refute",
+          "original_id": "5ee3949bc9e77c0008cd019f_3",
+          "reverse_id": "5ee3949bc9e77c0008cd019f_4"
+        }
+      ],
+      "page": "Telephone -LRB-song-RRB-",
+      "pair_id": "5ee3949bc9e77c0008cd019f:1f09d3266c50",
+      "refutes_id": "5ee3949bc9e77c0008cd019f_3",
+      "stage": 1,
+      "supports_id": "5ee3949bc9e77c0008cd019f_4",
+      "token_jaccard": 0.8667
+    },
+    {
+      "case_id": "5ee39419c9e77c0008ccf989",
+      "character_ratio": 0.989,
+      "claim": "NXT Tag Team Championship has less than 13 championship teams and less than 25 individual teams .",
+      "distractor_id": "5ec7d50cc9e77c000844147d_2",
+      "distractor_page": "Greystoke-COLON- The Legend of Tarzan, Lord of the Apes",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee39419c9e77c0008ccf989:6293fd5116d4:support",
+          "original_id": "5ee39419c9e77c0008ccf989_1",
+          "reverse_id": "5ee39419c9e77c0008ccf989_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee39419c9e77c0008ccf989:6293fd5116d4:refute",
+          "original_id": "5ee39419c9e77c0008ccf989_2",
+          "reverse_id": "5ee39419c9e77c0008ccf989_1"
+        }
+      ],
+      "page": "NXT Tag Team Championship",
+      "pair_id": "5ee39419c9e77c0008ccf989:6293fd5116d4",
+      "refutes_id": "5ee39419c9e77c0008ccf989_2",
+      "stage": 1,
+      "supports_id": "5ee39419c9e77c0008ccf989_1",
+      "token_jaccard": 0.8571
+    },
+    {
+      "case_id": "5ebe6f2fc9e77c0008408029",
+      "character_ratio": 0.9498,
+      "claim": "In the TV series `` The Simpsons '' , Lisa 's Rival Marge is reading a book that intends to make reference to Love in the Time of Cholera .",
+      "distractor_id": "5eafed81c9e77c0009ce18d9_1",
+      "distractor_page": "Roy Castle",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ebe6f2fc9e77c0008408029:9c898bc5dadc:support",
+          "original_id": "5ebe6f2fc9e77c0008408029_4",
+          "reverse_id": "5ebe6f2fc9e77c0008408029_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ebe6f2fc9e77c0008408029:9c898bc5dadc:refute",
+          "original_id": "5ebe6f2fc9e77c0008408029_3",
+          "reverse_id": "5ebe6f2fc9e77c0008408029_4"
+        }
+      ],
+      "page": "Love in the Time of Cholera",
+      "pair_id": "5ebe6f2fc9e77c0008408029:9c898bc5dadc",
+      "refutes_id": "5ebe6f2fc9e77c0008408029_3",
+      "stage": 1,
+      "supports_id": "5ebe6f2fc9e77c0008408029_4",
+      "token_jaccard": 0.9394
+    },
+    {
+      "case_id": "5ec7d50dc9e77c0008441d08",
+      "character_ratio": 0.9895,
+      "claim": "Northern Territory ’ s population is over 245,900 .",
+      "distractor_id": "5ec7d50dc9e77c000844232e_1",
+      "distractor_page": "Claudio Pizarro",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec7d50dc9e77c0008441d08:d8fa331547d8:support",
+          "original_id": "5ec7d50dc9e77c0008441d08_1",
+          "reverse_id": "5ec7d50dc9e77c0008441d08_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec7d50dc9e77c0008441d08:d8fa331547d8:refute",
+          "original_id": "5ec7d50dc9e77c0008441d08_2",
+          "reverse_id": "5ec7d50dc9e77c0008441d08_1"
+        }
+      ],
+      "page": "Northern Territory",
+      "pair_id": "5ec7d50dc9e77c0008441d08:d8fa331547d8",
+      "refutes_id": "5ec7d50dc9e77c0008441d08_2",
+      "stage": 1,
+      "supports_id": "5ec7d50dc9e77c0008441d08_1",
+      "token_jaccard": 0.871
+    },
+    {
+      "case_id": "5ea2d97dc9e77c0009cdad9c",
+      "character_ratio": 0.9405,
+      "claim": "The Financial Times is a daily newspaper .",
+      "distractor_id": "5ea2d97dc9e77c0009cdac00_1",
+      "distractor_page": "Auk",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ea2d97dc9e77c0009cdad9c:21294bd6454a:support",
+          "original_id": "5ea2d97dc9e77c0009cdad9c_1",
+          "reverse_id": "5ea2d97dc9e77c0009cdad9c_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ea2d97dc9e77c0009cdad9c:21294bd6454a:refute",
+          "original_id": "5ea2d97dc9e77c0009cdad9c_2",
+          "reverse_id": "5ea2d97dc9e77c0009cdad9c_1"
+        }
+      ],
+      "page": "Financial Times",
+      "pair_id": "5ea2d97dc9e77c0009cdad9c:21294bd6454a",
+      "refutes_id": "5ea2d97dc9e77c0009cdad9c_2",
+      "stage": 1,
+      "supports_id": "5ea2d97dc9e77c0009cdad9c_1",
+      "token_jaccard": 0.88
+    },
+    {
+      "case_id": "5ec284fec9e77c0008416dbe",
+      "character_ratio": 0.9903,
+      "claim": "Barry Manilow has less than 16 compilation albums .",
+      "distractor_id": "5eafed7ec9e77c0009ce0ccc_2",
+      "distractor_page": "Finale -LRB-The Office-RRB-",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec284fec9e77c0008416dbe:8a53ae6216bc:support",
+          "original_id": "5ec284fec9e77c0008416dbe_1",
+          "reverse_id": "5ec284fec9e77c0008416dbe_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec284fec9e77c0008416dbe:8a53ae6216bc:refute",
+          "original_id": "5ec284fec9e77c0008416dbe_2",
+          "reverse_id": "5ec284fec9e77c0008416dbe_1"
+        }
+      ],
+      "page": "Barry Manilow discography",
+      "pair_id": "5ec284fec9e77c0008416dbe:8a53ae6216bc",
+      "refutes_id": "5ec284fec9e77c0008416dbe_2",
+      "stage": 1,
+      "supports_id": "5ec284fec9e77c0008416dbe_1",
+      "token_jaccard": 0.8667
+    },
+    {
+      "case_id": "5ec7d50dc9e77c0008441983",
+      "character_ratio": 0.9617,
+      "claim": "A slinky is used in astronomy to demonstrate models of the universe 's absolute magnitude .",
+      "distractor_id": "5ede072fc9e77c00084d2c17_1",
+      "distractor_page": "Ghostbusters II",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec7d50dc9e77c0008441983:982e2375487d:support",
+          "original_id": "5ec7d50dc9e77c0008441983_1",
+          "reverse_id": "5ec7d50dc9e77c0008441983_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec7d50dc9e77c0008441983:982e2375487d:refute",
+          "original_id": "5ec7d50dc9e77c0008441983_2",
+          "reverse_id": "5ec7d50dc9e77c0008441983_1"
+        }
+      ],
+      "page": "Absolute magnitude",
+      "pair_id": "5ec7d50dc9e77c0008441983:982e2375487d",
+      "refutes_id": "5ec7d50dc9e77c0008441983_2",
+      "stage": 1,
+      "supports_id": "5ec7d50dc9e77c0008441983_1",
+      "token_jaccard": 0.9231
+    },
+    {
+      "case_id": "5ed7ad02c9e77c00084a6a91",
+      "character_ratio": 0.9682,
+      "claim": "Barry Ferguson was born in Hamilton .",
+      "distractor_id": "5ebe6f32c9e77c0008409965_1",
+      "distractor_page": "United States Marshals Service",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed7ad02c9e77c00084a6a91:94a119f01cf8:support",
+          "original_id": "5ed7ad02c9e77c00084a6a91_4",
+          "reverse_id": "5ed7ad02c9e77c00084a6a91_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed7ad02c9e77c00084a6a91:94a119f01cf8:refute",
+          "original_id": "5ed7ad02c9e77c00084a6a91_3",
+          "reverse_id": "5ed7ad02c9e77c00084a6a91_4"
+        }
+      ],
+      "page": "Barry Ferguson",
+      "pair_id": "5ed7ad02c9e77c00084a6a91:94a119f01cf8",
+      "refutes_id": "5ed7ad02c9e77c00084a6a91_3",
+      "stage": 1,
+      "supports_id": "5ed7ad02c9e77c00084a6a91_4",
+      "token_jaccard": 0.9429
+    },
+    {
+      "case_id": "5eb95739c9e77c0008fa15fd",
+      "character_ratio": 0.9897,
+      "claim": "Charlotte Casiraghi has the same name as her father 's grandmother .",
+      "distractor_id": "5ec55991c9e77c000842e018_1",
+      "distractor_page": "Jeremy Maclin",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5eb95739c9e77c0008fa15fd:ab0612c8b18d:support",
+          "original_id": "5eb95739c9e77c0008fa15fd_4",
+          "reverse_id": "5eb95739c9e77c0008fa15fd_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5eb95739c9e77c0008fa15fd:ab0612c8b18d:refute",
+          "original_id": "5eb95739c9e77c0008fa15fd_3",
+          "reverse_id": "5eb95739c9e77c0008fa15fd_4"
+        }
+      ],
+      "page": "Charlotte Casiraghi",
+      "pair_id": "5eb95739c9e77c0008fa15fd:ab0612c8b18d",
+      "refutes_id": "5eb95739c9e77c0008fa15fd_3",
+      "stage": 1,
+      "supports_id": "5eb95739c9e77c0008fa15fd_4",
+      "token_jaccard": 0.8571
+    },
+    {
+      "case_id": "5ebbf32bc9e77c00092952a0",
+      "character_ratio": 0.9608,
+      "claim": "Heropanti received negative reviews .",
+      "distractor_id": "5ed7ad03c9e77c00084a7618_1",
+      "distractor_page": "Alsace-Lorraine",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ebbf32bc9e77c00092952a0:f06a02a7e4d6:support",
+          "original_id": "5ebbf32bc9e77c00092952a0_4",
+          "reverse_id": "5ebbf32bc9e77c00092952a0_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ebbf32bc9e77c00092952a0:f06a02a7e4d6:refute",
+          "original_id": "5ebbf32bc9e77c00092952a0_3",
+          "reverse_id": "5ebbf32bc9e77c00092952a0_4"
+        }
+      ],
+      "page": "Heropanti",
+      "pair_id": "5ebbf32bc9e77c00092952a0:f06a02a7e4d6",
+      "refutes_id": "5ebbf32bc9e77c00092952a0_3",
+      "stage": 1,
+      "supports_id": "5ebbf32bc9e77c00092952a0_4",
+      "token_jaccard": 0.9231
+    },
+    {
+      "case_id": "5ece9463c9e77c0008467768",
+      "character_ratio": 0.9892,
+      "claim": "Lee Sharpe played less than 264 matches for Red Devils during his 8-year stint at the club .",
+      "distractor_id": "5ece9461c9e77c00084662d1_1",
+      "distractor_page": "Somewhere Only We Know",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ece9463c9e77c0008467768:ae202ce4da49:support",
+          "original_id": "5ece9463c9e77c0008467768_1",
+          "reverse_id": "5ece9463c9e77c0008467768_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ece9463c9e77c0008467768:ae202ce4da49:refute",
+          "original_id": "5ece9463c9e77c0008467768_2",
+          "reverse_id": "5ece9463c9e77c0008467768_1"
+        }
+      ],
+      "page": "Lee Sharpe",
+      "pair_id": "5ece9463c9e77c0008467768:ae202ce4da49",
+      "refutes_id": "5ece9463c9e77c0008467768_2",
+      "stage": 1,
+      "supports_id": "5ece9463c9e77c0008467768_1",
+      "token_jaccard": 0.8889
+    },
+    {
+      "case_id": "5ec284fcc9e77c00084160fe",
+      "character_ratio": 0.9667,
+      "claim": "Solo belongs to the gangster thriller genre of films .",
+      "distractor_id": "5ec5598ec9e77c000842c8ac_1",
+      "distractor_page": "2008 Football League Cup Final",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec284fcc9e77c00084160fe:7ef18e571dfa:support",
+          "original_id": "5ec284fcc9e77c00084160fe_1",
+          "reverse_id": "5ec284fcc9e77c00084160fe_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec284fcc9e77c00084160fe:7ef18e571dfa:refute",
+          "original_id": "5ec284fcc9e77c00084160fe_2",
+          "reverse_id": "5ec284fcc9e77c00084160fe_1"
+        }
+      ],
+      "page": "Solo -LRB-2017 film-RRB-",
+      "pair_id": "5ec284fcc9e77c00084160fe:7ef18e571dfa",
+      "refutes_id": "5ec284fcc9e77c00084160fe_2",
+      "stage": 1,
+      "supports_id": "5ec284fcc9e77c00084160fe_1",
+      "token_jaccard": 0.913
+    },
+    {
+      "case_id": "5ece9463c9e77c000846743c",
+      "character_ratio": 0.9456,
+      "claim": "`` Meant to Be '' by Florido Georgia Line was ranked higher than # 5 in the U.S charts .",
+      "distractor_id": "5ed4de05c9e77c0008489941_1",
+      "distractor_page": "Elche CF",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ece9463c9e77c000846743c:c4ecb860a781:support",
+          "original_id": "5ece9463c9e77c000846743c_4",
+          "reverse_id": "5ece9463c9e77c000846743c_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ece9463c9e77c000846743c:c4ecb860a781:refute",
+          "original_id": "5ece9463c9e77c000846743c_3",
+          "reverse_id": "5ece9463c9e77c000846743c_4"
+        }
+      ],
+      "page": "Country pop",
+      "pair_id": "5ece9463c9e77c000846743c:c4ecb860a781",
+      "refutes_id": "5ece9463c9e77c000846743c_3",
+      "stage": 1,
+      "supports_id": "5ece9463c9e77c000846743c_4",
+      "token_jaccard": 0.9643
+    },
+    {
+      "case_id": "5ee3949bc9e77c0008ccfff0",
+      "character_ratio": 0.9767,
+      "claim": "There are 5 countries more populous than Pakistan .",
+      "distractor_id": "5eb29886c9e77c0008d92be2_1",
+      "distractor_page": "Bears–Packers rivalry",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee3949bc9e77c0008ccfff0:4d132500d7ba:support",
+          "original_id": "5ee3949bc9e77c0008ccfff0_4",
+          "reverse_id": "5ee3949bc9e77c0008ccfff0_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee3949bc9e77c0008ccfff0:4d132500d7ba:refute",
+          "original_id": "5ee3949bc9e77c0008ccfff0_3",
+          "reverse_id": "5ee3949bc9e77c0008ccfff0_4"
+        }
+      ],
+      "page": "Pakistan",
+      "pair_id": "5ee3949bc9e77c0008ccfff0:4d132500d7ba",
+      "refutes_id": "5ee3949bc9e77c0008ccfff0_3",
+      "stage": 1,
+      "supports_id": "5ee3949bc9e77c0008ccfff0_4",
+      "token_jaccard": 0.875
+    },
+    {
+      "case_id": "5eafed81c9e77c0009ce17d0",
+      "character_ratio": 0.948,
+      "claim": "Daryl Dixon becomes close to Carol Peletier .",
+      "distractor_id": "5ebe6f2bc9e77c0008407560_1",
+      "distractor_page": "Atlantic 10 Conference",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5eafed81c9e77c0009ce17d0:022399913102:support",
+          "original_id": "5eafed81c9e77c0009ce17d0_1",
+          "reverse_id": "5eafed81c9e77c0009ce17d0_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5eafed81c9e77c0009ce17d0:022399913102:refute",
+          "original_id": "5eafed81c9e77c0009ce17d0_2",
+          "reverse_id": "5eafed81c9e77c0009ce17d0_1"
+        }
+      ],
+      "page": "Daryl Dixon",
+      "pair_id": "5eafed81c9e77c0009ce17d0:022399913102",
+      "refutes_id": "5eafed81c9e77c0009ce17d0_2",
+      "stage": 2,
+      "supports_id": "5eafed81c9e77c0009ce17d0_1",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ece9463c9e77c0008467891",
+      "character_ratio": 0.9912,
+      "claim": "Cláudio Taffarel played for the Brazilian national team less than 103 times .",
+      "distractor_id": "5ebbf32bc9e77c000929532b_1",
+      "distractor_page": "Kellen Moore",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ece9463c9e77c0008467891:98f7b6e2e66a:support",
+          "original_id": "5ece9463c9e77c0008467891_1",
+          "reverse_id": "5ece9463c9e77c0008467891_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ece9463c9e77c0008467891:98f7b6e2e66a:refute",
+          "original_id": "5ece9463c9e77c0008467891_2",
+          "reverse_id": "5ece9463c9e77c0008467891_1"
+        }
+      ],
+      "page": "Cláudio Taffarel",
+      "pair_id": "5ece9463c9e77c0008467891:98f7b6e2e66a",
+      "refutes_id": "5ece9463c9e77c0008467891_2",
+      "stage": 2,
+      "supports_id": "5ece9463c9e77c0008467891_1",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ed7ad02c9e77c00084a6dfb",
+      "character_ratio": 0.9622,
+      "claim": "Some economies barter pigs or cattle .",
+      "distractor_id": "5ed7acffc9e77c00084a59e4_1",
+      "distractor_page": "Cannibal! The Musical",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed7ad02c9e77c00084a6dfb:a45b9580cfc8:support",
+          "original_id": "5ed7ad02c9e77c00084a6dfb_1",
+          "reverse_id": "5ed7ad02c9e77c00084a6dfb_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed7ad02c9e77c00084a6dfb:a45b9580cfc8:refute",
+          "original_id": "5ed7ad02c9e77c00084a6dfb_2",
+          "reverse_id": "5ed7ad02c9e77c00084a6dfb_1"
+        }
+      ],
+      "page": "Barter",
+      "pair_id": "5ed7ad02c9e77c00084a6dfb:a45b9580cfc8",
+      "refutes_id": "5ed7ad02c9e77c00084a6dfb_2",
+      "stage": 2,
+      "supports_id": "5ed7ad02c9e77c00084a6dfb_1",
+      "token_jaccard": 0.875
+    },
+    {
+      "case_id": "5eb29889c9e77c0008d93ee0",
+      "character_ratio": 0.9847,
+      "claim": "The global datasphere will be larger than 170 zettabytes by 2025 .",
+      "distractor_id": "5ed7acfdc9e77c00084a56b8_1",
+      "distractor_page": "Saint Anne",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5eb29889c9e77c0008d93ee0:1a8c1ed5d67c:support",
+          "original_id": "5eb29889c9e77c0008d93ee0_4",
+          "reverse_id": "5eb29889c9e77c0008d93ee0_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5eb29889c9e77c0008d93ee0:1a8c1ed5d67c:refute",
+          "original_id": "5eb29889c9e77c0008d93ee0_3",
+          "reverse_id": "5eb29889c9e77c0008d93ee0_4"
+        }
+      ],
+      "page": "Zettabyte",
+      "pair_id": "5eb29889c9e77c0008d93ee0:1a8c1ed5d67c",
+      "refutes_id": "5eb29889c9e77c0008d93ee0_3",
+      "stage": 2,
+      "supports_id": "5eb29889c9e77c0008d93ee0_4",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ee39419c9e77c0008ccfaa7",
+      "character_ratio": 0.9391,
+      "claim": "Vishal Bhardwaj 's film is titled Rani .",
+      "distractor_id": "5ec7d50dc9e77c0008442204_1",
+      "distractor_page": "Goal II-COLON- Living the Dream",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee39419c9e77c0008ccfaa7:ca40060b4c89:support",
+          "original_id": "5ee39419c9e77c0008ccfaa7_1",
+          "reverse_id": "5ee39419c9e77c0008ccfaa7_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee39419c9e77c0008ccfaa7:ca40060b4c89:refute",
+          "original_id": "5ee39419c9e77c0008ccfaa7_2",
+          "reverse_id": "5ee39419c9e77c0008ccfaa7_1"
+        }
+      ],
+      "page": "Deepika Padukone",
+      "pair_id": "5ee39419c9e77c0008ccfaa7:ca40060b4c89",
+      "refutes_id": "5ee39419c9e77c0008ccfaa7_2",
+      "stage": 2,
+      "supports_id": "5ee39419c9e77c0008ccfaa7_1",
+      "token_jaccard": 0.8966
+    },
+    {
+      "case_id": "5ed7acfdc9e77c00084a5671",
+      "character_ratio": 0.9895,
+      "claim": "Michael Sembello was born after 1950 .",
+      "distractor_id": "5ee3949bc9e77c0008ccfebf_1",
+      "distractor_page": "One Dance",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed7acfdc9e77c00084a5671:5cb38cc771d6:support",
+          "original_id": "5ed7acfdc9e77c00084a5671_1",
+          "reverse_id": "5ed7acfdc9e77c00084a5671_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed7acfdc9e77c00084a5671:5cb38cc771d6:refute",
+          "original_id": "5ed7acfdc9e77c00084a5671_2",
+          "reverse_id": "5ed7acfdc9e77c00084a5671_1"
+        }
+      ],
+      "page": "Michael Sembello",
+      "pair_id": "5ed7acfdc9e77c00084a5671:5cb38cc771d6",
+      "refutes_id": "5ed7acfdc9e77c00084a5671_2",
+      "stage": 2,
+      "supports_id": "5ed7acfdc9e77c00084a5671_1",
+      "token_jaccard": 0.8571
+    },
+    {
+      "case_id": "5ed4de07c9e77c000848a267",
+      "character_ratio": 0.9573,
+      "claim": "Álvaro Recoba currently plays as a midfielder .",
+      "distractor_id": "5ede072fc9e77c00084d2f89_1",
+      "distractor_page": "Bethany Mota",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed4de07c9e77c000848a267:8fab52d9b894:support",
+          "original_id": "5ed4de07c9e77c000848a267_1",
+          "reverse_id": "5ed4de07c9e77c000848a267_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed4de07c9e77c000848a267:8fab52d9b894:refute",
+          "original_id": "5ed4de07c9e77c000848a267_2",
+          "reverse_id": "5ed4de07c9e77c000848a267_1"
+        }
+      ],
+      "page": "Diego Laxalt",
+      "pair_id": "5ed4de07c9e77c000848a267:8fab52d9b894",
+      "refutes_id": "5ed4de07c9e77c000848a267_2",
+      "stage": 2,
+      "supports_id": "5ed4de07c9e77c000848a267_1",
+      "token_jaccard": 0.9444
+    },
+    {
+      "case_id": "5ede072fc9e77c00084d30da",
+      "character_ratio": 0.9466,
+      "claim": "The surgeon may have administrated Amado Carrillo Fuentes the lethal dose of the drug Dormicum .",
+      "distractor_id": "5ee39419c9e77c0008ccf922_1",
+      "distractor_page": "William Howard Taft",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ede072fc9e77c00084d30da:421922d60804:support",
+          "original_id": "5ede072fc9e77c00084d30da_1",
+          "reverse_id": "5ede072fc9e77c00084d30da_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ede072fc9e77c00084d30da:421922d60804:refute",
+          "original_id": "5ede072fc9e77c00084d30da_2",
+          "reverse_id": "5ede072fc9e77c00084d30da_1"
+        }
+      ],
+      "page": "Amado Carrillo Fuentes",
+      "pair_id": "5ede072fc9e77c00084d30da:421922d60804",
+      "refutes_id": "5ede072fc9e77c00084d30da_2",
+      "stage": 2,
+      "supports_id": "5ede072fc9e77c00084d30da_1",
+      "token_jaccard": 0.9
+    },
+    {
+      "case_id": "5ec284ffc9e77c0008417b2c",
+      "character_ratio": 0.9545,
+      "claim": "Mahmoud Dahoud is Kurd .",
+      "distractor_id": "5ec284fdc9e77c0008416333_1",
+      "distractor_page": "Parken Stadium",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec284ffc9e77c0008417b2c:e86b6db1d6a4:support",
+          "original_id": "5ec284ffc9e77c0008417b2c_1",
+          "reverse_id": "5ec284ffc9e77c0008417b2c_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec284ffc9e77c0008417b2c:e86b6db1d6a4:refute",
+          "original_id": "5ec284ffc9e77c0008417b2c_2",
+          "reverse_id": "5ec284ffc9e77c0008417b2c_1"
+        }
+      ],
+      "page": "Mahmoud Dahoud",
+      "pair_id": "5ec284ffc9e77c0008417b2c:e86b6db1d6a4",
+      "refutes_id": "5ec284ffc9e77c0008417b2c_2",
+      "stage": 2,
+      "supports_id": "5ec284ffc9e77c0008417b2c_1",
+      "token_jaccard": 0.9
+    },
+    {
+      "case_id": "5ed7ad00c9e77c00084a608b",
+      "character_ratio": 0.9474,
+      "claim": "The film Space Jam featured Lebron James .",
+      "distractor_id": "5ede072fc9e77c00084d29ff_1",
+      "distractor_page": "Aimee Mann",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed7ad00c9e77c00084a608b:2780ae38bf4c:support",
+          "original_id": "5ed7ad00c9e77c00084a608b_1",
+          "reverse_id": "5ed7ad00c9e77c00084a608b_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed7ad00c9e77c00084a608b:2780ae38bf4c:refute",
+          "original_id": "5ed7ad00c9e77c00084a608b_2",
+          "reverse_id": "5ed7ad00c9e77c00084a608b_1"
+        }
+      ],
+      "page": "Space Jam",
+      "pair_id": "5ed7ad00c9e77c00084a608b:2780ae38bf4c",
+      "refutes_id": "5ed7ad00c9e77c00084a608b_2",
+      "stage": 2,
+      "supports_id": "5ed7ad00c9e77c00084a608b_1",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ee39419c9e77c0008ccfc1b",
+      "character_ratio": 0.9828,
+      "claim": "Less than 3.3 million copies of Celine Dion 's album Unison have been sold globally .",
+      "distractor_id": "5ed7ad00c9e77c00084a6006_1",
+      "distractor_page": "Pat Sajak",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee39419c9e77c0008ccfc1b:0ecf38eb9966:support",
+          "original_id": "5ee39419c9e77c0008ccfc1b_1",
+          "reverse_id": "5ee39419c9e77c0008ccfc1b_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee39419c9e77c0008ccfc1b:0ecf38eb9966:refute",
+          "original_id": "5ee39419c9e77c0008ccfc1b_2",
+          "reverse_id": "5ee39419c9e77c0008ccfc1b_1"
+        }
+      ],
+      "page": "Unison -LRB-Celine Dion album-RRB-",
+      "pair_id": "5ee39419c9e77c0008ccfc1b:0ecf38eb9966",
+      "refutes_id": "5ee39419c9e77c0008ccfc1b_2",
+      "stage": 2,
+      "supports_id": "5ee39419c9e77c0008ccfc1b_1",
+      "token_jaccard": 0.9
+    },
+    {
+      "case_id": "5ec284fec9e77c00084176b1",
+      "character_ratio": 0.9659,
+      "claim": "The film Sarfarosh failed in connecting with its audience .",
+      "distractor_id": "5ea2d97dc9e77c0009cdaabd_1",
+      "distractor_page": "Patrick Moore",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec284fec9e77c00084176b1:e82b63e6d0fc:support",
+          "original_id": "5ec284fec9e77c00084176b1_1",
+          "reverse_id": "5ec284fec9e77c00084176b1_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec284fec9e77c00084176b1:e82b63e6d0fc:refute",
+          "original_id": "5ec284fec9e77c00084176b1_2",
+          "reverse_id": "5ec284fec9e77c00084176b1_1"
+        }
+      ],
+      "page": "Sarfarosh",
+      "pair_id": "5ec284fec9e77c00084176b1:e82b63e6d0fc",
+      "refutes_id": "5ec284fec9e77c00084176b1_2",
+      "stage": 2,
+      "supports_id": "5ec284fec9e77c00084176b1_1",
+      "token_jaccard": 0.9259
+    },
+    {
+      "case_id": "5ece9463c9e77c0008467871",
+      "character_ratio": 0.9487,
+      "claim": "Marcus Allen was the Super Bowl MVP .",
+      "distractor_id": "5ec7d50dc9e77c0008442245_1",
+      "distractor_page": "Neville Southall",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ece9463c9e77c0008467871:71f303b4125c:support",
+          "original_id": "5ece9463c9e77c0008467871_4",
+          "reverse_id": "5ece9463c9e77c0008467871_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ece9463c9e77c0008467871:71f303b4125c:refute",
+          "original_id": "5ece9463c9e77c0008467871_3",
+          "reverse_id": "5ece9463c9e77c0008467871_4"
+        }
+      ],
+      "page": "Super Bowl XVIII",
+      "pair_id": "5ece9463c9e77c0008467871:71f303b4125c",
+      "refutes_id": "5ece9463c9e77c0008467871_3",
+      "stage": 2,
+      "supports_id": "5ece9463c9e77c0008467871_4",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ed4de08c9e77c000848a7d4",
+      "character_ratio": 0.9911,
+      "claim": "The Government of India owns approximately 58.57 % shares of the Indian Oil Corporation .",
+      "distractor_id": "5ec7d50fc9e77c000844318e_1",
+      "distractor_page": "Rafael dos Anjos",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed4de08c9e77c000848a7d4:6623d473a116:support",
+          "original_id": "5ed4de08c9e77c000848a7d4_4",
+          "reverse_id": "5ed4de08c9e77c000848a7d4_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed4de08c9e77c000848a7d4:6623d473a116:refute",
+          "original_id": "5ed4de08c9e77c000848a7d4_3",
+          "reverse_id": "5ed4de08c9e77c000848a7d4_4"
+        }
+      ],
+      "page": "Indian Oil Corporation",
+      "pair_id": "5ed4de08c9e77c000848a7d4:6623d473a116",
+      "refutes_id": "5ed4de08c9e77c000848a7d4_3",
+      "stage": 2,
+      "supports_id": "5ed4de08c9e77c000848a7d4_4",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ee3949bc9e77c0008ccfe42",
+      "character_ratio": 0.9906,
+      "claim": "Less than 25 % of the Baloch people live in Sindh .",
+      "distractor_id": "5ee39329c9e77c0008cc922e_1",
+      "distractor_page": "2020 coronavirus pandemic in Hawaii",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee3949bc9e77c0008ccfe42:47a9025970a2:support",
+          "original_id": "5ee3949bc9e77c0008ccfe42_4",
+          "reverse_id": "5ee3949bc9e77c0008ccfe42_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee3949bc9e77c0008ccfe42:47a9025970a2:refute",
+          "original_id": "5ee3949bc9e77c0008ccfe42_3",
+          "reverse_id": "5ee3949bc9e77c0008ccfe42_4"
+        }
+      ],
+      "page": "Baloch people",
+      "pair_id": "5ee3949bc9e77c0008ccfe42:47a9025970a2",
+      "refutes_id": "5ee3949bc9e77c0008ccfe42_3",
+      "stage": 2,
+      "supports_id": "5ee3949bc9e77c0008ccfe42_4",
+      "token_jaccard": 0.875
+    },
+    {
+      "case_id": "5ec7d50ec9e77c0008442e80",
+      "character_ratio": 0.9348,
+      "claim": "Doctor Manhattan is the reason that Jor-El survived .",
+      "distractor_id": "5ed7ad02c9e77c00084a695b_1",
+      "distractor_page": "Daniel Defoe",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec7d50ec9e77c0008442e80:fb4c9693d408:support",
+          "original_id": "5ec7d50ec9e77c0008442e80_1",
+          "reverse_id": "5ec7d50ec9e77c0008442e80_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec7d50ec9e77c0008442e80:fb4c9693d408:refute",
+          "original_id": "5ec7d50ec9e77c0008442e80_2",
+          "reverse_id": "5ec7d50ec9e77c0008442e80_1"
+        }
+      ],
+      "page": "Jor-El",
+      "pair_id": "5ec7d50ec9e77c0008442e80:fb4c9693d408",
+      "refutes_id": "5ec7d50ec9e77c0008442e80_2",
+      "stage": 2,
+      "supports_id": "5ec7d50ec9e77c0008442e80_1",
+      "token_jaccard": 0.8889
+    },
+    {
+      "case_id": "5eb2988ac9e77c0008d9491d",
+      "character_ratio": 0.9683,
+      "claim": "Liverpool was placed second in their domestic league .",
+      "distractor_id": "5ec284ffc9e77c0008417a5b_1",
+      "distractor_page": "Ian Holloway",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5eb2988ac9e77c0008d9491d:b12556ba3468:support",
+          "original_id": "5eb2988ac9e77c0008d9491d_4",
+          "reverse_id": "5eb2988ac9e77c0008d9491d_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5eb2988ac9e77c0008d9491d:b12556ba3468:refute",
+          "original_id": "5eb2988ac9e77c0008d9491d_3",
+          "reverse_id": "5eb2988ac9e77c0008d9491d_4"
+        }
+      ],
+      "page": "2018–19 UEFA Champions League",
+      "pair_id": "5eb2988ac9e77c0008d9491d:b12556ba3468",
+      "refutes_id": "5eb2988ac9e77c0008d9491d_3",
+      "stage": 2,
+      "supports_id": "5eb2988ac9e77c0008d9491d_4",
+      "token_jaccard": 0.95
+    },
+    {
+      "case_id": "5ede072fc9e77c00084d2a46",
+      "character_ratio": 0.9627,
+      "claim": "Richard Simmons ' gym , Slimmons , was located in Michigan .",
+      "distractor_id": "5ece9464c9e77c0008467987_1",
+      "distractor_page": "AIK Fotboll",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ede072fc9e77c00084d2a46:3c969ef085e3:support",
+          "original_id": "5ede072fc9e77c00084d2a46_1",
+          "reverse_id": "5ede072fc9e77c00084d2a46_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ede072fc9e77c00084d2a46:3c969ef085e3:refute",
+          "original_id": "5ede072fc9e77c00084d2a46_2",
+          "reverse_id": "5ede072fc9e77c00084d2a46_1"
+        }
+      ],
+      "page": "Richard Simmons",
+      "pair_id": "5ede072fc9e77c00084d2a46:3c969ef085e3",
+      "refutes_id": "5ede072fc9e77c00084d2a46_2",
+      "stage": 2,
+      "supports_id": "5ede072fc9e77c00084d2a46_1",
+      "token_jaccard": 0.9412
+    },
+    {
+      "case_id": "5ec7d50ec9e77c0008442894",
+      "character_ratio": 0.945,
+      "claim": "Malcolm Mitchell could only read at a junior high level in college .",
+      "distractor_id": "5ed4de07c9e77c000848a1f5_1",
+      "distractor_page": "Rottnest Island",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec7d50ec9e77c0008442894:dc7f25f6ac40:support",
+          "original_id": "5ec7d50ec9e77c0008442894_1",
+          "reverse_id": "5ec7d50ec9e77c0008442894_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec7d50ec9e77c0008442894:dc7f25f6ac40:refute",
+          "original_id": "5ec7d50ec9e77c0008442894_2",
+          "reverse_id": "5ec7d50ec9e77c0008442894_1"
+        }
+      ],
+      "page": "Malcolm Mitchell",
+      "pair_id": "5ec7d50ec9e77c0008442894:dc7f25f6ac40",
+      "refutes_id": "5ec7d50ec9e77c0008442894_2",
+      "stage": 2,
+      "supports_id": "5ec7d50ec9e77c0008442894_1",
+      "token_jaccard": 0.8788
+    },
+    {
+      "case_id": "5ee39419c9e77c0008ccfcd6",
+      "character_ratio": 0.9954,
+      "claim": "Julius Caesar died suddenly in 185 BC .",
+      "distractor_id": "5ece9460c9e77c0008465862_1",
+      "distractor_page": "Christopher A. Wray",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee39419c9e77c0008ccfcd6:e6304359117c:support",
+          "original_id": "5ee39419c9e77c0008ccfcd6_1",
+          "reverse_id": "5ee39419c9e77c0008ccfcd6_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee39419c9e77c0008ccfcd6:e6304359117c:refute",
+          "original_id": "5ee39419c9e77c0008ccfcd6_2",
+          "reverse_id": "5ee39419c9e77c0008ccfcd6_1"
+        }
+      ],
+      "page": "Gaius Julius Caesar -LRB-proconsul-RRB-",
+      "pair_id": "5ee39419c9e77c0008ccfcd6:e6304359117c",
+      "refutes_id": "5ee39419c9e77c0008ccfcd6_2",
+      "stage": 2,
+      "supports_id": "5ee39419c9e77c0008ccfcd6_1",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ec7d50bc9e77c0008440cd2",
+      "character_ratio": 0.9544,
+      "claim": "Algonquian peoples hunt migratory birds and their eggs between April and July .",
+      "distractor_id": "5ec284fdc9e77c00084169ad_1",
+      "distractor_page": "Materials science",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec7d50bc9e77c0008440cd2:6b79d7abc57a:support",
+          "original_id": "5ec7d50bc9e77c0008440cd2_4",
+          "reverse_id": "5ec7d50bc9e77c0008440cd2_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec7d50bc9e77c0008440cd2:6b79d7abc57a:refute",
+          "original_id": "5ec7d50bc9e77c0008440cd2_3",
+          "reverse_id": "5ec7d50bc9e77c0008440cd2_4"
+        }
+      ],
+      "page": "Algonquian peoples",
+      "pair_id": "5ec7d50bc9e77c0008440cd2:6b79d7abc57a",
+      "refutes_id": "5ec7d50bc9e77c0008440cd2_3",
+      "stage": 2,
+      "supports_id": "5ec7d50bc9e77c0008440cd2_4",
+      "token_jaccard": 0.8889
+    },
+    {
+      "case_id": "5ece9462c9e77c00084669c5",
+      "character_ratio": 0.9571,
+      "claim": "David Jason played the role of Derek `` Del Boy '' Trotter in Only Fools and Horses .",
+      "distractor_id": "5ebe6f31c9e77c0008408d11_1",
+      "distractor_page": "Hakeem Nicks",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ece9462c9e77c00084669c5:f4a000a31eb4:support",
+          "original_id": "5ece9462c9e77c00084669c5_4",
+          "reverse_id": "5ece9462c9e77c00084669c5_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ece9462c9e77c00084669c5:f4a000a31eb4:refute",
+          "original_id": "5ece9462c9e77c00084669c5_3",
+          "reverse_id": "5ece9462c9e77c00084669c5_4"
+        }
+      ],
+      "page": "Only Fools and Horses",
+      "pair_id": "5ece9462c9e77c00084669c5:f4a000a31eb4",
+      "refutes_id": "5ece9462c9e77c00084669c5_3",
+      "stage": 2,
+      "supports_id": "5ece9462c9e77c00084669c5_4",
+      "token_jaccard": 0.875
+    },
+    {
+      "case_id": "5eafed7ec9e77c0009ce08bf",
+      "character_ratio": 0.9868,
+      "claim": "The team Al-Ahli has less than 13 overall wins .",
+      "distractor_id": "5ee39418c9e77c0008ccf3f1_1",
+      "distractor_page": "Northwestern University",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5eafed7ec9e77c0009ce08bf:7ad3c1028118:support",
+          "original_id": "5eafed7ec9e77c0009ce08bf_1",
+          "reverse_id": "5eafed7ec9e77c0009ce08bf_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5eafed7ec9e77c0009ce08bf:7ad3c1028118:refute",
+          "original_id": "5eafed7ec9e77c0009ce08bf_2",
+          "reverse_id": "5eafed7ec9e77c0009ce08bf_1"
+        }
+      ],
+      "page": "King Abdullah Sports City",
+      "pair_id": "5eafed7ec9e77c0009ce08bf:7ad3c1028118",
+      "refutes_id": "5eafed7ec9e77c0009ce08bf_2",
+      "stage": 2,
+      "supports_id": "5eafed7ec9e77c0009ce08bf_1",
+      "token_jaccard": 0.8571
+    },
+    {
+      "case_id": "5ed4de07c9e77c000848a287",
+      "character_ratio": 0.9639,
+      "claim": "Shoaib Akhtar bowls after Aaqib Javed in Swing bowling .",
+      "distractor_id": "5ec284fdc9e77c000841659d_1",
+      "distractor_page": "Youth Day",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed4de07c9e77c000848a287:f35757a2467f:support",
+          "original_id": "5ed4de07c9e77c000848a287_4",
+          "reverse_id": "5ed4de07c9e77c000848a287_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed4de07c9e77c000848a287:f35757a2467f:refute",
+          "original_id": "5ed4de07c9e77c000848a287_3",
+          "reverse_id": "5ed4de07c9e77c000848a287_4"
+        }
+      ],
+      "page": "Swing bowling",
+      "pair_id": "5ed4de07c9e77c000848a287:f35757a2467f",
+      "refutes_id": "5ed4de07c9e77c000848a287_3",
+      "stage": 2,
+      "supports_id": "5ed4de07c9e77c000848a287_4",
+      "token_jaccard": 0.9
+    },
+    {
+      "case_id": "5ec284ffc9e77c0008417a58",
+      "character_ratio": 0.9615,
+      "claim": "The album Dirty Mind was certified gold in 1984 .",
+      "distractor_id": "5eb29886c9e77c0008d92a86_1",
+      "distractor_page": "Collectible card game",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec284ffc9e77c0008417a58:3edd9b5cbcaf:support",
+          "original_id": "5ec284ffc9e77c0008417a58_1",
+          "reverse_id": "5ec284ffc9e77c0008417a58_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec284ffc9e77c0008417a58:3edd9b5cbcaf:refute",
+          "original_id": "5ec284ffc9e77c0008417a58_2",
+          "reverse_id": "5ec284ffc9e77c0008417a58_1"
+        }
+      ],
+      "page": "Dirty Mind",
+      "pair_id": "5ec284ffc9e77c0008417a58:3edd9b5cbcaf",
+      "refutes_id": "5ec284ffc9e77c0008417a58_2",
+      "stage": 2,
+      "supports_id": "5ec284ffc9e77c0008417a58_1",
+      "token_jaccard": 0.9048
+    },
+    {
+      "case_id": "5ec55990c9e77c000842d4fc",
+      "character_ratio": 0.9406,
+      "claim": "Eleni Foureira is Albanian .",
+      "distractor_id": "5eb29888c9e77c0008d93496_1",
+      "distractor_page": "Michael Showalter",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec55990c9e77c000842d4fc:5fddcd8f062e:support",
+          "original_id": "5ec55990c9e77c000842d4fc_4",
+          "reverse_id": "5ec55990c9e77c000842d4fc_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec55990c9e77c000842d4fc:5fddcd8f062e:refute",
+          "original_id": "5ec55990c9e77c000842d4fc_3",
+          "reverse_id": "5ec55990c9e77c000842d4fc_4"
+        }
+      ],
+      "page": "Eleni Foureira",
+      "pair_id": "5ec55990c9e77c000842d4fc:5fddcd8f062e",
+      "refutes_id": "5ec55990c9e77c000842d4fc_3",
+      "stage": 2,
+      "supports_id": "5ec55990c9e77c000842d4fc_4",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ebe6f30c9e77c0008408312",
+      "character_ratio": 0.9492,
+      "claim": "All the Best : Fun Begins is the fifth highest-grossing Bollywood film of 2009 .",
+      "distractor_id": "5ed7ad02c9e77c00084a6e08_1",
+      "distractor_page": "Cessna 206",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ebe6f30c9e77c0008408312:896102aaf912:support",
+          "original_id": "5ebe6f30c9e77c0008408312_4",
+          "reverse_id": "5ebe6f30c9e77c0008408312_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ebe6f30c9e77c0008408312:896102aaf912:refute",
+          "original_id": "5ebe6f30c9e77c0008408312_3",
+          "reverse_id": "5ebe6f30c9e77c0008408312_4"
+        }
+      ],
+      "page": "All the Best-COLON- Fun Begins",
+      "pair_id": "5ebe6f30c9e77c0008408312:896102aaf912",
+      "refutes_id": "5ebe6f30c9e77c0008408312_3",
+      "stage": 2,
+      "supports_id": "5ebe6f30c9e77c0008408312_4",
+      "token_jaccard": 0.8889
+    },
+    {
+      "case_id": "5ec284fdc9e77c0008416517",
+      "character_ratio": 0.9526,
+      "claim": "Julie Bishop offered a defence of her nation 's intelligence cooperation with the United States .",
+      "distractor_id": "5ee39418c9e77c0008ccf34e_1",
+      "distractor_page": "Matt Bomer",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec284fdc9e77c0008416517:4ae349be7fa7:support",
+          "original_id": "5ec284fdc9e77c0008416517_4",
+          "reverse_id": "5ec284fdc9e77c0008416517_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec284fdc9e77c0008416517:4ae349be7fa7:refute",
+          "original_id": "5ec284fdc9e77c0008416517_3",
+          "reverse_id": "5ec284fdc9e77c0008416517_4"
+        }
+      ],
+      "page": "PRISM -LRB-surveillance program-RRB-",
+      "pair_id": "5ec284fdc9e77c0008416517:4ae349be7fa7",
+      "refutes_id": "5ec284fdc9e77c0008416517_3",
+      "stage": 2,
+      "supports_id": "5ec284fdc9e77c0008416517_4",
+      "token_jaccard": 0.8966
+    },
+    {
+      "case_id": "5ede072ec9e77c00084d2667",
+      "character_ratio": 0.9563,
+      "claim": "Justin Chambers played the part of a surgery fellow in Grey 's anatomy .",
+      "distractor_id": "5ee39419c9e77c0008ccfaed_1",
+      "distractor_page": "66th Primetime Emmy Awards",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ede072ec9e77c00084d2667:061983c3507d:support",
+          "original_id": "5ede072ec9e77c00084d2667_1",
+          "reverse_id": "5ede072ec9e77c00084d2667_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ede072ec9e77c00084d2667:061983c3507d:refute",
+          "original_id": "5ede072ec9e77c00084d2667_2",
+          "reverse_id": "5ede072ec9e77c00084d2667_1"
+        }
+      ],
+      "page": "Justin Chambers",
+      "pair_id": "5ede072ec9e77c00084d2667:061983c3507d",
+      "refutes_id": "5ede072ec9e77c00084d2667_2",
+      "stage": 2,
+      "supports_id": "5ede072ec9e77c00084d2667_1",
+      "token_jaccard": 0.875
+    },
+    {
+      "case_id": "5ebe6f30c9e77c0008408784",
+      "character_ratio": 0.9684,
+      "claim": "Less than five of the main cast members have remained constant with Grey 's Anatomy .",
+      "distractor_id": "5ed7ad02c9e77c00084a6fe7_2",
+      "distractor_page": "2019 Los Angeles Chargers season",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ebe6f30c9e77c0008408784:de77a575607c:support",
+          "original_id": "5ebe6f30c9e77c0008408784_4",
+          "reverse_id": "5ebe6f30c9e77c0008408784_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ebe6f30c9e77c0008408784:de77a575607c:refute",
+          "original_id": "5ebe6f30c9e77c0008408784_3",
+          "reverse_id": "5ebe6f30c9e77c0008408784_4"
+        }
+      ],
+      "page": "Grey's Anatomy -LRB-season 1-RRB-",
+      "pair_id": "5ebe6f30c9e77c0008408784:de77a575607c",
+      "refutes_id": "5ebe6f30c9e77c0008408784_3",
+      "stage": 2,
+      "supports_id": "5ebe6f30c9e77c0008408784_4",
+      "token_jaccard": 0.8889
+    },
+    {
+      "case_id": "5ec5598cc9e77c000842c320",
+      "character_ratio": 0.9895,
+      "claim": "The East Midlands have hilly areas that begin at 95m .",
+      "distractor_id": "5ed7acffc9e77c00084a5b8a_1",
+      "distractor_page": "William III of England",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec5598cc9e77c000842c320:c9878d9d4883:support",
+          "original_id": "5ec5598cc9e77c000842c320_1",
+          "reverse_id": "5ec5598cc9e77c000842c320_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec5598cc9e77c000842c320:c9878d9d4883:refute",
+          "original_id": "5ec5598cc9e77c000842c320_2",
+          "reverse_id": "5ec5598cc9e77c000842c320_1"
+        }
+      ],
+      "page": "East Midlands",
+      "pair_id": "5ec5598cc9e77c000842c320:c9878d9d4883",
+      "refutes_id": "5ec5598cc9e77c000842c320_2",
+      "stage": 2,
+      "supports_id": "5ec5598cc9e77c000842c320_1",
+      "token_jaccard": 0.8889
+    },
+    {
+      "case_id": "5ec7d50ec9e77c0008442a70",
+      "character_ratio": 0.9596,
+      "claim": "Billu Beane is part owner of Barnsley FC of EFL Championship .",
+      "distractor_id": "5ec7d50dc9e77c0008441aaa_1",
+      "distractor_page": "Yuto Nagatomo",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec7d50ec9e77c0008442a70:962575527e82:support",
+          "original_id": "5ec7d50ec9e77c0008442a70_4",
+          "reverse_id": "5ec7d50ec9e77c0008442a70_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec7d50ec9e77c0008442a70:962575527e82:refute",
+          "original_id": "5ec7d50ec9e77c0008442a70_3",
+          "reverse_id": "5ec7d50ec9e77c0008442a70_4"
+        }
+      ],
+      "page": "Billy Beane",
+      "pair_id": "5ec7d50ec9e77c0008442a70:962575527e82",
+      "refutes_id": "5ec7d50ec9e77c0008442a70_3",
+      "stage": 2,
+      "supports_id": "5ec7d50ec9e77c0008442a70_4",
+      "token_jaccard": 0.913
+    },
+    {
+      "case_id": "5ee39419c9e77c0008ccfba5",
+      "character_ratio": 0.9688,
+      "claim": "The Theater for the Performing Arts is the current site for the Miss USA pageants .",
+      "distractor_id": "5ed7ad02c9e77c00084a7211_1",
+      "distractor_page": "Anthony Ruivivar",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee39419c9e77c0008ccfba5:a4209c110836:support",
+          "original_id": "5ee39419c9e77c0008ccfba5_1",
+          "reverse_id": "5ee39419c9e77c0008ccfba5_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee39419c9e77c0008ccfba5:a4209c110836:refute",
+          "original_id": "5ee39419c9e77c0008ccfba5_2",
+          "reverse_id": "5ee39419c9e77c0008ccfba5_1"
+        }
+      ],
+      "page": "Planet Hollywood Las Vegas",
+      "pair_id": "5ee39419c9e77c0008ccfba5:a4209c110836",
+      "refutes_id": "5ee39419c9e77c0008ccfba5_2",
+      "stage": 2,
+      "supports_id": "5ee39419c9e77c0008ccfba5_1",
+      "token_jaccard": 0.9167
+    },
+    {
+      "case_id": "5ed7acfdc9e77c00084a55dd",
+      "character_ratio": 0.9855,
+      "claim": "Roger Rees passed away after July 10 , 2015 .",
+      "distractor_id": "5ed4de0ac9e77c000848aebb_1",
+      "distractor_page": "History of the Buffalo Bills",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed7acfdc9e77c00084a55dd:1e555e2c50bb:support",
+          "original_id": "5ed7acfdc9e77c00084a55dd_4",
+          "reverse_id": "5ed7acfdc9e77c00084a55dd_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed7acfdc9e77c00084a55dd:1e555e2c50bb:refute",
+          "original_id": "5ed7acfdc9e77c00084a55dd_3",
+          "reverse_id": "5ed7acfdc9e77c00084a55dd_4"
+        }
+      ],
+      "page": "Roger Rees",
+      "pair_id": "5ed7acfdc9e77c00084a55dd:1e555e2c50bb",
+      "refutes_id": "5ed7acfdc9e77c00084a55dd_3",
+      "stage": 2,
+      "supports_id": "5ed7acfdc9e77c00084a55dd_4",
+      "token_jaccard": 0.875
+    },
+    {
+      "case_id": "5ec7d50dc9e77c0008441b88",
+      "character_ratio": 0.9615,
+      "claim": "Celina Jaitly 's mother was Tamilian .",
+      "distractor_id": "5ed4de08c9e77c000848a7b7_1",
+      "distractor_page": "Immortal Technique",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec7d50dc9e77c0008441b88:9aef8bfb8abe:support",
+          "original_id": "5ec7d50dc9e77c0008441b88_4",
+          "reverse_id": "5ec7d50dc9e77c0008441b88_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec7d50dc9e77c0008441b88:9aef8bfb8abe:refute",
+          "original_id": "5ec7d50dc9e77c0008441b88_3",
+          "reverse_id": "5ec7d50dc9e77c0008441b88_4"
+        }
+      ],
+      "page": "Celina Jaitly",
+      "pair_id": "5ec7d50dc9e77c0008441b88:9aef8bfb8abe",
+      "refutes_id": "5ec7d50dc9e77c0008441b88_3",
+      "stage": 2,
+      "supports_id": "5ec7d50dc9e77c0008441b88_4",
+      "token_jaccard": 0.8947
+    },
+    {
+      "case_id": "5eafed7ec9e77c0009ce0eb1",
+      "character_ratio": 0.9689,
+      "claim": "Edgware western edge is in Brent .",
+      "distractor_id": "5ec5598cc9e77c000842c07e_2",
+      "distractor_page": "Donna Reed",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5eafed7ec9e77c0009ce0eb1:fe7b6cb7a67a:support",
+          "original_id": "5eafed7ec9e77c0009ce0eb1_1",
+          "reverse_id": "5eafed7ec9e77c0009ce0eb1_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5eafed7ec9e77c0009ce0eb1:fe7b6cb7a67a:refute",
+          "original_id": "5eafed7ec9e77c0009ce0eb1_2",
+          "reverse_id": "5eafed7ec9e77c0009ce0eb1_1"
+        }
+      ],
+      "page": "Edgware",
+      "pair_id": "5eafed7ec9e77c0009ce0eb1:fe7b6cb7a67a",
+      "refutes_id": "5eafed7ec9e77c0009ce0eb1_2",
+      "stage": 2,
+      "supports_id": "5eafed7ec9e77c0009ce0eb1_1",
+      "token_jaccard": 0.8947
+    },
+    {
+      "case_id": "5ea2d97bc9e77c0009cda720",
+      "character_ratio": 0.9808,
+      "claim": "Anna Pavlova was born in 1931 .",
+      "distractor_id": "5ec284fcc9e77c0008415ad1_1",
+      "distractor_page": "Owen Danoff",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ea2d97bc9e77c0009cda720:7d027e707e68:support",
+          "original_id": "5ea2d97bc9e77c0009cda720_4",
+          "reverse_id": "5ea2d97bc9e77c0009cda720_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ea2d97bc9e77c0009cda720:7d027e707e68:refute",
+          "original_id": "5ea2d97bc9e77c0009cda720_3",
+          "reverse_id": "5ea2d97bc9e77c0009cda720_4"
+        }
+      ],
+      "page": "Anna Pavlova",
+      "pair_id": "5ea2d97bc9e77c0009cda720:7d027e707e68",
+      "refutes_id": "5ea2d97bc9e77c0009cda720_3",
+      "stage": 2,
+      "supports_id": "5ea2d97bc9e77c0009cda720_4",
+      "token_jaccard": 0.8889
+    },
+    {
+      "case_id": "5ece9462c9e77c0008466cc9",
+      "character_ratio": 0.9849,
+      "claim": "Andre Johnson is ranked above 10 in the NFL list of all-time receiving yards .",
+      "distractor_id": "5ec7d50ec9e77c0008442695_1",
+      "distractor_page": "Blac Chyna",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ece9462c9e77c0008466cc9:e4c360f25b94:support",
+          "original_id": "5ece9462c9e77c0008466cc9_1",
+          "reverse_id": "5ece9462c9e77c0008466cc9_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ece9462c9e77c0008466cc9:e4c360f25b94:refute",
+          "original_id": "5ece9462c9e77c0008466cc9_2",
+          "reverse_id": "5ece9462c9e77c0008466cc9_1"
+        }
+      ],
+      "page": "Andre Johnson",
+      "pair_id": "5ece9462c9e77c0008466cc9:e4c360f25b94",
+      "refutes_id": "5ece9462c9e77c0008466cc9_2",
+      "stage": 2,
+      "supports_id": "5ece9462c9e77c0008466cc9_1",
+      "token_jaccard": 0.8667
+    },
+    {
+      "case_id": "5ed7ad02c9e77c00084a6ebb",
+      "character_ratio": 0.9675,
+      "claim": "Credit Suisse 's stock hit a new 52-week low of above $ 11.48 during pre-market trading on June 24 .",
+      "distractor_id": "5ec5598ec9e77c000842c710_1",
+      "distractor_page": "Christian Democratic Appeal",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ed7ad02c9e77c00084a6ebb:aa21bd554290:support",
+          "original_id": "5ed7ad02c9e77c00084a6ebb_1",
+          "reverse_id": "5ed7ad02c9e77c00084a6ebb_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ed7ad02c9e77c00084a6ebb:aa21bd554290:refute",
+          "original_id": "5ed7ad02c9e77c00084a6ebb_2",
+          "reverse_id": "5ed7ad02c9e77c00084a6ebb_1"
+        }
+      ],
+      "page": "Credit Suisse",
+      "pair_id": "5ed7ad02c9e77c00084a6ebb:aa21bd554290",
+      "refutes_id": "5ed7ad02c9e77c00084a6ebb_2",
+      "stage": 2,
+      "supports_id": "5ed7ad02c9e77c00084a6ebb_1",
+      "token_jaccard": 0.9032
+    },
+    {
+      "case_id": "5ec55991c9e77c000842dbd7",
+      "character_ratio": 0.9906,
+      "claim": "The film Good Luck Chuck scored 5 % based on less than 111 reviews .",
+      "distractor_id": "5ea2d97bc9e77c0009cda494_1",
+      "distractor_page": "Gary Windass",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec55991c9e77c000842dbd7:255088497258:support",
+          "original_id": "5ec55991c9e77c000842dbd7_1",
+          "reverse_id": "5ec55991c9e77c000842dbd7_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec55991c9e77c000842dbd7:255088497258:refute",
+          "original_id": "5ec55991c9e77c000842dbd7_2",
+          "reverse_id": "5ec55991c9e77c000842dbd7_1"
+        }
+      ],
+      "page": "Good Luck Chuck",
+      "pair_id": "5ec55991c9e77c000842dbd7:255088497258",
+      "refutes_id": "5ec55991c9e77c000842dbd7_2",
+      "stage": 2,
+      "supports_id": "5ec55991c9e77c000842dbd7_1",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ee3949bc9e77c0008cd0028",
+      "character_ratio": 0.9569,
+      "claim": "Robert Lee Zemeckis is from Chicago .",
+      "distractor_id": "5ec284fcc9e77c0008415b47_1",
+      "distractor_page": "Boeing 747SP",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee3949bc9e77c0008cd0028:6a2aa0e70fe3:support",
+          "original_id": "5ee3949bc9e77c0008cd0028_1",
+          "reverse_id": "5ee3949bc9e77c0008cd0028_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee3949bc9e77c0008cd0028:6a2aa0e70fe3:refute",
+          "original_id": "5ee3949bc9e77c0008cd0028_2",
+          "reverse_id": "5ee3949bc9e77c0008cd0028_1"
+        }
+      ],
+      "page": "Robert Zemeckis",
+      "pair_id": "5ee3949bc9e77c0008cd0028:6a2aa0e70fe3",
+      "refutes_id": "5ee3949bc9e77c0008cd0028_2",
+      "stage": 2,
+      "supports_id": "5ee3949bc9e77c0008cd0028_1",
+      "token_jaccard": 0.9091
+    },
+    {
+      "case_id": "5ece9463c9e77c00084677cb",
+      "character_ratio": 0.9905,
+      "claim": "Regarding the conscription in South Korea , there is data from 'Regulation on Public Servant Compensation ' which was implemented after January 2014 .",
+      "distractor_id": "5eb29883c9e77c0008d92458_2",
+      "distractor_page": "The Night Manager -LRB-TV series-RRB-",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ece9463c9e77c00084677cb:339fbdda1794:support",
+          "original_id": "5ece9463c9e77c00084677cb_4",
+          "reverse_id": "5ece9463c9e77c00084677cb_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ece9463c9e77c00084677cb:339fbdda1794:refute",
+          "original_id": "5ece9463c9e77c00084677cb_3",
+          "reverse_id": "5ece9463c9e77c00084677cb_4"
+        }
+      ],
+      "page": "Conscription in South Korea",
+      "pair_id": "5ece9463c9e77c00084677cb:339fbdda1794",
+      "refutes_id": "5ece9463c9e77c00084677cb_3",
+      "stage": 2,
+      "supports_id": "5ece9463c9e77c00084677cb_4",
+      "token_jaccard": 0.8667
+    },
+    {
+      "case_id": "5ebe6f2fc9e77c0008408101",
+      "character_ratio": 0.9561,
+      "claim": "Alina Zagitova is Russian .",
+      "distractor_id": "5ec7d50ec9e77c0008442b2d_1",
+      "distractor_page": "Ricki Lake",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ebe6f2fc9e77c0008408101:fc199c9922d0:support",
+          "original_id": "5ebe6f2fc9e77c0008408101_1",
+          "reverse_id": "5ebe6f2fc9e77c0008408101_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ebe6f2fc9e77c0008408101:fc199c9922d0:refute",
+          "original_id": "5ebe6f2fc9e77c0008408101_2",
+          "reverse_id": "5ebe6f2fc9e77c0008408101_1"
+        }
+      ],
+      "page": "Alina Zagitova",
+      "pair_id": "5ebe6f2fc9e77c0008408101:fc199c9922d0",
+      "refutes_id": "5ebe6f2fc9e77c0008408101_2",
+      "stage": 2,
+      "supports_id": "5ebe6f2fc9e77c0008408101_1",
+      "token_jaccard": 0.9048
+    },
+    {
+      "case_id": "5ee39419c9e77c0008ccf971",
+      "character_ratio": 0.9911,
+      "claim": "The first Olympic medals were won after 1890 .",
+      "distractor_id": "5ec55990c9e77c000842d6d1_1",
+      "distractor_page": "Underoath",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee39419c9e77c0008ccf971:cf147338aeba:support",
+          "original_id": "5ee39419c9e77c0008ccf971_1",
+          "reverse_id": "5ee39419c9e77c0008ccf971_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee39419c9e77c0008ccf971:cf147338aeba:refute",
+          "original_id": "5ee39419c9e77c0008ccf971_2",
+          "reverse_id": "5ee39419c9e77c0008ccf971_1"
+        }
+      ],
+      "page": "Olympic medal",
+      "pair_id": "5ee39419c9e77c0008ccf971:cf147338aeba",
+      "refutes_id": "5ee39419c9e77c0008ccf971_2",
+      "stage": 2,
+      "supports_id": "5ee39419c9e77c0008ccf971_1",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ebbf32bc9e77c00092951e6",
+      "character_ratio": 0.9602,
+      "claim": "Dumas and his friends compiled Celebrated Crimes after 1900 .",
+      "distractor_id": "5ebbf32bc9e77c00092955b3_1",
+      "distractor_page": "Ragini Dwivedi",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ebbf32bc9e77c00092951e6:27d11299dfb4:support",
+          "original_id": "5ebbf32bc9e77c00092951e6_1",
+          "reverse_id": "5ebbf32bc9e77c00092951e6_2"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ebbf32bc9e77c00092951e6:27d11299dfb4:refute",
+          "original_id": "5ebbf32bc9e77c00092951e6_2",
+          "reverse_id": "5ebbf32bc9e77c00092951e6_1"
+        }
+      ],
+      "page": "Alexandre Dumas",
+      "pair_id": "5ebbf32bc9e77c00092951e6:27d11299dfb4",
+      "refutes_id": "5ebbf32bc9e77c00092951e6_2",
+      "stage": 2,
+      "supports_id": "5ebbf32bc9e77c00092951e6_1",
+      "token_jaccard": 0.8519
+    },
+    {
+      "case_id": "5ee39419c9e77c0008ccf788",
+      "character_ratio": 0.9688,
+      "claim": "Dave Grohl played the drums in Tenacious D 's first album .",
+      "distractor_id": "5ede072fc9e77c00084d3265_2",
+      "distractor_page": "Aldis Hodge",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ee39419c9e77c0008ccf788:c009624e0f47:support",
+          "original_id": "5ee39419c9e77c0008ccf788_4",
+          "reverse_id": "5ee39419c9e77c0008ccf788_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ee39419c9e77c0008ccf788:c009624e0f47:refute",
+          "original_id": "5ee39419c9e77c0008ccf788_3",
+          "reverse_id": "5ee39419c9e77c0008ccf788_4"
+        }
+      ],
+      "page": "Tenacious D -LRB-album-RRB-",
+      "pair_id": "5ee39419c9e77c0008ccf788:c009624e0f47",
+      "refutes_id": "5ee39419c9e77c0008ccf788_3",
+      "stage": 2,
+      "supports_id": "5ee39419c9e77c0008ccf788_4",
+      "token_jaccard": 0.8846
+    },
+    {
+      "case_id": "5ec284fcc9e77c0008415e92",
+      "character_ratio": 0.9645,
+      "claim": "Contestants are asked to eat jungle foods in the eating trials of I 'm a Celebrity Get Me out of Here .",
+      "distractor_id": "5ece9464c9e77c0008467dab_1",
+      "distractor_page": "Kommando Spezialkräfte",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec284fcc9e77c0008415e92:6cbe0f678266:support",
+          "original_id": "5ec284fcc9e77c0008415e92_4",
+          "reverse_id": "5ec284fcc9e77c0008415e92_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec284fcc9e77c0008415e92:6cbe0f678266:refute",
+          "original_id": "5ec284fcc9e77c0008415e92_3",
+          "reverse_id": "5ec284fcc9e77c0008415e92_4"
+        }
+      ],
+      "page": "I'm a Celebrity...Get Me Out of Here! -LRB-British TV series-RRB-",
+      "pair_id": "5ec284fcc9e77c0008415e92:6cbe0f678266",
+      "refutes_id": "5ec284fcc9e77c0008415e92_3",
+      "stage": 2,
+      "supports_id": "5ec284fcc9e77c0008415e92_4",
+      "token_jaccard": 0.875
+    },
+    {
+      "case_id": "5eb29882c9e77c0008d921f8",
+      "character_ratio": 0.9899,
+      "claim": "Manchester United have won over 64 competitive trophies .",
+      "distractor_id": "5ed4de0ac9e77c000848af68_1",
+      "distractor_page": "Rambo III",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5eb29882c9e77c0008d921f8:d9078b7226f1:support",
+          "original_id": "5eb29882c9e77c0008d921f8_4",
+          "reverse_id": "5eb29882c9e77c0008d921f8_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5eb29882c9e77c0008d921f8:d9078b7226f1:refute",
+          "original_id": "5eb29882c9e77c0008d921f8_3",
+          "reverse_id": "5eb29882c9e77c0008d921f8_4"
+        }
+      ],
+      "page": "Leeds United F.C.–Manchester United F.C. rivalry",
+      "pair_id": "5eb29882c9e77c0008d921f8:d9078b7226f1",
+      "refutes_id": "5eb29882c9e77c0008d921f8_3",
+      "stage": 2,
+      "supports_id": "5eb29882c9e77c0008d921f8_4",
+      "token_jaccard": 0.8824
+    },
+    {
+      "case_id": "5ede072fc9e77c00084d2f81",
+      "character_ratio": 0.9512,
+      "claim": "Stadio San Siro is the largest football stadium in Italy .",
+      "distractor_id": "5ece9464c9e77c0008467b44_2",
+      "distractor_page": "Saad Hariri",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ede072fc9e77c00084d2f81:f07f1aa3d70b:support",
+          "original_id": "5ede072fc9e77c00084d2f81_4",
+          "reverse_id": "5ede072fc9e77c00084d2f81_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ede072fc9e77c00084d2f81:f07f1aa3d70b:refute",
+          "original_id": "5ede072fc9e77c00084d2f81_3",
+          "reverse_id": "5ede072fc9e77c00084d2f81_4"
+        }
+      ],
+      "page": "Stadio San Paolo",
+      "pair_id": "5ede072fc9e77c00084d2f81:f07f1aa3d70b",
+      "refutes_id": "5ede072fc9e77c00084d2f81_3",
+      "stage": 2,
+      "supports_id": "5ede072fc9e77c00084d2f81_4",
+      "token_jaccard": 0.88
+    },
+    {
+      "case_id": "5ec284fec9e77c0008416d84",
+      "character_ratio": 0.9469,
+      "claim": "Bobby Vega plays drums in Navarone Garibaldi 's The Guns .",
+      "distractor_id": "5ebe6f31c9e77c0008408f0c_1",
+      "distractor_page": "Merle Travis",
+      "items": [
+        {
+          "gold_label": "SUPPORTS",
+          "item_id": "5ec284fec9e77c0008416d84:47b7394b5edc:support",
+          "original_id": "5ec284fec9e77c0008416d84_4",
+          "reverse_id": "5ec284fec9e77c0008416d84_3"
+        },
+        {
+          "gold_label": "REFUTES",
+          "item_id": "5ec284fec9e77c0008416d84:47b7394b5edc:refute",
+          "original_id": "5ec284fec9e77c0008416d84_3",
+          "reverse_id": "5ec284fec9e77c0008416d84_4"
+        }
+      ],
+      "page": "Navarone Garibaldi",
+      "pair_id": "5ec284fec9e77c0008416d84:47b7394b5edc",
+      "refutes_id": "5ec284fec9e77c0008416d84_3",
+      "stage": 2,
+      "supports_id": "5ec284fec9e77c0008416d84_4",
+      "token_jaccard": 0.8621
+    }
+  ],
+  "partition_table": [
+    [
+      "E01",
+      "E02"
+    ],
+    [
+      "E01",
+      "E03"
+    ],
+    [
+      "E02",
+      "E03"
+    ],
+    [
+      "E01",
+      "E02"
+    ],
+    [
+      "E01",
+      "E03"
+    ]
+  ],
+  "primary_scored": [
+    "paraphrase",
+    "reverse"
+  ],
+  "protocol": "cs-pilot-vitaminc-2026-09-13",
+  "salt": "cs-pilot-vitaminc-2026-09-13"
+}

@@ -1,0 +1,26 @@
+{
+  "counts": {
+    "items": 200,
+    "pairs": 100,
+    "stage1_pairs": 50,
+    "stage2_pairs": 50
+  },
+  "gates": {
+    "contrast_gates": true,
+    "dataset_hash_ok": true,
+    "distractor_jaccard_le_005": true,
+    "distractor_pages_unique": true,
+    "exact_pair_count": true,
+    "labels_exactly_balanced": true,
+    "natural_reverse_exact_swap": true,
+    "pages_unique": true,
+    "stage_split_exact": true,
+    "target_distractor_disjoint": true
+  },
+  "label_counts": {
+    "REFUTES": 100,
+    "SUPPORTS": 100
+  },
+  "passed": true,
+  "protocol": "cs-pilot-vitaminc-2026-09-13"
+}

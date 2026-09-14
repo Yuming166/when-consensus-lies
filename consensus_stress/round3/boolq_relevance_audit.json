@@ -1,0 +1,461 @@
+{
+  "items": [
+    {
+      "cqid": "cs-yes-9df6d30338",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is let it go demi lovato's song",
+      "relevant": true,
+      "units": [
+        "``Let It Go'' is a song from Disney's 2013 animated feature film Frozen, whose music and lyrics were composed by husband-and-wife songwriting team Kristen Anderson-Lopez and Robert Lopez.",
+        "The song was performed in its original show-tune version in the film by American actress and singer Idina Menzel in her vocal role as Queen Elsa.",
+        "Anderson-Lopez and Lopez also composed a simplified pop version (with shorter lyrics and background chorus) which was performed by actress and singer Demi Lovato over the start of the film's closing credits."
+      ]
+    },
+    {
+      "cqid": "cs-yes-aa5795bb95",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can i buy a pistol without a permit in nc",
+      "relevant": true,
+      "units": [
+        "Currently, in order to buy a handgun, whether from a licensed dealer or a private individual, North Carolinians are required to either A) obtain and present a pistol purchase permit from the sheriff of the county in which they reside, or B) obtain and present a North Carolina Concealed Handgun Permit.",
+        "Before issuing a purchase permit, the sheriff's office will subject the applicant to a background check.",
+        "Concealed Handgun Permits require satisfactory completion of an 8-hour handgun safety course, background check, and completion of the CHP application process."
+      ]
+    },
+    {
+      "cqid": "cs-no-a2e6128ee0",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: are all credit card numbers the same length",
+      "relevant": true,
+      "units": [
+        "While the vast majority of Visa's account ranges describe 16 digit card numbers there are still a few (40 as of 11 Dec.",
+        "2013) account ranges dedicated to 13 digit PANs and several (439 as of 11 Dec.",
+        "2013) account ranges where the issuer can mix 13 and 16 digit card numbers."
+      ]
+    },
+    {
+      "cqid": "cs-no-660e8fedb9",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: are virgin mobile and bell the same company",
+      "relevant": true,
+      "units": [
+        "On July 1, 2009, Bell Mobility acquired the 50% of Virgin Mobile Canada that it previously did not own for $142 million and entered into a long-term agreement to use the Virgin brand.",
+        "Following this, Bell greatly reduced its investments into Solo Mobile in order to invest in and improve its new Virgin brand.",
+        "On December 21, 2009, Virgin Mobile Canada's then-president Robert Blumenthal promised ``a very different Virgin Mobile'' with ``higher-value devices and services'' in 2010."
+      ]
+    },
+    {
+      "cqid": "cs-yes-22b7543967",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is it possible to have 2 queens in chess",
+      "relevant": true,
+      "units": [
+        "Promotion is a chess rule that requires a pawn that reaches its eighth rank to be immediately replaced by the player's choice of a queen, knight, rook, or bishop of the same color .",
+        "The new piece replaces the pawn, as part of the same move.",
+        "The choice of new piece is not limited to pieces previously captured , thus promotion can result in a player owning, for example, two or more queens despite starting the game with one."
+      ]
+    },
+    {
+      "cqid": "cs-yes-52145c3845",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is baylor college of medicine a medical school",
+      "relevant": true,
+      "units": [
+        "Baylor College of Medicine (BCM), located in the Texas Medical Center in Houston, Texas, US, is a health sciences university.",
+        "It includes a medical school, Baylor College of Medicine; the Graduate School of Biomedical Sciences; the School of Allied Health Sciences; and the National School of Tropical Medicine.",
+        "The school, located in the middle of the world's largest medical center (Texas Medical Center), is part owner of Baylor St."
+      ]
+    },
+    {
+      "cqid": "cs-no-b13c3f115c",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you put a regular bulb in a 3 way lamp",
+      "relevant": true,
+      "units": [
+        "A 3-way lamp, also known as a tri-light, is a lamp that uses a 3-way light bulb to produce three levels of light in a low-medium-high configuration.",
+        "A 3-way lamp requires a 3-way bulb and socket, and a 3-way switch.",
+        "Unlike an incandescent lamp controlled by a dimmer, each of the filaments operates at full voltage, so the color of the light does not change between the three steps of light available."
+      ]
+    },
+    {
+      "cqid": "cs-no-5997392e55",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you use a one way bulb in a three way socket",
+      "relevant": true,
+      "units": [
+        "A 3-way lamp, also known as a tri-light, is a lamp that uses a 3-way light bulb to produce three levels of light in a low-medium-high configuration.",
+        "A 3-way lamp requires a 3-way bulb and socket, and a 3-way switch.",
+        "Unlike an incandescent lamp controlled by a dimmer, each of the filaments operates at full voltage, so the color of the light does not change between the three steps of light available."
+      ]
+    },
+    {
+      "cqid": "cs-yes-d5ef71a919",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is tensile strength the same as breaking strength",
+      "relevant": true,
+      "units": [
+        "Ultimate tensile strength (UTS), often shortened to tensile strength (TS), ultimate strength, or Ftu within equations, is the capacity of a material or structure to withstand loads tending to elongate, as opposed to compressive strength, which withstands loads tending to reduce size.",
+        "In other words, tensile strength resists tension (being pulled apart), whereas compressive strength resists compression (being pushed together).",
+        "Ultimate tensile strength is measured by the maximum stress that a material can withstand while being stretched or pulled before breaking."
+      ]
+    },
+    {
+      "cqid": "cs-no-07284f1939",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is a fixed cost always a sunk cost",
+      "relevant": true,
+      "units": [
+        "Sunk costs are sometimes contrasted with prospective costs, which are future costs that may be incurred or changed if an action is taken.",
+        "In that regard, both retrospective and prospective costs could be either fixed costs (continuous for as long as the business is in operation and unaffected by output volume) or variable costs (dependent on volume).",
+        "However, many economists consider it a mistake to classify sunk costs as ``fixed'' or ``variable.'' For example, if a firm sinks $400 million on an enterprise software installation, that cost is ``sunk'' because it was a one-time expense and cannot be recovered once spent."
+      ]
+    },
+    {
+      "cqid": "cs-yes-265faf45d4",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does second place on survivor win any money",
+      "relevant": true,
+      "units": [
+        "The Sole Survivor receives a cash prize of $1,000,000 prior to taxes and sometimes also receives a car provided by the show's sponsor.",
+        "Every player receives a prize for participating on Survivor depending on how long he or she lasts in the game.",
+        "In most seasons, the runner-up receives $100,000, and third place wins $85,000."
+      ]
+    },
+    {
+      "cqid": "cs-yes-dbe044d263",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: has anyone won the superbowl back to back",
+      "relevant": true,
+      "units": [
+        "The Pittsburgh Steelers (6--2) have won the most Super Bowls with six championships, while the New England Patriots (5--5), the Dallas Cowboys (5--3), and the San Francisco 49ers (5--1) have five wins.",
+        "New England has the most Super Bowl appearances with ten, while the Buffalo Bills (0--4) have the most consecutive appearances with four (all losses) from 1990 to 1993.",
+        "The Miami Dolphins are the only other team to have at least three consecutive appearances: 1972--1974."
+      ]
+    },
+    {
+      "cqid": "cs-yes-ea3f0cdf21",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: are there sea turtles in the pacific ocean",
+      "relevant": true,
+      "units": [
+        "Sea turtles can be found in oceans except for the polar regions.",
+        "The flatback sea turtle is found solely on the northern coast of Australia.",
+        "The Kemp's ridley sea turtle is found solely in the Gulf of Mexico and along the East Coast of the United States."
+      ]
+    },
+    {
+      "cqid": "cs-yes-8890d55165",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: bank of england is mother of all central banks",
+      "relevant": true,
+      "units": [
+        "The Bank of England, formally the Governor and Company of the Bank of England, is the central bank of the United Kingdom and the model on which most modern central banks have been based.",
+        "Established in 1694, it is the second oldest central bank in operation today, after the Sveriges Riksbank.",
+        "The Bank of England is the world's 8th oldest bank."
+      ]
+    },
+    {
+      "cqid": "cs-yes-58eed5bc62",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is cam belt and timing chain the same",
+      "relevant": true,
+      "units": [
+        "A timing belt, timing chain or cambelt is a part of an internal combustion engine that synchronizes the rotation of the crankshaft and the camshaft(s) so that the engine's valves open and close at the proper times during each cylinder's intake and exhaust strokes.",
+        "In an interference engine the timing belt or chain is also critical to preventing the piston from striking the valves.",
+        "A timing belt is usually a toothed belt -- a drive belt with teeth on the inside surface."
+      ]
+    },
+    {
+      "cqid": "cs-yes-84262c8091",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is let's go pikachu a main game",
+      "relevant": true,
+      "units": [
+        "are upcoming role-playing video games (RPGs) developed by Game Freak and published by The Pokémon Company and Nintendo for the Nintendo Switch.",
+        "The games are the first installments of the main Pokémon RPG series for the Nintendo Switch.",
+        "They are enhanced remakes of the 1998 video game Pokémon Yellow."
+      ]
+    },
+    {
+      "cqid": "cs-no-8f8a2bde9a",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does canada's prime minister hold a seat in the house of commons",
+      "relevant": true,
+      "units": [
+        "Though it does not formally elect the prime minister, the House of Commons indirectly controls the premiership.",
+        "By convention, the prime minister is answerable to, and must maintain the support of, the House of Commons.",
+        "Thus, whenever the office of prime minister falls vacant, the governor general has the duty of appointing the person most likely to command the support of the House--normally the leader of the largest party in the lower house, although the system allows a coalition of two or more parties."
+      ]
+    },
+    {
+      "cqid": "cs-yes-f4eb3260f6",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do you get paid on nfl practice squad",
+      "relevant": true,
+      "units": [
+        "Practice squad players practice alongside regular roster players during the week, but they are not allowed to play in actual games.",
+        "They can be paid considerably less than active squad players; in 2012, the minimum salary for a practice squad player was $5,700 per week, and the minimum rookie salary was $390,000.",
+        "Some practice squad players are paid considerably more, however."
+      ]
+    },
+    {
+      "cqid": "cs-no-2fb773a4b8",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is po box the same as zip code",
+      "relevant": true,
+      "units": [
+        "Street Addressing will have the same street address of the post office, plus a ``unit number'' that matches the P.O.",
+        "As an example, in El Centro, California, the post office is located at 1598 Main Street.",
+        "Box 9975 (fictitious), the Street Addressing would be: 1598 Main Street Unit 9975, El Centro, CA."
+      ]
+    },
+    {
+      "cqid": "cs-no-62a1a254bb",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: was bosnia part of the austro hungarian empire",
+      "relevant": true,
+      "units": [
+        "Even though Bosnia and Herzegovina was still part of the Ottoman Empire, at least formally, the Austrian-Hungarian authorities had factual control over the country.",
+        "Austria-Hungary waited for a chance to incorporate Bosnia and Herzegovina formally as well.",
+        "Any action concerning Bosnia and Herzegovina depended on international opinion, which Austrian-Hungarian authorities were aware of."
+      ]
+    },
+    {
+      "cqid": "cs-no-20800034f1",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does the us have military bases in pakistan",
+      "relevant": true,
+      "units": [
+        "The following military bases in Pakistan have been accessible to the United States, mainly for logistics, relief efforts or as launching bases for drone operations.",
+        "Pakistan comes under the United States Central Command (USCENTCOM) theatre of operations.",
+        "The Afghanistan-Pakistan Center of Excellence is a division of USCENTCOM, focusing on analysis of operations in Pakistan and Afghanistan (formerly known as the AfPak theatre)."
+      ]
+    },
+    {
+      "cqid": "cs-yes-62b3aabc69",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does a po box need a zip code",
+      "relevant": true,
+      "units": [
+        "For Post Office Boxes, the general (but not invariable) rule is that each box has its own ZIP+4 code.",
+        "The add-on code is often one of the following: the last four digits of the box number (e.g.",
+        "PO Box 107050, Albany, NY 12201-7050), zero plus the last three digits of the box number (e.g., PO Box 17727, Eagle River, AK 99577-0727), or, if the box number consists of fewer than four digits, enough zeros are attached to the front of the box number to produce a four-digit number (e.g., PO Box 77, Juneau, AK 99750-0077)."
+      ]
+    },
+    {
+      "cqid": "cs-no-d7212513a6",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is a solstice and an equinox the same thing",
+      "relevant": true,
+      "units": [
+        "Outside of the tropics, the maximum elevation occurs at the summer solstice and the minimum at the winter solstice.",
+        "The path of the Sun, or ecliptic, sweeps north and south between the northern and southern hemispheres.",
+        "The days are longer around the summer solstice and shorter around the winter solstice."
+      ]
+    },
+    {
+      "cqid": "cs-yes-cd2a06e671",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: has there ever been a hole in one on a par 4",
+      "relevant": true,
+      "units": [
+        "During the second round of the 1971 Martini International tournament, held at the Royal Norwich Golf Club in England, John Hudson had two consecutive holes in one.",
+        "Teeing off, using a 4-iron, at the par-three, 195-yard 11th hole, Hudson holed his tee shot for a hole-in-one.",
+        "At the next hole, the downhill 311-yard, par-four 12th, and this time using a driver, he once again holed his tee shot, for another ace."
+      ]
+    },
+    {
+      "cqid": "cs-no-b250166681",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: does buffy show up in angel season 5",
+      "relevant": true,
+      "units": [
+        "Buffy the Vampire Slayer concluded the previous season, therefore there are no official crossovers between the two series.",
+        "Despite this, references are made throughout the fifth season of Angel that relate to Buffy the Vampire Slayer.",
+        "Spike is resurrected (after his death in ``Chosen'') by the magical amulet Angel gave to Buffy at the start of the finale."
+      ]
+    },
+    {
+      "cqid": "cs-no-50dc0ea8b7",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: do you have to leave a return address",
+      "relevant": true,
+      "units": [
+        "The return address is not required on postal mail.",
+        "However, lack of a return address prevents the postal service from being able to return the item if it proves undeliverable; such as from damage, postage due, or invalid destination.",
+        "Such mail may otherwise become dead letter mail."
+      ]
+    },
+    {
+      "cqid": "cs-yes-0297d35c8d",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: can you end an uno game with a draw four",
+      "relevant": true,
+      "units": [
+        "The first player to get rid of their last card (``going out'') wins the hand and scores points for the cards held by the other players.",
+        "Number cards count their face value, all action cards count 20, and Wild and Wild Draw Four cards count 50.",
+        "If a Draw Two or Wild Draw Four card is played to go out, the next player in sequence must draw the appropriate number of cards before the score is tallied."
+      ]
+    },
+    {
+      "cqid": "cs-yes-abe118fb6e",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: will there be a black ink crew chicago season 4",
+      "relevant": true,
+      "units": [
+        "Black Ink Crew: Chicago is an American reality television series that airs on VH1 and debuted on October 26, 2015.",
+        "It is the Chicago-based spin-off of Black Ink Crew.",
+        "It chronicles the daily operations and staff drama at an African American owned and operated tattoo shop, 9MAG, located in Chicago, Illinois."
+      ]
+    },
+    {
+      "cqid": "cs-yes-8b77d4b153",
+      "label": "yes",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is there a season 9 for hawaii five-o",
+      "relevant": true,
+      "units": [
+        "The ninth season of the CBS police procedural drama series Hawaii Five-0 premiered on September 28, 2018 for the 2018--19 television season.",
+        "CBS renewed the series for a ninth season in April 2018.",
+        "The season is expected to contain 22 episodes."
+      ]
+    },
+    {
+      "cqid": "cs-no-c83917daec",
+      "label": "no",
+      "question": "Answer the following BoolQ yes/no question using only the supplied task-local evidence packet. Do not infer a gold label from the task format or assume evidence that is absent from the packet.\n\nQuestion: is jurrasic world fallen kingdom the last movie",
+      "relevant": true,
+      "units": [
+        "Jurassic World: Fallen Kingdom is a 2018 American science fiction adventure film and the sequel to Jurassic World (2015).",
+        "Bayona, it is the fifth installment of the Jurassic Park film series, as well as the second installment of a planned Jurassic World trilogy.",
+        "Derek Connolly and Jurassic World director Colin Trevorrow both returned as writers, with Trevorrow and original Jurassic Park director Steven Spielberg acting as executive producers."
+      ]
+    }
+  ],
+  "judgments": [
+    {
+      "cqid": "cs-yes-9df6d30338",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-aa5795bb95",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-a2e6128ee0",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-660e8fedb9",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-22b7543967",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-52145c3845",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-b13c3f115c",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-5997392e55",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-d5ef71a919",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-07284f1939",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-265faf45d4",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-dbe044d263",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-ea3f0cdf21",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-8890d55165",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-58eed5bc62",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-84262c8091",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-8f8a2bde9a",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-f4eb3260f6",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-2fb773a4b8",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-62a1a254bb",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-20800034f1",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-62b3aabc69",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-d7212513a6",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-cd2a06e671",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-b250166681",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-50dc0ea8b7",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-0297d35c8d",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-abe118fb6e",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-yes-8b77d4b153",
+      "relevant": true
+    },
+    {
+      "cqid": "cs-no-c83917daec",
+      "relevant": true
+    }
+  ],
+  "n_relevant": 30,
+  "n_total": 30,
+  "protocol": "cs-paper-boolq-20260913",
+  "rule": ">=24/30 judged decision-relevant (3 evidence units answer the question), else exclude",
+  "threshold_ge_80pct": true
+}

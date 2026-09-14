@@ -1,0 +1,20 @@
+{
+  "gates": {
+    "contrast_gates": true,
+    "dataset_hash_ok": true,
+    "disjoint_from_round2": true,
+    "distractor_pages_not_used": true,
+    "label_symmetric": true,
+    "n_pairs_eq_300": true,
+    "natural_reverse_exact_swap": true,
+    "one_pair_per_page": true
+  },
+  "label_counts": {
+    "REFUTES": 300,
+    "SUPPORTS": 300
+  },
+  "n_items": 600,
+  "n_pairs": 300,
+  "passed": true,
+  "protocol": "cs-paper-vitaminc-2026-09-13"
+}

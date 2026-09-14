@@ -1,0 +1,131 @@
+{
+  "decision": "paraphrase condition stands as scored",
+  "fraction": 1.0,
+  "judgments": [
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5eafed81c9e77c0009ce19db_4",
+      "variant": "para1"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ebe6f2fc9e77c0008408272_1",
+      "variant": "para1"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ee39419c9e77c0008ccf8fa_1",
+      "variant": "para1"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ec5598ec9e77c000842c710_1",
+      "variant": "para1"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ee39419c9e77c0008ccfba5_2",
+      "variant": "para1"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ee39419c9e77c0008ccfaa7_1",
+      "variant": "para1"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ec55991c9e77c000842deeb_1",
+      "variant": "para1"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ec7d50ec9e77c0008442894_1",
+      "variant": "para1"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ee39418c9e77c0008ccf503_3",
+      "variant": "para1"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ee39419c9e77c0008ccfcd6_2",
+      "variant": "para1"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ebe6f2dc9e77c0008407913_1",
+      "variant": "para2"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ee3949bc9e77c0008cd0028_1",
+      "variant": "para2"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ec7d50dc9e77c0008441d08_2",
+      "variant": "para2"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ed7ad02c9e77c00084a6a91_3",
+      "variant": "para2"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5eafed81c9e77c0009ce17d0_1",
+      "variant": "para2"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ede072fc9e77c00084d2a46_1",
+      "variant": "para2"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ec7d50ec9e77c0008442e80_1",
+      "variant": "para2"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ec55991c9e77c000842df55_1",
+      "variant": "para2"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ede072fc9e77c00084d2c17_1",
+      "variant": "para2"
+    },
+    {
+      "meaning_preserved": true,
+      "note": "",
+      "unique_id": "5ec7d50dc9e77c0008441983_2",
+      "variant": "para2"
+    }
+  ],
+  "n_audited": 20,
+  "n_meaning_preserved": 20,
+  "protocol": "cs-pilot-vitaminc-2026-09-13",
+  "rule": ">=16/20 meaning-preserving, else paraphrase downgraded to NO-FORCED-RESPONSE",
+  "threshold_ge_80pct": true
+}

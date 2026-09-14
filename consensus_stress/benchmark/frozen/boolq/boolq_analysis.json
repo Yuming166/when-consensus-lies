@@ -1,0 +1,155 @@
+{
+  "c2": {
+    "n": 85,
+    "obs_auroc": 0.4491584852734923,
+    "perm_95pct": 0.6122019635343618,
+    "perm_mean": 0.49964831697054696
+  },
+  "gates": {
+    "g1_pipeline_ge_0.95": true,
+    "g2_primary_ci_lb_gt_0.5": false,
+    "g2_primary_point_ge_0.60": false,
+    "g3_macro_ci_lb_gt_0.5": false,
+    "g4_worst_point_gt_0.5": false,
+    "g5_placebo_clean": true,
+    "g6_perm_pass": false,
+    "g7_reducibility": true,
+    "pass": false
+  },
+  "macro": null,
+  "paired_diff_vs_risk": {
+    "R_PI": {
+      "ci": [
+        -0.1815514993481095,
+        -0.009221311475409832
+      ],
+      "diff": -0.09747545582047684,
+      "n": 85
+    },
+    "R_sym": {
+      "ci": [
+        -0.17383879781420766,
+        0.2385919165580183
+      ],
+      "diff": 0.03506311360448805,
+      "n": 85
+    },
+    "disagreement": {
+      "ci": [
+        -0.20925684485006524,
+        0.1569230769230769
+      ],
+      "diff": -0.02244039270687237,
+      "n": 85
+    },
+    "mean_confidence": {
+      "ci": [
+        -0.14685792349726778,
+        0.16294642857142855
+      ],
+      "diff": 0.0066619915848527556,
+      "n": 85
+    }
+  },
+  "para_agent_flip": 0.052,
+  "per_label": {
+    "no": {
+      "auroc": 0.07330827067669173,
+      "ci": [
+        0.005,
+        0.16880341880341881
+      ],
+      "n": 45,
+      "n_pairs": 45
+    },
+    "yes": {
+      "auroc": 0.7447916666666666,
+      "ci": [
+        0.5792838874680307,
+        0.8887468030690537
+      ],
+      "n": 40,
+      "n_pairs": 40
+    }
+  },
+  "population": {
+    "hc": 85,
+    "hc_by_label": {
+      "no": 45,
+      "yes": 40
+    },
+    "total": 100,
+    "wrong_by_label": {
+      "no": 7,
+      "yes": 16
+    },
+    "wrong_hc": 23
+  },
+  "primary": {
+    "auroc": 0.4491584852734923,
+    "ci": [
+      0.30821371610845294,
+      0.579004329004329
+    ],
+    "n": 85,
+    "n_groups": 85
+  },
+  "protocol": "cs-paper-boolq-20260913",
+  "reducibility": {
+    "spearman_risk_agreement": 0.13326167676372874,
+    "spearman_risk_conf": 0.10439710768028142
+  },
+  "reverse_definition": "negation prefix (BoolQ lacks natural counter-evidence)",
+  "risk80": {
+    "R_PI": {
+      "ci": [
+        -0.30434782608695676,
+        0.4565217391304347
+      ],
+      "n": 85,
+      "overall_error": 0.27058823529411763,
+      "reduction": 0.1847826086956521
+    },
+    "R_sym": {
+      "ci": [
+        -0.46739130434782616,
+        0.3478260869565216
+      ],
+      "n": 85,
+      "overall_error": 0.27058823529411763,
+      "reduction": -0.03260869565217406
+    },
+    "disagreement": {
+      "ci": [
+        -0.4130434782608696,
+        0.3478260869565216
+      ],
+      "n": 85,
+      "overall_error": 0.27058823529411763,
+      "reduction": -0.03260869565217406
+    },
+    "mean_confidence": {
+      "ci": [
+        -0.46739130434782616,
+        0.2934782608695652
+      ],
+      "n": 85,
+      "overall_error": 0.27058823529411763,
+      "reduction": 0.07608695652173902
+    },
+    "risk_bf_q": {
+      "ci": [
+        -0.46739130434782616,
+        0.3478260869565216
+      ],
+      "n": 85,
+      "overall_error": 0.27058823529411763,
+      "reduction": 0.23913043478260865
+    }
+  },
+  "worst_ci": [
+    0.005,
+    0.16880341880341881
+  ],
+  "worst_label": "no"
+}

@@ -1,0 +1,277 @@
+{
+  "items": [
+    {
+      "claim": "Lenny Cooke had multiple options for basketball at the end of school year 2001-02 .",
+      "evidence": "At the end of the 2001-02 school year , Cooke had multiple options for basketball : North Carolina , Seton Hall , St. John 's , Miami and Ohio State .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec55991c9e77c000842de9c:526632179978:support",
+      "pair_id": "5ec55991c9e77c000842de9c:526632179978",
+      "reverse_evidence": "At the end of the 2002-03 school year , Cooke had multiple options for basketball : North Carolina , Seton Hall , St. John 's , Miami and Ohio State .",
+      "stage": 1
+    },
+    {
+      "claim": "Eka-bismuth is also called moscovium .",
+      "evidence": "IUPAC ( 2015-12-30 )  Using Mendeleev 's nomenclature for unnamed and undiscovered elements , moscovium is sometimes known as eka-bismuth .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ee39418c9e77c0008ccf503:1f70094bf0bd:support",
+      "pair_id": "5ee39418c9e77c0008ccf503:1f70094bf0bd",
+      "reverse_evidence": "IUPAC ( 2015-12-30 )  Using Mendeleev 's nomenclature for unnamed and undiscovered elements , ununpentium is sometimes known as eka-bismuth .",
+      "stage": 1
+    },
+    {
+      "claim": "NXT Tag Team Championship has less than 13 championship teams and less than 25 individual teams .",
+      "evidence": "As of , , there have been 13 different championship teams , and 26 individual champions with the team of The Revival ( Scott Dawson and Dash Wilder ) holding the most reigns at two .",
+      "gold_label": "REFUTES",
+      "item_id": "5ee39419c9e77c0008ccf989:6293fd5116d4:refute",
+      "pair_id": "5ee39419c9e77c0008ccf989:6293fd5116d4",
+      "reverse_evidence": "As of , , there have been 12 different championship teams , and 24 individual champions with the team of The Revival ( Scott Dawson and Dash Wilder ) holding the most reigns at two .",
+      "stage": 1
+    },
+    {
+      "claim": "Some economies barter pigs or cattle .",
+      "evidence": "However , some barter economies rely on durable goods like sheep or cattle for this purpose .",
+      "gold_label": "REFUTES",
+      "item_id": "5ed7ad02c9e77c00084a6dfb:a45b9580cfc8:refute",
+      "pair_id": "5ed7ad02c9e77c00084a6dfb:a45b9580cfc8",
+      "reverse_evidence": "However , some barter economies rely on durable goods like pigs or cattle for this purpose .",
+      "stage": 2
+    },
+    {
+      "claim": "Contestants are asked to eat jungle foods in the eating trials of I 'm a Celebrity Get Me out of Here .",
+      "evidence": "In the eating trials , contestants are required to eat a variety of different `` jungle '' foods .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec284fcc9e77c0008415e92:6cbe0f678266:support",
+      "pair_id": "5ec284fcc9e77c0008415e92:6cbe0f678266",
+      "reverse_evidence": "In the filming trials , contestants are required to eat a variety of different `` jungle '' foods .",
+      "stage": 2
+    },
+    {
+      "claim": "Daryl Dixon becomes close to Carol Peletier .",
+      "evidence": "After Merle 's disappearance , Daryl begins to shed his aloof personality and starts to bond with the group , particularly Rick Grimes after her daughter 's disappearance , and Beth Greene after the two are split off together in season 4 .",
+      "gold_label": "REFUTES",
+      "item_id": "5eafed81c9e77c0009ce17d0:022399913102:refute",
+      "pair_id": "5eafed81c9e77c0009ce17d0:022399913102",
+      "reverse_evidence": "After Merle 's disappearance , Daryl begins to shed his aloof personality and starts to bond with the group , particularly Carol Peletier after her daughter 's disappearance , and Beth Greene after the two are split off together in season 4 .",
+      "stage": 2
+    },
+    {
+      "claim": "Regarding the conscription in South Korea , there is data from 'Regulation on Public Servant Compensation ' which was implemented after January 2014 .",
+      "evidence": "The following data is from 'Regulation on Public Servant Compensation ' , implemented on 6 January 2012 .",
+      "gold_label": "REFUTES",
+      "item_id": "5ece9463c9e77c00084677cb:339fbdda1794:refute",
+      "pair_id": "5ece9463c9e77c00084677cb:339fbdda1794",
+      "reverse_evidence": "The following data is from 'Regulation on Public Servant Compensation ' , implemented on 6 January 2015 .",
+      "stage": 2
+    },
+    {
+      "claim": "The film Space Jam featured Lebron James .",
+      "evidence": "TV Guide gave the movie only two stars , calling it a `` cynical attempt to cash in on the popularity of Warner Bros. cartoon characters and basketball player Lebron James , inspired by a Nike commercial . ''",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed7ad00c9e77c00084a608b:2780ae38bf4c:support",
+      "pair_id": "5ed7ad00c9e77c00084a608b:2780ae38bf4c",
+      "reverse_evidence": "TV Guide gave the movie only two stars , calling it a `` cynical attempt to cash in on the popularity of Warner Bros. cartoon characters and basketball player Michael Jordan , inspired by a Nike commercial . ''",
+      "stage": 2
+    },
+    {
+      "claim": "The album Dirty Mind was certified gold in 1984 .",
+      "evidence": "Retrieved on 2010-01-01.On June 6 , 1984 , it was certified gold in shipments by the Recording Industry Association of America .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec284ffc9e77c0008417a58:3edd9b5cbcaf:support",
+      "pair_id": "5ec284ffc9e77c0008417a58:3edd9b5cbcaf",
+      "reverse_evidence": "Retrieved on 2010-01-01.On June 6 , 1984 , it was certified platinum in shipments by the Recording Industry Association of America .",
+      "stage": 2
+    },
+    {
+      "claim": "Richard Attenborough has an ongoing career as an actor and director .",
+      "evidence": "He is the younger brother of director , producer and actor Richard Attenborough.",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ee3949ac9e77c0008ccfd98:28c0b7771eef:support",
+      "pair_id": "5ee3949ac9e77c0008ccfd98:28c0b7771eef",
+      "reverse_evidence": "He is the younger brother of the late director , producer and actor Richard Attenborough.",
+      "stage": 1
+    },
+    {
+      "claim": "Edgware western edge is in Brent .",
+      "evidence": "Edgware ( ) is a district of north west London , mainly in the London Borough of Barnet , with its western edge in the London Borough of Brent .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5eafed7ec9e77c0009ce0eb1:fe7b6cb7a67a:support",
+      "pair_id": "5eafed7ec9e77c0009ce0eb1:fe7b6cb7a67a",
+      "reverse_evidence": "Edgware ( ) is a district of north west London , mainly in the London Borough of Barnet , with its western edge in the London Borough of Harrow .",
+      "stage": 2
+    },
+    {
+      "claim": "James Ingram was born after 1960 .",
+      "evidence": "James Edward Ingram ( born February 16 , 1952 ) is an American singer-songwriter , record producer , and instrumentalist .",
+      "gold_label": "REFUTES",
+      "item_id": "5ec5598bc9e77c000842bfa4:4063ac1444c5:refute",
+      "pair_id": "5ec5598bc9e77c000842bfa4:4063ac1444c5",
+      "reverse_evidence": "James Edward Ingram ( born February 16 , 1962 ) is an American singer-songwriter , record producer , and instrumentalist .",
+      "stage": 1
+    },
+    {
+      "claim": "The Financial Times is a daily newspaper .",
+      "evidence": "The Financial Times ( FT ) is a British English-language international news organisation with a special emphasis on business and economic news in the United Kingdom and internationally .",
+      "gold_label": "REFUTES",
+      "item_id": "5ea2d97dc9e77c0009cdad9c:21294bd6454a:refute",
+      "pair_id": "5ea2d97dc9e77c0009cdad9c:21294bd6454a",
+      "reverse_evidence": "The Financial Times ( FT ) is a British English-language international daily newspaper with a special emphasis on business and economic news in the United Kingdom and internationally .",
+      "stage": 1
+    },
+    {
+      "claim": "In the TV series `` The Simpsons '' , Lisa 's Rival Marge is reading a book that intends to make reference to Love in the Time of Cholera .",
+      "evidence": "In The Simpsons episode 1F17 [ Rival ] Marge is reading a book entitled `` Love In The Time Of Scurvy '' Pittsburgh singer-songwriter Heather Kropf based a song on the novel that appeared on her 2000 album `` Sky '' .",
+      "gold_label": "REFUTES",
+      "item_id": "5ebe6f2fc9e77c0008408029:9c898bc5dadc:refute",
+      "pair_id": "5ebe6f2fc9e77c0008408029:9c898bc5dadc",
+      "reverse_evidence": "In The Simpsons episode 1F17 Lisa 's Rival Marge is reading a book entitled `` Love In The Time Of Scurvy '' Pittsburgh singer-songwriter Heather Kropf based a song on the novel that appeared on her 2000 album `` Sky '' .",
+      "stage": 1
+    },
+    {
+      "claim": "Guadalajara was officially founded in 1542 .",
+      "evidence": "Guadalajara was officially founded on February 14 , 1550 in the Valley of Atemajac .",
+      "gold_label": "REFUTES",
+      "item_id": "5ebe6f2fc9e77c0008408088:224cde5f9ae6:refute",
+      "pair_id": "5ebe6f2fc9e77c0008408088:224cde5f9ae6",
+      "reverse_evidence": "Guadalajara was officially founded on February 14 , 1542 in the Valley of Atemajac .",
+      "stage": 1
+    },
+    {
+      "claim": "Malcolm Mitchell could only read at a junior high level in college .",
+      "evidence": "Mitchell was not a strong reader when he began college , then reading only at a junior high level , but grew to love reading ; even joining a woman 's reading club and promoting literacy among youth .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec7d50ec9e77c0008442894:dc7f25f6ac40:support",
+      "pair_id": "5ec7d50ec9e77c0008442894:dc7f25f6ac40",
+      "reverse_evidence": "Mitchell was not a strong reader when he began college , then reading only at a third grade level , but grew to love reading ; even joining a woman 's reading club and promoting literacy among youth .",
+      "stage": 2
+    },
+    {
+      "claim": "The Government of India owns approximately 58.57 % shares of the Indian Oil Corporation .",
+      "evidence": "The company is mainly controlled by Government of India which owns approximately 68.57 % shares in the company .",
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de08c9e77c000848a7d4:6623d473a116:refute",
+      "pair_id": "5ed4de08c9e77c000848a7d4:6623d473a116",
+      "reverse_evidence": "The company is mainly controlled by Government of India which owns approximately 58.57 % shares in the company .",
+      "stage": 2
+    },
+    {
+      "claim": "Stadio San Siro is the largest football stadium in Italy .",
+      "evidence": "Stadio San Paolo is a multi-use stadium in the western suburb of Fuorigrotta of Naples , Italy , and is the third largest football stadium in Italy after Stadio Giuseppe Meazza and Stadio Olimpico .",
+      "gold_label": "REFUTES",
+      "item_id": "5ede072fc9e77c00084d2f81:f07f1aa3d70b:refute",
+      "pair_id": "5ede072fc9e77c00084d2f81:f07f1aa3d70b",
+      "reverse_evidence": "Stadio San Paolo is a multi-use stadium in the western suburb of Fuorigrotta of Naples , Italy , and is the third largest football stadium in Italy after Stadio San Siro and Stadio Olimpico .",
+      "stage": 2
+    },
+    {
+      "claim": "Psylocke is a man .",
+      "evidence": "The psycho-blast was able to affect inorganic material as well as living targets ( when directing a psycho-blast at Sabretooth the energy destroyed the metal Cerebro helmet he was wearing ) .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5eafed7ec9e77c0009ce0a31:8bf6ab5119e5:support",
+      "pair_id": "5eafed7ec9e77c0009ce0a31:8bf6ab5119e5",
+      "reverse_evidence": "The psycho-blast was able to affect inorganic material as well as living targets ( when directing a psycho-blast at Sabretooth the energy destroyed the metal Cerebro helmet she was wearing ) .",
+      "stage": 1
+    },
+    {
+      "claim": "Cláudio Taffarel played for the Brazilian national team less than 103 times .",
+      "evidence": "For the Brazilian national team , Taffarel is the most capped goalkeeper in their history , with 101 appearances .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9463c9e77c0008467891:98f7b6e2e66a:support",
+      "pair_id": "5ece9463c9e77c0008467891:98f7b6e2e66a",
+      "reverse_evidence": "For the Brazilian national team , Taffarel is the most capped goalkeeper in their history , with 105 appearances .",
+      "stage": 2
+    },
+    {
+      "claim": "There are 5 countries more populous than Pakistan .",
+      "evidence": "It is the fifth-most populous country with a population exceeding 212,742,631 people .",
+      "gold_label": "REFUTES",
+      "item_id": "5ee3949bc9e77c0008ccfff0:4d132500d7ba:refute",
+      "pair_id": "5ee3949bc9e77c0008ccfff0:4d132500d7ba",
+      "reverse_evidence": "It is the sixth-most populous country with a population exceeding 212,742,631 people .",
+      "stage": 1
+    },
+    {
+      "claim": "Andre Johnson is ranked above 10 in the NFL list of all-time receiving yards .",
+      "evidence": "He is currently ninth all-time in NFL career receptions , and 9th all-time in NFL receiving yards .",
+      "gold_label": "REFUTES",
+      "item_id": "5ece9462c9e77c0008466cc9:e4c360f25b94:refute",
+      "pair_id": "5ece9462c9e77c0008466cc9:e4c360f25b94",
+      "reverse_evidence": "He is currently ninth all-time in NFL career receptions , and 11th all-time in NFL receiving yards .",
+      "stage": 2
+    },
+    {
+      "claim": "Hurricane Florence passed over North Carolina after 2017 .",
+      "evidence": "The most recent hurricane to have a considerable effect on the area was Hurricane Florence in 2016 .",
+      "gold_label": "REFUTES",
+      "item_id": "5ed7ad03c9e77c00084a7937:8e150e69b115:refute",
+      "pair_id": "5ed7ad03c9e77c00084a7937:8e150e69b115",
+      "reverse_evidence": "The most recent hurricane to have a considerable effect on the area was Hurricane Florence in 2018 .",
+      "stage": 1
+    },
+    {
+      "claim": "The police report refutes Reyes being on MacArthur Causeway .",
+      "evidence": "A Miami Beach police report said Reyes was not in a crosswalk on the busy causeway when he was struck by the black 2005 Bentley Continental GT driven by Stallworth .",
+      "gold_label": "REFUTES",
+      "item_id": "5ea2d97bc9e77c0009cda64e:ce6a03d203dc:refute",
+      "pair_id": "5ea2d97bc9e77c0009cda64e:ce6a03d203dc",
+      "reverse_evidence": "A Miami Beach police report said Reyes was not in a crosswalk on busy MacArthur Causeway when he was struck by the black 2005 Bentley Continental GT driven by Stallworth .",
+      "stage": 1
+    },
+    {
+      "claim": "The band Dandy Warhols was formed in 1992 .",
+      "evidence": "The band was formed in Portland , Oregon in 1992 by Courtney Taylor-Taylor and Peter Holmstrï¿½m .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ea2d97dc9e77c0009cdb2d4:9c437891dccc:support",
+      "pair_id": "5ea2d97dc9e77c0009cdb2d4:9c437891dccc",
+      "reverse_evidence": "The band was formed in Portland , Oregon in 1994 by Courtney Taylor-Taylor and Peter Holmstrï¿½m .",
+      "stage": 1
+    },
+    {
+      "claim": "Justin Chambers played the part of a surgery fellow in Grey 's anatomy .",
+      "evidence": "In August , 2004 , Chambers was cast as surgery fellow Alex Karev in Shonda Rhimes medical drama series Grey 's Anatomy , opposite Ellen Pompeo , Sandra Oh , Katherine Heigl , and T. R. Knight .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ede072ec9e77c00084d2667:061983c3507d:support",
+      "pair_id": "5ede072ec9e77c00084d2667:061983c3507d",
+      "reverse_evidence": "In August , 2004 , Chambers was cast as surgical intern Alex Karev in Shonda Rhimes medical drama series Grey 's Anatomy , opposite Ellen Pompeo , Sandra Oh , Katherine Heigl , and T. R. Knight .",
+      "stage": 2
+    },
+    {
+      "claim": "Manor Grand Prix Racing Ltd. ran the racing team Marussia F1 .",
+      "evidence": "The team was operated by Manor Grand Prix Racing Ltd ( formerly Marussia Manor Racing ) , which was previously a subsidiary of Marussia Motors , a now defunct sports car manufacturer which was based in Moscow .",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed7ad03c9e77c00084a7448:9353c14abe1a:support",
+      "pair_id": "5ed7ad03c9e77c00084a7448:9353c14abe1a",
+      "reverse_evidence": "The team was operated by Manor Motorsport ( formerly Marussia Manor Racing ) , which was previously a subsidiary of Marussia Motors , a now defunct sports car manufacturer which was based in Moscow .",
+      "stage": 1
+    },
+    {
+      "claim": "`` Meant to Be '' by Florido Georgia Line was ranked higher than # 5 in the U.S charts .",
+      "evidence": "This included Chris Stapleton who collaboration with Justin Timberlake on UK & Hot 100 top ten single `` Say Something '' '' ; Urban-pop star Bebe Rexha whose duet with bro-country duo Florida Georgia Line `` Meant to Be '' reached # 2 both in Australia and in the U.S. and German DJ Zedd whose dance hit `` The Middle '' feature main vocals from Maren Morris.",
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9463c9e77c000846743c:c4ecb860a781:support",
+      "pair_id": "5ece9463c9e77c000846743c:c4ecb860a781",
+      "reverse_evidence": "This included Chris Stapleton who collaboration with Justin Timberlake on UK & Hot 100 top ten single `` Say Something '' '' ; Urban-pop star Bebe Rexha whose duet with bro-country duo Florida Georgia Line `` Meant to Be '' reached # 2 in Australia & # 7 in the U.S. and German DJ Zedd whose dance hit `` The Middle '' feature main vocals from Maren Morris.",
+      "stage": 1
+    },
+    {
+      "claim": "The first Olympic medals were won after 1890 .",
+      "evidence": "Medal designs have varied considerably since the first Olympic Games in 1876 , particularly in size and weight .",
+      "gold_label": "REFUTES",
+      "item_id": "5ee39419c9e77c0008ccf971:cf147338aeba:refute",
+      "pair_id": "5ee39419c9e77c0008ccf971:cf147338aeba",
+      "reverse_evidence": "Medal designs have varied considerably since the first Olympic Games in 1896 , particularly in size and weight .",
+      "stage": 2
+    },
+    {
+      "claim": "Billu Beane is part owner of Barnsley FC of EFL Championship .",
+      "evidence": "He is the executive vice president of baseball operations and minority owner of the Oakland Athletics of Major League Baseball ( MLB ) ; he is also minority owner of Barnsley FC of EFL League One .",
+      "gold_label": "REFUTES",
+      "item_id": "5ec7d50ec9e77c0008442a70:962575527e82:refute",
+      "pair_id": "5ec7d50ec9e77c0008442a70:962575527e82",
+      "reverse_evidence": "He is the executive vice president of baseball operations and minority owner of the Oakland Athletics of Major League Baseball ( MLB ) ; he is also minority owner of Barnsley FC of EFL Championship .",
+      "stage": 2
+    }
+  ],
+  "judgments": [],
+  "protocol": "cs-pilot-vitaminc-2026-09-13",
+  "rule": ">=24/30 judged decision-relevant, else exclude audited non-relevant items and their pairs before agent calls"
+}

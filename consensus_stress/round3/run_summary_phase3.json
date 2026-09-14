@@ -1,0 +1,6 @@
+{
+  "expected_calls": 9600,
+  "records": 9600,
+  "success": 9583,
+  "valid_rate": 0.9982
+}

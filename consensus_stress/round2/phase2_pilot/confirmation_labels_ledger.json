@@ -1,0 +1,406 @@
+{
+  "items": [
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9462c9e77c000846672f:b9208395ee87:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ece9462c9e77c000846672f:b9208395ee87:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ede072fc9e77c00084d3412:af0e8cff3777:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ede072fc9e77c00084d3412:af0e8cff3777:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec284ffc9e77c0008417d54:76d3480676be:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ec284ffc9e77c0008417d54:76d3480676be:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ede072fc9e77c00084d2b0f:7207088cbc30:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ede072fc9e77c00084d2b0f:7207088cbc30:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5eb29889c9e77c0008d9400b:0c40d0f920c1:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5eb29889c9e77c0008d9400b:0c40d0f920c1:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9462c9e77c0008466657:0241cc577589:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ece9462c9e77c0008466657:0241cc577589:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de0ac9e77c000848af69:7933829d9b72:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de0ac9e77c000848af69:7933829d9b72:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ee39419c9e77c0008ccf8a8:42bcf1f54d76:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ee39419c9e77c0008ccf8a8:42bcf1f54d76:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de02c9e77c0008489251:da2c414e9244:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de02c9e77c0008489251:da2c414e9244:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ee39419c9e77c0008ccf847:f4ab0cb6c253:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ee39419c9e77c0008ccf847:f4ab0cb6c253:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de07c9e77c000848a293:381c8e499398:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de07c9e77c000848a293:381c8e499398:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ebe6f2ec9e77c0008407a41:70d2922a6f08:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ebe6f2ec9e77c0008407a41:70d2922a6f08:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9460c9e77c0008465917:19f2f8d2b6a7:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ece9460c9e77c0008465917:19f2f8d2b6a7:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec284ffc9e77c0008417e10:66f340a11304:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ec284ffc9e77c0008417e10:66f340a11304:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5eb29888c9e77c0008d939e4:5dad41bceea2:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5eb29888c9e77c0008d939e4:5dad41bceea2:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec5598cc9e77c000842c1c6:dd757e3432c1:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ec5598cc9e77c000842c1c6:dd757e3432c1:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec55989c9e77c000842badb:8eb23649f586:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ec55989c9e77c000842badb:8eb23649f586:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de09c9e77c000848a7f6:9bc1befd8532:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de09c9e77c000848a7f6:9bc1befd8532:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de02c9e77c0008489100:576a3f3247ab:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de02c9e77c0008489100:576a3f3247ab:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de05c9e77c0008489a94:ad49d8d45210:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de05c9e77c0008489a94:ad49d8d45210:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec7d50cc9e77c00084413da:ede0bb8c11d9:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ec7d50cc9e77c00084413da:ede0bb8c11d9:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec7d50dc9e77c000844232f:2053fceb0cd1:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ec7d50dc9e77c000844232f:2053fceb0cd1:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec5598fc9e77c000842cb46:70b24f3a8d65:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ec5598fc9e77c000842cb46:70b24f3a8d65:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed7ad01c9e77c00084a6561:b6b59896e293:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed7ad01c9e77c00084a6561:b6b59896e293:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9462c9e77c0008466e97:2d6a87b9f23a:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ece9462c9e77c0008466e97:2d6a87b9f23a:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec284ffc9e77c00084178c3:b635b41be205:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ec284ffc9e77c00084178c3:b635b41be205:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec55991c9e77c000842dd75:0e6fa4f2771b:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ec55991c9e77c000842dd75:0e6fa4f2771b:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de06c9e77c0008489b41:e869f512cc61:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de06c9e77c0008489b41:e869f512cc61:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ebe6f2ec9e77c0008407b46:1352af580af0:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ebe6f2ec9e77c0008407b46:1352af580af0:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed7ad03c9e77c00084a7865:6251ca05cd8a:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed7ad03c9e77c00084a7865:6251ca05cd8a:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5eb29885c9e77c0008d92692:ce5ac930aa12:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5eb29885c9e77c0008d92692:ce5ac930aa12:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ee3949bc9e77c0008cd0084:9e56c0355c9a:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ee3949bc9e77c0008cd0084:9e56c0355c9a:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed7acffc9e77c00084a5b8a:7bfc1d20a7fd:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed7acffc9e77c00084a5b8a:7bfc1d20a7fd:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ea2d97dc9e77c0009cdb322:26b28f9bce53:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ea2d97dc9e77c0009cdb322:26b28f9bce53:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9464c9e77c0008467969:06480df6abe0:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ece9464c9e77c0008467969:06480df6abe0:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ede072fc9e77c00084d2f1f:bc4276eda1cb:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ede072fc9e77c00084d2f1f:bc4276eda1cb:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5eb29888c9e77c0008d9369b:0b33f40c9473:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5eb29888c9e77c0008d9369b:0b33f40c9473:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ede072fc9e77c00084d347c:bd9b80e25fc1:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ede072fc9e77c00084d347c:bd9b80e25fc1:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de09c9e77c000848ac4b:dacda185bcc0:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de09c9e77c000848ac4b:dacda185bcc0:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9461c9e77c0008466390:9b240cefd325:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ece9461c9e77c0008466390:9b240cefd325:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed4de08c9e77c000848a40a:eb4feaf2bd82:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed4de08c9e77c000848a40a:eb4feaf2bd82:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ece9462c9e77c0008466728:fd5c68a8876b:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ece9462c9e77c0008466728:fd5c68a8876b:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec7d50dc9e77c0008441fbd:345ab919731c:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ec7d50dc9e77c0008441fbd:345ab919731c:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec284fcc9e77c0008415c98:1341bbbe85f4:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ec284fcc9e77c0008415c98:1341bbbe85f4:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ea2d97dc9e77c0009cdaf1f:57e69c1ac7f7:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ea2d97dc9e77c0009cdaf1f:57e69c1ac7f7:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed7acffc9e77c00084a5ab2:e4fa8ab1ed48:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed7acffc9e77c00084a5ab2:e4fa8ab1ed48:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ed7ad03c9e77c00084a743e:c8441e67b2d7:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ed7ad03c9e77c00084a743e:c8441e67b2d7:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ec284ffc9e77c0008417cc8:2529b3e9c4cf:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ec284ffc9e77c0008417cc8:2529b3e9c4cf:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5eafed7ec9e77c0009ce0836:a5cd89201bab:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5eafed7ec9e77c0009ce0836:a5cd89201bab:refute"
+    },
+    {
+      "gold_label": "SUPPORTS",
+      "item_id": "5ede072fc9e77c00084d345f:7a3287a1a29e:support"
+    },
+    {
+      "gold_label": "REFUTES",
+      "item_id": "5ede072fc9e77c00084d345f:7a3287a1a29e:refute"
+    }
+  ],
+  "protocol": "cs-pilot-vitaminc-conf-2026-09-13",
+  "status": "sealed_until_preoutcome_features_are_frozen"
+}

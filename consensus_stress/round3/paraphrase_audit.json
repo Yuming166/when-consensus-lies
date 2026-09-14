@@ -1,0 +1,129 @@
+{
+  "fraction_preserving": 1.0,
+  "judgments": [
+    {
+      "preserves_meaning": true,
+      "uid": "5ebbf32bc9e77c0009295344_1"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ec7d50cc9e77c00084412b7_3"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ec284ffc9e77c0008417c79_1"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ec7d50bc9e77c0008440d85_2"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ec284fcc9e77c0008415b58_1"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ee39419c9e77c0008ccfca5_1"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ede0730c9e77c00084d359c_2"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ede072fc9e77c00084d31b5_4"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ec7d50dc9e77c0008441fbd_1"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5eb9573bc9e77c0008fa19a8_3"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ece9464c9e77c0008467ab0_4"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ebe6f31c9e77c0008408eae_2"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ec55991c9e77c000842de2f_1"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ede072fc9e77c00084d2d05_1"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ec7d50dc9e77c0008441a1a_2"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ee39419c9e77c0008ccf97d_1"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ede072fc9e77c00084d2fb0_1"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ec7d50dc9e77c00084417ed_4"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ec55991c9e77c000842e050_4"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ed7ad03c9e77c00084a7917_3"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ee3949bc9e77c0008ccfe2f_1"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ec5598ec9e77c000842c8d2_4"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ed7ad03c9e77c00084a7975_4"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ee3949bc9e77c0008ccfe52_2"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5eb29889c9e77c0008d93ba9_2"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ebe6f32c9e77c0008409a4a_4"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ebe6f30c9e77c0008408433_1"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ec284fec9e77c000841729a_2"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ebe6f31c9e77c0008408f4c_3"
+    },
+    {
+      "preserves_meaning": true,
+      "uid": "5ed7ad03c9e77c00084a750b_1"
+    }
+  ],
+  "n_preserving": 30,
+  "n_sampled": 30,
+  "protocol": "cs-paper-vitaminc-2026-09-13",
+  "threshold_ge_80pct": true
+}

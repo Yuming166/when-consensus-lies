@@ -1,0 +1,403 @@
+registry_version: 2026-09-12
+experiments:
+- experiment_id: phase0-audit-20260912
+  parent_experiment: null
+  date: 2026-09-12
+  hypothesis: Freeze the baseline before any new experiment.
+  dataset: docs/*
+  model: none (document audit)
+  agent_configuration: null
+  intervention_version: null
+  status: PASS
+  result: research_state.md, baseline_manifest.json, baseline_results.json, known_failures.md,
+    outcome_firewall.md written to consensus_stress/phase0/
+  decision: Gate 0 PASS. Baseline frozen; proceed to Phase 1.
+- experiment_id: phase1-novelty-audit-20260912
+  parent_experiment: null
+  date: 2026-09-12
+  hypothesis: Audit novelty of expected-response faithfulness / consensus stress testing
+    / stress curve / robustness-responsiveness / active probing.
+  dataset: literature
+  model: none
+  status: PASS
+  result: novelty_map.md, closest_work_table.csv, claim_attack.md written; hybrid
+    live+model-knowledge audit; Gate 1 PASS for C1/C2 (C3/C4 secondary, C5 contingent).
+  decision: 'Gate 1 PASS: proceed to Phase 2 pilot.'
+- experiment_id: cs-pilot-boolq-20260912
+  parent_experiment: phase1-novelty-audit-20260912
+  date: 2026-09-12
+  hypothesis: Outcome-blind expected-response faithfulness (BF_q) distinguishes correct
+    vs false consensus on BoolQ beyond confidence/agreement and survives placebo/permutation
+    controls.
+  research_question: When 5 Qwen3.5-4B agents form high-consensus answers on BoolQ,
+    does an outcome-blind stress profile predict which consensus is wrong?
+  dataset: boolq train (fresh cohort, 100 q, 50/50)
+  model: Qwen3.5-4B @ 127.0.0.1:31518
+  agent_configuration: 5 fixed personas, 2-of-3 evidence views (frozen V10 partition
+    table)
+  evidence_version: cs-pilot-boolq-2026-09-12
+  intervention_version: original/paraphrase/remove/reverse/substitute; expected-response
+    oracle frozen
+  random_seed: 20260912
+  training_data: none (no learning; frozen scores only)
+  selection_data: boolq train (offline balance 50/50)
+  test_data: boolq train 100 questions (high-consensus subset analysis)
+  allowed_inputs: answers, confidence, cited ids, evidence packet, intervention semantics,
+    frozen artifacts
+  forbidden_inputs: label, gold_binary, correct, consensus_wrong (until analysis merge)
+  primary_metric: AUROC(BF_q, consensus_wrong | agreement>=0.8), bootstrap CI
+  secondary_metrics: per-condition faithfulness AUROC, R_PI AUROC, mean-confidence
+    AUROC, agreement AUROC, placebo flip rate, permutation control
+  budget: 600 rewrite + 2500 agent calls (~3100; actual 3000 calls, 2500 agent + 500
+    rewrite)
+  status: FAIL
+  result: 'Pipeline 100% valid (2500/2500). BF_q AUROC 0.363 [0.102,0.611] on high-consensus
+    (81 q, 9 errors). Paraphrase faithfulness 0.936; reverse faithfulness 0.300 (reproduces
+    frozen 0.327). Placebo clean (6.4% flip). Label subgroups yes 0.042 / no 0.965
+    (opposite). Substitutes: only 57.5% judged opposite-supporting -> no-forced-response
+    per Amendment B. R_PI frozen on pilot cohort 0.651 [0.430,0.869].'
+  decision: Gate 2 FAIL. Retain C1/C2 as behavioral analysis only on this cohort;
+    Phase 3/4/5/6 NOT executed (gated). Reformulate with label-symmetric cohort +
+    decision-relevance-aware oracle + pre-registered direction.
+  preregistration: consensus_stress/phase2/pilot_preregistration.md
+- experiment_id: cs-pilot-vitaminc-20260913
+  parent_experiment: cs-pilot-boolq-20260912
+  date: 2026-09-13
+  hypothesis: Outcome-blind expected-response faithfulness (BF_q) distinguishes correct
+    vs false consensus on a label-symmetric VitaminC natural-pair cohort, in the direction
+    higher BF_q => lower risk, beyond confidence/agreement, with macro/worst-label
+    gates and placebo/permutation controls.
+  research_question: When 5 Qwen3.5-4B agents form high-consensus SUPPORTS/REFUTES
+    answers on VitaminC natural pairs, does a decision-relevance-aware expected-response
+    faithfulness profile predict which consensus is wrong?
+  dataset: vitaminc test.jsonl natural pairs (100 pairs / 200 items, label-symmetric,
+    page-disjoint from V3.16/V3.16.1)
+  model: Qwen3.5-4B @ 127.0.0.1:31518
+  agent_configuration: 5 fixed personas (frozen V10), 2-of-3 evidence views (frozen
+    V10 partition table), packet [E, para(E), D]
+  evidence_version: cs-pilot-vitaminc-2026-09-13
+  intervention_version: original/paraphrase/reverse(natural swap)/synthetic_reverse/remove;
+    decision-relevance-aware oracle frozen offline
+  random_seed: 20260913
+  training_data: none (no learning; frozen scores only)
+  selection_data: vitaminc test natural pairs (offline, deterministic, label balance
+    by construction)
+  test_data: 100 pairs / 200 items (100 SUPPORTS + 100 REFUTES), high-consensus subset
+    analysis
+  allowed_inputs: answers, confidence, cited ids, evidence packet, intervention semantics,
+    frozen artifacts, offline relevance labels
+  forbidden_inputs: gold_label, correct, consensus_wrong (until analysis merge)
+  primary_metric: AUROC(BF_q, consensus_wrong | agreement>=0.8), pair-grouped bootstrap
+    CI; direction higher BF_q => lower risk
+  secondary_metrics: macro-label AUROC CI, worst-label AUROC, per-condition faithfulness
+    AUROC, R_PI AUROC, R_sym AUROC, mean-confidence AUROC, agreement AUROC, placebo
+    flip, permutation control, reducibility checks, stage-consistency
+  budget: 500 artifact + 5000 agent calls (~5500; actual recorded in run summaries)
+  status: FAIL
+  result: 'Pipeline 100% valid (5000/5000). Literal frozen gate AUROC(BF_q,wrong|HC)=0.099
+    [0.054,0.153] -> as-written gate FAILS (preregistration sign defect: numeric gate
+    encoded higher-BF_q=>wrong, contradicting the protocol''s frozen substantive direction
+    higher-BF_q=>lower-risk). In the frozen substantive direction: AUROC(-BF_q,wrong)=0.901
+    [0.847,0.946]; macro CI [0.851,0.953]; worst-label 0.886/0.926 (both labels same
+    direction); placebo clean (2.8%); permutation passes in risk orientation; paired
+    diffs vs R_sym +0.055 [0.016,0.096], vs R_PI +0.221 [0.165,0.283], vs confidence
+    +0.568, vs agreement +0.456; stage-consistent 0.909/0.886. Wrong consensus is
+    unresponsive to natural reversal (BF_reverse 0.088 vs 0.775).'
+  decision: Pilot gate FAIL under the as-written numeric gate (sign defect, not absence
+    of signal). Substantive hypothesis supported on pilot. Confirmation cohort with
+    corrected direction-consistent gate pre-registered and run on a fresh disjoint
+    selection.
+  preregistration: consensus_stress/round2/phase2_pilot/preregistration.md
+- experiment_id: cs-pilot-vitaminc-conf-20260913
+  parent_experiment: cs-pilot-vitaminc-20260913
+  date: 2026-09-13
+  hypothesis: Fresh disjoint replication of the pilot substantive hypothesis (higher
+    BF_q => lower risk; unresponsive/unstable consensus => risky) under a corrected
+    direction-consistent gate frozen before any confirmation agent call.
+  research_question: Does expected-response faithfulness distinguish correct vs false
+    consensus on a fresh VitaminC natural-pair cohort, in the frozen direction, with
+    macro/worst-label gates and placebo/permutation controls?
+  dataset: vitaminc test natural pairs, pairs 100-149 by frozen hash order (50 pairs
+    / 100 items, disjoint from pilot and from V3.16/V3.16.1 pages)
+  model: Qwen3.5-4B @ 127.0.0.1:31518
+  agent_configuration: 5 fixed personas (frozen V10), 2-of-3 evidence views, packet
+    [E, para(E), D] (identical to pilot)
+  evidence_version: cs-pilot-vitaminc-conf-2026-09-13
+  intervention_version: original/paraphrase/reverse(natural swap)/synthetic_reverse/remove;
+    same decision-relevance-aware oracle
+  random_seed: 20260913
+  training_data: none
+  selection_data: vitaminc test natural pairs (offline, deterministic, label balance
+    by construction)
+  test_data: 50 pairs / 100 items (50 SUPPORTS + 50 REFUTES), high-consensus subset
+    analysis
+  allowed_inputs: answers, confidence, cited ids, evidence packet, intervention semantics,
+    frozen artifacts, offline relevance labels
+  forbidden_inputs: gold_label, correct, consensus_wrong (until analysis merge)
+  primary_metric: AUROC(RS_q=-BF_q, consensus_wrong | HC), pair-grouped bootstrap
+    CI; CI lb > 0.5 and point >= 0.60
+  secondary_metrics: macro-label CI lb > 0.5; worst-label point > 0.5; per-condition
+    faithfulness; R_PI/R_sym/confidence/agreement AUROCs and paired diffs; placebo;
+    permutation; reducibility
+  budget: '250 artifact + 2500 agent calls (~2750; actual 2650 calls: 150 artifact
+    + 2500 agent)'
+  status: PASS
+  result: 'Pipeline 100% valid (2500/2500). Corrected direction-consistent gate: AUROC(RS_q=-BF_q,
+    wrong|HC)=0.912 [0.848,0.973]; macro CI [0.759,0.972]; worst-label 0.788 (SUPPORTS
+    0.788 [0.565,0.957], REFUTES 0.968); placebo clean (5.0%); permutation obs 0.912
+    > 95th pct 0.699; reducibility ok (Spearman -0.39/-0.21). Paired diffs vs R_sym
+    +0.066 [0.005,0.150], vs R_PI +0.307 [0.209,0.416], vs confidence +0.612, vs agreement
+    +0.535.'
+  decision: 'Gate 2 (round 2) PASS: confirmation cohort passes all 7 frozen corrected
+    gates; combined with the pilot cohort (0.901 [0.847,0.946] in the same frozen
+    substantive direction), the expected-response faithfulness profile distinguishes
+    correct vs false consensus beyond confidence/agreement and beyond frozen R_PI/R_sym,
+    label-symmetric, placebo-clean, permutation-validated, two independent pre-registered
+    cohorts. Proceed to Phase 3/4 (budget permitting).'
+  preregistration: consensus_stress/round2/phase2_pilot/confirmation_preregistration.md
+- experiment_id: cs-phase4-reliability-20260913
+  parent_experiment: cs-pilot-vitaminc-conf-20260913
+  date: 2026-09-13
+  hypothesis: The expected-response faithfulness representation (BF_q, and simple
+    logistic/isotonic transforms) improves error-risk ranking over frozen R_PI/R_sym
+    and confidence/disagreement on the combined pilot+confirmation high-consensus
+    cohort, with bootstrap CIs and Risk@80.
+  dataset: combined cs-pilot-vitaminc + confirmation preoutcome features (295 HC items)
+  model: Qwen3.5-4B @ 127.0.0.1:31518 (no new calls; analysis only on frozen records)
+  agent_configuration: same as cs-pilot-vitaminc-20260913
+  random_seed: 20260913
+  training_data: none (logistic fit within pair-grouped 5-fold CV; isotonic calibrated
+    on OOF)
+  test_data: combined high-consensus items (295; 47 wrong)
+  allowed_inputs: preoutcome features only (bf_paraphrase, bf_reverse, R_PI, R_sym,
+    mean_confidence, agreement, conf_dispersion)
+  forbidden_inputs: gold labels used only for evaluation after features frozen; no
+    label-driven feature selection
+  primary_metric: AUROC with pair-grouped bootstrap CI; Risk@80 error reduction with
+    CI
+  secondary_metrics: paired diffs vs R_PI/R_sym/confidence/disagreement; ECE for isotonic
+    calibration
+  budget: 0 new model calls (analysis only)
+  status: PASS
+  result: 'Combined 289 HC / 47 wrong. RS_q=-BF_q AUROC 0.906 [0.865,0.944]; paired
+    diffs vs R_sym +0.060 [0.026,0.100], R_PI +0.246 [0.196,0.301], disagreement +0.333,
+    confidence +0.582, logistic OOF +0.069 [0.019,0.135]. Risk@80 reduction 0.654
+    [0.299,0.892] (only representation with CI lb > 0 at strong level). Isotonic ECE
+    0.053 -> 0.013. Simple composite beats fitted logistic: concept, not fitting,
+    carries signal.'
+  decision: 'Phase 4 descriptive PASS at pilot scale: expected-response faithfulness
+    dominates R_PI/R_sym/confidence/disagreement on AUROC and Risk@80 with bootstrap
+    CIs. Formal Gate-4 thresholds deferred to a paper-scale cohort.'
+  preregistration: consensus_stress/round2/analysis/phase4_protocol.md
+- experiment_id: cs-phase3-sketch-20260913
+  parent_experiment: cs-phase4-reliability-20260913
+  date: 2026-09-13
+  hypothesis: A discrete evidence-semantics stress axis (original/paraphrase/synthetic_reverse/reverse/remove)
+    shows that correct consensus responds appropriately to the decision-relevant reversal
+    (high expected-response fidelity) while wrong consensus is rigid (low fidelity),
+    with agreement alone a weak separator.
+  dataset: combined pilot+confirmation frozen records (289 HC items), zero new calls
+  model: none (analysis only)
+  status: PASS
+  result: Fidelity under natural reversal 0.794 (correct) vs 0.119 (wrong); agreement
+    under reversal 0.967 vs 0.987 (weak separator); paraphrase placebo clean both
+    groups (0.987/0.915); synthetic_reverse weak and non-separating (0.429/0.540).
+  decision: Discrete stress profile supports the expected-response lens; continuous
+    lambda grid / breakpoint summaries deferred to a future Phase-3 full run with
+    fresh calls.
+  preregistration: protocol note in consensus_stress/round2/analysis/phase3_stress_profile.md
+- experiment_id: cs-paper-vitaminc-20260913
+  parent_experiment: cs-pilot-vitaminc-conf-20260913
+  date: 2026-09-13
+  hypothesis: 'Paper-scale: outcome-blind RS_q=-BF_q (expected-response faithfulness)
+    ranks consensus errors on a 300-pair fresh label-symmetric VitaminC cohort with
+    CI-level worst-label gate, Risk@80 strict CI gate, placebo/permutation controls,
+    and significant paired gains over frozen R_sym/R_PI.'
+  dataset: vitaminc test.jsonl (300 fresh natural pairs, cr>=0.85/tj>=0.70, page+pairs
+    disjoint from round2 and V3.16/V3.16.1)
+  model: Qwen3.5-4B @ 127.0.0.1:31518 (no reasoning_effort)
+  agent_configuration: 5 fixed personas (frozen V10), 2-of-3 partition, packet [E,
+    para(E), D]
+  intervention_version: original/paraphrase/reverse/synthetic_reverse/remove; decision-relevance-aware
+    oracle frozen offline
+  random_seed: 20260913
+  training_data: none
+  test_data: 300 pairs / 600 items (300 SUPPORTS + 300 REFUTES), high-consensus analysis
+  allowed_inputs: answers, confidence, cited ids, evidence packet, intervention semantics,
+    frozen artifacts
+  forbidden_inputs: gold_label, correct, consensus_wrong (until analysis merge)
+  primary_metric: AUROC(RS_q=-BF_q, wrong|HC) pair-grouped CI lb>0.5, point>=0.60;
+    macro CI lb>0.5; worst-label CI lb>0.5; Risk@80 reduction CI lb>0
+  secondary_metrics: R_PI/R_sym/confidence/disagreement AUROC+Risk@80 and paired diffs;
+    placebo; permutation; reducibility; logistic/isotonic
+  budget: 1800 paraphrase + 15000 agent calls
+  status: PASS
+  result: 'Gate 2 paper-scale PASS (8/8): AUROC(RS_q=-BF_q,wrong|HC)=0.943 [0.924,0.960];
+    macro 0.952 [0.904,0.995]; worst-label SUPPORTS 0.917 [0.819,0.999] (CI-level);
+    placebo 0.038; permutation 0.943>0.596; reducibility ok. Risk@80 0.846 [0.638,0.981];
+    paired diffs vs R_sym +0.051 [+0.029,+0.075], R_PI +0.315 [+0.271,+0.360]. 300
+    pairs/600 items, 567 HC, 65 wrong (11.5%).'
+  decision: Gate 2 paper-scale PASS; Phase 4 formal gates PASS; proceed to Phase 3/6
+    with frozen protocol.
+  preregistration: consensus_stress/round3/preregistration.md
+- experiment_id: cs-paper-phase3-lambda-20260913
+  parent_experiment: cs-paper-vitaminc-20260913
+  date: 2026-09-13
+  hypothesis: Continuous lambda stress (proportional natural reversal / removal of
+    decision-relevant units) yields per-question stress area / breakpoint / robustness
+    radius; more responsive consensus (higher stress area, smaller breakpoint) is
+    less risky.
+  dataset: 120-pair deterministic subset of the 300-pair main cohort
+  model: Qwen3.5-4B @ 127.0.0.1:31518
+  status: PASS
+  result: Reversal stress-area AUROC(RS_stress,wrong|HC)=0.948 [0.925,0.968] on 240-item
+    subset; correct mean stress area 0.436 vs wrong 0.032; wrong consensus never flips
+    (robustness radius 1.0, 22/22 no breakpoint); removal axis descriptive only.
+  decision: Phase 3 PASS on reversal axis; removal axis descriptive.
+  preregistration: consensus_stress/round3/preregistration.md (section 7)
+- experiment_id: cs-paper-phase4-reliability-20260913
+  parent_experiment: cs-paper-vitaminc-20260913
+  date: 2026-09-13
+  hypothesis: RS_q=-BF_q and simple logistic/isotonic transforms improve error-risk
+    ranking over frozen R_PI/R_sym/confidence/disagreement on the paper-scale HC cohort,
+    with Risk@80 strict CI gate and paired-diff CIs.
+  dataset: main cohort preoutcome features (no new calls)
+  model: none (analysis only)
+  status: PASS
+  result: 'P1-P6 PASS: Risk@80(RS_q) CI lb 0.638>0; AUROC paired diffs vs R_sym +0.051
+    [0.029,0.075], R_PI +0.315 [0.271,0.360]; Risk@80 diffs vs R_sym +0.347 [0.152,0.502],
+    R_PI +0.847 [0.677,0.984]; isotonic ECE 0.057->0.013; logistic OOF 0.941 ties
+    frozen RS_q 0.943.'
+  decision: Phase 4 formal PASS (P1-P6); frozen composite BF_q ties fitted logistic
+    (concept, not fitting).
+  preregistration: consensus_stress/round3/preregistration.md (section 8)
+- experiment_id: cs-paper-ling-crossmodel-20260913
+  parent_experiment: cs-paper-vitaminc-20260913
+  date: 2026-09-13
+  hypothesis: 'The frozen protocol (oracle, artifacts, BF_q, gates) transfers to Ling-3.0-tiny
+    on the same 100-pair cohort: within-model validity, cross-model transfer, mechanism
+    transfer, item-level correlation (secondary).'
+  dataset: first 100 pairs of main cohort (200 items), same frozen artifacts
+  model: Ling-3.0-tiny (vLLM on GPU5)
+  status: FAIL
+  result: 'Pipeline validity 0.3108 (1554/5000) < 0.95 -> within-model validity FAIL
+    at execution layer. Dominant parse error: missing agent_id (6890 cases). Diagnosis:
+    Ling-3.0-tiny cannot satisfy the frozen strict per-call JSON contract; substantive
+    gates NOT evaluable on the 31% model-dependent subset; no parser/oracle/gate change
+    (no rescue). Server started safely on GPU5 (vLLM 0.29.0, enable_thinking=false).'
+  decision: 'Cross-model within-model validity FAIL (pipeline); next-round design:
+    pre-register a model-capability parse accommodation or choose a contract-capable
+    second model.'
+  preregistration: consensus_stress/round3/preregistration.md (section 9)
+- experiment_id: cs-paper-fever-crossdataset-20260913
+  parent_experiment: cs-paper-vitaminc-20260913
+  date: 2026-09-13
+  hypothesis: Same frozen oracle/RS_q on a fresh label-symmetric FEVER natural claim-pair
+    cohort replicates the consensus-error ranking (cross-dataset).
+  dataset: fever-validation.jsonl (near-duplicate SUPPORTS/REFUTES claim pairs, audited)
+  model: Qwen3.5-4B @ 127.0.0.1:31518
+  status: BLOCKED
+  result: 'BLOCKED at construction: FEVER validation has no same-claim S/R natural
+    pairs; near-duplicate claim-pair audit passed only 1/60 (J2 E_R refutes C_S fails
+    56/60 because evidence sentences are shared/identical). Oracle requires natural
+    counter-evidence; no agent calls made; no result claimed. Cross-dataset run on
+    balanced BoolQ instead.'
+  decision: FEVER BLOCKED at construction (structural mismatch); cross-dataset run
+    on balanced BoolQ instead.
+  preregistration: consensus_stress/round3/preregistration.md (section 10)
+- experiment_id: cs-paper-phase5-active-probing-20260913
+  parent_experiment: cs-paper-phase3-lambda-20260913
+  date: 2026-09-13
+  hypothesis: Active probe selection at matched call budget improves consensus-risk
+    estimation vs fixed probing (plan only this round unless budget allows).
+  dataset: n/a
+  model: none
+  status: PROPOSED
+  result: next-step plan only (phase56_next_steps.md); no active-probing calls
+  decision: null
+  preregistration: consensus_stress/round3/preregistration.md (section 11)
+- experiment_id: cs-paper-boolq-crossdataset-20260913
+  parent_experiment: cs-paper-vitaminc-20260913
+  date: '2026-09-13'
+  hypothesis: Same frozen oracle/RS_q on a fresh label-symmetric balanced BoolQ cohort
+    (reverse=negation prefix, BoolQ lacks natural counter-evidence) replicates the
+    consensus-error ranking.
+  dataset: boolq/train.parquet (100 fresh items, 50 yes + 50 no)
+  model: Qwen3.5-4B @ 127.0.0.1:31518
+  status: FAIL
+  result: 'Pipeline valid 100% (2000/2000). Primary AUROC(RS_q,wrong|HC)=0.449 [0.308,0.579]
+    (direction reversed); label subgroups opposite (no 0.073 / yes 0.745); Risk@80
+    0.239 n.s.; permutation fails. Specificity boundary: mechanism requires natural
+    counter-evidence, not synthetic negation.'
+  decision: Cross-dataset Gate FAIL retained honestly; supports the causal claim that
+    the risk signature is specifically unresponsiveness to natural evidence reversal.
+  preregistration: consensus_stress/round3/preregistration.md (section 10; boolq protocol
+    note)
+
+- experiment_id: cs-round4-ling-adapted-crossmodel-20260913
+  parent_experiment: cs-paper-vitaminc-20260913
+  date: 2026-09-13
+  hypothesis: 'Pre-registered response-contract accommodation (server-bound agent_index,
+    no per-call agent_id, frozen JSON exemplar) enables the unchanged Round-3 consensus-stress
+    procedure and RS_q=-BF_q signal to transfer from Qwen3.5-4B to Ling-3.0-tiny on all
+    300 frozen pairs.'
+  dataset: round3 paper-scale VitaminC cohort, all 300 pairs / 600 items, same frozen
+    model-agnostic artifacts and sealed labels
+  model: Ling-3.0-tiny @ 127.0.0.1:31520 (GPU5 only)
+  agent_configuration: 5 frozen personas and 2-of-3 partitions; agent identity bound
+    server-side to agent_index
+  intervention_version: unchanged original/paraphrase/reverse/synthetic_reverse/remove
+    with frozen expected-response oracle
+  random_seed: 20260913
+  training_data: none for within-model; frozen Round-3 Qwen RS_q scores for transfer
+  test_data: same 600-item cohort; Ling HC subset for gates
+  allowed_inputs: assigned evidence views, agent answers, confidence, citations, frozen
+    artifacts, preoutcome features
+  forbidden_inputs: labels/correctness before feature freeze; no model-dependent filtering
+  primary_metric: AUROC(RS_q=-BF_q, Ling consensus_wrong | HC), pair-grouped CI
+  secondary_metrics: macro/worst-label AUROC, paraphrase placebo, permutation,
+    reducibility, Risk@80, Qwen-score transfer, mechanism reverse-fidelity difference,
+    item-level Spearman
+  budget: 15000 Ling agent calls; no new Qwen calls
+  status: PASS
+  result: 'Pipeline 15000/15000 valid (100.0%; first-pass 99.95%). Ling HC n=574, wrong=119.
+    AUROC(RS_q=-BF_q,wrong|HC)=0.896 [0.873,0.916]; macro 0.919 [0.895,0.944]; worst-label
+    SUPPORTS 0.881 [0.834,0.928]; placebo 0.061; permutation 0.896>0.564; reducibility
+    Spearman -0.148/-0.050; Risk@80 0.422 [0.274,0.591]. Cross-model: frozen Qwen item
+    RS_q on Ling errors 0.723 [0.682,0.765], Ling own RS_q 0.896 [0.873,0.916], paired
+    diff -0.173 [-0.217,-0.130]; item Spearman 0.496. Mechanism reverse fidelity correct
+    0.703 vs wrong 0.029, correct-minus-wrong 0.674 [0.629,0.719]. All 8 within-model gates
+    PASS.'
+  decision: 'Phase 6 cross-model PASS with bounded claim: stress procedure and aggregate
+    reliability signal transfer across Qwen/Ling families, while item-level ordering is
+    partly model-dependent. Contract accommodation was pre-registered and execution-layer
+    only; no scientific gate was relaxed.'
+  preregistration: consensus_stress/round4/preregistration.md
+
+- experiment_id: cs-round4-phase5-active-probe-offline-20260913
+  parent_experiment: cs-paper-phase3-lambda-20260913
+  date: 2026-09-13
+  hypothesis: At a matched one-stress-condition-per-item call budget, selecting the
+    Phase-3-informed natural-reversal probe yields more error-risk information than a
+    label-blind fixed rotation across all four stress conditions.
+  dataset: frozen round3 Qwen full-cohort preoutcome features, 600 items / HC subset analysis
+  model: none (offline analysis; no new model calls)
+  agent_configuration: 5 frozen agents; one stress condition per item under each policy
+  intervention_version: active=reverse only; fixed=hash-rotated paraphrase/reverse/synthetic_reverse/remove
+  random_seed: 20260913
+  training_data: none
+  test_data: 567 Qwen HC items
+  allowed_inputs: preoutcome per-condition features and item_id hash; labels only after scoring
+  forbidden_inputs: labels for probe selection; no post-hoc condition reassignment
+  primary_metric: paired AUROC difference active minus fixed, pair-grouped bootstrap CI
+  secondary_metrics: Risk@80 and paired Risk@80 difference; condition allocation counts
+  budget: 0 new model calls
+  status: PASS (exploratory offline)
+  result: 'Matched one-stress-condition-per-item budget on 567 Qwen HC items: active
+    reversal AUROC 0.931 [0.912,0.948], fixed rotation 0.593 [0.529,0.659]; paired AUROC
+    +0.338 [+0.269,+0.405]. Active Risk@80 0.884 [0.575,1.000], fixed 0.095 [-0.155,0.342];
+    paired Risk@80 +0.790 [+0.580,+0.849]. No new model calls.'
+  decision: 'Exploratory Phase-5 pilot PASS: pre-registered reversal-axis probe selection
+    yields more reliability information than label-blind fixed full-condition rotation at
+    matched budget; not a Phase-6 rescue or confirmatory gate.'
+  preregistration: consensus_stress/round4/active_probing_preregistration.md

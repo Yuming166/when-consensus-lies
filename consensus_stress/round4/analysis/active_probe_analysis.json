@@ -1,0 +1,74 @@
+{
+  "active": {
+    "auroc": {
+      "auroc": 0.9307692307692308,
+      "ci": [
+        0.9123973305954826,
+        0.9478521956970233
+      ],
+      "n": 567,
+      "n_groups": 298
+    },
+    "risk_at_80": {
+      "ci": [
+        0.575425459496256,
+        1.0
+      ],
+      "n": 567,
+      "overall_error": 0.1146384479717813,
+      "reduction": 0.8844625573102394
+    }
+  },
+  "condition_counts": {
+    "paraphrase": 132,
+    "remove": 136,
+    "reverse": 157,
+    "synthetic_reverse": 142
+  },
+  "fixed_rotation": {
+    "auroc": {
+      "auroc": 0.5927367453263868,
+      "ci": [
+        0.5287109499268309,
+        0.6587495990435366
+      ],
+      "n": 567,
+      "n_groups": 298
+    },
+    "risk_at_80": {
+      "ci": [
+        -0.15537442689760583,
+        0.3423844448234691
+      ],
+      "n": 567,
+      "overall_error": 0.1146384479717813,
+      "reduction": 0.09495669893020875
+    }
+  },
+  "gates": {
+    "all_pass": true,
+    "primary_auroc_ci_lb_gt_0": true,
+    "secondary_risk80_ci_lb_gt_0": true
+  },
+  "n_hc": 567,
+  "n_wrong": 65,
+  "paired_active_minus_fixed": {
+    "auroc": {
+      "ci": [
+        0.26930030130565785,
+        0.4046925673439672
+      ],
+      "diff": 0.33803248544284403,
+      "n": 567
+    },
+    "risk_at_80": {
+      "ci": [
+        0.5802490192734095,
+        0.8491490810074882
+      ],
+      "diff": 0.7895058583800306,
+      "n": 567
+    }
+  },
+  "protocol": "cs-round4-phase5-active-probe-offline-20260913"
+}

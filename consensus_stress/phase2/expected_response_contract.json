@@ -1,0 +1,17 @@
+{
+  "label_use": "gold answer used ONLY offline to (a) balance selection, (b) write opposite-supporting substitutes; never sent to agents, never in scoring",
+  "oracle_basis": "transformation semantics only; frozen before any agent call",
+  "oracle_definition": {
+    "original": "reference Y0 (agent's own original answer)",
+    "paraphrase": "Y* = Y0 (no deterministic change; semantic-preserving)",
+    "remove": "NO-FORCED-RESPONSE (unscored for faithfulness; descriptive only)",
+    "reverse": "Y* = flip(Y0) (explicit polarity reversal)",
+    "substitute": "Y* = flip(Y0) (opposite-supporting rewrite artifact)"
+  },
+  "protocol": "cs-pilot-boolq-2026-09-12",
+  "scored_conditions": [
+    "paraphrase",
+    "reverse",
+    "substitute"
+  ]
+}

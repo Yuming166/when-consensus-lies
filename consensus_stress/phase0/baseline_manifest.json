@@ -1,0 +1,116 @@
+{
+  "manifest_version": "consensus-stress-phase0-2026-09-12",
+  "status": "frozen_snapshot_before_any_new_experiment",
+  "purpose": "Machine-readable snapshot of the frozen When Consensus Lies baseline before the consensus-stress-testing program starts. No baseline script or result file is modified by this audit.",
+  "repositories": {
+    "curated_docs_data_repo": {
+      "path": "/home/gaoym/when-consensus-lies-publish-20260911",
+      "role": "docs + data only; no code",
+      "docs_audited": [
+        "README.md",
+        "docs/research_brief.md",
+        "docs/asof_provenance_faithfulness.md",
+        "docs/data_contract.md",
+        "docs/protocols/pilot_llm_v12_1_preregistration.md",
+        "docs/protocols/detection_v3_16_1_preregistration.md",
+        "docs/protocols/detection_v3_16_1_preregistration.md",
+        "docs/protocols/llm_sp500_v1_preregistration.md",
+        "docs/protocols/llm_sp500_v2_preregistration.md",
+        "docs/protocols/synthetic_v3_preregistration.md",
+        "docs/protocols/synthetic_v4_preregistration.md",
+        "docs/results/detection_v3_15_2_result.md",
+        "docs/results/detection_v3_16_1_formal_result.md",
+        "docs/results/llm_sp500_v1_report.md",
+        "docs/results/llm_sp500_v2_report.md",
+        "docs/results/pilot_llm_v12_1_formal_report.md",
+        "docs/results/synthetic_v3.md",
+        "docs/results/synthetic_v3_posthoc_matched_coverage.md",
+        "docs/results/synthetic_v4.md"
+      ]
+    },
+    "frozen_code_repo": {
+      "path": "/home/gaoym/.tmp_sp500_naacl_symmetric_20260909",
+      "role": "frozen experiment code reference; NOT to be modified by this program",
+      "relevant_modules": [
+        "src/sp500_forecastability/pilot_llm_v1.py",
+        "src/sp500_forecastability/pilot_llm_v10.py",
+        "src/sp500_forecastability/pilot_llm_v11.py",
+        "src/sp500_forecastability/pilot_llm_v12.py",
+        "src/sp500_forecastability/pilot_llm_v12_1.py",
+        "src/sp500_forecastability/detection_v3_16_1_formal.py",
+        "src/sp500_forecastability/detection_v3_16_calls.py",
+        "src/sp500_forecastability/detection_v3_16_prompts.py"
+      ]
+    }
+  },
+  "experiment_versions": {
+    "synthetic_v3": {"protocol": "synthetic-v3 conditional provenance", "status": "PASS (leave-one-mechanism-out)"},
+    "synthetic_v4": {"protocol": "learned monotonic provenance router", "status": "FAIL (primary AURC; better ECE only)"},
+    "boolq_v10": {"status": "INVALIDATED (validity defects found before formal calls; superseded by V10.1/V12/V12.1)"},
+    "boolq_v12": {"status": "AUXILIARY ABORT (unusable substitute boolq-1592052e5f54e039-e03; repaired in V12.1)"},
+    "boolq_v12_1": {"protocol": "pilot-llm-v12.1-2026-09-02", "status": "PASS", "dataset": "BoolQ validation, 358 questions, 7160 calls", "score": "R_PI"},
+    "vitaminc_v3_15_2": {"protocol": "detection-v3.15.2-ling-boolq-v12.1-2026-09-03", "status": "PASS_CROSS_FAMILY_AGGREGATE_ONLY (worst-label gate failed)"},
+    "vitaminc_v3_16_1": {"protocol": "detection-v3.16.1-formal-vitaminc-qwen-ling-2026-09-05", "status": "PASS (both models)", "dataset": "VitaminC 289 fresh natural pairs / 578 items, 23120 calls", "score": "R_sym"},
+    "sp500_v1": {"protocol": "llm-sp500-v1-2026-09-03", "status": "FAIL (primary AURC endpoint)"},
+    "sp500_v2": {"protocol": "llm-sp500-v2-2026-09-03", "status": "FAIL (primary AURC endpoint)"}
+  },
+  "frozen_scores": {
+    "R_PI": {
+      "formula": "0.1 * D_inert + 0.3 * flip_inertia + 0.6 * frac_shared",
+      "allowed_inputs": ["D_inert", "flip_inertia", "frac_shared"],
+      "forbidden_inputs": ["label", "gold_binary", "correct", "any_wrong", "harmful_fc"],
+      "protocol": "pilot-llm-v11-2026-09-01 / pilot-llm-v12.1-2026-09-02",
+      "used_for": "BoolQ Qwen3.5-4B V12.1; Ling V3.15.2",
+      "feature_definitions": {
+        "D_inert": "complete intervention inertia (fraction of agents inert under remove+reverse+substitute)",
+        "flip_inertia": "answer-flip inertia under interventions",
+        "frac_shared": "fraction of agents sharing a common source root"
+      }
+    },
+    "R_sym": {
+      "formula": "0.3 * reverse_inertia + 0.7 * intervention_disagreement",
+      "allowed_inputs": ["reverse_inertia", "intervention_disagreement"],
+      "weights": {"reverse_inertia": 0.3, "remove_inertia": 0.0, "substitute_inertia": 0.0, "reverse_confident_nonresponse": 0.0, "intervention_disagreement": 0.7},
+      "selection": "selected on Qwen development data (label-symmetric), frozen unchanged for Qwen + Ling formal",
+      "protocol": "detection-v3.16.1-formal-vitaminc-qwen-ling-2026-09-05",
+      "used_for": "VitaminC natural-pair replication"
+    }
+  },
+  "protocol_constants": {
+    "agents": 5,
+    "personas": ["literal_evidence", "skeptical_auditor", "consistency_checker", "counterfactual_reasoner", "minimal_judge"],
+    "boolq_conditions": ["original", "remove", "reverse", "substitute"],
+    "boolq_high_consensus_threshold": 0.8,
+    "boolq_router_coverage": 0.8,
+    "vitaminc_conditions": ["original", "remove", "reverse", "substitute"],
+    "vitaminc_high_consensus_threshold": 0.8,
+    "vitaminc_router_coverage": 0.8,
+    "response_contract": {"answer": "yes/no (BoolQ) or SUPPORTS/REFUTES (VitaminC)", "confidence": "[0,1]", "cited_evidence_ids": "subset of packet", "no_reasoning": true, "no_abstention": true}
+  },
+  "model_endpoints_frozen": {
+    "qwen3.5_4b": {"endpoint": "http://127.0.0.1:31518/v1/chat/completions", "model": "Qwen3.5-4B", "temperature": 0.0, "max_tokens": 160},
+    "ling3.0_tiny": {"endpoint": "http://127.0.0.1:31520/v1/chat/completions", "model": "Ling-3.0-tiny", "temperature": 0.0, "max_tokens": 256},
+    "hy_mt2_7b": {"model": "Hy-MT2-7B", "role": "S&P replay observed-response model"}
+  },
+  "data_sources": {
+    "boolq_validation": {"path": "data/benchmarks/boolq/validation.parquet", "shape": [3270, 3], "columns": ["question", "answer", "passage"]},
+    "boolq_train": {"path": "data/benchmarks/boolq/train.parquet", "shape": [9427, 3]},
+    "vitaminc_test": {"path": "data/benchmarks/vitaminc/test.jsonl", "rows": 34481, "labels": {"NOT ENOUGH INFO": 7268, "REFUTES": 9907, "SUPPORTS": 17306}},
+    "fever_validation": {"path": "data/benchmarks/fever-validation.jsonl", "rows": 15935, "labels": {"NOT ENOUGH INFO": 6410, "REFUTES": 4887, "SUPPORTS": 4638}}
+  },
+  "freeze_order_required": [
+    "selection manifest frozen before model calls",
+    "outcome-free public manifest + sealed outcome ledger",
+    "score hash / protocol hash frozen",
+    "endpoint model identity verified",
+    "pre-outcome routes frozen before label access",
+    "labels evaluated only after routes frozen"
+  ],
+  "hash_references": {
+    "v12_1_parent_selection_sha256": "1a4b953ab28e092448854a1e868fe22352e82902427634c8c85583ff7e0c5a48",
+    "v12_1_parent_substitutes_sha256": "779ad8caee82b029cff504fccf55bca10735f4c4bb7f38b838ff7bdf753f4ffc",
+    "v3_15_2_protocol_manifest": "eb170ae781d38c912bf91a342e9bfc3e760eea6d4b5424c67d9b2924ec07637a",
+    "v3_15_2_formal_records": "d1f45da96b450b84dd490854f47decd6374cb8be43d61379dce6288ff3610dd7",
+    "v3_15_2_preoutcome_routes": "0fa757345b8bcfcb21bc93287f1699a3ea06a46c353ddbb12652c16c88cdd951"
+  }
+}

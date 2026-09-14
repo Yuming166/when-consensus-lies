@@ -1,0 +1,37 @@
+{
+  "expected_calls": 2500,
+  "first_pass_rate": 1.0,
+  "first_pass_valid": 2500,
+  "per_condition": {
+    "original": {
+      "first_pass": 500,
+      "n": 500,
+      "success": 500
+    },
+    "paraphrase": {
+      "first_pass": 500,
+      "n": 500,
+      "success": 500
+    },
+    "remove": {
+      "first_pass": 500,
+      "n": 500,
+      "success": 500
+    },
+    "reverse": {
+      "first_pass": 500,
+      "n": 500,
+      "success": 500
+    },
+    "substitute": {
+      "first_pass": 500,
+      "n": 500,
+      "success": 500
+    }
+  },
+  "protocol": "cs-pilot-boolq-2026-09-12",
+  "records": 2500,
+  "smoke": false,
+  "success": 2500,
+  "valid_rate": 1.0
+}

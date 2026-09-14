@@ -1,0 +1,237 @@
+{
+  "cohort": {
+    "hc_by_label": {
+      "REFUTES": 278,
+      "SUPPORTS": 296
+    },
+    "n_hc": 574,
+    "n_items": 600,
+    "n_pairs": 300,
+    "wrong_by_label": {
+      "REFUTES": 106,
+      "SUPPORTS": 13
+    },
+    "wrong_hc": 119
+  },
+  "cross_model": {
+    "item_level_spearman_secondary": {
+      "n": 574,
+      "n_pairs": 299,
+      "spearman_qwen_risk_ling_risk": 0.4957815530091823
+    },
+    "ling_own_score_auroc": {
+      "auroc": 0.8964262628128175,
+      "ci": [
+        0.8734499466206783,
+        0.9164571360153256
+      ],
+      "n": 574,
+      "n_groups": 299
+    },
+    "ling_own_score_risk_at_80": {
+      "ci": [
+        0.2743362831858406,
+        0.5910485933503836
+      ],
+      "n": 574,
+      "overall_error": 0.2073170731707317,
+      "reduction": 0.42201717288222473
+    },
+    "paired_diff_qwen_transfer_minus_ling_own": {
+      "auroc": {
+        "ci": [
+          -0.2167971953419715,
+          -0.13023321726455583
+        ],
+        "diff": -0.17308154030843104,
+        "n": 574
+      },
+      "risk_at_80": {
+        "ci": [
+          -0.22610294117647056,
+          -0.062239089184060736
+        ],
+        "diff": -0.12610534409842367,
+        "n": 574
+      }
+    },
+    "qwen_score_transfer_auroc": {
+      "auroc": 0.7233447225043864,
+      "ci": [
+        0.6819370487578404,
+        0.764780931043067
+      ],
+      "n": 574,
+      "n_groups": 299
+    },
+    "qwen_score_transfer_risk_at_80": {
+      "ci": [
+        0.1481625762887936,
+        0.43937048503611964
+      ],
+      "n": 574,
+      "overall_error": 0.2073170731707317,
+      "reduction": 0.29591182878380107
+    },
+    "transfer_both_primary_ci_lb_gt_0.5": true,
+    "transfer_component_gates": {
+      "ling_own_primary_ci_lb_gt_0.5": true,
+      "qwen_transfer_primary_ci_lb_gt_0.5": true
+    }
+  },
+  "ling_within_model": {
+    "gates": {
+      "all_pass": true,
+      "macro_ci_lb_gt_0.5": true,
+      "paraphrase_placebo_le_0.30": true,
+      "permutation_obs_gt_95pct": true,
+      "pipeline_ge_0.95": true,
+      "primary_ci_lb_gt_0.5": true,
+      "primary_point_ge_0.60": true,
+      "reducibility_abs_spearman_lt_0.9": true,
+      "worst_label_ci_lb_gt_0.5": true
+    },
+    "macro": {
+      "ci": [
+        0.8946260271911844,
+        0.9441877566877567
+      ],
+      "macro": 0.9191356272290544
+    },
+    "paraphrase_agent_infidelity": 0.061,
+    "per_label": {
+      "REFUTES": {
+        "auroc": 0.9570535322509873,
+        "ci": [
+          0.9336462210713707,
+          0.9770271715875053
+        ],
+        "n": 278,
+        "n_pairs": 278
+      },
+      "SUPPORTS": {
+        "auroc": 0.8812177222071215,
+        "ci": [
+          0.8336892052194543,
+          0.9280133928571429
+        ],
+        "n": 296,
+        "n_pairs": 296
+      }
+    },
+    "permutation": {
+      "n": 574,
+      "obs_auroc": 0.8964262628128175,
+      "perm_95pct": 0.5644473173884939,
+      "perm_mean": 0.5003975251639117
+    },
+    "primary_auroc": {
+      "auroc": 0.8964262628128175,
+      "ci": [
+        0.8734499466206783,
+        0.9164571360153256
+      ],
+      "n": 574,
+      "n_groups": 299
+    },
+    "reducibility": {
+      "spearman_risk_agreement": -0.14769429667565837,
+      "spearman_risk_confidence": -0.049517707534397055
+    },
+    "risk_at_80": {
+      "ci": [
+        0.2743362831858406,
+        0.5910485933503836
+      ],
+      "n": 574,
+      "overall_error": 0.2073170731707317,
+      "reduction": 0.42201717288222473
+    },
+    "worst_label": "SUPPORTS"
+  },
+  "mechanism_transfer": {
+    "gate_correct_minus_wrong_ci_lb_gt_0": true,
+    "reverse_fidelity": {
+      "ci": [
+        0.6287660623129732,
+        0.7189713673432941
+      ],
+      "correct_mean": 0.7028571428571427,
+      "diff_correct_minus_wrong": 0.6742857142857142,
+      "n": 574,
+      "n_pairs": 299,
+      "wrong_mean": 0.028571428571428574
+    }
+  },
+  "model_comparison_context": {
+    "consensus_and_error_overlap": {
+      "all_items": {
+        "both_correct": 454,
+        "both_wrong": 57,
+        "ling_only_wrong": 70,
+        "n": 600,
+        "qwen_only_wrong": 19,
+        "same_consensus": 511
+      },
+      "both_hc": {
+        "both_correct": 426,
+        "both_wrong": 54,
+        "ling_only_wrong": 53,
+        "n": 543,
+        "qwen_only_wrong": 10,
+        "same_consensus": 480
+      }
+    },
+    "qwen_round3_same_full_cohort": {
+      "n_hc": 567,
+      "primary_auroc": {
+        "auroc": 0.9429053018694453,
+        "ci": [
+          0.9240590327546849,
+          0.9603082851637765
+        ],
+        "n": 567,
+        "n_groups": 298
+      },
+      "risk_at_80": {
+        "ci": [
+          0.6357396449704142,
+          0.9808704453441296
+        ],
+        "n": 567,
+        "overall_error": 0.1146384479717813,
+        "reduction": 0.8459500764136525
+      },
+      "wrong_hc": 65
+    }
+  },
+  "pipeline": {
+    "first_pass_rate": 0.9994666666666666,
+    "per_condition": {
+      "original": {
+        "n": 3000,
+        "success": 3000
+      },
+      "paraphrase": {
+        "n": 3000,
+        "success": 3000
+      },
+      "remove": {
+        "n": 3000,
+        "success": 3000
+      },
+      "reverse": {
+        "n": 3000,
+        "success": 3000
+      },
+      "synthetic_reverse": {
+        "n": 3000,
+        "success": 3000
+      }
+    },
+    "records": 15000,
+    "success": 15000,
+    "valid_rate": 1.0
+  },
+  "protocol": "cs-paper-ling-adapted-20260913-round4"
+}

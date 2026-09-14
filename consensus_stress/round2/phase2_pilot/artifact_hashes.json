@@ -1,0 +1,7 @@
+{
+  "expected_response_contract": "6733c79b06c0ca5ab43baabe58a4306ff35477162c626f22a1741ab389ce7ec0",
+  "labels_ledger": "5904f04b2d2b651c0597d425ea61c970ea6b2c2f47bc64ea3c9ee3e5c899a69b",
+  "paraphrase_manifest": "6673a3da59e808b418650825bce11dfa2ff5281a8eba71a8567a8788ec0cf81a",
+  "relevance_audit": "bf5297e18003ef5c9834d98b01e019f43731df2f514412a829569c6225843734",
+  "selection_manifest": "42cb5d066e80fb778e745d680978692b0a14f2dbed14296fdb43475b6a08e975"
+}

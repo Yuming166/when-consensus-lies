@@ -1,0 +1,31 @@
+{
+  "expected_calls": 7500,
+  "first_pass_rate": 0.9997,
+  "first_pass_valid": 7498,
+  "per_condition": {
+    "original": {
+      "n": 1500,
+      "success": 1500
+    },
+    "paraphrase": {
+      "n": 1500,
+      "success": 1500
+    },
+    "remove": {
+      "n": 1500,
+      "success": 1500
+    },
+    "reverse": {
+      "n": 1500,
+      "success": 1499
+    },
+    "synthetic_reverse": {
+      "n": 1500,
+      "success": 1500
+    }
+  },
+  "records": 7500,
+  "stage": 1,
+  "success": 7499,
+  "valid_rate": 0.9999
+}
