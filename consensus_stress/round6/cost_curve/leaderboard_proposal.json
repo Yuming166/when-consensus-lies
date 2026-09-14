@@ -1,0 +1,97 @@
+{
+  "protocol": "cs-round6-cost-curve-20260914",
+  "purpose": "Agent B proposal: add reversal-only(5 calls) as one leaderboard row for Agent C to integrate. Do NOT merge into any 25-call method.",
+  "rows": [
+    {
+      "auroc": 0.9307692307692308,
+      "auroc_ci": [
+        0.9125643004115226,
+        0.9475725725725725
+      ],
+      "baseline_significantly_better_than_rs_q": false,
+      "baseline_significantly_better_than_rs_q_risk80": false,
+      "calls_accounting_note": "5 calls/item = marginal natural-reverse calls on top of the already-formed 5-agent consensus (agents' own original answers provide the flip expectation); standalone original+reverse = 10 calls/item.",
+      "calls_per_item": 5,
+      "calls_per_item_total": 10,
+      "completion_tokens_per_item": 288.19223985890653,
+      "coverage": 1.0,
+      "label_using": false,
+      "method": "Reversal-only probe (5 calls)",
+      "method_index_in_cost_curve": 3,
+      "method_key": "risk_reversal_only_k5",
+      "method_type": "internal",
+      "model": "Qwen3.5-4B",
+      "model_key": "qwen",
+      "n_valid": 567,
+      "paired_auroc_diff_ci": [
+        0.002410694718387063,
+        0.02313877642825013
+      ],
+      "paired_auroc_diff_rs_q_minus_baseline": 0.01213607110021453,
+      "paired_risk80_diff_ci": [
+        -0.037926421404682276,
+        0.13390688259109307
+      ],
+      "paired_risk80_diff_rs_q_minus_baseline": -0.038512480896586876,
+      "prompt_tokens_per_item": 1865.405643738977,
+      "rank_by_auroc": null,
+      "rank_note": "rank_by_auroc assigned by Agent C at leaderboard integration",
+      "risk_at_80": 0.8844625573102394,
+      "risk_at_80_ci": [
+        0.5561266167460857,
+        0.9809954751131221
+      ],
+      "rs_q_significantly_better_than_baseline": true,
+      "rs_q_significantly_better_than_baseline_risk80": false,
+      "seed_note": "seeds derived from method_index in cost_curve/scripts/cost_curve_analyze.py METHODS order; AUROC=20260913+idx, Risk@80=+100+idx, paired AUROC=+200+idx, paired Risk@80=+300+idx",
+      "shared_calls": false,
+      "total_tokens_per_item": 2153.5978835978835
+    },
+    {
+      "auroc": 0.8693877551020408,
+      "auroc_ci": [
+        0.8470744228742393,
+        0.8909602384851156
+      ],
+      "baseline_significantly_better_than_rs_q": false,
+      "baseline_significantly_better_than_rs_q_risk80": false,
+      "calls_accounting_note": "5 calls/item = marginal natural-reverse calls on top of the already-formed 5-agent consensus (agents' own original answers provide the flip expectation); standalone original+reverse = 10 calls/item.",
+      "calls_per_item": 5,
+      "calls_per_item_total": 10,
+      "completion_tokens_per_item": 130.1794425087108,
+      "coverage": 1.0,
+      "label_using": false,
+      "method": "Reversal-only probe (5 calls)",
+      "method_index_in_cost_curve": 3,
+      "method_key": "risk_reversal_only_k5",
+      "method_type": "internal",
+      "model": "Ling-3.0-tiny",
+      "model_key": "ling",
+      "n_valid": 574,
+      "paired_auroc_diff_ci": [
+        0.01293771304617286,
+        0.04160842254268782
+      ],
+      "paired_auroc_diff_rs_q_minus_baseline": 0.02703850771077665,
+      "paired_risk80_diff_ci": [
+        0.03125397027061361,
+        0.12528647822765482
+      ],
+      "paired_risk80_diff_rs_q_minus_baseline": 0.07356145072408049,
+      "prompt_tokens_per_item": 2045.726480836237,
+      "rank_by_auroc": null,
+      "rank_note": "rank_by_auroc assigned by Agent C at leaderboard integration",
+      "risk_at_80": 0.34845572215814424,
+      "risk_at_80_ci": [
+        0.1835451329752391,
+        0.5260724377087079
+      ],
+      "rs_q_significantly_better_than_baseline": true,
+      "rs_q_significantly_better_than_baseline_risk80": true,
+      "seed_note": "seeds derived from method_index in cost_curve/scripts/cost_curve_analyze.py METHODS order; AUROC=20260913+idx, Risk@80=+100+idx, paired AUROC=+200+idx, paired Risk@80=+300+idx",
+      "shared_calls": false,
+      "total_tokens_per_item": 2175.905923344948
+    }
+  ],
+  "schema": "same as benchmark/leaderboard.json method rows (plus model and notes fields)"
+}

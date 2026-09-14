@@ -32,30 +32,31 @@ methods:
     calls_per_item: 5
     formula: 1 - mean original-condition confidence
     label_using: false
-  - key: risk_self_consistency_disagreement
-    name: Self-consistency disagreement
+  - key: risk_sampling_consistency_family
+    name: sampling-consistency family (3 identical binary variants)
     role: external_baseline
     calls_per_item: 25
-    formula: 1 - modal answer frequency over 25 temperature-0.7 samples
-    citation: Wang et al. 2022, self-consistency style
     label_using: false
     shared_call_family: sampling
-  - key: risk_selfcheck_answer_match
-    name: SelfCheckGPT answer-match
-    role: external_baseline
-    calls_per_item: 25
-    formula: 1 - probability that two sampled answers match (binary answer-match variant)
-    citation: Manakul et al. 2023, SelfCheckGPT style
-    label_using: false
-    shared_call_family: sampling
-  - key: risk_semantic_entropy_binary
-    name: Binary semantic entropy
-    role: external_baseline
-    calls_per_item: 25
-    formula: normalized Shannon entropy over yes/no semantic clusters
-    citation: Kuhn et al. semantic entropy style
-    label_using: false
-    shared_call_family: sampling
+    note: >-
+      Merged row (round-6 structural change, no numbers recomputed). The three variants
+      below are monotonic transforms of the same yes/no sampled-answer distribution and
+      have identical point AUROC/Risk@80; the leaderboard reports one family row carrying
+      the representative variant's values. All are ADAPTED PROXIES implemented in this
+      repository, not the original papers' implementations.
+    variants:
+      - key: risk_self_consistency_disagreement
+        name: Self-consistency disagreement
+        formula: 1 - modal answer frequency over 25 temperature-0.7 samples
+        citation: Wang et al. 2022, self-consistency style
+      - key: risk_selfcheck_answer_match
+        name: SelfCheckGPT answer-match
+        formula: 1 - probability that two sampled answers match (binary answer-match variant)
+        citation: Manakul et al. 2023, SelfCheckGPT style
+      - key: risk_semantic_entropy_binary
+        name: Binary semantic entropy
+        formula: normalized Shannon entropy over yes/no semantic clusters
+        citation: Kuhn et al. semantic entropy style
   - key: risk_sample_mean_confidence
     name: Raw sampled confidence
     role: external_baseline
@@ -84,7 +85,20 @@ methods:
     formula: -mean replicate faithfulness across paraphrase and natural reverse
     label_using: false
     shared_call_family: intervention
+  - key: risk_reversal_only_k5
+    name: Reversal-only probe (5 calls)
+    role: internal_baseline
+    calls_per_item: 5
+    calls_per_item_total: 10
+    formula: 1 - mean f_reverse over agents 0..4 (natural reverse); 5 marginal calls on top of the already-formed 5-agent consensus
+    label_using: false
+    note: >-
+      Round-6 Agent B cost-curve proposal (zero new model calls). Numbers are taken verbatim
+      from round6/cost_curve/leaderboard_proposal.json; calls_per_item is the marginal 5
+      natural-reverse calls (total incl. 5 original consensus calls = 10). Statistically below
+      RS_q on paired AUROC, so no "5 calls ~= 25 calls" equivalence is claimed.
 notes:
-  - In the binary-answer setting, self-consistency disagreement, SelfCheckGPT answer-match, and binary semantic entropy are monotonic transforms of the same yes/no distribution and may have identical AUROC or Risk@80 rankings.
+  - Round-6 structural merge: self-consistency disagreement, SelfCheckGPT answer-match, and binary semantic entropy are monotonic transforms of the same yes/no sampled-answer distribution with identical point AUROC/Risk@80; they are reported as one family row (representative variant values; CIs differ only by bootstrap seed).
+  - All external baselines are ADAPTED PROXIES: our own binary/answer-match adaptations of the cited method families (self-consistency, SelfCheckGPT, semantic entropy, confidence calibration), not the original papers' code, models, or reported numbers.
   - The sampling family is collected once for efficiency; each derived method is still accounted as a 25-call-per-item method.
   - Calibration baselines are label-using but strictly pair-grouped five-fold out-of-fold.

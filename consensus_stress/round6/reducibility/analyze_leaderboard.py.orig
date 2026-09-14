@@ -19,7 +19,6 @@ PROJECT = HERE.parent.parent
 CS = PROJECT / "consensus_stress"
 R3 = CS / "round3"
 R5 = CS / "round5"
-R6 = CS / "round6"
 FROZEN = HERE / "frozen" / "vitaminc"
 if str(R3) not in sys.path:
     sys.path.insert(0, str(R3))
@@ -212,76 +211,6 @@ def add_oof_calibrations(rows: list[dict]) -> list[dict]:
     return out
 
 
-FAMILY_VARIANTS = {
-    "risk_self_consistency_disagreement": "Self-consistency disagreement",
-    "risk_selfcheck_answer_match": "SelfCheckGPT answer-match",
-    "risk_semantic_entropy_binary": "Binary semantic entropy",
-}
-FAMILY_REPRESENTATIVE = "risk_self_consistency_disagreement"
-FAMILY_NAME = "sampling-consistency family (3 identical binary variants)"
-FAMILY_KEY = "risk_sampling_consistency_family"
-
-
-def collapse_sampling_family(method_results: list[dict]) -> list[dict]:
-    """Merge the three identical binary sampling variants into one family row.
-
-    Structural change only: the representative row's values are reused unchanged, so no
-    AUROC/Risk@80/CI number is recomputed or altered.
-    """
-    family = next((r for r in method_results if r["method_key"] == FAMILY_REPRESENTATIVE), None)
-    if family is None:
-        raise RuntimeError("sampling-consistency family representative row missing")
-    kept = [r for r in method_results if r["method_key"] not in FAMILY_VARIANTS]
-    merged = {**family, "method": FAMILY_NAME, "method_key": FAMILY_KEY,
-              "family_variants": sorted(FAMILY_VARIANTS.values())}
-    kept.append(merged)
-    return kept
-
-
-def add_cost_curve_proposal(method_results: list[dict], model_key: str) -> list[dict]:
-    """Inject the Round-6 reversal-only(5) baseline row proposed by Agent B.
-
-    The proposal file (round6/cost_curve/leaderboard_proposal.json) carries pre-computed,
-    label-blind score results; its numbers are copied verbatim (no recomputation). If the
-    file is absent, the leaderboard is produced without the row.
-    """
-    proposal_path = R6 / "cost_curve" / "leaderboard_proposal.json"
-    if not proposal_path.exists():
-        return method_results
-    proposal = json.loads(proposal_path.read_text(encoding="utf-8"))
-    for row in proposal.get("rows", []):
-        if row.get("model_key") != model_key:
-            continue
-        method_results.append({
-            "method": row["method"],
-            "method_key": row["method_key"],
-            "method_type": row["method_type"],
-            "auroc": row["auroc"],
-            "auroc_ci": row["auroc_ci"],
-            "n_valid": row["n_valid"],
-            "coverage": row["coverage"],
-            "risk_at_80": row["risk_at_80"],
-            "risk_at_80_ci": row["risk_at_80_ci"],
-            "calls_per_item": row["calls_per_item"],
-            "calls_per_item_total": row.get("calls_per_item_total"),
-            "calls_accounting_note": row.get("calls_accounting_note"),
-            "shared_calls": row["shared_calls"],
-            "label_using": row["label_using"],
-            "prompt_tokens_per_item": row["prompt_tokens_per_item"],
-            "completion_tokens_per_item": row["completion_tokens_per_item"],
-            "total_tokens_per_item": row["total_tokens_per_item"],
-            "paired_auroc_diff_rs_q_minus_baseline": row["paired_auroc_diff_rs_q_minus_baseline"],
-            "paired_auroc_diff_ci": row["paired_auroc_diff_ci"],
-            "paired_risk80_diff_rs_q_minus_baseline": row["paired_risk80_diff_rs_q_minus_baseline"],
-            "paired_risk80_diff_ci": row["paired_risk80_diff_ci"],
-            "baseline_significantly_better_than_rs_q": row["baseline_significantly_better_than_rs_q"],
-            "baseline_significantly_better_than_rs_q_risk80": row["baseline_significantly_better_than_rs_q_risk80"],
-            "rs_q_significantly_better_than_baseline": row["rs_q_significantly_better_than_baseline"],
-            "rs_q_significantly_better_than_baseline_risk80": row["rs_q_significantly_better_than_baseline_risk80"],
-        })
-    return method_results
-
-
 def evaluate_model(model_key: str) -> dict:
     rows, hashes = merge_outcomes(model_key)
     calibrated = add_oof_calibrations(rows)
@@ -346,14 +275,6 @@ def evaluate_model(model_key: str) -> dict:
             result["rs_q_significantly_better_than_baseline_risk80"] = False
         method_results.append(result)
 
-    # Round-6 structural merge (Agent C, score-4 upgrade): the three sampling-consistency
-    # variants (Self-consistency disagreement, SelfCheckGPT answer-match, Binary semantic
-    # entropy) are monotonic transforms of the same yes/no sample distribution, so they are
-    # reported as ONE family row. They are still COMPUTED individually with their original
-    # bootstrap seeds; the family row carries the representative variant's values unchanged
-    # (all three have identical point AUROC/Risk@80; CIs differ only by bootstrap seed).
-    method_results = collapse_sampling_family(method_results)
-    method_results = add_cost_curve_proposal(method_results, model_key)
     method_results.sort(key=lambda r: (
         -(r["auroc"] if r["auroc"] is not None else -1.0),
         -(r["risk_at_80"] if r["risk_at_80"] is not None else -1.0),

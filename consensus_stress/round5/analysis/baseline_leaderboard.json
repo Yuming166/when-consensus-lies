@@ -51,6 +51,46 @@
           "total_tokens_per_item": 10208.385
         },
         {
+          "auroc": 0.9307692307692308,
+          "auroc_ci": [
+            0.9125643004115226,
+            0.9475725725725725
+          ],
+          "baseline_significantly_better_than_rs_q": false,
+          "baseline_significantly_better_than_rs_q_risk80": false,
+          "calls_accounting_note": "5 calls/item = marginal natural-reverse calls on top of the already-formed 5-agent consensus (agents' own original answers provide the flip expectation); standalone original+reverse = 10 calls/item.",
+          "calls_per_item": 5,
+          "calls_per_item_total": 10,
+          "completion_tokens_per_item": 288.19223985890653,
+          "coverage": 1.0,
+          "label_using": false,
+          "method": "Reversal-only probe (5 calls)",
+          "method_key": "risk_reversal_only_k5",
+          "method_type": "internal",
+          "n_valid": 567,
+          "paired_auroc_diff_ci": [
+            0.002410694718387063,
+            0.02313877642825013
+          ],
+          "paired_auroc_diff_rs_q_minus_baseline": 0.01213607110021453,
+          "paired_risk80_diff_ci": [
+            -0.037926421404682276,
+            0.13390688259109307
+          ],
+          "paired_risk80_diff_rs_q_minus_baseline": -0.038512480896586876,
+          "prompt_tokens_per_item": 1865.405643738977,
+          "rank_by_auroc": 2,
+          "risk_at_80": 0.8844625573102394,
+          "risk_at_80_ci": [
+            0.5561266167460857,
+            0.9809954751131221
+          ],
+          "rs_q_significantly_better_than_baseline": true,
+          "rs_q_significantly_better_than_baseline_risk80": false,
+          "shared_calls": false,
+          "total_tokens_per_item": 2153.5978835978835
+        },
+        {
           "auroc": 0.9250076616610481,
           "auroc_ci": [
             0.900197628458498,
@@ -77,7 +117,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.07702496179317364,
           "prompt_tokens_per_item": 9536.575,
-          "rank_by_auroc": 2,
+          "rank_by_auroc": 3,
           "risk_at_80": 0.7689251146204789,
           "risk_at_80_ci": [
             0.5143052938153161,
@@ -115,7 +155,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.34661232806928166,
           "prompt_tokens_per_item": 8836.965,
-          "rank_by_auroc": 3,
+          "rank_by_auroc": 4,
           "risk_at_80": 0.49933774834437084,
           "risk_at_80_ci": [
             0.28117183484666786,
@@ -153,7 +193,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.5776872134488028,
           "prompt_tokens_per_item": 1868.86,
-          "rank_by_auroc": 4,
+          "rank_by_auroc": 5,
           "risk_at_80": 0.2682628629648497,
           "risk_at_80_ci": [
             -0.0035398230088496963,
@@ -167,44 +207,6 @@
         {
           "auroc": 0.6454642966595158,
           "auroc_ci": [
-            0.580301743844295,
-            0.7116463264299803
-          ],
-          "baseline_significantly_better_than_rs_q": false,
-          "baseline_significantly_better_than_rs_q_risk80": false,
-          "calls_per_item": 25,
-          "completion_tokens_per_item": 659.925,
-          "coverage": 1.0,
-          "label_using": false,
-          "method": "Binary semantic entropy",
-          "method_key": "risk_semantic_entropy_binary",
-          "method_type": "external",
-          "n_valid": 567,
-          "paired_auroc_diff_ci": [
-            0.22834973179197382,
-            0.3686515748031496
-          ],
-          "paired_auroc_diff_rs_q_minus_baseline": 0.29744100520992955,
-          "paired_risk80_diff_ci": [
-            0.392931392931393,
-            0.7476923076923078
-          ],
-          "paired_risk80_diff_rs_q_minus_baseline": 0.5969434538970962,
-          "prompt_tokens_per_item": 10026.666666666666,
-          "rank_by_auroc": 5,
-          "risk_at_80": 0.24900662251655625,
-          "risk_at_80_ci": [
-            0.06265182186234808,
-            0.4754497173205413
-          ],
-          "rs_q_significantly_better_than_baseline": true,
-          "rs_q_significantly_better_than_baseline_risk80": true,
-          "shared_calls": true,
-          "total_tokens_per_item": 10686.591666666667
-        },
-        {
-          "auroc": 0.6454642966595158,
-          "auroc_ci": [
             0.5745788469622013,
             0.712439923628942
           ],
@@ -213,9 +215,14 @@
           "calls_per_item": 25,
           "completion_tokens_per_item": 659.925,
           "coverage": 1.0,
+          "family_variants": [
+            "Binary semantic entropy",
+            "Self-consistency disagreement",
+            "SelfCheckGPT answer-match"
+          ],
           "label_using": false,
-          "method": "Self-consistency disagreement",
-          "method_key": "risk_self_consistency_disagreement",
+          "method": "sampling-consistency family (3 identical binary variants)",
+          "method_key": "risk_sampling_consistency_family",
           "method_type": "external",
           "n_valid": 567,
           "paired_auroc_diff_ci": [
@@ -234,44 +241,6 @@
           "risk_at_80_ci": [
             0.06265182186234808,
             0.48463221679851876
-          ],
-          "rs_q_significantly_better_than_baseline": true,
-          "rs_q_significantly_better_than_baseline_risk80": true,
-          "shared_calls": true,
-          "total_tokens_per_item": 10686.591666666667
-        },
-        {
-          "auroc": 0.6454642966595158,
-          "auroc_ci": [
-            0.5746846723334247,
-            0.710871288336077
-          ],
-          "baseline_significantly_better_than_rs_q": false,
-          "baseline_significantly_better_than_rs_q_risk80": false,
-          "calls_per_item": 25,
-          "completion_tokens_per_item": 659.925,
-          "coverage": 1.0,
-          "label_using": false,
-          "method": "SelfCheckGPT answer-match",
-          "method_key": "risk_selfcheck_answer_match",
-          "method_type": "external",
-          "n_valid": 567,
-          "paired_auroc_diff_ci": [
-            0.23124655267512417,
-            0.36995197555118964
-          ],
-          "paired_auroc_diff_rs_q_minus_baseline": 0.29744100520992955,
-          "paired_risk80_diff_ci": [
-            0.40527569775357386,
-            0.7444201312910285
-          ],
-          "paired_risk80_diff_rs_q_minus_baseline": 0.5969434538970962,
-          "prompt_tokens_per_item": 10026.666666666666,
-          "rank_by_auroc": 7,
-          "risk_at_80": 0.24900662251655625,
-          "risk_at_80_ci": [
-            0.07160156916254468,
-            0.478931245745405
           ],
           "rs_q_significantly_better_than_baseline": true,
           "rs_q_significantly_better_than_baseline_risk80": true,
@@ -305,7 +274,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.7509933774834437,
           "prompt_tokens_per_item": 10026.666666666666,
-          "rank_by_auroc": 8,
+          "rank_by_auroc": 7,
           "risk_at_80": 0.09495669893020875,
           "risk_at_80_ci": [
             -0.14777327935222662,
@@ -343,7 +312,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.8472745797249108,
           "prompt_tokens_per_item": 8836.965,
-          "rank_by_auroc": 9,
+          "rank_by_auroc": 8,
           "risk_at_80": -0.0013245033112583293,
           "risk_at_80_ci": [
             -0.24615384615384617,
@@ -381,7 +350,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.808762098828324,
           "prompt_tokens_per_item": 10026.666666666666,
-          "rank_by_auroc": 10,
+          "rank_by_auroc": 9,
           "risk_at_80": 0.03718797758532855,
           "risk_at_80_ci": [
             -0.201846153846154,
@@ -419,7 +388,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.7509933774834437,
           "prompt_tokens_per_item": 1868.86,
-          "rank_by_auroc": 11,
+          "rank_by_auroc": 10,
           "risk_at_80": 0.09495669893020875,
           "risk_at_80_ci": [
             -0.07091346153846145,
@@ -457,7 +426,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.7702496179317371,
           "prompt_tokens_per_item": 10026.666666666666,
-          "rank_by_auroc": 12,
+          "rank_by_auroc": 11,
           "risk_at_80": 0.07570045848191542,
           "risk_at_80_ci": [
             -0.18085320792744386,
@@ -599,6 +568,46 @@
           "total_tokens_per_item": 10312.49
         },
         {
+          "auroc": 0.8693877551020408,
+          "auroc_ci": [
+            0.8470744228742393,
+            0.8909602384851156
+          ],
+          "baseline_significantly_better_than_rs_q": false,
+          "baseline_significantly_better_than_rs_q_risk80": false,
+          "calls_accounting_note": "5 calls/item = marginal natural-reverse calls on top of the already-formed 5-agent consensus (agents' own original answers provide the flip expectation); standalone original+reverse = 10 calls/item.",
+          "calls_per_item": 5,
+          "calls_per_item_total": 10,
+          "completion_tokens_per_item": 130.1794425087108,
+          "coverage": 1.0,
+          "label_using": false,
+          "method": "Reversal-only probe (5 calls)",
+          "method_key": "risk_reversal_only_k5",
+          "method_type": "internal",
+          "n_valid": 574,
+          "paired_auroc_diff_ci": [
+            0.01293771304617286,
+            0.04160842254268782
+          ],
+          "paired_auroc_diff_rs_q_minus_baseline": 0.02703850771077665,
+          "paired_risk80_diff_ci": [
+            0.03125397027061361,
+            0.12528647822765482
+          ],
+          "paired_risk80_diff_rs_q_minus_baseline": 0.07356145072408049,
+          "prompt_tokens_per_item": 2045.726480836237,
+          "rank_by_auroc": 3,
+          "risk_at_80": 0.34845572215814424,
+          "risk_at_80_ci": [
+            0.1835451329752391,
+            0.5260724377087079
+          ],
+          "rs_q_significantly_better_than_baseline": true,
+          "rs_q_significantly_better_than_baseline_risk80": true,
+          "shared_calls": false,
+          "total_tokens_per_item": 2175.905923344948
+        },
+        {
           "auroc": 0.8181457198263921,
           "auroc_ci": [
             0.7869632227891157,
@@ -625,7 +634,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.21017557349737281,
           "prompt_tokens_per_item": 9734.771666666667,
-          "rank_by_auroc": 3,
+          "rank_by_auroc": 4,
           "risk_at_80": 0.21184159938485192,
           "risk_at_80_ci": [
             0.03319236191208508,
@@ -663,7 +672,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.29424580289632185,
           "prompt_tokens_per_item": 2046.3266666666666,
-          "rank_by_auroc": 4,
+          "rank_by_auroc": 5,
           "risk_at_80": 0.12777136998590288,
           "risk_at_80_ci": [
             -0.05087786748686418,
@@ -701,7 +710,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.34678969627066514,
           "prompt_tokens_per_item": 10125.333333333334,
-          "rank_by_auroc": 5,
+          "rank_by_auroc": 6,
           "risk_at_80": 0.0752274766115596,
           "risk_at_80_ci": [
             -0.07305297929106858,
@@ -739,7 +748,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.34678969627066514,
           "prompt_tokens_per_item": 10125.333333333334,
-          "rank_by_auroc": 6,
+          "rank_by_auroc": 7,
           "risk_at_80": 0.0752274766115596,
           "risk_at_80_ci": [
             -0.07894736842105265,
@@ -777,7 +786,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.5254389337434319,
           "prompt_tokens_per_item": 9734.771666666667,
-          "rank_by_auroc": 7,
+          "rank_by_auroc": 8,
           "risk_at_80": -0.10342176086120713,
           "risk_at_80_ci": [
             -0.26879795396419426,
@@ -815,49 +824,11 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.34678969627066514,
           "prompt_tokens_per_item": 10125.333333333334,
-          "rank_by_auroc": 8,
+          "rank_by_auroc": 9,
           "risk_at_80": 0.0752274766115596,
           "risk_at_80_ci": [
             -0.07189542483660127,
             0.2172342621259029
-          ],
-          "rs_q_significantly_better_than_baseline": true,
-          "rs_q_significantly_better_than_baseline_risk80": true,
-          "shared_calls": true,
-          "total_tokens_per_item": 10834.391666666666
-        },
-        {
-          "auroc": 0.5624803767660911,
-          "auroc_ci": [
-            0.5273221207087486,
-            0.6001427076396156
-          ],
-          "baseline_significantly_better_than_rs_q": false,
-          "baseline_significantly_better_than_rs_q_risk80": false,
-          "calls_per_item": 25,
-          "completion_tokens_per_item": 709.0583333333333,
-          "coverage": 1.0,
-          "label_using": false,
-          "method": "Binary semantic entropy",
-          "method_key": "risk_semantic_entropy_binary",
-          "method_type": "external",
-          "n_valid": 574,
-          "paired_auroc_diff_ci": [
-            0.29515056147628926,
-            0.3734551928291966
-          ],
-          "paired_auroc_diff_rs_q_minus_baseline": 0.33394588604672637,
-          "paired_risk80_diff_ci": [
-            0.23069053708439902,
-            0.4125386996904026
-          ],
-          "paired_risk80_diff_rs_q_minus_baseline": 0.3362809175957965,
-          "prompt_tokens_per_item": 10125.333333333334,
-          "rank_by_auroc": 9,
-          "risk_at_80": 0.08573625528642825,
-          "risk_at_80_ci": [
-            -0.03955375253549698,
-            0.26032270359547705
           ],
           "rs_q_significantly_better_than_baseline": true,
           "rs_q_significantly_better_than_baseline_risk80": true,
@@ -875,9 +846,14 @@
           "calls_per_item": 25,
           "completion_tokens_per_item": 709.0583333333333,
           "coverage": 1.0,
+          "family_variants": [
+            "Binary semantic entropy",
+            "Self-consistency disagreement",
+            "SelfCheckGPT answer-match"
+          ],
           "label_using": false,
-          "method": "Self-consistency disagreement",
-          "method_key": "risk_self_consistency_disagreement",
+          "method": "sampling-consistency family (3 identical binary variants)",
+          "method_key": "risk_sampling_consistency_family",
           "method_type": "external",
           "n_valid": 574,
           "paired_auroc_diff_ci": [
@@ -896,44 +872,6 @@
           "risk_at_80_ci": [
             -0.04631874441750683,
             0.2522476239404058
-          ],
-          "rs_q_significantly_better_than_baseline": true,
-          "rs_q_significantly_better_than_baseline_risk80": true,
-          "shared_calls": true,
-          "total_tokens_per_item": 10834.391666666666
-        },
-        {
-          "auroc": 0.5624803767660911,
-          "auroc_ci": [
-            0.5274911318929377,
-            0.5997689030114827
-          ],
-          "baseline_significantly_better_than_rs_q": false,
-          "baseline_significantly_better_than_rs_q_risk80": false,
-          "calls_per_item": 25,
-          "completion_tokens_per_item": 709.0583333333333,
-          "coverage": 1.0,
-          "label_using": false,
-          "method": "SelfCheckGPT answer-match",
-          "method_key": "risk_selfcheck_answer_match",
-          "method_type": "external",
-          "n_valid": 574,
-          "paired_auroc_diff_ci": [
-            0.2966741223378391,
-            0.373920568084499
-          ],
-          "paired_auroc_diff_rs_q_minus_baseline": 0.33394588604672637,
-          "paired_risk80_diff_ci": [
-            0.22919578198450008,
-            0.4089514066496164
-          ],
-          "paired_risk80_diff_rs_q_minus_baseline": 0.3362809175957965,
-          "prompt_tokens_per_item": 10125.333333333334,
-          "rank_by_auroc": 11,
-          "risk_at_80": 0.08573625528642825,
-          "risk_at_80_ci": [
-            -0.029860310137126866,
-            0.25954592363261086
           ],
           "rs_q_significantly_better_than_baseline": true,
           "rs_q_significantly_better_than_baseline_risk80": true,
@@ -967,7 +905,7 @@
           ],
           "paired_risk80_diff_rs_q_minus_baseline": 0.36780725362040234,
           "prompt_tokens_per_item": 2046.3266666666666,
-          "rank_by_auroc": 12,
+          "rank_by_auroc": 11,
           "risk_at_80": 0.05420991926182239,
           "risk_at_80_ci": [
             -0.07189542483660127,

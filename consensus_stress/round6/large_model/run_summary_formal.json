@@ -1,0 +1,45 @@
+{
+  "aborted": false,
+  "cache_hits": 1472,
+  "elapsed_seconds": 5520.89,
+  "expected_calls": 2500,
+  "first_pass_rate": 0.9472,
+  "http_stats": {
+    "200": 1511,
+    "400": 125,
+    "429": 826,
+    "502": 115
+  },
+  "label": "formal",
+  "model": "gpt-6-astra",
+  "per_condition": {
+    "original": {
+      "n": 500,
+      "success": 498
+    },
+    "paraphrase": {
+      "n": 500,
+      "success": 492
+    },
+    "remove": {
+      "n": 500,
+      "success": 500
+    },
+    "reverse": {
+      "n": 500,
+      "success": 498
+    },
+    "synthetic_reverse": {
+      "n": 500,
+      "success": 495
+    }
+  },
+  "records": 2500,
+  "success": 2483,
+  "token_usage": {
+    "completion_tokens": 171187,
+    "prompt_tokens": 5534850
+  },
+  "transport_retries": 929,
+  "valid_rate": 0.9932
+}

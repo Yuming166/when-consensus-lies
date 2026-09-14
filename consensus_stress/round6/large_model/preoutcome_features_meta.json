@@ -1,0 +1,7 @@
+{
+  "protocol": "cs-paper-gpt-singlepoint-20260914-round6",
+  "n_records": 2500,
+  "n_features": 98,
+  "label_free": true,
+  "sha256": "f1d167aad462da7dc2af8efae593685f386e3b434e8d36af79361b7989204e03"
+}

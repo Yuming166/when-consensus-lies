@@ -1,0 +1,5 @@
+1. 可归约性：RS_q/BF_q 与 R_sym 强相关（Spearman 0.82/0.86）但不可严格归约——残差增量 AUROC 0.874[0.784,0.931]/0.787[0.743,0.831]（Qwen/Ling，CI 下限>0.5），RS_q 信号几乎全由与 R_sym 共享的自然反证轴承载（reverse 轴单独 AUROC 0.931/0.869 vs RS_q 0.943/0.896）。
+2. 代数上"只换权重"不精确：RS_q=-(bf_paraphrase+rev_flip_rate)/2，R_sym=0.3(1-rev_flip_rate)+0.7·intervention_disagreement，仅反证轴重叠且权重不同（-0.5 vs -0.3）；RS_q 相对 R_sym 的增量来自 paraphrase 轴+丢弃 intervention_disagreement（后者自身 AUROC 仅 0.536/0.475）。
+3. Leaderboard 合并：Self-consistency / SelfCheckGPT / binary semantic entropy 三个同分布二值变体合并为一行 "sampling-consistency family (3 identical binary variants)"（取代表性变体数值，未重算任何数字；非家族行数值逐字段验证不变；行列数 12→11/模型）。
+4. reversal-only(5) 已集成：按 B 的 round6/cost_curve/leaderboard_proposal.json 逐字加入 Qwen(rank2, AUROC 0.931)/Ling(rank3, 0.869)，calls_per_item=5（边际，总 10 含 5 个 original 共识 calls），数值与 B 提案一致；README/methods.yaml 已加 budget 说明与 adapted-proxy 标注。
+5. 按主指令 §6：建议主贡献降级为"基准 CST-Bench+冻结复现+简洁信号（反证轴）"，不 claim 新启发式；全部统计在 HC 子集上 pair-grouped bootstrap（seed 20260913，2000 次），无新增模型调用，复现见 round6/reducibility/analyze_reducibility.py。

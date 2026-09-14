@@ -1,0 +1,30 @@
+{
+  "protocol": "cs-paper-gpt-singlepoint-20260914-round6",
+  "files": {
+    "preregistration.md": "e4552e2407b81894f1aae5628ff536fa0073a966296e0509a8a836e19f10840e",
+    "cohort_first100_pairs.json": "69618101aa56f1f5a8b32cad26357c185547b65ac367c20f083aeaf3bad2c572",
+    "execution_notes.md": "d8c5f798b5c0c63b2c926f858152ba724967000982dd0f4d8f3b739b6b625736",
+    "SUMMARY.md": "7dd79412b6a5547e3dcf0832e77b415395abc9f70c5be2955243bce014d03f91",
+    "run_summary_healthcheck.json": "0021a10f5e619d18b7b4561dbf3604a150b002014596b58ae408fc2b828329f5",
+    "run_summary_smoke.json": "f58b94021062fd8512d54b87020b3c96fb30361eb2b874579aa8eb6adc09a1d1",
+    "run_summary_formal.json": "505902756c1ec4785ecba5013e01b45b2cbab7e1290f79daa293608d058d5e0d",
+    "records_smoke.jsonl": "a6a627f2d55d910bf0e60680bbeb07cc2599af334cd667ce8437058093623e8e",
+    "records.jsonl": "e987ba177b72726245189c3a42f64ffaaa0494443d351639680a97eea611413f",
+    "preoutcome_features.jsonl": "f1d167aad462da7dc2af8efae593685f386e3b434e8d36af79361b7989204e03",
+    "preoutcome_features_meta.json": "fcf09e84f389cd00918e798d5d8fd31c0dcb058c5051bde71658bf08de8b951d",
+    "relay_large_model_run.py": "69ac94ce50ac888b5481921397f700e594956b1e194ef6c66b1ddac32eb3035f",
+    "scripts/analyze_large_model.py": "b88b3cd6fd1ee3f8c9ad052d6c3193d7bdd56f14eb6b2e82af09469fff406f6e",
+    "scripts/build_features_round6.py": "d7c8f1120fa718a6f1c65ab933838ea923847b097c5f772fc06c71c7d6c07b7f",
+    "scripts/figures_large_model.py": "0bb2a20a25669bdd6bb4de3e74078cd912dd1101e01eb51aad069fe8f099c9b3",
+    "scripts/rebuild_summary.py": "ec9a2990ab2a1755783e5b0e5934ba7a3fbf0bf3ffa34b4e4562c3163b57003c",
+    "scripts/write_analysis_md.py": "a03bbac6b7df10c236e1685232ceacc37ce7459421d4a586283af1403906ccec",
+    "analysis/large_model_transfer.json": "f12e810d52850351a559c6791c21052e6e03cd045341d890c9b32b3390bf73ae",
+    "analysis/large_model_within_model.json": "250d41b1d708414cb0c3d56568cdf020ad2b7ff7c784269874d45491603162a4",
+    "analysis/large_model_transfer.md": "90244ff2c7ec6395a35b9f9bf09f1abcf19be89308af69f5229fbdfd46f2cbb0",
+    "analysis/large_model_within_model.md": "fffd343026bd700d78f5def53f6c5d9363a95c1c6856c80fd47eaa713e82c739",
+    "figures/mechanism_fidelity.png": "74b8d7dfc33604a2d6e8f6148d1d92b11b3e9d9a13bc9494659d62a1b4ea600a",
+    "figures/risk_coverage.png": "5a19d1a2c98fc26b0b357a63a392823221fc20a8061327c8053eedee8d50454b",
+    "figures/roc_transfer.png": "a5efd8c4c6c676323a76597921332bae9b14f7e80c2ad0599c032f8eec0ad1d6",
+    "figures/roc_within_model.png": "20f04dd5e1fa485331be168fa3a0018f57df9e7665b74187a5b8d358358fc573"
+  }
+}

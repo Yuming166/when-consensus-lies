@@ -401,3 +401,79 @@ experiments:
     yields more reliability information than label-blind fixed full-condition rotation at
     matched budget; not a Phase-6 rescue or confirmatory gate.'
   preregistration: consensus_stress/round4/active_probing_preregistration.md
+- experiment_id: round6-A-reframing-20260914
+  parent_experiment: score4-upgrade-20260914
+  date: 2026-09-14
+  hypothesis: "A conceptual reframing (R1): BF_reverse == mirror-item correctness; counter-evidence responsiveness narrative"
+  dataset: frozen round3/4 VitaminC records (read-only)
+  model: orchestration = relay gpt-6-astra fallback chain -> server deepseek; D research model = relay GPT-class
+  status: running
+  result: consensus_stress/round6/<workstream>/
+  decision: pending
+- experiment_id: round6-B-costcurve-20260914
+  parent_experiment: score4-upgrade-20260914
+  date: 2026-09-14
+  hypothesis: "B cost-budget curve: reversal-only probe 1/2/5/10 vs RS_q on frozen records"
+  dataset: frozen round3/4 VitaminC records (read-only)
+  model: orchestration = relay gpt-6-astra fallback chain -> server deepseek; D research model = relay GPT-class
+  status: running
+  result: consensus_stress/round6/<workstream>/
+  decision: pending
+- experiment_id: round6-C-reducibility-20260914
+  parent_experiment: score4-upgrade-20260914
+  date: 2026-09-14
+  hypothesis: C reducibility vs R_sym/R_PI/flip/disagreement/confidence + leaderboard family merge
+  dataset: frozen round3/4 VitaminC records (read-only)
+  model: orchestration = relay gpt-6-astra fallback chain -> server deepseek; D research model = relay GPT-class
+  status: completed
+  result: consensus_stress/round6/reducibility/ (reducibility_report.md, reducibility_results.json,
+    analyze_reducibility.py, render_report.py, SUMMARY.md); benchmark/LEADERBOARD.md, leaderboard.csv,
+    leaderboard.json, README.md, methods.yaml updated (family merge + reversal-only(5) row)
+  decision: >-
+    C complete: RS_q partially reducible to R_sym (Spearman 0.82/0.86; residual incremental AUROC
+    0.874[0.784,0.931]/0.787[0.743,0.831] on Qwen/Ling HC), signal dominated by shared natural-reversal
+    axis; not a strict reweighting (axes differ: paraphrase vs intervention_disagreement); leaderboard
+    merged 3 sampling-consistency variants into one family row and integrated B reversal-only(5)
+    (calls=5) verbatim; all external baselines annotated as adapted proxies; no new model calls; no commit.
+- experiment_id: round6-D-large-model-20260914
+  parent_experiment: score4-upgrade-20260914
+  date: 2026-09-14
+  hypothesis: D large-model single-point validation (100 items, gpt-6-astra via private relay or fallback)
+  dataset: frozen round3/4 VitaminC records (read-only); cohort = first 100 pair_ids of round3 selection_manifest (first 50 pairs formal)
+  model: orchestration = relay gpt-6-astra fallback chain -> server deepseek; D research model = gpt-6-astra (openapi.center /v1/chat/completions)
+  status: completed
+  result: >-
+    consensus_stress/round6/large_model/ (preregistration.md, cohort_first100_pairs.json,
+    execution_notes.md, run_summary_healthcheck.json, run_summary_smoke.json,
+    run_summary_formal.json, records_smoke.jsonl, records.jsonl, preoutcome_features.jsonl + meta,
+    relay_large_model_run.py, scripts/, analysis/large_model_within_model.md + large_model_transfer.md
+    + within/transfer JSON, figures/roc_within_model.png + roc_transfer.png + risk_coverage.png
+    + mechanism_fidelity.png, artifact_hashes.json, SUMMARY.md)
+  decision: >-
+    D complete, no BLOCKED/partial. gpt-6-astra passed capability gate; formal 100 items
+    x 25 = 2,500 logical calls, 2,483 valid (0.9932 >= 0.95), 0 parse failures, 17 transport
+    failures (429/502/400). Within-model HC n=96 wrong=8 (8.3%): AUROC(RS_q,wrong|HC)
+    0.969[0.935,0.995] CI lb>0.5, Risk@80 reduction 1.000[0.836,1.000], placebo 0.039<=0.30,
+    permutation obs 0.969>p95 0.894, mechanism fidelity correct-wrong bf_reverse diff
+    0.832[0.745,0.928] CI excl 0 -- all 5 gates PASS. Transfer (secondary): Qwen RS_q AUROC
+    0.838[0.693,0.950], Ling 0.737[0.568,0.862]. Boundary: single-point 100-item validation,
+    wrong HC n=8 small; labels merged only after label-free feature freeze (SHA256
+    f1d167aad462da7dc2af8efae593685f386e3b434e8d36af79361b7989204e03); no git commit.
+- experiment_id: round6-E-label-balance-20260914
+  parent_experiment: score4-upgrade-20260914
+  date: 2026-09-14
+  hypothesis: E label-balanced error-quality analysis (SUPPORTS vs REFUTES)
+  dataset: frozen round3/4 VitaminC records (read-only)
+  model: orchestration = relay gpt-6-astra fallback chain -> server deepseek; D research model = relay GPT-class
+  status: done (2026-09-14; zero new model calls)
+  result: consensus_stress/round6/label_balance/label_balance_analysis.md (tables + limitation wording),
+    consensus_stress/round6/label_balance/SUMMARY.md, scripts/label_balance_analysis.py,
+    label_balance_analysis_results.json, mannwhitney_pvalues.json
+  decision: 'Boundary claim: pooled AUROC is REFUTES-carried by error composition (89.2%
+    error mass / 89.3% concordance share, Qwen; 89.1% / 88.9% Ling) but not an imbalance
+    artifact: per-label AUROC >0.88 in both labels (SUPPORTS 0.917 [0.819,0.999] Qwen,
+    0.881 [0.834,0.928] Ling), error-count-matched diagnostic pooled AUROC ~0.92 / 0.875
+    (post-hoc, not a gate), SUPPORTS LOO AUROC in [0.903,0.944] / [0.872,0.886]. Qwen
+    SUPPORTS vs REFUTES AUROC diff CI includes 0 (numerically-worst only); Ling CI excludes
+    0. Construction is label-symmetric; error rates are not (8.3-8.7x asymmetric, consistent
+    across models). Report label-stratified metrics as primary; pooled as composition-stated.'

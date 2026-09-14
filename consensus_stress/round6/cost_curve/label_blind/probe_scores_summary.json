@@ -1,0 +1,55 @@
+{
+  "frozen_input_hashes": {
+    "features": "d0c588d05211769c14234377d669881d079dacaac0ebaf2ec9326561d967584d",
+    "ling_features": "35e853cf0815cb1428ec8f2ee671993bd1f87ba8b28ade24a630ac4c79bc26bb",
+    "ling_records": "fc0e32126b3ce0a1c5394d11a706a072611a9fd12797b3624789cc0dda62d4d2",
+    "records": "ce5280ede80c92f471ff73b1b8fe1c0fc339bd057aae67825e54f7d42a706a08"
+  },
+  "models": {
+    "ling": {
+      "bf_paraphrase_checked": 600,
+      "bf_paraphrase_mismatch": 0,
+      "bf_q_checked": 600,
+      "bf_q_mismatch": 0,
+      "bf_reverse_checked": 600,
+      "bf_reverse_mismatch": 0,
+      "items_with_score": {
+        "risk_reversal_only_k1": 600,
+        "risk_reversal_only_k10": 600,
+        "risk_reversal_only_k2": 600,
+        "risk_reversal_only_k5": 600,
+        "risk_reversal_paraphrase_k5": 600
+      },
+      "missing_reverse_calls": 0,
+      "model": "ling",
+      "n_items": 600,
+      "n_items_checked": 600,
+      "scores_path": "consensus_stress/round6/cost_curve/label_blind/probe_scores_label_blind_ling.jsonl",
+      "scores_sha256": "39f11d77ee50a15de97eb283aaf45a2e0ceeee0bcc779507ea8037b027bcc294"
+    },
+    "qwen": {
+      "bf_paraphrase_checked": 600,
+      "bf_paraphrase_mismatch": 0,
+      "bf_q_checked": 600,
+      "bf_q_mismatch": 0,
+      "bf_reverse_checked": 600,
+      "bf_reverse_mismatch": 0,
+      "items_with_score": {
+        "risk_reversal_only_k1": 600,
+        "risk_reversal_only_k10": 600,
+        "risk_reversal_only_k2": 600,
+        "risk_reversal_only_k5": 600,
+        "risk_reversal_paraphrase_k5": 600
+      },
+      "missing_reverse_calls": 1,
+      "model": "qwen",
+      "n_items": 600,
+      "n_items_checked": 600,
+      "scores_path": "consensus_stress/round6/cost_curve/label_blind/probe_scores_label_blind_qwen.jsonl",
+      "scores_sha256": "e5ce424f1873966c153c132f19c5ca9d3f808f192d8786046e785209e0b7c29f"
+    }
+  },
+  "note": "label-blind; no gold labels or consensus_wrong used; 1-BF is a monotone shift of the -BF leaderboard convention.",
+  "parent": "cs-round5-matched-baselines-cst-bench-20260913",
+  "protocol": "cs-round6-cost-curve-20260914"
+}

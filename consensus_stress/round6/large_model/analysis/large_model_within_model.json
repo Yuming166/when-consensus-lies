@@ -1,0 +1,84 @@
+{
+  "hc_threshold": 0.8,
+  "n_total": 98,
+  "n_hc": 96,
+  "n_wrong_hc": 8,
+  "wrong_rate_hc": 0.0833,
+  "hc_by_label": {
+    "REFUTES": 49,
+    "SUPPORTS": 47
+  },
+  "wrong_hc_by_label": {
+    "REFUTES": 7,
+    "SUPPORTS": 1
+  },
+  "primary_auroc": {
+    "auroc": 0.9694602272727273,
+    "ci": [
+      0.9345567867036011,
+      0.9946808510638298
+    ],
+    "n": 96,
+    "n_groups": 50
+  },
+  "risk_at_80": {
+    "reduction": 1.0,
+    "ci": [
+      0.8356164383561644,
+      1.0
+    ],
+    "overall_error": 0.08333333333333333,
+    "n": 96
+  },
+  "per_label_auroc": {
+    "SUPPORTS": {
+      "auroc": 0.9565217391304348,
+      "ci": [
+        0.9130434782608695,
+        0.9891304347826086
+      ],
+      "n": 47,
+      "n_pairs": 47
+    },
+    "REFUTES": {
+      "auroc": 0.9778911564625851,
+      "ci": [
+        0.926829268292683,
+        1.0
+      ],
+      "n": 49,
+      "n_pairs": 49
+    }
+  },
+  "macro_auroc": {
+    "macro": 0.9672064477965099,
+    "ci": [
+      0.9308213716108453,
+      1.0
+    ]
+  },
+  "placebo": {
+    "agent_paraphrase_flip_rate": 0.0394,
+    "n": 482,
+    "gate_le_0.30": true
+  },
+  "permutation": {
+    "observed": 0.9694602272727273,
+    "perm_p95": 0.8941761363636364,
+    "pass_obs_gt_p95": true,
+    "n_perm": 1000
+  },
+  "mechanism_fidelity": {
+    "mean_correct_minus_wrong": 0.8318181818181818,
+    "ci": [
+      0.7450574712643678,
+      0.9282608695652175
+    ],
+    "n_correct": 88,
+    "n_wrong": 8
+  },
+  "reducibility": {
+    "spearman_risk_agreement": 0.3176,
+    "spearman_risk_conf": -0.1841
+  }
+}

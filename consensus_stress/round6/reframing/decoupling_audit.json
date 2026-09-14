@@ -1,0 +1,117 @@
+{
+  "labels_ledger": "round3/labels_ledger.json",
+  "ling_records": "round4/ling_records.jsonl",
+  "models": [
+    {
+      "BF_paraphrase_correct": 0.9836653386454184,
+      "BF_paraphrase_wrong": 0.8923076923076924,
+      "BF_reverse_correct": 0.8438247011952191,
+      "BF_reverse_wrong": 0.09538461538461539,
+      "mirror_accuracy_correct": 0.8513944223107569,
+      "mirror_accuracy_wrong": 0.9292307692307692,
+      "model": "Qwen3.5-4B",
+      "n_hc": 567,
+      "n_hc_correct": 502,
+      "n_hc_wrong": 65,
+      "n_items": 600,
+      "per_group": {
+        "orig_correct": {
+          "faithful_minus_mirror": 0.0,
+          "faithful_rev": 0.8506805444355484,
+          "mirror_correct": 0.8506805444355484,
+          "n": 2499
+        },
+        "orig_wrong": {
+          "faithful_minus_mirror": -0.8630952380952381,
+          "faithful_rev": 0.06845238095238096,
+          "mirror_correct": 0.9315476190476191,
+          "n": 336
+        }
+      },
+      "view_identity": {
+        "match": 2998,
+        "missing_mirror": 0,
+        "total": 2999
+      },
+      "wrong_consensus_agent_totals": {
+        "mirror_correct": 302,
+        "mirror_wrong": 23,
+        "n_agent_calls": 325,
+        "responsive": 31,
+        "stayed": 294
+      },
+      "wrong_consensus_mirror_wrong_distribution_over_5_agents": {
+        "0": 57,
+        "1": 3,
+        "3": 1,
+        "4": 3,
+        "5": 1
+      },
+      "wrong_consensus_responsive_distribution_over_5_agents": {
+        "0": 46,
+        "1": 14,
+        "3": 3,
+        "4": 2
+      },
+      "wrong_consensus_stayed_distribution_over_5_agents": {
+        "1": 2,
+        "2": 3,
+        "4": 14,
+        "5": 46
+      }
+    },
+    {
+      "BF_paraphrase_correct": 0.9665934065934066,
+      "BF_paraphrase_wrong": 0.8873949579831932,
+      "BF_reverse_correct": 0.7028571428571428,
+      "BF_reverse_wrong": 0.028571428571428574,
+      "mirror_accuracy_correct": 0.7147252747252747,
+      "mirror_accuracy_wrong": 0.9915966386554622,
+      "model": "Ling-3.0-tiny",
+      "n_hc": 574,
+      "n_hc_correct": 455,
+      "n_hc_wrong": 119,
+      "n_items": 600,
+      "per_group": {
+        "orig_correct": {
+          "faithful_minus_mirror": 0.0,
+          "faithful_rev": 0.7124558303886925,
+          "mirror_correct": 0.7124558303886925,
+          "n": 2264
+        },
+        "orig_wrong": {
+          "faithful_minus_mirror": -0.9900990099009901,
+          "faithful_rev": 0.0049504950495049506,
+          "mirror_correct": 0.995049504950495,
+          "n": 606
+        }
+      },
+      "view_identity": {
+        "match": 2989,
+        "missing_mirror": 0,
+        "total": 3000
+      },
+      "wrong_consensus_agent_totals": {
+        "mirror_correct": 590,
+        "mirror_wrong": 5,
+        "n_agent_calls": 595,
+        "responsive": 17,
+        "stayed": 578
+      },
+      "wrong_consensus_mirror_wrong_distribution_over_5_agents": {
+        "0": 115,
+        "1": 3,
+        "2": 1
+      },
+      "wrong_consensus_responsive_distribution_over_5_agents": {
+        "0": 102,
+        "1": 17
+      },
+      "wrong_consensus_stayed_distribution_over_5_agents": {
+        "4": 17,
+        "5": 102
+      }
+    }
+  ],
+  "qwen_records": "round3/records.jsonl"
+}

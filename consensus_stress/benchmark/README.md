@@ -74,15 +74,18 @@ accounting dimension.
 
 ### Shared sampling family (25 calls/item)
 
-Twenty-five stochastic calls are made on agent 0's original view. Four label-blind methods
-and two supervised calibration methods derive scores from this shared call family:
+Twenty-five stochastic calls are made on agent 0's original view. Three label-blind derived
+methods and two supervised calibration methods derive scores from this shared call family:
 
-1. **Self-consistency disagreement:** `1 - modal answer frequency`.
-2. **SelfCheckGPT answer-match:** `1 - probability that two sampled answers match`.
-3. **Binary semantic entropy:** normalized entropy over yes/no clusters.
-4. **Raw sampled confidence:** `1 - mean sampled confidence`.
-5. **Isotonic confidence:** pair-grouped 5-fold OOF isotonic calibration to error probability.
-6. **Temperature confidence:** pair-grouped 5-fold OOF temperature scaling converted to
+1. **sampling-consistency family (3 identical binary variants):** one leaderboard row for
+   the three variants below, which are monotonic transforms of the same yes/no sampled-answer
+   distribution and therefore have identical point AUROC/Risk@80.
+   - **Self-consistency disagreement:** `1 - modal answer frequency`.
+   - **SelfCheckGPT answer-match:** `1 - probability that two sampled answers match`.
+   - **Binary semantic entropy:** normalized entropy over yes/no clusters.
+2. **Raw sampled confidence:** `1 - mean sampled confidence`.
+3. **Isotonic confidence:** pair-grouped 5-fold OOF isotonic calibration to error probability.
+4. **Temperature confidence:** pair-grouped 5-fold OOF temperature scaling converted to
    error risk.
 
 The runner collects 25 sampling calls plus 25 intervention calls per item/model, so the unique
@@ -90,10 +93,20 @@ experimental footprint is 50 calls/item/model. Nevertheless, each listed method 
 most 25 calls/item; the sampling family is shared only as an efficiency optimization.
 Calibration is the only label-using baseline and is evaluated strictly OOF.
 
-Because this task has binary answers, self-consistency disagreement, SelfCheckGPT answer-match,
-and binary semantic entropy are monotonic transforms of the same yes/no sample distribution.
-They can therefore have identical AUROC/Risk@80 rankings. They are still reported separately to
-preserve method fidelity to the cited baseline families.
+Because this task has binary answers, the three sampling-consistency variants are monotonic
+transforms of the same yes/no sample distribution. In Round 6 they were merged into the single
+`sampling-consistency family (3 identical binary variants)` row (structural change only; the
+row carries the representative variant's values and no number was recomputed).
+
+**Adapted-proxy notice:** every external baseline on this leaderboard is an *adapted proxy*
+implemented in this repository, not the original papers' implementation. Specifically,
+self-consistency is proxied by `1 - modal answer frequency` over temperature-0.7 samples;
+SelfCheckGPT by a binary answer-match probability on the same samples (without the original
+NLI/self-verification pipeline); semantic entropy by normalized entropy over yes/no clusters;
+and confidence calibration by pair-grouped OOF isotonic/temperature scaling on sampled
+confidence. Results here therefore describe *our adaptations* under this benchmark's protocol
+and must not be read as the original methods' reported numbers or as head-to-head
+reproductions of those papers.
 
 ### Single-agent intervention family (25 calls/item)
 
@@ -101,6 +114,18 @@ One fixed agent/persona is sampled five times under each of the five parent cond
 pre-registered score is `RS_single=-BF_single`, where `BF_single` averages replicate
 faithfulness over paraphrase and natural reverse. This directly tests whether multiple agent
 personas are necessary.
+
+### Reversal-only probe (5 calls/item)
+
+Round-6 cost-curve addition (Agent B, zero new model calls; numbers taken verbatim from
+`round6/cost_curve/leaderboard_proposal.json`). Score = `1 - mean f_reverse` over all five
+agents under the natural-reverse condition, using the already-formed consensus as the
+precondition. **Budget accounting:** `calls_per_item = 5` marginal natural-reverse calls on
+top of the 5 original consensus calls (total = 10 calls/item if counted standalone). On the
+HC subset it ranks 2nd (Qwen, AUROC 0.931) / 3rd (Ling, AUROC 0.869), but it is statistically
+below `RS_q` on paired AUROC (Qwen `RS_q - rev5 = +0.012 [0.002, 0.023]`; Ling
+`+0.027 [0.013, 0.042]`), so the leaderboard does **not** claim a "5 calls ~= 25 calls"
+equivalence. See `consensus_stress/round6/cost_curve/cost_curve.md`.
 
 ## 6. Frozen gates inherited from the parent protocols
 
@@ -175,3 +200,6 @@ requires the two local model endpoints to be available.
   over all possible reliability methods.
 - If an external baseline wins, the win is retained in the leaderboard and discussed rather
   than removed or relabeled.
+- All external baselines are adapted proxies implemented in this repository (binary /
+  answer-match / OOF-calibration adaptations of the cited method families), not the original
+  papers' implementations; no original-paper benchmark number is claimed.

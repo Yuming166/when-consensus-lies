@@ -1,0 +1,50 @@
+{
+  "source": {
+    "qwen": "round3/preoutcome_features.jsonl",
+    "ling": "round4/ling_preoutcome_features.jsonl"
+  },
+  "qwen": {
+    "n_hc_with_src": 96,
+    "auroc": {
+      "auroc": 0.8380681818181818,
+      "ci": [
+        0.6934865900383141,
+        0.95
+      ],
+      "n": 96,
+      "n_groups": 50
+    },
+    "risk_at_80": {
+      "reduction": 0.6842105263157895,
+      "ci": [
+        -0.1200000000000001,
+        1.0
+      ],
+      "overall_error": 0.08333333333333333,
+      "n": 96
+    },
+    "spearman_src_gpt_risk": 0.6787
+  },
+  "ling": {
+    "n_hc_with_src": 96,
+    "auroc": {
+      "auroc": 0.7365056818181818,
+      "ci": [
+        0.5676406926406926,
+        0.8617021276595744
+      ],
+      "n": 96,
+      "n_groups": 50
+    },
+    "risk_at_80": {
+      "reduction": 0.21052631578947367,
+      "ci": [
+        -0.43999999999999995,
+        0.8441558441558441
+      ],
+      "overall_error": 0.08333333333333333,
+      "n": 96
+    },
+    "spearman_src_gpt_risk": 0.3656
+  }
+}
