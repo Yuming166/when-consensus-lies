@@ -1,0 +1,311 @@
+{
+  "protocol": "cs-paper-ind-ce-20260914-round7-w2",
+  "cohort": {
+    "n_items_total": 98,
+    "n_pairs": 50,
+    "hc": {
+      "n": 96,
+      "n_wrong": 8,
+      "wrong_rate": 0.0833
+    }
+  },
+  "flip_rates": {
+    "natural": {
+      "rate": 0.8253,
+      "n": 498,
+      "n_pairs": 50,
+      "ci": [
+        0.7289,
+        0.914
+      ]
+    },
+    "ind": {
+      "rate": 0.6567,
+      "n": 469,
+      "n_pairs": 50,
+      "ci": [
+        0.5957,
+        0.7183
+      ]
+    },
+    "placebo": {
+      "rate": 0.5579,
+      "n": 466,
+      "n_pairs": 50,
+      "ci": [
+        0.5114,
+        0.6082
+      ]
+    }
+  },
+  "delta_CE": {
+    "diff": 0.0988,
+    "n_a": 469,
+    "n_b": 466,
+    "ci": [
+      0.03,
+      0.1681
+    ]
+  },
+  "delta_NI": {
+    "diff": -0.1686,
+    "n_a": 469,
+    "n_b": 498,
+    "ci": [
+      -0.2689,
+      -0.0611
+    ]
+  },
+  "delta_NP": {
+    "diff": 0.2674,
+    "n_a": 498,
+    "n_b": 466,
+    "ci": [
+      0.1307,
+      0.3895
+    ]
+  },
+  "round6_reverse_replication": {
+    "our_natural_rate": 0.8253,
+    "round6_rev_rate": 0.8246,
+    "abs_diff": 0.0007,
+    "gate_le_0.15": true,
+    "n_rows": 496
+  },
+  "gates": {
+    "G3_delta_CE_gt_0": {
+      "point": 0.0988,
+      "ci_lb": 0.03,
+      "pass": true
+    },
+    "G4_placebo_le_0.30": {
+      "rate": 0.5579,
+      "pass": false
+    }
+  },
+  "auroc": {
+    "S_natural": {
+      "auroc": 0.9623579545454546,
+      "ci": [
+        0.9252873563218391,
+        0.9907894736842106
+      ],
+      "n": 96,
+      "n_groups": 50,
+      "risk_direction_negated": true
+    },
+    "S_ind": {
+      "auroc": 0.6985074626865672,
+      "ci": [
+        0.4652777777777778,
+        0.8693693693693694
+      ],
+      "n": 72,
+      "n_groups": 42,
+      "risk_direction_negated": true
+    },
+    "S_combined": {
+      "auroc": 0.9582089552238806,
+      "ci": [
+        0.8823529411764706,
+        1.0
+      ],
+      "n": 72,
+      "n_groups": 42,
+      "risk_direction_negated": true
+    },
+    "S_placebo": {
+      "auroc": 0.32857142857142857,
+      "ci": [
+        0.19166666666666668,
+        0.4517857142857143
+      ],
+      "n": 72,
+      "n_groups": 38,
+      "risk_direction_negated": true
+    },
+    "S_pair_panel_gpt": {
+      "auroc": 0.9540229885057471,
+      "ci": [
+        0.9207317073170732,
+        0.9836956521739131
+      ],
+      "n": 94,
+      "n_groups": 48
+    },
+    "S_pair_flip_gpt": {
+      "auroc": 0.9597701149425287,
+      "ci": [
+        0.927710843373494,
+        0.9838709677419355
+      ],
+      "n": 94,
+      "n_groups": 48,
+      "risk_direction_negated": true
+    },
+    "S_pair_same_gpt": {
+      "auroc": 0.040229885057471264,
+      "ci": [
+        0.016129032258064516,
+        0.07228915662650602
+      ],
+      "n": 94,
+      "n_groups": 48,
+      "risk_direction_negated": true
+    },
+    "S_pair_panel_qwen": {
+      "auroc": 0.7443181818181818,
+      "ci": [
+        0.567741935483871,
+        0.9325842696629213
+      ],
+      "n": 96,
+      "n_groups": 50
+    }
+  },
+  "risk_at_80": {
+    "S_natural": {
+      "reduction": 1.0,
+      "ci": [
+        0.5263157894736843,
+        1.0
+      ],
+      "overall_error": 0.08333333333333333,
+      "n": 96,
+      "risk_direction_negated": true
+    },
+    "S_ind": {
+      "reduction": -0.010526315789473495,
+      "ci": [
+        -1.021052631578947,
+        0.7639344262295082
+      ],
+      "overall_error": 0.06944444444444445,
+      "n": 72,
+      "risk_direction_negated": true
+    },
+    "S_combined": {
+      "reduction": 0.7473684210526317,
+      "ci": [
+        0.4666666666666667,
+        1.0
+      ],
+      "overall_error": 0.06944444444444445,
+      "n": 72,
+      "risk_direction_negated": true
+    },
+    "S_placebo": {
+      "reduction": -0.26315789473684204,
+      "ci": [
+        -1.1654135338345863,
+        0.47699757869249393
+      ],
+      "overall_error": 0.09722222222222222,
+      "n": 72,
+      "risk_direction_negated": true
+    },
+    "S_pair_panel_gpt": {
+      "reduction": 1.0,
+      "ci": [
+        0.46285714285714286,
+        1.0
+      ],
+      "overall_error": 0.07446808510638298,
+      "n": 94
+    },
+    "S_pair_flip_gpt": {
+      "reduction": 1.0,
+      "ci": [
+        0.6320939334637965,
+        1.0
+      ],
+      "overall_error": 0.07446808510638298,
+      "n": 94,
+      "risk_direction_negated": true
+    },
+    "S_pair_same_gpt": {
+      "reduction": -0.2533333333333334,
+      "ci": [
+        -1.1203007518796992,
+        0.4699248120300752
+      ],
+      "overall_error": 0.07446808510638298,
+      "n": 94,
+      "risk_direction_negated": true
+    },
+    "S_pair_panel_qwen": {
+      "reduction": 0.5263157894736843,
+      "ci": [
+        -0.10526315789473695,
+        1.0
+      ],
+      "overall_error": 0.08333333333333333,
+      "n": 96
+    }
+  },
+  "paired_auroc_diff": {
+    "S_ind_minus_S_natural": {
+      "diff": -0.25671641791044775,
+      "ci": [
+        -0.5,
+        -0.08750000000000002
+      ],
+      "n": 72
+    },
+    "S_combined_minus_S_natural": {
+      "diff": 0.0029850746268657025,
+      "ci": [
+        -0.07656249999999998,
+        0.05357142857142849
+      ],
+      "n": 72
+    },
+    "S_ind_minus_S_placebo": {
+      "diff": 0.2990196078431373,
+      "ci": [
+        0.11607142857142858,
+        0.5229468599033815
+      ],
+      "n": 55
+    },
+    "S_pair_panel_minus_S_ind": {
+      "diff": -0.27462121212121215,
+      "ci": [
+        -0.5573529411764706,
+        -0.07971014492753625
+      ],
+      "n": 70
+    },
+    "S_pair_panel_minus_S_natural": {
+      "diff": 0.005747126436781658,
+      "ci": [
+        -0.0117647058823529,
+        0.02499999999999991
+      ],
+      "n": 94
+    }
+  },
+  "rho": {
+    "spearman": 0.3223,
+    "n": 73,
+    "ci": [
+      0.1276,
+      0.5377
+    ]
+  },
+  "oof_increment": {
+    "model_A": "S_natural",
+    "model_B": "[S_natural, S_ind]",
+    "n_hc": 72,
+    "n_pairs": 42,
+    "n_wrong": 5,
+    "oof_auroc_A": 0.9448,
+    "oof_auroc_B": 0.9716,
+    "oof_auroc_diff_B_minus_A": 0.0269,
+    "ci": [
+      0.0,
+      0.0581
+    ],
+    "note": "leave-one-pair-out OOF; CI = pair-grouped bootstrap over fixed OOF predictions"
+  }
+}

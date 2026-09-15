@@ -1,0 +1,25 @@
+{
+  "e_gen_sha256_after_corrected": "39afb2168099bf116a106e49da2fc45555944dc675e65467b1fc1d2a2ccc4d5a",
+  "e_gen_sha256_before_original": "85d9ecdc188642f8cb46c7f180364089a034bc890b6e718b2f939a9f05bb9235",
+  "impact": "cohort completeness restored to 25 pairs / 50 items for evidence generation",
+  "n_originally_ok_with_identical_text": 45,
+  "note": "POST-FREEZE PARSER CORRECTION applied uniformly to all 50 cached raw outputs. Original parser (preregistered) rejected 5 dual calls that returned HTTP 200 with content-valid segments because (a) it only accepted exact '<T>|'/'<F>|' markers and (b) its sentence splitter split on any '[.!?] ' breaking decimals (1.5) and abbreviations (K., Jr.). Corrected parser: accepts marker variants (<T>|<F>|, T|/F|, SEGMENT_TRUE|/SEGMENT_FALSE|) and uses abbreviation/initial/decimal-aware sentence splitting; all other content constraints (2 sentences, <=70 words, banned words/prefixes) unchanged. Prompts, model, seeds, temperature, and calls are UNCHANGED; raw model outputs in the content-addressed cache are immutable. Verified: all 45 originally-OK rows produce byte-identical parsed text under the corrected parser; exactly the 5 originally-rejected rows are recovered.",
+  "reasons": {
+    "5ebbf32bc9e77c00092957b5:6b807730e09e": "marker variant SEGMENT_TRUE|/SEGMENT_FALSE|",
+    "5ebe6f2ec9e77c0008407aea:ab9933b53aa9": "marker variant + Jr. sentence boundary",
+    "5ece9461c9e77c00084660c7:411c06a91d22": "marker variant SEGMENT_TRUE|/SEGMENT_FALSE|",
+    "5ece9461c9e77c00084661d3:8a225fb8a302": "K. initial splitting + marker variant",
+    "5ed4de03c9e77c00084892df:086249f9e447": "marker variants T|/F| and SEGMENT_TRUE|/SEGMENT_FALSE|"
+  },
+  "recovered_pair_ids": [
+    "5ebbf32bc9e77c00092957b5:6b807730e09e",
+    "5ebe6f2ec9e77c0008407aea:ab9933b53aa9",
+    "5ece9461c9e77c00084660c7:411c06a91d22",
+    "5ece9461c9e77c00084661d3:8a225fb8a302",
+    "5ed4de03c9e77c00084892df:086249f9e447"
+  ],
+  "rows": 50,
+  "stage": "parser_correction",
+  "success_after_corrected": 50,
+  "success_before_original": 45
+}

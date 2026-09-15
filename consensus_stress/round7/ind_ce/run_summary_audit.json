@@ -1,0 +1,48 @@
+{
+  "audit_sample_n": 30,
+  "audit_sample_seed": 20260914,
+  "cache_hits": 0,
+  "decision_relevant": {
+    "gate_ge_0.80": true,
+    "n": 60,
+    "rate": 0.9
+  },
+  "http_stats": {
+    "200": 5
+  },
+  "independence_vs_Ej": {
+    "character_ratio": {
+      "max": 0.7986,
+      "median": 0.392
+    },
+    "gates": {
+      "character_ratio": {
+        "median": 0.75
+      },
+      "lcs_token_ratio": {
+        "max": 0.75
+      },
+      "token_jaccard": {
+        "max": 0.8,
+        "median": 0.55,
+        "p90": 0.7
+      }
+    },
+    "lcs_token_ratio": {
+      "max": 0.8696
+    },
+    "pass": false,
+    "token_jaccard": {
+      "max": 0.68,
+      "median": 0.2308,
+      "p90": 0.4231
+    }
+  },
+  "model": "gpt-6-astra",
+  "n_items": 30,
+  "n_sentences": 60,
+  "note": "5 outlier slots re-audited after stricter regeneration; merged into sample",
+  "stage": "e_ind_audit",
+  "temperature": 0.0,
+  "transport_retries": 1
+}

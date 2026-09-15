@@ -1,0 +1,19 @@
+{
+  "aborted": false,
+  "cache_hits": 3,
+  "elapsed_seconds": 1362.08,
+  "expected_calls": 300,
+  "http_stats": {
+    "200": 289,
+    "400": 138,
+    "429": 106,
+    "502": 10
+  },
+  "model": "gpt-6-astra",
+  "records": 300,
+  "stage": "strict_generation",
+  "success": 292,
+  "temperature": 0.7,
+  "transport_retries": 238,
+  "valid_rate": 0.9733
+}

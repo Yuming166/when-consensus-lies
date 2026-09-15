@@ -1,0 +1,36 @@
+{
+  "aborted": false,
+  "cache_hits": 31,
+  "elapsed_seconds": 457.39,
+  "expected_calls": 200,
+  "first_pass_rate": 0.975,
+  "http_stats": {
+    "200": 168,
+    "400": 56,
+    "429": 17,
+    "502": 18
+  },
+  "label": "smoke",
+  "model": "gpt-6-astra",
+  "models_seen": {
+    "gpt-6-astra": 168
+  },
+  "per_condition": {
+    "ind_strict": {
+      "n": 100,
+      "success": 99
+    },
+    "pm": {
+      "n": 100,
+      "success": 100
+    }
+  },
+  "records": 200,
+  "success": 199,
+  "token_usage": {
+    "completion_tokens": 13440,
+    "prompt_tokens": 409586
+  },
+  "transport_retries": 85,
+  "valid_rate": 0.995
+}

@@ -1,0 +1,12 @@
+{
+  "protocol": "cs-paper-ind-ce-strict-20260915-round7-w2",
+  "n_items": 98,
+  "label_free": true,
+  "sha256": "0fb5b0ee89369828172e905245d118ee728de2a01205d68a99bb376d5847d10c",
+  "conditions": [
+    "natural",
+    "ind",
+    "placebo"
+  ],
+  "note": "consensus/agreement/mean_confidence from frozen round6 gpt-6-astra original; S_* from round7 three-condition run; no label fields."
+}

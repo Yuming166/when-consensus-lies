@@ -1,0 +1,31 @@
+{
+  "aborted": false,
+  "cache_hits": 1328,
+  "elapsed_seconds": 234.54,
+  "expected_calls": 1500,
+  "first_pass_rate": 0.8767,
+  "http_stats": {
+    "200": 111,
+    "400": 738
+  },
+  "label": "strict-formal",
+  "model": "gpt-6-astra",
+  "per_condition": {
+    "ind": {
+      "n": 500,
+      "success": 471
+    },
+    "natural": {
+      "n": 500,
+      "success": 500
+    },
+    "placebo": {
+      "n": 500,
+      "success": 468
+    }
+  },
+  "records": 1500,
+  "success": 1439,
+  "transport_retries": 492,
+  "valid_rate": 0.9593
+}

@@ -1,0 +1,660 @@
+{
+  "baselines_auroc": {
+    "R_sym": {
+      "auroc": {
+        "auroc": 0.9010300044782803,
+        "ci": [
+          0.8571687840290381,
+          0.9386737089201878
+        ],
+        "n": 225,
+        "n_groups": 119
+      },
+      "name": "R_sym (reference)"
+    },
+    "bf_q": {
+      "auroc": {
+        "auroc": 0.9659650694133453,
+        "ci": [
+          0.9422442244224423,
+          0.9848657909765848
+        ],
+        "n": 225,
+        "n_groups": 119
+      },
+      "name": "RS_q/BF_q (= -bf_q)"
+    },
+    "rev_flip_rate": {
+      "auroc": {
+        "auroc": 0.9458128078817734,
+        "ci": [
+          0.921875,
+          0.9671361502347418
+        ],
+        "n": 225,
+        "n_groups": 119
+      },
+      "name": "binary reverse axis (rev_flip_rate)"
+    }
+  },
+  "bootstrap_n": 2000,
+  "hc": {
+    "n_items": 225,
+    "n_pairs": 119,
+    "wrong": 22
+  },
+  "hc_threshold": 0.8,
+  "method": "plain AUROC + incremental AUROC of label-free OLS residuals of each stress feature on each baseline (refit in replicate) + paired AUROC diff + Spearman; pair-grouped bootstrap 95% CI (round6 convention)",
+  "protocol": "round7-W4-lambda-feature-reducibility",
+  "scope": "frozen phase-3 subset (240 items / 120 pairs); HC agreement>=0.8 -> 225 items / 119 pairs; Qwen3.5-4B only for lambda curves",
+  "seed_base": 20260913,
+  "status": "exploratory / post-hoc robustness analysis (plan section 16); zero new model calls; no frozen-number edits",
+  "stress_features": {
+    "risk_rem_breakpoint_none1": {
+      "baselines": {
+        "R_sym": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.40998656515897897,
+            "ci": [
+              0.29680998613037446,
+              0.5508503401360544
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "R_sym (reference)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.6906094527363184,
+              -0.45935960591133
+            ],
+            "diff": -0.576578593819973,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              -0.40516115636521666,
+              -0.13745682874718074
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": -0.27197696671212057
+          }
+        },
+        "bf_q": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.44849977608598296,
+            "ci": [
+              0.36765641569459173,
+              0.5843349358974359
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "RS_q/BF_q (= -bf_q)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.7607069143446853,
+              -0.527562749237626
+            ],
+            "diff": -0.6415136587550381,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              -0.39086955530843487,
+              -0.11395677362886454
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": -0.2551732785279696
+          }
+        },
+        "rev_flip_rate": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.41950291088222125,
+            "ci": [
+              0.3485216240070609,
+              0.5782991962665284
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "binary reverse axis (rev_flip_rate)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.7394047619047619,
+              -0.5124178981937602
+            ],
+            "diff": -0.6213613972234662,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              -0.3906097839118582,
+              -0.1269291623072966
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": -0.2664173731380267
+          }
+        }
+      },
+      "name": "removal breakpoint lambda (descriptive)",
+      "plain_auroc": {
+        "auroc": 0.32445141065830724,
+        "ci": [
+          0.2120011737089202,
+          0.43702970297029703
+        ],
+        "n": 225,
+        "n_groups": 119
+      }
+    },
+    "risk_rem_robustness_radius": {
+      "baselines": {
+        "R_sym": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.40998656515897897,
+            "ci": [
+              0.29365853658536584,
+              0.5469028520499108
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "R_sym (reference)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.7001078748651564,
+              -0.4605263157894737
+            ],
+            "diff": -0.576578593819973,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              -0.40379610542103866,
+              -0.13731500139715203
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": -0.27197696671212057
+          }
+        },
+        "bf_q": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.44849977608598296,
+            "ci": [
+              0.3660301507537688,
+              0.5863188535602328
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "RS_q/BF_q (= -bf_q)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.7566381638163816,
+              -0.5290355329949239
+            ],
+            "diff": -0.6415136587550381,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              -0.3863010039766106,
+              -0.10622803440257304
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": -0.2551732785279696
+          }
+        },
+        "rev_flip_rate": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.41950291088222125,
+            "ci": [
+              0.35002072968490877,
+              0.5889232127096204
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "binary reverse axis (rev_flip_rate)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.7381578947368421,
+              -0.502324835658169
+            ],
+            "diff": -0.6213613972234662,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              -0.3951179846725086,
+              -0.12789587224528107
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": -0.2664173731380267
+          }
+        }
+      },
+      "name": "removal robustness radius (descriptive)",
+      "plain_auroc": {
+        "auroc": 0.32445141065830724,
+        "ci": [
+          0.21319414550150667,
+          0.4307889822595705
+        ],
+        "n": 225,
+        "n_groups": 119
+      }
+    },
+    "risk_rem_stress_area": {
+      "baselines": {
+        "R_sym": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.4356247201074787,
+            "ci": [
+              0.3690886699507389,
+              0.5047967108268616
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "R_sym (reference)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.6741009199888486,
+              -0.4962059620596206
+            ],
+            "diff": -0.5822884012539185,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              -0.3631182930760083,
+              -0.14240402906266825
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": -0.257272067916562
+          }
+        },
+        "bf_q": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.5216077026421854,
+            "ci": [
+              0.4541047854785479,
+              0.5649667405764967
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "RS_q/BF_q (= -bf_q)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.7376750700280112,
+              -0.5604631927212572
+            ],
+            "diff": -0.6472234661889834,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              -0.32018773333685163,
+              -0.09265363687311287
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": -0.20931555902548601
+          }
+        },
+        "rev_flip_rate": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.508396775638155,
+            "ci": [
+              0.44714696223316913,
+              0.5496151731720725
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "binary reverse axis (rev_flip_rate)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.7210280373831776,
+              -0.5404951370468613
+            ],
+            "diff": -0.6270712046574115,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              -0.33019029357223356,
+              -0.11233644012809571
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": -0.21965907858711708
+          }
+        }
+      },
+      "name": "removal stress-area (descriptive)",
+      "plain_auroc": {
+        "auroc": 0.31874160322436185,
+        "ci": [
+          0.23353422298751614,
+          0.40087939698492464
+        ],
+        "n": 225,
+        "n_groups": 119
+      }
+    },
+    "risk_rev_breakpoint_none1": {
+      "baselines": {
+        "R_sym": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.7899686520376176,
+            "ci": [
+              0.6971649484536082,
+              0.8662972435350952
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "R_sym (reference)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.00847240051347875,
+              0.056612157838606514
+            ],
+            "diff": 0.022615315718764073,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              0.40119149198002757,
+              0.6646648367861837
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": 0.5419998952738718
+          }
+        },
+        "bf_q": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.5633676668159426,
+            "ci": [
+              0.33830703012912483,
+              0.6432005494505495
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "RS_q/BF_q (= -bf_q)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.06553846153846155,
+              -0.019457863660762187
+            ],
+            "diff": -0.042319749216300884,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              0.5097907793874894,
+              0.7507036437098542
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": 0.6470618986690592
+          }
+        },
+        "rev_flip_rate": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.538961038961039,
+            "ci": [
+              0.38771739130434785,
+              0.5925
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "binary reverse axis (rev_flip_rate)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.03826530612244894,
+              -0.009433962264150941
+            ],
+            "diff": -0.02216748768472898,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              0.55276273857741,
+              0.7665397092062959
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": 0.677412028961694
+          }
+        }
+      },
+      "name": "reversal breakpoint lambda (never-flip=1.0)",
+      "plain_auroc": {
+        "auroc": 0.9236453201970444,
+        "ci": [
+          0.8969072164948454,
+          0.9483568075117371
+        ],
+        "n": 225,
+        "n_groups": 119
+      }
+    },
+    "risk_rev_robustness_radius": {
+      "baselines": {
+        "R_sym": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.7899686520376176,
+            "ci": [
+              0.6944791666666666,
+              0.862561847168774
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "R_sym (reference)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.009569377990430561,
+              0.05514705882352944
+            ],
+            "diff": 0.022615315718764073,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              0.39813596149384656,
+              0.6564223713282119
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": 0.5419998952738718
+          }
+        },
+        "bf_q": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.5633676668159426,
+            "ci": [
+              0.33668341708542715,
+              0.6411804158283032
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "RS_q/BF_q (= -bf_q)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.06487754038561744,
+              -0.020765736534717694
+            ],
+            "diff": -0.042319749216300884,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              0.5041040390304873,
+              0.7495581577532157
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": 0.6470618986690592
+          }
+        },
+        "rev_flip_rate": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.538961038961039,
+            "ci": [
+              0.39135254988913526,
+              0.5913865546218487
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "binary reverse axis (rev_flip_rate)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.03768844221105527,
+              -0.009433962264150941
+            ],
+            "diff": -0.02216748768472898,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              0.558982477984445,
+              0.7724749403353182
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": 0.677412028961694
+          }
+        }
+      },
+      "name": "reversal robustness radius (=1.0 never flips)",
+      "plain_auroc": {
+        "auroc": 0.9236453201970444,
+        "ci": [
+          0.8952879581151832,
+          0.9481132075471698
+        ],
+        "n": 225,
+        "n_groups": 119
+      }
+    },
+    "risk_rev_stress_area": {
+      "baselines": {
+        "R_sym": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.8701298701298701,
+            "ci": [
+              0.8004807692307693,
+              0.9473270440251572
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "R_sym (reference)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              0.015151515151515138,
+              0.08533834586466171
+            ],
+            "diff": 0.047469771607702715,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              0.413275578042574,
+              0.6669904355781919
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": 0.5599412890714391
+          }
+        },
+        "bf_q": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.5610165696372593,
+            "ci": [
+              0.4937900641025641,
+              0.6644006659267481
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "RS_q/BF_q (= -bf_q)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.03195970695970696,
+              -0.0017459261722647668
+            ],
+            "diff": -0.01746529332736224,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              0.6079392728678331,
+              0.7972498881050075
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": 0.7137503047583252
+          }
+        },
+        "rev_flip_rate": {
+          "incremental_auroc_resid_on_baseline": {
+            "auroc": 0.47648902821316613,
+            "ci": [
+              0.4291044776119403,
+              0.6531094527363184
+            ],
+            "n": 225,
+            "n_pairs": 119
+          },
+          "name": "binary reverse axis (rev_flip_rate)",
+          "paired_auroc_diff_stress_minus_baseline": {
+            "ci": [
+              -0.0010473946059178507,
+              0.009130836800739672
+            ],
+            "diff": 0.002686968204209661,
+            "n": 225
+          },
+          "spearman_stress_vs_baseline": {
+            "ci": [
+              0.6318354198388999,
+              0.8214048720853112
+            ],
+            "n": 225,
+            "n_pairs": 119,
+            "rho": 0.7430130837140261
+          }
+        }
+      },
+      "name": "reversal stress-area (RS_stress=-area)",
+      "plain_auroc": {
+        "auroc": 0.948499776085983,
+        "ci": [
+          0.9246748859989866,
+          0.96875
+        ],
+        "n": 225,
+        "n_groups": 119
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "aborted": false,
+  "cache_hits": 0,
+  "elapsed_seconds": 656.96,
+  "expected_calls": 200,
+  "http_stats": {
+    "200": 193,
+    "400": 117,
+    "429": 38,
+    "502": 3
+  },
+  "max_tokens": 300,
+  "model": "gpt-6-astra",
+  "models_seen": {
+    "gpt-6-astra": 193
+  },
+  "records": 200,
+  "stage": "e_ind_generation",
+  "success": 193,
+  "temperature": 0.7,
+  "token_usage": {
+    "completion_tokens": 49499,
+    "prompt_tokens": 362309
+  },
+  "transport_retries": 121,
+  "valid_rate": 0.965
+}

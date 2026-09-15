@@ -1,0 +1,15 @@
+{
+  "excluded": {
+    "missing_generation": [],
+    "missing_original": [
+      "5ec7d50dc9e77c0008442245:590d0ddcb433:support"
+    ],
+    "no_consensus_yes": []
+  },
+  "n_items": 49,
+  "n_pairs": 25,
+  "note": "label-free; labels merged only after this hash is recorded",
+  "protocol_version": "cs-paper-ind-ce-strict-20260915-round7-w2b",
+  "sha256": "f040260413ea6350f6c9b889046e2ae80b0287612430a826c1d0dba533c447cc",
+  "stage": "preoutcome_features_freeze"
+}

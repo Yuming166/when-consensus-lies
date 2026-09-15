@@ -477,3 +477,57 @@ experiments:
     SUPPORTS vs REFUTES AUROC diff CI includes 0 (numerically-worst only); Ling CI excludes
     0. Construction is label-symmetric; error rates are not (8.3-8.7x asymmetric, consistent
     across models). Report label-stratified metrics as primary; pooled as composition-stated.'
+- experiment_id: round7-W1-audit-20260914
+  parent_experiment: naacl-revision-20260914
+  date: 2026-09-14
+  hypothesis: W1 P0 audit: mirror-equivalence quantification + S_pair paired-prediction baseline + leakage audit (zero calls)
+  dataset: frozen round3/4 + phase3 records (read-only); W2 adds gpt-6-astra calls
+  model: orchestration relay gpt-6-astra fallback chain; W2 research model gpt-6-astra
+  status: completed
+  result: consensus_stress/round7/audit/
+  decision: consensus_stress/round7/audit/SUMMARY.md
+- experiment_id: round7-W2-ind-ce-20260914
+  parent_experiment: naacl-revision-20260914
+  date: 2026-09-14
+  hypothesis: W2 independent counter-evidence vs natural vs placebo on gpt-6-astra (100 items, 3 conditions)
+  dataset: frozen round3/4 + phase3 records (read-only); W2 adds gpt-6-astra calls
+  model: orchestration relay gpt-6-astra fallback chain; W2 research model gpt-6-astra
+  status: completed
+  result: consensus_stress/round7/ind_ce/
+  decision: consensus_stress/round7/ind_ce/analysis/ind_ce_decision.md
+- experiment_id: round7-W3-stress-profile-20260914
+  parent_experiment: naacl-revision-20260914
+  date: 2026-09-14
+  hypothesis: W3 multi-axis stress profile: removal opposite signature + incremental AUROC vs BF_q + false-positive decomposition (post-hoc, zero calls)
+  dataset: frozen round3/4 + phase3 records (read-only); W2 adds gpt-6-astra calls
+  model: orchestration relay gpt-6-astra fallback chain; W2 research model gpt-6-astra
+  status: completed
+  result: consensus_stress/round7/stress_profile/
+  decision: consensus_stress/round7/stress_profile/decision.md
+- experiment_id: round7-W4-lambda-features-20260914
+  parent_experiment: naacl-revision-20260914
+  date: 2026-09-14
+  hypothesis: W4 lambda stress-curve feature reducibility vs binary reverse axis on phase-3 subset (post-hoc, zero calls)
+  dataset: frozen round3/4 + phase3 records (read-only); W2 adds gpt-6-astra calls
+  model: orchestration relay gpt-6-astra fallback chain; W2 research model gpt-6-astra
+  status: completed
+  result: consensus_stress/round7/lambda_features/
+  decision: consensus_stress/round7/lambda_features/decision.md
+- experiment_id: round7-W2b-ind-ce-strict-20260915
+  parent_experiment: naacl-revision-20260914
+  date: 2026-09-15
+  hypothesis: W2b strict independent counter-evidence (claim-only generation, offline gold assignment) vs matched placebo on gpt-6-astra (50 items, 2 conditions)
+  dataset: frozen round3/4 + phase3 records (read-only); W2b adds gpt-6-astra calls
+  model: gpt-6-astra (relay, direct openapi.center)
+  status: completed
+  result: consensus_stress/round7/ind_ce_strict/
+  decision: consensus_stress/round7/ind_ce_strict/decision.md
+- experiment_id: round7-W5-paper-v5-20260915
+  parent_experiment: naacl-revision-20260914
+  date: 2026-09-15
+  hypothesis: W5 NAACL draft v5 integration of round-7 workstreams (W1-W4 + W2b), three-contribution reframe + call accounting
+  dataset: frozen round3/4/5/6 + round-7 workstream outputs (read-only)
+  model: n/a (document integration)
+  status: completed
+  result: consensus_stress/round7/paper/
+  decision: consensus_stress/round7/paper/naacl_draft_v5_astra.md

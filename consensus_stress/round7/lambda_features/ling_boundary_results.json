@@ -1,0 +1,50 @@
+{
+  "baselines_auroc": {
+    "R_sym": {
+      "auroc": {
+        "auroc": 0.8382836198179979,
+        "ci": [
+          0.7874305791680835,
+          0.881828637147786
+        ],
+        "n": 227,
+        "n_groups": 119
+      },
+      "name": "R_sym (reference)"
+    },
+    "bf_q": {
+      "auroc": {
+        "auroc": 0.9096941354903944,
+        "ci": [
+          0.8763817900867705,
+          0.9378499440089586
+        ],
+        "n": 227,
+        "n_groups": 119
+      },
+      "name": "RS_q/BF_q (= -bf_q)"
+    },
+    "rev_flip_rate": {
+      "auroc": {
+        "auroc": 0.8831521739130435,
+        "ci": [
+          0.8464330808080808,
+          0.9154228855721394
+        ],
+        "n": 227,
+        "n_groups": 119
+      },
+      "name": "binary reverse axis (rev_flip_rate)"
+    }
+  },
+  "hc": {
+    "n_items": 227,
+    "n_pairs": 119,
+    "wrong": 43
+  },
+  "lambda_records_available": false,
+  "note": "No Ling phase-3 lambda records exist; Ling per-item lambda stress features and lambda-curve reducibility are NOT EVALUABLE.",
+  "protocol": "round7-W4-ling-boundary",
+  "scope": "frozen Ling-3.0-tiny features (round4 adapted protocol), same 120-pair phase-3 subset; HC agreement>=0.8",
+  "status": "exploratory / post-hoc; context only"
+}

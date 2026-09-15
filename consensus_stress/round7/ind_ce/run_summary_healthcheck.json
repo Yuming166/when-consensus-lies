@@ -1,0 +1,46 @@
+{
+  "minimal_chat": {
+    "consecutive_3_ok": true,
+    "payload": "temperature 0, max_tokens 16",
+    "probes": [
+      {
+        "latency_seconds": 72.04,
+        "model": "gpt-6-astra",
+        "n": 1,
+        "ok": true,
+        "status": 200
+      },
+      {
+        "latency_seconds": 0.0,
+        "model": "gpt-6-astra",
+        "n": 2,
+        "ok": true,
+        "status": 200
+      },
+      {
+        "latency_seconds": 0.0,
+        "model": "gpt-6-astra",
+        "n": 3,
+        "ok": true,
+        "status": 200
+      }
+    ]
+  },
+  "models_endpoint": {
+    "models_available": [
+      "codex-auto-review",
+      "gpt-5.4",
+      "gpt-5.5",
+      "gpt-5.6-sol",
+      "gpt-5.6-terra",
+      "gpt-6-astra",
+      "gpt-image-2"
+    ],
+    "status": 200
+  },
+  "primary_model": "gpt-6-astra",
+  "protocol": "cs-paper-ind-ce-20260914-round7-w2",
+  "relay_base": "https://openapi.center/v1",
+  "stage": "healthcheck",
+  "timestamp": "2026-09-14T21:55+0800"
+}

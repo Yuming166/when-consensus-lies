@@ -1,0 +1,117 @@
+{
+  "features_label_free": {
+    "ling": {
+      "path": "consensus_stress/benchmark/frozen/vitaminc/ling_preoutcome_features.jsonl",
+      "scan": {
+        "label_token_keys": [],
+        "n_keys": 26,
+        "n_lines_scanned": 50
+      },
+      "sha256": "35e853cf0815cb1428ec8f2ee671993bd1f87ba8b28ade24a630ac4c79bc26bb"
+    },
+    "qwen": {
+      "path": "consensus_stress/benchmark/frozen/vitaminc/preoutcome_features.jsonl",
+      "scan": {
+        "label_token_keys": [],
+        "n_keys": 26,
+        "n_lines_scanned": 50
+      },
+      "sha256": "d0c588d05211769c14234377d669881d079dacaac0ebaf2ec9326561d967584d"
+    }
+  },
+  "hashes": {
+    "round3 analysis.json": "ff2c6ef2f89c26b593b60a9c4d79cd03a1c0d9c8384472b3cb72e011bac5b790",
+    "round3 artifact_hashes.json": "5388e73b2e9d08aca48b4722d6683d20d68549f8a8758aa81b4552ef53bd339c",
+    "round3 records.jsonl": "ce5280ede80c92f471ff73b1b8fe1c0fc339bd057aae67825e54f7d42a706a08",
+    "round4 ling records": "fc0e32126b3ce0a1c5394d11a706a072611a9fd12797b3624789cc0dda62d4d2"
+  },
+  "label_blind_scores": {
+    "round5 ling baselines": {
+      "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round5/ling_baseline_scores_label_blind.jsonl",
+      "scan": {
+        "label_token_keys": [],
+        "n_keys": 19,
+        "n_lines_scanned": 50
+      },
+      "sha256": "c685d976d171bea8a346bf89cf0cd6b7bb3a0140a98ec8f3050a7c265c8567fc"
+    },
+    "round5 qwen baselines": {
+      "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round5/qwen_baseline_scores_label_blind.jsonl",
+      "scan": {
+        "label_token_keys": [],
+        "n_keys": 19,
+        "n_lines_scanned": 50
+      },
+      "sha256": "673291e7f881c905435218702fb8ca959b5adb25a1b772a0de10c3d12d125f2a"
+    },
+    "round6 ling probes": {
+      "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/cost_curve/label_blind/probe_scores_label_blind_ling.jsonl",
+      "scan": {
+        "label_token_keys": [],
+        "n_keys": 16,
+        "n_lines_scanned": 50
+      },
+      "sha256": "39f11d77ee50a15de97eb283aaf45a2e0ceeee0bcc779507ea8037b027bcc294"
+    },
+    "round6 qwen probes": {
+      "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/cost_curve/label_blind/probe_scores_label_blind_qwen.jsonl",
+      "scan": {
+        "label_token_keys": [],
+        "n_keys": 16,
+        "n_lines_scanned": 50
+      },
+      "sha256": "e5ce424f1873966c153c132f19c5ca9d3f808f192d8786046e785209e0b7c29f"
+    }
+  },
+  "label_ledger": {
+    "item_fields": [
+      "gold_label",
+      "item_id"
+    ],
+    "n_items": 600,
+    "sha256": "770ede3f79b018c47aa982e6cb3f13b9d504b5c14950f7f1a8f6de196ffcbc5a",
+    "status": "sealed_until_preoutcome_features_are_frozen"
+  },
+  "paraphrase": {
+    "generation_stats": {
+      "n_both_ok": 899,
+      "n_items": 900,
+      "n_ok_para1": 899,
+      "n_ok_para2": 899,
+      "unusable_fraction": 0.0011111111111110628
+    },
+    "manifest_sha256": "5b322c4973328b5323edf8111a4e4195c4a4d895c9890dfb73a8d0f29d514435",
+    "n_units": 900,
+    "prompt_label_tokens": []
+  },
+  "prompt_code": {
+    "build_messages_label_tokens": [],
+    "features_py_label_tokens": [
+      "label"
+    ],
+    "file": "round3/round3_lib.py",
+    "gold_label_in_messages_builder": false,
+    "note": "gold_label exists in Composite for item bookkeeping only; never enters build_messages"
+  },
+  "protocol": "round7-w1-p0-leakage-audit",
+  "selection": {
+    "eligible_filters_label_free": [
+      "one pair per page (cr desc, tj desc, case_id)",
+      "character_ratio >= 0.85 and token_jaccard >= 0.70",
+      "exclude frozen V3.16/V3.16.1 pages and round2 pair_ids",
+      "hash ordering by sha256(SALT + page)"
+    ],
+    "label_use_statement": "gold label used ONLY offline to construct the balanced design; ",
+    "selection_manifest_sha256": "5f575ff873b3243b4916f77ab81269476da937d466eec967eff0934efe39089b"
+  },
+  "status": "read-only static verification; zero new model calls",
+  "thresholds": {
+    "e2_gate": "AUROC CI lb > 0.5 and point >= 0.60 (preregistered)",
+    "hc_in_code": 0.8,
+    "hc_threshold": "agreement >= 0.8 (preregistered, round3 preregistration \u00a75)",
+    "label_ledger_status_field": "sealed_until_preoutcome_features_are_frozen",
+    "prereg_mentions_label_firewall": true,
+    "risk80_coverage": "coverage = 0.8 (preregistered, phase 4)",
+    "risk_direction": "RS_q = -BF_q, higher = riskier (frozen before calls; gate2_decision_paper.md)"
+  }
+}

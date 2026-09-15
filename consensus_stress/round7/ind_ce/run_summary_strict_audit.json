@@ -1,0 +1,39 @@
+{
+  "E_ind_strict": {
+    "character_ratio": {
+      "max": 0.8881,
+      "median": 0.4
+    },
+    "gate_ge_0.80": false,
+    "lcs_token_ratio": {
+      "max": 0.913
+    },
+    "n": 60,
+    "relevance_rate": 0.7667,
+    "token_jaccard": {
+      "max": 0.75,
+      "median": 0.1944,
+      "p90": 0.5
+    }
+  },
+  "E_pm": {
+    "gate_refute_le_0.30": true,
+    "gate_support_le_0.30": true,
+    "majority_neutral": true,
+    "n": 60,
+    "neutral_rate": 0.8833,
+    "refute_rate": 0.0667,
+    "support_rate": 0.0
+  },
+  "cache_hits": 3,
+  "http_stats": {
+    "200": 114,
+    "400": 30,
+    "502": 5
+  },
+  "model": "gpt-6-astra",
+  "sample_n": 30,
+  "sample_seed": 20260914,
+  "stage": "strict_audit",
+  "transport_retries": 32
+}

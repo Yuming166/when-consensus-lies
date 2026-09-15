@@ -1,0 +1,22 @@
+{
+  "hc_subset_items": 225,
+  "hc_subset_pairs": 119,
+  "missing_orig_or_anchor_items": 0,
+  "reversal_stress_area": {
+    "auroc_risk_stress": {
+      "auroc": 0.948499776085983,
+      "ci": [
+        0.925228712174525,
+        0.9682732316227461
+      ],
+      "n": 225,
+      "n_groups": 119
+    },
+    "n": 225,
+    "n_correct": 203,
+    "n_groups": 119,
+    "n_wrong": 22
+  },
+  "subset_items": 240,
+  "subset_pairs": 120
+}

@@ -1,0 +1,35 @@
+{
+  "aborted": false,
+  "cache_hits": 257,
+  "elapsed_seconds": 541.88,
+  "expected_calls": 500,
+  "first_pass_rate": 0.968,
+  "http_stats": {
+    "200": 242,
+    "400": 145,
+    "502": 14
+  },
+  "label": "formal",
+  "model": "gpt-6-astra",
+  "models_seen": {
+    "gpt-6-astra": 242
+  },
+  "per_condition": {
+    "ind_strict": {
+      "n": 250,
+      "success": 249
+    },
+    "pm": {
+      "n": 250,
+      "success": 250
+    }
+  },
+  "records": 500,
+  "success": 499,
+  "token_usage": {
+    "completion_tokens": 37028,
+    "prompt_tokens": 1043517
+  },
+  "transport_retries": 143,
+  "valid_rate": 0.998
+}

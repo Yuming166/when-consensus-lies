@@ -1,0 +1,442 @@
+{
+  "bootstrap_n": 2000,
+  "definition": {
+    "bf_reverse": "frozen bf_reverse feature (5-agent mean reverse faithfulness)",
+    "rs_q": "frozen risk_bf_q = -bf_q",
+    "s_pair_flip": "mean over 5 agents of 1[mirror-original answer == flip(original answer)]; label-consistent with reverse oracle",
+    "s_pair_panel": "1[consensus(mirror) == consensus(item)]",
+    "s_pair_same": "mean over 5 agents of 1[mirror-original answer == original answer]"
+  },
+  "hc_threshold": 0.8,
+  "models": [
+    {
+      "auroc": {
+        "bf_reverse": {
+          "auroc": 0.06923076923076923,
+          "ci": [
+            0.05185952666593958,
+            0.08643724696356275
+          ],
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_bf_q": {
+          "auroc": 0.9429053018694453,
+          "ci": [
+            0.9237393650134883,
+            0.9598921539940642
+          ],
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_bf_reverse": {
+          "auroc": 0.9307692307692308,
+          "ci": [
+            0.9132672306946166,
+            0.947987822987823
+          ],
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_s_pair_flip": {
+          "auroc": 0.9307385841250383,
+          "ci": [
+            0.9124196510560147,
+            0.9479756539157903
+          ],
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_s_pair_panel": {
+          "auroc": 0.10718663806313208,
+          "ci": [
+            0.06705996131528047,
+            0.15259647314783006
+          ],
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_s_pair_same": {
+          "auroc": 0.0692614158749617,
+          "ci": [
+            0.05284288194444445,
+            0.08692438465518516
+          ],
+          "n": 567,
+          "n_pairs": 298
+        },
+        "s_pair_flip": {
+          "auroc": 0.0692614158749617,
+          "ci": [
+            0.052427427427427425,
+            0.08749829584185412
+          ],
+          "n": 567,
+          "n_pairs": 298
+        },
+        "s_pair_panel": {
+          "auroc": 0.8928133619368679,
+          "ci": [
+            0.8474329996771068,
+            0.9320866141732284
+          ],
+          "n": 567,
+          "n_pairs": 298
+        },
+        "s_pair_same": {
+          "auroc": 0.9307385841250383,
+          "ci": [
+            0.9122339074328101,
+            0.9476478960621875
+          ],
+          "n": 567,
+          "n_pairs": 298
+        }
+      },
+      "exact_equality": {
+        "s_pair_flip==bf_reverse": {
+          "exact_equal_rate": 0.9982363315696648,
+          "max_abs_diff": 0.19999999999999996,
+          "n": 567,
+          "n_exact_equal": 566
+        },
+        "s_pair_flip==rev_flip_rate": {
+          "exact_equal_rate": 0.9964726631393298,
+          "max_abs_diff": 0.19999999999999996,
+          "n": 567,
+          "n_exact_equal": 565
+        },
+        "s_pair_same==rev_flip_rate": {
+          "exact_equal_rate": 0.9964726631393298,
+          "max_abs_diff": 0.19999999999999996,
+          "n": 567,
+          "n_exact_equal": 565
+        }
+      },
+      "model": "Qwen3.5-4B",
+      "n_items": 567,
+      "n_pairs": 298,
+      "paired_diff": {
+        "risk_bf_q-risk_bf_reverse": {
+          "ci": [
+            0.0018410223088585198,
+            0.02258683145109741
+          ],
+          "diff": 0.01213607110021453,
+          "label": "RS_q - BF_reverse(risk)",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_bf_q-risk_s_pair_flip": {
+          "ci": [
+            0.002175849780701733,
+            0.022812561722299063
+          ],
+          "diff": 0.01216671774440703,
+          "label": "RS_q - S_pair_flip(risk)",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_bf_q-s_pair_same": {
+          "ci": [
+            0.001900053806833446,
+            0.022868852459016376
+          ],
+          "diff": 0.01216671774440703,
+          "label": "RS_q - S_pair_same(as-is)",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_s_pair_flip-risk_bf_q": {
+          "ci": [
+            -0.02218791904450057,
+            -0.001708984375
+          ],
+          "diff": -0.01216671774440703,
+          "label": "S_pair_flip(risk) - RS_q",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_s_pair_flip-risk_bf_reverse": {
+          "ci": [
+            -0.00017755681818187874,
+            0.0
+          ],
+          "diff": -3.064664419250018e-05,
+          "label": "S_pair_flip(risk) - BF_reverse(risk)",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "s_pair_panel-risk_bf_q": {
+          "ci": [
+            -0.08238015679218613,
+            -0.021368732678256452
+          ],
+          "diff": -0.050091939932577434,
+          "label": "S_pair_panel(as-is) - RS_q",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "s_pair_same-risk_bf_q": {
+          "ci": [
+            -0.02273550724637685,
+            -0.0015870052277818791
+          ],
+          "diff": -0.01216671774440703,
+          "label": "S_pair_same(as-is) - RS_q",
+          "n": 567,
+          "n_pairs": 298
+        }
+      },
+      "spearman": {
+        "s_pair_flip__bf_reverse": {
+          "ci": [
+            0.993325624380507,
+            1.0
+          ],
+          "label": "Spearman S_pair_flip vs BF_reverse",
+          "n": 567,
+          "n_pairs": 298,
+          "rho": 0.9979919190645838
+        },
+        "s_pair_flip__risk_bf_q": {
+          "ci": [
+            -0.9878915668632482,
+            -0.9666421150598213
+          ],
+          "label": "Spearman S_pair_flip vs RS_q",
+          "n": 567,
+          "n_pairs": 298,
+          "rho": -0.9783578302161345
+        },
+        "s_pair_same__risk_bf_q": {
+          "ci": [
+            0.9661617420732705,
+            0.9880691592723287
+          ],
+          "label": "Spearman S_pair_same vs RS_q",
+          "n": 567,
+          "n_pairs": 298,
+          "rho": 0.9783578302161345
+        }
+      },
+      "wrong": 65
+    },
+    {
+      "auroc": {
+        "bf_reverse": {
+          "auroc": 0.1306122448979592,
+          "ci": [
+            0.10900264783759929,
+            0.15353007718924674
+          ],
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_bf_q": {
+          "auroc": 0.8964262628128175,
+          "ci": [
+            0.8737012987012988,
+            0.9176559037670149
+          ],
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_bf_reverse": {
+          "auroc": 0.8693877551020408,
+          "ci": [
+            0.8461691674412428,
+            0.8909261435079258
+          ],
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_s_pair_flip": {
+          "auroc": 0.8692307692307693,
+          "ci": [
+            0.8464059015268485,
+            0.890592853843893
+          ],
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_s_pair_panel": {
+          "auroc": 0.13736263736263737,
+          "ci": [
+            0.1149789029535865,
+            0.16099773242630386
+          ],
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_s_pair_same": {
+          "auroc": 0.13076923076923078,
+          "ci": [
+            0.10967611336032389,
+            0.15402851598751371
+          ],
+          "n": 574,
+          "n_pairs": 299
+        },
+        "s_pair_flip": {
+          "auroc": 0.13076923076923078,
+          "ci": [
+            0.10943548554039788,
+            0.1552511415525114
+          ],
+          "n": 574,
+          "n_pairs": 299
+        },
+        "s_pair_panel": {
+          "auroc": 0.8626373626373627,
+          "ci": [
+            0.8379629629629629,
+            0.8839662447257384
+          ],
+          "n": 574,
+          "n_pairs": 299
+        },
+        "s_pair_same": {
+          "auroc": 0.8692307692307693,
+          "ci": [
+            0.8458311888831703,
+            0.8905579399141631
+          ],
+          "n": 574,
+          "n_pairs": 299
+        }
+      },
+      "exact_equality": {
+        "s_pair_flip==bf_reverse": {
+          "exact_equal_rate": 0.9843205574912892,
+          "max_abs_diff": 0.4,
+          "n": 574,
+          "n_exact_equal": 565
+        },
+        "s_pair_flip==rev_flip_rate": {
+          "exact_equal_rate": 0.9843205574912892,
+          "max_abs_diff": 0.4,
+          "n": 574,
+          "n_exact_equal": 565
+        },
+        "s_pair_same==rev_flip_rate": {
+          "exact_equal_rate": 0.9843205574912892,
+          "max_abs_diff": 0.4,
+          "n": 574,
+          "n_exact_equal": 565
+        }
+      },
+      "model": "Ling-3.0-tiny",
+      "n_items": 574,
+      "n_pairs": 299,
+      "paired_diff": {
+        "risk_bf_q-risk_bf_reverse": {
+          "ci": [
+            0.012977482164090448,
+            0.042352828010773336
+          ],
+          "diff": 0.02703850771077665,
+          "label": "RS_q - BF_reverse(risk)",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_bf_q-risk_s_pair_flip": {
+          "ci": [
+            0.013671875,
+            0.04223589529669414
+          ],
+          "diff": 0.027195493582048202,
+          "label": "RS_q - S_pair_flip(risk)",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_bf_q-s_pair_same": {
+          "ci": [
+            0.013162839640723067,
+            0.0418300653594772
+          ],
+          "diff": 0.027195493582048202,
+          "label": "RS_q - S_pair_same(as-is)",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_s_pair_flip-risk_bf_q": {
+          "ci": [
+            -0.04251596684332104,
+            -0.013430921300837562
+          ],
+          "diff": -0.027195493582048202,
+          "label": "S_pair_flip(risk) - RS_q",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_s_pair_flip-risk_bf_reverse": {
+          "ci": [
+            -0.0009073724007561124,
+            0.0003395585738540374
+          ],
+          "diff": -0.00015698587127155328,
+          "label": "S_pair_flip(risk) - BF_reverse(risk)",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "s_pair_panel-risk_bf_q": {
+          "ci": [
+            -0.049779260958737415,
+            -0.0183954933954934
+          ],
+          "diff": -0.03378890017545477,
+          "label": "S_pair_panel(as-is) - RS_q",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "s_pair_same-risk_bf_q": {
+          "ci": [
+            -0.04185185185185192,
+            -0.01306213845866766
+          ],
+          "diff": -0.027195493582048202,
+          "label": "S_pair_same(as-is) - RS_q",
+          "n": 574,
+          "n_pairs": 299
+        }
+      },
+      "spearman": {
+        "s_pair_flip__bf_reverse": {
+          "ci": [
+            0.9935131978402314,
+            0.999920772431957
+          ],
+          "label": "Spearman S_pair_flip vs BF_reverse",
+          "n": 574,
+          "n_pairs": 299,
+          "rho": 0.9976149855903359
+        },
+        "s_pair_flip__risk_bf_q": {
+          "ci": [
+            -0.9682726458744904,
+            -0.938544347155939
+          ],
+          "label": "Spearman S_pair_flip vs RS_q",
+          "n": 574,
+          "n_pairs": 299,
+          "rho": -0.9547821432854351
+        },
+        "s_pair_same__risk_bf_q": {
+          "ci": [
+            0.9378063530423156,
+            0.9686412024681204
+          ],
+          "label": "Spearman S_pair_same vs RS_q",
+          "n": 574,
+          "n_pairs": 299,
+          "rho": 0.9547821432854351
+        }
+      },
+      "wrong": 119
+    }
+  ],
+  "protocol": "round7-w1-p0-s_pair-diagnostic",
+  "seed_base": 20260913,
+  "status": "post-hoc derivation from sealed frozen data; zero new model calls"
+}

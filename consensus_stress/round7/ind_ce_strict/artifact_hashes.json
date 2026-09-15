@@ -1,0 +1,27 @@
+{
+  "hashes": {
+    "SUMMARY.md": "382c86904bbeece49597dbbddd003dd3df8f6e9dc9ff9d2c50d5194ad964eedf",
+    "analysis/strict_results.json": "d22607f0b44edf0afaf216636fdedfeda6333f2abacad39bb935cead9ef95b18",
+    "analysis/strict_results.md": "f5f71410fcd30a4a10860361cad0b8296de1ac01a59a04c9a977042c06bfbf03",
+    "audit_sample.jsonl": "ca31a207a0280692fb51039873801579372733870d5cc59c1a30aea88afed181",
+    "cohort.json": "c5d8e78bb181b77730402ddaea533e7b0c9eb60d730f85491461ba0048222b25",
+    "decision.md": "a1848c72d1c448a6c4955c3319ea08af821d38682eb3ecc725175f2fb4edb98a",
+    "e_gen_artifacts.jsonl": "39afb2168099bf116a106e49da2fc45555944dc675e65467b1fc1d2a2ccc4d5a",
+    "e_ind_strict_artifacts.jsonl": "3688884d878cae7af141825e530af8cbcb2a7684b39e3fddc8c1019295d0bc41",
+    "execution_notes.md": "4ba0c31c08ada980ec25c16451c724ac5627da2cba3212ddd275d3f5fc7f6f3b",
+    "preoutcome_features.jsonl": "f040260413ea6350f6c9b889046e2ae80b0287612430a826c1d0dba533c447cc",
+    "preoutcome_features_meta.json": "af9e856221a9c47373a6ea0f2bf7337eef82a2d9b5614c324bd621e90bb58353",
+    "preregistration.md": "e1c1db40d9d724ed2c04b9f0b5f759bbe05d281cb693eac9e9bd675e29fcae53",
+    "records.jsonl": "85f447c15ed9e3409e9d9b9802ec9d67a5e8183e9d8451d5674181ac25f7af89",
+    "records_smoke.jsonl": "dc1574db6395c428aff2d9ad2b795346737063b14bb671698dd8e04c38909265",
+    "run_summary_assignment.json": "9a3f8edcba5cb01e0aa1505859c6d7a3ac9332fc861d4091a52ff3a725319f50",
+    "run_summary_audit.json": "5c33552b8403eaa9131dbe7d0f6641f016a6b2f544e0d56fb9af46effbe76ae3",
+    "run_summary_formal.json": "333da7a26f2b754a1fbee29db9d1a2644a3d78df068bb198d5476db55d94c143",
+    "run_summary_generation.json": "1e3582ffe5793cc59da56b319c28be746d2b421fab265bf89ae891f8498f9f6d",
+    "run_summary_healthcheck.json": "9faac853cbf96931ae1aa94c4471ff6149120b09a0bf88def7bb4e0254cf4307",
+    "run_summary_parser_correction.json": "bda7b7f55558bc7570a479c5de4704a4eee09f36d1eaee423b6b3480c0f77466",
+    "run_summary_smoke.json": "3ae230878ff6e043c3aa2712ae421f869faf8ab8133b7fa3fc45af6a21fc37c3"
+  },
+  "protocol": "cs-paper-ind-ce-strict-20260915-round7-w2b",
+  "stage": "final_artifact_hashes"
+}

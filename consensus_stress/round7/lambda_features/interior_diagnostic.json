@@ -1,0 +1,47 @@
+{
+  "incremental_over_rev_flip_rate": {
+    "risk_rev_flip_08": {
+      "auroc": 0.4599193909538737,
+      "ci": [
+        0.3865441906653426,
+        0.6660264618011097
+      ],
+      "n": 225,
+      "n_pairs": 119,
+      "name": "reversal flip at lambda=0.8"
+    },
+    "risk_rev_interior_area": {
+      "auroc": 0.5332512315270936,
+      "ci": [
+        0.46591970121381887,
+        0.6017375975824729
+      ],
+      "n": 225,
+      "n_pairs": 119,
+      "name": "reversal interior area [0.2,0.8]"
+    }
+  },
+  "note": "lambda=1 anchor of reversal stress-area == rev_flip_rate (same reverse records). Interior area excludes that endpoint and tests only curve-shape signal.",
+  "plain_auroc": {
+    "reversal_flip_at_0.8": {
+      "auroc": 0.9487236901030004,
+      "ci": [
+        0.92525,
+        0.9696782178217822
+      ],
+      "n": 225,
+      "n_groups": 119
+    },
+    "reversal_interior_area_[0.2,0.8]": {
+      "auroc": 0.9483878190774743,
+      "ci": [
+        0.9262321925659079,
+        0.9682539682539683
+      ],
+      "n": 225,
+      "n_groups": 119
+    }
+  },
+  "protocol": "round7-W4-interior-shape-diagnostic",
+  "status": "exploratory / post-hoc; 225-item HC subset (119 pairs, 22 wrong); Qwen"
+}

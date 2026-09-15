@@ -1,0 +1,47 @@
+{
+  "audit_n_items": 30,
+  "audit_n_judgments": 60,
+  "cache_hits": 86,
+  "direction_compliance_rate": 0.7833,
+  "gate_placebo_irrelevance_ge_0.80": true,
+  "gate_relevance_ge_0.80": false,
+  "generation_input_clean": true,
+  "http_stats": {
+    "400": 64
+  },
+  "independence_vs_pair_evidences_max": {
+    "character_ratio": {
+      "max": 0.5486,
+      "median": 0.363
+    },
+    "gates": {
+      "character_ratio": {
+        "max": 0.7,
+        "median": 0.5
+      },
+      "lcs_token_ratio": {
+        "max": 0.65
+      },
+      "token_jaccard": {
+        "max": 0.7,
+        "median": 0.4,
+        "p90": 0.55
+      }
+    },
+    "lcs_token_ratio": {
+      "max": 0.5652
+    },
+    "pass": true,
+    "token_jaccard": {
+      "max": 0.4667,
+      "median": 0.1852,
+      "p90": 0.3333
+    }
+  },
+  "model": "gpt-6-astra",
+  "placebo_format_ok_rate": 1.0,
+  "placebo_irrelevance_rate": 0.8,
+  "stage": "e_ind_strict_audit",
+  "temperature": 0.0,
+  "transport_retries": 56
+}

@@ -1,0 +1,492 @@
+{
+  "answer_identity": {
+    "ling": {
+      "agent_call_match": 2989,
+      "agent_call_rate": 0.9963333333333333,
+      "agent_call_total": 3000,
+      "consensus_match": 599,
+      "consensus_rate": 0.9983333333333333,
+      "consensus_total": 600,
+      "item_full_match": 590,
+      "item_full_rate": 0.9833333333333333,
+      "item_full_total": 600,
+      "model": "Ling-3.0-tiny"
+    },
+    "qwen": {
+      "agent_call_match": 2998,
+      "agent_call_rate": 0.9996665555185061,
+      "agent_call_total": 2999,
+      "consensus_match": 599,
+      "consensus_rate": 1.0,
+      "consensus_total": 599,
+      "item_full_match": 598,
+      "item_full_rate": 0.998330550918197,
+      "item_full_total": 599,
+      "model": "Qwen3.5-4B"
+    }
+  },
+  "bootstrap_n": 2000,
+  "correlations": {
+    "ling": {
+      "model": "Ling-3.0-tiny",
+      "pairs": {
+        "bf_paraphrase__mirror_bf_paraphrase": {
+          "ci": [
+            -0.0925466513350218,
+            0.1588544356446224
+          ],
+          "exact_equal_rate": 0.764808362369338,
+          "label": "bf_paraphrase(i) vs bf_paraphrase(j)",
+          "n": 574,
+          "n_exact_equal": 439,
+          "n_pairs": 299,
+          "pearson": 0.14150798466536027,
+          "rho": 0.023826310858543646
+        },
+        "bf_reverse__mirror_agreement": {
+          "ci": [
+            0.019613654993811208,
+            0.16940548141192838
+          ],
+          "exact_equal_rate": 0.524390243902439,
+          "label": "BF_reverse(i) vs agreement(j)",
+          "n": 574,
+          "n_exact_equal": 301,
+          "n_pairs": 299,
+          "pearson": 0.028694984075140637,
+          "rho": 0.09295655964417099
+        },
+        "bf_reverse__mirror_bf_paraphrase": {
+          "ci": [
+            0.03665353249726878,
+            0.18859957653695833
+          ],
+          "exact_equal_rate": 0.4965156794425087,
+          "label": "BF_reverse(i) vs bf_paraphrase(j)",
+          "n": 574,
+          "n_exact_equal": 285,
+          "n_pairs": 299,
+          "pearson": 0.08813639686841555,
+          "rho": 0.11152639677989981
+        },
+        "bf_reverse__mirror_bf_reverse": {
+          "ci": [
+            0.986660805122801,
+            0.9997295004889144
+          ],
+          "exact_equal_rate": 0.9738675958188153,
+          "label": "BF_reverse(i) vs BF_reverse(mirror j)",
+          "n": 574,
+          "n_exact_equal": 559,
+          "n_pairs": 299,
+          "pearson": 0.9965760718186463,
+          "rho": 0.9948404230177812
+        },
+        "bf_reverse__mirror_mean_confidence": {
+          "ci": [
+            -0.07742693577553299,
+            0.09050059784725965
+          ],
+          "exact_equal_rate": 0.020905923344947737,
+          "label": "BF_reverse(i) vs mean_confidence(j)",
+          "n": 574,
+          "n_exact_equal": 12,
+          "n_pairs": 299,
+          "pearson": -0.09597885905260789,
+          "rho": 0.005975492184425271
+        },
+        "bf_reverse__mirror_rev_flip_rate": {
+          "ci": [
+            0.9873391603589834,
+            0.999767907319385
+          ],
+          "exact_equal_rate": 0.9738675958188153,
+          "label": "BF_reverse(i) vs rev_flip_rate(j)",
+          "n": 574,
+          "n_exact_equal": 559,
+          "n_pairs": 299,
+          "pearson": 0.9965760718186463,
+          "rho": 0.9948404230177812
+        },
+        "bf_reverse__mirror_risk_bf_q": {
+          "ci": [
+            -0.965808865866861,
+            -0.9321255826909396
+          ],
+          "exact_equal_rate": 0.0,
+          "label": "BF_reverse(i) vs RS_q(j)",
+          "n": 574,
+          "n_exact_equal": 0,
+          "n_pairs": 299,
+          "pearson": -0.938977233766688,
+          "rho": -0.9506176960576865
+        },
+        "rev_flip_rate__mirror_rev_flip_rate": {
+          "ci": [
+            0.9871854663215189,
+            0.9997646154147454
+          ],
+          "exact_equal_rate": 0.9738675958188153,
+          "label": "rev_flip_rate(i) vs rev_flip_rate(j)",
+          "n": 574,
+          "n_exact_equal": 559,
+          "n_pairs": 299,
+          "pearson": 0.9965760718186463,
+          "rho": 0.9948404230177812
+        },
+        "risk_bf_q__mirror_risk_bf_q": {
+          "ci": [
+            0.8838127171447168,
+            0.9410491443239267
+          ],
+          "exact_equal_rate": 0.7630662020905923,
+          "label": "RS_q(i) vs RS_q(j)",
+          "n": 574,
+          "n_exact_equal": 438,
+          "n_pairs": 299,
+          "pearson": 0.9061809239357064,
+          "rho": 0.9152386718764136
+        }
+      }
+    },
+    "qwen": {
+      "model": "Qwen3.5-4B",
+      "pairs": {
+        "bf_paraphrase__mirror_bf_paraphrase": {
+          "ci": [
+            -0.05041724079659568,
+            0.22087119613152628
+          ],
+          "exact_equal_rate": 0.8447971781305115,
+          "label": "bf_paraphrase(i) vs bf_paraphrase(j)",
+          "n": 567,
+          "n_exact_equal": 479,
+          "n_pairs": 298,
+          "pearson": 0.03907389565881601,
+          "rho": 0.08287072815060557
+        },
+        "bf_reverse__mirror_agreement": {
+          "ci": [
+            0.2901018762694088,
+            0.45130182313278727
+          ],
+          "exact_equal_rate": 0.7283950617283951,
+          "label": "BF_reverse(i) vs agreement(j)",
+          "n": 567,
+          "n_exact_equal": 413,
+          "n_pairs": 298,
+          "pearson": 0.1902814270034191,
+          "rho": 0.36939924094475607
+        },
+        "bf_reverse__mirror_bf_paraphrase": {
+          "ci": [
+            0.2235392312165601,
+            0.38046088977001946
+          ],
+          "exact_equal_rate": 0.6825396825396826,
+          "label": "BF_reverse(i) vs bf_paraphrase(j)",
+          "n": 567,
+          "n_exact_equal": 387,
+          "n_pairs": 298,
+          "pearson": 0.1951236608437993,
+          "rho": 0.3004594201654381
+        },
+        "bf_reverse__mirror_bf_reverse": {
+          "ci": [
+            0.9854788320392175,
+            1.0
+          ],
+          "exact_equal_rate": 0.9964726631393298,
+          "label": "BF_reverse(i) vs BF_reverse(mirror j)",
+          "n": 567,
+          "n_exact_equal": 565,
+          "n_pairs": 298,
+          "pearson": 0.9995327156719095,
+          "rho": 0.9959650542209826
+        },
+        "bf_reverse__mirror_mean_confidence": {
+          "ci": [
+            0.14795765095055302,
+            0.3189552253318705
+          ],
+          "exact_equal_rate": 0.007054673721340388,
+          "label": "BF_reverse(i) vs mean_confidence(j)",
+          "n": 567,
+          "n_exact_equal": 4,
+          "n_pairs": 298,
+          "pearson": 0.06566488939095723,
+          "rho": 0.23361512825263112
+        },
+        "bf_reverse__mirror_rev_flip_rate": {
+          "ci": [
+            0.9835311849666643,
+            1.0
+          ],
+          "exact_equal_rate": 0.9947089947089947,
+          "label": "BF_reverse(i) vs rev_flip_rate(j)",
+          "n": 567,
+          "n_exact_equal": 564,
+          "n_pairs": 298,
+          "pearson": 0.9992993079905501,
+          "rho": 0.9939634737715024
+        },
+        "bf_reverse__mirror_risk_bf_q": {
+          "ci": [
+            -0.9863730121461937,
+            -0.9611597473804705
+          ],
+          "exact_equal_rate": 0.0,
+          "label": "BF_reverse(i) vs RS_q(j)",
+          "n": 567,
+          "n_exact_equal": 0,
+          "n_pairs": 298,
+          "pearson": -0.9570863525455796,
+          "rho": -0.9754016848081939
+        },
+        "rev_flip_rate__mirror_rev_flip_rate": {
+          "ci": [
+            0.9783880380574606,
+            1.0
+          ],
+          "exact_equal_rate": 0.9929453262786596,
+          "label": "rev_flip_rate(i) vs rev_flip_rate(j)",
+          "n": 567,
+          "n_exact_equal": 563,
+          "n_pairs": 298,
+          "pearson": 0.9990648101416145,
+          "rho": 0.9919560894405363
+        },
+        "risk_bf_q__mirror_risk_bf_q": {
+          "ci": [
+            0.9317784145402861,
+            0.9756801777955932
+          ],
+          "exact_equal_rate": 0.8447971781305115,
+          "label": "RS_q(i) vs RS_q(j)",
+          "n": 567,
+          "n_exact_equal": 479,
+          "n_pairs": 298,
+          "pearson": 0.9241949404353622,
+          "rho": 0.95531838493494
+        }
+      }
+    }
+  },
+  "hc_threshold": 0.8,
+  "mirror_only_reconstruction": {
+    "ling": {
+      "auroc": {
+        "mirror_agreement": {
+          "auroc": 0.5548711792409271,
+          "ci": [
+            0.5323746565934065,
+            0.5747255419027848
+          ],
+          "label": "mirror agreement(j) on wrong(i)",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "mirror_bf_paraphrase": {
+          "auroc": 0.5673654077015422,
+          "ci": [
+            0.5434283841363488,
+            0.5931460593433436
+          ],
+          "label": "mirror bf_paraphrase(j) on wrong(i)",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "mirror_mean_confidence": {
+          "auroc": 0.6186905531443346,
+          "ci": [
+            0.5719912515000194,
+            0.6657645207109678
+          ],
+          "label": "mirror mean_confidence(j) on wrong(i)",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "mirror_risk_bf_q": {
+          "auroc": 0.8266137224120418,
+          "ci": [
+            0.7952521753822759,
+            0.8556648978298749
+          ],
+          "label": "mirror RS_q(j) on wrong(i)",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_bf_q": {
+          "auroc": 0.8964262628128175,
+          "ci": [
+            0.8761115671386551,
+            0.917402218803142
+          ],
+          "label": "own RS_q(i) on wrong(i) [reference]",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_bf_reverse": {
+          "auroc": 0.8693877551020408,
+          "ci": [
+            0.8458211500974658,
+            0.8901955602536998
+          ],
+          "label": "own BF_reverse(i) on wrong(i) (risk dir) [reference]",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_mirror_bf_reverse": {
+          "auroc": 0.8699048850309354,
+          "ci": [
+            0.8469981396922036,
+            0.8920713820078227
+          ],
+          "label": "mirror BF_reverse(j) on wrong(i) (risk dir)",
+          "n": 574,
+          "n_pairs": 299
+        },
+        "risk_mirror_rev_flip_rate": {
+          "auroc": 0.8699048850309354,
+          "ci": [
+            0.8452642021720969,
+            0.8920872121509065
+          ],
+          "label": "mirror rev_flip_rate(j) on wrong(i) (risk dir)",
+          "n": 574,
+          "n_pairs": 299
+        }
+      },
+      "model": "Ling-3.0-tiny"
+    },
+    "qwen": {
+      "auroc": {
+        "mirror_agreement": {
+          "auroc": 0.5070180815200735,
+          "ci": [
+            0.46189805327868855,
+            0.5477379191321499
+          ],
+          "label": "mirror agreement(j) on wrong(i)",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "mirror_bf_paraphrase": {
+          "auroc": 0.514894269077536,
+          "ci": [
+            0.47932337110955103,
+            0.5474655016989113
+          ],
+          "label": "mirror bf_paraphrase(j) on wrong(i)",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "mirror_mean_confidence": {
+          "auroc": 0.5479160281949127,
+          "ci": [
+            0.46638780593458956,
+            0.6291854072963519
+          ],
+          "label": "mirror mean_confidence(j) on wrong(i)",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "mirror_risk_bf_q": {
+          "auroc": 0.9091020533251609,
+          "ci": [
+            0.8855442000415024,
+            0.9323621856866537
+          ],
+          "label": "mirror RS_q(j) on wrong(i)",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_bf_q": {
+          "auroc": 0.9429053018694453,
+          "ci": [
+            0.9224259313581695,
+            0.9618081030406782
+          ],
+          "label": "own RS_q(i) on wrong(i) [reference]",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_bf_reverse": {
+          "auroc": 0.9307692307692308,
+          "ci": [
+            0.912770061728395,
+            0.9478842278805643
+          ],
+          "label": "own BF_reverse(i) on wrong(i) (risk dir) [reference]",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_mirror_bf_reverse": {
+          "auroc": 0.9307692307692308,
+          "ci": [
+            0.913033286451008,
+            0.9479166666666666
+          ],
+          "label": "mirror BF_reverse(j) on wrong(i) (risk dir)",
+          "n": 567,
+          "n_pairs": 298
+        },
+        "risk_mirror_rev_flip_rate": {
+          "auroc": 0.9307385841250383,
+          "ci": [
+            0.9116908212560386,
+            0.9478388998035363
+          ],
+          "label": "mirror rev_flip_rate(j) on wrong(i) (risk dir)",
+          "n": 567,
+          "n_pairs": 298
+        }
+      },
+      "model": "Qwen3.5-4B"
+    }
+  },
+  "models": [
+    {
+      "hc_n": 567,
+      "hc_pairs": 298,
+      "hc_wrong": 65,
+      "model": "Qwen3.5-4B"
+    },
+    {
+      "hc_n": 574,
+      "hc_pairs": 299,
+      "hc_wrong": 119,
+      "model": "Ling-3.0-tiny"
+    }
+  ],
+  "protocol": "round7-w1-p0-mirror-equivalence-audit",
+  "seed_base": 20260913,
+  "status": "post-hoc derivation from sealed frozen data; zero new model calls",
+  "verbatim_view_identity": {
+    "messages_identical": 3000,
+    "messages_rate": 1.0,
+    "n_calls": 3000,
+    "unit_texts_identical": 3000,
+    "unit_texts_rate": 1.0
+  },
+  "wrong_joint": {
+    "ling": {
+      "both_correct": 330,
+      "both_wrong": 0,
+      "i_correct_j_wrong": 125,
+      "i_wrong_j_correct": 119,
+      "model": "Ling-3.0-tiny",
+      "n_items_with_mirror_hc": 574,
+      "p_both_wrong_given_i_wrong": 0.0
+    },
+    "qwen": {
+      "both_correct": 433,
+      "both_wrong": 5,
+      "i_correct_j_wrong": 69,
+      "i_wrong_j_correct": 60,
+      "model": "Qwen3.5-4B",
+      "n_items_with_mirror_hc": 567,
+      "p_both_wrong_given_i_wrong": 0.07692307692307693
+    }
+  }
+}
