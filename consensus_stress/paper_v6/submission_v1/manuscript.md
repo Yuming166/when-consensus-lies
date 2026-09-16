@@ -1,0 +1,1244 @@
+# CST-Bench: Measuring Consensus Reliability with Direction-Gated Natural-Pair Stress Tests
+
+## Abstract
+
+Consensus does not guarantee correctness. We study whether an outcome-blind, label-free scoring
+procedure applied to an offline gold-conditioned natural-pair resource can measure the reliability
+of consensus decisions by probing whether panels update toward decision-relevant counter-evidence. CST-Bench uses five consensus calls, ten main-probe calls, and
+ten auxiliary calls with frozen gates, an outcome firewall, preregistration, and pair-grouped
+confidence intervals. The natural-pair resource is constructed offline with gold-conditioned
+direction, while scoring is label-free and outcome-blind once the resource is fixed. The probe
+argues against the item's gold answer; its power is therefore the evidence direction, not near-duplicate
+overlap. On VitaminC
+natural pairs (300 pairs / 600 items), the probe flips 0.902 of correct consensus decisions and
+0.075 of wrong decisions. RS_q = −BF_q reaches AUROC 0.943 [0.924, 0.960] for Qwen (567 HC, 65
+wrong), 0.896 [0.873, 0.916] for Ling (574 HC), and 0.969 [0.935, 0.995] in a single-point
+evaluation (96 HC, 8 wrong). The result is bounded: BoolQ reverses direction, FEVER has no usable
+natural pairs, and S&P500 yields a null as-of sequential stress-test result. Answer-prior and
+placebo controls provide negative evidence against the tested answer-prior and placebo alternatives. Independent claim-only
+counter-evidence is a mechanism probe, not an independent predictor. CST-Bench is thus a
+reliability-measurement protocol evaluated under the frozen VitaminC natural-pair design, not evidence
+for general counter-evidence rigidity or a causal account of model failure.
+
+---
+
+## 1 Introduction
+
+### 1.1 Motivation: multi-agent consensus is unreliable
+
+Multi-agent LLM panels—several personas sampled from one or more models that read shared evidence
+and vote—are a common recipe for fact verification and reasoning \citep{du-etal-2024-multiagent-debate}. Consensus can improve
+decision procedures, but agreement is not correctness: a panel may converge on the wrong answer,
+and the convergence can obscure uncertainty that matters before the outcome is known. The practical
+question is not whether consensus is ever wrong (it is) but whether the reliability of an
+already-formed consensus decision can be measured without waiting for, or peeking at, the outcome.
+
+This paper studies a narrower, measurable form of that question: whether a probe can rank which
+consensus decisions are unreliable when scoring is *outcome-blind and label-free* conditional on an
+offline gold-conditioned natural-pair construction, and how far such a probe generalizes. The setting is a collection of natural item pairs whose content provides evidence in a
+known direction. On the VitaminC collection—300 pairs / 600 items with a frozen manifest—panels
+built from Qwen3.5-4B and Ling-3.0-tiny respond to a fixed probe selected to oppose the item's gold
+answer. The probe changes correct consensus decisions more often than wrong ones: the natural-mirror
+flip rates are 0.902 for correct consensus (Qwen 0.843, Ling 0.703) and 0.075 for wrong consensus
+(Qwen 0.095, Ling 0.029). These results motivate a measurement instrument, not a claim that
+language models are generally rigid to counter-evidence.
+
+Standard reliability signals are weak here. Confidence calibration and sampling consistency are
+computed on repeated samples of the *same* input and do not intervene on the evidence; they are
+also typically defined for a single model rather than an already-formed multi-agent panel. A
+stress-test probe that replaces the evidence packet with natural counter-evidence targets exactly
+the object of interest—whether an existing consensus decision changes when its evidential
+underpinning is challenged—and it can be run before any outcome is known. CST-Bench formalizes
+this idea as an outcome-blind, label-free scoring protocol on a fixed gold-conditioned resource
+rather than as a post-hoc diagnostic.
+
+### 1.2 Research question
+
+> Can a stress-test protocol—whose scoring is outcome-blind and label-free conditional on a fixed,
+> offline gold-conditioned natural-pair resource—expose which consensus decisions are unreliable when
+> panels are probed with decision-relevant counter-evidence, and how far does this generalize?
+
+The paper separates predictive measurement from mechanism evidence. CST-Bench measures reliability
+with a direction-gated probe: the natural pair is selected because it argues against the item's
+gold answer. The probe's power is its **direction**, not near-duplicate overlap. Accordingly, the
+paper does not claim a general "rigidity to counter-evidence" mechanism, an
+independent-counter-evidence predictor, a causal or mediation effect, or an explanation of why
+language models fail.
+
+The score is RS_q = −BF_q (paraphrase stability + natural counter-evidence responsiveness),
+outcome-blind and label-free once the fixed resource is constructed. On the evaluated VitaminC items, the primary score RS_q obtains AUROC 0.943
+[0.924, 0.960] for Qwen (567 HC, 65 wrong), 0.896 [0.873, 0.916] for Ling (574 HC), and 0.969
+[0.935, 0.995] for the gpt-6-astra single-point evaluation (96 HC, 8 wrong). These results support
+the instrument on this benchmark; they do not establish universal transfer or a general mechanism.
+
+Accordingly, the reported AUROCs are conditional on the frozen VitaminC resource and its gold-conditioned offline construction; outcome-blindness applies only after freezing, the Qwen-to-Ling result is a single transfer check, and \(S_{\mathrm{ind}}\) and Round10 provide neither independent predictive nor causal evidence.
+
+### 1.3 Why a pre-outcome stress-test probe
+
+Once its resource is fixed, a pre-outcome scoring test should withhold labels, distinguish evidence
+direction from superficial similarity, and follow a controlled procedure. CST-Bench addresses these requirements with five
+consensus calls, ten main-probe calls, and ten auxiliary calls; frozen gates; an outcome firewall;
+preregistration; and pair-grouped confidence intervals (Section 3).
+
+The fixed natural-pair probe argues against the item's gold answer, so its signal is direction, not
+overlap. Two pieces of evidence make this precise. First, a score formed only from the two original
+answers, S_pair, reconstructs the reverse-axis ranking with Spearman 0.998 and recovers
+~98.7% (Qwen) / ~97.0% (Ling) of the RS_q ranking: the ranking is a *natural-pair property*.
+Second, a clean neutral paraphrase placebo flips only 0.038, while a content-level matched placebo
+flips 0.51–0.56 and is direction-asymmetric (0.92 among yes-answerers, 0.09 among no-answerers).
+Content change alone therefore does not provide a clean interpretation of the signal; the direction
+of the evidence change must be controlled.
+
+The regularity is **axis-native** rather than universal. On BoolQ, where the reverse operation is a
+negation-prefix rather than natural counter-evidence, RS_q has AUROC 0.449 [0.308, 0.579]: the
+direction is reversed and permutation fails. On FEVER, evidence overlap has Jaccard 1.000, leaving
+no usable natural pairs and making the probe vacuous. On S&P500, an as-of sequential stress test is
+null; no alpha claim is made. The graph study is dropped.
+
+Answer-prior controls bound the probe further. The answer prior 1[consensus=yes] alone has AUROC
+0.671 / 0.634 (Qwen / Ling), far below the probe (0.943 / 0.896), and the probe is not a label
+artifact (label AUROC 0.51). The tested answer-prior comparator did not match the probe in this evaluation; this comparison does
+not establish causal mediation or rule out every label-related interaction.
+
+### 1.4 Contributions
+
+**C1 — A direction-gated empirical regularity.** A fixed gold-opposing natural-pair probe separates
+correct from wrong consensus decisions before outcomes are used: panels update toward the evidence
+direction at ~0.90 for correct consensus and ~0.08 for wrong consensus (natural-mirror flip 0.902
+vs 0.075; Qwen 0.843/0.095, Ling 0.703/0.029). RS_q ranks consensus errors from outcome-blind, label-free features once the resource is fixed, at AUROC 0.943 [0.924, 0.960] (Qwen), 0.896 [0.873, 0.916] (Ling), and 0.969
+[0.935, 0.995] (gpt-6-astra single point). These are predictive measurements on the evaluated
+data, not evidence for a general rigidity mechanism.
+
+**C2 — CST-Bench as a reliability-measurement protocol.** CST-Bench uses five consensus calls, ten
+main-probe calls, and ten auxiliary calls with frozen gates, an outcome firewall, preregistration,
+and pair-grouped confidence intervals, producing an outcome-blind, label-free score RS_q = −BF_q after offline resource construction.
+A single cross-panel portability check applying the Qwen-fixed procedure to Ling yields AUROC
+0.723 [0.682, 0.765]; item-level Spearman(Qwen RS_q, Ling RS_q) = 0.496 (medium, not perfect).
+This is not evidence of model-independent or out-of-domain generalization.
+
+**C3 — Boundaries, controls, and honest negatives.** The observed signal is direction-gated and axis-native:
+BoolQ reverses direction (AUROC 0.449 [0.308, 0.579]), FEVER is vacuous (no usable natural pairs,
+overlap Jaccard 1.000), and S&P500 is null. Answer-prior (0.671/0.634 ≪ 0.94) and placebo controls
+(paraphrase 0.038 clean; content placebo 0.51–0.56 and direction-asymmetric at 0.92 vs 0.09)
+constrain label-only and paraphrase explanations. Independent claim-only counter-evidence is a
+mechanism probe, not an independent predictor; the protocol-specific strict results are reported
+with their cohort and version rather than pooled across runs. E_sel is dropped (Round9) as a reparameterization of S_natural + answer-prior.
+
+Round10 provides mechanism-oriented descriptive evidence, not an additional predictor. In a 2×2 study (16 items / 178
+calls), the direction contrast—opposing versus agreeing with the consensus—is +0.44 [0.24, 0.65].
+The as-assigned independent-CONTRADICT cell flips wrong consensus at 0.946 (35/37); after direction auditing, the clean subset is 30/32 across 7 clean items.
+The post-hoc two-item/9-row Probe1 extension gives an as-assigned total of 44/46 and is not a fully audited clean result. Within the direction-stratified comparison,
+the natural mirror was numerically similar to the direction-clean independent condition; this does not establish
+equivalence. The direction-clean construction comparison has n=3 items, so a small overlap effect is not ruled out. These results
+are reported as a direction-sensitive interpretation with an explicit, unresolved small-n boundary—not
+as an additional reliability predictor.
+
+### 1.5 Scope of claims
+
+The evidence base is the frozen VitaminC natural-pair protocol (300 pairs / 600 items), two small
+open-weight panels (Qwen3.5-4B primary, Ling-3.0-tiny secondary), and one gpt-6-astra single point
+(96 HC items). The central claim is a pre-outcome behavioral regularity under natural-pair
+construction: consensus items that do not update toward gold-opposing evidence are substantially
+more likely to be wrong, and this can be ranked before labels are observed. The regularity is
+descriptive and predictive; it is not a latent cognitive trait, and it does not support a
+mechanism claim about why some panels are wrong. Cross-dataset generality is explicitly not
+claimed: BoolQ reverses the signal, FEVER has no usable natural pairs, and S&P500 is null. The
+paper evaluates a reliability-measurement protocol under the frozen VitaminC natural-pair design
+and reports a direction-gated behavioral regularity, not an explanation of consensus failure.
+
+### 1.6 Related-work preview
+
+Section 2 positions CST-Bench within four clusters: (a) sampling consistency and hallucination
+detection (e.g., self-consistency, semantic entropy), where the signal derives from repeated
+samples of the *same* input and no evidence intervention is applied; (b) selective prediction and
+error prediction, which use a single model's output statistics on an unchanged input and do not
+target an already-formed multi-agent consensus; (c) faithfulness and counterfactual evaluation,
+which establish controlled perturbation as a valid probe but target single-model rationales or
+reasoning traces rather than consensus answers; and (d) multi-agent reliability, metamorphic
+testing, and consensus, which stress single-model qualities or form answers through debate rather
+than probing an already-formed consensus. The distinguishing combination here is (i) an
+already-formed multi-agent consensus as the object, (ii) a gold-conditioned natural-pair
+probe whose scoring is label-free after the resource is fixed, and (iii) pre-outcome reliability measurement as the use. Citation
+details are left to Section 2 and follow the dated literature audit (2026-09-12;
+`consensus_stress/phase1/novelty_map.md`); no exhaustiveness claim is made.
+
+### 1.7 Paper roadmap
+
+Section 3 (method) describes the VitaminC natural pairs, panel construction, the CST-Bench call
+accounting (5 + 10 + 10), the gold-opposing natural-pair probe, frozen gates, outcome firewall,
+preregistration, pair-grouped CIs, and the formal definitions of RS_q / BF_q / S_natural with the
+direction-gated interpretation. Section 4 (main experiments) reports VitaminC within-model results
+(Qwen / Ling / gpt-6-astra), the Qwen → Ling procedure transfer, the S_pair natural-pair property,
+the Round10 direction-gated analysis, and flip-rate asymmetry tables. Section 5 (boundaries and
+negative results) reports the BoolQ / FEVER / S&P500 axis-native boundaries, the
+mechanism-versus-prediction separation, the answer-prior and placebo asymmetry controls,
+independent claim-only CE as a mechanism probe, the E_sel drop, the graph-study drop, and
+limitations. Sections 2 (related work) and 6 (conclusion) position CST-Bench against consistency-based,
+selective-prediction, faithfulness, and multi-agent reliability work and summarize the bounded
+claims.
+
+---
+
+
+# 2 Related Work
+
+## 2.1 Self-consistency and sampling-based uncertainty
+
+Self-consistency, self-checking, and semantic-uncertainty methods estimate reliability from repeated outputs to the same input \citep{wang-etal-2022-self-consistency,manakul-etal-2023-selfcheckgpt,kuhn-etal-2023-semantic-uncertainty}. Confidence calibration, selective prediction, risk--coverage analysis, AURC, and conformal prediction instead use confidence or abstention policies to characterize error risk \citep{guo-etal-2017-calibration,geifman-elyaniv-2017-selective,angelopoulos-bates-2021-conformal}. These approaches generally treat repeated answers, confidence values, or output distributions as the primary uncertainty object.
+
+CST-Bench evaluates an already-formed consensus panel with a fixed, natural-pair probe whose evidence direction opposes the item's gold label. The probe is pre-outcome and label-free: labels are withheld while consensus and probe features are computed. The resulting signal is therefore not unchanged-input disagreement or confidence alone, but the panel's response to decision-relevant, direction-gated evidence. The protocol does not assert that repeated sampling is uninformative; it tests whether a formed consensus responds in the prescribed direction before correctness is revealed. The natural-pair probe is thus a measurement instrument for predictive reliability, not merely another source of output variance.
+
+The answer-prior control further separates the probe from a label-only heuristic. The consensus label alone produced AUROC 0.671 for Qwen3.5-4B and 0.634 for Ling-3.0-tiny, while a label-only baseline had AUROC 0.51. The Qwen natural-pair probe produced AUROC 0.943. These comparisons do not eliminate every interaction with answer priors, but show that the measurement is not adequately described by the consensus label alone.
+
+## 2.2 Fact verification and evidence-based reasoning
+
+Fact-verification and evidence-based reasoning benchmarks study whether systems select, assess, or generate claims in relation to supporting evidence \citep{thorne-etal-2018-fever,wadden-etal-2020-fact,schuster-etal-2021-get}. Their labels and evidence structures can provide settings for testing whether a model responds appropriately when evidential direction changes \citep{schuster-etal-2021-get,thorne-etal-2018-fever,kaushik-etal-2019-counterfactually-augmented}.
+
+CST-Bench does not train a new verifier. It uses an existing task structure to assess the reliability of an already-formed consensus decision before the outcome is available. Its applicability depends on the dataset's axis and pair construction. On VitaminC, the frozen resource contains 300 natural pairs and 600 items, with paired evidence direction fixed to oppose each item's gold label. This makes the probe decision-relevant without requiring a newly generated counterfactual.
+
+On BoolQ, the reverse operation used a negation prefix rather than natural counter-evidence. The resulting RS_q AUROC was 0.449 [0.308, 0.579]; the direction was reversed, and the permutation failed. FEVER supplied no usable natural pairs: its evidence-overlap Jaccard was 1.000, making the probe vacuous. These results identify a boundary condition for the measurement object itself. A natural pair must encode a usable evidence-direction contrast; surface reversal or complete overlap does not guarantee such a contrast.
+
+CST-Bench should therefore not be read as a general fact-verification method. Its target is narrower: whether a consensus panel updates in the direction specified by a fixed, decision-relevant, gold-opposing natural-pair probe.
+
+## 2.3 Multi-agent debate, consensus, and reliability auditing
+
+Multi-agent debate and deliberation methods study how interaction changes answer formation, aggregation, or reasoning quality \citep{du-etal-2024-multiagent-debate,irving-etal-2018-ai-safety-debate}. Work on consensus reliability and model auditing examines whether outputs can be trusted under distribution shifts, structured tests, or targeted evaluations \citep{liang-etal-2022-helm,lin-etal-2022-truthfulqa,ovadia-etal-2019-uncertainty-shift}. Metamorphic and behavioral testing methods similarly use controlled transformations to expose systematic response patterns \citep{ribeiro-etal-2020-beyond,naik-etal-2018-stress}.
+
+CST-Bench takes consensus as the object to audit, not as the intervention used to improve a final answer. The panel is formed first; the subsequent probe is outcome-firewalled and evaluates that fixed consensus's response to evidence with a prescribed direction. This differs from debate-based methods that seek to improve an answer through additional interaction and from generic invariance tests whose perturbations need not oppose the gold label.
+
+The protocol links:
+
+1. an existing consensus decision;
+2. a direction-bearing natural-pair intervention; and
+3. a pre-outcome reliability measurement.
+
+The resulting score is intended to rank risk before the label is available, not to measure reasoning quality generally.
+
+## 2.4 Stress testing, counterfactual probing, and adversarial evaluation
+
+NLI stress tests, adversarial evaluations, controlled perturbations, and counterfactual or faithfulness probes use structured changes to diagnose model behavior \citep{naik-etal-2018-stress,glockner-etal-2018-breaking,kaushik-etal-2019-counterfactually-augmented}. These methods motivate treating a targeted intervention as behavioral measurement rather than as a new task score \citep{ribeiro-etal-2020-beyond,naik-etal-2018-stress}.
+
+CST-Bench extends this perspective to a consensus panel with a stricter protocol boundary: the probe is fixed in advance, its direction is tied to the item's gold-opposing natural pair, and outcome labels are unavailable during feature construction. The direction is not cosmetic. The proposed interpretation is not that panels are rigid to counter-evidence in general, nor that natural-pair overlap alone explains the result.
+
+A clean neutral placebo flipped at rate 0.038. A content-level matched placebo ranged from 0.51 to 0.56 and was direction-asymmetric: 0.92 for yes-answerers and 0.09 for no-answerers. These controls motivate a direction-gated account and show why placebo behavior and answer priors must be reported rather than treated as incidental.
+
+Independent claim-only counter-evidence serves a different purpose. Its score,
+\(S_{\text{ind}}\), is a mechanism probe rather than an independent predictor. The earlier W2 v1
+protocol reached AUROC 0.983 with OOF increment +0.045 [0.015,0.084] (HC n=96,
+metric n=96, 50 pairs). Under strict TARGET_SPEC, we retain two protocol-specific analyses
+rather than pooling them. The larger cached analysis gives AUROC 0.699 (CI includes 0.5)
+and OOF increment +0.027 [0.000,0.058] (cohort HC=96/wrong=8; \(S_{\text{ind}}\) n=72 over
+42 pairs; OOF n=72, wrong=5). The separate strict 25-pair analysis gives AUROC
+0.624 [0.286,0.856] and OOF increment +0.004 [−0.074,0.047] (cohort HC=47/wrong=3;
+metric/OOF n=46 over 25 pairs). These protocol-specific results are not pooled into a
+range. The analysis therefore tests the behavioral account without extending CST-Bench's
+predictive claim.
+
+## 2.5 Positioning
+
+CST-Bench lies at the intersection of consensus auditing, evidence-sensitive behavioral testing, and pre-outcome reliability measurement. Its defining combination is:
+
+1. an already-formed multi-agent consensus as the evaluation object;
+2. a fixed natural-pair probe whose direction opposes the item's gold label;
+3. a label-free, pre-outcome measurement of whether the panel updates toward that evidence direction; and
+4. an explicit separation between predictive reliability results and mechanism-oriented stress tests.
+
+This positioning is narrower than a claim about universal model rigidity. It does not require claiming that the protocol is the only way to audit consensus panels. The contribution is the operationalization and empirical evaluation of this particular direction-gated protocol.
+
+
+# 3 Method
+
+## 3.1 CST-Bench
+
+CST-Bench is an outcome-blind, label-free scoring protocol on an offline gold-conditioned natural-pair resource for measuring whether a consensus panel updates toward decision-relevant counter-evidence. Its primary output is a risk score computed before outcome labels are merged. The protocol is not intended to measure a general property of “rigidity to counter-evidence.” Instead, it uses a fixed natural-pair probe whose evidence is assigned to argue against the item’s gold label. The defining feature of this probe is therefore its direction, not near-duplicate overlap.
+
+### 3.1.1 Panel and consensus
+
+Each panel contains five frozen agents. The evidence packet is distributed using a frozen assignment table, with each agent receiving a fixed view of the packet. Every non-remove view contains decision-relevant evidence. Inference uses deterministic decoding and frozen per-agent and per-condition settings. Requests and outputs are cached and content-addressed; failed generations are handled using the preregistered repair procedure.
+
+Consensus is formed from the five original-condition calls. The consensus answer is the majority answer, and high consensus (HC) denotes agreement by at least 0.8 of the panel, equivalently at least 4/5 agents. The later evaluation outcome is
+
+\[
+\mathrm{consensus\_wrong}_i
+=
+\mathbf{1}
+[
+\mathrm{consensus}_i
+\ne
+\mathrm{gold}_i
+].
+\]
+
+This outcome is unavailable when the stress-test features are computed. Evaluation therefore asks whether a score available before labels can rank items by subsequent consensus error.
+
+### 3.1.2 Main probes
+
+For each agent, the main probe suite contains two conditions.
+
+**Natural mirror.** The original evidence is replaced by the evidence from the paired item. The pair is constructed so that this evidence argues against the item’s gold label. Relative to the original response, the expected behavior is therefore a directionally appropriate flip: a correct original answer should be opposed by the mirror evidence, whereas a wrong original answer is aligned with it.
+
+**Paraphrase placebo.** The evidence is reworded while preserving its meaning. The expected behavior is answer stability. This condition tests whether the panel changes in response to content-preserving reformulation rather than to decision-relevant evidence.
+
+The natural mirror is not interpreted as a generic test of counter-evidence responsiveness. Its interpretation is gated by the fixed relation between the paired evidence and the item’s gold label. In particular, the protocol does not treat natural-pair similarity or overlap as the scientific target.
+
+### 3.1.3 Auxiliary diagnostics
+
+The protocol retains auxiliary conditions for auditing and interpretation, but these calls do not enter the primary score.
+
+A content-level matched placebo uses topic-matched but decision-irrelevant content. It is not assumed to be neutral: the observed flip rate is 0.51--0.56 and is direction-asymmetric, with rates of 0.92 for yes-answerers and 0.09 for no-answerers. We therefore report this condition as a diagnostic rather than as a clean placebo.
+
+An independent claim-only counter-evidence (CE) condition generates counter-evidence from the claim alone, in both directions, and assigns the direction offline to oppose the gold label. This condition is a mechanism probe: it tests whether directionally aligned counter-evidence can induce the expected response without the natural-pair construction. It is not treated as an independent predictor. The larger cached strict TARGET_SPEC analysis (cohort HC n=96, wrong=8; \(S_{\mathrm{ind}}\) scored n=72 over 42 pairs; OOF n=72 with wrong=5) gave \(S_{\mathrm{ind}}\) AUROC 0.699 (CI includes 0.5) and OOF increment +0.027 [0.000,0.058]. The separate strict 25-pair analysis (cohort HC n=47, wrong=3; metric/OOF n=46 over 25 pairs) gave \(S_{\mathrm{ind}}\) AUROC 0.624 [0.286,0.856] and OOF increment +0.004 [-0.074,0.047]. An earlier W2 v1 protocol gave AUROC 0.983 with OOF increment +0.045 [0.015,0.084] on HC n=96. These are protocol-specific mechanism results, not a pooled range and not a deployment claim.
+
+### 3.1.4 Call accounting
+
+Each item uses 5 consensus calls, 10 main-probe calls, and 10 auxiliary-diagnostic calls:
+
+| Call group | Conditions | Calls per item | Used in \(RS_q\) |
+|---|---|---:|:---:|
+| Consensus formation | Original | 5 | Yes |
+| Main probe | Paraphrase and natural mirror | 10 | Yes |
+| Auxiliary diagnostics | Synthetic reverse and remove | 10 | No |
+| **Total** | — | **25** | — |
+
+The primary score uses the original consensus calls and the two main-probe conditions only. Auxiliary diagnostics are excluded from \(RS_q\), so they cannot alter the primary ranking.
+
+## 3.2 Outcome firewall and preregistered protocol
+
+### 3.2.1 Outcome firewall
+
+Gold labels are merged only after all pre-outcome features have been computed, frozen, and hashed. The gold label, per-agent correctness, the binary `consensus_wrong` outcome, and any equivalent label-derived quantity are forbidden inputs to score computation.
+
+Labels may be used offline to construct the frozen balanced design and to assign the direction of the natural-pair and independent-CE artifacts. They are not provided to the agents and are not available to the pre-outcome scoring procedure. This distinction separates construction metadata from features available at prediction time.
+
+The leakage audit covers prompt construction, evidence generation, scoring, model selection, and threshold selection. The intended data flow has no path from evaluation outcomes to the label-free features or their preregistered selection.
+
+### 3.2.2 Frozen gates and preregistration
+
+Protocols, cohort definitions, manifests, probe construction, and evaluation rules are frozen before model calls. The preregistered gates include pipeline validity, primary and label-stratified AUROC criteria, placebo stability, permutation comparison, and checks against reducing \(RS_q\) to agreement or mean confidence. The formal Risk@80 analysis additionally requires a paired Risk@80 confidence interval that excludes zero.
+
+These gates are not tuned after outcomes are observed. A failed gate is reported as a failure rather than used to revise the protocol.
+
+The frozen protocol identifiers and manifests record deterministic cohort construction and SHA256 hashes. The independent-CE and direction-gated analyses use their corresponding preregistered specifications.
+
+### 3.2.3 Uncertainty
+
+Confidence intervals are computed with pair-grouped bootstrap resampling. The two members of a natural pair are resampled together, rather than treating paired items as independent. This procedure is used for AUROC, Risk@80, flip-rate differences, and paired AUROC differences.
+
+## 3.3 Formal definitions
+
+Let \(i\) index an item, \(a\) index one of the five agents, and \(c\) index a probe condition. Let \(Y(i,c,a)\) denote the parsed binary answer under condition \(c\). Let \(Y_0(i,a)\) denote the answer under the original condition.
+
+For each condition, the frozen expected-response oracle specifies the behavior tested by the protocol. The paraphrase expectation is answer preservation,
+
+\[
+Y^*(i,\mathrm{para},a)=Y_0(i,a),
+\]
+
+whereas the natural-mirror expectation is a flip,
+
+\[
+Y^*(i,\mathrm{natural},a)=\mathrm{flip}(Y_0(i,a)).
+\]
+
+Define per-agent fidelity to these expected responses as
+
+\[
+f_c(i,a)
+=
+\mathbf{1}
+[
+Y(i,c,a)=Y^*(i,c,a)
+].
+\]
+
+The baseline fidelity is
+
+\[
+BF_q(i)
+=
+\frac{1}{5}
+\sum_a
+\frac{
+f_{\mathrm{para}}(i,a)
++
+f_{\mathrm{natural}}(i,a)
+}{2},
+\]
+
+and the primary risk score is
+
+\[
+RS_q(i)=-BF_q(i).
+\]
+
+Higher \(RS_q\) therefore denotes lower fidelity to the preregistered probe expectations and higher measured stress-test risk. The score is computed without the evaluation outcome.
+
+For interpretation of the natural condition, define the observed response flip
+
+\[
+\mathrm{flip}(i,a,c)
+=
+\mathbf{1}
+[
+Y(i,c,a)\ne Y_0(i,a)
+].
+\]
+
+The label-free natural-counter-evidence responsiveness score is
+
+\[
+S_{\mathrm{natural}}(i)
+=
+\frac{1}{5}
+\sum_a
+\mathrm{flip}(i,a,\mathrm{natural}).
+\]
+
+The independent-CE diagnostic is defined analogously:
+
+\[
+S_{\mathrm{ind}}(i)
+=
+\frac{1}{5}
+\sum_a
+\mathrm{flip}(i,a,\mathrm{independent\ CE}).
+\]
+
+\(S_{\mathrm{ind}}\) is reported as a mechanism diagnostic and is not promoted to an independent predictive feature.
+
+### 3.3.1 Direction-gated interpretation
+
+The natural mirror argues against the item’s gold label. Consequently, for a correct consensus it opposes the panel’s answer, while for a wrong consensus it agrees with the panel’s wrong answer. A high natural-mirror flip rate can therefore be interpreted only together with this fixed direction relation.
+
+The observed natural-mirror flip rate is 0.902 for correct consensus and 0.075 for wrong consensus. The corresponding Qwen values are 0.843 and 0.095, and the corresponding Ling values are 0.703 and 0.029.
+
+This asymmetry is described as a direction-gated behavioral regularity. It is not evidence for a general causal mechanism of counter-evidence processing, and it does not support a claim that the panels are rigid to counter-evidence in general.
+
+The direction-gated analysis further uses the Round10 \(2\times2\) experiment, which contains 16 generation + 2 audit + 160 inference calls (178 logical calls). Inference validity was 145/160; generation parsing was valid for 10/16 items, while 6/16 were format-invalid but recorded, loose-extracted, and audited. The direction audit found 10/16 clean agree sentences and 10/16 clean contradict sentences. The CONTRADICT-minus-AGREE direction contrast is \(+0.44\) with a 95% interval of \([0.24,0.65]\). In the as-assigned independent-CONTRADICT condition, the wrong consensus flips in 0.946 of cases (35/37). After direction auditing, the clean subset is 30/32 across 7 clean items. The post-hoc Probe1 extension yields an as-assigned total of 44/46; it adds 2 items / 9 agent rows and is not a fully audited clean result. Within the direction-stratified comparison, the natural mirror was numerically similar to the direction-clean independent-CE condition; this does not establish equivalence. The direction-clean construction comparison has \(n=3\) items, so a small independent-overlap effect is not ruled out.
+
+For the natural-pair design, \(S_{\mathrm{pair}}\), computed from the two original answers, reconstructs the reverse axis with Spearman correlation 0.998 and recovers approximately 98.7%/97.0% of the \(RS_q\) ranking. This is treated as a property of the natural-pair construction, not as evidence for a broader behavioral mechanism.
+
+## 3.4 Dataset designs
+
+### 3.4.1 VitaminC natural pairs
+
+The primary design uses the frozen VitaminC natural-pair manifest containing 300 pairs and 600 items. Each pair contains one SUPPORTS item and one REFUTES item sharing the relevant claim context. The evidence from one member supplies the natural counter-evidence for the other.
+
+Qwen3.5-4B and Ling-3.0-tiny are evaluated with five-agent panels. gpt-6-astra is evaluated as a single point.
+
+Within the HC subset, \(RS_q\) yields AUROC 0.943 \([0.924,0.960]\) for Qwen, based on 567 HC items with 65 wrong; Ling yields 0.896 \([0.873,0.916]\), based on 574 HC items. Risk@80 is 0.846 \([0.638,0.981]\) for Qwen and 0.422 for Ling. The gpt-6-astra single-point AUROC is 0.969 \([0.935,0.995]\), based on 96 HC items with 8 wrong.
+
+### 3.4.2 BoolQ
+
+BoolQ supplies an axis-native negative design because it does not provide the VitaminC-style natural evidence swap. Its reverse construction uses a negation-prefix operation rather than a natural counter-evidence pair.
+
+Under this design, \(RS_q\) obtains AUROC 0.449 \([0.308,0.579]\), with the direction reversed, and the permutation gate fails. BoolQ is therefore retained as a boundary condition on the natural-pair protocol rather than folded into the VitaminC claim.
+
+### 3.4.3 FEVER
+
+FEVER does not provide a usable natural-pair construction for this probe: its evidence-overlap Jaccard is 1.000. The natural-pair test is consequently vacuous for this dataset, and the protocol does not treat the absence of a usable contrast as evidence for or against the CST-Bench measurement claim.
+
+### 3.4.4 S&P500
+
+The S&P500 analysis is an as-of sequential stress test. It is reported as a null result and is not used to claim alpha, market predictability, or an explanation of market behavior.
+
+## 3.5 Scope of the measurement claim
+
+CST-Bench is a reliability-measurement protocol evaluated for pre-outcome risk ranking under the frozen VitaminC natural-pair design, paired with a direction-gated behavioral regularity. Its central evidence is that a fixed gold-opposing natural-pair probe distinguishes correct from wrong consensus decisions in the VitaminC design. The protocol does not claim a general property of counter-evidence processing, a causal or mediation mechanism, or an explanation of why language models fail.
+
+The independent claim-only CE condition is a mechanism probe rather than an independent predictor. The answer-prior and placebo analyses test whether the primary result can be reduced to answer frequency or an uncontrolled direction artifact. The BoolQ reversal, FEVER construction failure, and S&P500 null delimit where the natural-pair measurement claim does and does not apply.
+
+
+# 4 Main Experiments
+
+This section evaluates CST-Bench as a reliability-measurement instrument.
+
+The central probe is a fixed, gold-opposing natural pair.
+
+For a correct consensus, the paired item argues against the consensus.
+
+For a wrong consensus, the paired item is aligned with the gold-correct direction.
+
+The analysis therefore separates two types of evidence:
+
+1. **PREDICTIVE evidence**, which asks whether the resulting score ranks wrong consensus decisions above correct ones.
+2. **MECHANISM evidence**, which asks whether the response depends on the direction and construction of the presented evidence.
+
+These categories are not interchangeable.
+
+A score can rank outcomes well without identifying the behavioral process that produces the ranking.
+
+Conversely, a mechanism probe can reveal direction-sensitive updating without yielding a validated predictor.
+
+The experiments do not establish general rigidity to counter-evidence.
+
+In particular, independent claim-only counter-evidence is treated as a mechanism probe, not as an independently validated predictor.
+
+No causal, mediation, general-rigidity, or independent-CE predictor claim is made.
+
+## 4.1 Experimental setup
+
+The primary evaluation uses a frozen VitaminC manifest containing 300 natural pairs, or 600 items.
+
+The model panels are Qwen3.5-4B and Ling-3.0-tiny.
+
+Each consensus is formed from five panel calls.
+
+The high-confidence (HC) subset uses the preregistered agreement threshold.
+
+Gold labels are merged only after feature computation is frozen.
+
+This ordering prevents the outcome labels from entering score construction.
+
+For query model \(q\), the risk score is
+
+\[
+\mathrm{RS}_q=-\mathrm{BF}_q,
+\]
+
+where \(\mathrm{BF}_q\) is computed from paraphrase stability and responsiveness to the natural counter-evidence probe.
+
+Higher \(\mathrm{RS}_q\) therefore denotes greater estimated risk.
+
+The score is evaluated against whether an HC consensus is wrong.
+
+The evaluation target is consequently conditional on the HC subset.
+
+It is not an estimate of the unconditional error rate.
+
+All reported confidence intervals are 95% pair-grouped bootstrap intervals where provided.
+
+The natural-pair evaluation is the primary PREDICTIVE analysis.
+
+Flip rates, placebo comparisons, and direction-by-construction contrasts are interpreted separately as MECHANISM analyses.
+
+## 4.2 Predictive evidence: within-panel ranking
+
+The natural-pair score separates wrong from correct HC consensus decisions in both replicated panels.
+
+For Qwen3.5-4B, \(\mathrm{RS}_q\) obtains AUROC \(0.943\) with a 95% interval of \([0.924,0.960]\).
+
+This estimate uses 567 HC items, including 65 wrong items.
+
+Its Risk@80 is \(0.846\), with interval \([0.638,0.981]\).
+
+For Ling-3.0-tiny, the corresponding AUROC is \(0.896\), with interval \([0.873,0.916]\).
+
+The Ling evaluation contains 574 HC items.
+
+Its Risk@80 is \(0.422\).
+
+A single-point gpt-6-astra evaluation obtains AUROC \(0.969\), with interval \([0.935,0.995]\).
+
+That evaluation contains 96 HC items, including 8 wrong items.
+
+| Query model | HC items | Wrong HC items | AUROC (wrong \(\mid\) HC) | Risk@80 |
+|---|---:|---:|---:|---:|
+| Qwen3.5-4B | 567 | 65 | 0.943 [0.924, 0.960] | 0.846 [0.638, 0.981] |
+| Ling-3.0-tiny | 574 | — | 0.896 [0.873, 0.916] | 0.422 |
+| gpt-6-astra | 96 | 8 | 0.969 [0.935, 0.995] | — |
+
+**Table 1: Predictive performance of the natural-pair risk score.**
+
+These results are PREDICTIVE evidence for the frozen VitaminC protocol.
+
+They show that the score ranks wrong HC decisions above correct HC decisions within the reported cohorts.
+
+They do not show that the score measures a model-general property of counter-evidence processing.
+
+The gpt-6-astra result is especially uncertain as a population estimate because only 8 wrong HC items are included.
+
+The Qwen3.5-4B result includes 65 wrong items.
+
+The larger number of evaluated HC items does not remove the dependence on the frozen cohort or on the natural-pair construction.
+
+The Ling-3.0-tiny result likewise remains specific to its panel and evaluation procedure.
+
+An answer-prior control is substantially weaker.
+
+Using only \(1[\mathrm{consensus=yes}]\) gives AUROC \(0.671\) for Qwen3.5-4B.
+
+The same control gives AUROC \(0.634\) for Ling-3.0-tiny.
+
+The natural-pair probe scores obtain AUROC \(0.943\) and \(0.896\), respectively.
+
+A label-only baseline gives AUROC \(0.51\).
+
+These comparisons do not prove that the probe is free of every answer-prior effect.
+
+They do show that the reported ranking is not reproduced by the label-only baseline.
+
+The appropriate conclusion is therefore comparative rather than absolute:
+
+the natural-pair score provides stronger within-panel predictive ranking than the tested answer-prior controls.
+
+## 4.3 Mechanism evidence: natural-mirror flip asymmetry
+
+The fixed natural-pair probe produces a pronounced asymmetry in behavioral updating.
+
+Across the aggregate consensus analysis, the natural mirror flips \(0.902\) of correct consensus decisions.
+
+It flips \(0.075\) of wrong consensus decisions.
+
+The corresponding Qwen3.5-4B rates are \(0.843\) for correct decisions and \(0.095\) for wrong decisions.
+
+The corresponding Ling-3.0-tiny rates are \(0.703\) and \(0.029\).
+
+| Panel or aggregate | Consensus correct | Consensus wrong |
+|---|---:|---:|
+| Aggregate consensus | 0.902 | 0.075 |
+| Qwen3.5-4B | 0.843 | 0.095 |
+| Ling-3.0-tiny | 0.703 | 0.029 |
+
+**Table 2: Flip rates under the fixed gold-opposing natural-pair probe.**
+
+The direction of the probe is essential to this interpretation.
+
+For a correct consensus, the natural mirror argues against the current answer.
+
+For a wrong consensus, it agrees with the gold-correct direction.
+
+The asymmetry is therefore consistent with direction-gated responsiveness in this construction.
+
+This is MECHANISM evidence.
+
+It is not an additional estimate of predictive AUROC.
+
+It does not establish a general inability to use counter-evidence.
+
+It also does not establish that evidence direction causes the observed score or mediates the relationship between consensus status and response.
+
+A clean neutral paraphrase placebo flips \(0.038\) of cases.
+
+A matched content placebo flips between \(0.51\) and \(0.56\).
+
+Within the matched content placebo, the rates are \(0.92\) for yes-answerers and \(0.09\) for no-answerers.
+
+The contrast indicates that content matching alone does not make the two response directions behaviorally equivalent.
+
+It motivates treating evidence direction as a design variable.
+
+It also cautions against interpreting every content-matched response as evidence for the same mechanism.
+
+## 4.4 Natural-pair reconstruction
+
+The natural-pair structure also permits a score, \(S_{\mathrm{pair}}\), constructed from the two original answers.
+
+This construction does not require a reverse call.
+
+It also does not use outcome labels in the score itself.
+
+\(S_{\mathrm{pair}}\) reconstructs the reverse axis with Spearman correlation \(0.998\).
+
+It retains approximately \(98.7\%\) of the reported ranking power for Qwen3.5-4B.
+
+It retains approximately \(97.0\%\) for Ling-3.0-tiny.
+
+| Quantity | Qwen3.5-4B | Ling-3.0-tiny |
+|---|---:|---:|
+| Spearman(\(S_{\mathrm{pair}}\), reverse axis) | 0.998 | 0.998 |
+| Ranking power recovered | \(\sim 98.7\%\) | \(\sim 97.0\%\) |
+
+**Table 3: Reconstruction of the reverse axis from the original natural pair.**
+
+This result is a paired-prediction diagnostic.
+
+It shows that the ranking signal can be recovered from the natural-pair structure without an additional reverse call or labels.
+
+It is therefore relevant to PREDICTIVE score construction.
+
+It is not MECHANISM evidence.
+
+In particular, reconstruction does not show that the signal is independent of the fixed natural-pair construction.
+
+It does not establish that the same reconstruction holds for independently authored evidence.
+
+It does not identify why the paired answers produce the observed ranking.
+
+The bounded interpretation is that the natural-pair design contains a mechanically recoverable ranking axis.
+
+## 4.5 Transfer across model panels
+
+A procedure fixed using Qwen3.5-4B transfers to Ling-3.0-tiny with AUROC \(0.723\), with interval \([0.682,0.765]\).
+
+Ling-3.0-tiny's own procedure obtains AUROC \(0.896\), with interval \([0.873,0.916]\).
+
+The paired AUROC difference between the transferred and within-panel procedures is \(-0.173\), with interval \([-0.217,-0.130]\).
+
+At the item level, Qwen3.5-4B and Ling-3.0-tiny scores have Spearman correlation \(0.496\) over 574 HC items.
+
+| Evaluation | AUROC | Risk@80 | Item-level association |
+|---|---:|---:|---:|
+| Qwen procedure transferred to Ling | 0.723 [0.682, 0.765] | — | — |
+| Ling's own procedure | 0.896 [0.873, 0.916] | — | — |
+| Qwen transfer minus Ling own | -0.173 [-0.217, -0.130] | — | — |
+| Qwen--Ling score association | — | — | Spearman 0.496 |
+
+**Table 4: Cross-panel procedure transfer.**
+
+The transfer result is PREDICTIVE evidence.
+
+It indicates that a procedure fixed on Qwen3.5-4B retains ranking ability when applied to Ling-3.0-tiny.
+
+The transferred AUROC is lower than Ling's within-panel AUROC.
+
+The difference is consistent with panel-specific calibration or response structure.
+
+The item-level correlation of \(0.496\) is neither negligible nor near-perfect.
+
+Thus, an aggregate component of the signal transfers, but item-level risk scores are not invariant across the two panels.
+
+This result does not establish transfer to other models, domains, prompting regimes, or evidence formats.
+
+## 4.6 Direction \(\times\) evidence-construction analysis
+
+The Round10 analysis crosses evidence direction with evidence construction.
+
+The design distinguishes evidence agreeing with the initial consensus from evidence contradicting it.
+
+It also distinguishes natural evidence from independent counter-evidence.
+
+The analysis contains 16 items and 178 logical calls: 16 generation + 2 audit + 160 inference. Inference validity was 145/160; generation parsing was valid for 10/16 items, while 6/16 were format-invalid but recorded, loose-extracted, and audited. The direction audit found 10/16 clean agree sentences and 10/16 clean contradict sentences. Across the \(2\times2\) design, the CONTRADICT-minus-AGREE direction contrast is \(+0.44\), with interval \([0.24,0.65]\).
+
+| Contrast | Direction contrast |
+|---|---:|
+| Overall CONTRADICT minus AGREE | +0.44 [0.24, 0.65] |
+| Wrong items | +0.5062 [0.2438, 0.7625] |
+| Correct items | +0.3688 [0.1312, 0.6500] |
+| Consensus=yes | +0.3727 [0.1731, 0.6200] |
+| Consensus=no | +0.5800 [0.1500, 0.8667] |
+
+**Table 5: Direction contrasts in the Round10 analysis.**
+
+The overall contrast is mechanism-oriented descriptive evidence for direction-sensitive behavior under the tested protocol.
+
+The within-stratum estimates are descriptive source results; their small cells and the parser/direction audits below limit interpretation.
+
+The overall contrast should not be read as a causal effect.
+
+It is not a mediation estimate.
+
+It does not establish that construction has no role.
+
+For wrong consensuses, the as-assigned independent-CONTRADICT cell flips \(35/37\) cases. After direction auditing, the clean subset is \(30/32\) across 7 clean items.
+
+The post-hoc Probe1 extension gives an as-assigned total of \(44/46\); it adds 2 items / 9 agent rows, uses a post-hoc direction decomposition, and relies on one batched direction audit. It is not a fully audited clean result, an AUROC result, or a generalization test.
+
+The natural mirror for wrong consensuses is consensus-agreeing.
+
+It flips only \(0.075\) of those cases.
+
+These comparisons support a direction-sensitive interpretation within the tested design.
+
+They do not validate independent counter-evidence as a separate predictor.
+
+The direction-clean construction comparison contains only \(n=3\) items.
+
+The small cell limits precision and makes construction-specific conclusions fragile.
+
+The direction-clean analysis therefore cannot rule out a small construction effect.
+
+The direction-clean comparison also does not establish general equivalence between natural and independent evidence.
+
+The as-assigned independent-CE analysis contains direction-label noise.
+
+Five of eight wrong-item AGREE sentences were audited as actually contradicting the evidence.
+
+This observation is important for interpretation.
+
+An as-assigned construction contrast can confound evidence construction with evidence direction.
+
+The clean analysis addresses that issue descriptively, but its small cell prevents a strong general conclusion.
+
+## 4.7 Independent counter-evidence is not an independent predictor
+
+Independent claim-only counter-evidence is included to probe the behavioral account.
+
+It is not included as a second validated reliability predictor.
+
+Its role is to test whether direction-sensitive updating persists when the evidence construction is varied.
+
+Accordingly, independent CE belongs to the MECHANISM analysis.
+
+It should not be treated as an independent predictive signal.
+
+The natural-pair score is evaluated as the CST-Bench reliability signal.
+
+Independent CE tests whether the response pattern is compatible with direction-gated updating beyond the original natural-pair presentation.
+
+This distinction prevents a mechanism result from being double-counted as predictive evidence.
+
+It also prevents the independent-CE probe from being interpreted as a separate validated risk model.
+
+The available independent-CE result does not establish independent predictive power.
+
+Nor does it establish that independent claim-only evidence is a generally reliable counter-evidence format.
+
+The clean direction analysis is informative about the tested response pattern, but its small cells constrain the inference.
+
+No causal or mediation claim follows from the contrast.
+
+## 4.8 Additional scope checks
+
+The auxiliary checks place boundaries on how broadly the VitaminC result should be interpreted.
+
+On BoolQ, the reported AUROC is \(0.449\) \([0.308,0.579]\) when reversed.
+
+This does not provide positive evidence for the same predictive behavior outside the primary VitaminC evaluation.
+
+FEVER provides no usable natural pairs.
+
+Its Jaccard value is \(1.000\), so that result does not constitute a usable natural-pair validation.
+
+The S&P500 as-of sequential analysis is null.
+
+These checks do not invalidate the VitaminC findings.
+
+They do show that the protocol's behavior is not established uniformly across the auxiliary settings.
+
+They also reinforce the need to distinguish a result on the frozen primary cohort from a claim about general reliability measurement.
+
+The current evidence supports reporting the VitaminC analysis as a bounded evaluation.
+
+It does not support presenting CST-Bench as validated across all domains or temporal settings.
+
+## 4.9 Summary and scope
+
+On the frozen VitaminC cohort, the gold-opposing natural-pair probe yields AUROC \(0.943\) \([0.924,0.960]\) for Qwen3.5-4B.
+
+It yields AUROC \(0.896\) \([0.873,0.916]\) for Ling-3.0-tiny.
+
+The single-point gpt-6-astra evaluation yields AUROC \(0.969\) \([0.935,0.995]\).
+
+The natural-mirror flip rates are asymmetric between correct and wrong consensus decisions.
+
+The aggregate rates are \(0.902\) for correct decisions and \(0.075\) for wrong decisions.
+
+The panel-specific rates show the same qualitative ordering.
+
+The natural-pair reconstruction has Spearman correlation \(0.998\) with the reverse axis.
+
+It retains approximately \(98.7\%\) and \(97.0\%\) of the reported ranking power for Qwen3.5-4B and Ling-3.0-tiny.
+
+A single cross-panel portability check applying the Qwen-fixed procedure to Ling obtains AUROC \(0.723\) \([0.682,0.765]\).
+
+The item-level score association is Spearman \(0.496\).
+
+These are PREDICTIVE results for the frozen protocol; they are not evidence of model-independent or out-of-domain generalization.
+
+The Round10 analysis supplies MECHANISM evidence for direction-sensitive behavior.
+
+Its overall CONTRADICT-minus-AGREE direction contrast is \(+0.44\) \([0.24,0.65]\).
+
+The as-assigned independent-CONTRADICT cell flips \(35/37\) wrong-consensus cases. After direction auditing, the clean subset is \(30/32\) across 7 clean items.
+
+The post-hoc Probe1 extension gives an as-assigned total of \(44/46\); it adds 2 items / 9 agent rows, uses a post-hoc direction decomposition, and relies on one batched direction audit. It is not a fully audited clean result, an AUROC result, or a generalization test.
+
+Those results do not establish general rigidity to counter-evidence.
+
+They do not establish causal mediation.
+
+They do not establish a general construction-independent mechanism.
+
+They do not establish independent-CE prediction or a financial-prediction claim.
+
+The result is best characterized as a reliability-measurement protocol under the frozen VitaminC natural-pair design, paired with a direction-gated behavioral regularity.
+
+Its validity is constrained by the natural-pair construction.
+
+It is also constrained by the tested domains and panels.
+
+The small wrong-item and direction-clean cells impose additional uncertainty.
+
+The auxiliary checks further limit generalization beyond the frozen VitaminC setting.
+
+
+# 5 Boundaries, Honest Negatives, and Analysis
+
+This section delimits what CST-Bench is and is not. CST-Bench is a
+reliability-measurement instrument: a pre-outcome, label-free stress-test
+protocol whose fixed gold-opposing natural-pair probe separates correct from
+wrong consensus decisions. It is not a universal test of counter-evidence
+handling, not a claim about why panels fail, and not a predictor built from
+independent counter-evidence. Every boundary below is reported as a negative
+result rather than repaired through reinterpretation; each negative is
+explicit, and none is silently dropped.
+
+All numbers in this section are observations from frozen result files; source blocks are attached
+locally to the relevant boundary and mechanism paragraphs. The section has two
+parts: axis-native boundaries (Section 5.1) and the separation between mechanism
+probes and predictors (Section 5.2). Answer-prior and placebo controls are
+reported with the main scope checks in Section 4.8, while limitations are
+summarized throughout this section and in Section 6.
+
+**Context.** Under the natural mirror—the reverse of an item's own evidence, a
+near-duplicate sentence that argues *against* the item's gold—a five-agent
+consensus panel flips its answer with probability 0.902 when the consensus is
+correct (Qwen 0.843; Ling 0.703) and 0.075 when it is wrong (Qwen 0.095; Ling
+0.029). The label-free score RS_q = −BF_q ranks consensus errors with AUROC
+0.943 [0.924, 0.960] (Qwen, 567 HC items, 65 wrong), 0.896 [0.873, 0.916]
+(Ling, 574 HC items), and 0.969 [0.935, 0.995] (gpt-6-astra single point,
+96 HC, 8 wrong). These results motivate the instrument; they do not by
+themselves establish axis-invariant behavior. The remainder of this section
+shows that the instrument's validity is explicitly bounded.
+
+## 5.1 Axis-native boundaries
+
+The probe's power derives from its direction—it argues against the item's
+gold—and from the availability of natural counter-evidence, not from
+near-duplicate overlap per se. On axes where these preconditions fail, the
+signal reverses, becomes vacuous, or is null. Three axis-native boundaries are
+reported: BoolQ (reversal), FEVER (vacuous), and S&P500 (null).
+
+### 5.1.1 BoolQ: direction reversed under negation-prefix reversal
+
+On a frozen balanced BoolQ cohort (100 items, 50 yes / 50 no; pipeline valid
+100%), the primary ranking reverses: AUROC(RS_q, wrong | HC) = 0.449
+[0.308, 0.579], below 0.5. This is a negative result for the intended ranking
+direction, not a weak positive. The permutation check fails in the intended
+direction (observed 0.449 < 0.612, the 95th percentile of the permutation
+distribution), and Risk@80 is not significant. Every frozen gate that depends
+on the intended direction therefore fails on BoolQ.
+
+The construction explains why this axis cannot instantiate the probe. BoolQ
+has no natural counter-evidence: the frozen reverse operation is a
+negation-prefix transformation, a synthetic reversal that does not supply a
+natural evidence-level contrast. Earlier evidence already showed that
+synthetic reversal is weak or non-separating even on VitaminC; BoolQ has no
+natural counter-evidence at all, so on this axis the probe reduces to a
+generic perturbation rather than a decision-relevant reversal.
+
+The label subgroups diverge: AUROC is 0.073 [0.005, 0.169] on the native-no
+stratum and 0.745 [0.579, 0.889] on the native-yes stratum. This reproduces,
+in risk orientation, the answer-prior confound observed in earlier BoolQ work:
+when natural counter-evidence is absent, the score re-associates with the
+yes/no structure of the item rather than with error. The placebo flip is clean
+(0.052) and the pipeline is fully valid, so the negative is not attributable
+to pipeline invalidity; it marks the limit of substituting negation-prefix
+reversal for natural counter-evidence. The subgroup divergence is reported as
+an observed boundary, not as evidence for a specific causal mechanism.
+
+### 5.1.2 FEVER: vacuous under the pair-construction requirement
+
+FEVER cannot provide the pair structure the probe requires. Verification found
+zero same-claim SUPPORTS/REFUTES natural pairs in the validation split—no
+same-claim pair in which one verdict is SUPPORTS and the other REFUTES. A
+near-duplicate claim-pair construction was attempted with an offline semantic
+audit; the paired REFUTES claim's evidence was almost always the same (or
+near-identical) sentence as the SUPPORTS evidence, with evidence overlap
+Jaccard 1.000. Only 1 of 60 candidate pairs passed both audit judgments.
+
+Because the reverse operation cannot be implemented as a natural
+counter-evidence swap, the probe is vacuous for FEVER. No agent calls were made
+on FEVER and no result is claimed. This is a structural mismatch in pair
+construction—an empirically verified construction boundary—not a behavioral
+null estimate.
+
+### 5.1.3 S&P500: null in an as-of sequential setting
+
+The S&P500 analysis is an as-of sequential stress test in a non-pair
+sequential setting. The result is null. No alpha claim is made: the analysis
+does not establish returns, excess performance, or a deployable financial
+predictor, and it does not support any claim of predictability on the
+financial axis. The S&P500 boundary is reported to make the axis-native scope
+explicit rather than to imply any financial conclusion.
+
+### 5.1.4 Summary: the signal is axis-native
+
+Taken together, the axis-native results are heterogeneous: VitaminC supports
+the intended direction (AUROC 0.943/0.896/0.969); BoolQ reverses it (0.449);
+FEVER is vacuous under the pairing requirement; and S&P500 is null in a
+non-pair sequential setting. The pattern is a specificity result, not a
+contradiction of the main finding: it supports the interpretation that the
+risk signature is specifically tied to the fixed gold-opposing natural-pair direction,
+not to arbitrary perturbations. CST-Bench should be applied
+when the task supplies a semantically appropriate natural-pair axis; the
+instrument's claims do not generalize to arbitrary axes, and we state that
+boundary explicitly.
+
+## 5.2 Mechanism probes versus predictors
+
+Intervention-derived features that reveal stable behavioral differences are
+mechanism probes. They become predictors only if they rank errors in an
+outcome-independent, out-of-sample-validated way; the two are not
+interchangeable. This rule is applied to three candidates below: the
+independent claim-only counter-evidence score (retained as a mechanism probe,
+not a predictor), the selective-responsiveness score E_sel (dropped), and a
+graph-augmented CST framing (dropped).
+
+### 5.2.1 Independent claim-only counter-evidence: a probe, not a predictor
+
+Independent counter-evidence—counter-evidence generated from the claim alone,
+textually independent of the natural mirror—shows a descriptive behavioral contrast under the tested protocol:
+
+rates under decision-relevant independent counter-evidence exceed the topic-matched,
+decision-irrelevant placebo. However, the corresponding preregistered placebo ceiling (G4)
+fails in the W2 v1 and both strict analyses, so these results do not constitute clean
+placebo-controlled validation of an independent-CE effect. This makes independent counter-evidence useful as a bounded, mechanism-oriented probe. It is not, however, a validated independent
+predictor.
+
+The independent score must be reported by protocol version. The rows below are not a pooled estimate; they are separate analyses with different protocol and cohort definitions. W2 v1 is an exploratory, non-final protocol that predates the stricter TARGET_SPEC and is shown for transparency rather than promoted as the primary independent-prediction endpoint. Under the final strict TARGET_SPEC analyses, no independent predictive increment was established.
+
+| Protocol / cohort | \(S_{\mathrm{ind}}\) AUROC | OOF increment over \(S_{\mathrm{natural}}\) | Interpretation |
+|---|---:|---:|---|
+| W2 v1 (cohort HC=96/wrong=8; metric n=96, 50 pairs) | 0.983 | +0.045 [0.015, 0.084] | Exploratory, non-final protocol; not predictive validation |
+| strict TARGET_SPEC, larger cached (cohort HC=96/wrong=8; \(S_{\mathrm{ind}}\) n=72, 42 pairs; OOF n=72, wrong=5) | 0.699 (CI includes 0.5) | +0.027 [0.000, 0.058] | Strict target; no established independent increment |
+| strict TARGET_SPEC, 25-pair (cohort HC=47/wrong=3; \(S_{\mathrm{ind}}\)/OOF n=46, 25 pairs) | 0.624 [0.286, 0.856] | +0.004 [-0.074, 0.047] | CI includes 0.5; no detectable increment |
+
+**Table 6: Protocol-specific independent counter-evidence results; mechanism probe only.**
+
+The ranking standard is deliberately strict. A predictor must rank errors in an
+outcome-blind, label-free, out-of-sample-validated manner once the resource is fixed,
+and its increment must be distinguishable from the natural-pair score. The final strict
+TARGET_SPEC S_ind result does not meet this standard; W2 v1 remains an exploratory
+positive diagnostic rather than a validated primary endpoint. We therefore never present S_ind, or any Δ_CE quantity, as an
+independent predictor. The only validated pre-outcome ranking signal in this
+paper remains the primary natural-pair score RS_q; S_natural is a separate natural-mirror
+diagnostic, and independent counter-evidence is presented exclusively as a mechanism probe.
+
+### 5.2.2 E_sel is dropped: a reparameterization
+
+The selective-responsiveness score E_sel was proposed as a new behavioral axis
+(Round8 mechanism M-A) and was falsified on frozen data. E_sel is a
+deterministic reparameterization of the two existing flip rates
+(p_nat, p_placebo), so it cannot reveal a new axis. Its ranking adds nothing
+over S_natural: the paired difference E_sel_nat − S_natural is −0.032
+[−0.104, +0.004], a CI that touches zero. Its placebo leg is equivalent to the
+answer prior in ranking: p_placebo − 1[consensus=yes] = +0.004 [−0.115,
++0.110], with item-level ρ(E_sel_nat, p_placebo) = 0.897.
+
+The falsifiable prediction E_sel_wrong > E_sel_correct was statistically real
+on frozen data but did not survive decomposition. Within the consensus-direction-stratified
+analysis, the placebo leg is largely answer-prior-like and does not provide a wrong-specific
+ranking signal; a residual direction-normalized contrast remains unresolved. E_sel is therefore dropped as a novel
+mechanism and as a score; no independent E_sel claim is retained anywhere in the paper. Its
+natural-pair component does not add a new contribution.
+
+### 5.2.3 Graph study: dropped
+
+A graph-augmented CST framing was evaluated with three frozen-data probes and
+is dropped. The evidence graph is degenerate by construction: effective support
+is ≈ 1.0 (1.04/1.02), with only 2 unique cited identifiers per item, so
+evidence-overlap, diversity, and concentration features carry almost no
+item-level variance. The proposed consensus-opposing retention/flip feature is
+a mirror-image re-encoding of the existing direction probe (Pearson vs
+S_natural = −0.79; AUROC 0.74 ≤ S_natural 0.83; paired bootstrap unstable at
+n=16), and matched-consensus separation (5/5 agreement; wrong-n=5) merely
+reproduced the known gold-opposing direction probe. Graph augmentation is
+therefore unsupported by the current evidence, and we retain the simpler CST
+analysis; this says nothing about graphs in general—only that this
+construction, with this evidence-generation regime (a single shared evidence
+packet) and this probe set, does not establish an independent contribution.
+
+### 5.2.4 Rule summary
+
+The rule is narrow and is stated as a boundary: intervention-derived probes
+are predictors only if they provide an outcome-independent, out-of-fold-
+validated ranking. The independent-counter-evidence, E_sel, and graph analyses
+do not satisfy that criterion. They are either retained exclusively as probes
+(independent counter-evidence) or dropped outright (E_sel; the graph framing),
+never relabeled as predictive gains.
+
+
+# 6 Conclusion
+
+## 6.1 Empirical phenomenon
+
+CST-Bench identifies a pre-outcome, label-free regularity in VitaminC consensus panels. The natural-pair probe fixes an evidence direction against the item's gold label. The natural mirror flipped correct consensus at 0.902 and wrong consensus at 0.075. Corresponding rates were 0.843 and 0.095 for Qwen3.5-4B and 0.703 and 0.029 for Ling-3.0-tiny.
+
+Using \(RS_q=-BF_q\) as the primary predictive score, AUROC for identifying wrong high-confidence consensus decisions was 0.943 [0.924, 0.960] for Qwen3.5-4B, with Risk@80 of 0.846 [0.638, 0.981]. Ling-3.0-tiny AUROC was 0.896 [0.873, 0.916], with Risk@80 of 0.422. The gpt-6-astra single-point evaluation yielded AUROC 0.969 [0.935, 0.995].
+
+The Qwen evaluation included 567 high-confidence consensus decisions and 65 wrong decisions; the Ling evaluation included 574 high-confidence consensus decisions; and the gpt-6-astra evaluation included 96 high-confidence consensus decisions and 8 wrong decisions.
+
+The natural-pair property is further supported by \(S_{\text{pair}}\), computed from the two original answers. It reconstructed the reverse-axis ranking with Spearman correlation 0.998 and retained approximately 98.7% and 97.0% of the \(RS_q\) ranking. This is a property of the natural-pair construction, not evidence that independent counter-evidence is itself a predictor.
+
+## 6.2 Protocol contribution
+
+CST-Bench specifies a reproducible measurement procedure with 5 consensus calls, 10 main probe calls, and 10 auxiliary calls. It uses frozen gates, an outcome firewall, preregistration, and pair-grouped confidence intervals. The VitaminC resource contains 300 frozen natural pairs and 600 items.
+
+A single cross-panel portability check applying the Qwen-fixed procedure to Ling yielded AUROC 0.723 [0.682, 0.765]. Item-level Spearman correlation between Qwen and Ling \(RS_q\) values was 0.496. This check is nontrivial but imperfect; it is not evidence of model-independent or out-of-domain generalization.
+
+## 6.3 Boundaries and honest negatives
+
+The protocol is axis-native rather than universally portable. BoolQ produced reversed RS_q AUROC of 0.449 [0.308, 0.579] using a negation-prefix reverse; the associated permutation failed. FEVER had no usable natural pairs because evidence-overlap Jaccard was 1.000. The S&P500 evaluation was an as-of sequential stress test with a null result and supports no alpha claim.
+
+The controls also constrain interpretation. Answer-prior AUROCs were 0.671 for Qwen3.5-4B and 0.634 for Ling-3.0-tiny, compared with label-only AUROC 0.51. The clean neutral placebo flip rate was 0.038; the content-level matched placebo ranged from 0.51 to 0.56, with rates of 0.92 for yes-answerers and 0.09 for no-answerers. These results support reporting direction and placebo asymmetry explicitly, but do not support reducing the signal to generic perturbation sensitivity.
+
+The Round10 2x2 analysis provided mechanism-oriented descriptive evidence, not an additional independent prediction benchmark. It used 16 generation + 2 audit + 160 inference calls (178 logical calls); 145/160 inference rows were valid, generation parsing was valid for 10/16 items, and 6/16 were format-invalid but recorded and audited. The overall CONTRADICT-minus-AGREE direction contrast was +0.44 [0.24, 0.65]. The as-assigned independent-CONTRADICT cell flipped wrong consensus in 35/37 cases; after direction auditing, the clean subset was 30/32 across 7 clean items. The post-hoc Probe1 extension gives an as-assigned total of 44/46, adds 2 items / 9 agent rows, is post-hoc, and relies on one batched direction audit. Within the direction-stratified comparison, the natural mirror was numerically similar to the direction-clean independent condition; this does not establish equivalence. The direction-clean construction comparison had \(n=3\) items, so a small residual effect was not ruled out. This comparison is not a causal or mediation analysis, an AUROC result, or a generalization test.
+
+The selective-responsiveness score \(E_{\text{sel}}\) was dropped in Round9. The graph study was also dropped. Neither analysis is part of the final contribution.
+
+## 6.4 Deepest bounded conclusion
+
+The strongest supported conclusion is a direction-gated behavioral regularity: under the frozen CST-Bench protocol, a gold-opposing natural-pair probe can expose which consensus decisions are unreliable before outcome access.
+
+The evidence does not establish rigidity to counter-evidence in general, a universal mechanism of LLM failure, or an independent-counter-evidence predictor. The mechanism-oriented evidence is consistent with a direction-sensitive interpretation, but does not justify a causal or mediation claim. The small clean comparison cell leaves a small residual effect unresolved.
+
+CST-Bench should therefore be interpreted as a reliability-measurement protocol evaluated under the frozen VitaminC natural-pair design, together with a bounded mechanism probe. Its predictive result comes from the pre-outcome natural-pair score; its mechanism result comes from direction-controlled behavioral comparisons. The two claims should not be merged.
+
+# 7 Reproducibility and Artifact Inventory
+
+This section inventories the repository artifacts that accompany the submission.
+It distinguishes frozen inputs, pre-outcome features, outcome labels, model and
+run records, analysis outputs, and source/hash records. It does not claim that
+every listed artifact is reproduced inside the PDF; the paths below identify the
+authoritative repository locations.
+
+## 7.1 Frozen data artifacts
+
+The repository preserves the VitaminC frozen manifest containing 300 natural
+pairs and 600 items at `consensus_stress/round3/selection_manifest.json`. Pair
+ordering is fixed; a changed ordering constitutes a new artifact rather than a
+reproduction of the frozen run.
+
+Labels remain separate from pre-outcome features. The label ledger is stored at
+`consensus_stress/round3/labels_ledger.json`, and pre-outcome feature records at
+`consensus_stress/round3/preoutcome_features.jsonl`. The artifact record
+identifies every field available before outcome access and records that labels
+are merged only after those features are frozen.
+
+SHA-256 hashes for manifests, ledgers, feature files, and preregistration
+materials are taken from stored artifacts, not substituted with hashes from
+regenerated files.
+
+## 7.2 Protocol and preregistration map
+
+The call-level CST-Bench record contains:
+
+- 5 consensus calls;
+- 10 main probe calls;
+- 10 auxiliary calls;
+- frozen gates;
+- the outcome firewall;
+- preregistration procedures; and
+- pair-grouped confidence intervals.
+
+Pilot and main preregistration materials are under
+`consensus_stress/round2/phase2_pilot/` and
+`consensus_stress/round3/preregistration.md`. The Ling contract adaptation is
+documented under `consensus_stress/round4/`, and the cross-model analysis is at
+`consensus_stress/round4/analysis/ling_adapted_crossmodel.md`.
+
+The registry records the main protocol as `cs-paper-vitaminc-20260913` and the
+Ling adaptation as `cs-round4-ling-adapted-crossmodel-20260913`; the registry
+is stored at `consensus_stress/registry.yaml`. A protocol-to-artifact mapping
+connects each reported analysis to its manifest, preregistration, run records,
+pre-outcome feature file, analysis-script directory, and hash file, while
+separating frozen inputs from files generated after outcome labels are merged.
+
+## 7.3 Model and run records
+
+The main VitaminC panels are Qwen3.5-4B and Ling-3.0-tiny. The gpt-6-astra
+result is identified as a single-point evaluation; no additional model or run
+counts are inferred. Large-model records are stored under
+`consensus_stress/round6/large_model/`.
+
+Analysis scripts are identified through relevant round-specific script
+directories and artifact locations, without introducing script names absent from
+the frozen package. Model, contract, run, and sampling records are listed
+separately so that procedural transfer is not confused with item-level score
+agreement.
+
+## 7.4 Independent counter-evidence artifacts
+
+Independent counter-evidence materials are stored under
+`consensus_stress/round7/ind_ce/`. The W2 v1 record and its strict companion
+files include `preregistration.md`, `artifact_hashes.json`,
+`frozen_hashes.json`, `records.jsonl`, and `preoutcome_features.jsonl`; the
+same directory also stores `strict_preregistration.md`, `strict_records.jsonl`,
+and `strict_preoutcome_features.jsonl`. The parallel strict package is under
+`consensus_stress/round7/ind_ce_strict/` and contains its own `preregistration.md`,
+`artifact_hashes.json`, `records.jsonl`, and `preoutcome_features.jsonl`.
+
+Round9 Probe1 results are recorded at
+`consensus_stress/round9_mechanism/probe1_results.md`, and the Probe1 decision
+record at `consensus_stress/round9_mechanism/probe1_decision.md`. The clean
+independent result and Probe1-inclusive result remain separate records. All
+independent counter-evidence results are marked as mechanism evidence and are
+not combined with the natural-pair score to claim independent prediction.
+
+## 7.5 Statistical reporting anchors
+
+The manuscript reports the following fixed predictive measurements without
+changing precision:
+
+- Qwen3.5-4B AUROC: 0.943 [0.924, 0.960];
+- Qwen3.5-4B Risk@80: 0.846 [0.638, 0.981];
+- Ling-3.0-tiny AUROC: 0.896 [0.873, 0.916];
+- Ling-3.0-tiny Risk@80: 0.422; and
+- gpt-6-astra single-point AUROC: 0.969 [0.935, 0.995].
+
+The natural-mirror reporting anchors are overall correct-consensus and
+wrong-consensus flip rates of 0.902 and 0.075, respectively, with Qwen rates of
+0.843 and 0.095 and Ling rates of 0.703 and 0.029.
+
+The natural-pair reconstruction reports Spearman correlation
+\(S_{\text{pair}}\) = 0.998 and approximately 98.7% and 97.0% ranking
+retention. This is a natural-pair property check, not an independent-prediction
+analysis.
+
+Separate control and boundary records contain:
+
+- answer-prior AUROC 0.671 for Qwen3.5-4B;
+- answer-prior AUROC 0.634 for Ling-3.0-tiny;
+- label-only AUROC 0.51;
+- Qwen probe AUROC 0.943;
+- clean neutral placebo flip rate 0.038;
+- content-level matched placebo range 0.51--0.56;
+- yes-answerer and no-answerer rates of 0.92 and 0.09;
+- BoolQ AUROC 0.449 [0.308, 0.579];
+- FEVER evidence-overlap Jaccard 1.000; and
+- the null S&P500 as-of sequential stress test, which supports no alpha claim.
+
+## 7.6 Mechanism-versus-prediction audit
+
+The artifact audit separates predictive reliability measurements from mechanism
+evidence. Natural-pair AUROC and Risk@80 results are predictive reliability
+measurements. Round10 is direction-dominant mechanism-oriented descriptive evidence and records 16
+items, 178 logical calls, direction contrast +0.44 [0.24, 0.65], as-assigned independent-CONTRADICT flips of 35/37; direction-audited subset 30/32
+across 7 clean items; post-hoc Probe1 as-assigned total 44/46; and a direction-clean
+construction comparison with \(n=3\) items. Within that small direction-stratified
+comparison, the natural mirror is approximately the direction-clean independent condition; the small direction-clean construction cell does not rule out a small residual
+contrast, and the comparison is not causal or mediation evidence.
+
+The independent claim-only record reports protocol-specific W2 v1 and strict
+TARGET_SPEC estimates with cohort and version labels. \(S_{\text{ind}}\) is a
+mechanism probe, not an independent predictor. \(E_{\text{sel}}\) is marked as
+dropped in Round9, and the graph study is marked as dropped; neither supports
+C1, C2, or C3.
+
+## 7.7 Source map and hash audit
+
+The source map is anchored to the Round7 paper draft at
+`consensus_stress/round7/paper/naacl_draft_v5_astra.md`, the Round8 theory
+synthesis at `consensus_stress/round8_theory/grand_theory_synthesis.md`, and the
+Round9 reframing at
+`consensus_stress/round9_mechanism/paper_scientific_question_v2.md`. It also
+identifies the Round9 Probe1 results and decision records.
+
+Each source-map entry distinguishes:
+
+- frozen data and manifests;
+- preregistration files;
+- pre-outcome features;
+- post-outcome labels;
+- model and run records;
+- analysis scripts; and
+- stored hashes.
+
+The hash audit covers frozen manifests, the labels ledger, pre-outcome features,
+records, preregistrations, and relevant analysis files. It preserves the
+SHA-256 pair-ordering convention. The outcome-firewall merge is inspectable
+through the order: (1) freeze the manifest; (2) compute pre-outcome features;
+(3) hash the artifacts; and (4) merge labels for evaluation.
+
+This organization supports reproduction of the reported reliability
+measurements, direction-gated mechanism checks, and negative results without
+expanding claims beyond the frozen evidence. The central contribution remains
+an outcome-blind, label-free scoring protocol conditional on a fixed offline
+gold-conditioned natural-pair resource, together with a bounded direction-gated
+behavioral interpretation.
+
+The distinction between predictive reliability measurement and mechanism
+evidence is preserved throughout the manuscript and artifact records. No
+causal, mediation, alpha, universal-rigidity, or universal-SOTA claim is made.

@@ -1,0 +1,262 @@
+{
+  "artifact": "citation_context_extraction_live",
+  "status": "live_current_manuscript",
+  "generated_at": "2026-09-16T22:08:58+08:00",
+  "draft": "consensus_stress/paper_v6/submission_v1/manuscript.md",
+  "draft_sha256": "eab44a229c494e9c933f0c330b624b19127f737477d8551aa41af399efa6bf52",
+  "draft_line_count": 1244,
+  "citation_command_count": 10,
+  "citation_key_reference_count": 25,
+  "placeholder_count": 0,
+  "extraction_rule": "Every live \\citep{...} occurrence is captured in source order; paragraph text is normalized across wrapped Markdown lines before sentence extraction. [CITE] placeholders are counted separately and are not used as live slots.",
+  "historical_provenance": {
+    "status": "historical_pre_reconcile_placeholder_snapshot",
+    "artifact": "consensus_stress/paper_v6/references/citation_contexts.json",
+    "artifact_sha256": "c04240c134ac0be785ccffe6e57e880d106b5c36ac69a3393333a2b2628f1e3a",
+    "artifact_line_count": 89,
+    "draft": "consensus_stress/paper_v6/archive/pre_reconcile_20260916/naacl_draft_v6.md",
+    "draft_sha256": "d2d239618ad10c21d5d88cb639853831da4a7dcd7ecdd61a1e3cfd0383c5f62e",
+    "placeholder_count": 10,
+    "related_historical_map": "consensus_stress/paper_v6/references/citation_map.md",
+    "related_historical_map_sha256": "e34db19e15c19a08e536046795178eddcfd245f09187a8bb685eba193c025512",
+    "note": "This historical snapshot was used for the earlier relay candidate request. It is not the live citation map for submission_v1."
+  },
+  "contexts": [
+    {
+      "slot": "C01",
+      "source_order": 1,
+      "status": "live",
+      "draft_path": "consensus_stress/paper_v6/submission_v1/manuscript.md",
+      "draft_line": 30,
+      "paragraph_line_range": [
+        29,
+        34
+      ],
+      "section": "1.1 Motivation: multi-agent consensus is unreliable",
+      "section_path": [
+        "CST-Bench: Measuring Consensus Reliability with Direction-Gated Natural-Pair Stress Tests",
+        "1 Introduction",
+        "1.1 Motivation: multi-agent consensus is unreliable"
+      ],
+      "citation_command": "\\citep{du-etal-2024-multiagent-debate}",
+      "citation_keys": [
+        "du-etal-2024-multiagent-debate"
+      ],
+      "sentence": "Multi-agent LLM panels—several personas sampled from one or more models that read shared evidence and vote—are a common recipe for fact verification and reasoning \\citep{du-etal-2024-multiagent-debate}.",
+      "paragraph": "Multi-agent LLM panels—several personas sampled from one or more models that read shared evidence and vote—are a common recipe for fact verification and reasoning \\citep{du-etal-2024-multiagent-debate}. Consensus can improve decision procedures, but agreement is not correctness: a panel may converge on the wrong answer, and the convergence can obscure uncertainty that matters before the outcome is known. The practical question is not whether consensus is ever wrong (it is) but whether the reliability of an already-formed consensus decision can be measured without waiting for, or peeking at, the outcome."
+    },
+    {
+      "slot": "C02",
+      "source_order": 2,
+      "status": "live",
+      "draft_path": "consensus_stress/paper_v6/submission_v1/manuscript.md",
+      "draft_line": 187,
+      "paragraph_line_range": [
+        187,
+        187
+      ],
+      "section": "2.1 Self-consistency and sampling-based uncertainty",
+      "section_path": [
+        "2 Related Work",
+        "2.1 Self-consistency and sampling-based uncertainty"
+      ],
+      "citation_command": "\\citep{wang-etal-2022-self-consistency,manakul-etal-2023-selfcheckgpt,kuhn-etal-2023-semantic-uncertainty}",
+      "citation_keys": [
+        "wang-etal-2022-self-consistency",
+        "manakul-etal-2023-selfcheckgpt",
+        "kuhn-etal-2023-semantic-uncertainty"
+      ],
+      "sentence": "Self-consistency, self-checking, and semantic-uncertainty methods estimate reliability from repeated outputs to the same input \\citep{wang-etal-2022-self-consistency,manakul-etal-2023-selfcheckgpt,kuhn-etal-2023-semantic-uncertainty}.",
+      "paragraph": "Self-consistency, self-checking, and semantic-uncertainty methods estimate reliability from repeated outputs to the same input \\citep{wang-etal-2022-self-consistency,manakul-etal-2023-selfcheckgpt,kuhn-etal-2023-semantic-uncertainty}. Confidence calibration, selective prediction, risk--coverage analysis, AURC, and conformal prediction instead use confidence or abstention policies to characterize error risk \\citep{guo-etal-2017-calibration,geifman-elyaniv-2017-selective,angelopoulos-bates-2021-conformal}. These approaches generally treat repeated answers, confidence values, or output distributions as the primary uncertainty object."
+    },
+    {
+      "slot": "C03",
+      "source_order": 3,
+      "status": "live",
+      "draft_path": "consensus_stress/paper_v6/submission_v1/manuscript.md",
+      "draft_line": 187,
+      "paragraph_line_range": [
+        187,
+        187
+      ],
+      "section": "2.1 Self-consistency and sampling-based uncertainty",
+      "section_path": [
+        "2 Related Work",
+        "2.1 Self-consistency and sampling-based uncertainty"
+      ],
+      "citation_command": "\\citep{guo-etal-2017-calibration,geifman-elyaniv-2017-selective,angelopoulos-bates-2021-conformal}",
+      "citation_keys": [
+        "guo-etal-2017-calibration",
+        "geifman-elyaniv-2017-selective",
+        "angelopoulos-bates-2021-conformal"
+      ],
+      "sentence": "Confidence calibration, selective prediction, risk--coverage analysis, AURC, and conformal prediction instead use confidence or abstention policies to characterize error risk \\citep{guo-etal-2017-calibration,geifman-elyaniv-2017-selective,angelopoulos-bates-2021-conformal}.",
+      "paragraph": "Self-consistency, self-checking, and semantic-uncertainty methods estimate reliability from repeated outputs to the same input \\citep{wang-etal-2022-self-consistency,manakul-etal-2023-selfcheckgpt,kuhn-etal-2023-semantic-uncertainty}. Confidence calibration, selective prediction, risk--coverage analysis, AURC, and conformal prediction instead use confidence or abstention policies to characterize error risk \\citep{guo-etal-2017-calibration,geifman-elyaniv-2017-selective,angelopoulos-bates-2021-conformal}. These approaches generally treat repeated answers, confidence values, or output distributions as the primary uncertainty object."
+    },
+    {
+      "slot": "C04",
+      "source_order": 4,
+      "status": "live",
+      "draft_path": "consensus_stress/paper_v6/submission_v1/manuscript.md",
+      "draft_line": 195,
+      "paragraph_line_range": [
+        195,
+        195
+      ],
+      "section": "2.2 Fact verification and evidence-based reasoning",
+      "section_path": [
+        "2 Related Work",
+        "2.2 Fact verification and evidence-based reasoning"
+      ],
+      "citation_command": "\\citep{thorne-etal-2018-fever,wadden-etal-2020-fact,schuster-etal-2021-get}",
+      "citation_keys": [
+        "thorne-etal-2018-fever",
+        "wadden-etal-2020-fact",
+        "schuster-etal-2021-get"
+      ],
+      "sentence": "Fact-verification and evidence-based reasoning benchmarks study whether systems select, assess, or generate claims in relation to supporting evidence \\citep{thorne-etal-2018-fever,wadden-etal-2020-fact,schuster-etal-2021-get}.",
+      "paragraph": "Fact-verification and evidence-based reasoning benchmarks study whether systems select, assess, or generate claims in relation to supporting evidence \\citep{thorne-etal-2018-fever,wadden-etal-2020-fact,schuster-etal-2021-get}. Their labels and evidence structures can provide settings for testing whether a model responds appropriately when evidential direction changes \\citep{schuster-etal-2021-get,thorne-etal-2018-fever,kaushik-etal-2019-counterfactually-augmented}."
+    },
+    {
+      "slot": "C05",
+      "source_order": 5,
+      "status": "live",
+      "draft_path": "consensus_stress/paper_v6/submission_v1/manuscript.md",
+      "draft_line": 195,
+      "paragraph_line_range": [
+        195,
+        195
+      ],
+      "section": "2.2 Fact verification and evidence-based reasoning",
+      "section_path": [
+        "2 Related Work",
+        "2.2 Fact verification and evidence-based reasoning"
+      ],
+      "citation_command": "\\citep{schuster-etal-2021-get,thorne-etal-2018-fever,kaushik-etal-2019-counterfactually-augmented}",
+      "citation_keys": [
+        "schuster-etal-2021-get",
+        "thorne-etal-2018-fever",
+        "kaushik-etal-2019-counterfactually-augmented"
+      ],
+      "sentence": "Their labels and evidence structures can provide settings for testing whether a model responds appropriately when evidential direction changes \\citep{schuster-etal-2021-get,thorne-etal-2018-fever,kaushik-etal-2019-counterfactually-augmented}.",
+      "paragraph": "Fact-verification and evidence-based reasoning benchmarks study whether systems select, assess, or generate claims in relation to supporting evidence \\citep{thorne-etal-2018-fever,wadden-etal-2020-fact,schuster-etal-2021-get}. Their labels and evidence structures can provide settings for testing whether a model responds appropriately when evidential direction changes \\citep{schuster-etal-2021-get,thorne-etal-2018-fever,kaushik-etal-2019-counterfactually-augmented}."
+    },
+    {
+      "slot": "C06",
+      "source_order": 6,
+      "status": "live",
+      "draft_path": "consensus_stress/paper_v6/submission_v1/manuscript.md",
+      "draft_line": 205,
+      "paragraph_line_range": [
+        205,
+        205
+      ],
+      "section": "2.3 Multi-agent debate, consensus, and reliability auditing",
+      "section_path": [
+        "2 Related Work",
+        "2.3 Multi-agent debate, consensus, and reliability auditing"
+      ],
+      "citation_command": "\\citep{du-etal-2024-multiagent-debate,irving-etal-2018-ai-safety-debate}",
+      "citation_keys": [
+        "du-etal-2024-multiagent-debate",
+        "irving-etal-2018-ai-safety-debate"
+      ],
+      "sentence": "Multi-agent debate and deliberation methods study how interaction changes answer formation, aggregation, or reasoning quality \\citep{du-etal-2024-multiagent-debate,irving-etal-2018-ai-safety-debate}.",
+      "paragraph": "Multi-agent debate and deliberation methods study how interaction changes answer formation, aggregation, or reasoning quality \\citep{du-etal-2024-multiagent-debate,irving-etal-2018-ai-safety-debate}. Work on consensus reliability and model auditing examines whether outputs can be trusted under distribution shifts, structured tests, or targeted evaluations \\citep{liang-etal-2022-helm,lin-etal-2022-truthfulqa,ovadia-etal-2019-uncertainty-shift}. Metamorphic and behavioral testing methods similarly use controlled transformations to expose systematic response patterns \\citep{ribeiro-etal-2020-beyond,naik-etal-2018-stress}."
+    },
+    {
+      "slot": "C07",
+      "source_order": 7,
+      "status": "live",
+      "draft_path": "consensus_stress/paper_v6/submission_v1/manuscript.md",
+      "draft_line": 205,
+      "paragraph_line_range": [
+        205,
+        205
+      ],
+      "section": "2.3 Multi-agent debate, consensus, and reliability auditing",
+      "section_path": [
+        "2 Related Work",
+        "2.3 Multi-agent debate, consensus, and reliability auditing"
+      ],
+      "citation_command": "\\citep{liang-etal-2022-helm,lin-etal-2022-truthfulqa,ovadia-etal-2019-uncertainty-shift}",
+      "citation_keys": [
+        "liang-etal-2022-helm",
+        "lin-etal-2022-truthfulqa",
+        "ovadia-etal-2019-uncertainty-shift"
+      ],
+      "sentence": "Work on consensus reliability and model auditing examines whether outputs can be trusted under distribution shifts, structured tests, or targeted evaluations \\citep{liang-etal-2022-helm,lin-etal-2022-truthfulqa,ovadia-etal-2019-uncertainty-shift}.",
+      "paragraph": "Multi-agent debate and deliberation methods study how interaction changes answer formation, aggregation, or reasoning quality \\citep{du-etal-2024-multiagent-debate,irving-etal-2018-ai-safety-debate}. Work on consensus reliability and model auditing examines whether outputs can be trusted under distribution shifts, structured tests, or targeted evaluations \\citep{liang-etal-2022-helm,lin-etal-2022-truthfulqa,ovadia-etal-2019-uncertainty-shift}. Metamorphic and behavioral testing methods similarly use controlled transformations to expose systematic response patterns \\citep{ribeiro-etal-2020-beyond,naik-etal-2018-stress}."
+    },
+    {
+      "slot": "C08",
+      "source_order": 8,
+      "status": "live",
+      "draft_path": "consensus_stress/paper_v6/submission_v1/manuscript.md",
+      "draft_line": 205,
+      "paragraph_line_range": [
+        205,
+        205
+      ],
+      "section": "2.3 Multi-agent debate, consensus, and reliability auditing",
+      "section_path": [
+        "2 Related Work",
+        "2.3 Multi-agent debate, consensus, and reliability auditing"
+      ],
+      "citation_command": "\\citep{ribeiro-etal-2020-beyond,naik-etal-2018-stress}",
+      "citation_keys": [
+        "ribeiro-etal-2020-beyond",
+        "naik-etal-2018-stress"
+      ],
+      "sentence": "Metamorphic and behavioral testing methods similarly use controlled transformations to expose systematic response patterns \\citep{ribeiro-etal-2020-beyond,naik-etal-2018-stress}.",
+      "paragraph": "Multi-agent debate and deliberation methods study how interaction changes answer formation, aggregation, or reasoning quality \\citep{du-etal-2024-multiagent-debate,irving-etal-2018-ai-safety-debate}. Work on consensus reliability and model auditing examines whether outputs can be trusted under distribution shifts, structured tests, or targeted evaluations \\citep{liang-etal-2022-helm,lin-etal-2022-truthfulqa,ovadia-etal-2019-uncertainty-shift}. Metamorphic and behavioral testing methods similarly use controlled transformations to expose systematic response patterns \\citep{ribeiro-etal-2020-beyond,naik-etal-2018-stress}."
+    },
+    {
+      "slot": "C09",
+      "source_order": 9,
+      "status": "live",
+      "draft_path": "consensus_stress/paper_v6/submission_v1/manuscript.md",
+      "draft_line": 219,
+      "paragraph_line_range": [
+        219,
+        219
+      ],
+      "section": "2.4 Stress testing, counterfactual probing, and adversarial evaluation",
+      "section_path": [
+        "2 Related Work",
+        "2.4 Stress testing, counterfactual probing, and adversarial evaluation"
+      ],
+      "citation_command": "\\citep{naik-etal-2018-stress,glockner-etal-2018-breaking,kaushik-etal-2019-counterfactually-augmented}",
+      "citation_keys": [
+        "naik-etal-2018-stress",
+        "glockner-etal-2018-breaking",
+        "kaushik-etal-2019-counterfactually-augmented"
+      ],
+      "sentence": "NLI stress tests, adversarial evaluations, controlled perturbations, and counterfactual or faithfulness probes use structured changes to diagnose model behavior \\citep{naik-etal-2018-stress,glockner-etal-2018-breaking,kaushik-etal-2019-counterfactually-augmented}.",
+      "paragraph": "NLI stress tests, adversarial evaluations, controlled perturbations, and counterfactual or faithfulness probes use structured changes to diagnose model behavior \\citep{naik-etal-2018-stress,glockner-etal-2018-breaking,kaushik-etal-2019-counterfactually-augmented}. These methods motivate treating a targeted intervention as behavioral measurement rather than as a new task score \\citep{ribeiro-etal-2020-beyond,naik-etal-2018-stress}."
+    },
+    {
+      "slot": "C10",
+      "source_order": 10,
+      "status": "live",
+      "draft_path": "consensus_stress/paper_v6/submission_v1/manuscript.md",
+      "draft_line": 219,
+      "paragraph_line_range": [
+        219,
+        219
+      ],
+      "section": "2.4 Stress testing, counterfactual probing, and adversarial evaluation",
+      "section_path": [
+        "2 Related Work",
+        "2.4 Stress testing, counterfactual probing, and adversarial evaluation"
+      ],
+      "citation_command": "\\citep{ribeiro-etal-2020-beyond,naik-etal-2018-stress}",
+      "citation_keys": [
+        "ribeiro-etal-2020-beyond",
+        "naik-etal-2018-stress"
+      ],
+      "sentence": "These methods motivate treating a targeted intervention as behavioral measurement rather than as a new task score \\citep{ribeiro-etal-2020-beyond,naik-etal-2018-stress}.",
+      "paragraph": "NLI stress tests, adversarial evaluations, controlled perturbations, and counterfactual or faithfulness probes use structured changes to diagnose model behavior \\citep{naik-etal-2018-stress,glockner-etal-2018-breaking,kaushik-etal-2019-counterfactually-augmented}. These methods motivate treating a targeted intervention as behavioral measurement rather than as a new task score \\citep{ribeiro-etal-2020-beyond,naik-etal-2018-stress}."
+    }
+  ]
+}

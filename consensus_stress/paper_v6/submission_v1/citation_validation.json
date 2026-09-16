@@ -1,0 +1,605 @@
+{
+  "artifact": "submission_v1_citation_validation",
+  "generated_at": "2026-09-16T22:08:58+08:00",
+  "draft": "consensus_stress/paper_v6/submission_v1/manuscript.md",
+  "draft_sha256": "eab44a229c494e9c933f0c330b624b19127f737477d8551aa41af399efa6bf52",
+  "context_artifact": "consensus_stress/paper_v6/submission_v1/citation_contexts.json",
+  "context_count": 10,
+  "relay_candidate_artifact": "consensus_stress/paper_v6/submission_v1/relay_candidates.json",
+  "relay_model": "gpt-6-astra",
+  "relay_output_is_candidate_only": true,
+  "candidate_validation": {
+    "unique_relay_titles": 16,
+    "verified_or_canonicalized": 12,
+    "unverified_as_returned": 4,
+    "records": {
+      "Improving Factuality and Reasoning in Language Models through Multiagent Debate": {
+        "key": "du-etal-2024-multiagent-debate",
+        "status": "VERIFIED"
+      },
+      "Self-Consistency Improves Chain of Thought Reasoning in Language Models": {
+        "key": "wang-etal-2022-self-consistency",
+        "status": "CORRECTED_METADATA_UNVERIFIED_AS_RETURNED",
+        "correction": "Official arXiv record lists Xuezhi Wang and the canonical eight-author list; relay returned Xiang Lisa Wang and a different ten-author list."
+      },
+      "SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models": {
+        "key": "manakul-etal-2023-selfcheckgpt",
+        "status": "VERIFIED"
+      },
+      "Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation": {
+        "key": "kuhn-etal-2023-semantic-uncertainty",
+        "status": "VERIFIED"
+      },
+      "On Calibration of Modern Neural Networks": {
+        "key": "guo-etal-2017-calibration",
+        "status": "VERIFIED"
+      },
+      "Selective Classification for Deep Neural Networks": {
+        "key": "geifman-elyaniv-2017-selective",
+        "status": "VERIFIED"
+      },
+      "Classification with Valid and Adaptive Coverage": {
+        "key": "romano-sesia-candes-2020-adaptive-coverage",
+        "status": "VERIFIED"
+      },
+      "FEVER: a Large-scale Dataset for Fact Extraction and VERification": {
+        "key": "thorne-etal-2018-fever",
+        "status": "VERIFIED"
+      },
+      "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering": {
+        "key": "yang-etal-2018-hotpotqa",
+        "status": "VERIFIED"
+      },
+      "SciFact: A Dataset for Evidenced-Based Scientific Claim Verification": {
+        "key": "wadden-etal-2020-fact",
+        "status": "CORRECTED_METADATA_UNVERIFIED_AS_RETURNED",
+        "correction": "The relay URL arXiv:2004.14974 resolves to Fact or Fiction: Verifying Scientific Claims, not a paper with the returned SciFact title; canonical ACL metadata is used."
+      },
+      "Holistic Evaluation of Language Models": {
+        "key": "liang-etal-2022-helm",
+        "status": "VERIFIED_SOURCE_SCOPE_ARXIV"
+      },
+      "TruthfulQA: Measuring How Models Mimic Human Falsehoods": {
+        "key": "lin-etal-2022-truthfulqa",
+        "status": "VERIFIED"
+      },
+      "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList": {
+        "key": "ribeiro-etal-2020-beyond",
+        "status": "VERIFIED"
+      },
+      "Stress Test Evaluation for Natural Language Inference": {
+        "key": "naik-etal-2018-stress",
+        "status": "CORRECTED_METADATA_UNVERIFIED_AS_RETURNED",
+        "correction": "Relay arXiv:1809.03006 and authors are unrelated; canonical ACL record is C18-1198 with Naik, Ravichander, Sadeh, Rose, and Neubig."
+      },
+      "Adversarial Examples for Evaluating Reading Comprehension Systems": {
+        "key": "jia-liang-2017-adversarial",
+        "status": "VERIFIED"
+      },
+      "ERASER: A Benchmark to Evaluate Rationalized NLP Models": {
+        "key": "deyoung-etal-2019-eraser",
+        "status": "CORRECTED_METADATA_UNVERIFIED_AS_RETURNED",
+        "correction": "Canonical arXiv metadata uses Nazneen Fatema Rajani, Caiming Xiong, and 2019 arXiv year; relay abbreviated/mis-stated these fields."
+      }
+    }
+  },
+  "bibtex": {
+    "path": "consensus_stress/paper_v6/submission_v1/references.bib",
+    "entries": 22,
+    "verified": 22,
+    "unverified": 0,
+    "policy": "Only source-verified records are included; the four added missing-key records were independently checked against first-party metadata; no UNVERIFIED BibTeX entry is emitted."
+  },
+  "source_checks": [
+    {
+      "key": "angelopoulos-bates-2021-conformal",
+      "source_type": "official arXiv abstract/API metadata",
+      "source_url": "https://arxiv.org/abs/2107.07511",
+      "http_status": 200,
+      "verification": "VERIFIED",
+      "verification_note": "First public arXiv year 2021; A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification."
+    },
+    {
+      "key": "deyoung-etal-2019-eraser",
+      "source_type": "official arXiv abs page + export API metadata",
+      "source_url": "https://arxiv.org/abs/1911.03429",
+      "query_evidence_url": "https://export.arxiv.org/api/query?id_list=1911.03429",
+      "http_status": 200,
+      "query_http_status": 200,
+      "final_url": "https://arxiv.org/abs/1911.03429",
+      "query_final_url": "https://export.arxiv.org/api/query?id_list=1911.03429",
+      "source_sha256": "18231c31461296fbd972dae5fa02833076817fb2411e14365505396a15e1d849",
+      "query_sha256": "47ff19528635c9632d2cb2002ddd756c8cc089c3f661cce5e046daf8c8393a50",
+      "matched_title": "ERASER: A Benchmark to Evaluate Rationalized NLP Models",
+      "matched_authors": [
+        "Jay DeYoung",
+        "Sarthak Jain",
+        "Nazneen Fatema Rajani",
+        "Eric Lehman",
+        "Caiming Xiong",
+        "Richard Socher",
+        "Byron C. Wallace"
+      ],
+      "published_date": "2019-11-08",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "du-etal-2024-multiagent-debate",
+      "source_type": "official PMLR paper page",
+      "source_url": "https://proceedings.mlr.press/v235/du24e.html",
+      "http_status": 200,
+      "final_url": "https://proceedings.mlr.press/v235/du24e.html",
+      "source_sha256": "de913b6a705947656335e3ac9efae003bdaaa0b27902e5a198e381468af028d0",
+      "matched_title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
+      "matched_authors": [
+        "Yilun Du",
+        "Shuang Li",
+        "Antonio Torralba",
+        "Joshua B. Tenenbaum",
+        "Igor Mordatch"
+      ],
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "geifman-elyaniv-2017-selective",
+      "source_type": "official arXiv abs page + export API metadata",
+      "source_url": "https://arxiv.org/abs/1705.08500",
+      "query_evidence_url": "https://export.arxiv.org/api/query?id_list=1705.08500",
+      "http_status": 200,
+      "query_http_status": 200,
+      "final_url": "https://arxiv.org/abs/1705.08500",
+      "query_final_url": "https://export.arxiv.org/api/query?id_list=1705.08500",
+      "source_sha256": "8af4138386f323f9fa7b57c722911036d4c51b8e3faee8391916e32a46ae7d8c",
+      "query_sha256": "117464fd1748e8bfe85bc167b4123b79ab3ef89cf5952553faba7bdf2e17c266",
+      "matched_title": "Selective Classification for Deep Neural Networks",
+      "matched_authors": [
+        "Yonatan Geifman",
+        "Ran El-Yaniv"
+      ],
+      "published_date": "2017-05-23",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "glockner-etal-2018-breaking",
+      "source_type": "official ACL Anthology landing page and BibTeX export",
+      "source_url": "https://aclanthology.org/P18-2103/",
+      "http_status": 200,
+      "verification": "VERIFIED",
+      "verification_note": "ACL Anthology record P18-2103; venue, authors, title, pages, DOI, and year copied from the official export."
+    },
+    {
+      "key": "guo-etal-2017-calibration",
+      "source_type": "official PMLR paper page",
+      "source_url": "https://proceedings.mlr.press/v70/guo17a.html",
+      "http_status": 200,
+      "final_url": "https://proceedings.mlr.press/v70/guo17a.html",
+      "source_sha256": "fcd644b81c1d06d034060e3ff8079ccc6acc2213dbf846043b92059ce10d26f8",
+      "matched_title": "On Calibration of Modern Neural Networks",
+      "matched_authors": [
+        "Chuan Guo",
+        "Geoff Pleiss",
+        "Yu Sun",
+        "Kilian Q. Weinberger"
+      ],
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "irving-etal-2018-ai-safety-debate",
+      "source_type": "official arXiv abstract/API metadata",
+      "source_url": "https://arxiv.org/abs/1805.00899",
+      "http_status": 200,
+      "verification": "VERIFIED",
+      "verification_note": "First public arXiv year 2018; AI safety via debate."
+    },
+    {
+      "key": "jia-liang-2017-adversarial",
+      "source_type": "official arXiv abs page + export API metadata",
+      "source_url": "https://arxiv.org/abs/1707.07328",
+      "query_evidence_url": "https://export.arxiv.org/api/query?id_list=1707.07328",
+      "http_status": 200,
+      "query_http_status": 200,
+      "final_url": "https://arxiv.org/abs/1707.07328",
+      "query_final_url": "https://export.arxiv.org/api/query?id_list=1707.07328",
+      "source_sha256": "a95c76d5cfa51b3369cecb277fd9f6051c4d6cecda6859433d44f766655ac04c",
+      "query_sha256": "ad5be2bebbb443d68a901e4c34bffefb3fb6fde8dfebc30eeb7ac62a32c71776",
+      "matched_title": "Adversarial Examples for Evaluating Reading Comprehension Systems",
+      "matched_authors": [
+        "Robin Jia",
+        "Percy Liang"
+      ],
+      "published_date": "2017-07-23",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "kaushik-etal-2019-counterfactually-augmented",
+      "source_type": "official arXiv abstract/API metadata",
+      "source_url": "https://arxiv.org/abs/1909.12434",
+      "http_status": 200,
+      "verification": "VERIFIED",
+      "verification_note": "First public arXiv year 2019; record also notes later ICLR 2020 publication, while the requested key retains the arXiv year."
+    },
+    {
+      "key": "kuhn-etal-2023-semantic-uncertainty",
+      "source_type": "official arXiv abs page + export API metadata",
+      "source_url": "https://arxiv.org/abs/2302.09664",
+      "query_evidence_url": "https://export.arxiv.org/api/query?id_list=2302.09664",
+      "http_status": 200,
+      "query_http_status": 200,
+      "final_url": "https://arxiv.org/abs/2302.09664",
+      "query_final_url": "https://export.arxiv.org/api/query?id_list=2302.09664",
+      "source_sha256": "d4f5184e23a4bb0a7995492ea5b2940e270b3ae32709643987cb2b7ad894883a",
+      "query_sha256": "023ff39897e9f105a25bccb06241499cf1f684905c55e629d67824527fd54e0b",
+      "matched_title": "Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation",
+      "matched_authors": [
+        "Lorenz Kuhn",
+        "Yarin Gal",
+        "Sebastian Farquhar"
+      ],
+      "published_date": "2023-02-19",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "liang-etal-2022-helm",
+      "source_type": "official arXiv abs page + export API metadata",
+      "source_url": "https://arxiv.org/abs/2211.09110",
+      "query_evidence_url": "https://export.arxiv.org/api/query?id_list=2211.09110",
+      "http_status": 200,
+      "query_http_status": 200,
+      "final_url": "https://arxiv.org/abs/2211.09110",
+      "query_final_url": "https://export.arxiv.org/api/query?id_list=2211.09110",
+      "source_sha256": "3d95aeb51499159d0652860c626f21c231f4150477148d51dec2dd284870e0d5",
+      "query_sha256": "7b0443cecd0fea93ad4f627a58b503e78d48eb4840ccd38510935a469f107fc2",
+      "matched_title": "Holistic Evaluation of Language Models",
+      "matched_authors": [
+        "Percy Liang",
+        "Rishi Bommasani",
+        "Tony Lee",
+        "Dimitris Tsipras",
+        "Dilara Soylu",
+        "Michihiro Yasunaga",
+        "Yian Zhang",
+        "Deepak Narayanan",
+        "Yuhuai Wu",
+        "Ananya Kumar",
+        "Benjamin Newman",
+        "Binhang Yuan",
+        "Bobby Yan",
+        "Ce Zhang",
+        "Christian Cosgrove",
+        "Christopher D. Manning",
+        "Christopher Ré",
+        "Diana Acosta-Navas",
+        "Drew A. Hudson",
+        "Eric Zelikman",
+        "Esin Durmus",
+        "Faisal Ladhak",
+        "Frieda Rong",
+        "Hongyu Ren",
+        "Huaxiu Yao",
+        "Jue Wang",
+        "Keshav Santhanam",
+        "Laurel Orr",
+        "Lucia Zheng",
+        "Mert Yuksekgonul",
+        "Mirac Suzgun",
+        "Nathan Kim",
+        "Neel Guha",
+        "Niladri Chatterji",
+        "Omar Khattab",
+        "Peter Henderson",
+        "Qian Huang",
+        "Ryan Chi",
+        "Sang Michael Xie",
+        "Shibani Santurkar",
+        "Surya Ganguli",
+        "Tatsunori Hashimoto",
+        "Thomas Icard",
+        "Tianyi Zhang",
+        "Vishrav Chaudhary",
+        "William Wang",
+        "Xuechen Li",
+        "Yifan Mai",
+        "Yuhui Zhang",
+        "Yuta Koreeda"
+      ],
+      "published_date": "2022-11-16",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "lin-etal-2022-truthfulqa",
+      "source_type": "official ACL Anthology BibTeX record",
+      "source_url": "https://aclanthology.org/2022.acl-long.229.bib",
+      "http_status": 200,
+      "final_url": "https://aclanthology.org/2022.acl-long.229.bib",
+      "source_sha256": "a5a032d0ad505039fe2f5dcc560fb29599f213d85b373f9c27785e620663d72f",
+      "matched_title_excerpt": "{T}ruthful{QA}: Measuring How Models Mimic Human Falsehoods",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "manakul-etal-2023-selfcheckgpt",
+      "source_type": "official ACL Anthology BibTeX record",
+      "source_url": "https://aclanthology.org/2023.emnlp-main.557.bib",
+      "http_status": 200,
+      "final_url": "https://aclanthology.org/2023.emnlp-main.557.bib",
+      "source_sha256": "379cf690b45670931f1982e5f1f61bf4edf94849e8ae63d4a50b0cf382f1690a",
+      "matched_title_excerpt": "{S}elf{C}heck{GPT}: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "naik-etal-2018-stress",
+      "source_type": "official ACL Anthology BibTeX record",
+      "source_url": "https://aclanthology.org/C18-1198.bib",
+      "http_status": 200,
+      "final_url": "https://aclanthology.org/C18-1198.bib",
+      "source_sha256": "5202339ee585721803f419787e6cc516c226768c3420b25a698f5396603505d4",
+      "matched_title_excerpt": "Stress Test Evaluation for Natural Language Inference",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "ovadia-etal-2019-uncertainty-shift",
+      "source_type": "official arXiv abs page + export API metadata",
+      "source_url": "https://arxiv.org/abs/1906.02530",
+      "query_evidence_url": "https://export.arxiv.org/api/query?id_list=1906.02530",
+      "http_status": 200,
+      "query_http_status": 200,
+      "final_url": "https://arxiv.org/abs/1906.02530",
+      "query_final_url": "https://export.arxiv.org/api/query?id_list=1906.02530",
+      "source_sha256": "8f35f05a73891f8dc8daa20aad2ab53f8197444e256486ac5f4d3ee42ab0e454",
+      "query_sha256": "e413b36e776694de399efbbbe497bd0121cf2dc5b22905f7c263db39e6ea580b",
+      "matched_title": "Can You Trust Your Model's Uncertainty? Evaluating Predictive Uncertainty Under Dataset Shift",
+      "matched_authors": [
+        "Yaniv Ovadia",
+        "Emily Fertig",
+        "Jie Ren",
+        "Zachary Nado",
+        "D Sculley",
+        "Sebastian Nowozin",
+        "Joshua V. Dillon",
+        "Balaji Lakshminarayanan",
+        "Jasper Snoek"
+      ],
+      "published_date": "2019-06-06",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "ribeiro-etal-2020-beyond",
+      "source_type": "official ACL Anthology BibTeX record",
+      "source_url": "https://aclanthology.org/2020.acl-main.442.bib",
+      "http_status": 200,
+      "final_url": "https://aclanthology.org/2020.acl-main.442.bib",
+      "source_sha256": "d13e76af2cc7d6618990572af14e5d04bbd3495393950ae3d36273cc8ebd14cb",
+      "matched_title_excerpt": "Beyond Accuracy: Behavioral Testing of {NLP} Models with {C}heck{L}ist",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "romano-sesia-candes-2020-adaptive-coverage",
+      "source_type": "official arXiv abs page + export API metadata",
+      "source_url": "https://arxiv.org/abs/2006.02544",
+      "query_evidence_url": "https://export.arxiv.org/api/query?id_list=2006.02544",
+      "http_status": 200,
+      "query_http_status": 200,
+      "final_url": "https://arxiv.org/abs/2006.02544",
+      "query_final_url": "https://export.arxiv.org/api/query?id_list=2006.02544",
+      "source_sha256": "a616416c33684ccdac2778f65d0c20d104435c1f977a21333d81ec111fab49f9",
+      "query_sha256": "c7c4ca53c36e19dbe7edfa3005242e7a1825e70185243a19ca710d28bd4467a4",
+      "matched_title": "Classification with Valid and Adaptive Coverage",
+      "matched_authors": [
+        "Yaniv Romano",
+        "Matteo Sesia",
+        "Emmanuel J. Candès"
+      ],
+      "published_date": "2020-06-03",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "schuster-etal-2021-get",
+      "source_type": "official ACL Anthology BibTeX record",
+      "source_url": "https://aclanthology.org/2021.naacl-main.52.bib",
+      "http_status": 200,
+      "final_url": "https://aclanthology.org/2021.naacl-main.52.bib",
+      "source_sha256": "af66f57ea54c2420237a8b827855dac0e1f2f21c9dbef9fd5158037e01007f39",
+      "matched_title_excerpt": "Get Your Vitamin {C}! Robust Fact Verification with Contrastive Evidence",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "thorne-etal-2018-fever",
+      "source_type": "official ACL Anthology BibTeX record",
+      "source_url": "https://aclanthology.org/N18-1074.bib",
+      "http_status": 200,
+      "final_url": "https://aclanthology.org/N18-1074.bib",
+      "source_sha256": "2a7be035b7ce273f300c2426524c9d7350451be857cda434210fae1807a559fd",
+      "matched_title_excerpt": "{FEVER}: a Large-scale Dataset for Fact Extraction and {VER}ification",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "wadden-etal-2020-fact",
+      "source_type": "official ACL Anthology BibTeX record",
+      "source_url": "https://aclanthology.org/2020.emnlp-main.609.bib",
+      "http_status": 200,
+      "final_url": "https://aclanthology.org/2020.emnlp-main.609.bib",
+      "source_sha256": "353cd6aaaef9213d338726595195800e712c534ba22d2d7e1e9797a97a94a6e4",
+      "matched_title_excerpt": "Fact or Fiction: Verifying Scientific Claims",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "wang-etal-2022-self-consistency",
+      "source_type": "official arXiv abs page + export API metadata",
+      "source_url": "https://arxiv.org/abs/2203.11171",
+      "query_evidence_url": "https://export.arxiv.org/api/query?id_list=2203.11171",
+      "http_status": 200,
+      "query_http_status": 200,
+      "final_url": "https://arxiv.org/abs/2203.11171",
+      "query_final_url": "https://export.arxiv.org/api/query?id_list=2203.11171",
+      "source_sha256": "95733ce30410ce3905b50c2e0d6291184b3ee4cd84816e796b0da8959d84c698",
+      "query_sha256": "3092d8430fc0164a6c5fd808f230226635de12a5bbdcea068f5a28c54ea22fe0",
+      "matched_title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+      "matched_authors": [
+        "Xuezhi Wang",
+        "Jason Wei",
+        "Dale Schuurmans",
+        "Quoc Le",
+        "Ed Chi",
+        "Sharan Narang",
+        "Aakanksha Chowdhery",
+        "Denny Zhou"
+      ],
+      "published_date": "2022-03-21",
+      "verification": "VERIFIED"
+    },
+    {
+      "key": "yang-etal-2018-hotpotqa",
+      "source_type": "official arXiv abs page + export API metadata",
+      "source_url": "https://arxiv.org/abs/1809.09600",
+      "query_evidence_url": "https://export.arxiv.org/api/query?id_list=1809.09600",
+      "http_status": 200,
+      "query_http_status": 200,
+      "final_url": "https://arxiv.org/abs/1809.09600",
+      "query_final_url": "https://export.arxiv.org/api/query?id_list=1809.09600",
+      "source_sha256": "1d2aba7b7aa74242566af15165d3861311bc478db918ebf7a28ebc94d8b20ffd",
+      "query_sha256": "75f38cfb5624d66bcba0f890f0bfc63cb91759954b7a43578c8de49773b953f9",
+      "matched_title": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+      "matched_authors": [
+        "Zhilin Yang",
+        "Peng Qi",
+        "Saizheng Zhang",
+        "Yoshua Bengio",
+        "William W. Cohen",
+        "Ruslan Salakhutdinov",
+        "Christopher D. Manning"
+      ],
+      "published_date": "2018-09-25",
+      "verification": "VERIFIED"
+    }
+  ],
+  "supplemental_sources": [
+    {
+      "key": "schuster-etal-2021-get",
+      "reason": "Added during human audit because the draft explicitly names VitaminC; verified from official ACL Anthology."
+    },
+    {
+      "key": "ovadia-etal-2019-uncertainty-shift",
+      "reason": "Added during human audit to cover the draft clause about distribution shifts; verified from official arXiv metadata."
+    }
+  ],
+  "notes": [
+    "Source URLs in source_checks are verification evidence; live in-text citation commands are audited separately against references.bib.",
+    "citation_contexts.json and citation_map.md are live extracts of the current submission_v1 manuscript and do not add literature.",
+    "ArXiv-only entries deliberately use the arXiv record year/type to avoid asserting an unverified venue.",
+    "This submission_v1 validation metadata covers the 22-entry submission bibliography, including the four records added by the missing-key audit.",
+    "The pre-reconcile ten-placeholder context remains only as historical provenance in the references/ snapshot and relay_candidates.json; it is not the current live citation map."
+  ],
+  "final_static_snapshot": {
+    "manuscript_sha256": "eab44a229c494e9c933f0c330b624b19127f737477d8551aa41af399efa6bf52",
+    "manuscript_placeholder_count": 0,
+    "latex_citation_unique": 18,
+    "bibtex_key_count": 22,
+    "missing_keys": [],
+    "unused_keys": [
+      "deyoung-etal-2019-eraser",
+      "jia-liang-2017-adversarial",
+      "romano-sesia-candes-2020-adaptive-coverage",
+      "yang-etal-2018-hotpotqa"
+    ],
+    "manuscript_line_count": 1244,
+    "manuscript_byte_count": 77732,
+    "latex_sha256": "d9e913e2785060f1e7a1f9fac4275379fa7780b2174ce01c0b876c0abd696941",
+    "latex_line_count": 1022,
+    "latex_byte_count": 83466,
+    "latex_regeneration_matches_checked_in": true,
+    "latex_citation_command_count": 10,
+    "citation_key_reference_count": 25,
+    "duplicate_keys": [],
+    "converter_stats": {
+      "source_lines": 1244,
+      "output_lines": 1022,
+      "headings": 66,
+      "paragraphs": 302,
+      "tables": 7,
+      "captioned_tables": 6,
+      "equations": 10,
+      "citations_preserved": 10,
+      "ref_lines_omitted": 0,
+      "editorial_lines_omitted": 0
+    },
+    "markdown_heading_counts": {
+      "1": 7,
+      "2": 34,
+      "3": 27
+    },
+    "latex_structure": {
+      "table_begin_end": [
+        7,
+        7
+      ],
+      "tabularx_begin_end": [
+        7,
+        7
+      ],
+      "itemize_begin_end": [
+        4,
+        4
+      ],
+      "enumerate_begin_end": [
+        3,
+        3
+      ],
+      "caption_count": 6,
+      "label_count": 6,
+      "brace_count": [
+        499,
+        499
+      ]
+    },
+    "math_delimiters": {
+      "display_open_close": [
+        10,
+        10
+      ],
+      "inline_open_close": [
+        122,
+        122
+      ],
+      "raw_dollar_count": 14
+    },
+    "pseudo_command_count": 0,
+    "artifact_path_count": 17,
+    "artifact_missing_paths": [],
+    "sections_sync": {
+      "canonical_top_level_units": 7,
+      "fragment_units": 7,
+      "mismatches": 0,
+      "missing": 0,
+      "extra": 0
+    }
+  },
+  "draft_line_count": 1244,
+  "draft_byte_count": 77732,
+  "draft_placeholder_count": 0,
+  "context_artifact_status": "live_current_manuscript_citation_commands",
+  "context_artifact_sha256": "0d089486b46db29cb260252a375cbe269e1507e38fe48ffdcb363a58b9a3dbaf",
+  "context_artifact_line_count": 262,
+  "context_artifact_byte_count": 16883,
+  "citation_command_count": 10,
+  "citation_key_reference_count": 25,
+  "citation_unique_key_count": 18,
+  "citation_unique_keys": [
+    "angelopoulos-bates-2021-conformal",
+    "du-etal-2024-multiagent-debate",
+    "geifman-elyaniv-2017-selective",
+    "glockner-etal-2018-breaking",
+    "guo-etal-2017-calibration",
+    "irving-etal-2018-ai-safety-debate",
+    "kaushik-etal-2019-counterfactually-augmented",
+    "kuhn-etal-2023-semantic-uncertainty",
+    "liang-etal-2022-helm",
+    "lin-etal-2022-truthfulqa",
+    "manakul-etal-2023-selfcheckgpt",
+    "naik-etal-2018-stress",
+    "ovadia-etal-2019-uncertainty-shift",
+    "ribeiro-etal-2020-beyond",
+    "schuster-etal-2021-get",
+    "thorne-etal-2018-fever",
+    "wadden-etal-2020-fact",
+    "wang-etal-2022-self-consistency"
+  ]
+}
