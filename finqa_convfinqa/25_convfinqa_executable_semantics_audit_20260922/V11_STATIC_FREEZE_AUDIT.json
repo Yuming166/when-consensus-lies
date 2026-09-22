@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "audit_gate_pass": true,
+    "contract_artifact_hashes": true,
+    "primary_train_dev_conversation_disjoint": true,
+    "primary_train_dev_source_disjoint": true,
+    "private_test_unavailable_explicit": true,
+    "public_manifests_no_gold_fields": true,
+    "python_compile": true,
+    "symbolic_reference_locality": true
+  },
+  "date": "2026-09-22",
+  "hash_errors": [],
+  "manifest_rows": {
+    "V11_PRIMARY_DEV_ONE_PER_CONVERSATION_GOLD.jsonl": 198,
+    "V11_PRIMARY_DEV_ONE_PER_CONVERSATION_PUBLIC.jsonl": 198,
+    "V11_PRIMARY_TRAIN_ONE_PER_CONVERSATION_GOLD.jsonl": 1344,
+    "V11_PRIMARY_TRAIN_ONE_PER_CONVERSATION_PUBLIC.jsonl": 1344,
+    "V11_SENSITIVITY_DEV_ONE_PER_SOURCE_GOLD.jsonl": 114,
+    "V11_SENSITIVITY_DEV_ONE_PER_SOURCE_PUBLIC.jsonl": 114,
+    "V11_SENSITIVITY_TRAIN_ONE_PER_SOURCE_GOLD.jsonl": 754,
+    "V11_SENSITIVITY_TRAIN_ONE_PER_SOURCE_PUBLIC.jsonl": 754
+  },
+  "model_calls": 0,
+  "protocol": "ConvFinQA_PECR_v0.11_static_freeze_audit",
+  "public_forbidden_fields": {
+    "V11_PRIMARY_DEV_ONE_PER_CONVERSATION_PUBLIC.jsonl": [],
+    "V11_PRIMARY_TRAIN_ONE_PER_CONVERSATION_PUBLIC.jsonl": [],
+    "V11_SENSITIVITY_DEV_ONE_PER_SOURCE_PUBLIC.jsonl": [],
+    "V11_SENSITIVITY_TRAIN_ONE_PER_SOURCE_PUBLIC.jsonl": []
+  },
+  "summary": {
+    "all_checks_pass": true,
+    "audit_status": "PROCEED_TO_FREEZE_REPLICATION_CONTRACT",
+    "primary_dev": 198,
+    "primary_train": 1344,
+    "source_sensitivity_dev": 114,
+    "source_sensitivity_train": 754
+  }
+}

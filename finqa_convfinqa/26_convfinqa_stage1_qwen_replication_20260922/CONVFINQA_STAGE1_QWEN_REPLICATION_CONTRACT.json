@@ -1,0 +1,123 @@
+{
+  "answer_evaluator": {
+    "current_turn_target": "annotation.exe_ans for original; deterministic counterfactual program result for relevant worlds",
+    "item_level_qa_answer_used_as_current_target": false,
+    "primary": "normalized_numeric_correctness",
+    "surface_parser": "optional percent sign divides numeric value by 100; currency/commas/parentheses accepted; non-scalar text rejected",
+    "tolerance": "max(half displayed unit from current annotation.exe_ans surface, half displayed unit from mapped item-level QA answer surface when available), after percent normalization; fixed before model calls",
+    "unit_hint": "question-derived audit/prompt hint only; not a primary correctness gate",
+    "unit_hint_rule_version": "convfinqa-current-turn-unit-v1"
+  },
+  "authorization": {
+    "authorization_basis": "user-requested staged confirmatory execution after v0.11 offline audit and this answer-unit addendum freeze",
+    "model_calls_authorized": true
+  },
+  "claim_boundary": "Stage-1 Qwen ConvFinQA replication only. No result or PECR effectiveness claim is established until the frozen DEV worlds are executed and independently analyzed.",
+  "contract": "CONVFINQA_STAGE1_QWEN_REPLICATION_CONTRACT",
+  "data": {
+    "gold_dev_sha256": "74f56703b1a1b1040c0960473a392f8994da0495cad1ab7f21793c85620796d8",
+    "gold_train_sha256": "485fe414016bef85d34c1effde2b5098fc91b392ad6072ea7e500e0e23267f87",
+    "public_dev_sha256": "b08bb99595b75f88c796b8a5f21afc5d22e2ded875e32b2e983477a28ef45215",
+    "public_train_sha256": "85f211e0323da1d3b63c0c3ffc49e093b033f09f31bdfc6162f020b4cf8b04e0",
+    "raw_dev_sha256": "8a2461be571a3277c443e2dce6e3cce6f4df197db5b7d0b60eed3477f4c952b9",
+    "raw_train_sha256": "b7e720e32c19b7b83f3bc105cffd04e207242513e407a5b57f2d037e138095ed",
+    "v11_contract_sha256": "8b6d47208d86d47f726e0c9c63c74d5cd7de30743d1c7f93a9f76d4e8344aa12"
+  },
+  "freeze_date": "2026-09-22",
+  "metrics": {
+    "confidence_interval": "item bootstrap and filename-cluster bootstrap frozen in analysis script",
+    "null": [
+      "global label permutation",
+      "within-operation label permutation"
+    ],
+    "primary": [
+      "AUROC(S2, original_correct)",
+      "AUROC(full_CEF, original_correct)"
+    ],
+    "stage1_stop_rule": "If Qwen DEV primary S2 and full CEF signals both fail their predeclared gates, do not execute Stage 2/3."
+  },
+  "model_calls": 0,
+  "model_identity": {
+    "endpoint": "http://127.0.0.1:31518/v1/chat/completions",
+    "expected_model": "Qwen3.5-4B",
+    "identity_rule": "Verify /v1/models immediately before calls; abort on identity drift; no fallback model.",
+    "models_endpoint": "http://127.0.0.1:31518/v1/models"
+  },
+  "prompt_spec": {
+    "sha256": "e08a683a33e50a1e6050d762df795f1af7619a5b4da073d9916033b1055ebdf4",
+    "spec": {
+      "answer_unit_rule": "Ask the model to preserve the unit implied by the current question; evaluator primary correctness normalizes optional percent signs and does not use item-level QA answer surfaces as current-turn labels.",
+      "dialogue_rule": "Render every question in dialogue_history in order; the last question is the current turn. Do not add answers or programs to the visible prompt.",
+      "forbidden_visible_fields": [
+        "program",
+        "exe_ans",
+        "target",
+        "world_diagnostics",
+        "annotation",
+        "qa",
+        "gold",
+        "correctness",
+        "unit_hint"
+      ],
+      "model_visible_fields": [
+        "dialogue_history",
+        "pre_text",
+        "table",
+        "post_text"
+      ],
+      "mutation_rule": "Only the audited target numeric surface is changed in relevant worlds; dialogue history is not mutated.",
+      "response_contract": {
+        "confidence_range": [
+          0,
+          1
+        ],
+        "format": "json_object",
+        "optional_keys": [],
+        "required_keys": [
+          "answer",
+          "confidence"
+        ]
+      },
+      "system_prompt": "You are a careful financial numerical question solver. Use only the question and supplied context. Return exactly one JSON object with keys answer and confidence. Preserve the answer unit: include a percent sign for percentage answers (for example 7.6%), and do not include a percent sign for plain-number answers. Do not convert percentages to fractions. Confidence must be a number from 0 to 1. Do not include reasoning or any other keys.",
+      "version": "convfinqa-stage1-prompt-v1"
+    }
+  },
+  "protocol": "ConvFinQA_PECR_v0.11_stage1_qwen_replication",
+  "request_contract": {
+    "fallback": false,
+    "fresh_conversation_per_world": true,
+    "max_tokens": 180,
+    "n": 1,
+    "response_format": {
+      "type": "json_object"
+    },
+    "retries": 0,
+    "stream": false,
+    "temperature": 0.0,
+    "timeout_seconds": 180,
+    "top_p": 1.0,
+    "workers": 1
+  },
+  "selection": {
+    "post_selection_outcome_tuning": false,
+    "primary_dev_items": 198,
+    "primary_train_items": 1344,
+    "selection_is_inherited_from_frozen_v11": true
+  },
+  "status": "FROZEN_PRE_MODEL_CALL",
+  "version": "stage1",
+  "worlds": {
+    "dev_items": 198,
+    "dev_worlds": 990,
+    "labels": [
+      "original",
+      "relevant_k_minus2",
+      "relevant_k_minus1",
+      "relevant_k_plus1",
+      "relevant_k_plus2"
+    ],
+    "stage1_model_call_budget": 990,
+    "train_items": 1344,
+    "train_worlds": 6720
+  }
+}

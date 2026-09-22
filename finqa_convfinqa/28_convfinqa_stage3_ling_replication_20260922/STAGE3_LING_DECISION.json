@@ -1,0 +1,38 @@
+{
+  "protocol": "ConvFinQA_PECR_v0.11_stage3_ling_replication",
+  "date": "2026-09-22",
+  "stage3_core_gate": true,
+  "stage3_core_gate_basis": {
+    "s2_auroc": 0.8274544385655497,
+    "s2_ci_95": [0.6525499706055261, 0.9982638888888888],
+    "full_cef_auroc": 0.8251028806584362,
+    "full_cef_ci_95": [0.6455938103115522, 0.9988375378036487],
+    "global_and_within_operation_permutation_p": 0.0001999600079984003,
+    "positive_original_correct": 9,
+    "schema_valid_rate": 0.7909090909090909,
+    "numeric_valid_rate": 0.5767676767676768,
+    "full_minus_s2_delta": -0.0023515579071134995,
+    "full_minus_s2_ci_95": [-0.008290801762304402, 0.0023026315789473895]
+  },
+  "zero_shot_qwen_to_ling_transfer": {
+    "primary_family": "all_response_rich",
+    "primary_model": "frozen Qwen TRAIN-fit shallow GBDT heads",
+    "head_minus2_auroc": 0.8845486111111112,
+    "head_minus2_positive_count": 6,
+    "head_plus2_auroc": 0.7460526315789474,
+    "head_plus2_positive_count": 8,
+    "student_auroc": 0.8536155202821869,
+    "s2_auroc": 0.8274544385655497,
+    "full_cef_auroc": 0.8251028806584362,
+    "delta_vs_s2": 0.026161081716637224,
+    "delta_ci_95": [-0.053852759832739766, 0.14359157986111112],
+    "practical_plus_0_02_gate": true,
+    "statistical_support_for_delta": false,
+    "teacher_gap_closure_interpretation": "not meaningful because full CEF is slightly below S2 on Ling DEV",
+    "no_ling_refit_or_calibration": true
+  },
+  "decision": "CORE_REPLICATION_PASS_ZERO_SHOT_DISTILLATION_PRACTICAL_ONLY",
+  "claim_boundary": "ConvFinQA PECR core signal replicated on Ling DEV under the frozen evaluator. The frozen Qwen-to-Ling missing-probe transfer exceeds S2 by the practical threshold, but its paired bootstrap CI crosses zero and the Ling full-CEF score does not exceed S2; do not claim confirmed cross-model distillation or teacher-gap closure.",
+  "additional_model_calls_authorized": false,
+  "recommended_next_step": "Freeze ConvFinQA model calls; report Ling as core replication plus exploratory/practical-only zero-shot transfer, unless a separately authorized Ling TRAIN-fit distillation phase is desired."
+}

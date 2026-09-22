@@ -1,0 +1,71 @@
+{
+  "authorization": {
+    "authorization_basis": "Stage-3 Ling S2 and full-CEF core gates passed; user-approved secondary cross-model distillation check.",
+    "model_calls_authorized": false
+  },
+  "claim_boundary": "Secondary zero-shot cross-model application only: frozen Qwen TRAIN-fit missing-probe heads are applied to Ling ConvFinQA DEV without Ling refit, recalibration, feature selection, or threshold tuning. A result does not establish dataset-local Ling distillation or universal transfer.",
+  "contract": "CONVFINQA_STAGE3_LING_DISTILLATION_TRANSFER_CONTRACT",
+  "evaluation_source": {
+    "gold": "finqa_convfinqa/28_convfinqa_stage3_ling_replication_20260922/STAGE3_DEV_WORLD_GOLD.jsonl",
+    "gold_sha256": "32e54658c667ca7b9d94f4d821cb51da11767a47e8e2c09ec7943e5db85470cd",
+    "model": "Ling-3.0-tiny",
+    "raw": "finqa_convfinqa/28_convfinqa_stage3_ling_replication_20260922/STAGE3_LING_DEV_RAW_RECORDS.jsonl",
+    "raw_sha256": "8e1286e0231b59bd473b08c3af9126861246a286f30f80e529f7fda93b653dd0",
+    "split": "ConvFinQA DEV"
+  },
+  "freeze_date": "2026-09-22",
+  "frozen_v10_contract_sha256": "85bd5d32bb88c4be6f0af37bc8d9fe94299093a72338348370523335d3a82207",
+  "leakage": {
+    "features_use_only": [
+      "original",
+      "relevant_k_minus1",
+      "relevant_k_plus1"
+    ],
+    "forbidden": [
+      "relevant_k_minus2 response",
+      "relevant_k_plus2 response",
+      "full CEF",
+      "original correctness"
+    ],
+    "original_correctness_usage": "evaluation only"
+  },
+  "mapping": {
+    "baseline_model": "LogisticRegression",
+    "baseline_parameters": {
+      "C": 1.0,
+      "max_iter": 2000,
+      "random_state": 20260922,
+      "solver": "liblinear"
+    },
+    "feature_contract": "FinQA v0.10 frozen feature families",
+    "no_ling_calibration": true,
+    "no_ling_refit": true,
+    "no_ling_standardization": true,
+    "no_ling_threshold_selection": true,
+    "parameters": {
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_leaf": 8,
+      "n_estimators": 64,
+      "random_state": 20260922
+    },
+    "primary_family": "all_response_rich",
+    "primary_model": "GradientBoostingClassifier",
+    "reconstruction": "(F_-1 + F_+1 + p_-2 + p_+2) / 4"
+  },
+  "outputs": {
+    "analysis": "STAGE3_LING_DISTILLATION_TRANSFER_ANALYSIS.json",
+    "markdown": "STAGE3_LING_DISTILLATION_TRANSFER_ANALYSIS.md",
+    "predictions": "STAGE3_LING_DISTILLATION_TRANSFER_PREDICTIONS.jsonl"
+  },
+  "protocol": "ConvFinQA_PECR_v0.11_stage3_ling_zero_shot_missing_probe_transfer",
+  "status": "FROZEN_PRE_ANALYSIS",
+  "training_source": {
+    "fit_split": "ConvFinQA TRAIN",
+    "gold": "finqa_convfinqa/27_convfinqa_stage2_qwen_missing_probe_20260922/STAGE2_TRAIN_WORLD_GOLD.jsonl",
+    "gold_sha256": "3cc59a5af528624b41bcbadc70a565eb19f30cabb816d46230aee3a48ea3fa3a",
+    "model": "Qwen3.5-4B",
+    "raw": "finqa_convfinqa/27_convfinqa_stage2_qwen_missing_probe_20260922/STAGE2_QWEN_TRAIN_RAW_RECORDS.jsonl",
+    "raw_sha256": "b70712ae4b844db5bbff0098ac6197e02d898426585153aa67cd5934c7b78fac"
+  }
+}

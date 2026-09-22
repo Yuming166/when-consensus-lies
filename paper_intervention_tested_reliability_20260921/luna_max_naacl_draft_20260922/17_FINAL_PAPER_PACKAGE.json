@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-09-22T21:36:01.382935+08:00",
+  "status": "PACKAGE_READY_STATIC_AUDIT_PASS",
+  "canonical_markdown": "12_NAACL_FIRST_DRAFT_CITED.md",
+  "canonical_latex": "latex/main.tex",
+  "bibliography": "13_NAACL_FIRST_DRAFT_REFERENCES.bib",
+  "files": {
+    "08_NAACL_FIRST_DRAFT_REVIEWED.md": {
+      "exists": true,
+      "bytes": 57299,
+      "sha256": "067d76679bf1858d49445926776e47ceabc2224b023129b1d182be06642e2063"
+    },
+    "12_NAACL_FIRST_DRAFT_CITED.md": {
+      "exists": true,
+      "bytes": 58354,
+      "sha256": "e1f35e1a9e4aa208027cab4015b406b5eaa68b70df62431665a273ed8896bd65"
+    },
+    "13_NAACL_FIRST_DRAFT_REFERENCES.bib": {
+      "exists": true,
+      "bytes": 6583,
+      "sha256": "af0d5447bf91840669f27973ffc9359d4f307b724858061e03d8ead20fd3a8e0"
+    },
+    "14_CITATION_VERIFICATION.json": {
+      "exists": true,
+      "bytes": 4197,
+      "sha256": "106c901f89c5f924328d17ae360f6d9acb8dd9767caf648f819bc3f357428cbe"
+    },
+    "15_FINAL_CITATION_LATEX_AUDIT.json": {
+      "exists": true,
+      "bytes": 1663,
+      "sha256": "6af970748968772f4f990b40fdf1c8884d1c6680f4728ea63c2781322d2239ca"
+    },
+    "latex/main.tex": {
+      "exists": true,
+      "bytes": 62482,
+      "sha256": "1570eb02fecf353a08806e64e1d22ea241c9c5bfbfcf7dd51db3b7136750eefd"
+    },
+    "latex/acl.sty": {
+      "exists": true,
+      "bytes": 11615,
+      "sha256": "19dfeddc2c0e448f3926a0bef048a9db3f3611b46265b760caabd7ada4f361de"
+    },
+    "latex/acl_natbib.bst": {
+      "exists": true,
+      "bytes": 45440,
+      "sha256": "3c0626f6860018f0db63437e647e98116e8102a22d371d8861516029eb13be54"
+    }
+  },
+  "frozen_artifacts_modified": false,
+  "pdf_compile": "NOT_RUN_NO_LATEX_ENGINE",
+  "next_step": "Run one ACL-template PDF build in an environment with an installed LaTeX engine, then inspect page count, table wrapping, and bibliography rendering."
+}

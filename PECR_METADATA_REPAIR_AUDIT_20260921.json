@@ -1,0 +1,77 @@
+{
+  "audit_date": "2026-09-21",
+  "audit_version": "PECR_METADATA_REPAIR_AUDIT_v1",
+  "claim_boundary": "The audit supports a transparent output-blind metadata repair trail. It does not claim a byte-level pre-repair file hash that was not persisted.",
+  "model_calls": 0,
+  "model_facing_bytes": {
+    "existing_repair_note_claim": "inputs, gold, and prompts were unchanged across the repair; no model calls were rerun",
+    "hashes_current_final": {
+      "DEV_ONE_SHOT_PROMPTS.jsonl": "3f83f924f2d1ec639840c54843e0385d03536b8e34653ff99eb968f1ef6ddd82",
+      "DEV_ONE_SHOT_WORLD_GOLD.jsonl": "08f98e22a8fd4f3a13996fe9f362bfa9b3bcc7b4d9fe8bc0121269e87787abff",
+      "DEV_ONE_SHOT_WORLD_INPUTS.jsonl": "b7d52a26b27be8cbd6bc71992ba5cd8603cce9f88f0d5005289c682ae1e47b10"
+    },
+    "independent_current_hash_match_to_repair_note": {
+      "gold": true,
+      "inputs": true,
+      "prompts": true
+    }
+  },
+  "operator_strata": {
+    "final_analysis_expected_terminal_op_counts": {
+      "add": 8,
+      "divide": 105,
+      "multiply": 5,
+      "subtract": 8
+    },
+    "final_executable_trace_step_counts": {
+      "add": 17,
+      "divide": 108,
+      "multiply": 7,
+      "subtract": 82
+    },
+    "final_executable_trace_terminal_op_counts": {
+      "add": 8,
+      "divide": 105,
+      "multiply": 5,
+      "subtract": 8
+    },
+    "reconstructed_before_dependency_path_step_counts": {
+      "add": 13,
+      "divide": 105,
+      "multiply": 5,
+      "subtract": 80
+    },
+    "reconstructed_before_dependency_path_terminal_op_counts": {
+      "add": 8,
+      "divide": 105,
+      "multiply": 5,
+      "subtract": 8
+    }
+  },
+  "pre_repair_snapshot": {
+    "raw_file_sha256": null,
+    "reason": "The pre-repair manifest bytes were not persisted as a separate artifact; do not fabricate a raw before-file hash.",
+    "reconstructed_program_ops_projection_sha256": "655751001f203d70283ea585b2e2d210889761665fd99054789c8717c638c7f4",
+    "status": "NOT_AVAILABLE_NO_PERSISTED_PRE_REPAIR_SNAPSHOT"
+  },
+  "primary_metric_dependency": {
+    "deterministic_conclusion": "Changing program_ops metadata cannot change model-facing inputs, gold, model outputs, or the CEF point estimate; it can change the within-operation null strata, which is why the final null analysis uses the corrected trace-derived strata.",
+    "primary_CEF_AUROC_depends_on": [
+      "model outputs",
+      "world gold",
+      "original correctness",
+      "CEF scorer"
+    ],
+    "program_ops_role": "within-operation permutation stratification only"
+  },
+  "repair_operation": {
+    "after_manifest_sha256": "6d249216f4da6b9bdcfc291ff2ae57ff8a1a516c1515b1d0e4877cd585b16735",
+    "after_program_ops_projection_sha256": "ea744f23eb989e02db9678e902a7d342b425954ac9722d7b658eadd9545cc7a2",
+    "previous_projection_rule": "program_ops = operators on target dependency_path",
+    "records_checked": 126,
+    "records_with_changed_program_ops_projection": 11,
+    "rule": "program_ops = executable trace_program(program) operators"
+  },
+  "repair_scope": "DEV cohort manifest program_ops metadata used for within-operation permutation strata",
+  "source_note": "DEV_ONE_SHOT_OFFLINE_METADATA_REPAIR.md"
+}

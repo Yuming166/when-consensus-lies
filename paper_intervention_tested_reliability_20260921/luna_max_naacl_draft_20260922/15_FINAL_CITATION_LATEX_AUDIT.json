@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-09-22T21:35:50.744331+08:00",
+  "status": "PASS",
+  "draft": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/paper_intervention_tested_reliability_20260921/luna_max_naacl_draft_20260922/12_NAACL_FIRST_DRAFT_CITED.md",
+  "tex": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/paper_intervention_tested_reliability_20260921/luna_max_naacl_draft_20260922/latex/main.tex",
+  "bib": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/paper_intervention_tested_reliability_20260921/luna_max_naacl_draft_20260922/13_NAACL_FIRST_DRAFT_REFERENCES.bib",
+  "md_sha256": "e1f35e1a9e4aa208027cab4015b406b5eaa68b70df62431665a273ed8896bd65",
+  "tex_sha256": "1570eb02fecf353a08806e64e1d22ea241c9c5bfbfcf7dd51db3b7136750eefd",
+  "bib_sha256": "af0d5447bf91840669f27973ffc9359d4f307b724858061e03d8ead20fd3a8e0",
+  "citation_occurrences": 24,
+  "unique_citation_keys": [
+    "chen-etal-2021-finqa",
+    "chen-etal-2022-convfinqa",
+    "geifman-elyaniv-2017-selective",
+    "guo-etal-2017-calibration",
+    "jia-liang-2017-adversarial",
+    "kaushik-etal-2019-counterfactually-augmented",
+    "kuhn-etal-2023-semantic-uncertainty",
+    "lightman-etal-2023-verify-step",
+    "manakul-etal-2023-selfcheckgpt",
+    "naik-etal-2018-stress",
+    "ribeiro-etal-2020-beyond",
+    "schuster-etal-2021-get",
+    "wang-etal-2022-self-consistency"
+  ],
+  "bibliography_entries": 13,
+  "tables": 5,
+  "issues": [],
+  "compile_status": "NOT_AVAILABLE_NO_LATEX_ENGINE",
+  "notes": [
+    "Static balance and citation-key checks pass; an actual ACL PDF build remains unavailable because pdflatex/tectonic were not installed in the environment."
+  ]
+}

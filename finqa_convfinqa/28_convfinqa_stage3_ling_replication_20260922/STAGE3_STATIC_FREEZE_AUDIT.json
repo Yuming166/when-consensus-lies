@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "contract": "CONVFINQA_STAGE3_LING_REPLICATION_CONTRACT",
+  "model_calls": 0,
+  "prompt_gold_cohort": "same frozen ConvFinQA DEV cohort as Stage 1; no new cohort selection",
+  "post_freeze_tuning": false,
+  "claim_boundary": "No Ling effectiveness or cross-model confirmation claim until the frozen calls and evaluator complete."
+}

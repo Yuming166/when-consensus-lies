@@ -1,0 +1,114 @@
+{
+  "claim_boundary": "Qwen ConvFinQA Stage-1 diagnostic analysis only; Stage 2/3 remain separately gated and no cross-task distillation claim is established by this artifact.",
+  "contract": "CONVFINQA_STAGE1_QWEN_REPLICATION_CONTRACT",
+  "full_cef": {
+    "auroc": {
+      "ci_95": [
+        0.5953899280278206,
+        0.7822079023959867
+      ],
+      "invalid_replicates": 0,
+      "observed": 0.6869619799139168,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    },
+    "filename_cluster_bootstrap": {
+      "ci_95": [
+        0.5795068495514147,
+        0.786077322001601
+      ],
+      "cluster_count": 114,
+      "cluster_key": "filename",
+      "invalid_replicates": 0,
+      "observed": 0.6869619799139168,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    },
+    "gate": true,
+    "global_permutation": {
+      "null_p95": 0.5637553802008608,
+      "observed": 0.6869619799139168,
+      "p_ge_observed": 0.0001999600079984003,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    },
+    "within_operation_permutation": {
+      "null_p95": 0.5845588235294118,
+      "observed": 0.6869619799139168,
+      "p_ge_observed": 0.0001999600079984003,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    }
+  },
+  "full_minus_s2_delta": {
+    "ci_95": [
+      -0.013138440708701151,
+      0.09394080457456473
+    ],
+    "invalid_replicates": 0,
+    "observed": 0.03613701578192252,
+    "replicates": 5000,
+    "valid_replicates": 5000
+  },
+  "gold_count": 990,
+  "item_count": 198,
+  "model_calls": 990,
+  "negative_original_correct": 164,
+  "numeric_valid_rate": 0.9454545454545454,
+  "parse_schema_valid_rate": 0.997979797979798,
+  "positive_original_correct": 34,
+  "protocol": "ConvFinQA_PECR_v0.11_stage1_qwen_replication",
+  "record_count": 990,
+  "s2": {
+    "auroc": {
+      "ci_95": [
+        0.5707206089649238,
+        0.7352946713323885
+      ],
+      "invalid_replicates": 0,
+      "observed": 0.6508249641319943,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    },
+    "filename_cluster_bootstrap": {
+      "ci_95": [
+        0.5661449738704207,
+        0.7346335919143154
+      ],
+      "cluster_count": 114,
+      "cluster_key": "filename",
+      "invalid_replicates": 0,
+      "observed": 0.6508249641319943,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    },
+    "gate": true,
+    "global_permutation": {
+      "null_p95": 0.5536226685796269,
+      "observed": 0.6508249641319943,
+      "p_ge_observed": 0.0001999600079984003,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    },
+    "within_operation_permutation": {
+      "null_p95": 0.5762195121951219,
+      "observed": 0.6508249641319943,
+      "p_ge_observed": 0.0001999600079984003,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    }
+  },
+  "scored_world_count": 990,
+  "stage1_core_gate": true,
+  "stage2_authorized_by_metrics": false,
+  "status": "ANALYSIS_PASS",
+  "unit_hint_counts": {
+    "percent": 560,
+    "plain": 430
+  },
+  "unit_mismatch_counts_diagnostic_only": {
+    "percent<-plain": 49,
+    "plain<-percent": 147
+  },
+  "validation_failures": []
+}

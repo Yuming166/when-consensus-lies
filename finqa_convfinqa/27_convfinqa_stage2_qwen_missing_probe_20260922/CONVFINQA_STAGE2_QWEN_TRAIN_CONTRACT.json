@@ -1,0 +1,133 @@
+{
+  "authorization": {
+    "authorization_basis": "Stage-1 Qwen DEV primary S2 and full CEF gates passed under frozen analysis; user-requested staged confirmation execution.",
+    "model_calls_authorized": true
+  },
+  "claim_boundary": "Stage-2 Qwen ConvFinQA TRAIN collection for frozen missing-probe distillation. No distillation effectiveness claim is established until TRAIN heads are fit offline and evaluated once on the already executed frozen DEV worlds.",
+  "contract": "CONVFINQA_STAGE2_QWEN_TRAIN_CONTRACT",
+  "data": {
+    "dev_gold_sha256": "32e54658c667ca7b9d94f4d821cb51da11767a47e8e2c09ec7943e5db85470cd",
+    "dev_raw_sha256": "a6ff6f4f348b7d18e8a1ba7d465f0c851c8f9af1ddc811c1d9985f0090335f8e",
+    "finqa_v0_10_contract_sha256": "85bd5d32bb88c4be6f0af37bc8d9fe94299093a72338348370523335d3a82207",
+    "stage1_contract_sha256": "17d16fbf26ad17949a7711817ba718465ca567dca14d81bf28536e00cfc1676a",
+    "train_gold_sha256": "3cc59a5af528624b41bcbadc70a565eb19f30cabb816d46230aee3a48ea3fa3a",
+    "train_prompts_sha256": "ca3d14104dcde7c9db8133e2088e4152dbfa77fa6d4ca74049d74084351bba21"
+  },
+  "distillation": {
+    "dev_evaluation": "one frozen confirmation using Stage1 DEV raw records; no refit, calibration, threshold, or feature selection on DEV",
+    "feature_family_sha256": "b04224277fde686ba28a50361f6a25dbaa3a4aff0e92c56606baa5ab9dc00f24",
+    "features_source": "frozen FinQA v0.10 feature definitions; no search or re-standardization based on ConvFinQA DEV",
+    "models": {
+      "baseline": {
+        "architecture": "two independent LogisticRegression binary heads",
+        "kind": "logistic",
+        "parameters": {
+          "C": 1.0,
+          "max_iter": 2000,
+          "random_state": 20260922,
+          "solver": "liblinear"
+        }
+      },
+      "feature_family_ablation": "pre-specified s2, s2_direction, and all_response_rich only; no post-hoc search or selection",
+      "primary": {
+        "architecture": "two independent shallow GradientBoostingClassifier binary heads",
+        "kind": "gbdt",
+        "parameters": {
+          "learning_rate": 0.05,
+          "max_depth": 2,
+          "min_samples_leaf": 8,
+          "n_estimators": 64,
+          "random_state": 20260922
+        }
+      }
+    },
+    "original_correctness_usage": "evaluation only, never a training target or model-selection signal",
+    "primary_family": "all_response_rich",
+    "reconstruction": "(correct_minus1 + correct_plus1 + p_minus2 + p_plus2) / 4",
+    "target_minus2": "answer_correct on relevant_k_minus2",
+    "target_plus2": "answer_correct on relevant_k_plus2"
+  },
+  "freeze_date": "2026-09-22",
+  "gates": {
+    "practical_threshold": "delta_vs_S2 >= 0.02",
+    "primary_confirmation": [
+      "AUROC(reconstructed_CEF,original_correct)",
+      "delta_vs_S2",
+      "group/bootstrap CI",
+      "MAE and Spearman vs full CEF"
+    ],
+    "primary_head_auroc_report": [
+      "AUROC(p_minus2,F_minus2)",
+      "AUROC(p_plus2,F_plus2)"
+    ],
+    "statistics_separate_from_practical_gate": true
+  },
+  "leakage": {
+    "forbidden": [
+      "relevant_k_minus2 response",
+      "relevant_k_plus2 response",
+      "full_cef",
+      "original_correct",
+      "item_level_qa_answer_as_current_target"
+    ],
+    "gold_oracle_boundary": "Observed executable gold may derive residual/direction/unit features, matching frozen FinQA v0.10 boundary.",
+    "observed_worlds_only": [
+      "original",
+      "relevant_k_minus1",
+      "relevant_k_plus1"
+    ]
+  },
+  "model_calls": 0,
+  "model_identity": {
+    "endpoint": "http://127.0.0.1:31518/v1/chat/completions",
+    "expected_model": "Qwen3.5-4B",
+    "identity_rule": "Verify /v1/models immediately before calls; abort on identity drift; no fallback model.",
+    "models_endpoint": "http://127.0.0.1:31518/v1/models"
+  },
+  "protocol": "ConvFinQA_PECR_v0.11_stage2_qwen_missing_probe_train",
+  "request_contract": {
+    "fallback": false,
+    "fresh_conversation_per_world": true,
+    "max_tokens": 180,
+    "n": 1,
+    "response_format": {
+      "type": "json_object"
+    },
+    "retries": 0,
+    "stream": false,
+    "temperature": 0.0,
+    "timeout_seconds": 180,
+    "top_p": 1.0,
+    "workers": 1
+  },
+  "stage1_gate_snapshot": {
+    "analysis_sha256": "601b0b5c6f24f8467a815c21be9e3e1ef10068b7aaf6c3013bda592c01871228",
+    "core_gate": true,
+    "full_cef_auroc": 0.6869619799139168,
+    "full_cef_gate": true,
+    "s2_auroc": 0.6508249641319943,
+    "s2_gate": true,
+    "stage2_metric_gate_is_not_tuned": true
+  },
+  "status": "FROZEN_PRE_MODEL_CALL",
+  "version": "stage2",
+  "worlds": {
+    "deployment_worlds": [
+      "original",
+      "relevant_k_minus1",
+      "relevant_k_plus1"
+    ],
+    "dev_items": 198,
+    "dev_worlds": 990,
+    "teacher_worlds": [
+      "original",
+      "relevant_k_minus2",
+      "relevant_k_minus1",
+      "relevant_k_plus1",
+      "relevant_k_plus2"
+    ],
+    "train_calls_authorized": 6720,
+    "train_items": 1344,
+    "train_worlds": 6720
+  }
+}

@@ -1,0 +1,427 @@
+{
+  "claim_boundary": "Secondary zero-shot Qwen-to-Ling application of the frozen missing-probe mapping; no Ling refit, recalibration, feature selection, or threshold tuning was performed.",
+  "dev_items": 198,
+  "dev_worlds": 990,
+  "families": {
+    "all_response_rich__gbdt": {
+      "delta_vs_s2": {
+        "ci_95": [
+          -0.053852759832739766,
+          0.14359157986111112
+        ],
+        "observed": 0.026161081716637224,
+        "replicates": 5000,
+        "seed": 20261022,
+        "valid_replicates": 5000
+      },
+      "family": "all_response_rich",
+      "feature_count": 43,
+      "features": [
+        "minus1_abs_residual",
+        "minus1_confidence",
+        "minus1_confidence_delta",
+        "minus1_confidence_valid",
+        "minus1_correct",
+        "minus1_direction_fidelity",
+        "minus1_magnitude_error",
+        "minus1_normalized_pred_delta",
+        "minus1_signed_residual",
+        "minus1_valid",
+        "original_confidence",
+        "original_confidence_valid",
+        "pair_abs_residual_abs_diff",
+        "pair_abs_residual_diff",
+        "pair_abs_residual_mean",
+        "pair_confidence_abs_diff",
+        "pair_confidence_diff",
+        "pair_confidence_mean",
+        "pair_correct_abs_diff",
+        "pair_correct_diff",
+        "pair_correct_mean",
+        "pair_direction_fidelity_diff",
+        "pair_direction_fidelity_mean",
+        "pair_magnitude_error_diff",
+        "pair_magnitude_error_mean",
+        "pair_normalized_pred_delta_diff",
+        "pair_normalized_pred_delta_mean",
+        "pair_signed_residual_abs_diff",
+        "pair_signed_residual_diff",
+        "pair_signed_residual_mean",
+        "pair_valid_abs_diff",
+        "pair_valid_diff",
+        "pair_valid_mean",
+        "plus1_abs_residual",
+        "plus1_confidence",
+        "plus1_confidence_delta",
+        "plus1_confidence_valid",
+        "plus1_correct",
+        "plus1_direction_fidelity",
+        "plus1_magnitude_error",
+        "plus1_normalized_pred_delta",
+        "plus1_signed_residual",
+        "plus1_valid"
+      ],
+      "full_cef_auroc": 0.8251028806584362,
+      "gap_closure": -11.124999999999805,
+      "head_minus2": {
+        "auroc": 0.8845486111111112,
+        "n": 198,
+        "positive_count": 6
+      },
+      "head_plus2": {
+        "auroc": 0.7460526315789474,
+        "n": 198,
+        "positive_count": 8
+      },
+      "model": "gbdt",
+      "s2_auroc": 0.8274544385655497,
+      "student_auroc": 0.8536155202821869,
+      "teacher_mae": 0.027093754565749695,
+      "teacher_rmse": 0.05033331720579183,
+      "teacher_spearman": 0.3972813484918841
+    },
+    "all_response_rich__logistic": {
+      "delta_vs_s2": {
+        "ci_95": [
+          -0.03125,
+          0.09259304272673254
+        ],
+        "observed": 0.024397413286302183,
+        "replicates": 5000,
+        "seed": 20261022,
+        "valid_replicates": 5000
+      },
+      "family": "all_response_rich",
+      "feature_count": 43,
+      "features": [
+        "minus1_abs_residual",
+        "minus1_confidence",
+        "minus1_confidence_delta",
+        "minus1_confidence_valid",
+        "minus1_correct",
+        "minus1_direction_fidelity",
+        "minus1_magnitude_error",
+        "minus1_normalized_pred_delta",
+        "minus1_signed_residual",
+        "minus1_valid",
+        "original_confidence",
+        "original_confidence_valid",
+        "pair_abs_residual_abs_diff",
+        "pair_abs_residual_diff",
+        "pair_abs_residual_mean",
+        "pair_confidence_abs_diff",
+        "pair_confidence_diff",
+        "pair_confidence_mean",
+        "pair_correct_abs_diff",
+        "pair_correct_diff",
+        "pair_correct_mean",
+        "pair_direction_fidelity_diff",
+        "pair_direction_fidelity_mean",
+        "pair_magnitude_error_diff",
+        "pair_magnitude_error_mean",
+        "pair_normalized_pred_delta_diff",
+        "pair_normalized_pred_delta_mean",
+        "pair_signed_residual_abs_diff",
+        "pair_signed_residual_diff",
+        "pair_signed_residual_mean",
+        "pair_valid_abs_diff",
+        "pair_valid_diff",
+        "pair_valid_mean",
+        "plus1_abs_residual",
+        "plus1_confidence",
+        "plus1_confidence_delta",
+        "plus1_confidence_valid",
+        "plus1_correct",
+        "plus1_direction_fidelity",
+        "plus1_magnitude_error",
+        "plus1_normalized_pred_delta",
+        "plus1_signed_residual",
+        "plus1_valid"
+      ],
+      "full_cef_auroc": 0.8251028806584362,
+      "gap_closure": -10.37499999999984,
+      "head_minus2": {
+        "auroc": 0.9817708333333334,
+        "n": 198,
+        "positive_count": 6
+      },
+      "head_plus2": {
+        "auroc": 0.8236842105263158,
+        "n": 198,
+        "positive_count": 8
+      },
+      "model": "logistic",
+      "s2_auroc": 0.8274544385655497,
+      "student_auroc": 0.8518518518518519,
+      "teacher_mae": 0.024176543980974935,
+      "teacher_rmse": 0.05351563139483242,
+      "teacher_spearman": 0.3621047405689337
+    },
+    "s2__gbdt": {
+      "delta_vs_s2": {
+        "ci_95": [
+          -0.0017636684303350414,
+          0.0
+        ],
+        "observed": -0.00029394473838917357,
+        "replicates": 5000,
+        "seed": 20261022,
+        "valid_replicates": 5000
+      },
+      "family": "s2",
+      "feature_count": 2,
+      "features": [
+        "minus1_correct",
+        "plus1_correct"
+      ],
+      "full_cef_auroc": 0.8251028806584362,
+      "gap_closure": 0.1249999999999941,
+      "head_minus2": {
+        "auroc": 0.9947916666666666,
+        "n": 198,
+        "positive_count": 6
+      },
+      "head_plus2": {
+        "auroc": 0.8032894736842106,
+        "n": 198,
+        "positive_count": 8
+      },
+      "model": "gbdt",
+      "s2_auroc": 0.8274544385655497,
+      "student_auroc": 0.8271604938271605,
+      "teacher_mae": 0.026458727767753962,
+      "teacher_rmse": 0.05076689755042438,
+      "teacher_spearman": 0.8894180325759395
+    },
+    "s2__logistic": {
+      "delta_vs_s2": {
+        "ci_95": [
+          -0.0017636684303350414,
+          0.0
+        ],
+        "observed": -0.00029394473838917357,
+        "replicates": 5000,
+        "seed": 20261022,
+        "valid_replicates": 5000
+      },
+      "family": "s2",
+      "feature_count": 2,
+      "features": [
+        "minus1_correct",
+        "plus1_correct"
+      ],
+      "full_cef_auroc": 0.8251028806584362,
+      "gap_closure": 0.1249999999999941,
+      "head_minus2": {
+        "auroc": 0.9947916666666666,
+        "n": 198,
+        "positive_count": 6
+      },
+      "head_plus2": {
+        "auroc": 0.8032894736842106,
+        "n": 198,
+        "positive_count": 8
+      },
+      "model": "logistic",
+      "s2_auroc": 0.8274544385655497,
+      "student_auroc": 0.8271604938271605,
+      "teacher_mae": 0.025688544162006895,
+      "teacher_rmse": 0.050081399086783586,
+      "teacher_spearman": 0.8894180325759395
+    },
+    "s2_direction__gbdt": {
+      "delta_vs_s2": {
+        "ci_95": [
+          -0.0005181347150259308,
+          0.21513227883538635
+        ],
+        "observed": 0.10405643738977077,
+        "replicates": 5000,
+        "seed": 20261022,
+        "valid_replicates": 5000
+      },
+      "family": "s2_direction",
+      "feature_count": 16,
+      "features": [
+        "minus1_correct",
+        "plus1_correct",
+        "minus1_valid",
+        "plus1_valid",
+        "minus1_direction_fidelity",
+        "plus1_direction_fidelity",
+        "minus1_magnitude_error",
+        "plus1_magnitude_error",
+        "minus1_normalized_pred_delta",
+        "plus1_normalized_pred_delta",
+        "pair_direction_fidelity_mean",
+        "pair_direction_fidelity_diff",
+        "pair_magnitude_error_mean",
+        "pair_magnitude_error_diff",
+        "pair_normalized_pred_delta_mean",
+        "pair_normalized_pred_delta_diff"
+      ],
+      "full_cef_auroc": 0.8251028806584362,
+      "gap_closure": -44.249999999999325,
+      "head_minus2": {
+        "auroc": 0.9926215277777778,
+        "n": 198,
+        "positive_count": 6
+      },
+      "head_plus2": {
+        "auroc": 0.749671052631579,
+        "n": 198,
+        "positive_count": 8
+      },
+      "model": "gbdt",
+      "s2_auroc": 0.8274544385655497,
+      "student_auroc": 0.9315108759553204,
+      "teacher_mae": 0.024373861650156512,
+      "teacher_rmse": 0.047069684916987584,
+      "teacher_spearman": 0.3673366024946795
+    },
+    "s2_direction__logistic": {
+      "delta_vs_s2": {
+        "ci_95": [
+          -0.14841923401152265,
+          0.1952264978990067
+        ],
+        "observed": 0.03145208700764257,
+        "replicates": 5000,
+        "seed": 20261022,
+        "valid_replicates": 5000
+      },
+      "family": "s2_direction",
+      "feature_count": 16,
+      "features": [
+        "minus1_correct",
+        "plus1_correct",
+        "minus1_valid",
+        "plus1_valid",
+        "minus1_direction_fidelity",
+        "plus1_direction_fidelity",
+        "minus1_magnitude_error",
+        "plus1_magnitude_error",
+        "minus1_normalized_pred_delta",
+        "plus1_normalized_pred_delta",
+        "pair_direction_fidelity_mean",
+        "pair_direction_fidelity_diff",
+        "pair_magnitude_error_mean",
+        "pair_magnitude_error_diff",
+        "pair_normalized_pred_delta_mean",
+        "pair_normalized_pred_delta_diff"
+      ],
+      "full_cef_auroc": 0.8251028806584362,
+      "gap_closure": -13.374999999999794,
+      "head_minus2": {
+        "auroc": 0.9982638888888888,
+        "n": 198,
+        "positive_count": 6
+      },
+      "head_plus2": {
+        "auroc": 0.874671052631579,
+        "n": 198,
+        "positive_count": 8
+      },
+      "model": "logistic",
+      "s2_auroc": 0.8274544385655497,
+      "student_auroc": 0.8589065255731922,
+      "teacher_mae": 0.022094901169206656,
+      "teacher_rmse": 0.048068507728515876,
+      "teacher_spearman": 0.3960722395969369
+    }
+  },
+  "model_calls": 6720,
+  "practical_gate": {
+    "delta": 0.026161081716637224,
+    "pass": true,
+    "threshold": 0.02
+  },
+  "primary": {
+    "delta_vs_s2": {
+      "ci_95": [
+        -0.053852759832739766,
+        0.14359157986111112
+      ],
+      "observed": 0.026161081716637224,
+      "replicates": 5000,
+      "seed": 20261022,
+      "valid_replicates": 5000
+    },
+    "family": "all_response_rich",
+    "feature_count": 43,
+    "features": [
+      "minus1_abs_residual",
+      "minus1_confidence",
+      "minus1_confidence_delta",
+      "minus1_confidence_valid",
+      "minus1_correct",
+      "minus1_direction_fidelity",
+      "minus1_magnitude_error",
+      "minus1_normalized_pred_delta",
+      "minus1_signed_residual",
+      "minus1_valid",
+      "original_confidence",
+      "original_confidence_valid",
+      "pair_abs_residual_abs_diff",
+      "pair_abs_residual_diff",
+      "pair_abs_residual_mean",
+      "pair_confidence_abs_diff",
+      "pair_confidence_diff",
+      "pair_confidence_mean",
+      "pair_correct_abs_diff",
+      "pair_correct_diff",
+      "pair_correct_mean",
+      "pair_direction_fidelity_diff",
+      "pair_direction_fidelity_mean",
+      "pair_magnitude_error_diff",
+      "pair_magnitude_error_mean",
+      "pair_normalized_pred_delta_diff",
+      "pair_normalized_pred_delta_mean",
+      "pair_signed_residual_abs_diff",
+      "pair_signed_residual_diff",
+      "pair_signed_residual_mean",
+      "pair_valid_abs_diff",
+      "pair_valid_diff",
+      "pair_valid_mean",
+      "plus1_abs_residual",
+      "plus1_confidence",
+      "plus1_confidence_delta",
+      "plus1_confidence_valid",
+      "plus1_correct",
+      "plus1_direction_fidelity",
+      "plus1_magnitude_error",
+      "plus1_normalized_pred_delta",
+      "plus1_signed_residual",
+      "plus1_valid"
+    ],
+    "full_cef_auroc": 0.8251028806584362,
+    "gap_closure": -11.124999999999805,
+    "head_minus2": {
+      "auroc": 0.8845486111111112,
+      "n": 198,
+      "positive_count": 6
+    },
+    "head_plus2": {
+      "auroc": 0.7460526315789474,
+      "n": 198,
+      "positive_count": 8
+    },
+    "model": "gbdt",
+    "s2_auroc": 0.8274544385655497,
+    "student_auroc": 0.8536155202821869,
+    "teacher_mae": 0.027093754565749695,
+    "teacher_rmse": 0.05033331720579183,
+    "teacher_spearman": 0.3972813484918841
+  },
+  "primary_key": "all_response_rich__gbdt",
+  "protocol": "ConvFinQA_PECR_v0.11_stage3_ling_zero_shot_missing_probe_transfer",
+  "status": "STAGE3_LING_DISTILLATION_TRANSFER_ANALYSIS_COMPLETE",
+  "target_support": {
+    "dev_minus2": 6,
+    "dev_plus2": 8,
+    "train_minus2": 90,
+    "train_plus2": 121
+  },
+  "train_items": 1344,
+  "train_worlds": 6720
+}

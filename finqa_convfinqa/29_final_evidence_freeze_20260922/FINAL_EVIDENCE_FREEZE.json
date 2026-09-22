@@ -1,0 +1,241 @@
+{
+  "artifacts": [
+    {
+      "bytes": 5371,
+      "path": "finqa_convfinqa/26_convfinqa_stage1_qwen_replication_20260922/CONVFINQA_STAGE1_QWEN_REPLICATION_CONTRACT.json",
+      "sha256": "17d16fbf26ad17949a7711817ba718465ca567dca14d81bf28536e00cfc1676a"
+    },
+    {
+      "bytes": 3127,
+      "path": "finqa_convfinqa/26_convfinqa_stage1_qwen_replication_20260922/STAGE1_QWEN_DEV_ANALYSIS.json",
+      "sha256": "601b0b5c6f24f8467a815c21be9e3e1ef10068b7aaf6c3013bda592c01871228"
+    },
+    {
+      "bytes": 980,
+      "path": "finqa_convfinqa/26_convfinqa_stage1_qwen_replication_20260922/STAGE1_QWEN_DEV_EXECUTION_DECISION.json",
+      "sha256": "f6765fe9630031062c61852427c8de6fa0e3fb45e54970a9e8ccfa640129cda1"
+    },
+    {
+      "bytes": 856,
+      "path": "finqa_convfinqa/26_convfinqa_stage1_qwen_replication_20260922/STAGE1_QWEN_DEV_RUN_STATUS.json",
+      "sha256": "ecd93adf850b04aa84c119269747337c76fb92a2c9397f4d618f388905703c54"
+    },
+    {
+      "bytes": 2063975,
+      "path": "finqa_convfinqa/26_convfinqa_stage1_qwen_replication_20260922/STAGE1_QWEN_DEV_RAW_RECORDS.jsonl",
+      "sha256": "a6ff6f4f348b7d18e8a1ba7d465f0c851c8f9af1ddc811c1d9985f0090335f8e"
+    },
+    {
+      "bytes": 4974,
+      "path": "finqa_convfinqa/27_convfinqa_stage2_qwen_missing_probe_20260922/CONVFINQA_STAGE2_QWEN_TRAIN_CONTRACT.json",
+      "sha256": "644d4939ade1edd5e4c17ab8700b178f622b3acf63867b697378edcd462a9001"
+    },
+    {
+      "bytes": 1056,
+      "path": "finqa_convfinqa/27_convfinqa_stage2_qwen_missing_probe_20260922/STAGE2_QWEN_TRAIN_EXECUTION_DECISION.json",
+      "sha256": "76aa6b098661fb1c015cd7ea06e70de18f6448d92bab8ef90c8bcc78f0ab3ba8"
+    },
+    {
+      "bytes": 861,
+      "path": "finqa_convfinqa/27_convfinqa_stage2_qwen_missing_probe_20260922/STAGE2_QWEN_TRAIN_RUN_STATUS.json",
+      "sha256": "d403dd6ced534c23f4495464d2bb851ed673c85f7af5f71207b9f5949d3029c4"
+    },
+    {
+      "bytes": 12537,
+      "path": "finqa_convfinqa/27_convfinqa_stage2_qwen_missing_probe_20260922/STAGE2_CONFIRMATION_ANALYSIS.json",
+      "sha256": "e10295f62d183128af418eae646db9665d8daf54eeaa16a9805ca17d2228030b"
+    },
+    {
+      "bytes": 52194,
+      "path": "finqa_convfinqa/27_convfinqa_stage2_qwen_missing_probe_20260922/STAGE2_DEV_PREDICTIONS.jsonl",
+      "sha256": "e44c0324de9d74d9d05413ecc846f27ed4203c90747895d45f9e48f0e80d7043"
+    },
+    {
+      "bytes": 3028,
+      "path": "finqa_convfinqa/27_convfinqa_stage2_qwen_missing_probe_20260922/V10_ANALYZER_REPAIR_AUDIT.json",
+      "sha256": "28da0a6c2de0a6ec0cb2a9bdd4cc6130083c2b889e00cb5e4f6d1b3b19f3f10e"
+    },
+    {
+      "bytes": 2374,
+      "path": "finqa_convfinqa/27_convfinqa_stage2_qwen_missing_probe_20260922/V10_ANALYZER_REPAIR_AUDIT.md",
+      "sha256": "427e107e70c9abeee7676fc3bfb4c4334d05751497684492eb7f5c5375ec5484"
+    },
+    {
+      "bytes": 14026352,
+      "path": "finqa_convfinqa/27_convfinqa_stage2_qwen_missing_probe_20260922/STAGE2_QWEN_TRAIN_RAW_RECORDS.jsonl",
+      "sha256": "b70712ae4b844db5bbff0098ac6197e02d898426585153aa67cd5934c7b78fac"
+    },
+    {
+      "bytes": 7399,
+      "path": "finqa_convfinqa/28_convfinqa_stage3_ling_replication_20260922/CONVFINQA_STAGE3_LING_REPLICATION_CONTRACT.json",
+      "sha256": "3fd65c167903ec75a9853d9998c3e72e74780fbf6bd41f547df58ef50ffc1a14"
+    },
+    {
+      "bytes": 1173,
+      "path": "finqa_convfinqa/28_convfinqa_stage3_ling_replication_20260922/STAGE3_LING_DEV_EXECUTION_DECISION.json",
+      "sha256": "1a5f50061daf9350fb91ff782c397dd8d61980b2d1ec4c1a7cf5a962017c5db4"
+    },
+    {
+      "bytes": 937,
+      "path": "finqa_convfinqa/28_convfinqa_stage3_ling_replication_20260922/STAGE3_LING_DEV_RUN_STATUS.json",
+      "sha256": "ca5d800969576f7677ba6d531b9d07c9ca5c47f2f4344a5ac84321bfe081c01b"
+    },
+    {
+      "bytes": 3173,
+      "path": "finqa_convfinqa/28_convfinqa_stage3_ling_replication_20260922/STAGE3_LING_DEV_ANALYSIS.json",
+      "sha256": "a8c3e2297878670964b91d476c59683ad8a0cf77f09aa5ccb0396a5937ada73e"
+    },
+    {
+      "bytes": 2195143,
+      "path": "finqa_convfinqa/28_convfinqa_stage3_ling_replication_20260922/STAGE3_LING_DEV_RAW_RECORDS.jsonl",
+      "sha256": "8e1286e0231b59bd473b08c3af9126861246a286f30f80e529f7fda93b653dd0"
+    },
+    {
+      "bytes": 3048,
+      "path": "finqa_convfinqa/28_convfinqa_stage3_ling_replication_20260922/STAGE3_LING_DISTILLATION_TRANSFER_CONTRACT.json",
+      "sha256": "5c34669d71f9d8f2df3b85ec5889451dd4ea268bba03352394cba8062ab66c7c"
+    },
+    {
+      "bytes": 12567,
+      "path": "finqa_convfinqa/28_convfinqa_stage3_ling_replication_20260922/STAGE3_LING_DISTILLATION_TRANSFER_ANALYSIS.json",
+      "sha256": "8fbd93db6a3bf667e2cb60fe021e6a00da7217390a5fbe62e2861950d8f08def"
+    },
+    {
+      "bytes": 52141,
+      "path": "finqa_convfinqa/28_convfinqa_stage3_ling_replication_20260922/STAGE3_LING_DISTILLATION_TRANSFER_PREDICTIONS.jsonl",
+      "sha256": "e8082c56ebc30ee31b3f69b0f83bd8a3258db349ddf5371ab7d48fd62d1fd8e9"
+    },
+    {
+      "bytes": 2140,
+      "path": "finqa_convfinqa/28_convfinqa_stage3_ling_replication_20260922/STAGE3_LING_DECISION.json",
+      "sha256": "106c1bbb634971b1d3adc013853cf5842b197e2aed068a9f2f4dcd10a0be52fd"
+    },
+    {
+      "bytes": 1200,
+      "path": "finqa_convfinqa/28_convfinqa_stage3_ling_replication_20260922/STAGE2_STAGE3_POSTHOC_GROUP_BOOTSTRAP_AUDIT.json",
+      "sha256": "7da448bfe9f9e56cdc2a7149ada618d86aa147e60c19ac48813db19fec78e6d2"
+    }
+  ],
+  "claims": {
+    "C1_cross_task_pecr_core": {
+      "boundary": "Two executable financial-reasoning benchmarks; not arbitrary reasoning tasks or universal reliability.",
+      "claim": "Frozen S2 and full CEF retain positive discrimination of original executable correctness on Qwen and Ling ConvFinQA DEV cohorts.",
+      "ling": {
+        "full_cef_auroc": 0.8251028806584362,
+        "full_cef_ci_95": [
+          0.6455938103115522,
+          0.9988375378036487
+        ],
+        "items": 198,
+        "numeric_valid_rate": 0.5767676767676768,
+        "positive_original_correct": 9,
+        "s2_auroc": 0.8274544385655497,
+        "s2_ci_95": [
+          0.6525499706055261,
+          0.9982638888888888
+        ],
+        "schema_valid_rate": 0.7909090909090909
+      },
+      "qwen": {
+        "full_cef_auroc": 0.6869619799139168,
+        "full_cef_ci_95": [
+          0.5953899280278206,
+          0.7822079023959867
+        ],
+        "items": 198,
+        "positive_original_correct": 34,
+        "s2_auroc": 0.6508249641319943,
+        "s2_ci_95": [
+          0.5707206089649238,
+          0.7352946713323885
+        ]
+      },
+      "status": "SUPPORTED_WITH_SCOPE_BOUNDARY"
+    },
+    "C2_qwen_missing_probe_distillation": {
+      "claim": "A Qwen TRAIN-fit response-rich missing-probe imputation student improves the two-probe S2 diagnostic on frozen ConvFinQA DEV without additional inference-time probes.",
+      "delta_vs_s2": {
+        "ci_95": [
+          0.01827068331473532,
+          0.1739720174818759
+        ],
+        "observed": 0.09657460545193686,
+        "replicates": 5000,
+        "seed": 20261022,
+        "valid_replicates": 5000
+      },
+      "deployment_calls_per_item": 3,
+      "dev_items": 198,
+      "full_cef_reference_auroc": 0.6869619799139168,
+      "group_bootstrap_delta_ci_95": [
+        0.019038106084138223,
+        0.1736398401646246
+      ],
+      "head_minus2_auroc": 0.8754098360655738,
+      "head_plus2_auroc": 0.8406936416184971,
+      "practical_gate": true,
+      "s2_auroc": 0.6508249641319943,
+      "status": "PROSPECTIVELY_CONFIRMED_ON_FROZEN_DEV",
+      "student_auroc": 0.7473995695839312,
+      "train_items": 1344
+    },
+    "C3_qwen_to_ling_zero_shot_transfer": {
+      "claim": "Frozen Qwen-to-Ling response mapping has a positive point-estimate direction on Ling DEV, but statistical support is insufficient.",
+      "delta_vs_s2": {
+        "ci_95": [
+          -0.053852759832739766,
+          0.14359157986111112
+        ],
+        "observed": 0.026161081716637224,
+        "replicates": 5000,
+        "seed": 20261022,
+        "valid_replicates": 5000
+      },
+      "full_cef_auroc": 0.8251028806584362,
+      "group_bootstrap_delta_ci_95": [
+        -0.047557556866620235,
+        0.1453061510663103
+      ],
+      "head_minus2_auroc": 0.8845486111111112,
+      "head_minus2_positive_count": 6,
+      "head_plus2_auroc": 0.7460526315789474,
+      "head_plus2_positive_count": 8,
+      "no_ling_refit": true,
+      "practical_gate": true,
+      "s2_auroc": 0.8274544385655497,
+      "statistical_support": false,
+      "status": "SUGGESTIVE_PRACTICAL_ONLY",
+      "student_auroc": 0.8536155202821869
+    },
+    "C4_directional_executable_boundary": {
+      "claim": "Generic behavioral sensitivity is not treated as sufficient; executable expected-response fidelity is the PECR boundary used here.",
+      "evidence": "Existing CST, S&P boundary, FinQA PECR, and ConvFinQA PECR artifacts; no new model calls in this freeze.",
+      "status": "SUPPORTED_AS_BOUNDED_STORY"
+    }
+  },
+  "freeze_date": "2026-09-22",
+  "implementation_audit": {
+    "additional_model_calls": 0,
+    "contract_feature_hash_unchanged": true,
+    "forbidden_feature_hits": [],
+    "repair_artifact": "finqa_convfinqa/27_convfinqa_stage2_qwen_missing_probe_20260922/V10_ANALYZER_REPAIR_AUDIT.json",
+    "status": "POST_HOC_IMPLEMENTATION_AUDIT_PASS"
+  },
+  "model_calls": {
+    "additional_generation_calls_after_freeze": 0,
+    "generation_calls_total": 8700,
+    "ling_stage3_convfinqa_dev": 990,
+    "qwen_stage1_convfinqa_dev": 990,
+    "qwen_stage2_convfinqa_train_distillation": 6720
+  },
+  "non_claims": [
+    "Full discrete CEF is not an AUROC upper bound for the continuous reconstructed student.",
+    "Do not call the Ling zero-shot transfer statistically confirmed or teacher-gap closure.",
+    "Do not generalize from FinQA and ConvFinQA to arbitrary reasoning tasks.",
+    "Do not report Ling estimates without the 9/198 positive-count and low-validity caveat.",
+    "Do not use post-hoc group-bootstrap or 41-feature omission sensitivity as replacement frozen endpoints.",
+    "No third benchmark, third model, Ling TRAIN-fit distillation, probe reselection, or hyperparameter search is part of this freeze."
+  ],
+  "phase": "Cross-Task Confirmatory Validation complete; paper consolidation only",
+  "status": "EVIDENCE_FROZEN_NO_NEW_MODEL_CALLS"
+}

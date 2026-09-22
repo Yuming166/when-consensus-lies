@@ -1,0 +1,204 @@
+{
+  "artifacts": {
+    "primary_dev_gold": "V11_PRIMARY_DEV_ONE_PER_CONVERSATION_GOLD.jsonl",
+    "primary_dev_gold_sha256": "74f56703b1a1b1040c0960473a392f8994da0495cad1ab7f21793c85620796d8",
+    "primary_dev_manifest_internal_combined": "V11_PRIMARY_DEV_ONE_PER_CONVERSATION.jsonl",
+    "primary_dev_manifest_internal_combined_sha256": "55b4370a3d4c8f9362dd7fe61dc70dbdeafc51980dab613c9ebb67eca2898f71",
+    "primary_dev_public": "V11_PRIMARY_DEV_ONE_PER_CONVERSATION_PUBLIC.jsonl",
+    "primary_dev_public_sha256": "b08bb99595b75f88c796b8a5f21afc5d22e2ded875e32b2e983477a28ef45215",
+    "primary_train_gold": "V11_PRIMARY_TRAIN_ONE_PER_CONVERSATION_GOLD.jsonl",
+    "primary_train_gold_sha256": "485fe414016bef85d34c1effde2b5098fc91b392ad6072ea7e500e0e23267f87",
+    "primary_train_manifest_internal_combined": "V11_PRIMARY_TRAIN_ONE_PER_CONVERSATION.jsonl",
+    "primary_train_manifest_internal_combined_sha256": "923ce12f1d50fc115147390524e8f84f9680ab94122d4c035b40682ed705479f",
+    "primary_train_public": "V11_PRIMARY_TRAIN_ONE_PER_CONVERSATION_PUBLIC.jsonl",
+    "primary_train_public_sha256": "85f211e0323da1d3b63c0c3ffc49e093b033f09f31bdfc6162f020b4cf8b04e0",
+    "source_sensitivity_dev_gold": "V11_SENSITIVITY_DEV_ONE_PER_SOURCE_GOLD.jsonl",
+    "source_sensitivity_dev_gold_sha256": "880d95b94f38b2344961bc4193b0ada511f43a2f09fdfb6bdc752d625ecf2752",
+    "source_sensitivity_dev_manifest_internal_combined": "V11_SENSITIVITY_DEV_ONE_PER_SOURCE.jsonl",
+    "source_sensitivity_dev_manifest_internal_combined_sha256": "f622bd9ea59e97983f518416d9e95733e211441c6b2326cfd786188116e5f36b",
+    "source_sensitivity_dev_public": "V11_SENSITIVITY_DEV_ONE_PER_SOURCE_PUBLIC.jsonl",
+    "source_sensitivity_dev_public_sha256": "cf9bd7944b4daa56c3d9aa04f5daaac0a0cbef26ac713f6a9555e397b507a63e",
+    "source_sensitivity_train_gold": "V11_SENSITIVITY_TRAIN_ONE_PER_SOURCE_GOLD.jsonl",
+    "source_sensitivity_train_gold_sha256": "e2993e264ddef692cf1a876fd0c997e7424d6e37d97110af3bf05bd04cb415a5",
+    "source_sensitivity_train_manifest_internal_combined": "V11_SENSITIVITY_TRAIN_ONE_PER_SOURCE.jsonl",
+    "source_sensitivity_train_manifest_internal_combined_sha256": "05a32a37485a15406e915db4ac934067ede1805605b737851c13dd9b51ad4dd4",
+    "source_sensitivity_train_public": "V11_SENSITIVITY_TRAIN_ONE_PER_SOURCE_PUBLIC.jsonl",
+    "source_sensitivity_train_public_sha256": "7cadaff462915eef94263e83b47a5e9c1d61175e5ca55b1be7e4f5beeaee4ea7"
+  },
+  "claim_boundary": "Offline executable-semantics feasibility and capacity only. No ConvFinQA model result, PECR effectiveness claim, external validation claim, or distillation improvement claim is established by this freeze.",
+  "contract": "PECR_V0_11_CONVFINQA_FROZEN_REPLICATION_CONTRACT",
+  "data": {
+    "audit_sha256": "3915e707daf97b643b2b4c160c0d8c3c45f7717bba7172284d784cf1e85d8e40",
+    "data_zip_sha256": "d764271fae60d81b62e6d58dfc481807ebc8cfbcd633811241723c4a2101072a",
+    "dev_turn_audit_sha256": "8b81a34f89612c79fa3c39727a972a70866439e591d0254cfaca53e3ad470aad",
+    "finqa_v0_10_contract_sha256": "85bd5d32bb88c4be6f0af37bc8d9fe94299093a72338348370523335d3a82207",
+    "finqa_v0_10_primary_feature_family_sha256": "b04224277fde686ba28a50361f6a25dbaa3a4aff0e92c56606baa5ab9dc00f24",
+    "main_commit": "cf3eed2d5984960bf06bb8145bcea5e80b0222a6",
+    "private_test_policy": "test_turn_private has dialogue text but no gold program/executable answer fields; it is unavailable for this offline confirmation freeze and must not be used as a labeled confirmation set.",
+    "repository": "https://github.com/czyssrs/ConvFinQA",
+    "train_turn_audit_sha256": "b88f57a986f120867bd8920d762a7262155d8cb45765f8bb464af58cc648f33d"
+  },
+  "features_and_leakage": {
+    "allowed_observed_gold_oracle": "Executable counterfactual gold may be used by the evaluator to derive observed probe residual/direction/unit features, matching the FinQA PECR boundary.",
+    "direct_correctness_student": "Diagnostic control only; it cannot select features, models, thresholds, or prompts.",
+    "forbidden_features": [
+      "relevant_k_minus2 response",
+      "relevant_k_plus2 response",
+      "full CEF",
+      "original correctness",
+      "unexecuted-probe gold-derived feature"
+    ],
+    "observed_worlds_only": [
+      "original",
+      "relevant_k_minus1",
+      "relevant_k_plus1"
+    ],
+    "primary_feature_family": "The frozen FinQA v0.10 all_response_rich mapping, ported without feature search; exact feature definitions and model coefficients must be frozen before calls."
+  },
+  "freeze_date": "2026-09-22",
+  "hypotheses": {
+    "missing_probe": "Observed mild-probe response geometry contains information about the outcomes of unexecuted -2/+2 probes and reconstructed CEF improves over fixed S2 without additional deployment calls.",
+    "replication": "On ConvFinQA, sparse executable response score S2 from original/-1/+1 predicts original answer correctness above chance."
+  },
+  "metrics_and_gates": {
+    "interpretation": "PASS_STRONG requires delta >= 0.02 and CI lower > 0; PASS_PRACTICAL_ONLY requires delta >= 0.02 with CI crossing 0; otherwise NO_MEANINGFUL_GAIN. These are confirmation labels, not claims of universal superiority.",
+    "model_reporting": "Report Qwen and Ling separately; pooled analysis is secondary and must not replace per-model results.",
+    "practical_delta_threshold": 0.02,
+    "primary_distillation": [
+      "AUROC(reconstructed_CEF, original_correct) - AUROC(S2, original_correct)",
+      "paired group-bootstrap 95% CI",
+      "MAE/reconstruction Spearman versus full CEF",
+      "GapClosure"
+    ],
+    "primary_replication": [
+      "AUROC(S2, original_correct)",
+      "group-bootstrap 95% CI with filename clusters",
+      "permutation control"
+    ]
+  },
+  "model_calls": 0,
+  "models": {
+    "identity_rule": "Verify /v1/models immediately before calls; abort on identity drift; no fallback model.",
+    "ling": {
+      "endpoint": "http://127.0.0.1:31520/v1/chat/completions",
+      "expected_model": "Ling-3.0-tiny",
+      "models_endpoint": "http://127.0.0.1:31520/v1/models"
+    },
+    "qwen": {
+      "endpoint": "http://127.0.0.1:31518/v1/chat/completions",
+      "expected_model": "Qwen3.5-4B",
+      "models_endpoint": "http://127.0.0.1:31518/v1/models"
+    }
+  },
+  "offline_audit_gate": {
+    "eligible_dev_turns": 283,
+    "eligible_train_turns": 1814,
+    "minimum_primary_capacity_gate": "primary train >= 200 and primary dev >= 150 and train/dev source disjoint",
+    "minimum_primary_capacity_pass": true,
+    "primary_dev_one_per_conversation": 198,
+    "primary_train_one_per_conversation": 1344,
+    "sensitivity_dev_one_per_source": 114,
+    "sensitivity_train_one_per_source": 754,
+    "status": "PROCEED_TO_FREEZE_REPLICATION_CONTRACT",
+    "train_dev_conversation_disjoint": true,
+    "train_dev_source_disjoint": true
+  },
+  "prompt_spec": {
+    "fresh_conversation_per_world": true,
+    "gold_and_annotation_hidden_from_model": true,
+    "question_history_visible": true,
+    "sha256": "1dfa0b00abe9a02e9ce40bf8b410c3f7bee9a56346395586bde55f0c3e312690",
+    "spec": {
+      "dialogue_rule": "Render every question in dialogue_history in order; the last question is the current turn. Do not add answers or programs to the visible prompt.",
+      "forbidden_visible_fields": [
+        "program",
+        "exe_ans",
+        "target",
+        "world_diagnostics",
+        "annotation",
+        "qa",
+        "gold",
+        "correctness"
+      ],
+      "model_visible_fields": [
+        "dialogue_history",
+        "pre_text",
+        "table",
+        "post_text"
+      ],
+      "mutation_rule": "Only the unique audited target numeric surface is changed in relevant worlds; dialogue history is not mutated.",
+      "response_contract": {
+        "answer_rule": "Answer the current last dialogue question; do not output a program or explanation unless the runner's fixed parser explicitly permits it.",
+        "format": "json_object",
+        "optional_keys": [
+          "confidence"
+        ],
+        "required_keys": [
+          "answer"
+        ]
+      },
+      "source_scope": [
+        "pre_text",
+        "table",
+        "post_text"
+      ],
+      "version": "convfinqa-turn-prompt-v1"
+    }
+  },
+  "protocol": "ConvFinQA_PECR_v0.11_prospective_replication_and_missing_probe_confirmation",
+  "request_contract": {
+    "authorization_boundary": "Authorization remains false until a separate runner is reviewed against this frozen contract and the prompt/input artifact hashes.",
+    "fallback": false,
+    "fresh_conversation_per_world": true,
+    "max_tokens": 180,
+    "model_calls_authorized": false,
+    "n": 1,
+    "response_format": {
+      "type": "json_object"
+    },
+    "retries": 0,
+    "stream": false,
+    "temperature": 0.0,
+    "timeout_seconds": 180,
+    "top_p": 1.0,
+    "workers": 1
+  },
+  "selection": {
+    "post_selection_outcome_tuning": false,
+    "primary_cluster_field_for_uncertainty": "filename/source_group_id",
+    "primary_dev_manifest": "V11_PRIMARY_DEV_ONE_PER_CONVERSATION.jsonl",
+    "primary_rule": "sort eligible rows by (conversation_id, turn_index, id); keep the first row per conversation_id",
+    "primary_train_manifest": "V11_PRIMARY_TRAIN_ONE_PER_CONVERSATION.jsonl",
+    "primary_unit": "conversation_id",
+    "reason_primary_is_conversation": "One-per-source-file leaves only 114 dev items, below the predeclared 150-item confirmation capacity; primary uses one per conversation and reports source-cluster sensitivity.",
+    "sensitivity_dev_manifest": "V11_SENSITIVITY_DEV_ONE_PER_SOURCE.jsonl",
+    "sensitivity_rule": "sort eligible rows by (filename, turn_index, id); keep the first row per filename",
+    "sensitivity_train_manifest": "V11_SENSITIVITY_TRAIN_ONE_PER_SOURCE.jsonl",
+    "sensitivity_unit": "filename/source file"
+  },
+  "status": "FROZEN_PRE_MODEL_CALL_NO_MODEL_CALLS",
+  "version": "v0.11",
+  "worlds_and_budget": {
+    "calls_per_item_for_deployment": 3,
+    "calls_per_item_for_full_teacher_evaluation": 5,
+    "deployment_worlds": [
+      "original",
+      "relevant_k_minus1",
+      "relevant_k_plus1"
+    ],
+    "full_cef": "mean(correctness over relevant_k_minus2, relevant_k_minus1, relevant_k_plus1, relevant_k_plus2)",
+    "missing_targets": [
+      "target_minus2 = correctness(relevant_k_minus2)",
+      "target_plus2 = correctness(relevant_k_plus2)"
+    ],
+    "reconstructed_cef": "(correct_minus1 + correct_plus1 + p_minus2 + p_plus2) / 4",
+    "s2": "mean(correctness over relevant_k_minus1 and relevant_k_plus1)",
+    "teacher_collection_worlds": [
+      "original",
+      "relevant_k_minus2",
+      "relevant_k_minus1",
+      "relevant_k_plus1",
+      "relevant_k_plus2"
+    ]
+  }
+}

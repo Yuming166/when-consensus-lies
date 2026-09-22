@@ -1,0 +1,11 @@
+{
+  "contract": "CONVFINQA_V0_11_FROZEN_CONTRACT.json",
+  "model_calls": 0,
+  "primary_dev": 198,
+  "primary_train": 1344,
+  "prompt_spec_sha256": "1dfa0b00abe9a02e9ce40bf8b410c3f7bee9a56346395586bde55f0c3e312690",
+  "source_sensitivity_dev": 114,
+  "source_sensitivity_train": 754,
+  "status": "FROZEN_PRE_MODEL_CALL_NO_MODEL_CALLS",
+  "train_dev_source_disjoint": true
+}

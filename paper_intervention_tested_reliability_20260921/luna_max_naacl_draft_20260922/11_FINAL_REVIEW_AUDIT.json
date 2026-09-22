@@ -1,0 +1,22 @@
+{
+  "draft": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/paper_intervention_tested_reliability_20260921/luna_max_naacl_draft_20260922/08_NAACL_FIRST_DRAFT_REVIEWED.md",
+  "chars": 57259,
+  "citation_placeholders": 14,
+  "missing_values": [],
+  "checks": {
+    "no_unjustified_conditional_expectation": true,
+    "imputation_target_labels": true,
+    "student_original_correctness_label": true,
+    "no_teacher_upper_bound_claim": true,
+    "ling_caveat": true,
+    "cst_definition": true,
+    "retention_formula": true,
+    "provenance_anchors": true,
+    "repair_disclosure": true,
+    "no_historical_mixed_accounting": true,
+    "no_legacy_section_numbering": true,
+    "unique_major_headings": true,
+    "expected_values_present": true
+  },
+  "status": "PASS_REVIEWED_DRAFT"
+}

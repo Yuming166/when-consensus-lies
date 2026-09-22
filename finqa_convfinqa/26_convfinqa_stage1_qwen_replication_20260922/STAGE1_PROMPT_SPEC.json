@@ -1,0 +1,36 @@
+{
+  "answer_unit_rule": "Ask the model to preserve the unit implied by the current question; evaluator primary correctness normalizes optional percent signs and does not use item-level QA answer surfaces as current-turn labels.",
+  "dialogue_rule": "Render every question in dialogue_history in order; the last question is the current turn. Do not add answers or programs to the visible prompt.",
+  "forbidden_visible_fields": [
+    "program",
+    "exe_ans",
+    "target",
+    "world_diagnostics",
+    "annotation",
+    "qa",
+    "gold",
+    "correctness",
+    "unit_hint"
+  ],
+  "model_visible_fields": [
+    "dialogue_history",
+    "pre_text",
+    "table",
+    "post_text"
+  ],
+  "mutation_rule": "Only the audited target numeric surface is changed in relevant worlds; dialogue history is not mutated.",
+  "response_contract": {
+    "confidence_range": [
+      0,
+      1
+    ],
+    "format": "json_object",
+    "optional_keys": [],
+    "required_keys": [
+      "answer",
+      "confidence"
+    ]
+  },
+  "system_prompt": "You are a careful financial numerical question solver. Use only the question and supplied context. Return exactly one JSON object with keys answer and confidence. Preserve the answer unit: include a percent sign for percentage answers (for example 7.6%), and do not include a percent sign for plain-number answers. Do not convert percentages to fractions. Confidence must be a number from 0 to 1. Do not include reasoning or any other keys.",
+  "version": "convfinqa-stage1-prompt-v1"
+}

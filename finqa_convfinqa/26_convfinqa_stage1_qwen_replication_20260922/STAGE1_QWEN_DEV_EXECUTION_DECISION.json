@@ -1,0 +1,29 @@
+{
+  "all_execution_gates_pass": true,
+  "claim_boundary": "Stage-1 Qwen ConvFinQA replication only. No result or PECR effectiveness claim is established until the frozen DEV worlds are executed and independently analyzed.",
+  "contract": "CONVFINQA_STAGE1_QWEN_REPLICATION_CONTRACT",
+  "expected_worlds": 990,
+  "hypothesis_result": "NOT_EVALUATED_BY_RUNNER",
+  "invalid_categories": {
+    "invalid_json:JSONDecodeError": 2
+  },
+  "model_calls": 990,
+  "preflight": {
+    "expected_model": "Qwen3.5-4B",
+    "http_status": 200,
+    "identity_pass": true,
+    "latency_seconds": 0.015377006959170103,
+    "models": [
+      "Qwen3.5-4B"
+    ],
+    "response_sha256": "b6631d27a58e8b8deb5809e276b42abacfb9b5d5ed12dd36264afa4e6b3dd058"
+  },
+  "protocol": "ConvFinQA_PECR_v0.11_stage1_qwen_replication",
+  "record_count": 990,
+  "returned_models": {
+    "Qwen3.5-4B": 990
+  },
+  "schema_valid_record_count": 988,
+  "stage2_authorized": false,
+  "status": "STAGE1_EXECUTION_COMPLETE"
+}

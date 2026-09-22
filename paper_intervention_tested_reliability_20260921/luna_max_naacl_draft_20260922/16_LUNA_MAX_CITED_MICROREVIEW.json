@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-09-22T13:33:50.389765+00:00",
+  "http_code": 200,
+  "latency_seconds": 223.04,
+  "model": "gpt-5.6-luna",
+  "status": "completed",
+  "response_id": "resp_0869ec694b7e2694016ab282e1e63c87d18487bff3402793dc",
+  "output_chars": 2821,
+  "success": true,
+  "error": null,
+  "body_prefix": "{\"id\":\"resp_0869ec694b7e2694016ab282e1e63c87d18487bff3402793dc\",\"object\":\"response\",\"created_at\":1790083810,\"status\":\"completed\",\"background\":false,\"completed_at\":1790084029,\"error\":null,\"frequency_penalty\":0.0,\"incomplete_details\":null,\"instructions\":\"You are a senior NAACL reviewer doing a compact final pass over a cited first draft. Return at most 12 high-value findings, each tagged P0/P1/P2. Check only: (1) whether the central contribution and paper title are clear; (2) whether any sentence "
+}

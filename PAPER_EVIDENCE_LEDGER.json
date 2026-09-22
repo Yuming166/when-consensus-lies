@@ -1,0 +1,514 @@
+{
+  "audit_packages": {
+    "argument_memo": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/PAPER_ARGUMENT_MEMO_20260921.md",
+    "eligibility": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/PECR_DEV_ELIGIBILITY_AUDIT_20260921.json",
+    "metadata_repair": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/PECR_METADATA_REPAIR_AUDIT_20260921.json",
+    "strong_baselines": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/STRONG_RELIABILITY_BASELINE_PLAN_20260921.md"
+  },
+  "domains": [
+    {
+      "allowed_claim": "On frozen VitaminC natural-pair cohorts, expected-response faithfulness / directional response features ranked high-consensus errors beyond confidence, agreement, and frozen provenance baselines under placebo and permutation controls.",
+      "boundary": "CST results are benchmark- and protocol-bounded; do not turn them into causal cognition or universal multi-agent reliability claims.",
+      "experiments": [
+        {
+          "artifacts": [
+            {
+              "bytes": 33416,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/registry.yaml",
+              "role": "registry entry",
+              "sha256": "d88dde814f46ed5930bcb38be651919d3dd64028d79e7ad6760bb06457448c3b"
+            },
+            {
+              "bytes": 5288,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round2/phase2_pilot/confirmation_preregistration.md",
+              "role": "preregistration",
+              "sha256": "a6e7164f904274d37177f130687627988d3b40dec54adef9ec852b5cbbc2277c"
+            }
+          ],
+          "id": "cs-pilot-vitaminc-conf-20260913",
+          "result": "AUROC(RS_q=-BF_q, wrong|HC)=0.912 [0.848, 0.973] on a 50-pair confirmation cohort; placebo clean and permutation-validated; label-symmetric gate passed.",
+          "status": "PASS"
+        },
+        {
+          "artifacts": [
+            {
+              "bytes": 33416,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/registry.yaml",
+              "role": "registry entry",
+              "sha256": "d88dde814f46ed5930bcb38be651919d3dd64028d79e7ad6760bb06457448c3b"
+            },
+            {
+              "exists": true,
+              "file_count_excluding_cache": 6629,
+              "kind": "directory",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round3",
+              "recursive_sha256_excluding_cache": "d99d9a5beb5f83c1b9d7ddc8064b5e6c1820e2955b2c46d43abcd930cd66a740",
+              "role": "frozen round3 artifact directory"
+            }
+          ],
+          "id": "cs-phase4-reliability-20260913",
+          "result": "Combined high-consensus analysis: RS_q AUROC 0.906 [0.865, 0.944]; Risk@80 CI lower bound positive; paired gains over R_sym/R_PI; OOF calibration analysis retained as secondary.",
+          "status": "PASS"
+        },
+        {
+          "artifacts": [
+            {
+              "bytes": 33416,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/registry.yaml",
+              "role": "registry entry",
+              "sha256": "d88dde814f46ed5930bcb38be651919d3dd64028d79e7ad6760bb06457448c3b"
+            },
+            {
+              "bytes": 12174,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round3/preregistration.md",
+              "role": "preregistration",
+              "sha256": "2e9a704abd802e9e972434c5c8f6d650ea5a2adc03c3bc8d309acfdf34b6a547"
+            },
+            {
+              "exists": true,
+              "file_count_excluding_cache": 6629,
+              "kind": "directory",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round3",
+              "recursive_sha256_excluding_cache": "d99d9a5beb5f83c1b9d7ddc8064b5e6c1820e2955b2c46d43abcd930cd66a740",
+              "role": "round3 artifacts"
+            }
+          ],
+          "id": "cs-paper-vitaminc-20260913",
+          "result": "Paper-scale 300-pair / 600-item cohort: RS_q AUROC 0.943 [0.924, 0.960], worst-label SUPPORTS 0.917 [0.819, 0.999], Risk@80 0.846 [0.638, 0.981], paired gains vs R_sym/R_PI.",
+          "status": "PASS"
+        },
+        {
+          "artifacts": [
+            {
+              "bytes": 2891,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round10_2x2/decision.md",
+              "role": "frozen decision",
+              "sha256": "c51f61b576385c25698b55a54fb1131c551e2ebb317199525e2b29014f9e19f2"
+            },
+            {
+              "bytes": 3053,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round10_2x2/protocol.md",
+              "role": "protocol",
+              "sha256": "30dd628b0ab82854647d6c9962d3099b282187c97520355851f4ca554ac7d096"
+            }
+          ],
+          "id": "round10-2x2-20260915",
+          "result": "Direction contrast +0.44 [0.24, 0.65]; consensus-opposing independent CE flips wrong consensus at 0.946 (35/37); construction/near-duplicate effect does not survive direction control in the available clean subset.",
+          "status": "DIRECTION_DOMINANT"
+        }
+      ],
+      "id": "cst",
+      "label": "Consensus stress testing (CST)",
+      "main_paper_role": "Primary evidence for outcome-blind intervention-response measurement and direction-sensitive expected-response faithfulness; report the direction account, not an overlap/rigidity mechanism.",
+      "source_repo": "/home/gaoym/when-consensus-lies-publish-20260911",
+      "status": "PASS_BOUNDED_WITH_MECHANISM_REFRAME"
+    },
+    {
+      "allowed_claim": "The bounded S&P 500 pilot was structurally harder than the previous benchmark, but the behavioral-state candidate B8 did not beat B6 and the protocol stopped before teacher/prospective escalation.",
+      "boundary": "No causal cognition, alpha, profitable trading, prospective reliability gain, teacher benefit, or deployment claim.",
+      "experiments": [
+        {
+          "artifacts": [
+            {
+              "bytes": 4514,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/autoresearch_sp500_behavioral_state/02_feasibility/decision.md",
+              "role": "decision",
+              "sha256": "e0088766f1c678b4a0b097b9162984c4cbd7c5128eada674c11b3ae33169ae11"
+            },
+            {
+              "bytes": 397,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/autoresearch_sp500_behavioral_state/02_feasibility/pilot_summary_ling.json",
+              "role": "execution summary",
+              "sha256": "38af4c1f67057b6bfd01a28a910ca55e159d75b1644aea96be6f3c3c3c33b5cd"
+            },
+            {
+              "bytes": 359,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/autoresearch_sp500_behavioral_state/02_feasibility/pilot_summary_hy.json",
+              "role": "execution summary",
+              "sha256": "a3a5914bcade35847c22bf00cb573729b29618a05bceb5c87a097bfb52e57555"
+            }
+          ],
+          "id": "sp500-f0-hardness-20260918",
+          "result": "Ling static AUROC 0.6040 and Hy 0.5569; 161/166 wrong-majority dates and 14/87 5/5-wrong dates; F0 passed only to authorize intervention-validity audit.",
+          "status": "PASS_BOUNDED_HARDNESS"
+        },
+        {
+          "artifacts": [
+            {
+              "bytes": 4555,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/autoresearch_sp500_behavioral_state/03_interventions/wave3_ling_400/wave3_final_status.md",
+              "role": "final synthesis",
+              "sha256": "0dd71e7b6778b6bc20bf9761d1edbbe0ce68e4e2b77d0dce567169e4132276c0"
+            },
+            {
+              "bytes": 40160,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/autoresearch_sp500_behavioral_state/03_interventions/wave3_ling_400/wave3_b678_analysis_results.json",
+              "role": "analysis result",
+              "sha256": "52bd61a6d878473ad3a45e7276b0e19ef735e0a03c4080215a8e7ef28110c6ec"
+            },
+            {
+              "bytes": 658,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/autoresearch_sp500_behavioral_state/03_interventions/wave3_ling_400/astra6_final_synthesis_summary.json",
+              "role": "Astra6 synthesis",
+              "sha256": "ff467fc9c41d283371fac4e18819e6386c9784b76dbcf953ba25beea921232f2"
+            }
+          ],
+          "id": "sp500-wave3-b678-20260918",
+          "result": "On 469 complete DEV units, B6 AUROC 0.6320 [0.5546, 0.7051] vs B8 0.6177 [0.5430, 0.6950]; B8-B6 -0.0143 [-0.0560, 0.0287]. Decision: KEEP_B6_NO_ESCALATION.",
+          "status": "NO_ESCALATION"
+        },
+        {
+          "artifacts": [
+            {
+              "bytes": 4087,
+              "exists": true,
+              "kind": "file",
+              "path": "/storage/gaoym/sp500-forecastability-lab-naacl/docs/recovery_v3_14_result.md",
+              "role": "formal result",
+              "sha256": "708ce722742e6139edb3563f0c89bb432101827068d5e3a3938988c677d6a4ad"
+            }
+          ],
+          "id": "sp500-zero-shot-boundary-v314",
+          "result": "Zero-shot Qwen3.6 HoVer transfer failed its frozen safety/adequacy gates despite valid transport; 5 fixes/4 harms and no verified transfer.",
+          "status": "FORMAL_NEGATIVE"
+        },
+        {
+          "artifacts": [
+            {
+              "bytes": 3894,
+              "exists": true,
+              "kind": "file",
+              "path": "/storage/gaoym/sp500-forecastability-lab-naacl/docs/detection_v3_16_formal_result.md",
+              "role": "formal result",
+              "sha256": "690acd71f67a875fcc4bd12a41cee94c0d8226c7a18a4dccbbfc068d4eb6094d"
+            },
+            {
+              "bytes": 7535,
+              "exists": true,
+              "kind": "file",
+              "path": "/storage/gaoym/sp500-forecastability-lab-naacl/docs/naacl_paper_audit_2026-09-04.md",
+              "role": "claim audit",
+              "sha256": "f0a217b7ffe28bd62ecf41ea836c4df8cba51f66ce1dc3e45917599905196aed"
+            }
+          ],
+          "id": "sp500-v316-adequacy-boundary",
+          "result": "Qwen and Ling performance gates passed, but the frozen joint gate was withheld because Ling had only 17 high-consensus SUPPORTS errors (<20 minimum); report as a power/adequacy boundary, not as a performance null.",
+          "status": "NO_CONFIRMED_JOINT_PASS"
+        }
+      ],
+      "id": "sp500_negative_boundary",
+      "label": "S&P 500 bounded negative/stop-escalation boundary",
+      "main_paper_role": "Stress-test and limitation boundary; prevents importing CST/PECR positive results into a claim of universal behavioral-state or prospective financial reliability.",
+      "source_repo": "/home/gaoym/when-consensus-lies-publish-20260911",
+      "status": "NO_ESCALATION_REFRAME"
+    },
+    {
+      "allowed_claim": "On structurally eligible FinQA cohorts, full CEF and frozen S2 predict original correctness for Qwen3.5-4B and Ling-3.0-tiny; the official DEV one-shot uses 126 source-deduplicated eligible items.",
+      "boundary": "Absolute transformed-world accuracy remains modest; two probes are a lossy approximation; the cohort is not all DEV; this is a diagnostic correlate, not proof of latent reasoning or causality.",
+      "experiments": [
+        {
+          "artifacts": [
+            {
+              "bytes": 18057,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/16_pecr_v0_2_1_qwen_full_20260921/FULL_HYPOTHESIS_RESULT_20260921.json",
+              "role": "analysis result",
+              "sha256": "ec259ef3608f56217ee042d7e33389bffabe09910dbe46320c17d063a6e214a4"
+            },
+            {
+              "bytes": 34822,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/16_pecr_v0_2_1_qwen_full_20260921/FULL_MODEL_ANALYSIS.json",
+              "role": "full model analysis",
+              "sha256": "72310e2d7c1bce62be8b3b8dc6da76aee42553ecd68bd2a51c2f289fca4e7ed0"
+            },
+            {
+              "bytes": 2564,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/16_pecr_v0_2_1_qwen_full_20260921/FULL_STATUS_20260921.md",
+              "role": "status",
+              "sha256": "abae1ef2b6d2ff74f54546c6365289a01bbe5329ba15b4e00d2aa25dc515c9e4"
+            }
+          ],
+          "id": "pecr-v0.2-train-discovery",
+          "result": "CEF AUROC 0.8998 [0.8210, 0.9659], shuffle p approximately 1e-4; high-vs-low CEF correctness 83.3% vs 10.5%.",
+          "status": "PASS_DESCRIPTIVE_TRAIN_ONLY"
+        },
+        {
+          "artifacts": [
+            {
+              "bytes": 2386,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/17_pecr_v0_3_source_disjoint_holdout_20260921/HOLDOUT_STATUS.md",
+              "role": "status",
+              "sha256": "2c1acfc97940444e831d49fda418eac17c1d11928e68734a6281d699930c845c"
+            },
+            {
+              "bytes": 754,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/17_pecr_v0_3_source_disjoint_holdout_20260921/HOLDOUT_ANALYSIS_DECISION.json",
+              "role": "decision",
+              "sha256": "09387f7cca39d617f123f94f3412cb29b1bcd6e41633040a034e75c1bab75027"
+            }
+          ],
+          "id": "pecr-v0.3-source-disjoint-holdout",
+          "result": "Qwen full CEF AUROC 0.8165 [0.7463, 0.8809] on 200 source-file-disjoint TRAIN items; D-only OOF AUROC 0.5525 vs D+CEF 0.7938.",
+          "status": "PASS_HELDOUT_CONFIRMATION"
+        },
+        {
+          "artifacts": [
+            {
+              "bytes": 2269,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/18_pecr_v0_4_sparse_distillation_20260921/PECR_DISTILLATION_STATUS_20260921.md",
+              "role": "status",
+              "sha256": "efb8641d41711fc25337f37485e1785e3c4a5942f00d4395b9a4b693a4a60d05"
+            },
+            {
+              "bytes": 3757,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/18_pecr_v0_4_sparse_distillation_20260921/PECR_DISTILLATION_FINAL_DECISION_20260921.json",
+              "role": "decision",
+              "sha256": "4db0e1b2721136cc6cb7b1b2adb39d5be86664d089e575be559b8156c97221d1"
+            }
+          ],
+          "id": "pecr-v0.4-prospective-sparse-replication",
+          "result": "Qwen full CEF AUROC 0.9017; S2 0.8843; MLP S2 0.8936; retention ratio secondary because calls included all four relevant worlds.",
+          "status": "PASS_PROSPECTIVE_SPARSE_SIGNAL_REPLICATED"
+        },
+        {
+          "artifacts": [
+            {
+              "bytes": 1152,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/19_pecr_v0_5_sparse_only_cost_audit_20260921/COST_ANALYSIS_STATUS.md",
+              "role": "status",
+              "sha256": "54e388771ffb8ffc38aead98d03980b602ffca45e77ec0147dea1ea689562105"
+            },
+            {
+              "bytes": 3291,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/19_pecr_v0_5_sparse_only_cost_audit_20260921/PECR_COST_AUDIT_DECISION_20260921.json",
+              "role": "decision",
+              "sha256": "3d4aa88a2e6ed88b3e8a19cae6204127cc5b79ee963000193f859293b9ac18cc"
+            }
+          ],
+          "id": "pecr-v0.5-actual-sparse-cost-audit",
+          "result": "On actual sparse-only calls, S2 AUROC 0.8007; 30.0% total-call reduction and 37.5% counterfactual-call reduction; 50-item full-teacher control retention 0.7414 is secondary/underpowered.",
+          "status": "PASS_ACTUAL_SPARSE_COST_AUDIT"
+        },
+        {
+          "artifacts": [
+            {
+              "bytes": 1752,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/20_pecr_v0_6_cross_model_ling_20260921/CROSS_MODEL_ANALYSIS_STATUS.md",
+              "role": "status",
+              "sha256": "d366882dbc3c15c8ee4dc3015e1a3bfae1ba4ccfd33e7bf33a374ace17b8c38b"
+            },
+            {
+              "bytes": 1175,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/20_pecr_v0_6_cross_model_ling_20260921/CROSS_MODEL_DECISION_20260921.json",
+              "role": "decision",
+              "sha256": "c2175a95031e9ab2a234efdb17f64437860e0ffc0d94cf0b33700772cd4dda2e"
+            }
+          ],
+          "id": "pecr-v0.6-cross-model-ling",
+          "result": "Frozen S2 AUROC 0.7857 [0.7000, 0.8667] on Ling-3.0-tiny; original accuracy 18.0%; global and within-operation nulls passed.",
+          "status": "PASS_CROSS_MODEL_SPARSE_REPLICATION"
+        },
+        {
+          "artifacts": [
+            {
+              "bytes": 2013,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/21_pecr_v0_7_same_item_full_teacher_control_20260921/FULL_TEACHER_ANALYSIS_STATUS.md",
+              "role": "status",
+              "sha256": "d8720f56f8cc5c2afb4741034d1d58fd8008840a68ef7aa931284fa33b2eb242"
+            },
+            {
+              "bytes": 1482,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/21_pecr_v0_7_same_item_full_teacher_control_20260921/FULL_TEACHER_DECISION_20260921.json",
+              "role": "decision",
+              "sha256": "dbb28b9bf5679f534ee0ecce663a1e93ed16af19ef8b4aac3d114d69a009327c"
+            }
+          ],
+          "id": "pecr-v0.7-larger-teacher-control",
+          "result": "On 200 same-item TRAIN controls, Qwen S2/full retention 0.8079 [0.6920, 0.9081] and Ling 0.8122 [0.6573, 0.9420]; full-minus-S2 gaps approximately 0.072 and 0.070.",
+          "status": "PASS_COMPRESSION_QUANTIFICATION"
+        },
+        {
+          "artifacts": [
+            {
+              "bytes": 2212,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/22_pecr_v0_8_official_dev_one_shot_20260921/DEV_ONE_SHOT_ANALYSIS_STATUS.md",
+              "role": "analysis status",
+              "sha256": "57b44049c10a88804d1cc0a44606d5f6c794feed3b38b6173751de728d5e792b"
+            },
+            {
+              "bytes": 2045,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/22_pecr_v0_8_official_dev_one_shot_20260921/DEV_ONE_SHOT_HYPOTHESIS_RESULT_20260921.json",
+              "role": "hypothesis result",
+              "sha256": "1739bfc604b3df88979ba1a099f20775b996e8c2d69598995dc5ac1453b11691"
+            },
+            {
+              "bytes": 1381,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/22_pecr_v0_8_official_dev_one_shot_20260921/DEV_ONE_SHOT_DECISION_20260921.json",
+              "role": "decision",
+              "sha256": "f0fd1d82e153230afd221695b0185e1daf7754a58031084875c6242971bfcd34"
+            },
+            {
+              "bytes": 998,
+              "exists": true,
+              "kind": "file",
+              "path": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/finqa_convfinqa/22_pecr_v0_8_official_dev_one_shot_20260921/DEV_ONE_SHOT_OFFLINE_METADATA_REPAIR.md",
+              "role": "repair note",
+              "sha256": "8f69e856a3902dd7e239224db5128b2f337c1a31652698e47516649dadb17249"
+            }
+          ],
+          "id": "pecr-v0.8-official-dev-one-shot",
+          "result": "On 126 eligible source-deduplicated DEV items: Qwen full/S2 AUROC 0.9008/0.8317; Ling 0.8477/0.8379; S2 CIs above 0.5; confidence 0.5181/0.5412; no retuning or probe reselection.",
+          "status": "PASS_OFFICIAL_DEV_SIGNAL_VALIDATION"
+        }
+      ],
+      "id": "pecr",
+      "label": "Program-Executable Counterfactual Reliability (PECR)",
+      "main_paper_role": "Primary new method signal: executable counterfactual fidelity predicts original answer correctness; two fixed probes provide a lower-cost approximation.",
+      "source_repo": "/home/gaoym/when-consensus-lies-astra6-credit-20260918",
+      "status": "PASS_OFFICIAL_DEV_SIGNAL_VALIDATION"
+    }
+  ],
+  "freeze_date": "2026-09-21",
+  "global_claim_policy": {
+    "allowed_terms": [
+      "diagnostic reliability correlate",
+      "item-level correctness signal",
+      "executable counterfactual fidelity",
+      "source-deduplicated eligible FinQA DEV cohort",
+      "bounded cross-model replication"
+    ],
+    "forbidden_without_new_evidence": [
+      "universal reliability",
+      "latent reasoning fidelity",
+      "causal validity",
+      "full DEV coverage",
+      "S2 equivalent to full CEF",
+      "high counterfactual reasoning ability",
+      "alpha",
+      "deployment readiness"
+    ],
+    "main_claim": "A small number of executable counterfactual probes can reveal item-level answer correctness reliability on a frozen, structurally eligible FinQA cohort, replicated across Qwen3.5-4B and Ling-3.0-tiny and externally validated on an eligible source-deduplicated DEV cohort."
+  },
+  "ledger_version": "PAPER_EVIDENCE_LEDGER_v1",
+  "non_claims_to_lock": [
+    "Do not call the 126-item DEV cohort the full DEV split.",
+    "Do not use S2 retention > 1 on Ling DEV as a capability improvement; retention is a ratio secondary endpoint.",
+    "Do not describe transformed-world absolute accuracy as strong counterfactual reasoning.",
+    "Do not resurrect generic flip rate, paraphrase sensitivity, or S&P B8 superiority as the main signal.",
+    "Do not merge Qwen-to-Ling PECR transfer with Qwen-Hy answer-repair or with the S&P negative branch."
+  ],
+  "paper_claims": [
+    {
+      "abstract_allowed": true,
+      "claim": "Executable counterfactual fidelity is a reproducible item-level correctness diagnostic on eligible FinQA cohorts.",
+      "evidence": [
+        "pecr-v0.2-train-discovery",
+        "pecr-v0.3-source-disjoint-holdout",
+        "pecr-v0.8-official-dev-one-shot"
+      ],
+      "id": "C1",
+      "wording": "predicts / is associated with original correctness; do not say proves reasoning fidelity"
+    },
+    {
+      "abstract_allowed": true,
+      "claim": "Two fixed executable probes provide a lower-cost sparse diagnostic that remains predictive across Qwen3.5-4B and Ling-3.0-tiny.",
+      "evidence": [
+        "pecr-v0.5-actual-sparse-cost-audit",
+        "pecr-v0.6-cross-model-ling",
+        "pecr-v0.7-larger-teacher-control",
+        "pecr-v0.8-official-dev-one-shot"
+      ],
+      "id": "C2",
+      "wording": "substantial and cross-model-stable fraction; do not say equivalent or almost all"
+    },
+    {
+      "abstract_allowed": false,
+      "claim": "CST shows why directional, executable response tests are more informative than generic output sensitivity in the bounded evidence-intervention setting.",
+      "evidence": [
+        "cs-pilot-vitaminc-conf-20260913",
+        "cs-phase4-reliability-20260913",
+        "round10-2x2-20260915"
+      ],
+      "id": "C3",
+      "wording": "direction-sensitive expected-response faithfulness; drop overlap/rigidity mechanism"
+    },
+    {
+      "abstract_allowed": false,
+      "claim": "The S&P 500 branch is a negative/stop-escalation boundary rather than a positive universality result.",
+      "evidence": [
+        "sp500-f0-hardness-20260918",
+        "sp500-wave3-b678-20260918",
+        "sp500-zero-shot-boundary-v314",
+        "sp500-v316-adequacy-boundary"
+      ],
+      "id": "C4",
+      "wording": "bounded hardness and negative transfer/adequacy evidence; no causal or financial-performance claim"
+    }
+  ],
+  "purpose": "Single traceability map for the pre-paper evidence boundary; no new model calls.",
+  "workspace": {
+    "branch": "codex/astra6-credit-20260918",
+    "current_repo": "/home/gaoym/when-consensus-lies-astra6-credit-20260918",
+    "head": "b1a15f4ae4869c47bde8579a79362e5bf7020319",
+    "status_line_count": 17,
+    "unrelated_dirty_work_warning": "Do not stage or publish consensus_stress autoresearch caches or unrelated work from this audit.",
+    "working_tree_status_recorded": true
+  }
+}

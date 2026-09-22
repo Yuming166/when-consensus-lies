@@ -1,0 +1,24 @@
+{
+  "status": "POST_HOC_AUDIT_ONLY",
+  "date": "2026-09-22",
+  "purpose": "Source-group cluster bootstrap precision audit for the already frozen primary student-vs-S2 deltas; does not alter the preregistered/item-bootstrap results or gates.",
+  "replicates": 5000,
+  "group_key": "source_group_id",
+  "qwen_convfinqa_stage2": {
+    "prediction_artifact": "../27_convfinqa_stage2_qwen_missing_probe_20260922/STAGE2_DEV_PREDICTIONS.jsonl",
+    "items": 198,
+    "groups": 114,
+    "observed_delta_vs_s2": 0.09657460545193686,
+    "cluster_bootstrap_ci_95": [0.019038106084138223, 0.1736398401646246],
+    "valid_replicates": 5000
+  },
+  "ling_convfinqa_zero_shot_transfer": {
+    "prediction_artifact": "STAGE3_LING_DISTILLATION_TRANSFER_PREDICTIONS.jsonl",
+    "items": 198,
+    "groups": 114,
+    "observed_delta_vs_s2": 0.026161081716637224,
+    "cluster_bootstrap_ci_95": [-0.047557556866620235, 0.1453061510663103],
+    "valid_replicates": 5000
+  },
+  "claim_boundary": "Post-hoc group-aware precision audit only. The frozen primary analyses remain the reported item bootstrap analyses; Ling zero-shot transfer remains practical-only because both item and group bootstrap intervals cross zero."
+}

@@ -1,0 +1,73 @@
+{
+  "analysis_artifact_sha256": "e10295f62d183128af418eae646db9665d8daf54eeaa16a9805ca17d2228030b",
+  "claim_boundary": "The frozen v0.10 feature contract already contained the two original-confidence fields. The repair made the implementation conform to that contract before the reported ConvFinQA Stage-2 fit/evaluation; no model calls, outcome labels, or result-dependent choices entered the repair.",
+  "computed_primary_feature_sha256": "b04224277fde686ba28a50361f6a25dbaa3a4aff0e92c56606baa5ab9dc00f24",
+  "confidence_derivation_check": {
+    "dev_all_confidence_valid": true,
+    "dev_original_confidence_values": [
+      0.95,
+      1.0
+    ],
+    "train_all_confidence_valid": true,
+    "train_original_confidence_values": [
+      0.0,
+      0.9,
+      0.95,
+      1.0
+    ]
+  },
+  "contract_declared_primary_feature_count": 43,
+  "contract_declared_primary_feature_sha256": "b04224277fde686ba28a50361f6a25dbaa3a4aff0e92c56606baa5ab9dc00f24",
+  "contract_path": "finqa_convfinqa/24_pecr_v0_10_missing_probe_imputation_20260922/PECR_V0_10_FROZEN_CONTRACT.json",
+  "contract_sha256": "85bd5d32bb88c4be6f0af37bc8d9fe94299093a72338348370523335d3a82207",
+  "date": "2026-09-22",
+  "direction_sign_repair": "rewrote equivalent arithmetic as explicit pred_sign/gold_sign comparison",
+  "feature_contract_unchanged": true,
+  "fixed_43_feature_primary_result": {
+    "delta_vs_s2": {
+      "ci_95": [
+        0.01827068331473532,
+        0.1739720174818759
+      ],
+      "observed": 0.09657460545193686,
+      "replicates": 5000,
+      "seed": 20261022,
+      "valid_replicates": 5000
+    },
+    "feature_count": 43,
+    "full_cef_auroc": 0.6869619799139168,
+    "head_minus2_auroc": 0.8754098360655738,
+    "head_plus2_auroc": 0.8406936416184971,
+    "s2_auroc": 0.6508249641319943,
+    "student_auroc": 0.7473995695839312
+  },
+  "missing_fields_before_repair": [
+    "original_confidence",
+    "original_confidence_valid"
+  ],
+  "observed_initial_failure": "KeyError: original_confidence during offline analyzer execution before repair",
+  "omission_sensitivity_note": "The 41-feature result is an offline sensitivity audit only; it was not used for feature or model selection and does not replace the frozen 43-feature result.",
+  "outcome_leakage_check_pass": true,
+  "outcome_leakage_forbidden_feature_hits": [],
+  "post_hoc_41_feature_omission_sensitivity": {
+    "delta_vs_s2": {
+      "ci_95": [
+        0.018842657311703575,
+        0.17412178671349296
+      ],
+      "observed": 0.09729196556671449,
+      "replicates": 5000,
+      "seed": 20261022,
+      "valid_replicates": 5000
+    },
+    "feature_count": 41,
+    "full_cef_auroc": 0.6869619799139168,
+    "head_minus2_auroc": 0.8739526411657559,
+    "head_plus2_auroc": 0.8406936416184971,
+    "s2_auroc": 0.6508249641319943,
+    "student_auroc": 0.7481169296987088
+  },
+  "raw_model_calls_added_by_repair": 0,
+  "repair_type": "implementation-only feature-row completion; no contract or feature-family change",
+  "status": "POST_HOC_IMPLEMENTATION_AUDIT_PASS"
+}

@@ -1,0 +1,24 @@
+{
+  "items": 198,
+  "mapped_item_level_answers_are_not_current_turn_targets": true,
+  "model_calls": 0,
+  "primary_correctness_is_unit_invariant": true,
+  "protocol": "ConvFinQA_PECR_v0.11_stage1_qwen_replication",
+  "split": "dev",
+  "unit_hint_counts": {
+    "percent": 112,
+    "plain": 86
+  },
+  "unit_hint_reason_counts": {
+    "default_plain_executable": 10,
+    "explicit_constant_scaling": 4,
+    "explicit_percent_or_proportion": 88,
+    "explicit_plain_change": 49,
+    "explicit_plain_quantity": 22,
+    "explicit_ratio": 1,
+    "explicit_relative_change": 15,
+    "ratio_program_percent_qa_fallback": 2,
+    "relative_representation_with_percent_qa_fallback": 7
+  },
+  "worlds": 990
+}

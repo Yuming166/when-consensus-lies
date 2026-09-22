@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-22",
+  "evidence": {
+    "convfinqa": {
+      "audit_status": "PROCEED_TO_FREEZE_REPLICATION_CONTRACT",
+      "eligible_dev_turns": 283,
+      "eligible_train_turns": 1814,
+      "model_calls": 0,
+      "primary_dev_conversations": 198,
+      "primary_train_conversations": 1344,
+      "source_sensitivity_dev": 114,
+      "source_sensitivity_train": 754,
+      "train_dev_conversation_disjoint": true,
+      "train_dev_source_disjoint": true
+    },
+    "dev_eligible_records": 283,
+    "finqa_v0_10": {
+      "artifact_manifest_model_calls": 0,
+      "contract_status": "FROZEN_PHASE_A_NO_NEW_MODEL_CALLS",
+      "dataset_audit_model_calls": 0,
+      "historical_artifacts_modified": false,
+      "phase_a_model_calls": 0,
+      "phase_a_status": "PHASE_A_COMPLETE"
+    },
+    "train_eligible_records": 1814
+  },
+  "failures": [],
+  "model_calls": 0,
+  "protocol": "ConvFinQA_PECR_v0.11_completion_audit",
+  "status": "PASS"
+}

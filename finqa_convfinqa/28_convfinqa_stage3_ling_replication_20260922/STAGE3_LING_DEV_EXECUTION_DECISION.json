@@ -1,0 +1,31 @@
+{
+  "all_execution_gates_pass": true,
+  "claim_boundary": "Stage-3 Ling ConvFinQA replication only. A positive result supports cross-model confirmation of the frozen ConvFinQA PECR signal; it does not establish universal cross-model reliability or an externally validated Ling distillation mapping until the frozen analysis is complete.",
+  "contract": "CONVFINQA_STAGE3_LING_REPLICATION_CONTRACT",
+  "expected_worlds": 990,
+  "hypothesis_result": "NOT_EVALUATED_BY_RUNNER",
+  "invalid_categories": {
+    "answer_string_too_long": 195,
+    "confidence_out_of_range": 7,
+    "invalid_json:JSONDecodeError": 5
+  },
+  "model_calls": 990,
+  "preflight": {
+    "expected_model": "Ling-3.0-tiny",
+    "http_status": 200,
+    "identity_pass": true,
+    "latency_seconds": 0.016845646779984236,
+    "models": [
+      "Ling-3.0-tiny"
+    ],
+    "response_sha256": "746287d3b33596c14ceb96a4c18828bb127692e24eeef1f921612b79bbcbc881"
+  },
+  "protocol": "ConvFinQA_PECR_v0.11_stage3_ling_replication",
+  "record_count": 990,
+  "returned_models": {
+    "Ling-3.0-tiny": 990
+  },
+  "schema_valid_record_count": 783,
+  "stage2_authorized": false,
+  "status": "STAGE3_EXECUTION_COMPLETE"
+}

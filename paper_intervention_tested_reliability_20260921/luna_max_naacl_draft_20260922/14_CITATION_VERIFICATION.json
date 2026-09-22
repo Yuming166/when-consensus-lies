@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-09-22T21:25:39.110725+08:00",
+  "draft": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/paper_intervention_tested_reliability_20260921/luna_max_naacl_draft_20260922/12_NAACL_FIRST_DRAFT_CITED.md",
+  "bibliography": "/home/gaoym/when-consensus-lies-astra6-credit-20260918/paper_intervention_tested_reliability_20260921/luna_max_naacl_draft_20260922/13_NAACL_FIRST_DRAFT_REFERENCES.bib",
+  "status": "PASS_CITATION_INSERTION",
+  "entries": [
+    {
+      "key": "chen-etal-2021-finqa",
+      "url": "https://aclanthology.org/2021.emnlp-main.300.bib",
+      "http_status": 200,
+      "source_sha256": "d19be61bd608f7d7acc99410279243deb6197b0c4d13f25a948b10475121870b",
+      "verification": "FETCHED"
+    },
+    {
+      "key": "chen-etal-2022-convfinqa",
+      "url": "https://aclanthology.org/2022.emnlp-main.421.bib",
+      "http_status": 200,
+      "source_sha256": "8eb5ed5974386d5dc07a66e7e7f75a2c0645c51ac4dadac27d9ad716f08ca279",
+      "verification": "FETCHED"
+    },
+    {
+      "key": "schuster-etal-2021-get",
+      "url": "https://aclanthology.org/2021.naacl-main.52.bib",
+      "http_status": 200,
+      "source_sha256": "af66f57ea54c2420237a8b827855dac0e1f2f21c9dbef9fd5158037e01007f39",
+      "verification": "FETCHED"
+    },
+    {
+      "key": "guo-etal-2017-calibration",
+      "url": "https://proceedings.mlr.press/v70/guo17a.html",
+      "http_status": 200,
+      "source_sha256": "fcd644b81c1d06d034060e3ff8079ccc6acc2213dbf846043b92059ce10d26f8",
+      "verification": "FETCHED"
+    },
+    {
+      "key": "geifman-elyaniv-2017-selective",
+      "url": "https://arxiv.org/abs/1705.08500",
+      "http_status": 200,
+      "source_sha256": "8af4138386f323f9fa7b57c722911036d4c51b8e3faee8391916e32a46ae7d8c",
+      "verification": "FETCHED"
+    },
+    {
+      "key": "wang-etal-2022-self-consistency",
+      "url": "https://arxiv.org/abs/2203.11171",
+      "http_status": 200,
+      "source_sha256": "95733ce30410ce3905b50c2e0d6291184b3ee4cd84816e796b0da8959d84c698",
+      "verification": "FETCHED"
+    },
+    {
+      "key": "kuhn-etal-2023-semantic-uncertainty",
+      "url": "https://arxiv.org/abs/2302.09664",
+      "http_status": 200,
+      "source_sha256": "d4f5184e23a4bb0a7995492ea5b2940e270b3ae32709643987cb2b7ad894883a",
+      "verification": "FETCHED"
+    },
+    {
+      "key": "manakul-etal-2023-selfcheckgpt",
+      "url": "https://aclanthology.org/2023.emnlp-main.557.bib",
+      "http_status": 200,
+      "source_sha256": "379cf690b45670931f1982e5f1f61bf4edf94849e8ae63d4a50b0cf382f1690a",
+      "verification": "FETCHED"
+    },
+    {
+      "key": "ribeiro-etal-2020-beyond",
+      "url": "https://aclanthology.org/2020.acl-main.442.bib",
+      "http_status": 200,
+      "source_sha256": "d13e76af2cc7d6618990572af14e5d04bbd3495393950ae3d36273cc8ebd14cb",
+      "verification": "FETCHED"
+    },
+    {
+      "key": "naik-etal-2018-stress",
+      "url": "https://aclanthology.org/C18-1198.bib",
+      "http_status": 200,
+      "source_sha256": "5202339ee585721803f419787e6cc516c226768c3420b25a698f5396603505d4",
+      "verification": "FETCHED"
+    },
+    {
+      "key": "jia-liang-2017-adversarial",
+      "url": "https://arxiv.org/abs/1707.07328",
+      "http_status": 200,
+      "source_sha256": "a95c76d5cfa51b3369cecb277fd9f6051c4d6cecda6859433d44f766655ac04c",
+      "verification": "FETCHED"
+    },
+    {
+      "key": "kaushik-etal-2019-counterfactually-augmented",
+      "url": "https://arxiv.org/abs/1909.12434",
+      "http_status": 200,
+      "source_sha256": "51365793ef3c30caa8271dbcbf5e102582449e253e2f0af6c20290c49eb44f09",
+      "verification": "FETCHED"
+    },
+    {
+      "key": "lightman-etal-2023-verify-step",
+      "url": "https://arxiv.org/abs/2305.20050",
+      "http_status": 200,
+      "source_sha256": "6573b62ef7138d7afb2f047db67142f5f6a362dec612411379985c1b628e8c2b",
+      "verification": "FETCHED"
+    }
+  ],
+  "notes": [
+    "No citation supports the internal AUROC results; those remain tied to local artifact anchors in the manuscript appendix.",
+    "Metamorphic-style wording is cited to behavioral testing/stress-testing sources rather than an unverified foundational software-testing record."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "claim_boundary": "Ling ConvFinQA Stage-3 diagnostic analysis only; zero-shot missing-probe transfer is a separate secondary artifact and no dataset-local Ling distillation claim is established by this artifact.",
+  "contract": "CONVFINQA_STAGE3_LING_REPLICATION_CONTRACT",
+  "full_cef": {
+    "auroc": {
+      "ci_95": [
+        0.6455938103115522,
+        0.9988375378036487
+      ],
+      "invalid_replicates": 1,
+      "observed": 0.8251028806584362,
+      "replicates": 5000,
+      "valid_replicates": 4999
+    },
+    "filename_cluster_bootstrap": {
+      "ci_95": [
+        0.6605640642189219,
+        0.9994849285676907
+      ],
+      "cluster_count": 114,
+      "cluster_key": "filename",
+      "invalid_replicates": 1,
+      "observed": 0.8251028806584362,
+      "replicates": 5000,
+      "valid_replicates": 4999
+    },
+    "gate": true,
+    "global_permutation": {
+      "null_p95": 0.5799823633156967,
+      "observed": 0.8251028806584362,
+      "p_ge_observed": 0.0001999600079984003,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    },
+    "within_operation_permutation": {
+      "null_p95": 0.6440329218106996,
+      "observed": 0.8251028806584362,
+      "p_ge_observed": 0.0001999600079984003,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    }
+  },
+  "full_minus_s2_delta": {
+    "ci_95": [
+      -0.008290801762304402,
+      0.0023026315789473895
+    ],
+    "invalid_replicates": 0,
+    "observed": -0.0023515579071134995,
+    "replicates": 5000,
+    "valid_replicates": 5000
+  },
+  "gold_count": 990,
+  "item_count": 198,
+  "model_calls": 990,
+  "negative_original_correct": 189,
+  "numeric_valid_rate": 0.5767676767676768,
+  "parse_schema_valid_rate": 0.7909090909090909,
+  "positive_original_correct": 9,
+  "protocol": "ConvFinQA_PECR_v0.11_stage3_ling_replication",
+  "record_count": 990,
+  "s2": {
+    "auroc": {
+      "ci_95": [
+        0.6525499706055261,
+        0.9982638888888888
+      ],
+      "invalid_replicates": 0,
+      "observed": 0.8274544385655497,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    },
+    "filename_cluster_bootstrap": {
+      "ci_95": [
+        0.6695639305445935,
+        0.9984525214179449
+      ],
+      "cluster_count": 114,
+      "cluster_key": "filename",
+      "invalid_replicates": 3,
+      "observed": 0.8274544385655497,
+      "replicates": 5000,
+      "valid_replicates": 4997
+    },
+    "gate": true,
+    "global_permutation": {
+      "null_p95": 0.5875955320399765,
+      "observed": 0.8274544385655497,
+      "p_ge_observed": 0.0001999600079984003,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    },
+    "within_operation_permutation": {
+      "null_p95": 0.6475602586713698,
+      "observed": 0.8274544385655497,
+      "p_ge_observed": 0.0001999600079984003,
+      "replicates": 5000,
+      "valid_replicates": 5000
+    }
+  },
+  "scored_world_count": 990,
+  "stage1_core_gate": true,
+  "stage2_authorized_by_metrics": false,
+  "status": "ANALYSIS_PASS",
+  "unit_hint_counts": {
+    "percent": 560,
+    "plain": 430
+  },
+  "unit_mismatch_counts_diagnostic_only": {
+    "percent<-plain": 190,
+    "plain<-percent": 47
+  },
+  "validation_failures": []
+}

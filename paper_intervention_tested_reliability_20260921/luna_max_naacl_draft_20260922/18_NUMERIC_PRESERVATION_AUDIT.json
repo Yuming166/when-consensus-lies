@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-09-22T21:34:43.410692+08:00",
+  "status": "PASS_WITH_FORMATTING_DELTA",
+  "numeric_multiset_equal": true,
+  "numeric_missing_from_cited": [],
+  "numeric_added_to_cited": [],
+  "normalized_line_count_reviewed": 547,
+  "normalized_line_count_cited": 557,
+  "line_count_equal": false,
+  "cited_sha256": "f60bc3d7e26e78e18a4ca602669c794224f109d9e240088a96e3550e0731307e"
+}

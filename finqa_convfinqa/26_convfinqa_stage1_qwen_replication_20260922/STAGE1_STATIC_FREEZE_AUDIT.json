@@ -1,0 +1,31 @@
+{
+  "contract_sha256": "17d16fbf26ad17949a7711817ba718465ca567dca14d81bf28536e00cfc1676a",
+  "dev_items": 198,
+  "dev_worlds": 990,
+  "failures": [],
+  "frozen_contract_status": "FROZEN_PRE_MODEL_CALL_NO_MODEL_CALLS",
+  "item_level_qa_answers_not_used_as_current_targets": true,
+  "model_calls": 0,
+  "primary_normalized_evaluator": true,
+  "prompt_spec_sha256": "e08a683a33e50a1e6050d762df795f1af7619a5b4da073d9916033b1055ebdf4",
+  "protocol": "ConvFinQA_PECR_v0.11_stage1_qwen_replication",
+  "status": "PASS",
+  "train_items": 1344,
+  "train_worlds": 6720,
+  "unit_hint_counts": {
+    "percent": 949,
+    "plain": 593
+  },
+  "unit_hint_reason_counts": {
+    "default_plain_executable": 48,
+    "explicit_constant_scaling": 11,
+    "explicit_percent_or_proportion": 738,
+    "explicit_plain_change": 399,
+    "explicit_plain_quantity": 118,
+    "explicit_ratio": 17,
+    "explicit_relative_change": 100,
+    "ratio_program_percent_qa_fallback": 21,
+    "relative_representation": 9,
+    "relative_representation_with_percent_qa_fallback": 81
+  }
+}

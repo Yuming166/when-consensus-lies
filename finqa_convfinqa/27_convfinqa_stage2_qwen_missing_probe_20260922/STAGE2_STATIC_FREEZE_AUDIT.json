@@ -1,0 +1,11 @@
+{
+  "dev_worlds": 990,
+  "failures": [],
+  "feature_sha256": "b04224277fde686ba28a50361f6a25dbaa3a4aff0e92c56606baa5ab9dc00f24",
+  "historical_artifacts_modified": false,
+  "model_calls": 0,
+  "protocol": "ConvFinQA_PECR_v0.11_stage2_qwen_missing_probe_train",
+  "stage1_core_gate": true,
+  "status": "PASS",
+  "train_worlds": 6720
+}
