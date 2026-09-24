@@ -1,0 +1,122 @@
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{url}
+\urlstyle{tt}
+\usepackage[utf8]{inputenc}
+\title{Program-Conditioned Relation Tests for Numerical Error Ranking: Evidence and Boundaries}
+\author{Anonymous NAACL submission}
+\begin{document}
+\maketitle
+\begin{abstract}
+Can controlled changes to a numerical problem reveal when a language model's answer is likely wrong? We evaluate a relation-based risk score on FinQA, where counterfactual inputs are constructed to imply pre-specified numerical relations. Construction is \textbf{gold-program-conditioned}: the benchmark program, aligned operands, and transformed program outputs determine the expected signs. Scoring is \textbf{numeric-answer-blind}: the relation score uses those frozen signs and parsed model answers, not numerical gold answers or correctness labels. On a fixed 139-item scorable subset of 157 selected FinQA TEST items (94 incorrect, 45 correct), relation risk obtains error-positive AUROC 0.7337 (95\% source-group bootstrap CI [0.6615, 0.7991]) and AUPRC 0.8164, against an error prevalence of 0.676. Its AUROC exceeds original-confidence risk by 0.2298 [0.1328, 0.3289] and exceeds both orientations of an Any-change comparator; relative to the complement used by the original analyzer, the difference is 0.1255 [0.0740, 0.1782]. This is a versioned polarity-corrected analysis, not an unmodified preregistered confirmation. Eighteen items were unscorable and all were later labeled incorrect. The TEST label rule was frozen after model outputs but before label generation; available artifact records support, but cannot independently verify, that ordering. A separate Consensus Stress Testing (CST) audit finds no independent evidence-direction test in natural-reverse and a failed placebo gate in the strict pilot. These results support a bounded finding on the scorable subset, not end-to-end oracle-free intervention generation, deployment readiness, or a shared PECR--CST mechanism.
+\end{abstract}
+
+\section{Introduction}
+Confidence and answer agreement are useful but imperfect indicators of whether a numerical answer is correct \citep{guo-etal-2017-calibration,wang-etal-2022-self-consistency,kuhn-etal-2023-semantic-uncertainty}. A model may be confident and wrong, or may change its answer under perturbation for reasons unrelated to whether the change is appropriate. We ask whether consistency with known relations across controlled changes can rank errors in an original answer.
+
+We evaluate Program-Executable Counterfactual Reliability (PECR) on FinQA, a benchmark for numerical reasoning over financial text \citep{chen-etal-2021-finqa}. We focus on a relation-only score and fixed cohort. The result is positive but bounded: error-positive AUROC is 0.7337 on 139 scorable selected TEST items, exceeding confidence risk and both orientations of an Any-change comparison.
+
+The information boundary is essential. Construction uses gold programs and program-derived transformed results to validate counterfactual worlds and freeze expected signs. Scoring is blind to numeric gold answers, correctness labels, transformed gold answers, and teacher CEF. We therefore describe PECR as \emph{program-conditioned, numeric-answer-blind scoring}; it is not end-to-end oracle-free. Correctness labels enter only at evaluation.
+
+Our contributions are: (1) an empirical error-ranking result for relation risk on a fixed, partially scorable FinQA TEST subset; (2) an explicit account of oracle use, protocol changes, polarity correction, exclusions, and label provenance; and (3) a construct-validity boundary for CST, not independent confirmation of PECR.
+
+\section{PECR and its information boundary}
+\paragraph{Construction.} For each selected question, PECR uses the gold executable program and an operand-to-source mapping to construct numerical counterfactuals. The program is run on transformed operands to verify outcomes and freeze expected signs. Construction is therefore program-conditioned and depends on benchmark-provided executable information.
+\paragraph{Prompting.} The model receives the original and transformed question/evidence text for fixed worlds under a frozen prompt. Prompts do not expose gold numerical answers or correctness labels; transformed program outputs are not answer hints.
+\paragraph{Scoring.} Responses are parsed under the frozen v2.2 numeric parser. Relation risk compares observed answer movements with expected signs fixed during construction. The scoring code does not read the gold program, gold answer, correctness label, transformed gold answer, or teacher CEF. This no-oracle statement applies to scoring, not construction.
+\paragraph{Evaluation.} After score and coverage freezing, original-answer labels are derived by comparing the parser-valid original free-text answer to FinQA TEST `qa.answer` under a separately versioned rule migrated from TRAIN. This is not the official FinQA program-execution metric.
+
+\begin{table}[t]
+\centering\small
+\begin{tabularx}{\columnwidth}{@{}p{0.19\columnwidth}X p{0.27\columnwidth}@{}}
+\toprule
+Stage & Information used & Boundary \\
+\midrule
+Construction & Gold program, operand/source mapping, transformed program results & Program-conditioned; not oracle-free \\
+Prompt & Fixed original/transformed question text & No gold numeric answer or correctness label \\
+Scoring & Parsed model answers and frozen expected signs & Numeric-answer-blind; no gold program, gold answer, transformed gold, label, or teacher CEF \\
+Training & None for relation-only risk & No supervised TEST fitting \\
+Evaluation & Frozen labels derived from `qa.answer` & Post-output, pre-label policy; not initial preregistration \\
+\bottomrule
+\end{tabularx}
+\caption{Information boundaries for relation-only PECR. Gold-answer blindness in scoring must not be generalized to construction.}
+\label{tab:boundary}
+\end{table}
+
+\section{Experimental setup}
+\paragraph{Cohort and calls.} The fixed manifest contains 157 FinQA TEST questions and a budget of 471 world requests (three per question). The server deployment was Qwen3.5-4B. Parser-invalid outputs were recorded without retry; transport, model-identity, and global integrity failures remained stop conditions. Slot 40 triggered the earlier parser stop. Before slots 41--471, the continuation rule was versioned so parser-invalid responses were retained as invalid and the fixed sequence continued without replacement. This is a run-time protocol amendment.
+\paragraph{Scorable set.} The label-free finalizer required all three worlds and exact normalized unit compatibility, or all units absent; no conversion was applied. This yielded 139/157 (88.5\%) scorable items. Thirteen were excluded for unit-incompatible triples and five for incomplete triples. All 18 were later labeled incorrect, so the scorable subset is outcome-selected and cannot be assumed representative.
+\paragraph{Outcome and statistics.} The positive class is \texttt{original\_incorrect}; larger scores indicate more risk. We report AUROC and AUPRC with 95\% percentile intervals from 5,000 source-group bootstrap replicates (fixed seed 20260923). Paired score differences use shared resamples. Error prevalence, 94/139=0.6763, is the no-skill AUPRC reference.
+
+\section{Results}
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Risk score (larger = higher error risk) & Error AUROC [95\% CI] & Error AUPRC [95\% CI] \\
+\midrule
+Relation risk & \textbf{0.7337 [0.6615, 0.7991]} & \textbf{0.8164 [0.7408, 0.8804]} \\
+Original-confidence risk ($1-$confidence) & 0.5039 [0.4245, 0.5854] & 0.6873 [0.6039, 0.7685] \\
+Literal Any-change fraction & 0.3918 [0.3370, 0.4486] & 0.6291 [0.5407, 0.7154] \\
+Any-change complement ($1-$fraction; v1 analyzer direction) & 0.6082 [0.5514, 0.6630] & 0.7351 [0.6532, 0.8099] \\
+\bottomrule
+\end{tabular}
+\caption{Error ranking on the fixed 139-item scorable TEST subset (94 incorrect, 45 correct). Values come from the versioned error-positive reanalysis; the initial analysis used the wrong positive-class polarity for risk scores.}
+\label{tab:primary}
+\end{table*}
+
+The paired AUROC increment for relation risk is +0.2298 [+0.1328, +0.3289] over confidence risk, +0.3418 [+0.2250, +0.4514] over literal Any-change, and +0.1255 [+0.0740, +0.1782] over its complement. Paired AUPRC increments are +0.1291 [+0.0695, +0.1970], +0.1873 [+0.1108, +0.2666], and +0.0813 [+0.0483, +0.1211], respectively. The preregistration defines the literal change fraction but does not explicitly designate its complement as the primary risk comparator; the original analyzer used the complement. Both directions are reported without post-result selection. The numerical G2 criterion is met in this versioned error-positive analysis, not by an unchanged initial implementation.
+
+\paragraph{Separate post-hoc student control.} In a historical ConvFinQA setting, direct GBDT AUROC was 0.8183 [0.7211, 0.9001] and imputed-student AUROC was 0.7474 [0.6449, 0.8408]. The post-hoc direct-minus-imputed difference was +0.0709 [--0.0239, +0.1682], crossing zero. This is not a same-cohort FinQA baseline and does not support imputation superiority.
+
+\section{CST as a construct boundary}
+CST is not presented as an equally mature success or shared-mechanism confirmation. In the natural-reverse audit, reverse/original prompt pairs were byte-identical and paired-answer behavior reproduced most apparent reverse-axis signal; natural-reverse is therefore not an independent evidence-direction test. In the strict independent-counter-evidence pilot, the flip contrast was +0.2118 [0.1160, 0.3097], but the placebo flip rate was 0.5141 and the placebo criterion failed; there were only three high-consensus wrong items and independent-score AUROC was 0.624 [0.286, 0.856]. This supports at most a behavioral contrast, not reliable independent ranking. CST full cohort remains deferred.
+
+\section{Protocol chronology and analysis provenance}
+The raw run records were retained. Slot 40 triggered the earlier parser stop; before slots 41--471, parser-invalid outputs were recorded and the fixed sequence continued without retries or replacements. Thus the complete run did not use one unchanged stop rule.
+
+After model collection, a label-free finalizer froze the 139 scorable IDs, scores, coverage, and same-cohort controls. A separate TEST correctness policy was then frozen and synthetic tests passed before labels were generated. The policy compares parser-valid original free-text answers to `qa.answer`, uses the frozen TRAIN numeric rule, and covers all 157 items. It is post-output and pre-label, not an initial preregistration; it is not called the official FinQA score.
+
+The continuation receipt reports that fixed slots 41--471 completed at 2026-09-24 16:07:02.916Z (431 attempts, no retries or fallback); the final raw-ledger SHA-256 is `789fc8c67eefdd92392c1893af2d796a94cc91efa1cc60da2fd7a7f26ad1cf3f`. The UTC-converted artifact sequence then places the label-free receipt at 16:09:02.929Z; TEST policy at 16:22:40.791Z; synthetic tests at 16:23:40.331Z; pre-label checkpoint at 16:23:40.361Z; label artifact at 16:23:40.688Z; initial analysis output at 16:26:22.951Z; and error-positive V2 output at 16:55:57.181Z. The policy/checkpoint record says TEST gold had not been read and labels had not been generated. Filesystem times and self-reported receipt times are not trusted timestamp attestations; no independent runtime log records the exact first read of `qa.answer` or analysis process start times. Available records support—but cannot independently verify—the freeze-before-label ordering. The policy was frozen after model outputs and before label generation, not as part of the initial preregistration. At audit time, the host reported NTP synchronization; this present-time status does not establish that the clock was continuously synchronized during the historical events. Full artifact SHA-256 values are listed in the versioned UTC chronology audit.
+
+\begin{table*}[t]
+\centering\scriptsize
+\begin{tabular}{@{}p{0.31\textwidth}p{0.28\textwidth}p{0.34\textwidth}@{}}
+\toprule
+Event & UTC & Artifact SHA-256 prefix \\
+\midrule
+Slots 41--471 completion & 2026-09-24 16:07:02.916Z & \texttt{257b0b75e9a2} (receipt) \\
+Raw ledger finalized & 2026-09-24 16:07:02.905Z & \texttt{789fc8c67eef} \\
+Label-free cohort/score freeze & 2026-09-24 16:09:02.929Z & \texttt{597c05953562} \\
+TEST label policy written & 2026-09-24 16:22:40.791Z & \texttt{7196148d4f9e} \\
+Synthetic tests / pre-label checkpoint & 2026-09-24 16:23:40.331Z / 16:23:40.361Z & \texttt{aa726bc8d975} / \texttt{dafe03f207df} \\
+Label artifact appears & 2026-09-24 16:23:40.688Z & \texttt{899db5256c0c} \\
+Initial / error-positive V2 output files & 2026-09-24 16:26:22.951Z / 16:55:57.181Z & \texttt{2e7661de5d20} / \texttt{3400561f2292} \\
+\bottomrule
+\end{tabular}
+\caption{Record-supported chronology; times are filesystem modification times except the run completion time reported by its receipt. Hash prefixes identify artifacts but do not attest to their creation time. The complete hashes and caveats are in the accompanying chronology audit.}
+\label{tab:chronology}
+\end{table*}
+
+\section{Limitations}
+First, the result applies to one Qwen3.5-4B deployment and a selected subset of FinQA TEST. Eighteen of 157 items were unscorable and all 18 were later labeled incorrect. Outcome-associated missingness makes the 139-item result unsuitable as an unbiased estimate for the full manifest; we do not impute a primary full-cohort AUROC. AUPRC 0.8164 should be interpreted against the high error prevalence, 0.6763.
+
+Second, PECR construction is gold-program-conditioned. Although scoring is numeric-answer-blind, counterfactual construction and expected signs depend on the gold executable program and transformed program results. This is not end-to-end oracle-free and does not establish a deployable intervention generator.
+
+Third, the initial implementation had an outcome-polarity error, slot-40 continuation handling was amended, and the TEST free-text correctness policy was frozen after output collection but before label generation. The initial analysis is preserved. Available artifacts support but cannot independently verify the chronology of the pre-label checkpoint relative to first gold access; the first `qa.answer` read has no independently timestamped event record. The result is not an unmodified preregistered confirmation.
+
+Fourth, the historical direct-GBDT comparison is post-hoc and from another ConvFinQA setting; its paired interval crosses zero and gives no basis to claim imputation superiority. Finally, CST provides no independent corroboration: natural-reverse is mechanically non-independent and the strict pilot fails its placebo gate. No shared mechanism or general reliability capability is established.
+
+\section{Conclusion}
+A program-conditioned, numeric-answer-blind relation score ranked original-answer errors on a fixed 139-item scorable FinQA TEST subset, with error-positive AUROC 0.7337 and positive paired AUROC differences against confidence and both orientations of Any-change. This bounded finding is qualified by outcome-associated exclusions, protocol amendments, polarity correction, and label chronology that is record-supported but not independently verifiable. CST remains a construct boundary rather than independent confirmation. A second-model replication and a genuinely independent CST preflight are possible future studies, not evidence in this paper.
+
+\bibliographystyle{acl_natbib}
+\bibliography{references}
+\end{document}

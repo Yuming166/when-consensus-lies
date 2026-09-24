@@ -1,0 +1,31 @@
+# PECR label-free freeze and label-generation chronology (UTC audit)
+
+Audit prepared 2026-09-25 01:09 Asia/Shanghai (2026-09-24 17:09 UTC). No model request was made. This audit uses protocol/provenance metadata, not TEST gold-answer values.
+
+## Clock and interpretation
+
+At the initial audit snapshot, the host reported `2026-09-24T17:09:18Z` / `2026-09-25 01:09:18 Asia/Shanghai`, with system clock synchronized and NTP active. A follow-up read-only clock check reported `2026-09-24T17:16:14.700721Z` / `2026-09-25 01:16:14.700721 Asia/Shanghai`, with `NTP=yes` and `NTPSynchronized=yes`. These are present-time status observations, not proof of historical clock integrity. Thus a receipt dated September 25 in Shanghai is not future-dated: `2026-09-25 00:09:02.929 +08:00` is `2026-09-24 16:09:02.929Z`. A checkpoint field `created_local_date: 2026-09-24` has date precision only and does not identify its timezone or exact event time. The earlier future-date warning compared calendar dates without normalizing time zones and is withdrawn.
+
+## Event timeline
+
+Times are UTC, converted from filesystem `mtime` recorded in Asia/Shanghai (UTC+08:00), unless marked as the event time reported inside a run receipt. Policy, test, label, and analysis times are artifact modification times, not process start times. No independent process log records the exact first TEST-gold read or analysis start. Hashes identify bytes; they do not cryptographically attest to creation time. Source run artifacts are in the versioned Qwen revision package runtime directory; label-policy artifacts are in the Qwen revision package `test_correctness_policy_v1_20260924/` directory.
+
+| Event | UTC | Shanghai | Artifact / SHA-256 | Record supports |
+|---|---|---|---|---|
+| Slots 41--471 completed | 2026-09-24 16:07:02.916420Z (receipt event time) | 2026-09-25 00:07:02.916420+08 | `QWEN_PECR_CONTINUATION_V2_2_SUMMARY_20260924.json` — `257b0b75e9a2b6ea570ef723f18dc1b3f6696f8e5d1b876fc81a17d455242c8a`; raw ledger — `789fc8c67eefdd92392c1893af2d796a94cc91efa1cc60da2fd7a7f26ad1cf3f`; checkpoint stream — `51d4655bf017eb529adec4ee14018b1ccc451e0e71d44caf87ab9c83ff3ad145` | Summary records all 431 fixed continuation slots attempted, no retries/fallback, ending at slot 471. The raw ledger and checkpoint-stream hashes are independently recomputed against current bytes. The summary's own `finished_utc` is a self-reported event timestamp, not an external timestamp attestation. |
+| Label-free PECR finalizer receipt | 2026-09-24 16:09:02.928950Z | 2026-09-25 00:09:02.928950+08 | `runtime/QWEN_PECR_V2_2_PRELABEL_FREEZE_RECEIPT_V2_20260925.json` — `597c0595356248d5fbb8c67d3b967217fe7fa397cf0a1a6808e6490a4c2023b9` | Records 139/157 scorable items, frozen IDs/controls, no correctness labels or gold-answer files read; binds manifest, scores, runner, parser, ledger, finalizer hashes. |
+| TEST label policy written | 2026-09-24 16:22:40.790571Z | 2026-09-25 00:22:40.790571+08 | `TEST_LABEL_POLICY_V1_20260924.json` — `7196148d4f9e073942935724031be0ba5c84d04ff3b83e785a3ddc7d1a19053c` | Specifies `qa.answer`, ID mapping, invalid handling and migrated TRAIN numeric rule; states post-output/pre-label freeze. |
+| Synthetic test source written | 2026-09-24 16:23:07.132721Z | 2026-09-25 00:23:07.132721+08 | `test_correctness_policy_v1_tests.py` — `4c972b76e1a581a4f52525f89ccf41c3702fdea6b5fb3102e6301337b11f7f24` | Identifies test implementation; checkpoint says nine tests passed. |
+| Synthetic test log written | 2026-09-24 16:23:40.330911Z | 2026-09-25 00:23:40.330911+08 | `SYNTHETIC_TEST_LOG.txt` — `aa726bc8d975a11e76faf5e494a9f462dff6dd2dec1054459b600d7acaef4566` | Nine synthetic/parity tests pass. |
+| Pre-TEST-gold policy checkpoint V2 written | 2026-09-24 16:23:40.360911Z | 2026-09-25 00:23:40.360911+08 | `TEST_LABEL_POLICY_FREEZE_CHECKPOINT_V1_20260924_V2.json` — `dafe03f207df2e5c164a47b30238eef82f1cb1565abab5de671c09fcafe453db`; embedded freeze hash `f4e4aca4c9d1bbe7446ba987e02382b425aa4008b7b4b19177fe20488bcc4cad` | Explicitly records no TEST gold values read and no labels generated; binds policy/code/test and blind-input hashes. |
+| TEST label artifact first appears | 2026-09-24 16:23:40.687913Z | 2026-09-25 00:23:40.687913+08 | `FINQA_TEST_CORRECTNESS_LABELS_V1_20260924.json` — `899db5256c0cb945008a636b9dff6cf4a0beea2231717507165ab1d77dbeae1b` | Metadata puts artifact creation after checkpoint. Generator is the first recorded operation intended to read `qa.answer`; no separate trusted log records the exact first-read instant. |
+| Initial analysis output written | 2026-09-24 16:26:22.950840Z | 2026-09-25 00:26:22.950840+08 | `QWEN_PECR_TEST_PREREGISTERED_ANALYSIS_139_V1.json` — `2e7661de5d2025cc1ed44a49c987eeb4b4779a2d107fefa7d92dc999345f2d0e` | Preserved initial output; risk positive-class polarity was incorrect. |
+| Error-positive V2 analysis output written | 2026-09-24 16:55:57.180527Z | 2026-09-25 00:55:57.180527+08 | `QWEN_PECR_TEST_ERROR_POSITIVE_ANALYSIS_139_V2_20260924.json` — `3400561f22925994cda0fe28a41b4b715aa43cfb4af2bafddb1842f17dc3c22c` | Versioned, error-positive AUROC/AUPRC and paired intervals; not the unchanged initial analysis. |
+
+## Finding and required wording
+
+The artifact record is internally ordered: label-free score/coverage receipt, policy, synthetic tests and pre-label checkpoint precede the label artifact; analysis output files follow. But there is no trusted timestamped runtime log or independently timestamped append-only checkpoint. Filesystem timestamps and hashes establish current artifact identity and a record-supported sequence, not tamper-proof chronology. The exact first read of TEST `qa.answer` and analysis process start times are not separately timestamped. Required manuscript wording: **“Available checkpoint and artifact records support that the TEST correctness rule was frozen after model outputs and the label-free scorable cohort, but before TEST gold answers were read for label generation; this ordering cannot be independently verified from trusted timestamps.”** This rule was post-output, pre-label, and not part of the initial preregistration.
+
+## Integrity scope
+
+This note does not edit the manifest, ledger, label files, analysis outputs, policy or checkpoints. Hashes identify current bytes; recorded timestamps are not endorsed as trusted time attestations.
