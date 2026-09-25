@@ -1,0 +1,2 @@
+PASS: braces balanced; environments balanced; 4 citation keys resolved; 4 labels, 0 references resolved.
+NOTE: static checks only. No TeX engine available; compile/PDF/page inspection NOT performed.
