@@ -1,0 +1,240 @@
+[
+  {
+    "item_id": "5ece9464c9e77c0008467f48:01c21836cc42:support",
+    "source_group": "AN22",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ece9464c9e77c0008467f48:01c21836cc42:refute",
+    "source_group": "AN22",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ec284ffc9e77c000841796e:32f98bf5a07c:support",
+    "source_group": "AN08",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ec284ffc9e77c000841796e:32f98bf5a07c:refute",
+    "source_group": "AN08",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ee39419c9e77c0008ccfae4:5e41a0966a75:support",
+    "source_group": "AN13",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ee39419c9e77c0008ccfae4:5e41a0966a75:refute",
+    "source_group": "AN13",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ee3949ac9e77c0008ccfd84:dabb11a3a4e5:support",
+    "source_group": "AN51",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ee3949ac9e77c0008ccfd84:dabb11a3a4e5:refute",
+    "source_group": "AN51",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ea2d97bc9e77c0009cda6e4:2a8eb9fe5136:support",
+    "source_group": "AN17",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ea2d97bc9e77c0009cda6e4:2a8eb9fe5136:refute",
+    "source_group": "AN17",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ebe6f32c9e77c0008409a4a:95d83ba89700:support",
+    "source_group": "AN26",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ebe6f32c9e77c0008409a4a:95d83ba89700:refute",
+    "source_group": "AN26",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ec7d50ec9e77c0008442b24:4f32efbe7338:support",
+    "source_group": "AN18",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ec7d50ec9e77c0008442b24:4f32efbe7338:refute",
+    "source_group": "AN18",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ede072fc9e77c00084d2ce9:2070a213f9db:support",
+    "source_group": "AN50",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ede072fc9e77c00084d2ce9:2070a213f9db:refute",
+    "source_group": "AN50",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ec284fdc9e77c000841630c:02a864692fca:support",
+    "source_group": "AN01",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ec284fdc9e77c000841630c:02a864692fca:refute",
+    "source_group": "AN01",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5eb2988ac9e77c0008d948d4:78774eac9930:support",
+    "source_group": "BN05",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5eb2988ac9e77c0008d948d4:78774eac9930:refute",
+    "source_group": "BN05",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ec7d50dc9e77c00084422ab:8167d079f786:support",
+    "source_group": "AN02",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ec7d50dc9e77c00084422ab:8167d079f786:refute",
+    "source_group": "AN02",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ea2d97bc9e77c0009cda1ca:ca02e2730ae1:support",
+    "source_group": "AN30",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ea2d97bc9e77c0009cda1ca:ca02e2730ae1:refute",
+    "source_group": "AN30",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ebe6f2fc9e77c0008407e30:bea3f1c84a3d:support",
+    "source_group": "AN27",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ebe6f2fc9e77c0008407e30:bea3f1c84a3d:refute",
+    "source_group": "AN27",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ed7ad03c9e77c00084a7975:68d60548a6bd:support",
+    "source_group": "AN57",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ed7ad03c9e77c00084a7975:68d60548a6bd:refute",
+    "source_group": "AN57",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ee39419c9e77c0008ccf86b:71f69dabdae7:support",
+    "source_group": "BN07",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ee39419c9e77c0008ccf86b:71f69dabdae7:refute",
+    "source_group": "BN07",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ebbf32bc9e77c000929509b:13d7176cb215:support",
+    "source_group": "BN02",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ebbf32bc9e77c000929509b:13d7176cb215:refute",
+    "source_group": "BN02",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ebe6f2cc9e77c0008407668:01a29c27bce3:support",
+    "source_group": "BN13",
+    "failure_codes": [
+      "SUPPORT_MATERIAL_NOT_RETRIEVED"
+    ]
+  },
+  {
+    "item_id": "5ebe6f2cc9e77c0008407668:01a29c27bce3:refute",
+    "source_group": "BN13",
+    "failure_codes": [
+      "COUNTER_MATERIAL_NOT_RETRIEVED"
+    ]
+  }
+]

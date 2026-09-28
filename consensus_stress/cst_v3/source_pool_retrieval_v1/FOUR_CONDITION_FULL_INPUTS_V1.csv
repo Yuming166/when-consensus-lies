@@ -1,0 +1,1123 @@
+item_id,source_group,page,pair_id,proposition,A_evidence_id,A_evidence_text,neutral_evidence_id,neutral_evidence_text,support_evidence_id,support_evidence_text,counter_evidence_id,counter_evidence_text,AA_full_input,neutral_full_input,support_full_input,counter_full_input,neutral_candidate_count,support_candidate_count,counter_candidate_count,retrieval_failure_codes,human_review_status,tri_state_status
+5ece9464c9e77c0008467f48:01c21836cc42:support,AN22,Tom Waits,5ece9464c9e77c0008467f48:01c21836cc42,"Tom Waits was born in Paisley , California .",5ece9464c9e77c0008467f48_1,"Waits was born and raised in a middle-class family in Paisley , California .",5ece9464c9e77c0008467f48_3,"Waits was born and raised in a middle-class family in Paisley , California .",MISSING,MISSING,5ece9464c9e77c0008467f48_2,"Waits was born and raised in a middle-class family in Pomona , California .","PROPOSITION:
+Tom Waits was born in Paisley , California .
+
+EVIDENCE:
+[A evidence_id=5ece9464c9e77c0008467f48_1]
+Waits was born and raised in a middle-class family in Paisley , California .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Tom Waits was born in Paisley , California .
+
+EVIDENCE:
+[A evidence_id=5ece9464c9e77c0008467f48_1]
+Waits was born and raised in a middle-class family in Paisley , California .
+
+[NEUTRAL_APPEND evidence_id=5ece9464c9e77c0008467f48_3]
+Waits was born and raised in a middle-class family in Paisley , California .","PROPOSITION:
+Tom Waits was born in Paisley , California .
+
+EVIDENCE:
+[A evidence_id=5ece9464c9e77c0008467f48_1]
+Waits was born and raised in a middle-class family in Paisley , California .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Tom Waits was born in Paisley , California .
+
+EVIDENCE:
+[A evidence_id=5ece9464c9e77c0008467f48_1]
+Waits was born and raised in a middle-class family in Paisley , California .
+
+[COUNTER_APPEND evidence_id=5ece9464c9e77c0008467f48_2]
+Waits was born and raised in a middle-class family in Pomona , California .",2,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ece9464c9e77c0008467f48:01c21836cc42:refute,AN22,Tom Waits,5ece9464c9e77c0008467f48:01c21836cc42,"Tom Waits was born in Paisley , California .",5ece9464c9e77c0008467f48_2,"Waits was born and raised in a middle-class family in Pomona , California .",5ece9464c9e77c0008467f48_4,"Waits was born and raised in a middle-class family in Pomona , California .",5ece9464c9e77c0008467f48_1,"Waits was born and raised in a middle-class family in Paisley , California .",MISSING,MISSING,"PROPOSITION:
+Tom Waits was born in Paisley , California .
+
+EVIDENCE:
+[A evidence_id=5ece9464c9e77c0008467f48_2]
+Waits was born and raised in a middle-class family in Pomona , California .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Tom Waits was born in Paisley , California .
+
+EVIDENCE:
+[A evidence_id=5ece9464c9e77c0008467f48_2]
+Waits was born and raised in a middle-class family in Pomona , California .
+
+[NEUTRAL_APPEND evidence_id=5ece9464c9e77c0008467f48_4]
+Waits was born and raised in a middle-class family in Pomona , California .","PROPOSITION:
+Tom Waits was born in Paisley , California .
+
+EVIDENCE:
+[A evidence_id=5ece9464c9e77c0008467f48_2]
+Waits was born and raised in a middle-class family in Pomona , California .
+
+[SUPPORT_APPEND evidence_id=5ece9464c9e77c0008467f48_1]
+Waits was born and raised in a middle-class family in Paisley , California .","PROPOSITION:
+Tom Waits was born in Paisley , California .
+
+EVIDENCE:
+[A evidence_id=5ece9464c9e77c0008467f48_2]
+Waits was born and raised in a middle-class family in Pomona , California .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",2,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ec284ffc9e77c000841796e:32f98bf5a07c:support,AN08,Hot Space,5ec284ffc9e77c000841796e:32f98bf5a07c,Queen 's album Hot Space sold less than 3.75 million copies .,5ec284ffc9e77c000841796e_4,Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at 3.5 million copies.,5ec284ffc9e77c000841796e_2,Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at 3.5 million copies.,MISSING,MISSING,5ec284ffc9e77c000841796e_3,Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at four million copies.,"PROPOSITION:
+Queen 's album Hot Space sold less than 3.75 million copies .
+
+EVIDENCE:
+[A evidence_id=5ec284ffc9e77c000841796e_4]
+Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at 3.5 million copies.
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Queen 's album Hot Space sold less than 3.75 million copies .
+
+EVIDENCE:
+[A evidence_id=5ec284ffc9e77c000841796e_4]
+Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at 3.5 million copies.
+
+[NEUTRAL_APPEND evidence_id=5ec284ffc9e77c000841796e_2]
+Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at 3.5 million copies.","PROPOSITION:
+Queen 's album Hot Space sold less than 3.75 million copies .
+
+EVIDENCE:
+[A evidence_id=5ec284ffc9e77c000841796e_4]
+Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at 3.5 million copies.
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Queen 's album Hot Space sold less than 3.75 million copies .
+
+EVIDENCE:
+[A evidence_id=5ec284ffc9e77c000841796e_4]
+Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at 3.5 million copies.
+
+[COUNTER_APPEND evidence_id=5ec284ffc9e77c000841796e_3]
+Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at four million copies.",4,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ec284ffc9e77c000841796e:32f98bf5a07c:refute,AN08,Hot Space,5ec284ffc9e77c000841796e:32f98bf5a07c,Queen 's album Hot Space sold less than 3.75 million copies .,5ec284ffc9e77c000841796e_3,Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at four million copies.,5ec284ffc9e77c000841796e_1,Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at four million copies.,5ec284ffc9e77c000841796e_4,Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at 3.5 million copies.,MISSING,MISSING,"PROPOSITION:
+Queen 's album Hot Space sold less than 3.75 million copies .
+
+EVIDENCE:
+[A evidence_id=5ec284ffc9e77c000841796e_3]
+Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at four million copies.
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Queen 's album Hot Space sold less than 3.75 million copies .
+
+EVIDENCE:
+[A evidence_id=5ec284ffc9e77c000841796e_3]
+Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at four million copies.
+
+[NEUTRAL_APPEND evidence_id=5ec284ffc9e77c000841796e_1]
+Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at four million copies.","PROPOSITION:
+Queen 's album Hot Space sold less than 3.75 million copies .
+
+EVIDENCE:
+[A evidence_id=5ec284ffc9e77c000841796e_3]
+Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at four million copies.
+
+[SUPPORT_APPEND evidence_id=5ec284ffc9e77c000841796e_4]
+Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at 3.5 million copies.","PROPOSITION:
+Queen 's album Hot Space sold less than 3.75 million copies .
+
+EVIDENCE:
+[A evidence_id=5ec284ffc9e77c000841796e_3]
+Queen Productions Ltd. Retrieved 31 May 2011 Estimated sales of the album currently stand at four million copies.
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",4,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ee39419c9e77c0008ccfae4:5e41a0966a75:support,AN13,Fred Seibert,5ee39419c9e77c0008ccfae4:5e41a0966a75,Fred Seibert was born after 1950 .,5ee39419c9e77c0008ccfae4_1,"Fred Seibert ( born 1951 ) is a television and movie producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .",5ee39419c9e77c0008ccfae4_3,"Fred Seibert ( born 1951 ) is a television and movie producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .",MISSING,MISSING,5ee39419c9e77c0008ccfae4_2,"Fred Seibert ( born 1947 ) is a television producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .","PROPOSITION:
+Fred Seibert was born after 1950 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccfae4_1]
+Fred Seibert ( born 1951 ) is a television and movie producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Fred Seibert was born after 1950 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccfae4_1]
+Fred Seibert ( born 1951 ) is a television and movie producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .
+
+[NEUTRAL_APPEND evidence_id=5ee39419c9e77c0008ccfae4_3]
+Fred Seibert ( born 1951 ) is a television and movie producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .","PROPOSITION:
+Fred Seibert was born after 1950 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccfae4_1]
+Fred Seibert ( born 1951 ) is a television and movie producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Fred Seibert was born after 1950 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccfae4_1]
+Fred Seibert ( born 1951 ) is a television and movie producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .
+
+[COUNTER_APPEND evidence_id=5ee39419c9e77c0008ccfae4_2]
+Fred Seibert ( born 1947 ) is a television producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .",2,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ee39419c9e77c0008ccfae4:5e41a0966a75:refute,AN13,Fred Seibert,5ee39419c9e77c0008ccfae4:5e41a0966a75,Fred Seibert was born after 1950 .,5ee39419c9e77c0008ccfae4_2,"Fred Seibert ( born 1947 ) is a television producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .",5ee39419c9e77c0008ccfae4_4,"Fred Seibert ( born 1947 ) is a television producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .",5ee39419c9e77c0008ccfae4_1,"Fred Seibert ( born 1951 ) is a television and movie producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .",MISSING,MISSING,"PROPOSITION:
+Fred Seibert was born after 1950 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccfae4_2]
+Fred Seibert ( born 1947 ) is a television producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Fred Seibert was born after 1950 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccfae4_2]
+Fred Seibert ( born 1947 ) is a television producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .
+
+[NEUTRAL_APPEND evidence_id=5ee39419c9e77c0008ccfae4_4]
+Fred Seibert ( born 1947 ) is a television producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .","PROPOSITION:
+Fred Seibert was born after 1950 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccfae4_2]
+Fred Seibert ( born 1947 ) is a television producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .
+
+[SUPPORT_APPEND evidence_id=5ee39419c9e77c0008ccfae4_1]
+Fred Seibert ( born 1951 ) is a television and movie producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .","PROPOSITION:
+Fred Seibert was born after 1950 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccfae4_2]
+Fred Seibert ( born 1947 ) is a television producer , and an entertainment executive who has held leading positions with MTV Networks and Hanna-Barbera .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",2,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ee3949ac9e77c0008ccfd84:dabb11a3a4e5:support,AN51,Rebel in the Rye,5ee3949ac9e77c0008ccfd84:dabb11a3a4e5,`` Rebel in the Rye '' is starred by Sarah Paulson and Victor Garber .,5ee3949ac9e77c0008ccfd84_4,"The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Sarah Paulson , Brian d'Arcy James , Victor Garber , and Hope Davis .",5ee3949ac9e77c0008ccfd84_2,"The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Sarah Paulson , Brian d'Arcy James , Victor Garber , and Hope Davis .",MISSING,MISSING,5ee3949ac9e77c0008ccfd84_3,"The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Laura Dern , Brian d'Arcy James , and Hope Davis .","PROPOSITION:
+`` Rebel in the Rye '' is starred by Sarah Paulson and Victor Garber .
+
+EVIDENCE:
+[A evidence_id=5ee3949ac9e77c0008ccfd84_4]
+The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Sarah Paulson , Brian d'Arcy James , Victor Garber , and Hope Davis .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+`` Rebel in the Rye '' is starred by Sarah Paulson and Victor Garber .
+
+EVIDENCE:
+[A evidence_id=5ee3949ac9e77c0008ccfd84_4]
+The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Sarah Paulson , Brian d'Arcy James , Victor Garber , and Hope Davis .
+
+[NEUTRAL_APPEND evidence_id=5ee3949ac9e77c0008ccfd84_2]
+The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Sarah Paulson , Brian d'Arcy James , Victor Garber , and Hope Davis .","PROPOSITION:
+`` Rebel in the Rye '' is starred by Sarah Paulson and Victor Garber .
+
+EVIDENCE:
+[A evidence_id=5ee3949ac9e77c0008ccfd84_4]
+The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Sarah Paulson , Brian d'Arcy James , Victor Garber , and Hope Davis .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+`` Rebel in the Rye '' is starred by Sarah Paulson and Victor Garber .
+
+EVIDENCE:
+[A evidence_id=5ee3949ac9e77c0008ccfd84_4]
+The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Sarah Paulson , Brian d'Arcy James , Victor Garber , and Hope Davis .
+
+[COUNTER_APPEND evidence_id=5ee3949ac9e77c0008ccfd84_3]
+The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Laura Dern , Brian d'Arcy James , and Hope Davis .",2,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ee3949ac9e77c0008ccfd84:dabb11a3a4e5:refute,AN51,Rebel in the Rye,5ee3949ac9e77c0008ccfd84:dabb11a3a4e5,`` Rebel in the Rye '' is starred by Sarah Paulson and Victor Garber .,5ee3949ac9e77c0008ccfd84_3,"The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Laura Dern , Brian d'Arcy James , and Hope Davis .",5ee3949ac9e77c0008ccfd84_1,"The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Laura Dern , Brian d'Arcy James , and Hope Davis .",5ee3949ac9e77c0008ccfd84_4,"The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Sarah Paulson , Brian d'Arcy James , Victor Garber , and Hope Davis .",MISSING,MISSING,"PROPOSITION:
+`` Rebel in the Rye '' is starred by Sarah Paulson and Victor Garber .
+
+EVIDENCE:
+[A evidence_id=5ee3949ac9e77c0008ccfd84_3]
+The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Laura Dern , Brian d'Arcy James , and Hope Davis .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+`` Rebel in the Rye '' is starred by Sarah Paulson and Victor Garber .
+
+EVIDENCE:
+[A evidence_id=5ee3949ac9e77c0008ccfd84_3]
+The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Laura Dern , Brian d'Arcy James , and Hope Davis .
+
+[NEUTRAL_APPEND evidence_id=5ee3949ac9e77c0008ccfd84_1]
+The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Laura Dern , Brian d'Arcy James , and Hope Davis .","PROPOSITION:
+`` Rebel in the Rye '' is starred by Sarah Paulson and Victor Garber .
+
+EVIDENCE:
+[A evidence_id=5ee3949ac9e77c0008ccfd84_3]
+The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Laura Dern , Brian d'Arcy James , and Hope Davis .
+
+[SUPPORT_APPEND evidence_id=5ee3949ac9e77c0008ccfd84_4]
+The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Sarah Paulson , Brian d'Arcy James , Victor Garber , and Hope Davis .","PROPOSITION:
+`` Rebel in the Rye '' is starred by Sarah Paulson and Victor Garber .
+
+EVIDENCE:
+[A evidence_id=5ee3949ac9e77c0008ccfd84_3]
+The film stars Nicholas Hoult , Zoey Deutch , Kevin Spacey , Laura Dern , Brian d'Arcy James , and Hope Davis .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",2,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ea2d97bc9e77c0009cda6e4:2a8eb9fe5136:support,AN17,Fort Minor,5ea2d97bc9e77c0009cda6e4:2a8eb9fe5136,Linkin Park is a Nu Metal band .,5ea2d97bc9e77c0009cda6e4_1,"Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American Nu Metal band Linkin Park .",5ea2d97bc9e77c0009cda6e4_3,"Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American Nu Metal band Linkin Park .",MISSING,MISSING,5ea2d97bc9e77c0009cda6e4_2,"Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American rock band Linkin Park .","PROPOSITION:
+Linkin Park is a Nu Metal band .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda6e4_1]
+Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American Nu Metal band Linkin Park .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Linkin Park is a Nu Metal band .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda6e4_1]
+Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American Nu Metal band Linkin Park .
+
+[NEUTRAL_APPEND evidence_id=5ea2d97bc9e77c0009cda6e4_3]
+Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American Nu Metal band Linkin Park .","PROPOSITION:
+Linkin Park is a Nu Metal band .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda6e4_1]
+Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American Nu Metal band Linkin Park .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Linkin Park is a Nu Metal band .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda6e4_1]
+Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American Nu Metal band Linkin Park .
+
+[COUNTER_APPEND evidence_id=5ea2d97bc9e77c0009cda6e4_2]
+Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American rock band Linkin Park .",2,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ea2d97bc9e77c0009cda6e4:2a8eb9fe5136:refute,AN17,Fort Minor,5ea2d97bc9e77c0009cda6e4:2a8eb9fe5136,Linkin Park is a Nu Metal band .,5ea2d97bc9e77c0009cda6e4_2,"Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American rock band Linkin Park .",5ea2d97bc9e77c0009cda6e4_4,"Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American rock band Linkin Park .",5ea2d97bc9e77c0009cda6e4_1,"Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American Nu Metal band Linkin Park .",MISSING,MISSING,"PROPOSITION:
+Linkin Park is a Nu Metal band .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda6e4_2]
+Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American rock band Linkin Park .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Linkin Park is a Nu Metal band .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda6e4_2]
+Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American rock band Linkin Park .
+
+[NEUTRAL_APPEND evidence_id=5ea2d97bc9e77c0009cda6e4_4]
+Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American rock band Linkin Park .","PROPOSITION:
+Linkin Park is a Nu Metal band .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda6e4_2]
+Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American rock band Linkin Park .
+
+[SUPPORT_APPEND evidence_id=5ea2d97bc9e77c0009cda6e4_1]
+Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American Nu Metal band Linkin Park .","PROPOSITION:
+Linkin Park is a Nu Metal band .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda6e4_2]
+Fort Minor is a hip hop side-project of Mike Shinoda , who is best known as being a member of the American rock band Linkin Park .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",2,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ebe6f32c9e77c0008409a4a:95d83ba89700:support,AN26,Mira Sorvino,5ebe6f32c9e77c0008409a4a:95d83ba89700,Mira Sorvino is Italian on her father 's side .,5ebe6f32c9e77c0008409a4a_4,Sorvino is of Italian descent on her father 's side .,5ebe6f32c9e77c0008409a4a_2,Sorvino is of Italian descent on her father 's side .,MISSING,MISSING,5ebe6f32c9e77c0008409a4a_3,Sorvino is of Korean descent on her father 's side .,"PROPOSITION:
+Mira Sorvino is Italian on her father 's side .
+
+EVIDENCE:
+[A evidence_id=5ebe6f32c9e77c0008409a4a_4]
+Sorvino is of Italian descent on her father 's side .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Mira Sorvino is Italian on her father 's side .
+
+EVIDENCE:
+[A evidence_id=5ebe6f32c9e77c0008409a4a_4]
+Sorvino is of Italian descent on her father 's side .
+
+[NEUTRAL_APPEND evidence_id=5ebe6f32c9e77c0008409a4a_2]
+Sorvino is of Italian descent on her father 's side .","PROPOSITION:
+Mira Sorvino is Italian on her father 's side .
+
+EVIDENCE:
+[A evidence_id=5ebe6f32c9e77c0008409a4a_4]
+Sorvino is of Italian descent on her father 's side .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Mira Sorvino is Italian on her father 's side .
+
+EVIDENCE:
+[A evidence_id=5ebe6f32c9e77c0008409a4a_4]
+Sorvino is of Italian descent on her father 's side .
+
+[COUNTER_APPEND evidence_id=5ebe6f32c9e77c0008409a4a_3]
+Sorvino is of Korean descent on her father 's side .",2,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ebe6f32c9e77c0008409a4a:95d83ba89700:refute,AN26,Mira Sorvino,5ebe6f32c9e77c0008409a4a:95d83ba89700,Mira Sorvino is Italian on her father 's side .,5ebe6f32c9e77c0008409a4a_3,Sorvino is of Korean descent on her father 's side .,5ebe6f32c9e77c0008409a4a_1,Sorvino is of Korean descent on her father 's side .,5ebe6f32c9e77c0008409a4a_4,Sorvino is of Italian descent on her father 's side .,MISSING,MISSING,"PROPOSITION:
+Mira Sorvino is Italian on her father 's side .
+
+EVIDENCE:
+[A evidence_id=5ebe6f32c9e77c0008409a4a_3]
+Sorvino is of Korean descent on her father 's side .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Mira Sorvino is Italian on her father 's side .
+
+EVIDENCE:
+[A evidence_id=5ebe6f32c9e77c0008409a4a_3]
+Sorvino is of Korean descent on her father 's side .
+
+[NEUTRAL_APPEND evidence_id=5ebe6f32c9e77c0008409a4a_1]
+Sorvino is of Korean descent on her father 's side .","PROPOSITION:
+Mira Sorvino is Italian on her father 's side .
+
+EVIDENCE:
+[A evidence_id=5ebe6f32c9e77c0008409a4a_3]
+Sorvino is of Korean descent on her father 's side .
+
+[SUPPORT_APPEND evidence_id=5ebe6f32c9e77c0008409a4a_4]
+Sorvino is of Italian descent on her father 's side .","PROPOSITION:
+Mira Sorvino is Italian on her father 's side .
+
+EVIDENCE:
+[A evidence_id=5ebe6f32c9e77c0008409a4a_3]
+Sorvino is of Korean descent on her father 's side .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",2,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ec7d50ec9e77c0008442b24:4f32efbe7338:support,AN18,Moon pie,5ec7d50ec9e77c0008442b24:4f32efbe7338,"Marshmallow cream arrived in Chattanooga , TN after 1928 .",5ec7d50ec9e77c0008442b24_1,"By 1929 , marshmallow cream had made its way to Chattanooga , TN .",5ec7d50ec9e77c0008442b24_3,"By 1929 , marshmallow cream had made its way to Chattanooga , TN .",MISSING,MISSING,5ec7d50ec9e77c0008442b24_2,"By 1927 , marshmallow cream had made its way to Chattanooga , TN .","PROPOSITION:
+Marshmallow cream arrived in Chattanooga , TN after 1928 .
+
+EVIDENCE:
+[A evidence_id=5ec7d50ec9e77c0008442b24_1]
+By 1929 , marshmallow cream had made its way to Chattanooga , TN .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Marshmallow cream arrived in Chattanooga , TN after 1928 .
+
+EVIDENCE:
+[A evidence_id=5ec7d50ec9e77c0008442b24_1]
+By 1929 , marshmallow cream had made its way to Chattanooga , TN .
+
+[NEUTRAL_APPEND evidence_id=5ec7d50ec9e77c0008442b24_3]
+By 1929 , marshmallow cream had made its way to Chattanooga , TN .","PROPOSITION:
+Marshmallow cream arrived in Chattanooga , TN after 1928 .
+
+EVIDENCE:
+[A evidence_id=5ec7d50ec9e77c0008442b24_1]
+By 1929 , marshmallow cream had made its way to Chattanooga , TN .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Marshmallow cream arrived in Chattanooga , TN after 1928 .
+
+EVIDENCE:
+[A evidence_id=5ec7d50ec9e77c0008442b24_1]
+By 1929 , marshmallow cream had made its way to Chattanooga , TN .
+
+[COUNTER_APPEND evidence_id=5ec7d50ec9e77c0008442b24_2]
+By 1927 , marshmallow cream had made its way to Chattanooga , TN .",4,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ec7d50ec9e77c0008442b24:4f32efbe7338:refute,AN18,Moon pie,5ec7d50ec9e77c0008442b24:4f32efbe7338,"Marshmallow cream arrived in Chattanooga , TN after 1928 .",5ec7d50ec9e77c0008442b24_2,"By 1927 , marshmallow cream had made its way to Chattanooga , TN .",5ec7d50ec9e77c0008442b24_3,"By 1929 , marshmallow cream had made its way to Chattanooga , TN .",5ec7d50ec9e77c0008442b24_1,"By 1929 , marshmallow cream had made its way to Chattanooga , TN .",MISSING,MISSING,"PROPOSITION:
+Marshmallow cream arrived in Chattanooga , TN after 1928 .
+
+EVIDENCE:
+[A evidence_id=5ec7d50ec9e77c0008442b24_2]
+By 1927 , marshmallow cream had made its way to Chattanooga , TN .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Marshmallow cream arrived in Chattanooga , TN after 1928 .
+
+EVIDENCE:
+[A evidence_id=5ec7d50ec9e77c0008442b24_2]
+By 1927 , marshmallow cream had made its way to Chattanooga , TN .
+
+[NEUTRAL_APPEND evidence_id=5ec7d50ec9e77c0008442b24_3]
+By 1929 , marshmallow cream had made its way to Chattanooga , TN .","PROPOSITION:
+Marshmallow cream arrived in Chattanooga , TN after 1928 .
+
+EVIDENCE:
+[A evidence_id=5ec7d50ec9e77c0008442b24_2]
+By 1927 , marshmallow cream had made its way to Chattanooga , TN .
+
+[SUPPORT_APPEND evidence_id=5ec7d50ec9e77c0008442b24_1]
+By 1929 , marshmallow cream had made its way to Chattanooga , TN .","PROPOSITION:
+Marshmallow cream arrived in Chattanooga , TN after 1928 .
+
+EVIDENCE:
+[A evidence_id=5ec7d50ec9e77c0008442b24_2]
+By 1927 , marshmallow cream had made its way to Chattanooga , TN .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",4,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ede072fc9e77c00084d2ce9:2070a213f9db:support,AN50,Julian Brandt,5ede072fc9e77c00084d2ce9:2070a213f9db,Julian Brandt plays for Bayer Leverkusen .,5ede072fc9e77c00084d2ce9_1,Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Bayer Leverkusen and the German national team .,5ede072fc9e77c00084d2ce9_3,Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Bayer Leverkusen and the German national team .,MISSING,MISSING,5ede072fc9e77c00084d2ce9_2,Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Borussia Dortmund and the German national team .,"PROPOSITION:
+Julian Brandt plays for Bayer Leverkusen .
+
+EVIDENCE:
+[A evidence_id=5ede072fc9e77c00084d2ce9_1]
+Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Bayer Leverkusen and the German national team .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Julian Brandt plays for Bayer Leverkusen .
+
+EVIDENCE:
+[A evidence_id=5ede072fc9e77c00084d2ce9_1]
+Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Bayer Leverkusen and the German national team .
+
+[NEUTRAL_APPEND evidence_id=5ede072fc9e77c00084d2ce9_3]
+Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Bayer Leverkusen and the German national team .","PROPOSITION:
+Julian Brandt plays for Bayer Leverkusen .
+
+EVIDENCE:
+[A evidence_id=5ede072fc9e77c00084d2ce9_1]
+Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Bayer Leverkusen and the German national team .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Julian Brandt plays for Bayer Leverkusen .
+
+EVIDENCE:
+[A evidence_id=5ede072fc9e77c00084d2ce9_1]
+Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Bayer Leverkusen and the German national team .
+
+[COUNTER_APPEND evidence_id=5ede072fc9e77c00084d2ce9_2]
+Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Borussia Dortmund and the German national team .",2,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ede072fc9e77c00084d2ce9:2070a213f9db:refute,AN50,Julian Brandt,5ede072fc9e77c00084d2ce9:2070a213f9db,Julian Brandt plays for Bayer Leverkusen .,5ede072fc9e77c00084d2ce9_2,Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Borussia Dortmund and the German national team .,5ede072fc9e77c00084d2ce9_4,Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Borussia Dortmund and the German national team .,5ede072fc9e77c00084d2ce9_1,Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Bayer Leverkusen and the German national team .,MISSING,MISSING,"PROPOSITION:
+Julian Brandt plays for Bayer Leverkusen .
+
+EVIDENCE:
+[A evidence_id=5ede072fc9e77c00084d2ce9_2]
+Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Borussia Dortmund and the German national team .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Julian Brandt plays for Bayer Leverkusen .
+
+EVIDENCE:
+[A evidence_id=5ede072fc9e77c00084d2ce9_2]
+Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Borussia Dortmund and the German national team .
+
+[NEUTRAL_APPEND evidence_id=5ede072fc9e77c00084d2ce9_4]
+Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Borussia Dortmund and the German national team .","PROPOSITION:
+Julian Brandt plays for Bayer Leverkusen .
+
+EVIDENCE:
+[A evidence_id=5ede072fc9e77c00084d2ce9_2]
+Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Borussia Dortmund and the German national team .
+
+[SUPPORT_APPEND evidence_id=5ede072fc9e77c00084d2ce9_1]
+Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Bayer Leverkusen and the German national team .","PROPOSITION:
+Julian Brandt plays for Bayer Leverkusen .
+
+EVIDENCE:
+[A evidence_id=5ede072fc9e77c00084d2ce9_2]
+Julian Brandt ( ; born 2 May 1996 ) is a German professional footballer who plays as a winger for Borussia Dortmund and the German national team .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",2,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ec284fdc9e77c000841630c:02a864692fca:support,AN01,Casino -LRB-1995 film-RRB-,5ec284fdc9e77c000841630c:02a864692fca,"According to Rotten Tomatoes , the film Casino has an approval rating of less than 80 % based on more than 60 reviews",5ec284fdc9e77c000841630c_4,"On review aggregator Rotten Tomatoes , the film has an approval rating of 79 % based on 62 reviews , with an average rating of 7.2/10 .",5ec284fdc9e77c000841630c_1,"On review aggregator Rotten Tomatoes , the film has an approval rating of 80 % based on 61 reviews , with an average rating of 7.2/10 .",MISSING,MISSING,5ec284fdc9e77c000841630c_3,"On review aggregator Rotten Tomatoes , the film has an approval rating of 80 % based on 61 reviews , with an average rating of 7.2/10 .","PROPOSITION:
+According to Rotten Tomatoes , the film Casino has an approval rating of less than 80 % based on more than 60 reviews
+
+EVIDENCE:
+[A evidence_id=5ec284fdc9e77c000841630c_4]
+On review aggregator Rotten Tomatoes , the film has an approval rating of 79 % based on 62 reviews , with an average rating of 7.2/10 .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+According to Rotten Tomatoes , the film Casino has an approval rating of less than 80 % based on more than 60 reviews
+
+EVIDENCE:
+[A evidence_id=5ec284fdc9e77c000841630c_4]
+On review aggregator Rotten Tomatoes , the film has an approval rating of 79 % based on 62 reviews , with an average rating of 7.2/10 .
+
+[NEUTRAL_APPEND evidence_id=5ec284fdc9e77c000841630c_1]
+On review aggregator Rotten Tomatoes , the film has an approval rating of 80 % based on 61 reviews , with an average rating of 7.2/10 .","PROPOSITION:
+According to Rotten Tomatoes , the film Casino has an approval rating of less than 80 % based on more than 60 reviews
+
+EVIDENCE:
+[A evidence_id=5ec284fdc9e77c000841630c_4]
+On review aggregator Rotten Tomatoes , the film has an approval rating of 79 % based on 62 reviews , with an average rating of 7.2/10 .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+According to Rotten Tomatoes , the film Casino has an approval rating of less than 80 % based on more than 60 reviews
+
+EVIDENCE:
+[A evidence_id=5ec284fdc9e77c000841630c_4]
+On review aggregator Rotten Tomatoes , the film has an approval rating of 79 % based on 62 reviews , with an average rating of 7.2/10 .
+
+[COUNTER_APPEND evidence_id=5ec284fdc9e77c000841630c_3]
+On review aggregator Rotten Tomatoes , the film has an approval rating of 80 % based on 61 reviews , with an average rating of 7.2/10 .",20,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ec284fdc9e77c000841630c:02a864692fca:refute,AN01,Casino -LRB-1995 film-RRB-,5ec284fdc9e77c000841630c:02a864692fca,"According to Rotten Tomatoes , the film Casino has an approval rating of less than 80 % based on more than 60 reviews",5ec284fdc9e77c000841630c_3,"On review aggregator Rotten Tomatoes , the film has an approval rating of 80 % based on 61 reviews , with an average rating of 7.2/10 .",5ec284fdc9e77c000841630c_1,"On review aggregator Rotten Tomatoes , the film has an approval rating of 80 % based on 61 reviews , with an average rating of 7.2/10 .",5ec284fdc9e77c000841630c_4,"On review aggregator Rotten Tomatoes , the film has an approval rating of 79 % based on 62 reviews , with an average rating of 7.2/10 .",MISSING,MISSING,"PROPOSITION:
+According to Rotten Tomatoes , the film Casino has an approval rating of less than 80 % based on more than 60 reviews
+
+EVIDENCE:
+[A evidence_id=5ec284fdc9e77c000841630c_3]
+On review aggregator Rotten Tomatoes , the film has an approval rating of 80 % based on 61 reviews , with an average rating of 7.2/10 .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+According to Rotten Tomatoes , the film Casino has an approval rating of less than 80 % based on more than 60 reviews
+
+EVIDENCE:
+[A evidence_id=5ec284fdc9e77c000841630c_3]
+On review aggregator Rotten Tomatoes , the film has an approval rating of 80 % based on 61 reviews , with an average rating of 7.2/10 .
+
+[NEUTRAL_APPEND evidence_id=5ec284fdc9e77c000841630c_1]
+On review aggregator Rotten Tomatoes , the film has an approval rating of 80 % based on 61 reviews , with an average rating of 7.2/10 .","PROPOSITION:
+According to Rotten Tomatoes , the film Casino has an approval rating of less than 80 % based on more than 60 reviews
+
+EVIDENCE:
+[A evidence_id=5ec284fdc9e77c000841630c_3]
+On review aggregator Rotten Tomatoes , the film has an approval rating of 80 % based on 61 reviews , with an average rating of 7.2/10 .
+
+[SUPPORT_APPEND evidence_id=5ec284fdc9e77c000841630c_4]
+On review aggregator Rotten Tomatoes , the film has an approval rating of 79 % based on 62 reviews , with an average rating of 7.2/10 .","PROPOSITION:
+According to Rotten Tomatoes , the film Casino has an approval rating of less than 80 % based on more than 60 reviews
+
+EVIDENCE:
+[A evidence_id=5ec284fdc9e77c000841630c_3]
+On review aggregator Rotten Tomatoes , the film has an approval rating of 80 % based on 61 reviews , with an average rating of 7.2/10 .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",20,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5eb2988ac9e77c0008d948d4:78774eac9930:support,BN05,FXX,5eb2988ac9e77c0008d948d4:78774eac9930,Less than 70 % of households with television receive FXX .,5eb2988ac9e77c0008d948d4_1,"As of September 2018 , approximately 87 million households in the United States ( 67 % of those with television ) receive FXX.",5eb2988ac9e77c0008d948d4_3,"As of September 2018 , approximately 87 million households in the United States ( 67 % of those with television ) receive FXX.",MISSING,MISSING,5eb2988ac9e77c0008d948d4_2,"As of September 2018 , approximately 87 million households in the United States ( 78 % of those with television ) receive FXX.","PROPOSITION:
+Less than 70 % of households with television receive FXX .
+
+EVIDENCE:
+[A evidence_id=5eb2988ac9e77c0008d948d4_1]
+As of September 2018 , approximately 87 million households in the United States ( 67 % of those with television ) receive FXX.
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Less than 70 % of households with television receive FXX .
+
+EVIDENCE:
+[A evidence_id=5eb2988ac9e77c0008d948d4_1]
+As of September 2018 , approximately 87 million households in the United States ( 67 % of those with television ) receive FXX.
+
+[NEUTRAL_APPEND evidence_id=5eb2988ac9e77c0008d948d4_3]
+As of September 2018 , approximately 87 million households in the United States ( 67 % of those with television ) receive FXX.","PROPOSITION:
+Less than 70 % of households with television receive FXX .
+
+EVIDENCE:
+[A evidence_id=5eb2988ac9e77c0008d948d4_1]
+As of September 2018 , approximately 87 million households in the United States ( 67 % of those with television ) receive FXX.
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Less than 70 % of households with television receive FXX .
+
+EVIDENCE:
+[A evidence_id=5eb2988ac9e77c0008d948d4_1]
+As of September 2018 , approximately 87 million households in the United States ( 67 % of those with television ) receive FXX.
+
+[COUNTER_APPEND evidence_id=5eb2988ac9e77c0008d948d4_2]
+As of September 2018 , approximately 87 million households in the United States ( 78 % of those with television ) receive FXX.",2,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5eb2988ac9e77c0008d948d4:78774eac9930:refute,BN05,FXX,5eb2988ac9e77c0008d948d4:78774eac9930,Less than 70 % of households with television receive FXX .,5eb2988ac9e77c0008d948d4_2,"As of September 2018 , approximately 87 million households in the United States ( 78 % of those with television ) receive FXX.",5eb2988ac9e77c0008d948d4_3,"As of September 2018 , approximately 87 million households in the United States ( 67 % of those with television ) receive FXX.",5eb2988ac9e77c0008d948d4_1,"As of September 2018 , approximately 87 million households in the United States ( 67 % of those with television ) receive FXX.",MISSING,MISSING,"PROPOSITION:
+Less than 70 % of households with television receive FXX .
+
+EVIDENCE:
+[A evidence_id=5eb2988ac9e77c0008d948d4_2]
+As of September 2018 , approximately 87 million households in the United States ( 78 % of those with television ) receive FXX.
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Less than 70 % of households with television receive FXX .
+
+EVIDENCE:
+[A evidence_id=5eb2988ac9e77c0008d948d4_2]
+As of September 2018 , approximately 87 million households in the United States ( 78 % of those with television ) receive FXX.
+
+[NEUTRAL_APPEND evidence_id=5eb2988ac9e77c0008d948d4_3]
+As of September 2018 , approximately 87 million households in the United States ( 67 % of those with television ) receive FXX.","PROPOSITION:
+Less than 70 % of households with television receive FXX .
+
+EVIDENCE:
+[A evidence_id=5eb2988ac9e77c0008d948d4_2]
+As of September 2018 , approximately 87 million households in the United States ( 78 % of those with television ) receive FXX.
+
+[SUPPORT_APPEND evidence_id=5eb2988ac9e77c0008d948d4_1]
+As of September 2018 , approximately 87 million households in the United States ( 67 % of those with television ) receive FXX.","PROPOSITION:
+Less than 70 % of households with television receive FXX .
+
+EVIDENCE:
+[A evidence_id=5eb2988ac9e77c0008d948d4_2]
+As of September 2018 , approximately 87 million households in the United States ( 78 % of those with television ) receive FXX.
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",2,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ec7d50dc9e77c00084422ab:8167d079f786:support,AN02,2019 FIFA U-17 World Cup,5ec7d50dc9e77c00084422ab:8167d079f786,Argentina beat France 2-1 in the 2019 FIFA U-17 World Cup final .,5ec7d50dc9e77c00084422ab_1,"Argentina won their fourth U-17 World Cup title , winning 2–1 against France in the final , which was also the first time in the history that Argentina won a FIFA World Cup tournament at home soil.",5ec7d50dc9e77c00084422ab_3,"Argentina won their fourth U-17 World Cup title , winning 2–1 against France in the final , which was also the first time in the history that Argentina won a FIFA World Cup tournament at home soil.",MISSING,MISSING,5ec7d50dc9e77c00084422ab_2,"Brazil won their fourth U-17 World Cup title , winning 2–1 against Mexico in the final , which was also the first time in the history that Brazil won a FIFA World Cup tournament at home soil.","PROPOSITION:
+Argentina beat France 2-1 in the 2019 FIFA U-17 World Cup final .
+
+EVIDENCE:
+[A evidence_id=5ec7d50dc9e77c00084422ab_1]
+Argentina won their fourth U-17 World Cup title , winning 2–1 against France in the final , which was also the first time in the history that Argentina won a FIFA World Cup tournament at home soil.
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Argentina beat France 2-1 in the 2019 FIFA U-17 World Cup final .
+
+EVIDENCE:
+[A evidence_id=5ec7d50dc9e77c00084422ab_1]
+Argentina won their fourth U-17 World Cup title , winning 2–1 against France in the final , which was also the first time in the history that Argentina won a FIFA World Cup tournament at home soil.
+
+[NEUTRAL_APPEND evidence_id=5ec7d50dc9e77c00084422ab_3]
+Argentina won their fourth U-17 World Cup title , winning 2–1 against France in the final , which was also the first time in the history that Argentina won a FIFA World Cup tournament at home soil.","PROPOSITION:
+Argentina beat France 2-1 in the 2019 FIFA U-17 World Cup final .
+
+EVIDENCE:
+[A evidence_id=5ec7d50dc9e77c00084422ab_1]
+Argentina won their fourth U-17 World Cup title , winning 2–1 against France in the final , which was also the first time in the history that Argentina won a FIFA World Cup tournament at home soil.
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Argentina beat France 2-1 in the 2019 FIFA U-17 World Cup final .
+
+EVIDENCE:
+[A evidence_id=5ec7d50dc9e77c00084422ab_1]
+Argentina won their fourth U-17 World Cup title , winning 2–1 against France in the final , which was also the first time in the history that Argentina won a FIFA World Cup tournament at home soil.
+
+[COUNTER_APPEND evidence_id=5ec7d50dc9e77c00084422ab_2]
+Brazil won their fourth U-17 World Cup title , winning 2–1 against Mexico in the final , which was also the first time in the history that Brazil won a FIFA World Cup tournament at home soil.",4,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ec7d50dc9e77c00084422ab:8167d079f786:refute,AN02,2019 FIFA U-17 World Cup,5ec7d50dc9e77c00084422ab:8167d079f786,Argentina beat France 2-1 in the 2019 FIFA U-17 World Cup final .,5ec7d50dc9e77c00084422ab_2,"Brazil won their fourth U-17 World Cup title , winning 2–1 against Mexico in the final , which was also the first time in the history that Brazil won a FIFA World Cup tournament at home soil.",5ec7d50dc9e77c00084422ab_4,"Brazil won their fourth U-17 World Cup title , winning 2–1 against Mexico in the final , which was also the first time in the history that Brazil won a FIFA World Cup tournament at home soil.",5ec7d50dc9e77c00084422ab_1,"Argentina won their fourth U-17 World Cup title , winning 2–1 against France in the final , which was also the first time in the history that Argentina won a FIFA World Cup tournament at home soil.",MISSING,MISSING,"PROPOSITION:
+Argentina beat France 2-1 in the 2019 FIFA U-17 World Cup final .
+
+EVIDENCE:
+[A evidence_id=5ec7d50dc9e77c00084422ab_2]
+Brazil won their fourth U-17 World Cup title , winning 2–1 against Mexico in the final , which was also the first time in the history that Brazil won a FIFA World Cup tournament at home soil.
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Argentina beat France 2-1 in the 2019 FIFA U-17 World Cup final .
+
+EVIDENCE:
+[A evidence_id=5ec7d50dc9e77c00084422ab_2]
+Brazil won their fourth U-17 World Cup title , winning 2–1 against Mexico in the final , which was also the first time in the history that Brazil won a FIFA World Cup tournament at home soil.
+
+[NEUTRAL_APPEND evidence_id=5ec7d50dc9e77c00084422ab_4]
+Brazil won their fourth U-17 World Cup title , winning 2–1 against Mexico in the final , which was also the first time in the history that Brazil won a FIFA World Cup tournament at home soil.","PROPOSITION:
+Argentina beat France 2-1 in the 2019 FIFA U-17 World Cup final .
+
+EVIDENCE:
+[A evidence_id=5ec7d50dc9e77c00084422ab_2]
+Brazil won their fourth U-17 World Cup title , winning 2–1 against Mexico in the final , which was also the first time in the history that Brazil won a FIFA World Cup tournament at home soil.
+
+[SUPPORT_APPEND evidence_id=5ec7d50dc9e77c00084422ab_1]
+Argentina won their fourth U-17 World Cup title , winning 2–1 against France in the final , which was also the first time in the history that Argentina won a FIFA World Cup tournament at home soil.","PROPOSITION:
+Argentina beat France 2-1 in the 2019 FIFA U-17 World Cup final .
+
+EVIDENCE:
+[A evidence_id=5ec7d50dc9e77c00084422ab_2]
+Brazil won their fourth U-17 World Cup title , winning 2–1 against Mexico in the final , which was also the first time in the history that Brazil won a FIFA World Cup tournament at home soil.
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",4,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ea2d97bc9e77c0009cda1ca:ca02e2730ae1:support,AN30,Real-time clock,5ea2d97bc9e77c0009cda1ca:ca02e2730ae1,Many real-time clocks have alternate power sources .,5ea2d97bc9e77c0009cda1ca_4,"RTCs often have an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .",5ea2d97bc9e77c0009cda1ca_2,"RTCs often have an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .",MISSING,MISSING,5ea2d97bc9e77c0009cda1ca_3,"RTCs often doesn'thave an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .","PROPOSITION:
+Many real-time clocks have alternate power sources .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda1ca_4]
+RTCs often have an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Many real-time clocks have alternate power sources .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda1ca_4]
+RTCs often have an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .
+
+[NEUTRAL_APPEND evidence_id=5ea2d97bc9e77c0009cda1ca_2]
+RTCs often have an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .","PROPOSITION:
+Many real-time clocks have alternate power sources .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda1ca_4]
+RTCs often have an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Many real-time clocks have alternate power sources .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda1ca_4]
+RTCs often have an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .
+
+[COUNTER_APPEND evidence_id=5ea2d97bc9e77c0009cda1ca_3]
+RTCs often doesn'thave an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .",2,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ea2d97bc9e77c0009cda1ca:ca02e2730ae1:refute,AN30,Real-time clock,5ea2d97bc9e77c0009cda1ca:ca02e2730ae1,Many real-time clocks have alternate power sources .,5ea2d97bc9e77c0009cda1ca_3,"RTCs often doesn'thave an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .",5ea2d97bc9e77c0009cda1ca_1,"RTCs often doesn'thave an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .",5ea2d97bc9e77c0009cda1ca_4,"RTCs often have an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .",MISSING,MISSING,"PROPOSITION:
+Many real-time clocks have alternate power sources .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda1ca_3]
+RTCs often doesn'thave an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Many real-time clocks have alternate power sources .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda1ca_3]
+RTCs often doesn'thave an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .
+
+[NEUTRAL_APPEND evidence_id=5ea2d97bc9e77c0009cda1ca_1]
+RTCs often doesn'thave an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .","PROPOSITION:
+Many real-time clocks have alternate power sources .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda1ca_3]
+RTCs often doesn'thave an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .
+
+[SUPPORT_APPEND evidence_id=5ea2d97bc9e77c0009cda1ca_4]
+RTCs often have an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .","PROPOSITION:
+Many real-time clocks have alternate power sources .
+
+EVIDENCE:
+[A evidence_id=5ea2d97bc9e77c0009cda1ca_3]
+RTCs often doesn'thave an alternate source of power , so they can continue to keep time while the primary source of power is off or unavailable .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",2,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ebe6f2fc9e77c0008407e30:bea3f1c84a3d:support,AN27,But I'm a Cheerleader,5ebe6f2fc9e77c0008407e30:bea3f1c84a3d,"But I 'm a Cheerleader has less than 75 reviews , and scored less than 38 % on Rotten Tomatoes .",5ebe6f2fc9e77c0008407e30_1,"Rotten Tomatoes gave it a score of 37 % based on 71 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .",5ebe6f2fc9e77c0008407e30_3,"Rotten Tomatoes gave it a score of 37 % based on 71 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .",MISSING,MISSING,5ebe6f2fc9e77c0008407e30_2,"Rotten Tomatoes gave it a score of 38 % based on 81 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .","PROPOSITION:
+But I 'm a Cheerleader has less than 75 reviews , and scored less than 38 % on Rotten Tomatoes .
+
+EVIDENCE:
+[A evidence_id=5ebe6f2fc9e77c0008407e30_1]
+Rotten Tomatoes gave it a score of 37 % based on 71 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+But I 'm a Cheerleader has less than 75 reviews , and scored less than 38 % on Rotten Tomatoes .
+
+EVIDENCE:
+[A evidence_id=5ebe6f2fc9e77c0008407e30_1]
+Rotten Tomatoes gave it a score of 37 % based on 71 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .
+
+[NEUTRAL_APPEND evidence_id=5ebe6f2fc9e77c0008407e30_3]
+Rotten Tomatoes gave it a score of 37 % based on 71 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .","PROPOSITION:
+But I 'm a Cheerleader has less than 75 reviews , and scored less than 38 % on Rotten Tomatoes .
+
+EVIDENCE:
+[A evidence_id=5ebe6f2fc9e77c0008407e30_1]
+Rotten Tomatoes gave it a score of 37 % based on 71 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+But I 'm a Cheerleader has less than 75 reviews , and scored less than 38 % on Rotten Tomatoes .
+
+EVIDENCE:
+[A evidence_id=5ebe6f2fc9e77c0008407e30_1]
+Rotten Tomatoes gave it a score of 37 % based on 71 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .
+
+[COUNTER_APPEND evidence_id=5ebe6f2fc9e77c0008407e30_2]
+Rotten Tomatoes gave it a score of 38 % based on 81 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .",6,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ebe6f2fc9e77c0008407e30:bea3f1c84a3d:refute,AN27,But I'm a Cheerleader,5ebe6f2fc9e77c0008407e30:bea3f1c84a3d,"But I 'm a Cheerleader has less than 75 reviews , and scored less than 38 % on Rotten Tomatoes .",5ebe6f2fc9e77c0008407e30_2,"Rotten Tomatoes gave it a score of 38 % based on 81 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .",5ebe6f2fc9e77c0008407e30_3,"Rotten Tomatoes gave it a score of 37 % based on 71 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .",5ebe6f2fc9e77c0008407e30_1,"Rotten Tomatoes gave it a score of 37 % based on 71 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .",MISSING,MISSING,"PROPOSITION:
+But I 'm a Cheerleader has less than 75 reviews , and scored less than 38 % on Rotten Tomatoes .
+
+EVIDENCE:
+[A evidence_id=5ebe6f2fc9e77c0008407e30_2]
+Rotten Tomatoes gave it a score of 38 % based on 81 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+But I 'm a Cheerleader has less than 75 reviews , and scored less than 38 % on Rotten Tomatoes .
+
+EVIDENCE:
+[A evidence_id=5ebe6f2fc9e77c0008407e30_2]
+Rotten Tomatoes gave it a score of 38 % based on 81 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .
+
+[NEUTRAL_APPEND evidence_id=5ebe6f2fc9e77c0008407e30_3]
+Rotten Tomatoes gave it a score of 37 % based on 71 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .","PROPOSITION:
+But I 'm a Cheerleader has less than 75 reviews , and scored less than 38 % on Rotten Tomatoes .
+
+EVIDENCE:
+[A evidence_id=5ebe6f2fc9e77c0008407e30_2]
+Rotten Tomatoes gave it a score of 38 % based on 81 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .
+
+[SUPPORT_APPEND evidence_id=5ebe6f2fc9e77c0008407e30_1]
+Rotten Tomatoes gave it a score of 37 % based on 71 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .","PROPOSITION:
+But I 'm a Cheerleader has less than 75 reviews , and scored less than 38 % on Rotten Tomatoes .
+
+EVIDENCE:
+[A evidence_id=5ebe6f2fc9e77c0008407e30_2]
+Rotten Tomatoes gave it a score of 38 % based on 81 reviews , and Metacritic gave it a score of 39 % based on 30 reviews .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",6,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ed7ad03c9e77c00084a7975:68d60548a6bd:support,AN57,Countries of the United Kingdom,5ed7ad03c9e77c00084a7975:68d60548a6bd,Northern Ireland is a country in the UK .,5ed7ad03c9e77c00084a7975_4,"The United Kingdom ( UK ) comprises four countries : England , Scotland , Wales and Northern Ireland .",5ed7ad03c9e77c00084a7975_2,"The United Kingdom ( UK ) comprises four countries : England , Scotland , Wales and Northern Ireland .",MISSING,MISSING,5ed7ad03c9e77c00084a7975_3,"The United Kingdom ( UK ) comprises three countries : England , Scotland , Wales and one province : Northern Ireland .","PROPOSITION:
+Northern Ireland is a country in the UK .
+
+EVIDENCE:
+[A evidence_id=5ed7ad03c9e77c00084a7975_4]
+The United Kingdom ( UK ) comprises four countries : England , Scotland , Wales and Northern Ireland .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Northern Ireland is a country in the UK .
+
+EVIDENCE:
+[A evidence_id=5ed7ad03c9e77c00084a7975_4]
+The United Kingdom ( UK ) comprises four countries : England , Scotland , Wales and Northern Ireland .
+
+[NEUTRAL_APPEND evidence_id=5ed7ad03c9e77c00084a7975_2]
+The United Kingdom ( UK ) comprises four countries : England , Scotland , Wales and Northern Ireland .","PROPOSITION:
+Northern Ireland is a country in the UK .
+
+EVIDENCE:
+[A evidence_id=5ed7ad03c9e77c00084a7975_4]
+The United Kingdom ( UK ) comprises four countries : England , Scotland , Wales and Northern Ireland .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Northern Ireland is a country in the UK .
+
+EVIDENCE:
+[A evidence_id=5ed7ad03c9e77c00084a7975_4]
+The United Kingdom ( UK ) comprises four countries : England , Scotland , Wales and Northern Ireland .
+
+[COUNTER_APPEND evidence_id=5ed7ad03c9e77c00084a7975_3]
+The United Kingdom ( UK ) comprises three countries : England , Scotland , Wales and one province : Northern Ireland .",2,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ed7ad03c9e77c00084a7975:68d60548a6bd:refute,AN57,Countries of the United Kingdom,5ed7ad03c9e77c00084a7975:68d60548a6bd,Northern Ireland is a country in the UK .,5ed7ad03c9e77c00084a7975_3,"The United Kingdom ( UK ) comprises three countries : England , Scotland , Wales and one province : Northern Ireland .",5ed7ad03c9e77c00084a7975_1,"The United Kingdom ( UK ) comprises three countries : England , Scotland , Wales and one province : Northern Ireland .",5ed7ad03c9e77c00084a7975_4,"The United Kingdom ( UK ) comprises four countries : England , Scotland , Wales and Northern Ireland .",MISSING,MISSING,"PROPOSITION:
+Northern Ireland is a country in the UK .
+
+EVIDENCE:
+[A evidence_id=5ed7ad03c9e77c00084a7975_3]
+The United Kingdom ( UK ) comprises three countries : England , Scotland , Wales and one province : Northern Ireland .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Northern Ireland is a country in the UK .
+
+EVIDENCE:
+[A evidence_id=5ed7ad03c9e77c00084a7975_3]
+The United Kingdom ( UK ) comprises three countries : England , Scotland , Wales and one province : Northern Ireland .
+
+[NEUTRAL_APPEND evidence_id=5ed7ad03c9e77c00084a7975_1]
+The United Kingdom ( UK ) comprises three countries : England , Scotland , Wales and one province : Northern Ireland .","PROPOSITION:
+Northern Ireland is a country in the UK .
+
+EVIDENCE:
+[A evidence_id=5ed7ad03c9e77c00084a7975_3]
+The United Kingdom ( UK ) comprises three countries : England , Scotland , Wales and one province : Northern Ireland .
+
+[SUPPORT_APPEND evidence_id=5ed7ad03c9e77c00084a7975_4]
+The United Kingdom ( UK ) comprises four countries : England , Scotland , Wales and Northern Ireland .","PROPOSITION:
+Northern Ireland is a country in the UK .
+
+EVIDENCE:
+[A evidence_id=5ed7ad03c9e77c00084a7975_3]
+The United Kingdom ( UK ) comprises three countries : England , Scotland , Wales and one province : Northern Ireland .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",2,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ee39419c9e77c0008ccf86b:71f69dabdae7:support,BN07,Terrence Howard,5ee39419c9e77c0008ccf86b:71f69dabdae7,Terrence Howard married his first wife after 1985 .,5ee39419c9e77c0008ccf86b_4,"Howard married his first wife , Lori McCommas , in 1989 .",5ee39419c9e77c0008ccf86b_1,"Howard married his first wife , Lori McCommas , in 1979 .",MISSING,MISSING,5ee39419c9e77c0008ccf86b_3,"Howard married his first wife , Lori McCommas , in 1979 .","PROPOSITION:
+Terrence Howard married his first wife after 1985 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccf86b_4]
+Howard married his first wife , Lori McCommas , in 1989 .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Terrence Howard married his first wife after 1985 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccf86b_4]
+Howard married his first wife , Lori McCommas , in 1989 .
+
+[NEUTRAL_APPEND evidence_id=5ee39419c9e77c0008ccf86b_1]
+Howard married his first wife , Lori McCommas , in 1979 .","PROPOSITION:
+Terrence Howard married his first wife after 1985 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccf86b_4]
+Howard married his first wife , Lori McCommas , in 1989 .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Terrence Howard married his first wife after 1985 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccf86b_4]
+Howard married his first wife , Lori McCommas , in 1989 .
+
+[COUNTER_APPEND evidence_id=5ee39419c9e77c0008ccf86b_3]
+Howard married his first wife , Lori McCommas , in 1979 .",2,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ee39419c9e77c0008ccf86b:71f69dabdae7:refute,BN07,Terrence Howard,5ee39419c9e77c0008ccf86b:71f69dabdae7,Terrence Howard married his first wife after 1985 .,5ee39419c9e77c0008ccf86b_3,"Howard married his first wife , Lori McCommas , in 1979 .",5ee39419c9e77c0008ccf86b_1,"Howard married his first wife , Lori McCommas , in 1979 .",5ee39419c9e77c0008ccf86b_4,"Howard married his first wife , Lori McCommas , in 1989 .",MISSING,MISSING,"PROPOSITION:
+Terrence Howard married his first wife after 1985 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccf86b_3]
+Howard married his first wife , Lori McCommas , in 1979 .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Terrence Howard married his first wife after 1985 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccf86b_3]
+Howard married his first wife , Lori McCommas , in 1979 .
+
+[NEUTRAL_APPEND evidence_id=5ee39419c9e77c0008ccf86b_1]
+Howard married his first wife , Lori McCommas , in 1979 .","PROPOSITION:
+Terrence Howard married his first wife after 1985 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccf86b_3]
+Howard married his first wife , Lori McCommas , in 1979 .
+
+[SUPPORT_APPEND evidence_id=5ee39419c9e77c0008ccf86b_4]
+Howard married his first wife , Lori McCommas , in 1989 .","PROPOSITION:
+Terrence Howard married his first wife after 1985 .
+
+EVIDENCE:
+[A evidence_id=5ee39419c9e77c0008ccf86b_3]
+Howard married his first wife , Lori McCommas , in 1979 .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",2,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ebbf32bc9e77c000929509b:13d7176cb215:support,BN02,The Last Guardian,5ebbf32bc9e77c000929509b:13d7176cb215,"In the game The Last Guardian , the boy can throw a barrel that gains Trico 's interest .",5ebbf32bc9e77c000929509b_1,"For example , the player may have the boy throw a barrel that gains Trico 's interest , causing it to move to a specific location .",5ebbf32bc9e77c000929509b_3,"For example , the player may have the boy throw a barrel that gains Trico 's interest , causing it to move to a specific location .",MISSING,MISSING,5ebbf32bc9e77c000929509b_2,"For example , the player may have the boy throw a plate of noodles that gains no interest , causing it to move to a specific location .","PROPOSITION:
+In the game The Last Guardian , the boy can throw a barrel that gains Trico 's interest .
+
+EVIDENCE:
+[A evidence_id=5ebbf32bc9e77c000929509b_1]
+For example , the player may have the boy throw a barrel that gains Trico 's interest , causing it to move to a specific location .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+In the game The Last Guardian , the boy can throw a barrel that gains Trico 's interest .
+
+EVIDENCE:
+[A evidence_id=5ebbf32bc9e77c000929509b_1]
+For example , the player may have the boy throw a barrel that gains Trico 's interest , causing it to move to a specific location .
+
+[NEUTRAL_APPEND evidence_id=5ebbf32bc9e77c000929509b_3]
+For example , the player may have the boy throw a barrel that gains Trico 's interest , causing it to move to a specific location .","PROPOSITION:
+In the game The Last Guardian , the boy can throw a barrel that gains Trico 's interest .
+
+EVIDENCE:
+[A evidence_id=5ebbf32bc9e77c000929509b_1]
+For example , the player may have the boy throw a barrel that gains Trico 's interest , causing it to move to a specific location .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+In the game The Last Guardian , the boy can throw a barrel that gains Trico 's interest .
+
+EVIDENCE:
+[A evidence_id=5ebbf32bc9e77c000929509b_1]
+For example , the player may have the boy throw a barrel that gains Trico 's interest , causing it to move to a specific location .
+
+[COUNTER_APPEND evidence_id=5ebbf32bc9e77c000929509b_2]
+For example , the player may have the boy throw a plate of noodles that gains no interest , causing it to move to a specific location .",6,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ebbf32bc9e77c000929509b:13d7176cb215:refute,BN02,The Last Guardian,5ebbf32bc9e77c000929509b:13d7176cb215,"In the game The Last Guardian , the boy can throw a barrel that gains Trico 's interest .",5ebbf32bc9e77c000929509b_2,"For example , the player may have the boy throw a plate of noodles that gains no interest , causing it to move to a specific location .",5ebbf32bc9e77c000929509b_4,"For example , the player may have the boy throw a plate of noodles that gains no interest , causing it to move to a specific location .",5ebbf32bc9e77c000929509b_1,"For example , the player may have the boy throw a barrel that gains Trico 's interest , causing it to move to a specific location .",MISSING,MISSING,"PROPOSITION:
+In the game The Last Guardian , the boy can throw a barrel that gains Trico 's interest .
+
+EVIDENCE:
+[A evidence_id=5ebbf32bc9e77c000929509b_2]
+For example , the player may have the boy throw a plate of noodles that gains no interest , causing it to move to a specific location .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+In the game The Last Guardian , the boy can throw a barrel that gains Trico 's interest .
+
+EVIDENCE:
+[A evidence_id=5ebbf32bc9e77c000929509b_2]
+For example , the player may have the boy throw a plate of noodles that gains no interest , causing it to move to a specific location .
+
+[NEUTRAL_APPEND evidence_id=5ebbf32bc9e77c000929509b_4]
+For example , the player may have the boy throw a plate of noodles that gains no interest , causing it to move to a specific location .","PROPOSITION:
+In the game The Last Guardian , the boy can throw a barrel that gains Trico 's interest .
+
+EVIDENCE:
+[A evidence_id=5ebbf32bc9e77c000929509b_2]
+For example , the player may have the boy throw a plate of noodles that gains no interest , causing it to move to a specific location .
+
+[SUPPORT_APPEND evidence_id=5ebbf32bc9e77c000929509b_1]
+For example , the player may have the boy throw a barrel that gains Trico 's interest , causing it to move to a specific location .","PROPOSITION:
+In the game The Last Guardian , the boy can throw a barrel that gains Trico 's interest .
+
+EVIDENCE:
+[A evidence_id=5ebbf32bc9e77c000929509b_2]
+For example , the player may have the boy throw a plate of noodles that gains no interest , causing it to move to a specific location .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",6,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ebe6f2cc9e77c0008407668:01a29c27bce3:support,BN13,Hairspray Live!,5ebe6f2cc9e77c0008407668:01a29c27bce3,Less than 9 million people saw Hairspray Live !,5ebe6f2cc9e77c0008407668_1,"was seen by 8.92 million viewers , with a ratings share of 2.3 in the 18-49 demographic .",5ebe6f2cc9e77c0008407668_3,"was seen by 8.92 million viewers , with a ratings share of 2.3 in the 18-49 demographic .",MISSING,MISSING,5ebe6f2cc9e77c0008407668_2,"was seen by 9.05 million viewers , with a ratings share of 2.3 in the 18-49 demographic .","PROPOSITION:
+Less than 9 million people saw Hairspray Live !
+
+EVIDENCE:
+[A evidence_id=5ebe6f2cc9e77c0008407668_1]
+was seen by 8.92 million viewers , with a ratings share of 2.3 in the 18-49 demographic .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Less than 9 million people saw Hairspray Live !
+
+EVIDENCE:
+[A evidence_id=5ebe6f2cc9e77c0008407668_1]
+was seen by 8.92 million viewers , with a ratings share of 2.3 in the 18-49 demographic .
+
+[NEUTRAL_APPEND evidence_id=5ebe6f2cc9e77c0008407668_3]
+was seen by 8.92 million viewers , with a ratings share of 2.3 in the 18-49 demographic .","PROPOSITION:
+Less than 9 million people saw Hairspray Live !
+
+EVIDENCE:
+[A evidence_id=5ebe6f2cc9e77c0008407668_1]
+was seen by 8.92 million viewers , with a ratings share of 2.3 in the 18-49 demographic .
+
+[SUPPORT_APPEND evidence_id=MISSING]
+MISSING","PROPOSITION:
+Less than 9 million people saw Hairspray Live !
+
+EVIDENCE:
+[A evidence_id=5ebe6f2cc9e77c0008407668_1]
+was seen by 8.92 million viewers , with a ratings share of 2.3 in the 18-49 demographic .
+
+[COUNTER_APPEND evidence_id=5ebe6f2cc9e77c0008407668_2]
+was seen by 9.05 million viewers , with a ratings share of 2.3 in the 18-49 demographic .",16,0,1,SUPPORT_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT
+5ebe6f2cc9e77c0008407668:01a29c27bce3:refute,BN13,Hairspray Live!,5ebe6f2cc9e77c0008407668:01a29c27bce3,Less than 9 million people saw Hairspray Live !,5ebe6f2cc9e77c0008407668_2,"was seen by 9.05 million viewers , with a ratings share of 2.3 in the 18-49 demographic .",5ebe6f2cc9e77c0008407668_3,"was seen by 8.92 million viewers , with a ratings share of 2.3 in the 18-49 demographic .",5ebe6f2cc9e77c0008407668_1,"was seen by 8.92 million viewers , with a ratings share of 2.3 in the 18-49 demographic .",MISSING,MISSING,"PROPOSITION:
+Less than 9 million people saw Hairspray Live !
+
+EVIDENCE:
+[A evidence_id=5ebe6f2cc9e77c0008407668_2]
+was seen by 9.05 million viewers , with a ratings share of 2.3 in the 18-49 demographic .
+
+[AA_REPEAT_CONTRACT evidence_id=AA_REPEAT]
+Repeat A; no new factual content.","PROPOSITION:
+Less than 9 million people saw Hairspray Live !
+
+EVIDENCE:
+[A evidence_id=5ebe6f2cc9e77c0008407668_2]
+was seen by 9.05 million viewers , with a ratings share of 2.3 in the 18-49 demographic .
+
+[NEUTRAL_APPEND evidence_id=5ebe6f2cc9e77c0008407668_3]
+was seen by 8.92 million viewers , with a ratings share of 2.3 in the 18-49 demographic .","PROPOSITION:
+Less than 9 million people saw Hairspray Live !
+
+EVIDENCE:
+[A evidence_id=5ebe6f2cc9e77c0008407668_2]
+was seen by 9.05 million viewers , with a ratings share of 2.3 in the 18-49 demographic .
+
+[SUPPORT_APPEND evidence_id=5ebe6f2cc9e77c0008407668_1]
+was seen by 8.92 million viewers , with a ratings share of 2.3 in the 18-49 demographic .","PROPOSITION:
+Less than 9 million people saw Hairspray Live !
+
+EVIDENCE:
+[A evidence_id=5ebe6f2cc9e77c0008407668_2]
+was seen by 9.05 million viewers , with a ratings share of 2.3 in the 18-49 demographic .
+
+[COUNTER_APPEND evidence_id=MISSING]
+MISSING",16,1,0,COUNTER_MATERIAL_NOT_RETRIEVED,PENDING_TWO_INDEPENDENT_REVIEWERS,NOT_INFERRED_FROM_SNAPSHOT

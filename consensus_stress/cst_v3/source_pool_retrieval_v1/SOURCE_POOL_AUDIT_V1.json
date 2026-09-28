@@ -1,0 +1,40 @@
+{
+  "run_date": "2026-09-29",
+  "model_calls": 0,
+  "snapshot_path": "/home/gaoym/when-consensus-lies-publish-20260911/data/benchmarks/vitaminc/test.jsonl",
+  "snapshot_sha256": "4d9a916d430ac4a6507671f7414f7b3ac8bdb7636008b5a5dd85be65d1b8d86f",
+  "selection_manifest_path": "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round3/selection_manifest.json",
+  "selection_manifest_sha256": "5f575ff873b3243b4916f77ab81269476da937d466eec967eff0934efe39089b",
+  "historical_exclusion_path": "/home/gaoym/cst_zero_call_upgrade_20260928/SOURCE_GROUP_EXCLUSION_AUDIT.json",
+  "historical_exclusion_sha256": "81c2d02ee3eb1bc5054e5e0d8168fe814175922f6f809af828330007b97735ad",
+  "source_groups": [
+    "AN01",
+    "AN02",
+    "AN08",
+    "AN13",
+    "AN17",
+    "AN18",
+    "AN22",
+    "AN26",
+    "AN27",
+    "AN30",
+    "AN50",
+    "AN51",
+    "AN57",
+    "BN02",
+    "BN05",
+    "BN07",
+    "BN13"
+  ],
+  "source_group_count": 17,
+  "fixed_pool_rows": 114,
+  "attempt_rows": 34,
+  "attempt_groups": 17,
+  "candidate_role_record_count": 194,
+  "rows_with_retrieval_failures": 34,
+  "failure_code_counts": {
+    "SUPPORT_MATERIAL_NOT_RETRIEVED": 17,
+    "COUNTER_MATERIAL_NOT_RETRIEVED": 17
+  },
+  "note": "Retrieval labels are mechanical provenance roles only. Neutrality, directional validity, conflict resolution, and final three-state targets require two independent human reviews of the complete inputs."
+}
