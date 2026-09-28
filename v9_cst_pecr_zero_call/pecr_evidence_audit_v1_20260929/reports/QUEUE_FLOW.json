@@ -1,0 +1,87 @@
+{
+  "stages": [
+    {
+      "stage": "manifest",
+      "n_items": 2241,
+      "source_groups": 453,
+      "support": {
+        "error": 1390,
+        "correct": 363,
+        "unlabeled": 488,
+        "total": 2241
+      },
+      "relative_to_manifest": 1.0,
+      "relative_to_mechanical_candidates": 1.007191011235955
+    },
+    {
+      "stage": "mechanical_candidate",
+      "n_items": 2225,
+      "source_groups": 453,
+      "support": {
+        "error": 1379,
+        "correct": 361,
+        "unlabeled": 485,
+        "total": 2225
+      },
+      "relative_to_manifest": 0.9928603302097277,
+      "relative_to_mechanical_candidates": 1.0
+    },
+    {
+      "stage": "three_world_requests",
+      "n_items": 2225,
+      "source_groups": 453,
+      "support": {
+        "error": 1379,
+        "correct": 361,
+        "unlabeled": 485,
+        "total": 2225
+      },
+      "relative_to_manifest": 0.9928603302097277,
+      "relative_to_mechanical_candidates": 1.0
+    },
+    {
+      "stage": "json_complete",
+      "n_items": 2223,
+      "source_groups": 453,
+      "support": {
+        "error": 1378,
+        "correct": 360,
+        "unlabeled": 485,
+        "total": 2223
+      },
+      "relative_to_manifest": 0.9919678714859438,
+      "relative_to_mechanical_candidates": 0.9991011235955056
+    },
+    {
+      "stage": "label_eligible",
+      "n_items": 1753,
+      "source_groups": 424,
+      "support": {
+        "error": 1390,
+        "correct": 363,
+        "unlabeled": 0,
+        "total": 1753
+      },
+      "relative_to_manifest": 0.7822400713966979,
+      "relative_to_mechanical_candidates": 0.7878651685393259
+    },
+    {
+      "stage": "strict_analysis",
+      "n_items": 1735,
+      "source_groups": 424,
+      "support": {
+        "error": 1375,
+        "correct": 360,
+        "unlabeled": 0,
+        "total": 1735
+      },
+      "relative_to_manifest": 0.7742079428826417,
+      "relative_to_mechanical_candidates": 0.7797752808988764
+    }
+  ],
+  "definitions": {
+    "json_complete": "parsed_json key exists for all three worlds; does not imply numeric/unit/confidence validity",
+    "strict_analysis": "saved parsed_v2 feature row; all three responses pass strict numeric/confidence parser and label is eligible"
+  },
+  "overlap_failure_flags": true
+}

@@ -1,0 +1,12 @@
+{
+  "flag_counts": {
+    "not_label_eligible": 488,
+    "not_strict_analysis": 506,
+    "strict_parse_failure_any_world": 47,
+    "not_mechanical_candidate": 16,
+    "identity_break_candidate": 16,
+    "missing_any_request": 16,
+    "json_incomplete_any_world": 18
+  },
+  "note": "Flags are intentionally overlapping and are not a single-cause exclusion taxonomy."
+}

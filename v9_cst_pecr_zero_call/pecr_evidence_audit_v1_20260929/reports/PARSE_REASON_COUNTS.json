@@ -1,0 +1,9 @@
+{
+  "candidate_parse_reason_occurrences": {
+    "original:answer_not_numeric": 26,
+    "negative:answer_not_numeric": 22,
+    "positive:answer_not_numeric": 22,
+    "negative:missing_json": 1,
+    "positive:missing_json": 1
+  }
+}
