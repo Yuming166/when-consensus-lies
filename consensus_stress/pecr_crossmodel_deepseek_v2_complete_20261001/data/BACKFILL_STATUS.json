@@ -1,0 +1,9 @@
+{
+  "finished_utc": "2026-10-01T08:53:40.789724+00:00",
+  "eligible_slots": 2682,
+  "records_seen": 2682,
+  "http_200": 2681,
+  "http_429": 0,
+  "http_402": 0,
+  "other": 0
+}

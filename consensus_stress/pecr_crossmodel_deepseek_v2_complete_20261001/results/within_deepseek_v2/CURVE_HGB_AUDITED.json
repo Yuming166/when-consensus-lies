@@ -1,0 +1,155 @@
+{
+  "version": "curve_hgb_audit_v2_20260928",
+  "n": 2050,
+  "errors": 1257,
+  "correct": 793,
+  "groups": 448,
+  "feature_names": {
+    "two_world": [
+      "positive_response_delta",
+      "positive_response_abs_delta",
+      "positive_signed_delta",
+      "positive_direction_pass",
+      "positive_response_flat",
+      "positive_confidence_delta",
+      "expected_direction",
+      "construction_absolute_delta"
+    ],
+    "curve": [
+      "positive_response_delta",
+      "negative_response_delta",
+      "positive_abs_delta",
+      "negative_abs_delta",
+      "positive_signed_delta",
+      "negative_signed_delta",
+      "positive_direction_pass",
+      "negative_direction_pass",
+      "positive_flat",
+      "negative_flat",
+      "response_symmetry",
+      "positive_confidence_delta",
+      "negative_confidence_delta",
+      "all_units_same",
+      "all_units_nonempty",
+      "expected_direction_up",
+      "construction_absolute_delta",
+      "relative_input_edit",
+      "raw_input_edit",
+      "positive_slope",
+      "negative_slope",
+      "positive_abs_slope",
+      "negative_abs_slope",
+      "slope_asymmetry",
+      "local_curvature",
+      "slope_difference",
+      "positive_confidence_direction_agreement",
+      "negative_confidence_direction_agreement",
+      "positive_confidence_stable",
+      "negative_confidence_stable",
+      "slope_magnitude_asymmetry",
+      "signed_response_agreement",
+      "both_nonflat"
+    ]
+  },
+  "feature_dims": {
+    "graph_only": 96,
+    "two_world_hgb": 104,
+    "three_world_hgb": 113,
+    "three_world_curve_hgb": 129
+  },
+  "tests": {
+    "arrays_do_not_share_memory": true,
+    "method_arrays_do_not_share_memory": true,
+    "curve_features_nonzero_before_fit": true,
+    "curve_features_preserved_after_construction": true,
+    "named_dimensions_match": true,
+    "two_world_negative_invariance": true,
+    "curve_features_preserved_after_fit": true
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_n": 1640,
+      "test_n": 410,
+      "test_groups": 88
+    },
+    {
+      "fold": 1,
+      "train_n": 1640,
+      "test_n": 410,
+      "test_groups": 89
+    },
+    {
+      "fold": 2,
+      "train_n": 1640,
+      "test_n": 410,
+      "test_groups": 90
+    },
+    {
+      "fold": 3,
+      "train_n": 1640,
+      "test_n": 410,
+      "test_groups": 90
+    },
+    {
+      "fold": 4,
+      "train_n": 1640,
+      "test_n": 410,
+      "test_groups": 91
+    }
+  ],
+  "metrics": {
+    "graph_only": {
+      "auroc": 0.7672062929310866,
+      "auprc": 0.8186421247766269,
+      "coverage": 1.0,
+      "support_n": 2050
+    },
+    "two_world_hgb": {
+      "auroc": 0.8138836136801628,
+      "auprc": 0.8418323369954139,
+      "coverage": 1.0,
+      "support_n": 2050
+    },
+    "three_world_hgb": {
+      "auroc": 0.8258865109485243,
+      "auprc": 0.8485272510427071,
+      "coverage": 1.0,
+      "support_n": 2050
+    },
+    "three_world_curve_hgb": {
+      "auroc": 0.8411558575884253,
+      "auprc": 0.8653450996691864,
+      "coverage": 1.0,
+      "support_n": 2050
+    },
+    "two_world_hgb_minus_three_world_hgb": {
+      "delta_auroc": -0.012002897268361457,
+      "source_group_ci95": [
+        -0.02189783870757408,
+        -0.000996972237033965
+      ]
+    },
+    "three_world_curve_hgb_minus_three_world_hgb": {
+      "delta_auroc": 0.015269346639900983,
+      "source_group_ci95": [
+        0.007026495169337055,
+        0.023505465945136684
+      ]
+    },
+    "three_world_hgb_minus_graph_only": {
+      "delta_auroc": 0.058680218017437724,
+      "source_group_ci95": [
+        0.04046257754860035,
+        0.077214898432361
+      ]
+    }
+  },
+  "protocol": {
+    "outer_split": "GroupKFold(5)",
+    "bootstrap": "source-group bootstrap, B=2000, seed=20260928",
+    "positive_class": "original_incorrect=1",
+    "model": "HistGradientBoostingClassifier(max_iter=250,max_leaf_nodes=15,learning_rate=0.05,l2_regularization=1.0,random_state=20260928)",
+    "model_calls": 0
+  }
+}

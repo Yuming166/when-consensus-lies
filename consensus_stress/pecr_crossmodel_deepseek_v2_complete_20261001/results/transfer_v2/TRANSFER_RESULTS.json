@@ -1,0 +1,22 @@
+{
+  "qwen_n": 1735,
+  "deepseek_n": 2050,
+  "deepseek_errors": 1257,
+  "deepseek_correct": 793,
+  "qwen_trained_on_deepseek": {
+    "auroc": 0.7559066453585018,
+    "auprc": 0.7771710951009219,
+    "auroc_group_ci95": [
+      0.7321891086492772,
+      0.7807659855792677
+    ]
+  },
+  "deepseek_trained_on_qwen": {
+    "auroc": 0.8145949494949495,
+    "auprc": 0.9312575979923888,
+    "auroc_group_ci95": [
+      0.7890082355883471,
+      0.8398171044347589
+    ]
+  }
+}

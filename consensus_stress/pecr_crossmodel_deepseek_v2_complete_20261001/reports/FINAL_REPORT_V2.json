@@ -1,0 +1,223 @@
+{
+  "report_version": "deepseek_crossmodel_pecr_v2_complete_attempt_20261001",
+  "status": "post_top_up_complete_attempt_primary_analysis_complete",
+  "claim_boundary": "Versioned complete-attempt cross-model robustness analysis on FinQA dev_train; V1 failed-budget attempts were replaced only under a frozen V2 amendment. This is not an independent holdout confirmation and does not erase development-set exposure.",
+  "model": "deepseek-flash",
+  "requested_items": 2225,
+  "requested_slots": 6675,
+  "strict_analysis": {
+    "items": 2050,
+    "source_groups": 448,
+    "coverage_fraction_of_requested_items": 0.9213483146067416,
+    "coverage_fraction_of_active_manifest_rows": 0.9147701918786256,
+    "source_group_coverage_fraction": 0.9889624724061811,
+    "label_support": {
+      "error": 1257,
+      "correct": 793
+    }
+  },
+  "primary_comparison": {
+    "positive_class": "original_incorrect=1",
+    "same_items_same_three_calls": true,
+    "outer_split": "GroupKFold(5) by source group",
+    "bootstrap": "source-group B=2000, seed=20260928",
+    "graph_only": {
+      "auroc": 0.7672,
+      "auprc": 0.8186
+    },
+    "two_world_hgb": {
+      "auroc": 0.8139,
+      "auprc": 0.8418
+    },
+    "ordinary_three_world_hgb": {
+      "auroc": 0.8259,
+      "auprc": 0.8485
+    },
+    "three_world_curve_hgb": {
+      "auroc": 0.8412,
+      "auprc": 0.8653
+    },
+    "curve_minus_ordinary_three_world": {
+      "delta_auroc": 0.0153,
+      "source_group_ci95": [
+        0.007,
+        0.0235
+      ]
+    },
+    "ordinary_three_world_minus_graph_only": {
+      "delta_auroc": 0.0587,
+      "source_group_ci95": [
+        0.0405,
+        0.0772
+      ]
+    }
+  },
+  "secondary_descriptive_transfer": {
+    "qwen_trained_evaluated_on_deepseek": {
+      "auroc": 0.7559,
+      "auprc": 0.7772,
+      "auroc_group_ci95": [
+        0.7322,
+        0.7808
+      ]
+    },
+    "deepseek_trained_evaluated_on_qwen": {
+      "auroc": 0.8146,
+      "auprc": 0.9313,
+      "auroc_group_ci95": [
+        0.789,
+        0.8398
+      ]
+    },
+    "note": "Marginal source-group AUROC intervals for fixed one-direction transfers; these are descriptive and not the primary paired test."
+  },
+  "qwen_reference": {
+    "items": 1735,
+    "ordinary_three_world_hgb_auroc": 0.7978,
+    "curve_hgb_auroc": 0.8138,
+    "curve_minus_ordinary_three_world": {
+      "delta_auroc": 0.016,
+      "ci95": [
+        0.0041,
+        0.0269
+      ]
+    }
+  },
+  "v1_quota_truncated_reference": {
+    "strict_items": 1192,
+    "curve_minus_ordinary_three_world": {
+      "delta_auroc": 0.0138,
+      "ci95": [
+        0.0016,
+        0.0255
+      ]
+    },
+    "comparison_note": "Descriptive only: V1 was quota-truncated and non-random, so V2 is not an independent replication of V1."
+  },
+  "implementation_tests": {
+    "arrays_do_not_share_memory": true,
+    "method_arrays_do_not_share_memory": true,
+    "curve_features_nonzero_before_fit": true,
+    "curve_features_preserved_after_construction": true,
+    "named_dimensions_match": true,
+    "two_world_negative_invariance": true,
+    "curve_features_preserved_after_fit": true
+  },
+  "coverage": {
+    "generated_utc": "2026-10-01T09:02:36.499139+00:00",
+    "cohort_definition": "2,225 items represented in the original DeepSeek slot manifest; 2,241 rows remain in the active dev_train manifest including 16 non-requested rows",
+    "requested_items": 2225,
+    "requested_source_groups": 453,
+    "requested_slots": 6675,
+    "merged_ledger": {
+      "records": 6675,
+      "http_counts": {
+        "200": 6675
+      },
+      "model_requested_counts": {
+        "deepseek-flash": 6675
+      },
+      "model_reported_counts": {
+        "deepseek-flash": 6675
+      },
+      "finish_reason_counts": {
+        "stop": 6588,
+        "length": 87
+      },
+      "request_setting_counts": {
+        "[8192, \"low\", 0]": 6675
+      },
+      "chain_head": "f767ae1294b7c33cfad909a23d445db41899d75f16d32b088c255dd39d0d47ef",
+      "chain_errors": [],
+      "v1_http200_preserved": 3993,
+      "v2_backfill_records": 2682
+    },
+    "backfill": {
+      "eligible_v1_failed_slots": 2682,
+      "v2_response_files": 2682,
+      "v2_http_200": 2682,
+      "v2_http_429": 0,
+      "v2_http_402": 0,
+      "v2_other_errors": 0,
+      "newly_issued_by_full_runner": 2681,
+      "pre_runner_smoke_response_reused": 1,
+      "one_attempt_per_eligible_slot": true,
+      "v1_http200_slots_retried": false,
+      "v1_http200_invalid_assistant_slots_retried": false
+    },
+    "assistant_json_and_strict_response_flow": {
+      "http200_records": 6675,
+      "assistant_json_valid_records": 6588,
+      "assistant_json_invalid_records": 87,
+      "assistant_json_invalid_v2_backfill_records": 40,
+      "record_level_response_parse_reasons": {
+        "ok": 6488,
+        "missing_json": 87,
+        "answer_not_numeric": 100
+      },
+      "items_all_three_http_200": 2225,
+      "items_all_three_model_reported": 2225,
+      "items_all_three_assistant_json_present": 2150,
+      "items_all_three_strict_response_valid": 2104,
+      "items_original_label_known": 2129,
+      "items_strict_analysis": 2050,
+      "item_level_parse_failure_patterns": {
+        "answer_not_numeric": 16,
+        "answer_not_numeric|answer_not_numeric": 9,
+        "answer_not_numeric|answer_not_numeric|answer_not_numeric": 21,
+        "answer_not_numeric|answer_not_numeric|missing_json": 1,
+        "answer_not_numeric|missing_json": 1,
+        "missing_json": 62,
+        "missing_json|missing_json": 10,
+        "missing_json|missing_json|missing_json": 1
+      }
+    },
+    "cohort_partition": {
+      "strict_valid_response_and_known_label": 2050,
+      "valid_response_unknown_label": 54,
+      "invalid_response_known_label": 79,
+      "invalid_response_unknown_label": 42
+    },
+    "strict_analysis": {
+      "items": 2050,
+      "source_groups": 448,
+      "coverage_fraction_of_requested_items": 0.9213483146067416,
+      "coverage_fraction_of_active_manifest_rows": 0.9147701918786256,
+      "source_group_coverage_fraction": 0.9889624724061811,
+      "label_support": {
+        "error": 1257,
+        "correct": 793
+      }
+    },
+    "original_label_status_on_requested_items": {
+      "error": 1314,
+      "correct": 815,
+      "unlabeled": 96
+    },
+    "usage_tokens_recorded": {
+      "merged_attempt": {
+        "prompt_tokens": 7086366,
+        "completion_tokens": 8192171,
+        "total_tokens": 15278537
+      },
+      "v1_original_run": {
+        "prompt_tokens": 4250894,
+        "completion_tokens": 4804583,
+        "total_tokens": 9055477
+      },
+      "v2_backfill": {
+        "prompt_tokens": 2835472,
+        "completion_tokens": 3387588,
+        "total_tokens": 6223060
+      }
+    },
+    "integrity": {
+      "features_sha256": "bb5a77f388c734592cfd84e2299a2a8d69393c8df7f94a04ecff70c295fe64d6",
+      "merged_ledger_sha256": "78c9aa03f012bfbf4b3d7d13272bc4809bb0f20e13541818bb4325234026bbda",
+      "protocol_amendment_sha256": "7fcd68c558771827fe2f5acfacd6bc67a0ab9ac5620eb9780a17cc61a4603a89",
+      "backfill_selection_freeze_sha256": "368c2ee697537156884f3c0f4018bbf4e6a8a4fbfb0e1b58258dcb2540c5ed42"
+    },
+    "no_565_item_holdout_read": true,
+    "api_keys_committed": false
+  }
+}

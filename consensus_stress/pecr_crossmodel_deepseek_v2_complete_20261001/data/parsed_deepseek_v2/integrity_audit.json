@@ -1,0 +1,541 @@
+{
+  "n_ledger_records": 6675,
+  "n_label_rows": 2129,
+  "n_complete": 2050,
+  "counts": {
+    "complete": 2050,
+    "invalid_response": 158
+  },
+  "chain_head": "f767ae1294b7c33cfad909a23d445db41899d75f16d32b088c255dd39d0d47ef",
+  "chain_errors": [],
+  "model_identity": {
+    "deepseek-flash": 6675
+  },
+  "http_status": {
+    "200": 6675
+  },
+  "json_invalid_records": [
+    {
+      "slot": 24,
+      "id": "KHC/2016/page_94.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"05d5cc3d-4162-49c9-aaff-623f61c3f7a5\",\"object\":\"chat.completion\",\"created\":1790840375,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what portion of the issued shares is reported as treasury stock as of december 31 , 2016?\\\" Need parse evidence. We have table shares issued, treasury shares, shares outstanding. Balance at december 31 2016: shares issued 1097052.3? treasury shares -2471 (2471) maybe n"
+    },
+    {
+      "slot": 77,
+      "id": "DISCA/2012/page_54.pdf-2",
+      "world": "positive",
+      "response": "{\"id\":\"15264294-c450-4e86-a498-d47726421eb3\",\"object\":\"chat.completion\",\"created\":1790840378,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"by what percent did the c series outperform the s&p 500 over 5 years?\\\" Need use evidence. Need compute. We have table values for series c (disck) and S&P 500. The period? The graph assumes $100 originally invested on September 18, 2008 through Dec 31, 2008 and years e"
+    },
+    {
+      "slot": 78,
+      "id": "DISCA/2012/page_54.pdf-2",
+      "world": "negative",
+      "response": "{\"id\":\"c63f180c-2de1-4315-8ebe-16117f3cc900\",\"object\":\"chat.completion\",\"created\":1790840378,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. We must return JSON. Need determine by what percent did c series outperform S&P 500 over 5 years? Evidence graph/table. Need identify \\\"c series\\\" likely series c common stock DISCK? Table values: disca, discb, disck. Series C common stock ticker DISCK? It sa"
+    },
+    {
+      "slot": 96,
+      "id": "IP/2014/page_65.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"dcb5bab6-bfa0-450f-9775-d92c7fb3ec52\",\"object\":\"chat.completion\",\"created\":1790840388,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer: what percentage where brazilian papers net sales of printing papers sales in 2014? Need compute percentage. Evidence: printing papers net sales for 2014 decreased 8% to $5.7 billion. Table? Table has sales $5148? Wait table: in millions | 2014 | 2013 | 2012; sales | $ 5148 | $ 62"
+    },
+    {
+      "slot": 167,
+      "id": "IPG/2014/page_37.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"b12fbd45-650b-4c9e-a542-40860cd3fc31\",\"object\":\"chat.completion\",\"created\":1790840416,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what percentage of total debt is from long-term debt , from 2013-2014?\\\" Need use evidence. Need parse. We have table balance sheet data with columns Dec 31 2014 and Dec 31 2013. Rows: cash..., short-term borrowings, current portion of long-term debt, long-term debt, t"
+    },
+    {
+      "slot": 168,
+      "id": "IPG/2014/page_37.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"8139209b-aff2-46df-8cb6-bc1a1b39f51e\",\"object\":\"chat.completion\",\"created\":1790840416,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what percentage of total debt is from long-term debt , from 2013-2014?\\\" Need parse. Evidence table shows balance sheet data Dec 31 2014 and 2013. Total debt: 2014 $1732.8, 2013 $1662.5. Long-term debt: 2014 1461.15, 2013 1129.8. Need percentage of total debt is from l"
+    },
+    {
+      "slot": 206,
+      "id": "KHC/2016/page_94.pdf-2",
+      "world": "positive",
+      "response": "{\"id\":\"09d2db51-0b1b-44a9-9829-c74dd349e2d7\",\"object\":\"chat.completion\",\"created\":1790840432,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer quantitative. Need parse evidence. Question: \\\"how many total shares were issued from 2014 to 2016?\\\" Need use table. Table seems garbled. Need infer shares issued during 2014 to 2016? The pre-text: \\\"shares of common stock issued, in treasury, and outstanding were (in thousands o"
+    },
+    {
+      "slot": 218,
+      "id": "STT/2017/page_101.pdf-4",
+      "world": "positive",
+      "response": "{\"id\":\"d2847818-4a1f-406c-94d1-2b96dcce9566\",\"object\":\"chat.completion\",\"created\":1790840438,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse evidence. Need compute percentage change in client deposits from 2017 to 2018? But evidence table seems weird columns: (in millions) | december 31 2017 | december 31 2016 | december 31 2017 | 2016\\nRows:\\nclient deposits | $198163.9 | $176693 | $158996 | $1560"
+    },
+    {
+      "slot": 251,
+      "id": "ETFC/2013/page_84.pdf-2",
+      "world": "positive",
+      "response": "{\"id\":\"48755b97-4559-4c6b-ab49-b3ce6e039be3\",\"object\":\"chat.completion\",\"created\":1790840448,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer ratio retail brokerage goodwill to market making goodwill as of dec 31. Need parse table. It says reporting unit | december 31, 2013 | december 31, 2012. Rows:\\nretail brokerage | $ 1791.8 | $ 1791.8\\nmarket making | 2014 | 156.64\\ntotal goodwill | $ 1791.8 | $ 1934.2\\n\\nWait tabl"
+    },
+    {
+      "slot": 398,
+      "id": "UNP/2012/page_24.pdf-2",
+      "world": "positive",
+      "response": "{\"id\":\"2656c6f5-f19e-464b-9f96-a35c3aaabe24\",\"object\":\"chat.completion\",\"created\":1790840492,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. \\\"if 2012 total revenue increases at the same pace as arc in the chemicals , industrial products , and automotive businesses , what would 2013 revenue be in millions?\\\"\\n\\nWe need infer. Evidence: table total revenue 2012 $23018.6 million? 2011 $19557? Actual"
+    },
+    {
+      "slot": 435,
+      "id": "RL/2015/page_9.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"24b18149-ed6b-4cfe-b75c-ebc32d9040fe\",\"object\":\"chat.completion\",\"created\":1790840507,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer percentage of wholesale segment doors as of March 28, 2015 located in Asia. Evidence table: location number of doors: Americas 7308, Europe 5311, Asia 115.2? total 12747. But Asia 115.2 seems odd. Need percentage = Asia doors / total doors * 100. But table has Asia 115.2? That's l"
+    },
+    {
+      "slot": 528,
+      "id": "MRO/2012/page_18.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"9884f6fc-18b9-4d8a-854d-546bedef6be1\",\"object\":\"chat.completion\",\"created\":1790840545,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer: \\\"what percent of net expiring acres in 2013 are foreign?\\\" Need compute from table. We have net undeveloped acres expiring 2013 by region. Need identify foreign vs total? Table:\\nu.s. | 436 | 189 | 130\\ncanada | 2014 | 2014 | 2014\\ntotal north america | 436 | 189 | 130\\ne.g. | 2"
+    },
+    {
+      "slot": 636,
+      "id": "UNP/2012/page_29.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"511748bb-3697-4297-8a84-300121125a49\",\"object\":\"chat.completion\",\"created\":1790840578,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need only JSON. We need compute: \\\"the 2011 to 2012 change in equipment and other rents is what percent of the total expense increase in 2012?\\\" Need parse evidence. Equipment and other rents: 2012 1077.3, 2011 1167? Wait table says equipment and other rents | 1077.3 | 1"
+    },
+    {
+      "slot": 832,
+      "id": "ETR/2016/page_175.pdf-3",
+      "world": "original",
+      "response": "{\"id\":\"ad25f84f-cb6d-4464-a8a7-073f97346714\",\"object\":\"chat.completion\",\"created\":1790840650,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer implicit interest costs for lease payments due after 2021, in thousands. Need compute? Evidence table: amounts in thousands: 2017-2021 each 17188; years thereafter 257812; total 343752; less amount representing interest 309393; present value 34359. Question: \\\"what are the implici"
+    },
+    {
+      "slot": 833,
+      "id": "ETR/2016/page_175.pdf-3",
+      "world": "positive",
+      "response": "{\"id\":\"0b085188-d8d3-433b-95f8-282da09c0dcf\",\"object\":\"chat.completion\",\"created\":1790840650,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what are the implicit interest costs for the lease payments due after 2021 , in thousands?\\\" Need parse evidence. We have table for grand gulf lease obligations: future minimum lease payments as of Dec 31 2016, implicit rate 5.13%, recorded as long-term debt. Table sho"
+    },
+    {
+      "slot": 834,
+      "id": "ETR/2016/page_175.pdf-3",
+      "world": "negative",
+      "response": "{\"id\":\"858cb12b-815b-4dac-927c-48f9ba68cb23\",\"object\":\"chat.completion\",\"created\":1790840650,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what are the implicit interest costs for the lease payments due after 2021 , in thousands?\\\" Need parse evidence. We have table: amount (in thousands): 2017 17188, 2018 17188, 2019 17188, 2020 17188, 2021 17188, years thereafter 232030.8, total 343752, less: amount rep"
+    },
+    {
+      "slot": 1233,
+      "id": "IP/2014/page_65.pdf-2",
+      "world": "negative",
+      "response": "{\"id\":\"c9b206d7-81cd-4bd1-b9b7-f52e84346b9f\",\"object\":\"chat.completion\",\"created\":1790840763,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what percentage where brazilian papers net sales of printing papers sales in 2013?\\\" Need compute percentage. Need parse evidence.\\n\\nWe have printing papers net sales for 2013? There is table: in millions | 2014 | 2013 | 2012; sales | $ 5720 | $ 5584.5 | $ 6230. That "
+    },
+    {
+      "slot": 1316,
+      "id": "ETR/2004/page_20.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"fc12db0f-3e7d-460d-915a-973089cc472b\",\"object\":\"chat.completion\",\"created\":1790840790,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what is the net change in net revenue during 2003 for entergy corporation?\\\" Need parse evidence. We need likely compute change from 2002 net revenue to 2003 net revenue. Table: 2002 net revenue $4209.6, 2003 net revenue $4635.95. Net change = 4635.95 - 4209.6 = 426.35"
+    },
+    {
+      "slot": 1418,
+      "id": "LMT/2010/page_24.pdf-4",
+      "world": "positive",
+      "response": "{\"id\":\"90425dfe-9295-4233-87b2-ff7898029de8\",\"object\":\"chat.completion\",\"created\":1790840821,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need compute percentage of total floor space by business segment at Dec 31 2010 that is owned. Need use table. Total owned = 32.56? Table says total | 32.56 | 25.5 | 23.2 | 78.3. But sum owned row: 5.2+10.3+2.6+8.6+2.9 = 29.6? Let's calculate: 5.2+10.3=15.5; +2.6=18.1; +"
+    },
+    {
+      "slot": 1677,
+      "id": "ETR/2008/page_376.pdf-4",
+      "world": "negative",
+      "response": "{\"id\":\"7195bdd0-52ca-4595-8104-42461a7db4f8\",\"object\":\"chat.completion\",\"created\":1790840897,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer net change in net revenue during 2008 for Entergy Texas. Need parse. Evidence table: 2007 net revenue $442.3, 2008 net revenue $396.81? Actually table shows 2008 net revenue | $ 396.81 maybe 396.8? Need net change = 2008 - 2007 = 396.81 - 442.3 = -45.49 million. But check componen"
+    },
+    {
+      "slot": 1689,
+      "id": "ETR/2017/page_422.pdf-3",
+      "world": "negative",
+      "response": "{\"id\":\"debfc0d7-f81a-42c4-b9f6-1b839a55f970\",\"object\":\"chat.completion\",\"created\":1790840902,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. We must use only supplied question and evidence. Need determine \\\"if no payables were paid off between 2016 and 2017, what is value payables which were added in 2017?\\\" Evidence table receivables from or (payables to) money pool as of Dec 31 for 2017, 2016, 2"
+    },
+    {
+      "slot": 1704,
+      "id": "KHC/2017/page_21.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"0a5f688e-8ad7-4116-adea-8d2ac2b281ac\",\"object\":\"chat.completion\",\"created\":1790843606,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what percent of owned facilities are in the us?\\\" Need use evidence. We have table with owned and leased by region. Owned numbers: united states 36.9, canada 2, europe 11, rest of world 26. Total owned = 36.9+2+11+26 = 75.9? But pre-text says as of Dec 30 2017 operated"
+    },
+    {
+      "slot": 1827,
+      "id": "AWK/2014/page_45.pdf-4",
+      "world": "negative",
+      "response": "{\"id\":\"5325fbce-7463-465c-b60f-78490a04c719\",\"object\":\"chat.completion\",\"created\":1790843654,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"in 2014 what was the income from continuing operations adjusted for diluting operations?\\\" Need parse. Evidence table: income from continuing operations 2014 $2.151? Units likely billions? Diluted earnings per share $2.35. Question wording: \\\"income from continuing ope"
+    },
+    {
+      "slot": 1833,
+      "id": "SWKS/2011/page_112.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"25b3286f-33b7-447d-a11c-d41da1f31131\",\"object\":\"chat.completion\",\"created\":1790843657,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer net change amount of unrecognized tax benefits for given period. Evidence table reconciliation gross unrecognized tax benefits. Need compute net change. Beginning 19900, ending 28922.4? Table says balance at September 30 2011 $ 28922.4 maybe in thousands? Wait table inconsistent: "
+    },
+    {
+      "slot": 1848,
+      "id": "IPG/2018/page_104.pdf-3",
+      "world": "negative",
+      "response": "{\"id\":\"dc38f31f-3e81-4160-ac07-de89ca9f2e6b\",\"object\":\"chat.completion\",\"created\":1790843669,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse evidence. We need percent decrease of redeemable noncontrolling interests and call options with affiliates from 2021 to 2022. Table has row \\\"redeemable noncontrolling interests and call options with affiliates1\\\" values: 2019 30.1, 2020 30.6, 2021 38.61, 2022"
+    },
+    {
+      "slot": 1867,
+      "id": "C/2009/page_194.pdf-3",
+      "world": "original",
+      "response": "{\"id\":\"3fe9d061-1160-4670-a91e-0891a4c68f68\",\"object\":\"chat.completion\",\"created\":1790843682,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer. Need compute percent of purchased loans accounted for under level-yield method included in carrying amount of loan receivable net of purchased loans accounted for under cost-recovery method. Need parse question carefully. \\\"what is the percent of the purchased loans accounted for"
+    },
+    {
+      "slot": 1869,
+      "id": "C/2009/page_194.pdf-3",
+      "world": "negative",
+      "response": "{\"id\":\"32719eb8-f97b-4d4b-8d31-fcc0744229bd\",\"object\":\"chat.completion\",\"created\":1790843683,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. Need return JSON. Need determine \\\"what is the percent of the purchased loans accounted for under the level-yield method included in the carrying amount of loan receivable net of purchased loans accounted for under the under the cost-recovery method\\\"\\n\\nNeed"
+    },
+    {
+      "slot": 1982,
+      "id": "LKQ/2010/page_72.pdf-2",
+      "world": "positive",
+      "response": "{\"id\":\"a837871c-0198-4e64-95f1-6cd97f4c3cba\",\"object\":\"chat.completion\",\"created\":1790843721,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need compute percentage change in warranty reserve between 2009 and 2010. Need parse evidence. Table: balance as of Jan 1 2009 | $540? Then warranty expense 5033, claims -4969, balance as of Dec 31 2009 | 664.4? Wait units in thousands. Then warranty expense 9351, claims"
+    },
+    {
+      "slot": 2005,
+      "id": "MA/2009/page_123.pdf-2",
+      "world": "original",
+      "response": "{\"id\":\"76339e7e-9786-4432-afa2-339ffbb89e87\",\"object\":\"chat.completion\",\"created\":1790843728,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. \\\"in 2010 what was the percent of the operating leases future minimum payments due under non-cancelable agreements to the total $ 7260 $\\\"\\n\\nNeed identify. Table: 2010 row total $283987, capital leases $7260, operating leases $25978, sponsorship... $250749. "
+    },
+    {
+      "slot": 2149,
+      "id": "AMT/2012/page_121.pdf-2",
+      "world": "original",
+      "response": "{\"id\":\"c001e614-5360-4e97-bb00-6a51572add4e\",\"object\":\"chat.completion\",\"created\":1790843805,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what was the ratio of the fair assets acquired to the fair value\\\" Need parse. We have table preliminary purchase price allocation. Need ratio of fair assets acquired to fair value? Possibly fair value of net assets acquired? Let's inspect.\\n\\nQuestion: \\\"what was the "
+    },
+    {
+      "slot": 2223,
+      "id": "C/2009/page_255.pdf-4",
+      "world": "negative",
+      "response": "{\"id\":\"3167ba7c-390a-4918-b5c6-404a8ff2fc58\",\"object\":\"chat.completion\",\"created\":1790843845,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need compute percentage of total credit commitments as of Dec 31, 2009 outside U.S. Need use table. Need be careful: table has columns \\\"in millions of dollars | u.s. | outside of u.s. | december 31 2009 | december 31 2008\\\" but rows list values. It seems for each catego"
+    },
+    {
+      "slot": 2313,
+      "id": "DISCA/2012/page_54.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"0e7bb0e0-451d-4e25-a743-26c3df03519a\",\"object\":\"chat.completion\",\"created\":1790843882,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what was the 5 year average total return for the a and c series of stock?\\\" Need use evidence. Need compute arithmetic. Need parse. We have table cumulative total shareholder return? The graph assumes $100 invested on Sept 18 2008, period through Dec 31 2012. Table giv"
+    },
+    {
+      "slot": 2354,
+      "id": "ETR/2008/page_154.pdf-3",
+      "world": "positive",
+      "response": "{\"id\":\"e4475271-0c39-4d34-b42a-f0af08e7f38a\",\"object\":\"chat.completion\",\"created\":1790843911,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer. Need parse. Question: \\\"what percent lower is the net present than the total payments value of lease payments?\\\" We need compute percent lower: (total payments - present value)/total payments *100. Evidence table: total | 385177.1? present value net minimum lease payments $295304"
+    },
+    {
+      "slot": 2370,
+      "id": "HWM/2015/page_92.pdf-2",
+      "world": "negative",
+      "response": "{\"id\":\"6fca45e9-ff8d-43c2-b68b-d2e7770d1ea4\",\"object\":\"chat.completion\",\"created\":1790843917,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. \\\"what was the percentual decrease observed in alcoa 2019s average realized price per metric ton of aluminum during 2014 and 2015?\\\" Need determine percentual decrease observed in average realized price per metric ton of aluminum during 2014 and 2015. Evidenc"
+    },
+    {
+      "slot": 2409,
+      "id": "KMI/2018/page_14.pdf-2",
+      "world": "negative",
+      "response": "{\"id\":\"2fe664d3-5164-424e-90a6-e83fe7be9c14\",\"object\":\"chat.completion\",\"created\":1790843936,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer JSON only. Need compute percent of storage facilities are liquid terminals. Need infer from table. Question: \\\"what percent of storage facilities are liquid terminals\\\". Evidence table: number | capacity (mmbbl)\\nliquids terminals (a) | 46.8 | 89.6\\nbulk terminals | 34 | 2014\\njon"
+    },
+    {
+      "slot": 2439,
+      "id": "MRO/2012/page_41.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"2f60c840-ca54-4979-99b4-dcef73c93ff5\",\"object\":\"chat.completion\",\"created\":1790843953,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need compute by how much total revenue increase from 2011 to 2012. Evidence table: total revenues 2012 $14119.2? 2011 $14663? Wait table shows total revenues | $14119.2 | $14663 (in millions). That indicates 2012 14,119.2 and 2011 14,663. So increase from 2011 to 2012 = "
+    },
+    {
+      "slot": 2609,
+      "id": "IP/2013/page_101.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"6e61248a-57da-4bbc-ab35-b7586d961e51\",\"object\":\"chat.completion\",\"created\":1790844028,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need compute percentage of at Dec 31 2013 total future minimum commitments under leases and purchase obligations is due to purchase obligations in 2014. Need parse table. \\\"in 2014 what percentage of at december 31, 2013, total future minimum commitments under existing n"
+    },
+    {
+      "slot": 2679,
+      "id": "IPG/2015/page_24.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"207cf85c-2b0d-41cf-9fe2-b57582f58b52\",\"object\":\"chat.completion\",\"created\":1790844050,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what is the total cash used for the repurchase of shares during october , ( in millions ) ?\\\" Need use evidence. Need compute cash used for repurchase of shares during October. Table has October 1-31: total number of shares purchased 1,926,459.9? average price paid per"
+    },
+    {
+      "slot": 2762,
+      "id": "V/2008/page_165.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"3a1ea7a0-9170-412a-9c5c-5b629701ea31\",\"object\":\"chat.completion\",\"created\":1790844085,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need compute portion of total shares issued and outstanding are class A common stock. Evidence table. Need determine which total? \\\"total shares issued and outstanding\\\" likely at September 30 2008? Question asks what portion of total shares issued and outstanding are cl"
+    },
+    {
+      "slot": 2846,
+      "id": "PPG/2018/page_32.pdf-2",
+      "world": "positive",
+      "response": "{\"id\":\"43975749-5876-46f1-b4c6-c2a51cab4b00\",\"object\":\"chat.completion\",\"created\":1790844120,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"answer_value\\\":\\\"114.5\\\",\\\"unit\\\":\\\"millions\\\",\\\"confidence\\\":0.95,\\\"supporting_evidence\\\":[\\\"interest expense net of interest income | $ \",\"reasoning_content\":\"We need answer question. Need parse. We need only JSON. Need determine from evidence. Question: \\\"assuming the same change in net interest expense in 2019 "
+    },
+    {
+      "slot": 2885,
+      "id": "MRO/2012/page_41.pdf-3",
+      "world": "positive",
+      "response": "{\"id\":\"f2d198f3-aab9-4155-8b07-3236db3b19d4\",\"object\":\"chat.completion\",\"created\":1790844146,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what percentage of total revenues consited of e&p production in 2012?\\\" Evidence table: e&p 2012 = $15492.4 million? Wait table says e&p | $ 15492.4 | $ 13029. But total revenues 2012 = $15688. That would make e&p 98.75% of total. But note segment revenues row: 15636? "
+    },
+    {
+      "slot": 2896,
+      "id": "AMAT/2015/page_31.pdf-4",
+      "world": "original",
+      "response": "{\"id\":\"9ad69735-f4dd-4550-b6cc-1f9c41250a24\",\"object\":\"chat.completion\",\"created\":1790844149,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"based on the table , how much more square feet is owned outside the united states?\\\" Need parse. Table has owned: united states 3748, other countries 1624, total 5372 (square feet in thousands). Question: how much more square feet is owned outside the united states? Wo"
+    },
+    {
+      "slot": 2912,
+      "id": "CME/2010/page_71.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"d7c8fe0c-f908-4454-88e7-9098b84d1153\",\"object\":\"chat.completion\",\"created\":1790844154,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need compute percent of cash performance bonds and guaranty fund contributions from cash performance bonds in 2010. Need parse. \\\"what was the percent of the cash performance bonds and guaranty fund contributions from cash performance bonds\\\" Ambiguous. We need likely pe"
+    },
+    {
+      "slot": 3007,
+      "id": "AON/2015/page_77.pdf-4",
+      "world": "original",
+      "response": "{\"id\":\"adb929d8-92c8-457a-bcf5-77babd714589\",\"object\":\"chat.completion\",\"created\":1790844193,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer JSON only. Need determine question: \\\"what is the difference between the liability for uncertain tax positions as of december 31, 2015 and the balance of the uncertain tax positions at december 31, 2015, (in millions)\\\" Need parse. Evidence: table balance at December 31 2015 = $21"
+    },
+    {
+      "slot": 3047,
+      "id": "APD/2014/page_72.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"9a8802cd-dc4a-4b3c-9ade-384d0d80f06b\",\"object\":\"chat.completion\",\"created\":1790844211,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. We need determine \\\"considering the expenses of the 2013 charge, what were the impact of the severance and other benefits on the total value?\\\" Need infer from evidence. 2013 charge total $231.6. Table has severance and other benefits $79.09? Actually table: "
+    },
+    {
+      "slot": 3063,
+      "id": "HOLX/2011/page_122.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"e6bf2d79-5d29-4729-a6e8-979f7530fef4\",\"object\":\"chat.completion\",\"created\":1790844223,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what portion of the sentinelle medical's purchase price was paid in cash?\\\" Need use evidence. Need return JSON.\\n\\nWe need parse. Evidence says purchase price comprised of an $84.8 million cash payment... plus contingent payments... Table: cash | $ 76275.9? Wait units"
+    },
+    {
+      "slot": 3104,
+      "id": "BLL/2007/page_87.pdf-3",
+      "world": "positive",
+      "response": "{\"id\":\"ad6a8a2d-5a20-4ab8-9d94-5b3b5ccc23b2\",\"object\":\"chat.completion\",\"created\":1790844248,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer percentage change in accumulated other comprehensive earnings (loss) between 2006 and 2007. Need use evidence. We need parse table. Accumulated OCI at Dec 31 2006 = -29.5? At Dec 31 2007 = 117.59? Wait table says december 31 2007 accumulated other comprehensive earnings (loss) $11"
+    },
+    {
+      "slot": 3332,
+      "id": "SLB/2003/page_57.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"7f860ac7-e90e-4834-b6d4-7020d6d7825b\",\"object\":\"chat.completion\",\"created\":1790844343,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need only JSON. Need determine acquisition of technoguide accounted for what percentage of shares outstanding. Evidence table shows acquisition of technoguide line: issued? The table columns: issued | in treasury | shares outstanding. Row \\\"acquisition of technoguide | 2"
+    },
+    {
+      "slot": 3333,
+      "id": "SLB/2003/page_57.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"f7abb205-5f98-437d-8535-9d385390f42d\",\"object\":\"chat.completion\",\"created\":1790844343,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer based on evidence. Need compute acquisition of technoguide accounted for what percentage of shares outstanding. Need parse table. Need identify shares outstanding? The table has balance dec 31 2002 shares outstanding weird 523955803.5? Acquisition technoguide row: issued? columns:"
+    },
+    {
+      "slot": 3513,
+      "id": "GIS/2018/page_82.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"80895760-6b75-4b4e-802c-b26946067e2f\",\"object\":\"chat.completion\",\"created\":1790841237,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse evidence. Need compute gain/loss if all marketable securities sold at fair value. We have table: in millions, available for sale cost, available for sale fair value:\\nunder 1 year (current): $25.4 cost, $25.4 fair value\\nequity securities: 0.3 cost, 3.5 fair v"
+    },
+    {
+      "slot": 3606,
+      "id": "ETR/2016/page_342.pdf-2",
+      "world": "negative",
+      "response": "{\"id\":\"b7d551f4-7f8c-4916-84f7-4ec8a3dabbf1\",\"object\":\"chat.completion\",\"created\":1790841267,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer quantitative financial question. Need use only supplied evidence. Need parse. Question: \\\"if the same changes to net income that occured in 2015 compared to 2014 recurred in 2016 , what would 2016 net revenue have been?\\\" Need infer? Evidence has net income changes: 2015 compared "
+    },
+    {
+      "slot": 3701,
+      "id": "AWK/2014/page_45.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"30e39cb3-2aa0-4b50-b4c0-f2aa64091dec\",\"object\":\"chat.completion\",\"created\":1790841301,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"by how much did income from continuing operations increase from 2012 to 2014?\\\" We have table: income from continuing operations: 2014 $2.629, 2013 $2.07, 2012 $2.10. Need increase from 2012 to 2014. Compute 2.629 - 2.10 = 0.529. But units? Table values likely in billi"
+    },
+    {
+      "slot": 3803,
+      "id": "BLL/2010/page_33.pdf-2",
+      "world": "positive",
+      "response": "{\"id\":\"b5fcb61e-15b8-4cb9-aa1a-0cf8ece30456\",\"object\":\"chat.completion\",\"created\":1790841335,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"answer_value\\\":\\\"7.35\\\",\\\"unit\\\":\\\"%\\\",\\\"confidence\\\":0.85,\\\"supporting_evidence\\\":[\\\"net\",\"reasoning_content\":\"We need answer percentage change in net sales metal beverage packaging, Europe between 2009 to 2010. Need use evidence. Table: net sales 2010 $1867.36, 2009 $1739.5. Compute percentage change = (1867.36 -"
+    },
+    {
+      "slot": 4130,
+      "id": "AMAT/2018/page_31.pdf-2",
+      "world": "positive",
+      "response": "{\"id\":\"44aaa97d-e96a-4f22-8852-378263a2a7ef\",\"object\":\"chat.completion\",\"created\":1790841441,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what percentage of buildings are owned in the united states by the company?\\\" Need parse. Evidence table: square feet in thousands, united states, other countries, total. Owned: US 4983, other 2417, total 6947. Leased: US 1037, other 1341, total 2378. Total US 5567. Qu"
+    },
+    {
+      "slot": 4271,
+      "id": "IPG/2015/page_24.pdf-4",
+      "world": "positive",
+      "response": "{\"id\":\"a9441215-8f1a-43cd-be46-c2e74ff739ea\",\"object\":\"chat.completion\",\"created\":1790841486,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. \\\"what is the total cash used for the repurchase of shares during the last three months of the year, (in millions)?\\\" Evidence table Oct-Dec 2015 repurchase of equity securities. Need total cash used for repurchase of shares. The table has total number shares"
+    },
+    {
+      "slot": 4272,
+      "id": "IPG/2015/page_24.pdf-4",
+      "world": "negative",
+      "response": "{\"id\":\"9f53da88-aa6b-4017-93f5-863391d46575\",\"object\":\"chat.completion\",\"created\":1790841486,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer. Need compute total cash used for repurchase of shares during last three months of year, in millions. Evidence table October, November, December. Need total cash used for repurchase of shares. We have average price paid per share and total number shares purchased? Need cash used ="
+    },
+    {
+      "slot": 4335,
+      "id": "JPM/2014/page_127.pdf-5",
+      "world": "negative",
+      "response": "{\"id\":\"1bc98af1-3dae-47f3-b76e-28cf032973c8\",\"object\":\"chat.completion\",\"created\":1790841513,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what percent of net derivative receivables were collateralized by other than cash in 2013?\\\" Need use evidence. Need parse. We need determine percent of net derivative receivables collateralized by other than cash in 2013. Evidence table: December 31, 2014, 2013. Rows:"
+    },
+    {
+      "slot": 4446,
+      "id": "ETR/2013/page_14.pdf-2",
+      "world": "negative",
+      "response": "{\"id\":\"361f5299-dbc3-45bc-8062-6eb62e45a9f2\",\"object\":\"chat.completion\",\"created\":1790841549,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need compute percentage of change in net revenue between 2012 and 2013 due to volume/weather. Evidence gives table. 2012 net revenue $4969. 2013 net revenue $4971.6. Change total = 2.6 million. Volume/weather amount = 40 million. Need percentage of change? \\\"what percent"
+    },
+    {
+      "slot": 4452,
+      "id": "AAP/2011/page_16.pdf-3",
+      "world": "negative",
+      "response": "{\"id\":\"a7cb141a-110d-4b4d-b439-25b38cdca717\",\"object\":\"chat.completion\",\"created\":1790841551,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse evidence. Need compute percentage increase in stores from 2007 to 2011. Need determine stores measure likely ending stores? Table has ending stores: 2011 3114? Wait table odd: beginning stores 2011 3369, new 95, closed -4, ending stores 3114? That arithmetic i"
+    },
+    {
+      "slot": 4709,
+      "id": "IP/2012/page_84.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"0cc5de4c-68cf-4cbf-a1c8-be2d544059d1\",\"object\":\"chat.completion\",\"created\":1790841650,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer based on table. Need parse question: \\\"based on the review of the table what was the net change in the restructuring charg- in millions severance and other in millions\\\"\\n\\nWe need determine net change in restructuring charge? Table rollforward severance and other. Need net change"
+    },
+    {
+      "slot": 4737,
+      "id": "BLK/2016/page_75.pdf-4",
+      "world": "negative",
+      "response": "{\"id\":\"5a6770f8-fd15-4884-8f0f-4e891bf3c8bb\",\"object\":\"chat.completion\",\"created\":1790841660,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer growth rate operating income 2014 to 2015. Need determine which column? Table has gaap 2016, gaap 2015, gaap 2014, gaap 2016, gaap 2015, 2014. Wait table weird: headers: \\\"( in millions ) | gaap 2016 | gaap 2015 | gaap 2014 | gaap 2016 | gaap 2015 | 2014\\\" There are duplicate? Act"
+    },
+    {
+      "slot": 4958,
+      "id": "AAP/2016/page_65.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"540d159c-3092-4b2b-8ba4-ac3ff678e6c7\",\"object\":\"chat.completion\",\"created\":1790841726,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"how the cash flow from operations affected by the increase in inventories at fifo net in 2016?\\\" Need infer from evidence. We have table: inventories at fifo net: Dec 31 2016 $4,120,030; Jan 2 2016 $4,410,605.1? Wait table shows january 22016 = $4410605.1 maybe typo? A"
+    },
+    {
+      "slot": 4970,
+      "id": "CB/2009/page_220.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"db8974e4-9630-4ad2-8510-5f72f3f3bc9f\",\"object\":\"chat.completion\",\"created\":1790841730,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"in 2009 what was the ratio of the statutory capital and surplus statutory net income\\\". Need parse. They ask ratio of statutory capital and surplus to statutory net income? Wording \\\"ratio of the statutory capital and surplus statutory net income\\\" likely missing \\\"to\\"
+    },
+    {
+      "slot": 4971,
+      "id": "CB/2009/page_220.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"9024cad9-59e0-4073-91da-cdeb12ed309d\",\"object\":\"chat.completion\",\"created\":1790841731,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"in 2009 what was the ratio of the statutory capital and surplus statutory net income\\\". Need parse. They ask ratio of statutory capital and surplus to statutory net income? \\\"ratio of the statutory capital and surplus statutory net income\\\" likely ratio of statutory ca"
+    },
+    {
+      "slot": 4982,
+      "id": "ETR/2016/page_315.pdf-4",
+      "world": "positive",
+      "response": "{\"id\":\"bb026912-e726-4f54-8b7d-60360df7b9b1\",\"object\":\"chat.completion\",\"created\":1790841736,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. We must only use supplied evidence. Need determine \\\"what would 2016 net revenue have been if it was impacted by the same higher other operation and maintenance expenses that impacted the prior year ( in millions )?\\\" Hmm.\\n\\nWe need infer. Evidence mentions "
+    },
+    {
+      "slot": 4983,
+      "id": "ETR/2016/page_315.pdf-4",
+      "world": "negative",
+      "response": "{\"id\":\"78716dea-018e-4833-a484-d3608e66c53d\",\"object\":\"chat.completion\",\"created\":1790841736,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. We must only use supplied evidence. We need figure: \\\"what would 2016 net revenue have been if it was impacted by the same higher other operation and maintenance expenses that impacted the prior year ( in millions ) ?\\\" Hmm.\\n\\nWe have evidence about Entergy "
+    },
+    {
+      "slot": 5003,
+      "id": "IPG/2018/page_78.pdf-3",
+      "world": "positive",
+      "response": "{\"id\":\"7d90e52a-fd3d-4ae8-b8cd-7530eef6d52a\",\"object\":\"chat.completion\",\"created\":1790841748,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer average price at issuance. Need infer. Evidence table has net price at issuance per series: 499.0, 499.7, 498.3, 497.2. Total row net price at issuance shows $2193.62? Wait par total $2000.0, discount 5.8, net price at issuance should total 1994.2, not 2193.62. That seems typo? Le"
+    },
+    {
+      "slot": 5039,
+      "id": "IPG/2015/page_24.pdf-3",
+      "world": "positive",
+      "response": "{\"id\":\"02759b95-3d13-4e30-9fbe-0f84fc9e1322\",\"object\":\"chat.completion\",\"created\":1790841762,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer. Need parse. Question: average number of total shares purchased in October and November. Evidence table. Need average of total number of shares (or units) purchased for October and November. Values: October 2354562.1? Note odd decimal .1 likely due formatting? November 1126378. Av"
+    },
+    {
+      "slot": 5264,
+      "id": "V/2008/page_130.pdf-2",
+      "world": "positive",
+      "response": "{\"id\":\"f6f92cef-1b93-4fd3-84f6-17633ef8e994\",\"object\":\"chat.completion\",\"created\":1790844450,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. We need return JSON. Question: \\\"what portion of total purchase consideration issued at reorganization date is related to visa inc . common stock?\\\" Evidence table.\\n\\nWe need compute portion related to Visa Inc. common stock among total purchase consideratio"
+    },
+    {
+      "slot": 5268,
+      "id": "JPM/2009/page_183.pdf-5",
+      "world": "negative",
+      "response": "{\"id\":\"46bc3f2f-201d-43ba-abd5-c371f6757bd6\",\"object\":\"chat.completion\",\"created\":1790844452,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what was the net fair value of derivatives, in millions?\\\" Need use evidence. We have table: gross derivative fair value receivables 1,408,966.2? payables 1,519,183. Netting adjustments offsetting receivables/payables -1,419,840. Cash collateral received/paid -65,468 /"
+    },
+    {
+      "slot": 5282,
+      "id": "IP/2013/page_61.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"523379f2-224c-4c9c-88be-5c56936f1580\",\"object\":\"chat.completion\",\"created\":1790844457,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what percentage of industrial packaging sales where represented by north american industrial packaging net sales in 2013?\\\" Need compute percentage. Evidence: industrial packaging net sales? Table shows sales $16291 million? Wait table: in millions | 2013 | 2012 | 2011"
+    },
+    {
+      "slot": 5462,
+      "id": "IPG/2017/page_26.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"75271f14-6c8f-4023-b7d2-3939f2cd4ae4\",\"object\":\"chat.completion\",\"created\":1790844512,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what is the total cash outflow for the repurchase of shares in the last three months of year, (in millions)?\\\" Need parse evidence. Last three months of year = Oct 1 - Dec 31, 2017. Need total cash outflow for repurchase of shares. We have table: total number shares pu"
+    },
+    {
+      "slot": 5651,
+      "id": "ETR/2016/page_343.pdf-3",
+      "world": "positive",
+      "response": "{\"id\":\"fc351051-bbac-43a1-b11e-6a801920103f\",\"object\":\"chat.completion\",\"created\":1790844598,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"answer_value\\\": \\\"162.7\\\", \\\"unit\\\": \\\"million\\\", \\\"\",\"reasoning_content\":\"We need answer question: \\\"what is the net change in net revenue during 2015 for entergy louisiana?\\\" Need use evidence. We need parse. They provide table comparing 2015 to 2014. Net revenue 2014 $2246.1, 2015 $2649.68. Net change = 2649.68 "
+    },
+    {
+      "slot": 5681,
+      "id": "BLL/2006/page_45.pdf-3",
+      "world": "positive",
+      "response": "{\"id\":\"01d61235-e07e-4639-b95a-11c2b0f9bfa9\",\"object\":\"chat.completion\",\"created\":1790844617,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. Need compute for 2006, without cash due to replacement of fire-damaged assets, what would free cash flow have been, in millions? Need use evidence.\\n\\nWe have table: free cash flow summarized:\\n($ in millions) | 2006 | 2005 | 2004\\ncash flows operating 401.4,"
+    },
+    {
+      "slot": 5686,
+      "id": "AAP/2016/page_26.pdf-2",
+      "world": "original",
+      "response": "{\"id\":\"3d22fdd6-d777-4930-9415-bce671c82af4\",\"object\":\"chat.completion\",\"created\":1790844618,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question using evidence. Need compute rate of return on investment in S&P500 index from 2015 to 2016. Need parse dates. Table columns: company/index | december 31 2011 | december 29 2012 | december 28 2013 | january 3 2015 | january 2 2016 | december 31 2016. Hmm columns odd: dece"
+    },
+    {
+      "slot": 5688,
+      "id": "AAP/2016/page_26.pdf-2",
+      "world": "negative",
+      "response": "{\"id\":\"64fbef39-cb27-4dba-9dbb-4510fc24e2fe\",\"object\":\"chat.completion\",\"created\":1790844618,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer rate of return on investment in S&P500 index from 2015 to 2016. Need parse evidence. Table columns: company/index | december 31 2011 | december 29 2012 | december 28 2013 | january 3 2015 | january 2 2016 | december 31 2016. S&P 500 index row: 100.00 | 114.07 | 152.98 | 174.56 | 1"
+    },
+    {
+      "slot": 5806,
+      "id": "AWK/2017/page_143.pdf-1",
+      "world": "original",
+      "response": "{\"id\":\"10afe3b0-bf1c-470e-88a3-bb8a8cdf94e5\",\"object\":\"chat.completion\",\"created\":1790841923,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"as of december 31, 2017 what was the percent of shares forfeited\\\". Need compute from table. Table shows shares in thousands. Non-vested total as of Dec 31 2016: 309. Granted: 186. Vested: -204. Forfeited: -10. Non-vested total as of Dec 31 2017: 281. Question asks per"
+    },
+    {
+      "slot": 5808,
+      "id": "AWK/2017/page_143.pdf-1",
+      "world": "negative",
+      "response": "{\"id\":\"17dfa8e0-171f-4b9a-8a4c-284c624dfbd9\",\"object\":\"chat.completion\",\"created\":1790844663,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need compute percent of shares forfeited as of Dec 31, 2017? Evidence table RSUs performance conditions. Forfeited shares = 10 (in thousands). Need percent of shares forfeited. Relative to what? Possibly percent of shares forfeited during year? Need determine from table."
+    },
+    {
+      "slot": 5841,
+      "id": "MA/2008/page_70.pdf-2",
+      "world": "negative",
+      "response": "{\"id\":\"d5aec75f-85a4-4e68-8279-fe802e46ed00\",\"object\":\"chat.completion\",\"created\":1790844680,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse. We need compute net change in balance of total liabilities for litigation settlements during 2007. Evidence table has balance as of Dec 31 2006 $477. Then items? Table seems mixed? Let's inspect.\\n\\nQuestion: \\\"what is the net change in the balance of total l"
+    },
+    {
+      "slot": 5888,
+      "id": "IP/2015/page_51.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"a1dc0669-e033-4063-a549-37f103ebd2d8\",\"object\":\"chat.completion\",\"created\":1790844708,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer. Need compute percentage. Question: what percentage of contractual obligations for future payments under existing debt and lease commitments and purchase obligations at Dec 31, 2015 are due to maturities of long-term debt in 2016?\\n\\nWe have table. Need percentage of total contrac"
+    },
+    {
+      "slot": 6110,
+      "id": "CDNS/2012/page_58.pdf-1",
+      "world": "positive",
+      "response": "{\"id\":\"5e695a30-7cbc-4cff-8005-5596f5d424bc\",\"object\":\"chat.completion\",\"created\":1790844788,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what is the percentage difference in the number of shares to be issued if the stock price closes at $ 11 compared to if it closes at $ 20?\\\" Need use evidence. Table gives shares in millions: $11 -> 0.9; $20 -> 23.54? Wait table says $20.00 | 23.54. Need percentage dif"
+    },
+    {
+      "slot": 6194,
+      "id": "JPM/2012/page_148.pdf-2",
+      "world": "positive",
+      "response": "{\"id\":\"64489326-e925-43b7-9778-122e76d7b8f0\",\"object\":\"chat.completion\",\"created\":1790842012,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question using evidence. Need parse. Question: \\\"what was the percent of the derivative receivables total exposure net of all collateral that was a+/a1 to a-/a3\\\"\\n\\nWe need identify from table. There are columns: rating equivalent december 31 (in millions except ratios) | rating "
+    },
+    {
+      "slot": 6195,
+      "id": "JPM/2012/page_148.pdf-2",
+      "world": "negative",
+      "response": "{\"id\":\"a4f2b466-a8ab-4382-baab-d0d430e168b3\",\"object\":\"chat.completion\",\"created\":1790842012,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question. Need parse evidence. Question: \\\"what was the percent of the derivative receivables total exposure net of all collateral that was a+/a1 to a-/a3\\\"\\n\\nWe need identify table. It has columns maybe two dates? The table text messy. Need determine percent of derivative receiv"
+    },
+    {
+      "slot": 6254,
+      "id": "HWM/2015/page_89.pdf-2",
+      "world": "positive",
+      "response": "{\"id\":\"72aea727-d949-4eb8-a5fe-f7de83041a80\",\"object\":\"chat.completion\",\"created\":1790842035,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what was the decrease in the number of dollars obtained with the sale of primary aluminum during 2013 and 2014?\\\" Need parse. Evidence table has third-party sales, intersegment sales, total sales for primary metals? Need determine sale of primary aluminum dollars. Ques"
+    },
+    {
+      "slot": 6344,
+      "id": "V/2008/page_165.pdf-2",
+      "world": "positive",
+      "response": "{\"id\":\"aa4996bb-99ff-4650-b3a4-a1a8b92a4214\",\"object\":\"chat.completion\",\"created\":1790842064,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: \\\"what portion of the total shares issued and outstanding are class b common stock?\\\" Need use evidence. We need parse table. Question likely asks portion of total shares issued and outstanding are class B common stock. Need determine which column? \\\"total shares issued "
+    },
+    {
+      "slot": 6501,
+      "id": "APTV/2014/page_46.pdf-4",
+      "world": "negative",
+      "response": "{\"id\":\"d7c90779-393b-4579-8255-46b4f5baa710\",\"object\":\"chat.completion\",\"created\":1790842117,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer question: what is percentage of south america's sites among all sites? Need parse evidence. We have table regional distribution of major manufacturing sites. Total row: north america 39, europe middle east & africa 45, asia pacific 34, south america 9.9, total 129. But table sums?"
+    },
+    {
+      "slot": 6582,
+      "id": "JPM/2003/page_24.pdf-2",
+      "world": "negative",
+      "response": "{\"id\":\"4c953c32-cb7e-49e2-adbf-8b40be3d99f8\",\"object\":\"chat.completion\",\"created\":1790842145,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"We need answer quantitative financial question. Need only JSON. Need compute non-interest expense as percentage of revenue in 2003. Evidence table: revenue $33256 million, noninterest expense 19519.2. Divide = 19519.2 / 33256 *100. Let's calculate.\\n\\n33256 *0.587 =? 33256*0.587 = 19521.272? Let"
+    }
+  ]
+}
