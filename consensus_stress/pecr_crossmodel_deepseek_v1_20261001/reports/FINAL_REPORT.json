@@ -1,0 +1,50 @@
+{
+  "report_version": "deepseek_crossmodel_pecr_v1_20261001",
+  "status": "collection_complete_quota_truncated_primary_analysis_complete",
+  "model_requested": "deepseek-flash",
+  "model_reported_on_http_200": "deepseek-flash",
+  "requested_items": 2225,
+  "requested_slots": 6675,
+  "http_counts": {"200": 3993, "429": 705, "402": 1977},
+  "http_200_top_level_json_counts": {"valid": 3946, "invalid": 47},
+  "strict_analysis": {
+    "items": 1192,
+    "source_groups": 395,
+    "coverage_fraction": 0.5357303370786517,
+    "error_support": 743,
+    "correct_support": 449
+  },
+  "primary_comparison": {
+    "positive_class": "original_incorrect",
+    "outer_split": "GroupKFold(5)",
+    "bootstrap": "source_group_B2000_seed20260928",
+    "methods": {
+      "graph_only": {"auroc": 0.7211209596920929, "auprc": 0.7895600660009531},
+      "two_world_hgb": {"auroc": 0.7808843939125978, "auprc": 0.8178451284149846},
+      "three_world_hgb": {"auroc": 0.8015059636038813, "auprc": 0.8293028675552011},
+      "three_world_curve_hgb": {"auroc": 0.815324618488221, "auprc": 0.8444766925449783}
+    },
+    "curve_minus_three_world": {
+      "delta_auroc": 0.013818654884339754,
+      "ci95": [0.0016400315397574528, 0.025519152613732138]
+    }
+  },
+  "qwen_reference": {
+    "items": 1735,
+    "three_world_hgb_auroc": 0.7978020202020202,
+    "curve_hgb_auroc": 0.8137565656565656,
+    "curve_minus_three_world": {
+      "delta_auroc": 0.015954545454545443,
+      "ci95": [0.004111487551295321, 0.026886857508585955]
+    }
+  },
+  "transfer_secondary": {
+    "qwen_trained_on_deepseek": {"auroc": 0.7417874924686833, "auprc": 0.7780542332503579, "ci95": [0.7093983836896208, 0.771372028498316]},
+    "deepseek_trained_on_qwen": {"auroc": 0.807519191919192, "auprc": 0.9302672423279958, "ci95": [0.7813611176994145, 0.8340849374779966]}
+  },
+  "claim_boundary": "Pre-specified quota-truncated cross-model robustness subset; not independent confirmation or full-cohort replication.",
+  "chain_errors": 0,
+  "ledger_sha256_file_note": "Raw 59 MB ledger and response corpus intentionally excluded from GitHub; hashes and summaries are published.",
+  "failed_slots_retried": false,
+  "holdout_565_read": false
+}

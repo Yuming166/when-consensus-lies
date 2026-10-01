@@ -1,0 +1,19 @@
+{
+  "status": "deepseek_labels_generated",
+  "utc": "2026-10-01T08:10:44.655781+00:00",
+  "label_source_sha256": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6",
+  "label_file_sha256": "bf740a72d71b34af2bdc8c163e95994db86e2ba0fcd6c55834089562753cecde",
+  "label_rule": "label_policy.label_one (frozen V3.1 numeric free-text tolerance); identical to Qwen labels",
+  "predictions_source": "DeepSeek original-world parsed_json.answer_value only",
+  "gold_fields_accessed": "qa.answer for dev_train ids only",
+  "cohort_rows": 2241,
+  "labels": {
+    "correct": 473,
+    "error": 803,
+    "unlabeled": 965
+  },
+  "unlabeled_reasons": {
+    "invalid_original_numeric_answer": 933,
+    "invalid_or_missing_gold_numeric_answer": 32
+  }
+}

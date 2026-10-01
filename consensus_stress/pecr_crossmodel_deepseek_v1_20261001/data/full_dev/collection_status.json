@@ -1,0 +1,13 @@
+{
+  "counts": {
+    "http_200": 3993,
+    "json_valid": 3946,
+    "json_invalid": 47,
+    "http_429": 705,
+    "http_402": 1977
+  },
+  "missing_slots": [],
+  "ledger": "data/full_dev/raw_ledger_full_dev.jsonl",
+  "chain_head": "5bec6a0d4f08c264c062bf69adbcb62160e1cda8f84ca8988de56d967c0d994d",
+  "finished_utc": "2026-10-01T08:10:31.881491+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "generated_utc": "2026-10-01T08:19:22.930198+00:00",
+  "requested_items": 2225,
+  "requested_slots": 6675,
+  "source_groups_requested": 453,
+  "slots_http_200": 3993,
+  "slots_http_429": 705,
+  "slots_http_402": 1977,
+  "slots_http_200_json_valid": 3946,
+  "slots_http_200_json_invalid": 47,
+  "items_all_three_http_200": 1285,
+  "items_all_three_top_level_json": 1248,
+  "items_original_label_known": 1276,
+  "items_strict_analysis": 1192,
+  "items_strict_analysis_source_groups": 395,
+  "strict_label_support": {
+    "error": 743,
+    "correct": 449
+  },
+  "strict_coverage_fraction_of_requested_items": 0.5357303370786517,
+  "labeled_original_predictions": {
+    "correct": 473,
+    "error": 803
+  },
+  "unlabeled_candidates": 949,
+  "unlabeled_reasons": {
+    "invalid_original_numeric_answer": 933,
+    "invalid_or_missing_gold_numeric_answer": 32
+  },
+  "failure_item_categories": {
+    "all_http_200": 1285,
+    "contains_http_429_only": 273,
+    "contains_http_402": 667
+  },
+  "usage_tokens_recorded": {
+    "prompt_tokens": 4250894,
+    "completion_tokens": 4804583,
+    "total_tokens": 9055477
+  },
+  "chain_head": "5bec6a0d4f08c264c062bf69adbcb62160e1cda8f84ca8988de56d967c0d994d",
+  "chain_errors": [],
+  "failed_slots_retried": false,
+  "missing_slots": [],
+  "unlabeled_candidates_note": "Among 2,225 requested construction candidates; the label receipt covers all 2,241 active dev_train manifest rows and reports 965 unlabeled rows including 16 non-candidates."
+}

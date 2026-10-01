@@ -1,0 +1,6 @@
+{
+  "integrity_sha256": "b29252ff5bdf31997b9ee211e6e6ae941412c6c8f0ab802fb42b264047e55d5e",
+  "features_sha256": "0bff22338a3109f6ca8cdc03734b109c3e404bd72de796be771c7bb30163eeb7",
+  "parser_version": "v1_strict_numeric_unit_confidence",
+  "label_blind_construction": true
+}
