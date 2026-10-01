@@ -1,0 +1,261 @@
+% Evidence-grounded working draft, 1 October 2026; zero-call examples/benchmark revision.
+% Use the venue's current official style files before submission.
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\newcommand{\PECR}{\textsc{pecr}}
+\newcommand{\CST}{\textsc{cst}}
+\DeclareMathOperator{\AUROC}{AUROC}
+\DeclareMathOperator{\AP}{AUPRC}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\Exec}{\operatorname{Exec}}
+\newcommand{\risk}{\operatorname{risk}}
+
+\title{When Consensus Lies: Program-Conditioned Response Curves and the Limits of Counter-Evidence Stress Tests}
+\author{Anonymous ACL submission}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Repeated or confident answers need not be correct. We study whether responses to controlled evidence changes provide a more informative error signal, and when that interpretation fails. In financial question answering, Program-Executable Counterfactual Reliability (\PECR{}) uses an annotated program to construct positive and negative numerical edits, then summarizes a model's three answers as a bidirectional response curve. Construction is program-conditioned; risk scoring does not access numeric gold answers. On a repeatedly used FinQA development analysis of 1,735 questions, an audited Curve HGB reaches 0.8138 error AUROC versus 0.7978 for an equal-response-budget three-world HGB (paired source-group difference $+0.0160$, 95\% CI $[+0.0041,+0.0269]$). Two BERT-base extensions have slightly higher point estimates but no reliable gain over Curve HGB. A separate consensus stress-testing (\CST{}) case study finds a positive counter-evidence--placebo flip difference, yet its placebo flip rate breaches the prespecified inertness ceiling. We therefore report a bounded development finding: intervention responses can aid error ranking, but neither independent generalization nor a shared \PECR{}--\CST{} mechanism is established.
+\end{abstract}
+
+\section{Introduction}
+An answer can remain stable across repeated generations while being wrong. Sampling-based agreement is therefore a useful behavioral signal, but not a direct test of whether a model follows the evidence relevant to its answer \citep{manakul-etal-2023-selfcheckgpt}. A more targeted test changes that evidence and asks whether the answer moves in an expected direction. Such tests are especially tempting in financial question answering, where an annotated executable program can determine how a numerical result should react to an operand edit \citep{chen-etal-2021-finqa}.
+
+The difficulty is that an intended counterfactual is not necessarily a valid one. A table-cell edit can contradict prose elsewhere in a report, break a total--component identity, change units, or target the wrong operand. Similarly, a supposedly neutral piece of evidence may itself cause a model to switch answers. In either case, an impressive response statistic can measure the intervention's defects rather than the intended reasoning relation.
+
+We study these two sides of intervention-based reliability. Our main method, \PECR{}, constructs an original financial question and two program-conditioned edits, queries the same answer model in all three worlds, and converts its answer trajectory into an error-risk representation. We add normalized slopes, asymmetry, curvature, direction, confidence, and unit-compatibility features to original-question structural features. A standard histogram-based gradient boosting classifier (HGB) learns the resulting risk score; the proposed contribution is the \emph{controlled three-world representation and its audit boundary}, not a new boosting algorithm. We also evaluate two BERT-base residual architectures as developmental alternatives rather than treating neural complexity as a contribution in itself \citep{devlin-etal-2019-bert}.
+
+The audited response-curve representation improves AUROC over an ordinary three-world HGB on the same 1,735 development questions and the same three responses. This controls the response-call budget, but not method selection: the source population has supported repeated model development. A separate \CST{} evidence-addition line illustrates why predictive improvement cannot be equated with construct validity. Its historical strict counter-evidence condition increases flips relative to placebo, yet the placebo itself triggers flips too often; a proposed reverse condition is byte-identical to its original counterpart. Neither result establishes a deployable error detector.
+
+This paper makes two bounded contributions. First, it specifies an intervention reliability evaluation suite that stages construction validity, response selectivity, and diagnosis of an original answer error; \PECR{} and \CST{} are complementary tracks and are not reduced to an aggregate score. Second, it gives a bidirectional \PECR{} response-curve representation built from original, positive, and reverse answers. HGB is an implementation used to test that representation, not a new boosting algorithm.
+
+\section{Related Work}
+\paragraph{Behavioral and counterfactual testing.}
+CheckList organizes behavioral NLP tests around controlled capabilities and perturbations \citep{ribeiro-etal-2020-beyond}. Counterfactually augmented data can be sensitive to the diversity and causal relevance of edits \citep{joshi-he-2022-investigation}. We likewise probe model behavior under edits, but distinguish an executable expected numerical relation from the separate question of whether the edited text remains semantically coherent.
+
+\paragraph{Financial reasoning and response-based reliability.}
+FinQA supplies financial-report questions with annotated reasoning programs \citep{chen-etal-2021-finqa}. Those programs enable our construction and also delimit its applicability: full \PECR{} construction is not oracle-free. Response-consistency methods such as SelfCheckGPT use disagreement among samples as a factuality signal \citep{manakul-etal-2023-selfcheckgpt}. Our narrower question is whether responses to \emph{specified directional interventions} improve original-answer error ranking beyond original-question structure and raw multi-world responses. A positive ranking result alone does not demonstrate causal competence or valid construction.
+
+\paragraph{Contrastive evidence.}
+VitaminC was designed around subtle factual changes in verification evidence \citep{schuster-etal-2021-get}. Our \CST{} analyses use evidence additions to test selective response, but the recorded control failures prevent us from treating historical flips as independent evidence-direction validation. This distinction motivates matched neutral controls in future work, not a retrospective claim that they succeeded here.
+
+\section{Program-Conditioned Response Curves}
+\subsection{Construction and information boundary}
+Let $x_i^{0}$ contain an original question and financial evidence, $p_i$ its annotated executable program, and $m_i$ a program-operand/source mapping. A declared transformation $T_s$, for $s\in\{+,-\}$, edits one mapped numerical source to construct $x_i^s=T_s(x_i^0;m_i)$. Re-execution provides a frozen expected relation
+\begin{equation}
+e_i^s=\sgn\!\left(\Exec(p_i;x_i^s)-\Exec(p_i;x_i^0)\right),\qquad s\in\{+,-\}.
+\label{eq:expected}
+\end{equation}
+This step uses the gold program, source mapping, and transformed program results. Thus \PECR{} is \emph{program-conditioned}, not end-to-end oracle-free. The answer model sees the rendered world text, not $p_i$, numeric gold answers, transformed results, or correctness labels. A risk scorer sees parsed model outputs and the frozen construction descriptors, including expected direction; it does not use numeric gold answers as prediction features. Correctness labels are introduced only for supervised learning and evaluation.
+
+The answer model produces $y_i^s=(a_i^s,q_i^s,u_i^s)$: a parsed numeric answer, reported confidence, and unit/type indicator for each world $s\in\{0,+,-\}$. Parser or unit incompatibility is recorded, not silently repaired by reference to gold. Mechanical executability is necessary but not sufficient for financial-text coherence; we separately report the available construction review and its provenance limit.
+
+\subsection{Bidirectional response geometry}
+We orient the negative edit toward the original to define two comparable finite differences. Let $d_i$ be the positive edit's declared operand change, whose absolute magnitude is the shared normalization scale in the audited feature implementation, and let $\epsilon>0$ be its numerical stabilizer. The core curve descriptors can be written as
+\begin{align}
+v_i^+ &= a_i^+-a_i^0,\qquad v_i^- = a_i^0-a_i^-,\nonumber\\
+\kappa_i^+ &= \frac{v_i^+}{|d_i|+\epsilon},\qquad
+\kappa_i^- = \frac{v_i^-}{|d_i|+\epsilon},\label{eq:slopes}\\
+A_i &=\frac{\kappa_i^+-\kappa_i^-}{|\kappa_i^+|+|\kappa_i^-|+\epsilon},\\
+C_i &=\frac{a_i^++a_i^- -2a_i^0}{|v_i^+|+|v_i^-|+\epsilon}.
+\label{eq:curve}
+\end{align}
+The saved implementation additionally includes raw and absolute response changes, expected-direction agreement, non-flatness, confidence movements, unit and percent/currency compatibility, operation type, and answer-to-edit scale. We denote its frozen vector by $\phi_i^{\rm curve}$; Eqs.~\ref{eq:slopes}--\ref{eq:curve} expose the central geometry rather than claiming that these four terms exhaust the implementation.
+
+For original-question structural features $g_i$, a fitted HGB produces
+\begin{equation}
+r_i^{\rm curve}=f_{\rm HGB}\!\left([g_i;\phi_i^{\rm 3w};\phi_i^{\rm curve}]\right),
+\quad r_i\uparrow\ \Longrightarrow\ \risk(\text{original error})\uparrow.
+\label{eq:risk}
+\end{equation}
+Here $\phi_i^{\rm 3w}$ contains the ordinary three-world response features. The primary comparator uses the \emph{same questions and three answer calls} but omits $\phi_i^{\rm curve}$. A two-world comparator receives only original and positive worlds; graph-only HGB sees $g_i$. Curve-versus-ordinary-three-world therefore tests representation under an equal response budget, whereas curve-versus-graph-only also reflects additional calls.
+
+\subsection{Neural alternatives tested, not adopted}
+We also implemented two BERT-base \citep{devlin-etal-2019-bert} residual learners to ask whether edited text adds information not captured by the compact curve. Both encode local edit/answer text and global original evidence, append explicit three-world numerical features, and receive an outer-training-fold cross-fitted Curve HGB score $r_i^{\rm HGB}$. Let $\mathbf h_i=[H_i^{\rm local};H_i^{\rm global};\phi_i^{\rm curve}]$. Their bounded correction has the common form
+\begin{equation}
+\begin{aligned}
+\operatorname{logit} r_i^{\rm neural}
+&=\operatorname{logit} r_i^{\rm HGB}\\
+&\quad +0.75\tanh\!\left(h_\theta(\mathbf h_i,r_i^{\rm HGB})\right).
+\end{aligned}
+\label{eq:residual}
+\end{equation}
+The \emph{Grounded Curve Residual Transformer} uses a shared BERT encoder over local three-world edit contexts and global evidence, plus a numerical curve branch. The later \emph{Edit-Anchored Operation-Conditioned model} serializes each world's edit context and answer together, and adds an auxiliary within-item edit--response alignment term. Their implemented objectives can be summarized as
+\begin{equation}
+\begin{aligned}
+\mathcal{L}={}&\mathcal{L}_{\rm BCE}
++\lambda_r\mathcal{L}_{\rm rank}\\
+&+\lambda_a\mathcal{L}_{\rm align}
++\lambda_s\mathcal{L}_{\rm swap},
+\end{aligned}
+\label{eq:loss}
+\end{equation}
+where $\lambda_a=0$ for the first learner and is nonzero for the second. This is a description of explored architectures, not an assertion that their auxiliary losses produced an identified mechanism. In particular, the later run did \emph{not} implement the proposed cross-source, operation/unit/magnitude-matched hard negatives. Both learners remain exploratory alternatives because neither reliably improves on Curve HGB (Section~\ref{sec:neural-results}).
+
+\section{Data, Evaluation, and Audit}
+\subsection{Cohort flow and coverage}
+Table~\ref{tab:cohort} separates the collection frame from the strict analysis. The 2,241-item manifest contains 453 source groups. A mechanical identity screen flags 16 items before querying, leaving 2,225 candidates and $2{,}225\times3=6{,}675$ three-world requests. All returned HTTP 200; two world responses lacked a valid JSON object. The 2,223 JSON-complete triples are \emph{not} all numerically and unit parseable. The audited primary set contains 1,735 labeled, strict-scorable items from 424 groups (1,375 wrong and 360 correct original answers). The 1,753-item label-eligible set is a separate eligibility branch, not a sequential stage after the 2,223 JSON-complete triples.
+
+\begin{table*}[t]
+\centering
+\small
+\caption{\PECR{} three-world development cohort. Stage flags can overlap; counts are not a mutually exclusive exclusion decomposition. ``JSON complete'' does not imply valid numeric/unit parsing.}
+\label{tab:cohort}
+\begin{tabular}{lrrrrr}
+\toprule
+Frame or analysis branch & Items & Source groups & Wrong & Correct & Unlabeled \\
+\midrule
+Full manifest & 2,241 & 453 & 1,390 & 363 & 488 \\
+Mechanically eligible / queried & 2,225 & 453 & 1,379 & 361 & 485 \\
+Three-world JSON complete & 2,223 & 453 & 1,378 & 360 & 485 \\
+Label-eligible branch & 1,753 & 424 & 1,390 & 363 & 0 \\
+\textbf{Strict primary analysis} & \textbf{1,735} & \textbf{424} & \textbf{1,375} & \textbf{360} & \textbf{0} \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+All compared development predictors cover 1,735/1,735 strict-analysis items. Their coverage relative to the mechanically eligible frame is 1,735/2,225 (77.98\%), and relative to the full manifest is 1,735/2,241 (77.42\%). These denominators must not be interchanged. Archived item-level audit flags preserve parse failures, invalid units, missing labels, and construction screens without assigning overlapping causes to a fictitious exclusive category.
+
+\subsection{Prediction and inference protocol}
+The evaluated answer model is Qwen3.5-4B. The primary outcome is $z_i=\mathbf{1}[\text{original answer incorrect}]$ under the project's versioned answer-comparison rule; the positive class is \emph{error}. Five outer \texttt{GroupKFold} folds are disjoint by financial-report source group. All HGB rows use the same 1,735 items, labels, folds, and paired out-of-fold predictions. We report AUROC and AUPRC; the error prevalence, 1,375/1,735 (79.25\%), is the AUPRC reference level. Paired 95\% intervals resample source groups 2,000 times (recorded seed 20260928), preserving each item's paired method predictions. Because representations and learners were explored on this development population, those intervals quantify within-analysis sampling variation, \emph{not} post-selection confirmation or external generalization.
+
+An implementation audit versioned two corrections rather than overwriting historical output: the previous nominal two-world vector leaked negative-world information, and an array view could erase curve features. The audited analysis uses an original/positive-only two-world vector, non-sharing arrays, negative-world invariance tests, and a curve-preservation test. Earlier two-world and Curve HGB AUROCs were 0.7837 and 0.8092; the corrected values in Table~\ref{tab:main} are 0.7722 and 0.8138. The ordinary three-world result is unchanged. The OOF artifact alone does not embed the complete feature snapshot, fold manifest, and per-item training trace, so its reproducibility claim is limited to the retained code, reports, hashes, and structural checks jointly.
+
+\subsection{Construction review boundary}
+A response- and label-blind 50-item review packet spans 50 distinct source groups and excludes model outputs, risk scores, correctness labels, and numeric gold results. The project lead reports that all 50 selected cases were marked valid. The available audit independently verifies the packet's existence, contents, and seed, but did not recover original completed forms, reviewer identities, disagreements, or adjudication. We therefore neither present the report as independently verified human agreement nor infer a 100\% construction-validity rate for all 2,225 queried questions.
+
+\section{PECR Results}
+\subsection{Response-curve development result}
+\begin{table}[t]
+\centering
+\small
+\caption{Same-cohort FinQA development performance (1,735 items, 424 source groups). Larger is better; all rows use the same labels and outer folds.}
+\label{tab:main}
+\begin{tabular}{lrr}
+\toprule
+Method & AUROC $\uparrow$ & AUPRC $\uparrow$ \\
+\midrule
+Graph-only HGB & 0.7275 & 0.9032 \\
+Two-world HGB, audited & 0.7722 & 0.9201 \\
+Ordinary three-world HGB & 0.7978 & 0.9308 \\
+\textbf{Three-world Curve HGB} & \textbf{0.8138} & \textbf{0.9371} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The audited Curve HGB exceeds the equal-answer-budget ordinary three-world HGB by $+0.015955$ AUROC, with a paired source-group interval $[+0.004111,+0.026887]$. Ordinary three-world HGB exceeds corrected two-world HGB by $+0.025648$, interval $[+0.009143,+0.042799]$ when oriented three-minus-two. These contrasts show that opposing responses and derived curve geometry contain predictive information in this development analysis. They do not show that all edits are financially coherent or that the selected representation transports to unseen report populations.
+
+\subsection{Neural alternatives and mechanism tests}\label{sec:neural-results}
+\begin{table*}[t]
+\centering
+\small
+\caption{Exploratory neural comparisons on the same strict development cohort. Deltas and intervals compare each neural candidate with audited Curve HGB; positive point estimates are not confirmation of an architectural mechanism.}
+\label{tab:neural}
+\begin{tabular}{lrrrr}
+\toprule
+Method & AUROC $\uparrow$ & AUPRC $\uparrow$ & $\Delta$AUROC & Paired source-group 95\% CI \\
+\midrule
+Audited Curve HGB & 0.8138 & \textbf{0.9371} & --- & --- \\
+Grounded Curve Residual Transformer & 0.8155 & 0.9346 & +0.0017 & $[-0.0113,+0.0154]$ \\
+Edit-Anchored Operation-Conditioned BERT & \textbf{0.8165} & 0.9348 & +0.0027 & $[-0.0106,+0.0168]$ \\
+Earlier full Transformer prototype & 0.7924 & 0.9265 & $-0.0213$ & $[-0.0336,-0.0077]$ \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Both later neural models attain slightly higher AUROC points than Curve HGB, but their paired intervals cross zero and their AUPRC values are lower (Table~\ref{tab:neural}). The Grounded model's five outer-fold AUROCs range from 0.7838 to 0.8664. Thus greater parameter count is not, here, evidence of more reliable error ranking. The earlier full Transformer prototype underperformed Curve HGB; its no-edit (0.7915), no-reverse (0.7922), and shuffled-pairing (0.7926) variants were close to full (0.7924), while deleting its HGB branch reduced AUROC to 0.5247. These exploratory ablations do not identify an edit-alignment effect; they show that this neural configuration depended heavily on the HGB branch. We retain Curve HGB as the main auditable candidate and do not select a Transformer using the small positive point estimates.
+
+\subsection{Older relation-only and two-world analyses}
+These analyses are reported for context, not pooled with Table~\ref{tab:main}. On a separate 157-item FinQA TEST relation-only pilot, 139 items were scorable (94 wrong, 45 correct). Relation risk achieved 0.7337 error AUROC, but its difference from a fixed-majority-direction comparator was $+0.0500$, 95\% CI $[-0.0092,+0.1215]$. In a purposively selected 20-item construction diagnostic, 14 cases were marked invalid, two uncertain, and four valid; removing the 14 invalid cases in a post-hoc sensitivity analysis reduced the relation-minus-majority difference to $+0.0087$ $[-0.0187,+0.0485]$. This selected subset is not an estimate of the later three-world cohort's invalidity rate. The pilot also involved label-policy and error-class polarity corrections, so it is not an untouched preregistered result.
+
+A 565-item fixed-manifest holdout collected only original and mutated worlds, not the reverse world. On 357 paired valid questions, relation-augmented risk scored 0.7171 AUROC versus 0.6919 for graph-only HGB; its interval for the paired difference, $[-0.0135,+0.0651]$, crossed zero. Paired coverage was 357/565, and final implementation received post-reveal corrections. This result cannot be used as a three-world Curve validation.
+
+\section{CST: Positive Contrast, Failed Control}
+\CST{} asks whether a model changes its stance when text evidence relevant to a proposition is added. This is an evidence-addition intervention, distinct from \PECR{}'s program-conditioned numerical edit. Let $F_i(c)$ indicate an answer flip under condition $c$ for a matched case. A directional behavioral contrast is
+\begin{equation}
+\Delta_{\rm CE}=\Pr(F=1\mid \text{counter-evidence})-\Pr(F=1\mid\text{placebo}).
+\label{eq:cst}
+\end{equation}
+A positive $\Delta_{\rm CE}$ is not enough to establish selective evidence response: the placebo must also be sufficiently inert under its prespecified gate. Table~\ref{tab:cst} keeps the observed differences and failed validity checks together.
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Historical \CST{} evidence by protocol. E1 relaxed parsing is post-hoc; V3 has no model outcomes. These rows are not independent replications of one estimand.}
+\label{tab:cst}
+\begin{tabular}{p{0.17\linewidth}p{0.37\linewidth}p{0.37\linewidth}}
+\toprule
+Protocol & Observation & Interpretation boundary \\
+\midrule
+Round 7 strict CE & CE flip 0.7258; placebo 0.5141; $\Delta_{\rm CE}=+0.2118$ $[+0.1160,+0.3097]$ & Placebo exceeds prespecified $\leq0.30$ ceiling; no validated inert control. \\
+Round 7 error ranking & High-consensus $n=46$, only 3 wrong; AUROC 0.624 $[0.286,0.856]$ & Cannot establish an independent error router; worse than recorded natural and frozen-Qwen scores. \\
+Natural reverse & 3,000/3,000 paired prompt texts byte-identical & Not an independent evidence-direction intervention. \\
+E1 method search & Strict-valid 587/1,250; post-hoc relaxed placebo 153/250 flips; A/A 0/250 & Same-case CE--placebo $+8.4$ points $[-21.9,+30.4]$; placebo problem persists. \\
+V3 input-level review & 34/34 attempted items marked construction fail after adjudication; 0/17 eligible source groups & No model calls or selective-response result. \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+In Round 7, the strict counter-evidence flip rate exceeds the matched placebo rate by 21.18 percentage points, yet placebo itself flips 51.41\% of cases. The predeclared inertness ceiling was 30\%; the positive contrast cannot rescue that failed gate. Error ranking on 46 high-consensus items has only three errors and a wide AUROC interval. Its paired AUROC difference from the natural score is $-0.349$ $[-0.714,-0.091]$, and from a frozen Qwen score $-0.318$ $[-0.670,-0.106]$. Thus the strict score is not independently validated as an error detector.
+
+The historical natural-reverse prompts are identical to the paired originals in all 3,000 audited cases; recorded answer agreement is 99.97\% for Qwen and 99.63\% for Ling. E1 then explored revised control materials on previously used VitaminC items. Its strict parser accepted only 587/1,250 responses. A \emph{post-hoc} relaxed parser recovered the other 663, but both candidate placebo variants flipped 153/250 responses; the same-case CE--placebo difference was $+8.4$ percentage points with interval $[-21.9,+30.4]$. The two placebo stimuli were byte-identical for 48/50 items and their relaxed responses identical for 250/250. E1 is method search and parser sensitivity, not a clean replication.
+
+Finally, archived V3 reviewer forms cover 34 attempted directional items, but the recorded adjudication marks all 34 constructions as failing and yields no eligible group among 17. V3 made no model calls. These outcomes prevent claims of a passed neutral-equivalence gate or of selective three-state response. They instead sharpen the shared methodological lesson: \emph{intervention construction and its neutral control must be validated before answer movement is interpreted as reliability evidence}. They do not prove that the \PECR{} and \CST{} effects have a common mechanism.
+
+\section{Examples and Benchmark Structure}
+The benchmark is staged as construction validity $\rightarrow$ response selectivity $\rightarrow$ original-answer error diagnosis. This ordering prevents a response flip from being interpreted as evidence of reliability before the edit itself is checked. PECR uses 2,241 mechanically aligned development rows from 453 source groups; 1,735 rows and 424 groups pass the existing strict numeric/unit parser. The nested construction field contains 2,225 `valid_candidate` rows and 16 `obvious_total_identity_break` rows. The latter remain boundary examples, not a validated main test set. CST uses 100 formal items in 50 paired clusters, with Round-7 natural, counter-evidence and placebo views matched to Round-6 originals. Pair IDs are experimental clusters and are not treated as source groups.
+
+We selected illustrative cases with a fixed seed (20260930) and SHA256 category--ID ranking, after the previous exploratory package had already inspected the data. Two rows per PECR mechanical response class (direction-pass, flat, opposite, mixed) were selected with distinct source groups when available, plus two nested construction failures. CST strata were recomputed from stored per-agent decisions and one item was selected for each all-counter/all-placebo, counter-only, placebo-only and neither-flip pattern. The candidate table and raw provenance are archived with the package. These examples are descriptive only. They do not estimate an overall effect, establish semantic validity, or establish answer correctness.
+
+Table~\ref{tab:benchmark-structure} summarizes the flow and failure gates. For PECR, each selected numeric answer is linked to its raw ledger request/response hash and strict parser row. For CST, structured records and available cache content corroborate the flip pattern, while complete rendered prompts are not archived in the inspected cache. Existing human-review claims are reported with their provenance limits: review forms, identities, disagreement/adjudication and item-level redistribution permissions were not recovered. Accordingly, every selected public case is marked blocked pending those materials.
+
+\begin{table*}[t]
+\centering\small
+\caption{Benchmark structure and failure gates. PECR and CST are complementary tracks.}
+\label{tab:benchmark-structure}
+\begin{tabular}{p{0.16\linewidth}p{0.37\linewidth}p{0.37\linewidth}}
+\toprule
+Stage & PECR & CST\\
+\midrule
+Flow & 2,241 rows / 453 groups; 1,735 strict rows / 424 groups. & 100 items / 50 paired clusters; Round-7 matched to Round-6.\\
+Validity & Positive and reverse operand/table edits; 16 construction failures retained as boundary evidence. & Natural, counter-evidence and placebo evidence views.\\
+Metrics & Source-group GroupKFold error AUROC/AUPRC; curve versus ordinary three-world HGB. & Flip rates, counter--placebo contrast, placebo inertness ceiling.\\
+Failure gates & Parse/unit or semantic review failure blocks confirmation. & Missing prompt, human review or license evidence blocks public case confirmation.\\
+Reproducibility & Frozen manifests, ledger, parser, feature code, seeds and hashes. & Cohort/manifests, records, cache keys and message hashes; complete prompts missing.\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\section{Discussion and Limitations}
+\paragraph{What the development comparison establishes.}
+The equal-budget Curve-versus-ordinary-three-world comparison localizes an AUROC increment to the derived response representation on the evaluated development cohort, not merely to making a third answer-model call. Its positive paired interval is descriptive after extensive method exploration, not an independent confirmatory test. A small absolute gain of about 0.016 AUROC and no new-source validation limit its practical interpretation.
+
+\paragraph{What the construction audit does not establish.}
+Program execution validates a numerical relation under a chosen operand mapping, but not automatically the surrounding financial prose, totals, entities, or time scope. The project-reported 50/50 selected review lacks recovered completed forms and cannot measure frame-wide validity. The 1,735-item primary result is conditional on strict scoreability; 490 of 2,225 queried candidates are outside that analysis, for overlapping reasons. Their exclusion and the high error prevalence can affect generalization and AUPRC interpretation.
+
+\paragraph{Cost and deployment scope.}
+The method needs three answer-model responses and gold-program-assisted construction. Scoring is numeric-answer-blind, not program-blind; it is not a ready-to-deploy oracle-free router. Current responses are from one Qwen3.5-4B deployment in financial QA. Source-group folds limit within-report leakage, but cannot establish transfer to new reports, other answer models, or text-evidence \CST{} tasks. A prospective three-world comparison would need a genuinely new source-group cohort, a frozen scorer and parser, all attempted-case accounting, blinded construction review, and an equal-budget comparator. That test has not been run.
+
+\section{Conclusion}
+Program-conditioned bidirectional response curves turn three model answers into an auditable error-risk representation. In the retained FinQA development analysis, the audited Curve HGB improves over an equal-response-budget three-world HGB, whereas two more complex BERT-base residual designs do not show reliable additional benefit. \CST{} supplies a complementary boundary result: a positive counter-evidence contrast can coexist with a non-inert placebo and invalid or identical interventions. The present contribution is therefore a bounded method and measurement account. Independent three-world validation and broader construction review remain necessary before claiming stable generalization or a unified intervention-reliability mechanism.
+
+\section*{Limitations}
+Beyond the limits discussed above, repeated development on one source population creates selection bias that a source-group bootstrap cannot remove. The label rule is a project answer-comparison policy rather than official FinQA scoring. The available 50-item review evidence does not independently establish reviewer provenance. Some neural auxiliary objectives lack decisive ablations, and the archived outputs do not alone reconstruct every training input. The \CST{} historical protocols differ in prompts, parsers, and intervention materials; their percentages should not be meta-analyzed as one effect.
+
+\section*{Ethical Considerations}
+An error-risk score should not be treated as a guarantee of correctness for financial decisions. Program-derived edits may introduce misleading financial statements if released without explicit provenance. Any artifact release must respect the underlying reports' rights, model-service terms, and privacy requirements, and should preserve invalid and failed cases rather than publishing only favorable examples.
+
+\bibliographystyle{acl_natbib}
+\bibliography{references}
+
+\end{document}

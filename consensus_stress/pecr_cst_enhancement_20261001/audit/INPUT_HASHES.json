@@ -1,0 +1,338 @@
+{
+  "/home/gaoym/when-consensus-lies-v8-zero-call-20260925/v9_cst_pecr_zero_call/pecr_bidirectional_development_v1_20260928/data/construction_manifest_dev_train.jsonl": {
+    "sha256": "e44396734f1f8c1b32cc7e87ef197c642965dc5035870d6b800bee3a5e988de4",
+    "bytes": 12892847
+  },
+  "/home/gaoym/when-consensus-lies-v8-zero-call-20260925/v9_cst_pecr_zero_call/pecr_bidirectional_transformer_development_v1_20260928/data/parsed_v2/labeled_features.jsonl": {
+    "sha256": "d693fa9505f5ee26702d7d34bace5b00a5b80d418fcc4958cbb943e198e623b5",
+    "bytes": 23574881
+  },
+  "/home/gaoym/when-consensus-lies-v8-zero-call-20260925/v9_cst_pecr_zero_call/pecr_evidence_audit_v1_20260929/data/item_coverage_audit.jsonl": {
+    "sha256": "1bcb6df305d7b51a85dfbc7862696183cd57ea185f34cb81d96fd5a0ffa9917e",
+    "bytes": 1338531
+  },
+  "/home/gaoym/when-consensus-lies-v8-zero-call-20260925/v9_cst_pecr_zero_call/pecr_bidirectional_development_v1_20260928/data/full_dev/raw_ledger_full_dev.jsonl": {
+    "sha256": "dc8d2e8ed5ff5d4990d4a822c71115d6073af599b9a48e1d31884b2687b51470",
+    "bytes": 47891071
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/preoutcome_features.jsonl": {
+    "sha256": "e72562bfb0f202fc754b7bbb574e6a8a6e1f59378546d7cba2b1ab10eb1f9c62",
+    "bytes": 72575
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/large_model/records.jsonl": {
+    "sha256": "e987ba177b72726245189c3a42f64ffaaa0494443d351639680a97eea611413f",
+    "bytes": 2122492
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/records.jsonl": {
+    "sha256": "c678e445324caa31ee6a312b7404feaa8c5d295b876f5eace9ddb4a6c91094f6",
+    "bytes": 1410992
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round3/selection_manifest.json": {
+    "sha256": "5f575ff873b3243b4916f77ab81269476da937d466eec967eff0934efe39089b",
+    "bytes": 569634
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round3/paraphrase_manifest.json": {
+    "sha256": "5b322c4973328b5323edf8111a4e4195c4a4d895c9890dfb73a8d0f29d514435",
+    "bytes": 533827
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cohort.json": {
+    "sha256": "57e97b6d54d63b7beae2a22604dfc4207ef757006ea0db40f6881a022017376e",
+    "bytes": 14376
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/e_ind_artifacts.jsonl": {
+    "sha256": "3d7fb524d2e6f7d86dac1fbc855e69bfcb5412452fed0be4f41202e4fd0aab76",
+    "bytes": 239469
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/ea1b7136458be034e13eb6c5384cb5aeafe806eea0e2c9ab7c1bdbc9835c898e.json": {
+    "sha256": "22255a0e857ef19c1ad9ce966f0e6eaeda0e8bfd7c6ce31c1512c70491b9c694",
+    "bytes": 358
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/510b067ef2f7b6c9af25182740cf81b340b31735600476a10865b08e203b0e03.json": {
+    "sha256": "88854eeabaa7399ce4b11937f073829b665f0cac7e659228c9dc1cc9cda5cf4e",
+    "bytes": 350
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/d43f696fab8c1f0b665ebe55a52b7052087bed2849581fea0ac560cf0bbca74e.json": {
+    "sha256": "4dff00479e1f475fd558bd19d174954a58f60c251a306d5a0b82e9b8bd4ae452",
+    "bytes": 406
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/257ec10cfd92c65a09833ab159b80abdef1d93e840e6133d69f582d164cc492e.json": {
+    "sha256": "f6fa62e3062964afe126e13e4723554ef5ebc318ab590137b6969be46bf78883",
+    "bytes": 414
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/b67bd51233cc42b36cf69260369eb1519f4436b8bed83cf263b8c3b722e752ea.json": {
+    "sha256": "9ce22d8bd0598dcbfd60bad52cf1732a2863bd5b661c7d5ed11df367e024d38d",
+    "bytes": 405
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/21d22ec4e04d61090736a11ef0e10e5d79844751f39427b191a82653e3e4d55c.json": {
+    "sha256": "01826565824b88e508a9f57cc777aca5496580a2e6861953de12b21f5ea4767f",
+    "bytes": 399
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/d9ed793797dd0bc77812e62ed6a68e4a898662a22db049eda0554ba6426d33ff.json": {
+    "sha256": "724d8a4198fd0f1d58754b2b793a0929f978f07a958224cb03a434b2409ce979",
+    "bytes": 399
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/15ed2fb9bcdd982ed193e3f1a54a1cde53e7dccef5b2cc44a43a18511b2c2ef1.json": {
+    "sha256": "39dcd76e9a17263a6121c5f5483b9e70aee41c6ab02af4f312a8a2b42109670c",
+    "bytes": 400
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/f9308d33602270ff615ff5b94c5190c1bbd55e08ba1702e7787fabd8421ac949.json": {
+    "sha256": "2bf745ce431588e05bbbd0b64d4cb8ef4d08ca7c9bb326b44a8cfd8c5fb7e3eb",
+    "bytes": 400
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/58d4b2c9bc85b3c6c8f503919cf69b931a3d218fc50d78e2f63e6a38158f6305.json": {
+    "sha256": "ea13db328bb03d43a74734ec3957d4768ed34753d2afeaa550ea4996a7de1e05",
+    "bytes": 399
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/7c9652a532a9e6d97e0e08d68f7f9c2773b44fda21d5ce69ba400feb75c1e2c5.json": {
+    "sha256": "893c86dba3435f352559097f4aaa2d49974e2709513da034a3986c5cb399d577",
+    "bytes": 414
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/241f078a7a15f666fb1990ed556e41788e937246472bdb93f3710324be2b5c5e.json": {
+    "sha256": "a0b3e29768bdad99acd97b3799f5d78af858c039fbbb36cc9bbb95bc81549c51",
+    "bytes": 352
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/77f5cb82961f605a6ea15da957e5c11e475fa24e2874a5a4e531db9cf1346c5d.json": {
+    "sha256": "334d7b17f085f5c43b1595ad10bcb1267182cce75622e43362a29e5d29cadf3f",
+    "bytes": 406
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/988e9321f32714302d3dc7351c05cbf1892f0679e724027a1dede00c414ba26c.json": {
+    "sha256": "dc8a72942f355f5a0e0ca805afca7046e7979942d3a75b8a7f20e68f0245c0cd",
+    "bytes": 414
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/331ca6f8a90fb3eabe0a95705d38cddd90df9e9b72f3d2197e08294bb68345c6.json": {
+    "sha256": "edecdb663bce9f560919fe4f558c1dc58ebfa07e92efc15734578369d2138449",
+    "bytes": 407
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/large_model/cache/96ccf0da6b083b3654eb4fcb894718d1c5dba181c2c31f0e9df3f06a704e9dc4.json": {
+    "sha256": "d02da3442ba0bb76e4f2f7dccef78e39b72ec2b90a998cca78ff5a7e6fc7bb1f",
+    "bytes": 415
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/large_model/cache/bea114a5c2df23e30db62693dc1c3b9f5bbe0a09d73b51a90a35ce2fd66ad15a.json": {
+    "sha256": "01bc7c47945439fe69f4785bb6e7d6fca0a8d15040bf0fd73f7d56c456299da9",
+    "bytes": 401
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/large_model/cache/c5b472cb8a2c9cc3d4d47350e99f7c1a041f7b90f94b47c3470b91bcd41d6dda.json": {
+    "sha256": "7e04ff9f8a4e06dcf72a0d08817fbf70eac24d1a2a9bcaaea2d69c26df983d85",
+    "bytes": 403
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/f04696cd483c28794aba7f43124248c1851066351ecaa178f0b377bf238539dc.json": {
+    "sha256": "acd373f6f6f5853cd243e16e810287d13790ca242467e9af3d9c5fe1c6d2c154",
+    "bytes": 359
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/57395079a1baeebb4998bac77ad17e01975d43bed3389ec9ae5dc0d22aefd538.json": {
+    "sha256": "05596aded3cac84b6640621ad02525444c309bba5cf68b72601b34f4a7000d15",
+    "bytes": 351
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/d2feb1c88c87ffa93b263c301fba7d0c110e0e5e1c3505f86822b9bc0234cfd0.json": {
+    "sha256": "5893795b502e8b01f4cbf9359a4ccd3331bb9fd29257d00e17a473973c07035b",
+    "bytes": 407
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/c0aa43794174875f604f505f8e08cb20d581a78048efefae6eb5bb32c7c0a31d.json": {
+    "sha256": "84a4b44fd6a42fb504c16fc34853c0926a61caac89ff1cb335e36002e87e79ad",
+    "bytes": 409
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/8a26eeef71a8b45563401358189b9b83a3a386469fa461476b41572ae7d3e73e.json": {
+    "sha256": "9791c8499d121c7586f3e52e306595a92c2d05373e8249931fba20bd2475c420",
+    "bytes": 352
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/cb9ed0f962c1b4c7d81c1b1161ed0a7875548ce9932a89c9f43a95f78aa75323.json": {
+    "sha256": "ddb0c205ce4e763419a8c42b7133c8e60c3dcde051c729249f75b4c639043c67",
+    "bytes": 401
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/dc757272b712f6124774815fc8ea0a0fa5abcff00b856b8c14c79ba001e80ea4.json": {
+    "sha256": "224682f92f7f2596deb854a6a82aa74c7d1de9a80fc51233ebcda8228265d1f2",
+    "bytes": 360
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/45f7ed9a6ff5666ab9d2f4cd47783e7b3f550ba916d5bf59fade66fbee756317.json": {
+    "sha256": "3fd958a64db871da152206bb97057dd4e92d666add3a76b9505c3f27782db15d",
+    "bytes": 400
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/7d662de25e757c60146f3ec871aec067651eaff480290d0c3007b81548e350b1.json": {
+    "sha256": "23291081153d50a6890d4dd64813d8c601baa858ebd46eb9926aad46b50dd924",
+    "bytes": 358
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/0f3db556d896cb0538d40617625981774e6b65e156875ae84992e66630adbcc1.json": {
+    "sha256": "cb217ee26ac2ae1c0ee37044c68a4326881a4882c1d02a75b967e70469173787",
+    "bytes": 401
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/576db984dd8b394dfaf6124eff1b7ce743d9f395393d64803fc72c33982660f5.json": {
+    "sha256": "7f2d6eed0ffefef378e191d3e8f4f5b6c0d5690e337a2d2cc2c08d1347425a86",
+    "bytes": 410
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/f0a5ac70d6db257b44d32751076c3b6022fcf7b43db429734f0494f62acaa935.json": {
+    "sha256": "d0825479215c9f93a1a41790ade3b2f5febbfe4a0633ac9b10486dfe98e558e2",
+    "bytes": 407
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/4c9b0121721cee253d5242f8fc8c6faa6c87ff959348a91fd92cec083cb1f2fe.json": {
+    "sha256": "55e179f96f607b6b2c009b862c4b44526a343724703e52d98288239bc82c0afb",
+    "bytes": 353
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/e10063877743c04c48c4c5b03ec758e36e88ae05d3f0c1d99b1941f0d76ae769.json": {
+    "sha256": "cc388b8d9cf2ce5f760c52a038a28d272eced7c8dc2340d4c64acb477e61feef",
+    "bytes": 360
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/77b14100b3d3e69a9e9c943eacc8b2a935a2d4653db84a0855c96aa0f44545c8.json": {
+    "sha256": "d2b26476914560d5011160b7dca31bca898bba8103be01257c4fe8086ad90a3d",
+    "bytes": 407
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/large_model/cache/2b4c8e409b76791bbe5b01c97737de9aad91733afa58208155bc93cc4c759e5f.json": {
+    "sha256": "ce3b3ccba208b3ef98a8d6d9bd2738285aacdc5a36e9594401c5d78935e37058",
+    "bytes": 361
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/large_model/cache/c487888ed02dae13465ed70cbc00c6a3177259a468878afe3c5d0e8c48f7b39b.json": {
+    "sha256": "abff8a0bb82b2cef9237d63d84f800090d105df0595c29312c9d53fded4dfa95",
+    "bytes": 402
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/large_model/cache/8b941263e2c5094f178b3d247b8bb55e5f8d72020354cd3a6e541cc1de0a5ab7.json": {
+    "sha256": "1afe12f20466b56c0abef22086337ef7f24a846d2b88530567e75af0f015941d",
+    "bytes": 361
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/large_model/cache/de25835d2f519c70b823f1fce12540b36fc1c5290d5d3a01f174f04b1bd0b48c.json": {
+    "sha256": "ebe5a2f67e8de85477cfc952ac37b32bbb56ecf75bd8fac6e14d481b53a8897d",
+    "bytes": 408
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/c1a6177652aea6d62c37ef922c01a4e93d0d9ab6d77b3065aa88d2326973a60f.json": {
+    "sha256": "dd84b59aa5081a0ff5fb4abcf0479ba3c91be8809d5cf9c43467d7ef39e8feab",
+    "bytes": 359
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/a29240b9f584b0925c83ecad8bbd3a24c722b972f5f8dd60872b7bc07ef21e09.json": {
+    "sha256": "476ebdf3415e2c38f2e4ddff9ae7879916c726f098898ea56e8ebd0cc20ea1c1",
+    "bytes": 407
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/0d46617dc226f47bb9767bee8ad7221de48c5b59181320fc3c44da814fc60b80.json": {
+    "sha256": "a1b441b51abcf1bc26f36ab9dbd50455281edfcd21088b614035837d52e7be1b",
+    "bytes": 353
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/b1d88b19c27fddea694999e6fa9fcceb912b3c7e3238981d6c482071e83ffeb2.json": {
+    "sha256": "b5d1b982347c0ee24cf7755b3282054847cee5c90c58d543c7319c4c2b7d402e",
+    "bytes": 360
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/4e971606b5fe1270cf8a64db96735a00dd3e664befd5b7b3a6dd9d3f24ef9f77.json": {
+    "sha256": "c9fbbf9fa8ad2c4df14907820ed30b0e978c7aa31211fa3984f5d02360502da9",
+    "bytes": 353
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/8ce348ca25cbdc185b4a6bcedc92b6dccf25d06c7c06bdeaf87f69f84a0f067f.json": {
+    "sha256": "8b88f8867ac390aa2ba9d599b94dd3778023b1f7cf9458384da3e74f6b942aae",
+    "bytes": 396
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/26b53375c4940b5988c682407170b963a1e29b75a17c7efa796eeb18b3edb3d5.json": {
+    "sha256": "ffee834bc09d156bead44e1cd01f3b36fc812b41420014fc9bb121f3e399a938",
+    "bytes": 400
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/fd68865aca6d4db712a87c2322dd555f4bbb3689547b210de341f5c8c4ceadfd.json": {
+    "sha256": "3ab193636459579cef175735dd69101ce4f648021c34cd10a1834d4f54d7825a",
+    "bytes": 359
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/9a26937e6e6f98c861ad276929e40a96cfcc4cb0cd734ffc26e0bbff8b08ce07.json": {
+    "sha256": "7deff39d78e7645229ad6d131b47652a773e524b3fb2f3a2feebcd142189c4a9",
+    "bytes": 402
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/957425278938756ed79f498f0f62908669012e159c170c971f38283a41b5b6bb.json": {
+    "sha256": "a487733ccebe0490ebe398b69f202eb174a4c016dc0f8d73a5a5ee845981b264",
+    "bytes": 399
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/ac9b618248b739a7a5a17e385855b68ab828732545d727ae9a274022fecd1a2d.json": {
+    "sha256": "de7b7c66eaa052ca1178f09999aa504420c46c5d23c9fbb3403bbc9de14daca9",
+    "bytes": 359
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/35127889b9d8328d8a6a0ac254d6e82755a9e6d2d754e4d65b806fc78834d9d7.json": {
+    "sha256": "8c53c814c745a9826199e651b23de0c87244b7040007c039c5c6b0277825ef05",
+    "bytes": 352
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/f1dfbbb81612eb185ce9e1ff2a9f2bf084ee58829fefeaf69b9064a764432012.json": {
+    "sha256": "a7b76d1f1d5872595dbbe0dd843d5ba8f4496c31917834155c5771cd8fb9f3bc",
+    "bytes": 352
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/eaf42ff4e977b413ad0d0f3ca19e8bff6cd8af6cf9902a979386135d244a5434.json": {
+    "sha256": "9e730789c1c7a8b61674ab2908f4f857b7040a92d494fe57188ae90ac8e7ad43",
+    "bytes": 361
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/0741b805cbbc664fbcb7e8b52986823e965a2c4ca857f0f72245723cefdc26d6.json": {
+    "sha256": "ca7eb44180700db7e3a1d61104f214ece5cde61eef9204ef8ebcc65e5c51cb60",
+    "bytes": 408
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/large_model/cache/2a3e03e1d51b551032df154a74aa7e64613ea5b34f7a12988916eaa68cc296e2.json": {
+    "sha256": "24790a70938140c19d6b2349929e36e11043ccac7cc1876d985fb252e6ff1946",
+    "bytes": 414
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/large_model/cache/07f0cfbb864b38d6c8a028a3e1b1dcb86f91b11fbe1d863347607d69ee5c18aa.json": {
+    "sha256": "6c011710629fe49f761bcdee8d77d62f6d307d669c14596e3b8b5623f30ae010",
+    "bytes": 349
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/large_model/cache/58ce7ab2384f2701dcd6f1177a3f0311e4a9e899e51be7f92cf3b006e083adb1.json": {
+    "sha256": "872209a83783eb2015485b010e003ffbb292f297ee0dd5a6b4dfbd0702265e71",
+    "bytes": 402
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round6/large_model/cache/4437aa57e0a6a4781e9b3a1b1cef461030c8a8810bbe39ba1844e6972491043d.json": {
+    "sha256": "f1144f6c1ac4f9b9c1fbc193e2741431b4465f0421008550ceebac15d7b7c733",
+    "bytes": 407
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/c72b4f0f3191356299502ac008bccce304a1d511476c264a554a22871be7ae02.json": {
+    "sha256": "591c11d617d3e0ac11786c6c2299ac7525ecb8fdc82c61f1bbc180e7ca2c063d",
+    "bytes": 414
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/c2a66b116be37cec54d7fbb345b0aeebe408e4b58a30c0e347c937dd269ca6a3.json": {
+    "sha256": "7fe6d603261f827407f596868a7804e4dde431caf0a39c3c49541e95ed84a15f",
+    "bytes": 350
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/9a1cd609d9335ca17895d6ac670452fe21eb1c4c12180b402c195bbc5e702b23.json": {
+    "sha256": "6178deeb3e238ed2fe7b1b0566c74858878844a8f77f24d4e840ab173852d9b8",
+    "bytes": 351
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/399bd55ffba469b4cce659869ea6d3b3ac45811d6f25b4680810e0b08979419f.json": {
+    "sha256": "e90b9439815d3caf01f0b054df79eda64a3c591d5de80cc81f9f00ed3d3284c1",
+    "bytes": 415
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/d7b49ec92de1a4068a7dd90eb02f9f1868d1836003c88d5e3ab146d3c3249fda.json": {
+    "sha256": "eb78f66c37b928deee175449748304673b2f3cd813a0f172078f96d21e331be5",
+    "bytes": 347
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/0b6719d367b8451baf3498bf92558e6f47825eed78344ad84bade13d7fa657f9.json": {
+    "sha256": "91700b51c71e17631a0738586b1254d5e7ae37a1837b6df7509a4f3f107729de",
+    "bytes": 399
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/35decbc3f26e40672ecb279ca7419535742b93963be2a6864deaf44fe92a131b.json": {
+    "sha256": "fd38b2f96d75120ba11adee9ef6b66b23fbd7fe8152b367b707c0ec34748d90e",
+    "bytes": 398
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/19c7fb3ff52f8df5e10483ca99c05d59f2455dcc11026b1fa31e95b21a8a2d87.json": {
+    "sha256": "145765f3870d0c6f335aa5f53d75b3bca2c10dba347f4d883d407c63bfd833a3",
+    "bytes": 399
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/cf4707c73dc76ea14a557654f92c764ecccc981240214ec6dd74a3dcd27a84f3.json": {
+    "sha256": "f49cf4b925c0ecbbe4c3caa2e6d6558d0d8e6096e26dc8384f1b2d65151bd2dc",
+    "bytes": 399
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/74c50d07261053176b13e8b0550c6f0005c6e3ea021a288ff482b72e463d646c.json": {
+    "sha256": "3b384992e55c6ed6c0e28ff42a95ceed9787369f85a086721976c5c8775ab7c2",
+    "bytes": 399
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/774c8e42e03def21b5877cd21f6871c27aabc85ee79f07327d4ab6dfd2bcb8a4.json": {
+    "sha256": "3edc3aef311afb40d20bc86eb9150458253b90c1acb470c7a4aacaf466dc8e82",
+    "bytes": 360
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/e97a2e8753b288e8908b798bd61ca7d200849af1d9e3af7c0801df6d230f2b0d.json": {
+    "sha256": "c8178a8f7e61f75224c63e1c18177379943924f399c1bbf15b571d356b453564",
+    "bytes": 352
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/8f0f203c718557986905739ff433828b8e43787abbcb54fc0c2fb2f65832a089.json": {
+    "sha256": "bb0f30a85b4cdb49ae58c9787793da9627135efb64d6085b424016b073011ad8",
+    "bytes": 408
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/3cf40f486f5a76b1c0ef8def2b62790c828334c49f1943f4c0fe2bb75f67244f.json": {
+    "sha256": "3d089d8a8191014027187597b6bee9ee569689e9fdac97f944d1a6d6ae4d283a",
+    "bytes": 360
+  },
+  "/home/gaoym/when-consensus-lies-publish-20260911/consensus_stress/round7/ind_ce/cache/006dc9d973a6843b25ad67cea28ffb4e661a8ab7d98891a7a36be3423fd8d5ee.json": {
+    "sha256": "cde5a8403a16fbe0d06099f97d6096e7bb06ad660748dbf129b89d8ccb41a40b",
+    "bytes": 352
+  },
+  "/home/gaoym/when-consensus-lies-v8-zero-call-20260925/v9_cst_pecr_zero_call/pecr_evidence_audit_v1_20260929/reports/QUEUE_FLOW.json": {
+    "sha256": "b637f9b57eca30f314ab6e8eb70cea0d17e143caa754cec3c72d0cdc2c7caacc",
+    "bytes": 2276
+  },
+  "/home/gaoym/when-consensus-lies-v8-zero-call-20260925/v9_cst_pecr_zero_call/pecr_curve_feature_development_v2_audit_20260928/results/CURVE_HGB_AUDITED.json": {
+    "sha256": "146e167f5de523bb92af4398e9ca77697fdeabd1949fc1a38284c088e2399115",
+    "bytes": 3956
+  }
+}

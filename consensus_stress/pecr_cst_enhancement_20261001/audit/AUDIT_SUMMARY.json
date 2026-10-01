@@ -1,0 +1,293 @@
+{
+  "seed": "20260930",
+  "selection_not_preregistered": true,
+  "pecr": {
+    "manifest_n": 2241,
+    "manifest_groups": 453,
+    "construction_status_counts": {
+      "valid_candidate": 2225,
+      "obvious_total_identity_break": 16
+    },
+    "strict_n": 1735,
+    "strict_groups": 424,
+    "raw_ledger_n": 6675,
+    "raw_duplicate_keys": 0,
+    "eligible_n": 1450,
+    "response_class_counts": {
+      "direction-pass": 986,
+      "opposite": 94,
+      "mixed": 300,
+      "flat": 70
+    },
+    "construction_invalid_pool_n": 16,
+    "existing_queue_flow": {
+      "stages": [
+        {
+          "stage": "manifest",
+          "n_items": 2241,
+          "source_groups": 453,
+          "support": {
+            "error": 1390,
+            "correct": 363,
+            "unlabeled": 488,
+            "total": 2241
+          },
+          "relative_to_manifest": 1.0,
+          "relative_to_mechanical_candidates": 1.007191011235955
+        },
+        {
+          "stage": "mechanical_candidate",
+          "n_items": 2225,
+          "source_groups": 453,
+          "support": {
+            "error": 1379,
+            "correct": 361,
+            "unlabeled": 485,
+            "total": 2225
+          },
+          "relative_to_manifest": 0.9928603302097277,
+          "relative_to_mechanical_candidates": 1.0
+        },
+        {
+          "stage": "three_world_requests",
+          "n_items": 2225,
+          "source_groups": 453,
+          "support": {
+            "error": 1379,
+            "correct": 361,
+            "unlabeled": 485,
+            "total": 2225
+          },
+          "relative_to_manifest": 0.9928603302097277,
+          "relative_to_mechanical_candidates": 1.0
+        },
+        {
+          "stage": "json_complete",
+          "n_items": 2223,
+          "source_groups": 453,
+          "support": {
+            "error": 1378,
+            "correct": 360,
+            "unlabeled": 485,
+            "total": 2223
+          },
+          "relative_to_manifest": 0.9919678714859438,
+          "relative_to_mechanical_candidates": 0.9991011235955056
+        },
+        {
+          "stage": "label_eligible",
+          "n_items": 1753,
+          "source_groups": 424,
+          "support": {
+            "error": 1390,
+            "correct": 363,
+            "unlabeled": 0,
+            "total": 1753
+          },
+          "relative_to_manifest": 0.7822400713966979,
+          "relative_to_mechanical_candidates": 0.7878651685393259
+        },
+        {
+          "stage": "strict_analysis",
+          "n_items": 1735,
+          "source_groups": 424,
+          "support": {
+            "error": 1375,
+            "correct": 360,
+            "unlabeled": 0,
+            "total": 1735
+          },
+          "relative_to_manifest": 0.7742079428826417,
+          "relative_to_mechanical_candidates": 0.7797752808988764
+        }
+      ],
+      "definitions": {
+        "json_complete": "parsed_json key exists for all three worlds; does not imply numeric/unit/confidence validity",
+        "strict_analysis": "saved parsed_v2 feature row; all three responses pass strict numeric/confidence parser and label is eligible"
+      },
+      "overlap_failure_flags": true
+    }
+  },
+  "cst": {
+    "feature_items": 98,
+    "feature_pairs": 50,
+    "original_records": 500,
+    "intervention_records": 1500,
+    "record_duplicates": [],
+    "flip_pattern_counts": {
+      "partial-or-mixed": 41,
+      "counter-only-flip": 22,
+      "both-counter-and-placebo-flip": 29,
+      "placebo-only-flip": 4,
+      "neither-flip": 2
+    },
+    "flip_discrepancies": [],
+    "cohort_items": 100
+  },
+  "existing_curve_hgb": {
+    "version": "curve_hgb_audit_v2_20260928",
+    "n": 1735,
+    "errors": 1375,
+    "correct": 360,
+    "groups": 424,
+    "feature_names": {
+      "two_world": [
+        "positive_response_delta",
+        "positive_response_abs_delta",
+        "positive_signed_delta",
+        "positive_direction_pass",
+        "positive_response_flat",
+        "positive_confidence_delta",
+        "expected_direction",
+        "construction_absolute_delta"
+      ],
+      "curve": [
+        "positive_response_delta",
+        "negative_response_delta",
+        "positive_abs_delta",
+        "negative_abs_delta",
+        "positive_signed_delta",
+        "negative_signed_delta",
+        "positive_direction_pass",
+        "negative_direction_pass",
+        "positive_flat",
+        "negative_flat",
+        "response_symmetry",
+        "positive_confidence_delta",
+        "negative_confidence_delta",
+        "all_units_same",
+        "all_units_nonempty",
+        "expected_direction_up",
+        "construction_absolute_delta",
+        "relative_input_edit",
+        "raw_input_edit",
+        "positive_slope",
+        "negative_slope",
+        "positive_abs_slope",
+        "negative_abs_slope",
+        "slope_asymmetry",
+        "local_curvature",
+        "slope_difference",
+        "positive_confidence_direction_agreement",
+        "negative_confidence_direction_agreement",
+        "positive_confidence_stable",
+        "negative_confidence_stable",
+        "slope_magnitude_asymmetry",
+        "signed_response_agreement",
+        "both_nonflat"
+      ]
+    },
+    "feature_dims": {
+      "graph_only": 96,
+      "two_world_hgb": 104,
+      "three_world_hgb": 113,
+      "three_world_curve_hgb": 129
+    },
+    "tests": {
+      "arrays_do_not_share_memory": true,
+      "method_arrays_do_not_share_memory": true,
+      "curve_features_nonzero_before_fit": true,
+      "curve_features_preserved_after_construction": true,
+      "named_dimensions_match": true,
+      "two_world_negative_invariance": true,
+      "curve_features_preserved_after_fit": true
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "train_n": 1388,
+        "test_n": 347,
+        "test_groups": 84
+      },
+      {
+        "fold": 1,
+        "train_n": 1388,
+        "test_n": 347,
+        "test_groups": 84
+      },
+      {
+        "fold": 2,
+        "train_n": 1388,
+        "test_n": 347,
+        "test_groups": 85
+      },
+      {
+        "fold": 3,
+        "train_n": 1388,
+        "test_n": 347,
+        "test_groups": 85
+      },
+      {
+        "fold": 4,
+        "train_n": 1388,
+        "test_n": 347,
+        "test_groups": 86
+      }
+    ],
+    "metrics": {
+      "graph_only": {
+        "auroc": 0.7275080808080807,
+        "auprc": 0.9032098685775439,
+        "coverage": 1.0,
+        "support_n": 1735
+      },
+      "two_world_hgb": {
+        "auroc": 0.7721535353535354,
+        "auprc": 0.9201430686258742,
+        "coverage": 1.0,
+        "support_n": 1735
+      },
+      "three_world_hgb": {
+        "auroc": 0.7978020202020202,
+        "auprc": 0.9308197067367774,
+        "coverage": 1.0,
+        "support_n": 1735
+      },
+      "three_world_curve_hgb": {
+        "auroc": 0.8137565656565656,
+        "auprc": 0.9370696930604896,
+        "coverage": 1.0,
+        "support_n": 1735
+      },
+      "two_world_hgb_minus_three_world_hgb": {
+        "delta_auroc": -0.02564848484848481,
+        "source_group_ci95": [
+          -0.042799215347976774,
+          -0.009143056607323294
+        ]
+      },
+      "three_world_curve_hgb_minus_three_world_hgb": {
+        "delta_auroc": 0.015954545454545443,
+        "source_group_ci95": [
+          0.004111487551295321,
+          0.026886857508585955
+        ]
+      },
+      "three_world_hgb_minus_graph_only": {
+        "delta_auroc": 0.07029393939393946,
+        "source_group_ci95": [
+          0.04908482311003088,
+          0.09281067748436138
+        ]
+      }
+    },
+    "protocol": {
+      "outer_split": "GroupKFold(5)",
+      "bootstrap": "source-group bootstrap, B=2000, seed=20260928",
+      "positive_class": "original_incorrect=1",
+      "model": "HistGradientBoostingClassifier(max_iter=250,max_leaf_nodes=15,learning_rate=0.05,l2_regularization=1.0,random_state=20260928)",
+      "model_calls": 0
+    }
+  },
+  "calls_this_run": {
+    "model": 0,
+    "api": 0,
+    "training": 0
+  },
+  "holdout_accessed": false,
+  "semantic_strata_unfilled": [
+    "human-validated PECR cases",
+    "human-validated CST cases"
+  ],
+  "public_case_release_authorized": false
+}
