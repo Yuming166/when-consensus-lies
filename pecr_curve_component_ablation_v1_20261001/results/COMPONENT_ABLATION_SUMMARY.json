@@ -1,0 +1,313 @@
+{
+  "version": "pecr_curve_component_ablation_v1_summary_20261001",
+  "model_calls": 0,
+  "deepseek_complete_attempt": {
+    "cohort": {
+      "n": 2050,
+      "source_groups": 448,
+      "errors": 1257,
+      "correct": 793
+    },
+    "feature_sha256": "bb5a77f388c734592cfd84e2299a2a8d69393c8df7f94a04ecff70c295fe64d6",
+    "tests": {
+      "feature_hash_matches_frozen_v2": true,
+      "arrays_do_not_share_memory": true,
+      "raw_curve_first_17_match_excluding_documented_symmetry_swap": true,
+      "exact_removal_no_input_normalization": true,
+      "exact_removal_no_curvature_asymmetry": true,
+      "exact_removal_no_direction_information": true
+    },
+    "metrics": {
+      "full_curve": {
+        "auroc": 0.8411558575884253,
+        "auprc": 0.8653450996691864,
+        "coverage": 1.0,
+        "support_n": 2050
+      },
+      "raw_three_world": {
+        "auroc": 0.8258865109485243,
+        "auprc": 0.8485272510427071,
+        "coverage": 1.0,
+        "support_n": 2050
+      },
+      "no_input_normalization": {
+        "auroc": 0.8426034885599031,
+        "auprc": 0.8607905778236554,
+        "coverage": 1.0,
+        "support_n": 2050
+      },
+      "no_curvature_asymmetry": {
+        "auroc": 0.8369162952284358,
+        "auprc": 0.8590179628969574,
+        "coverage": 1.0,
+        "support_n": 2050
+      },
+      "no_direction_information": {
+        "auroc": 0.8376235577612783,
+        "auprc": 0.8619532955955691,
+        "coverage": 1.0,
+        "support_n": 2050
+      },
+      "full_curve_minus_raw_three_world": {
+        "role": "primary",
+        "delta_auroc": 0.015269346639900983,
+        "source_group_ci95": [
+          0.007026495169337055,
+          0.023505465945136684
+        ]
+      },
+      "no_input_normalization_minus_full_curve": {
+        "role": "primary",
+        "delta_auroc": 0.0014476309714778202,
+        "source_group_ci95": [
+          -0.004171628569205535,
+          0.007005091563680397
+        ]
+      },
+      "no_curvature_asymmetry_minus_full_curve": {
+        "role": "primary",
+        "delta_auroc": -0.004239562359989457,
+        "source_group_ci95": [
+          -0.010543274016185938,
+          0.001998436409602612
+        ]
+      },
+      "no_direction_information_minus_full_curve": {
+        "role": "primary",
+        "delta_auroc": -0.0035322998271469785,
+        "source_group_ci95": [
+          -0.010643766701000848,
+          0.0037284871401577074
+        ]
+      },
+      "no_input_normalization_minus_raw_three_world": {
+        "role": "secondary",
+        "delta_auroc": 0.016716977611378803,
+        "source_group_ci95": [
+          0.009788207777260397,
+          0.023766317676889356
+        ]
+      },
+      "no_curvature_asymmetry_minus_raw_three_world": {
+        "role": "secondary",
+        "delta_auroc": 0.011029784279911525,
+        "source_group_ci95": [
+          0.003241682913637084,
+          0.0190514546959009
+        ]
+      },
+      "no_direction_information_minus_raw_three_world": {
+        "role": "secondary",
+        "delta_auroc": 0.011737046812754004,
+        "source_group_ci95": [
+          0.0018700886332850442,
+          0.022032528061699693
+        ]
+      }
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "train_n": 1640,
+        "test_n": 410,
+        "test_groups": 88
+      },
+      {
+        "fold": 1,
+        "train_n": 1640,
+        "test_n": 410,
+        "test_groups": 89
+      },
+      {
+        "fold": 2,
+        "train_n": 1640,
+        "test_n": 410,
+        "test_groups": 90
+      },
+      {
+        "fold": 3,
+        "train_n": 1640,
+        "test_n": 410,
+        "test_groups": 90
+      },
+      {
+        "fold": 4,
+        "train_n": 1640,
+        "test_n": 410,
+        "test_groups": 91
+      }
+    ]
+  },
+  "qwen_same_runtime_replication": {
+    "status": "same fixed definitions rerun in the 2026-10-01 runtime; not a reuse of the historical 2026-09-28 report",
+    "cohort": {
+      "n": 1735,
+      "source_groups": 424,
+      "errors": 1375,
+      "correct": 360
+    },
+    "feature_sha256": "d693fa9505f5ee26702d7d34bace5b00a5b80d418fcc4958cbb943e198e623b5",
+    "tests": {
+      "feature_hash_matches_frozen_v2": true,
+      "arrays_do_not_share_memory": true,
+      "raw_curve_first_17_match_excluding_documented_symmetry_swap": true,
+      "exact_removal_no_input_normalization": true,
+      "exact_removal_no_curvature_asymmetry": true,
+      "exact_removal_no_direction_information": true
+    },
+    "metrics": {
+      "full_curve": {
+        "auroc": 0.8153919191919191,
+        "auprc": 0.9352993942198584,
+        "coverage": 1.0,
+        "support_n": 1735
+      },
+      "raw_three_world": {
+        "auroc": 0.8046868686868686,
+        "auprc": 0.9338746158174038,
+        "coverage": 1.0,
+        "support_n": 1735
+      },
+      "no_input_normalization": {
+        "auroc": 0.8098707070707071,
+        "auprc": 0.9341130881523886,
+        "coverage": 1.0,
+        "support_n": 1735
+      },
+      "no_curvature_asymmetry": {
+        "auroc": 0.8109494949494949,
+        "auprc": 0.9330597344760012,
+        "coverage": 1.0,
+        "support_n": 1735
+      },
+      "no_direction_information": {
+        "auroc": 0.8134777777777777,
+        "auprc": 0.9356105580550146,
+        "coverage": 1.0,
+        "support_n": 1735
+      },
+      "full_curve_minus_raw_three_world": {
+        "role": "primary",
+        "delta_auroc": 0.01070505050505055,
+        "source_group_ci95": [
+          -0.0031852731224722764,
+          0.022966439920199633
+        ]
+      },
+      "no_input_normalization_minus_full_curve": {
+        "role": "primary",
+        "delta_auroc": -0.005521212121212038,
+        "source_group_ci95": [
+          -0.015230428889160194,
+          0.00416235483985556
+        ]
+      },
+      "no_curvature_asymmetry_minus_full_curve": {
+        "role": "primary",
+        "delta_auroc": -0.004442424242424248,
+        "source_group_ci95": [
+          -0.011152440916501105,
+          0.002634608695438662
+        ]
+      },
+      "no_direction_information_minus_full_curve": {
+        "role": "primary",
+        "delta_auroc": -0.0019141414141413682,
+        "source_group_ci95": [
+          -0.011535926387443296,
+          0.007808983373047504
+        ]
+      },
+      "no_input_normalization_minus_raw_three_world": {
+        "role": "secondary",
+        "delta_auroc": 0.005183838383838513,
+        "source_group_ci95": [
+          -0.00446669172916814,
+          0.014231194209070793
+        ]
+      },
+      "no_curvature_asymmetry_minus_raw_three_world": {
+        "role": "secondary",
+        "delta_auroc": 0.006262626262626303,
+        "source_group_ci95": [
+          -0.005492470479107806,
+          0.017345235787895763
+        ]
+      },
+      "no_direction_information_minus_raw_three_world": {
+        "role": "secondary",
+        "delta_auroc": 0.008790909090909182,
+        "source_group_ci95": [
+          -0.005295472776155474,
+          0.022984874498837873
+        ]
+      }
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "train_n": 1388,
+        "test_n": 347,
+        "test_groups": 84
+      },
+      {
+        "fold": 1,
+        "train_n": 1388,
+        "test_n": 347,
+        "test_groups": 84
+      },
+      {
+        "fold": 2,
+        "train_n": 1388,
+        "test_n": 347,
+        "test_groups": 85
+      },
+      {
+        "fold": 3,
+        "train_n": 1388,
+        "test_n": 347,
+        "test_groups": 85
+      },
+      {
+        "fold": 4,
+        "train_n": 1388,
+        "test_n": 347,
+        "test_groups": 86
+      }
+    ]
+  },
+  "runtime_drift_audit": {
+    "historical_qwen_frozen_metrics": {
+      "three_world_curve_hgb_auroc": 0.8137565656565656,
+      "ordinary_three_world_hgb_auroc": 0.7978020202020202,
+      "delta_auroc": 0.015954545454545443,
+      "source_group_ci95": [
+        0.004111487551295321,
+        0.026886857508585955
+      ]
+    },
+    "current_runtime_recheck_with_original_code": {
+      "three_world_curve_hgb_auroc": 0.8153919191919191,
+      "ordinary_three_world_hgb_auroc": 0.8046868686868686,
+      "delta_auroc": 0.01070505050505055,
+      "source_group_ci95": [
+        -0.0031852731224722764,
+        0.022966439878
+      ]
+    },
+    "checked_not_sufficient_to_restore_old_output": [
+      "NumPy 2.5.2 with scikit-learn 1.9.0",
+      "scikit-learn 1.9.1",
+      "single-thread OpenMP/BLAS"
+    ],
+    "old_artifacts_modified": false,
+    "decision": "do not mix historical Qwen metrics with current-runtime component ablations; report this recompute explicitly"
+  },
+  "interpretation": {
+    "overall_curve_block": "supported on DeepSeek [+0.0070,+0.0235]; direction is positive but CI crosses zero on same-runtime Qwen recompute",
+    "normalization": "not the source of AUROC gain: removing normalized slopes does not reduce DeepSeek AUROC and even raises its point estimate, though AUPRC falls; Qwen shows the opposite small AUROC change",
+    "curvature_asymmetry": "small positive unique contribution in both runs, but leave-one-family CI crosses zero in both",
+    "direction_information": "small positive unique contribution in both runs, but leave-one-family CI crosses zero in both",
+    "defensible_paper_claim": "the added audited response-curve representation, rather than any single selected subfamily, explains the overall gain; subfamily attributions remain diagnostic and underpowered"
+  }
+}

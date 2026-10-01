@@ -1,0 +1,35 @@
+{
+  "snapshot_version": "historical_96d_graph_feature_snapshot_v1",
+  "source_directory": "/home/gaoym/when-consensus-lies-v8-zero-call-20260925/v9_cst_pecr_zero_call/pecr_trd_delta_method_development_v3_20260926/v3_1/data",
+  "arrays": {
+    "X": {
+      "shape": [
+        2241,
+        4192
+      ],
+      "dtype": "float32",
+      "finite": true
+    },
+    "graph": {
+      "shape": [
+        2241,
+        96
+      ],
+      "dtype": "float32",
+      "finite": true
+    }
+  },
+  "rows": 2241,
+  "unique_item_ids": 2241,
+  "unique_source_groups": 453,
+  "row_index_alignment": true,
+  "schema_graph_dim": 96,
+  "schema_total_dim": 4192,
+  "schema_feature_names": 96,
+  "snapshot_contains_raw_text_or_responses": false,
+  "id_fields": [
+    "row_index",
+    "id",
+    "source_group"
+  ]
+}

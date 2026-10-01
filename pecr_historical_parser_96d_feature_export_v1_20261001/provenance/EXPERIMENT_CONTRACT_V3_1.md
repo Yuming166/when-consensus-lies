@@ -1,0 +1,31 @@
+# FinQA TRAIN PECR Methods Development — Contract V3.1
+
+Status: post-hoc exploratory method development; not independent confirmation. No new Qwen, API, or model-serving requests. Use only the sealed 2,241-item paired collection and the read-only local FinQA TRAIN dataset, plus CPU training. No old manifest, ledger, labels, scores, or canonical package is modified.
+
+## Immutable inputs and labels
+- Collection: 2,241 manifest rows, 453 source groups, 4,482 fixed original/mutated request slots. Verify byte hashes, hash chain, slot map, model identity, response hashes, and exact units/percent compatibility before use. A collection identity/hash failure halts; parser/unit misses remain in the cohort with reasons.
+- Label source: `/data/yuanrz/dataset/FinQA/dataset/train.json`, expected SHA-256 `49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6`, read-only. Before the checkpoint, only its byte hash/size may be read, not decoded. After the write-once checkpoint, read only row `id` and `qa.answer`; exact-ID join; duplicates, missing IDs, or unmatched cohort IDs halt. Never use `qa.program`, `qa.exe_ans`, or other fields.
+- Label parser: use frozen `src/label_policy.py`: numeric integer/decimal, comma-grouped, optional `$`, `%`, and accounting parentheses; strip formatting without percent rescaling. Correct iff absolute error `<= max(0.0001, 0.0001*abs(gold))`. Missing/non-numeric prediction or gold is unlabeled with a fixed reason. This is a project-specific free-text numeric rule, not FinQA's official execution scorer. Positive class for every metric is `error=1-correct`.
+
+## Prediction-time information and fold-local teacher targets
+- Student prediction inputs are restricted recursively to question; original pre/table/post text; original response answer string, unit, confidence, and support snippets; and fixed features derived only from those fields. Unknown keys are rejected. No gold program/answer/correctness, expected sign, transformed world, teacher score, fold ID, or source-group string enters X. Source group is used only for partitioning/bootstrap.
+- Correctness labels are TRAIN supervision. They are not prediction-time features.
+- Relation targets are generated on demand only for the current fit-row indices, from the immutable manifest's program-conditioned direction and paired ledger original/mutated parsed answers. A missing parse, incompatible exact unit/percent marker, or invalid sign masks only that auxiliary target; direct correctness loss remains active.
+- Fold-local fixed majority sign is computed from expected signs in that fit partition only (ties resolve to +1). `risk_fixed=1` when the observed answer delta is zero or opposes that majority direction. `TRD-Delta target = risk_relation - risk_fixed`, a numeric residual in {-1,0,+1}. No evaluation-fold teacher target is generated during fitting. Nondeployable teacher/majority diagnostic references may be calculated only after all OOF predictions are frozen.
+
+## Frozen features and models
+- Shared X: 4,096 stateless hashed word unigram/bigram features plus 96 deterministic typed numeric/text features; feature allow-list implementation frozen in `src/feature_builder.py`. Any scaling is fit on each fit partition only.
+- Outer evaluation: 5-fold GroupKFold by `source_group`; inner model selection: 4-fold GroupKFold within each outer training partition. Use frozen `split_manifest_prelabel.json`; verify group disjointness. Seed 20260926; deterministic fold/method offsets.
+- Inner selection metric: error-positive AUROC; tie-break by error AUPRC, then lower complexity / lexicographic candidate id. If all inner AUROCs undefined, choose the first least-complex candidate. Outer fold only evaluates the selected candidate.
+- Primary comparison: `TRD-Delta` vs same 16-hidden-unit direct MLP on identical outer OOF rows. Paired secondary diagnostics: raw relation-risk MTL, quality-weighted relation MTL, majority-only MTL, within-fit-fold shuffled relation MTL, 32-hidden direct capacity control, logistic regression, and HistGradientBoosting. All other methods are exploratory.
+- Fixed grids: direct MLP 16 hidden, L2 {1e-3,1e-2}; TRD-Delta 16 hidden, lambda {0.25,0.5,1.0} x L2 {1e-3,1e-2}; raw and quality-weighted relation MTL use same grid; majority-only and shuffled-relation MTL lambda 0.5 x same L2 grid; direct 32-hidden capacity control same L2 grid; logistic C {0.1,1,10}; HGB max_iter=80,max_leaf_nodes=15,min_samples_leaf=20. Neural: 60 epochs, batch 128, Adam lr 0.003. No early stopping on outer folds. No expanding grids after results.
+- Quality weights are label-blind and fixed: 0 unless both parses valid, units/percent compatible, operand span valid, finite positive construction delta, and aligned operand appears in original-side source; otherwise `clip(1/occurrences,0.1,1)`. Weights touch auxiliary losses only.
+
+## Small run, analysis, and reporting
+- Run synthetic unit tests and one small fit per model family before full training; report any implementation failure. Smoke data are synthetic only, not sampled from test labels.
+- Report all fixed candidates, failures, full-cohort supervised metrics, matched teacher-available cohort metrics, denominators/coverage, fold-wise and pooled OOF error AUROC/AUPRC, and 2,000 source-group paired bootstrap 95% percentile intervals (seed 20260926) for the primary AUROC and AUPRC differences. Preserve all attempted rows; do not silently filter. Missing labels are counted and their reasons reported.
+- Resource cap: CPU only, <=8 threads, one process, <=8 hours and <=24 GiB. No downloads/GPU/network/API. Candidate-level ordinary failures are logged and other candidates continue. Stop only for integrity, identity, leakage, permission, split, or resource-safety violation.
+- All work is exploratory and post-hoc on FinQA TRAIN and previously collected Qwen answers. No result may be presented as confirmatory or as an established advantage. Report negative results and no-gain/instability honestly.
+
+## Checkpoint
+Before decoding any FinQA TRAIN row, freeze this contract, all code/tests, input hashes, split hash, Python/dependency versions, and allow-list test results in `reports/PRE_LABEL_CHECKPOINT.json`; read back and verify its SHA-256. Only then write a UTC label-access receipt and extract labels.

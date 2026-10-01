@@ -1,0 +1,44 @@
+{
+  "version": "pecr_curve_component_ablation_v1_20261001",
+  "authorization": "offline existing-response analysis only; zero model/API calls",
+  "data": {
+    "labeled_features": "pecr_crossmodel_deepseek_v2_complete_20261001/data/parsed_deepseek_v2/labeled_features.jsonl",
+    "construction_manifest": "pecr_bidirectional_development_v1_20260928/data/construction_manifest_dev_train.jsonl",
+    "expected_sha256_labeled_features": "bb5a77f388c734592cfd84e2299a2a8d69393c8df7f94a04ecff70c295fe64d6",
+    "cohort": "existing strict DeepSeek V2 cohort without re-parsing or re-selection"
+  },
+  "fixed_evaluation": {
+    "n_expected": 2050,
+    "source_groups_expected": 448,
+    "positive_class": "original_incorrect=1",
+    "outer_split": "GroupKFold(5) on source_group, original row order",
+    "classifier": "HistGradientBoostingClassifier(max_iter=250,max_leaf_nodes=15,learning_rate=0.05,l2_regularization=1.0,random_state=20260928)",
+    "bootstrap": "source-group paired bootstrap, B=2000, seed=20260928"
+  },
+  "predefined_feature_sets": {
+    "full_curve": "graph + all 33 audited curve dimensions",
+    "raw_three_world": "graph + the original 17 response_features dimensions; same HGB architecture and calls",
+    "no_input_normalization": "full_curve minus relative_input_edit, positive_slope, negative_slope, positive_abs_slope, negative_abs_slope",
+    "no_curvature_asymmetry": "full_curve minus local_curvature, slope_asymmetry, slope_difference, slope_magnitude_asymmetry",
+    "no_direction_information": "full_curve minus positive_signed_delta, negative_signed_delta, positive_direction_pass, negative_direction_pass, expected_direction_up, positive_confidence_direction_agreement, negative_confidence_direction_agreement, signed_response_agreement"
+  },
+  "fixed_primary_comparisons": [
+    "full_curve_minus_raw_three_world",
+    "no_input_normalization_minus_full_curve",
+    "no_curvature_asymmetry_minus_full_curve",
+    "no_direction_information_minus_full_curve"
+  ],
+  "fixed_secondary_comparisons": [
+    "no_input_normalization_minus_raw_three_world",
+    "no_curvature_asymmetry_minus_raw_three_world",
+    "no_direction_information_minus_raw_three_world"
+  ],
+  "analysis_boundaries": {
+    "no_feature_search": true,
+    "no_threshold_tuning": true,
+    "no_hyperparameter_search": true,
+    "no_new_model_calls": true,
+    "no_565_item_holdout_access": true,
+    "interpretation": "mechanism diagnostics on repeatedly used development data; not a new independent confirmation"
+  }
+}

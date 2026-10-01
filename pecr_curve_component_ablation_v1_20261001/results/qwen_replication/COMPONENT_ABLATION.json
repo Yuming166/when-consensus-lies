@@ -1,0 +1,214 @@
+{
+  "version": "pecr_curve_component_ablation_v1_qwen_replication_20261001",
+  "feature_sha256": "d693fa9505f5ee26702d7d34bace5b00a5b80d418fcc4958cbb943e198e623b5",
+  "n": 1735,
+  "errors": 1375,
+  "correct": 360,
+  "groups": 424,
+  "feature_sets": {
+    "curve_names": [
+      "positive_response_delta",
+      "negative_response_delta",
+      "positive_abs_delta",
+      "negative_abs_delta",
+      "positive_signed_delta",
+      "negative_signed_delta",
+      "positive_direction_pass",
+      "negative_direction_pass",
+      "positive_flat",
+      "negative_flat",
+      "response_symmetry",
+      "positive_confidence_delta",
+      "negative_confidence_delta",
+      "all_units_same",
+      "all_units_nonempty",
+      "expected_direction_up",
+      "construction_absolute_delta",
+      "relative_input_edit",
+      "raw_input_edit",
+      "positive_slope",
+      "negative_slope",
+      "positive_abs_slope",
+      "negative_abs_slope",
+      "slope_asymmetry",
+      "local_curvature",
+      "slope_difference",
+      "positive_confidence_direction_agreement",
+      "negative_confidence_direction_agreement",
+      "positive_confidence_stable",
+      "negative_confidence_stable",
+      "slope_magnitude_asymmetry",
+      "signed_response_agreement",
+      "both_nonflat"
+    ],
+    "removed": {
+      "no_input_normalization": [
+        "negative_abs_slope",
+        "negative_slope",
+        "positive_abs_slope",
+        "positive_slope",
+        "relative_input_edit"
+      ],
+      "no_curvature_asymmetry": [
+        "local_curvature",
+        "slope_asymmetry",
+        "slope_difference",
+        "slope_magnitude_asymmetry"
+      ],
+      "no_direction_information": [
+        "expected_direction_up",
+        "negative_confidence_direction_agreement",
+        "negative_direction_pass",
+        "negative_signed_delta",
+        "positive_confidence_direction_agreement",
+        "positive_direction_pass",
+        "positive_signed_delta",
+        "signed_response_agreement"
+      ]
+    },
+    "dimensions": {
+      "full_curve": 129,
+      "raw_three_world": 113,
+      "no_input_normalization": 124,
+      "no_curvature_asymmetry": 125,
+      "no_direction_information": 121
+    }
+  },
+  "tests": {
+    "feature_hash_matches_frozen_v2": true,
+    "arrays_do_not_share_memory": true,
+    "raw_curve_first_17_match_excluding_documented_symmetry_swap": true,
+    "exact_removal_no_input_normalization": true,
+    "exact_removal_no_curvature_asymmetry": true,
+    "exact_removal_no_direction_information": true
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_n": 1388,
+      "test_n": 347,
+      "test_groups": 84
+    },
+    {
+      "fold": 1,
+      "train_n": 1388,
+      "test_n": 347,
+      "test_groups": 84
+    },
+    {
+      "fold": 2,
+      "train_n": 1388,
+      "test_n": 347,
+      "test_groups": 85
+    },
+    {
+      "fold": 3,
+      "train_n": 1388,
+      "test_n": 347,
+      "test_groups": 85
+    },
+    {
+      "fold": 4,
+      "train_n": 1388,
+      "test_n": 347,
+      "test_groups": 86
+    }
+  ],
+  "metrics": {
+    "full_curve": {
+      "auroc": 0.8153919191919191,
+      "auprc": 0.9352993942198584,
+      "coverage": 1.0,
+      "support_n": 1735
+    },
+    "raw_three_world": {
+      "auroc": 0.8046868686868686,
+      "auprc": 0.9338746158174038,
+      "coverage": 1.0,
+      "support_n": 1735
+    },
+    "no_input_normalization": {
+      "auroc": 0.8098707070707071,
+      "auprc": 0.9341130881523886,
+      "coverage": 1.0,
+      "support_n": 1735
+    },
+    "no_curvature_asymmetry": {
+      "auroc": 0.8109494949494949,
+      "auprc": 0.9330597344760012,
+      "coverage": 1.0,
+      "support_n": 1735
+    },
+    "no_direction_information": {
+      "auroc": 0.8134777777777777,
+      "auprc": 0.9356105580550146,
+      "coverage": 1.0,
+      "support_n": 1735
+    },
+    "full_curve_minus_raw_three_world": {
+      "role": "primary",
+      "delta_auroc": 0.01070505050505055,
+      "source_group_ci95": [
+        -0.0031852731224722764,
+        0.022966439920199633
+      ]
+    },
+    "no_input_normalization_minus_full_curve": {
+      "role": "primary",
+      "delta_auroc": -0.005521212121212038,
+      "source_group_ci95": [
+        -0.015230428889160194,
+        0.00416235483985556
+      ]
+    },
+    "no_curvature_asymmetry_minus_full_curve": {
+      "role": "primary",
+      "delta_auroc": -0.004442424242424248,
+      "source_group_ci95": [
+        -0.011152440916501105,
+        0.002634608695438662
+      ]
+    },
+    "no_direction_information_minus_full_curve": {
+      "role": "primary",
+      "delta_auroc": -0.0019141414141413682,
+      "source_group_ci95": [
+        -0.011535926387443296,
+        0.007808983373047504
+      ]
+    },
+    "no_input_normalization_minus_raw_three_world": {
+      "role": "secondary",
+      "delta_auroc": 0.005183838383838513,
+      "source_group_ci95": [
+        -0.00446669172916814,
+        0.014231194209070793
+      ]
+    },
+    "no_curvature_asymmetry_minus_raw_three_world": {
+      "role": "secondary",
+      "delta_auroc": 0.006262626262626303,
+      "source_group_ci95": [
+        -0.005492470479107806,
+        0.017345235787895763
+      ]
+    },
+    "no_direction_information_minus_raw_three_world": {
+      "role": "secondary",
+      "delta_auroc": 0.008790909090909182,
+      "source_group_ci95": [
+        -0.005295472776155474,
+        0.022984874498837873
+      ]
+    }
+  },
+  "protocol": {
+    "n_expected": 2050,
+    "source_groups_expected": 448,
+    "positive_class": "original_incorrect=1",
+    "outer_split": "GroupKFold(5) on source_group, original row order",
+    "classifier": "HistGradientBoostingClassifier(max_iter=250,max_leaf_nodes=15,learning_rate=0.05,l2_regularization=1.0,random_state=20260928)",
+    "bootstrap": "source-group paired bootstrap, B=2000, seed=20260928"
+  },
+  "model_calls": 0
+}

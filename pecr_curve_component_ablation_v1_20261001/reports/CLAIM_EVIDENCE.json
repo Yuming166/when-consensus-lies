@@ -1,0 +1,36 @@
+{
+  "claims": [
+    {
+      "claim": "The complete Curve block improves ranking over the same-budget raw three-world response features.",
+      "evidence": "DeepSeek: +0.0153 AUROC, CI [+0.0070,+0.0235]. Same-runtime Qwen recompute: +0.0107, CI [-0.0032,+0.0230].",
+      "status": "supported on DeepSeek; suggestive but not separately significant on current-runtime Qwen"
+    },
+    {
+      "claim": "Input normalization is the specific source of the gain.",
+      "evidence": "DeepSeek no-normalization: +0.0014 versus Full, CI [-0.0042,+0.0070]; AUPRC falls from .8653 to .8608. Qwen no-normalization: -0.0055 versus Full, CI [-0.0152,+0.0042].",
+      "status": "not supported"
+    },
+    {
+      "claim": "Curvature/asymmetry has unique incremental value.",
+      "evidence": "Removing it lowers Full AUROC by .0042 DeepSeek and .0044 Qwen, but both CIs cross zero.",
+      "status": "diagnostic, not individually confirmed"
+    },
+    {
+      "claim": "Direction information has unique incremental value.",
+      "evidence": "Removing it lowers Full AUROC by .0035 DeepSeek and .0019 Qwen, but both CIs cross zero.",
+      "status": "diagnostic, not individually confirmed"
+    },
+    {
+      "claim": "The original 17-dim three-world baseline is an unfair or weakened comparator.",
+      "evidence": "It uses the same 2,050/1,735 items, folds, labels, parser and HGB architecture.",
+      "status": "fair same-budget comparator"
+    },
+    {
+      "claim": "Ablations establish independent confirmation.",
+      "evidence": "Both cohorts come from FinQA dev_train and Qwen data was repeatedly used in prior development.",
+      "status": "not supported; development diagnostics only"
+    }
+  ],
+  "old_results_modified": false,
+  "new_model_calls": 0
+}

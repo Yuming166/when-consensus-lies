@@ -1,0 +1,19 @@
+{
+  "version": "pecr_curve_component_ablation_v1_qwen_replication_20261001",
+  "purpose": "Replicate the identical pre-specified DeepSeek component ablation on the frozen 1,735-item Qwen three-world cohort.",
+  "status": "post-hoc replication of the exact same finite feature-set definitions; no feature or configuration search",
+  "data": {
+    "labeled_features": "/home/gaoym/when-consensus-lies-v8-zero-call-20260925/v9_cst_pecr_zero_call/pecr_bidirectional_transformer_development_v1_20260928/data/parsed_v2/labeled_features.jsonl",
+    "construction_manifest": "/home/gaoym/when-consensus-lies-v8-zero-call-20260925/v9_cst_pecr_zero_call/pecr_bidirectional_development_v1_20260928/data/construction_manifest_dev_train.jsonl",
+    "expected_sha256_labeled_features": "d693fa9505f5ee26702d7d34bace5b00a5b80d418fcc4958cbb943e198e623b5",
+    "n_expected": 1735,
+    "source_groups_expected": 424
+  },
+  "feature_sets_and_statistics": "identical to PRE_REGISTERED_COMPONENT_ABLATION_V1.json",
+  "analysis_boundaries": {
+    "no_new_model_calls": true,
+    "no_feature_search": true,
+    "no_565_item_holdout_access": true,
+    "interpretation": "cross-response-family diagnostic replication within FinQA dev_train"
+  }
+}
