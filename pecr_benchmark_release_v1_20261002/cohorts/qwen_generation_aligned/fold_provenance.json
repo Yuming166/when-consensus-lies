@@ -1,0 +1,8 @@
+{
+  "status": "new post-hoc generation-aligned cohort GroupKFold",
+  "n_splits": 5,
+  "shuffle": false,
+  "assignment_inputs": "new eligible queue order and source_group only; no y/prediction inputs",
+  "original_freeze_time": null,
+  "not_old_1735_folds": true
+}

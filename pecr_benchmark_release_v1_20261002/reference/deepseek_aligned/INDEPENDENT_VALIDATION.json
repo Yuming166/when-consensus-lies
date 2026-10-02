@@ -1,0 +1,23 @@
+{
+  "all_passed": true,
+  "checks": {
+    "metadata_same_existing_native_and_strict": true,
+    "exact_six_method_keys": true,
+    "native_raw_full_exact_old": true,
+    "finite_probability_predictions": true,
+    "method_checkpoints_exact": true,
+    "complete_numeric_csv_matches_npz": true,
+    "independent_points_exact": true,
+    "fit_and_reuse_counts_exact": true,
+    "all_recorded_input_hashes_still_match": true,
+    "checksum_manifest_matches": true,
+    "new_controls_are_explicit_posthoc": true
+  },
+  "validation_additional_fits": 0,
+  "rows": 2050,
+  "groups": 448,
+  "error_1": 1257,
+  "correct_0": 793,
+  "OOF_npz_sha256": "ab111df8d1055ce932ecb35d9177e47cb98eeb67c196063852f5ec93047b4ba2",
+  "OOF_csv_sha256": "3e85534e9d95744add53ff20fcb21401a10b290ea0ea725facf72482ed73f87f"
+}

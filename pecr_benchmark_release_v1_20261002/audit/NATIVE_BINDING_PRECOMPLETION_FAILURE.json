@@ -1,0 +1,12 @@
+{
+  "status": "REJECTED_UNSTABLE_SOURCE_FINALIZATION",
+  "utc": "2026-10-01T19:03:01.503391+00:00",
+  "failed_guard": "sources_changed_during_native_audit",
+  "outputs_written": false,
+  "native_numeric_and_OOF_checks_completed_before_guard": true,
+  "TRAIN_gold_holdout_access": false,
+  "training_fits": 0,
+  "source_path_changed": "unknown_before_hashes_not_persisted_by_initial_attempt",
+  "possible_cause": "runtime/source metadata still being finalized; not certified which file",
+  "resolution": "wait for source finalization then re-run unchanged binding rules"
+}

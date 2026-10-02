@@ -1,0 +1,63 @@
+{
+  "access_scanner_script_sha256": "2cc268af05daee72a8911fc9c078685ee84542c7be9b23d8fe25a1e1e29dcc19",
+  "access_scanner_version": "selective_lexical_skip_v1_in_build_generation_labels.py",
+  "expected_train_sha256": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6",
+  "frozen_policy_sha256": "6790468e90a99f54570eb8ecdca0f49722c2aaa6f38de365aef766cbebf2f7bc",
+  "generation_equivalence_frozen_before_current_gold_decode": true,
+  "original_scanner_sha256": "89784e99253f5c26dd358b46c3568515e6e7f500bde5f82993e9085e4b1e061f",
+  "prelabel_generation_map_sha256": "86e6f9f5878a8ba6e8e16438b5b28b120c4c5a578b2e10c1838d1cfe1efd3118",
+  "source_base": "..",
+  "sources": [
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/src/label_policy.py",
+      "sha256": "6790468e90a99f54570eb8ecdca0f49722c2aaa6f38de365aef766cbebf2f7bc"
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/src/extract_train_labels.py",
+      "sha256": "89784e99253f5c26dd358b46c3568515e6e7f500bde5f82993e9085e4b1e061f"
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/src/extract_labels.py",
+      "sha256": "880bce5d2949cc452df02ea0d9fad0e9f9c5a9bf20e24d9931d61b072bcfdb88"
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/reports/PRE_LABEL_CHECKPOINT.json",
+      "sha256": "ff27a6625cfd6be7efd94653a2bb230a0eb5f452d0287795cf1200af1ed3240e"
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/reports/LABEL_ACCESS_RECEIPT.json",
+      "sha256": "9006cddc544471928711abb6224e435ce7650e776b1a3507ce7082d728ab59a8"
+    },
+    {
+      "path_relative_to_source_base": "pecr_strict_numeric_retrain_export_v1_20261001/attempted/attempted_frame.jsonl",
+      "sha256": "586f12cc81c4eda38ceb3e0292bb2c5e962c53596ad070811e1c01b8562b5477"
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/reports/labels_frozen.csv",
+      "sha256": "b7f0877daccc2f06cec8dab814c51aa6331f03b644433fee18cc7fd2ad932740"
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/data/student_inputs_allowlisted.jsonl",
+      "sha256": "512b219ab65081242a8304e2f55975e82751bdbd009c4248febe32087793ec96"
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/data/raw_ledger_sealed.jsonl",
+      "sha256": "8218b82ddf18eacc5673b97b3c88fad90114b6b97336a03948c704c9cbd3e0ae"
+    },
+    {
+      "path_relative_to_source_base": "pecr_bidirectional_development_v1_20260928/data/full_dev/raw_ledger_full_dev.jsonl",
+      "sha256": "dc8d2e8ed5ff5d4990d4a822c71115d6073af599b9a48e1d31884b2687b51470"
+    },
+    {
+      "path_relative_to_source_base": "pecr_qwen_generation_aligned_correction_v1_20261002/protocol/FIXED_CORRECTION_SPEC.json",
+      "sha256": "5a98038fd2782c474feb7adf9ff52044c8d97ec4314724b0ed0eeca15e53cbdb"
+    },
+    {
+      "path_relative_to_source_base": "pecr_qwen_generation_aligned_correction_v1_20261002/src/build_generation_labels.py",
+      "sha256": "2cc268af05daee72a8911fc9c078685ee84542c7be9b23d8fe25a1e1e29dcc19"
+    }
+  ],
+  "stage": "frozen_before_gold_decode",
+  "train_path": "/data/yuanrz/dataset/FinQA/dataset/train.json",
+  "utc": "2026-10-01T17:54:57.594754+00:00"
+}

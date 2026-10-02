@@ -1,0 +1,650 @@
+{
+  "version": "strict_numeric_retrain_export_v1",
+  "world_order": [
+    "original",
+    "positive",
+    "negative"
+  ],
+  "positive_label": "existing original error=1",
+  "G96": {
+    "dim": 96,
+    "feature_names": [
+      "question_number_count",
+      "pre_number_count",
+      "table_number_count",
+      "post_number_count",
+      "answer_number_count",
+      "all_log_abs_mean",
+      "all_log_abs_max",
+      "all_log_abs_std",
+      "all_negative_rate",
+      "all_decimal_rate",
+      "all_percent_rate",
+      "all_currency_rate",
+      "question_log_abs_mean",
+      "question_log_abs_max",
+      "question_log_abs_std",
+      "question_negative_rate",
+      "question_decimal_rate",
+      "question_percent_rate",
+      "question_currency_rate",
+      "evidence_log_abs_mean",
+      "evidence_log_abs_max",
+      "evidence_log_abs_std",
+      "evidence_negative_rate",
+      "evidence_decimal_rate",
+      "evidence_percent_rate",
+      "evidence_currency_rate",
+      "answer_log_abs_mean",
+      "answer_log_abs_max",
+      "answer_log_abs_std",
+      "answer_negative_rate",
+      "answer_decimal_rate",
+      "answer_percent_rate",
+      "answer_currency_rate",
+      "table_rows",
+      "table_cols",
+      "answer_number_count",
+      "answer_matches_evidence_count",
+      "question_evidence_number_overlap",
+      "question_evidence_token_jaccard",
+      "question_token_count",
+      "evidence_token_count",
+      "answer_token_count",
+      "answer_confidence",
+      "answer_unit_present",
+      "answer_percent_marker",
+      "answer_currency_marker",
+      "answer_negative_marker",
+      "evidence_numeric_density",
+      "question_numeric_density",
+      "table_numeric_density",
+      "pre_post_numeric_ratio",
+      "table_mean_numeric_per_row",
+      "table_rows_with_numbers",
+      "max_numbers_in_row",
+      "unique_numeric_values",
+      "repeated_numeric_values",
+      "answer_log_abs_value",
+      "answer_rank_in_evidence",
+      "answer_near_evidence_value",
+      "type_count_percent_question",
+      "type_count_currency_question",
+      "type_count_negative_question",
+      "type_count_decimal_question",
+      "type_count_percent_evidence",
+      "type_count_currency_evidence",
+      "type_count_negative_evidence",
+      "type_count_decimal_evidence",
+      "type_count_percent_answer",
+      "type_count_currency_answer",
+      "type_count_negative_answer",
+      "type_count_decimal_answer",
+      "table_numeric_cell_row_mean",
+      "table_numeric_cell_col_mean",
+      "table_numeric_cell_col_max",
+      "table_numeric_row_ratio",
+      "table_numeric_distinct_cols",
+      "evidence_pair_count_log",
+      "evidence_pairs_less_rate",
+      "evidence_pairs_equal_rate",
+      "evidence_pairs_greater_rate",
+      "question_has_increase_cue",
+      "question_has_decrease_cue",
+      "question_has_comparison_cue",
+      "question_has_percentage_cue",
+      "question_has_temporal_cue",
+      "evidence_has_years",
+      "evidence_has_financial_terms",
+      "evidence_has_comparison_cue",
+      "answer_has_percent_word",
+      "answer_has_currency_word",
+      "input_missing_pre",
+      "input_missing_post",
+      "input_missing_table",
+      "unit_is_percent",
+      "unit_is_currency",
+      "unit_is_other"
+    ],
+    "origin": "saved Qwen3.5-4B original-response graph; copied, never regenerated",
+    "column_identity": [
+      {
+        "index": 0,
+        "name": "question_number_count"
+      },
+      {
+        "index": 1,
+        "name": "pre_number_count"
+      },
+      {
+        "index": 2,
+        "name": "table_number_count"
+      },
+      {
+        "index": 3,
+        "name": "post_number_count"
+      },
+      {
+        "index": 4,
+        "name": "answer_number_count"
+      },
+      {
+        "index": 5,
+        "name": "all_log_abs_mean"
+      },
+      {
+        "index": 6,
+        "name": "all_log_abs_max"
+      },
+      {
+        "index": 7,
+        "name": "all_log_abs_std"
+      },
+      {
+        "index": 8,
+        "name": "all_negative_rate"
+      },
+      {
+        "index": 9,
+        "name": "all_decimal_rate"
+      },
+      {
+        "index": 10,
+        "name": "all_percent_rate"
+      },
+      {
+        "index": 11,
+        "name": "all_currency_rate"
+      },
+      {
+        "index": 12,
+        "name": "question_log_abs_mean"
+      },
+      {
+        "index": 13,
+        "name": "question_log_abs_max"
+      },
+      {
+        "index": 14,
+        "name": "question_log_abs_std"
+      },
+      {
+        "index": 15,
+        "name": "question_negative_rate"
+      },
+      {
+        "index": 16,
+        "name": "question_decimal_rate"
+      },
+      {
+        "index": 17,
+        "name": "question_percent_rate"
+      },
+      {
+        "index": 18,
+        "name": "question_currency_rate"
+      },
+      {
+        "index": 19,
+        "name": "evidence_log_abs_mean"
+      },
+      {
+        "index": 20,
+        "name": "evidence_log_abs_max"
+      },
+      {
+        "index": 21,
+        "name": "evidence_log_abs_std"
+      },
+      {
+        "index": 22,
+        "name": "evidence_negative_rate"
+      },
+      {
+        "index": 23,
+        "name": "evidence_decimal_rate"
+      },
+      {
+        "index": 24,
+        "name": "evidence_percent_rate"
+      },
+      {
+        "index": 25,
+        "name": "evidence_currency_rate"
+      },
+      {
+        "index": 26,
+        "name": "answer_log_abs_mean"
+      },
+      {
+        "index": 27,
+        "name": "answer_log_abs_max"
+      },
+      {
+        "index": 28,
+        "name": "answer_log_abs_std"
+      },
+      {
+        "index": 29,
+        "name": "answer_negative_rate"
+      },
+      {
+        "index": 30,
+        "name": "answer_decimal_rate"
+      },
+      {
+        "index": 31,
+        "name": "answer_percent_rate"
+      },
+      {
+        "index": 32,
+        "name": "answer_currency_rate"
+      },
+      {
+        "index": 33,
+        "name": "table_rows"
+      },
+      {
+        "index": 34,
+        "name": "table_cols"
+      },
+      {
+        "index": 35,
+        "name": "answer_number_count"
+      },
+      {
+        "index": 36,
+        "name": "answer_matches_evidence_count"
+      },
+      {
+        "index": 37,
+        "name": "question_evidence_number_overlap"
+      },
+      {
+        "index": 38,
+        "name": "question_evidence_token_jaccard"
+      },
+      {
+        "index": 39,
+        "name": "question_token_count"
+      },
+      {
+        "index": 40,
+        "name": "evidence_token_count"
+      },
+      {
+        "index": 41,
+        "name": "answer_token_count"
+      },
+      {
+        "index": 42,
+        "name": "answer_confidence"
+      },
+      {
+        "index": 43,
+        "name": "answer_unit_present"
+      },
+      {
+        "index": 44,
+        "name": "answer_percent_marker"
+      },
+      {
+        "index": 45,
+        "name": "answer_currency_marker"
+      },
+      {
+        "index": 46,
+        "name": "answer_negative_marker"
+      },
+      {
+        "index": 47,
+        "name": "evidence_numeric_density"
+      },
+      {
+        "index": 48,
+        "name": "question_numeric_density"
+      },
+      {
+        "index": 49,
+        "name": "table_numeric_density"
+      },
+      {
+        "index": 50,
+        "name": "pre_post_numeric_ratio"
+      },
+      {
+        "index": 51,
+        "name": "table_mean_numeric_per_row"
+      },
+      {
+        "index": 52,
+        "name": "table_rows_with_numbers"
+      },
+      {
+        "index": 53,
+        "name": "max_numbers_in_row"
+      },
+      {
+        "index": 54,
+        "name": "unique_numeric_values"
+      },
+      {
+        "index": 55,
+        "name": "repeated_numeric_values"
+      },
+      {
+        "index": 56,
+        "name": "answer_log_abs_value"
+      },
+      {
+        "index": 57,
+        "name": "answer_rank_in_evidence"
+      },
+      {
+        "index": 58,
+        "name": "answer_near_evidence_value"
+      },
+      {
+        "index": 59,
+        "name": "type_count_percent_question"
+      },
+      {
+        "index": 60,
+        "name": "type_count_currency_question"
+      },
+      {
+        "index": 61,
+        "name": "type_count_negative_question"
+      },
+      {
+        "index": 62,
+        "name": "type_count_decimal_question"
+      },
+      {
+        "index": 63,
+        "name": "type_count_percent_evidence"
+      },
+      {
+        "index": 64,
+        "name": "type_count_currency_evidence"
+      },
+      {
+        "index": 65,
+        "name": "type_count_negative_evidence"
+      },
+      {
+        "index": 66,
+        "name": "type_count_decimal_evidence"
+      },
+      {
+        "index": 67,
+        "name": "type_count_percent_answer"
+      },
+      {
+        "index": 68,
+        "name": "type_count_currency_answer"
+      },
+      {
+        "index": 69,
+        "name": "type_count_negative_answer"
+      },
+      {
+        "index": 70,
+        "name": "type_count_decimal_answer"
+      },
+      {
+        "index": 71,
+        "name": "table_numeric_cell_row_mean"
+      },
+      {
+        "index": 72,
+        "name": "table_numeric_cell_col_mean"
+      },
+      {
+        "index": 73,
+        "name": "table_numeric_cell_col_max"
+      },
+      {
+        "index": 74,
+        "name": "table_numeric_row_ratio"
+      },
+      {
+        "index": 75,
+        "name": "table_numeric_distinct_cols"
+      },
+      {
+        "index": 76,
+        "name": "evidence_pair_count_log"
+      },
+      {
+        "index": 77,
+        "name": "evidence_pairs_less_rate"
+      },
+      {
+        "index": 78,
+        "name": "evidence_pairs_equal_rate"
+      },
+      {
+        "index": 79,
+        "name": "evidence_pairs_greater_rate"
+      },
+      {
+        "index": 80,
+        "name": "question_has_increase_cue"
+      },
+      {
+        "index": 81,
+        "name": "question_has_decrease_cue"
+      },
+      {
+        "index": 82,
+        "name": "question_has_comparison_cue"
+      },
+      {
+        "index": 83,
+        "name": "question_has_percentage_cue"
+      },
+      {
+        "index": 84,
+        "name": "question_has_temporal_cue"
+      },
+      {
+        "index": 85,
+        "name": "evidence_has_years"
+      },
+      {
+        "index": 86,
+        "name": "evidence_has_financial_terms"
+      },
+      {
+        "index": 87,
+        "name": "evidence_has_comparison_cue"
+      },
+      {
+        "index": 88,
+        "name": "answer_has_percent_word"
+      },
+      {
+        "index": 89,
+        "name": "answer_has_currency_word"
+      },
+      {
+        "index": 90,
+        "name": "input_missing_pre"
+      },
+      {
+        "index": 91,
+        "name": "input_missing_post"
+      },
+      {
+        "index": 92,
+        "name": "input_missing_table"
+      },
+      {
+        "index": 93,
+        "name": "unit_is_percent"
+      },
+      {
+        "index": 94,
+        "name": "unit_is_currency"
+      },
+      {
+        "index": 95,
+        "name": "unit_is_other"
+      }
+    ],
+    "historical_duplicate_names": {
+      "answer_number_count": [
+        4,
+        35
+      ]
+    }
+  },
+  "raw17": {
+    "dim": 17,
+    "feature_names": [
+      "positive_response_delta",
+      "negative_response_delta",
+      "positive_abs_delta",
+      "negative_abs_delta",
+      "positive_signed_delta",
+      "negative_signed_delta",
+      "positive_direction_pass",
+      "negative_direction_pass",
+      "positive_flat",
+      "negative_flat",
+      "response_symmetry",
+      "positive_confidence_delta",
+      "negative_confidence_delta",
+      "all_units_same",
+      "all_units_nonempty",
+      "expected_direction_up",
+      "construction_absolute_delta"
+    ],
+    "origin": "exact response_features in actual saved strict training input"
+  },
+  "Curve33": {
+    "dim": 33,
+    "feature_names": [
+      "positive_response_delta",
+      "negative_response_delta",
+      "positive_abs_delta",
+      "negative_abs_delta",
+      "positive_signed_delta",
+      "negative_signed_delta",
+      "positive_direction_pass",
+      "negative_direction_pass",
+      "positive_flat",
+      "negative_flat",
+      "response_symmetry",
+      "positive_confidence_delta",
+      "negative_confidence_delta",
+      "all_units_same",
+      "all_units_nonempty",
+      "expected_direction_up",
+      "construction_absolute_delta",
+      "relative_input_edit",
+      "raw_input_edit",
+      "positive_slope",
+      "negative_slope",
+      "positive_abs_slope",
+      "negative_abs_slope",
+      "slope_asymmetry",
+      "local_curvature",
+      "slope_difference",
+      "positive_confidence_direction_agreement",
+      "negative_confidence_direction_agreement",
+      "positive_confidence_stable",
+      "negative_confidence_stable",
+      "slope_magnitude_asymmetry",
+      "signed_response_agreement",
+      "both_nonflat"
+    ],
+    "origin": "post-hoc exact arithmetic from saved numeric responses and saved operand old/new; checked against historical audited function"
+  },
+  "component_removed": {
+    "no_input_normalization": [
+      "negative_abs_slope",
+      "negative_slope",
+      "positive_abs_slope",
+      "positive_slope",
+      "relative_input_edit"
+    ],
+    "no_curvature_asymmetry": [
+      "local_curvature",
+      "slope_asymmetry",
+      "slope_difference",
+      "slope_magnitude_asymmetry"
+    ],
+    "no_direction_information": [
+      "expected_direction_up",
+      "negative_confidence_direction_agreement",
+      "negative_direction_pass",
+      "negative_signed_delta",
+      "positive_confidence_direction_agreement",
+      "positive_direction_pass",
+      "positive_signed_delta",
+      "signed_response_agreement"
+    ]
+  },
+  "component_dimensions": {
+    "full_curve": 129,
+    "raw_three_world": 113,
+    "no_input_normalization": 124,
+    "no_curvature_asymmetry": 125,
+    "no_direction_information": 121
+  },
+  "row_index": "zero-based strict training row order in cohorts; zero-based construction/graph row order in attempted frame",
+  "fold_assignment": "post-hoc reconstruction using GroupKFold(n_splits=5,shuffle=False), source_group only; no invented freeze timestamp; never subselect full-frame historical folds",
+  "labels": "copied existing saved labels only; error=1; no gold read or label recomputation",
+  "qwen_label_origin": "existing V3.2 paired-Qwen labels_frozen.csv reused by historical three-world training, not relabeled from three-world answers",
+  "unit_policy": "historical strip/lower/percentage->%/percent->%; no conversion, no extra unit exclusions",
+  "world_recorded_status": "unknown if absent in source ledger, including records with HTTP 200",
+  "offline_parser_status": "post-hoc execution of historical parse_resp on saved parsed_json; ok is observed parser validity, not an invented recorded success",
+  "feature_keys": [
+    "row_index",
+    "id",
+    "item_id",
+    "source_group",
+    "graph_row",
+    "G96",
+    "raw17",
+    "Curve33",
+    "direction",
+    "responses"
+  ],
+  "manifest_keys": [
+    "row_index",
+    "item_id",
+    "source_group",
+    "graph_row",
+    "operand_old",
+    "operand_new",
+    "operand_old_saved",
+    "operand_new_saved",
+    "absolute_delta",
+    "absolute_delta_saved",
+    "operation_index",
+    "argument_index",
+    "table_cell",
+    "program_conditioned_direction",
+    "construction_status",
+    "construction_flags",
+    "source_status",
+    "group_definition"
+  ],
+  "label_columns": [
+    "row_index",
+    "item_id",
+    "source_group",
+    "error",
+    "label_status",
+    "label_reason"
+  ],
+  "fold_columns": [
+    "row_index",
+    "item_id",
+    "source_group",
+    "outer_fold"
+  ]
+}

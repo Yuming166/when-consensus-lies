@@ -1,0 +1,11 @@
+{
+  "kind": "post-fit report compatibility error, not numerical failure",
+  "completed_fits": 70,
+  "main_OOFs_retained": true,
+  "native_new_fit_predictions_not_written_before_exception": true,
+  "exception": "KeyError: ('no_input_normalization','raw_three_world')",
+  "cause": "historical evaluation includes additional contrasts outside fixed release five contrast specification",
+  "correction": "do not recompute extra contrasts; record not_recomputed; persist fitted OOF before reporting",
+  "second_pass_reason": "verify complete repaired release entry in clean environment, same fixed parameters and data; no result selection",
+  "old_sources_or_reference_changed": false
+}

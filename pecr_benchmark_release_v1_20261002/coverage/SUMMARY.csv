@@ -1,0 +1,11 @@
+cohort,partition,rows,full_frame_denominator,requested_denominator
+qwen_generation_aligned,strict_parsed_labeled,2142,2241,2225
+qwen_generation_aligned,valid_unknown_label,52,2241,2225
+qwen_generation_aligned,invalid_unknown_label,24,2241,2225
+qwen_generation_aligned,unrequested_construction_exclusion,16,2241,2225
+qwen_generation_aligned,invalid_known_label,7,2241,2225
+deepseek_shared_qwen,strict_parsed_labeled,2050,2241,2225
+deepseek_shared_qwen,valid_unknown_label,54,2241,2225
+deepseek_shared_qwen,invalid_unknown_label,42,2241,2225
+deepseek_shared_qwen,invalid_known_label,79,2241,2225
+deepseek_shared_qwen,unrequested_construction_exclusion,16,2241,2225

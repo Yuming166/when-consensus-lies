@@ -1,0 +1,20 @@
+{
+  "cohorts": {
+    "deepseek_generation_aligned": {
+      "frame": "75118b80a99640590385d93eec630000b476db8d9bd09df5bf74484741b373ee",
+      "requested": "d20f0067462aef6ede71b1ea0675ad3b7df90154e0a83f458b3574d280aae2fe",
+      "strict_training_order": "ea79d94fdbc0019d5f357b61dae78205b3db399b348597175b5a412643a8ef35"
+    },
+    "deepseek_shared_qwen": {
+      "frame": "75118b80a99640590385d93eec630000b476db8d9bd09df5bf74484741b373ee",
+      "requested": "d20f0067462aef6ede71b1ea0675ad3b7df90154e0a83f458b3574d280aae2fe",
+      "strict_training_order": "ea79d94fdbc0019d5f357b61dae78205b3db399b348597175b5a412643a8ef35"
+    },
+    "qwen_generation_aligned": {
+      "frame": "75118b80a99640590385d93eec630000b476db8d9bd09df5bf74484741b373ee",
+      "requested": "d20f0067462aef6ede71b1ea0675ad3b7df90154e0a83f458b3574d280aae2fe",
+      "strict_training_order": "fdb02929b1b173aac43e30c11eac0410f43188677e4bb4b118b4e9dce9053499"
+    }
+  },
+  "hash_contract": "SHA256 UTF8 one item_id per line final newline; original row order"
+}

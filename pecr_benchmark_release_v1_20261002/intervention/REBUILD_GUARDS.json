@@ -1,0 +1,50 @@
+{
+  "all_passed": true,
+  "clean_environment_cli_help_passed": true,
+  "clean_environment_complete_hash_audit_passed": true,
+  "lexical_selected_field_test": {
+    "gold_program_exe_answer_sentinel_values_decoded": false,
+    "json_loads_called_only_for_structural_keys_and_selected_leaves": true,
+    "selected_paths": [
+      "id",
+      "qa.question",
+      "pre_text",
+      "post_text",
+      "table"
+    ]
+  },
+  "network_or_model_client_imported": false,
+  "new_model_override_changes_only_model_and_request_hash": true,
+  "original_source_hash_checks_after_full_rebuild": {
+    "deepseek_request_builder": true,
+    "deepseek_saved_ledger": true,
+    "frozen_original_allowlisted_inputs": true,
+    "negative_formatter": true,
+    "numeric_projection": true,
+    "numeric_projection_access_receipt": true,
+    "positive_formatter": true,
+    "qwen_request_builder": true,
+    "qwen_saved_ledger": true
+  },
+  "private_directory_guard_rejections": {
+    "existing_outside_release": "refuse_existing_private_input_directory",
+    "inside_release": "private_input_directory_must_be_outside_release",
+    "relative_path": "private_input_directory_must_be_absolute"
+  },
+  "private_text_export_executed_this_acceptance_run": false,
+  "python_version": "3.13.13",
+  "saved_profiles_unmodified_by_new_model_override": true,
+  "schema_version": "pecr_rebuild_guards_v1",
+  "script_imports": [
+    "__future__",
+    "argparse",
+    "collections",
+    "decimal",
+    "datetime",
+    "hashlib",
+    "json",
+    "pathlib",
+    "re"
+  ],
+  "script_sha256": "2e8e462c755b7305d891ce72047eb803797b6e6f297950263c5afbde3e115c6e"
+}

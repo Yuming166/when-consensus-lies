@@ -1,0 +1,2862 @@
+{
+  "status": "FINAL_ACCEPTANCE_REVIEW_PASSED",
+  "fit_count": 0,
+  "gold_ledger_holdout_checkpoint_api_access": false,
+  "observed_versions": {
+    "python": "3.13.13",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "method_order": [
+    "graph_only",
+    "raw_three_world",
+    "full_curve",
+    "no_input_normalization",
+    "no_curvature_asymmetry",
+    "no_direction_information"
+  ],
+  "method_dimensions": {
+    "graph_only": 96,
+    "full_curve": 129,
+    "raw_three_world": 113,
+    "no_input_normalization": 124,
+    "no_curvature_asymmetry": 125,
+    "no_direction_information": 121
+  },
+  "component_removed": {
+    "no_input_normalization": [
+      "negative_abs_slope",
+      "negative_slope",
+      "positive_abs_slope",
+      "positive_slope",
+      "relative_input_edit"
+    ],
+    "no_curvature_asymmetry": [
+      "local_curvature",
+      "slope_asymmetry",
+      "slope_difference",
+      "slope_magnitude_asymmetry"
+    ],
+    "no_direction_information": [
+      "expected_direction_up",
+      "negative_confidence_direction_agreement",
+      "negative_direction_pass",
+      "negative_signed_delta",
+      "positive_confidence_direction_agreement",
+      "positive_direction_pass",
+      "positive_signed_delta",
+      "signed_response_agreement"
+    ]
+  },
+  "G96_duplicate_names_preserved": {
+    "answer_number_count": [
+      4,
+      35
+    ]
+  },
+  "DS_graph_reference": {
+    "source": "cohorts/deepseek_v2_component/reference/HISTORICAL_CURVE_HGB_AUDITED_OOF.npz in prior numeric export",
+    "field": "graph_only",
+    "same_y_group_order": true,
+    "historical_raw_curve_match_current_component_exact": true,
+    "same_recipe_groupkfold5_HGB250_leaf15_lr005_l2_1_seed20260928": true,
+    "graph_only_same_runtime_refit_proof_before_release": "not retained; pending fixed clean-environment fit",
+    "auroc": 0.7672062929310866,
+    "auprc": 0.8186421247766269,
+    "graph_only_same_runtime_refit_proof_after_release": "FIRST_PASS_DEEPSEEK_EXACT.json and repaired complete70fit OOF; exact prediction match"
+  },
+  "native_npz_required_fields": [
+    "item_ids",
+    "groups",
+    "G96_native"
+  ],
+  "native_reference_required_fields": [
+    "item_ids",
+    "groups",
+    "y",
+    "outer_fold",
+    "shared_G_curve",
+    "shared_G_raw",
+    "native_G_curve",
+    "native_G_raw"
+  ],
+  "native_shared_aliases": {
+    "shared_G_curve": "deepseek_shared/full_curve",
+    "shared_G_raw": "deepseek_shared/raw_three_world"
+  },
+  "planned_clean_fit_budget": {
+    "qwen_generation_aligned": 30,
+    "deepseek_shared_qwen": 30,
+    "deepseek_generation_aligned": 30,
+    "native_source_alias_extra_fits": 0,
+    "total": 90
+  },
+  "coverage_required": {
+    "full": 2241,
+    "requested": 2225,
+    "unrequested": 16,
+    "qwen_strict": 2142,
+    "requested_non_strict": 83,
+    "full_non_strict": 99,
+    "requested_exclusion_partitions": {
+      "valid_unknown_label": 52,
+      "invalid_known_label": 7,
+      "invalid_unknown_label": 24
+    }
+  },
+  "source_hashes_before": {
+    "pecr_qwen_generation_aligned_correction_v1_20261002/src/prepare_and_refit.py": "5593d047ef513750fe3d5b382a93960ead03d0729b9540374a298c9edd482c1c",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/src/evaluation.py": "34d510043738c0ea4e24c1798dbfdefdb65d9c4b8fb19073e075ab08f62149f8",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/protocol/HGB_PARAMS.json": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/data/schema.json": "dc10d0cb2ecc7f9cb99e90cb6852632a815afa10f1147f2b34893096c5f86e41",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/data/strict/features_label_blind.jsonl": "436551ff0d3b05e09f546b988c4a5e167ba87b2cee6e4eac6fbe46c51bd504ed",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/data/strict/manifest.jsonl": "0f415b851d9c7d804e3969cba002a1e9fb362fcb409c81f41f344e8b71e05a8b",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/data/strict/labels.csv": "51fca6abd653ff4525bc2cc50d5de2ef3e1784bb6afcd28f66b04e98c0508539",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/data/strict/folds.csv": "ca0a106480005dfff23b727b9d219c09685008b699fb4f56ab0bf9c37ae04b20",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/results/refit/OOF.npz": "58451523fb527d58239febfd17f69f93f0d8ff2afcb68f237f4b79393dccd14e",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/results/refit/RUNTIME.json": "f6d5d9f9a0cc757671fc79a4980e1aea70515ef9e0ef0869a794d07fa3b52d84",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/audit/QUEUE_FLOW.json": "528df72a79a19080db1d9a654a78c475b76367f53701c7923d036a8bc299e1bc",
+    "pecr_strict_numeric_retrain_export_v1_20261001/src/numeric.py": "1b37344da387839286ddb90e9123aaf12fd49c25359b9217295d62e0477f051b",
+    "pecr_strict_numeric_retrain_export_v1_20261001/schema.json": "dee9e836785b9a37edb1585dbf728801bf0a2ddee6900c081bf6cfca4e379d86",
+    "pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/features_label_blind.jsonl": "a41953b1f5f3e1814359f41ea71ed8a418256061dea4e9b7a6e2ced19deea8fa",
+    "pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/manifest.jsonl": "00f4417201267a7078cbfbfa78ed451dd88e8e4b10a6abf7b3b0807a297ed400",
+    "pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/labels.csv": "ddbb65084bda19c152a0b654839e8d1d940714c3e2662ea6609fed3d626fc347",
+    "pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/folds.csv": "685832c802f87e8b3976f4f3a60b335a4e0f8efd33174a11b75f5b5e3d2dc2b4",
+    "pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/reference/COMPONENT_ABLATION_OOF.npz": "19e05818f282bfedca1b382dcc51262dc4f39dbfb623503287265df94a9140ee",
+    "pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/reference/HISTORICAL_CURVE_HGB_AUDITED_OOF.npz": "00c2f4b78bf41faa9034c263670dfce42416c280282036e26f71fba62a181928",
+    "pecr_oof_sensitivity_native_g_v1_20261002/src/retrain_native_numeric.py": "a8409c6396f548e5699dae1a4eef04da2797b1228c0c9bea83c95d66342db3d2",
+    "pecr_oof_sensitivity_native_g_v1_20261002/results/native_g/G96_NATIVE.npz": "74477ddc99551d16815ece5db27f1eb3773942a63ef83668618bafd2de0a8c7c",
+    "pecr_oof_sensitivity_native_g_v1_20261002/results/native_g/G96_SCHEMA.json": "a69f454b473d596f15e1c66ee64c69b2a0e5a6a613d59a44be07770fc354081a",
+    "pecr_oof_sensitivity_native_g_v1_20261002/results/native_g/OOF.npz": "3ed693b96991c740853187d75f6f119b3d34d821897f91298f458e952cbd10e0",
+    "pecr_oof_sensitivity_native_g_v1_20261002/results/native_g/RUNTIME.json": "59c0bb1026c5d6a46d4cc852999a2a20399d7e11ec55cda70ad5157f2491a273"
+  },
+  "pending_checks": [],
+  "isolated_numeric_checks": {
+    "all_passed": true,
+    "temporary_parent": "/tmp/pecr-portability-review-20261002-nkgs3jru",
+    "python_environment": "fresh pinned venv without system-site",
+    "no_old_sibling_directories_present": true,
+    "no_dataset_or_ledger_files_present": true,
+    "only_copied_release_core_available": true,
+    "fits": 0,
+    "default_root_receipt": {
+      "arguments": [
+        "-I",
+        "/tmp/pecr-portability-review-20261002-nkgs3jru/moved-package/src/benchmark.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "receipt": {
+        "all_passed": true,
+        "cohorts": {
+          "qwen_generation_aligned": {
+            "n": 2142,
+            "groups": 452,
+            "error_1": 1699,
+            "correct_0": 443,
+            "error_prevalence": 0.7931839402427637,
+            "coverage_of_strict": 1.0,
+            "coverage_of_requested": 0.9626966292134832,
+            "coverage_of_full_frame": 0.9558232931726908,
+            "fold_support": [
+              {
+                "fold": 0,
+                "n": 429,
+                "groups": 90,
+                "error_1": 336,
+                "correct_0": 93
+              },
+              {
+                "fold": 1,
+                "n": 429,
+                "groups": 91,
+                "error_1": 334,
+                "correct_0": 95
+              },
+              {
+                "fold": 2,
+                "n": 428,
+                "groups": 90,
+                "error_1": 337,
+                "correct_0": 91
+              },
+              {
+                "fold": 3,
+                "n": 428,
+                "groups": 90,
+                "error_1": 338,
+                "correct_0": 90
+              },
+              {
+                "fold": 4,
+                "n": 428,
+                "groups": 91,
+                "error_1": 354,
+                "correct_0": 74
+              }
+            ],
+            "matrix_dimensions": {
+              "graph_only": [
+                2142,
+                96
+              ],
+              "raw_three_world": [
+                2142,
+                113
+              ],
+              "full_curve": [
+                2142,
+                129
+              ],
+              "no_input_normalization": [
+                2142,
+                124
+              ],
+              "no_curvature_asymmetry": [
+                2142,
+                125
+              ],
+              "no_direction_information": [
+                2142,
+                121
+              ]
+            }
+          },
+          "deepseek_shared_qwen": {
+            "n": 2050,
+            "groups": 448,
+            "error_1": 1257,
+            "correct_0": 793,
+            "error_prevalence": 0.6131707317073171,
+            "coverage_of_strict": 1.0,
+            "coverage_of_requested": 0.9213483146067416,
+            "coverage_of_full_frame": 0.9147701918786256,
+            "fold_support": [
+              {
+                "fold": 0,
+                "n": 410,
+                "groups": 88,
+                "error_1": 232,
+                "correct_0": 178
+              },
+              {
+                "fold": 1,
+                "n": 410,
+                "groups": 89,
+                "error_1": 263,
+                "correct_0": 147
+              },
+              {
+                "fold": 2,
+                "n": 410,
+                "groups": 90,
+                "error_1": 244,
+                "correct_0": 166
+              },
+              {
+                "fold": 3,
+                "n": 410,
+                "groups": 90,
+                "error_1": 241,
+                "correct_0": 169
+              },
+              {
+                "fold": 4,
+                "n": 410,
+                "groups": 91,
+                "error_1": 277,
+                "correct_0": 133
+              }
+            ],
+            "matrix_dimensions": {
+              "graph_only": [
+                2050,
+                96
+              ],
+              "raw_three_world": [
+                2050,
+                113
+              ],
+              "full_curve": [
+                2050,
+                129
+              ],
+              "no_input_normalization": [
+                2050,
+                124
+              ],
+              "no_curvature_asymmetry": [
+                2050,
+                125
+              ],
+              "no_direction_information": [
+                2050,
+                121
+              ]
+            }
+          }
+        },
+        "checks": {
+          "unique_IDs_and_exact_row_order": true,
+          "label_group_fold_reference_alignment": true,
+          "group_disjoint_and_group_only_reconstructed_folds": true,
+          "exact_named_feature_column_order_and_dimensions": true,
+          "finite_pairwise_nonsharing_writable_matrices": true,
+          "Raw17_equals_Curve33_prefix_and_exact_arithmetic": true,
+          "world_raw_curve_have_identical_ID_coverage": true,
+          "saved_native_shared_aliases_equal_primary_OOF": true
+        },
+        "model_API_calls": 0,
+        "corpus_gold_ledger_checkpoint_inputs": false,
+        "fits": 0
+      },
+      "stderr": ""
+    },
+    "explicit_root_receipt": {
+      "arguments": [
+        "-I",
+        "/tmp/pecr-portability-review-20261002-nkgs3jru/launcher-only/src/benchmark.py",
+        "--root",
+        "/tmp/pecr-portability-review-20261002-nkgs3jru/moved-package",
+        "validate"
+      ],
+      "exit_code": 0,
+      "receipt": {
+        "all_passed": true,
+        "cohorts": {
+          "qwen_generation_aligned": {
+            "n": 2142,
+            "groups": 452,
+            "error_1": 1699,
+            "correct_0": 443,
+            "error_prevalence": 0.7931839402427637,
+            "coverage_of_strict": 1.0,
+            "coverage_of_requested": 0.9626966292134832,
+            "coverage_of_full_frame": 0.9558232931726908,
+            "fold_support": [
+              {
+                "fold": 0,
+                "n": 429,
+                "groups": 90,
+                "error_1": 336,
+                "correct_0": 93
+              },
+              {
+                "fold": 1,
+                "n": 429,
+                "groups": 91,
+                "error_1": 334,
+                "correct_0": 95
+              },
+              {
+                "fold": 2,
+                "n": 428,
+                "groups": 90,
+                "error_1": 337,
+                "correct_0": 91
+              },
+              {
+                "fold": 3,
+                "n": 428,
+                "groups": 90,
+                "error_1": 338,
+                "correct_0": 90
+              },
+              {
+                "fold": 4,
+                "n": 428,
+                "groups": 91,
+                "error_1": 354,
+                "correct_0": 74
+              }
+            ],
+            "matrix_dimensions": {
+              "graph_only": [
+                2142,
+                96
+              ],
+              "raw_three_world": [
+                2142,
+                113
+              ],
+              "full_curve": [
+                2142,
+                129
+              ],
+              "no_input_normalization": [
+                2142,
+                124
+              ],
+              "no_curvature_asymmetry": [
+                2142,
+                125
+              ],
+              "no_direction_information": [
+                2142,
+                121
+              ]
+            }
+          },
+          "deepseek_shared_qwen": {
+            "n": 2050,
+            "groups": 448,
+            "error_1": 1257,
+            "correct_0": 793,
+            "error_prevalence": 0.6131707317073171,
+            "coverage_of_strict": 1.0,
+            "coverage_of_requested": 0.9213483146067416,
+            "coverage_of_full_frame": 0.9147701918786256,
+            "fold_support": [
+              {
+                "fold": 0,
+                "n": 410,
+                "groups": 88,
+                "error_1": 232,
+                "correct_0": 178
+              },
+              {
+                "fold": 1,
+                "n": 410,
+                "groups": 89,
+                "error_1": 263,
+                "correct_0": 147
+              },
+              {
+                "fold": 2,
+                "n": 410,
+                "groups": 90,
+                "error_1": 244,
+                "correct_0": 166
+              },
+              {
+                "fold": 3,
+                "n": 410,
+                "groups": 90,
+                "error_1": 241,
+                "correct_0": 169
+              },
+              {
+                "fold": 4,
+                "n": 410,
+                "groups": 91,
+                "error_1": 277,
+                "correct_0": 133
+              }
+            ],
+            "matrix_dimensions": {
+              "graph_only": [
+                2050,
+                96
+              ],
+              "raw_three_world": [
+                2050,
+                113
+              ],
+              "full_curve": [
+                2050,
+                129
+              ],
+              "no_input_normalization": [
+                2050,
+                124
+              ],
+              "no_curvature_asymmetry": [
+                2050,
+                125
+              ],
+              "no_direction_information": [
+                2050,
+                121
+              ]
+            }
+          }
+        },
+        "checks": {
+          "unique_IDs_and_exact_row_order": true,
+          "label_group_fold_reference_alignment": true,
+          "group_disjoint_and_group_only_reconstructed_folds": true,
+          "exact_named_feature_column_order_and_dimensions": true,
+          "finite_pairwise_nonsharing_writable_matrices": true,
+          "Raw17_equals_Curve33_prefix_and_exact_arithmetic": true,
+          "world_raw_curve_have_identical_ID_coverage": true,
+          "saved_native_shared_aliases_equal_primary_OOF": true
+        },
+        "model_API_calls": 0,
+        "corpus_gold_ledger_checkpoint_inputs": false,
+        "fits": 0
+      },
+      "stderr": ""
+    },
+    "explicit_root_test": "launcher-only location has no cohorts or reference; --root targets moved package",
+    "copied_core_hashes": {
+      "src/benchmark.py": "0e0b89b5e31d9d5eae68bda032356f17cfc3e4567bb9330cc801b7ed3c775a2e",
+      "src/rebuild_worlds.py": "2e8e462c755b7305d891ce72047eb803797b6e6f297950263c5afbde3e115c6e",
+      "src/numeric.py": "0d36a006598fe636ca29f44ad14c08f7c8ad5300908d32dd8cd804199dac1ec9",
+      "src/audit_generation_binding.py": "0c0f7b8cad8cbaa71a87dda0e50875770fe8eaf8da9329f2071afc30a3ceec56",
+      "src/evaluation.py": "34d510043738c0ea4e24c1798dbfdefdb65d9c4b8fb19073e075ab08f62149f8",
+      "protocol/RELEASE_SPEC.json": "77a7ff668593e757287360027713c91469779201db1cef4d6a94957b7974e545",
+      "protocol/HGB_PARAMS.json": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482",
+      "protocol/METHODS.json": "b6b435e440d36c787190a64393e02cc68db2a7eef313313747bb0b355d65b35d",
+      "reference/qwen/OOF.npz": "58451523fb527d58239febfd17f69f93f0d8ff2afcb68f237f4b79393dccd14e",
+      "reference/qwen/labels_current.csv": "9309604723f563a3f74b67540c0c70ed7183d331657fe7cb4b532b24909665dc",
+      "reference/qwen/METRICS.json": "6d2908efb42bbd5c6b7182616400086a7fd8bafc615f8e09e4afee923d15830f",
+      "reference/qwen/HGB_PARAMS.json": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482",
+      "reference/qwen/generation_map.jsonl": "86e6f9f5878a8ba6e8e16438b5b28b120c4c5a578b2e10c1838d1cfe1efd3118",
+      "reference/qwen/FEATURE_SOURCE_HASHES.json": "3f1d0cdce8ac2a4215c97faf70642ffbfef20c92ea62c033e44440b317cd7365",
+      "reference/qwen/FIXED_CORRECTION_SPEC.json": "5a98038fd2782c474feb7adf9ff52044c8d97ec4314724b0ed0eeca15e53cbdb",
+      "reference/qwen/LABEL_ACCESS_RECEIPT.json": "87aded394aa7a305b996409b7d00c07cbdd25af82b81eba6fe016848741af3d7",
+      "reference/qwen/RUNTIME.json": "f6d5d9f9a0cc757671fc79a4980e1aea70515ef9e0ef0869a794d07fa3b52d84",
+      "reference/qwen/LABEL_SOURCE_HASHES.json": "22bc5ae33afd89567eed5323e518359c16704e0fceacf16362a2f50142ab923e",
+      "reference/qwen/FEATURE_AUDIT.json": "7b2ece2e3fa1edbd7632ef70dbab1d382fa9f06aecce64618fbdde2b543418f8",
+      "reference/native/OOF.npz": "3ed693b96991c740853187d75f6f119b3d34d821897f91298f458e952cbd10e0",
+      "reference/native/METRICS.json": "43864c396089837cd5e161c6d62ff9b6083fedd596b0d37fdd9bf898f9218957",
+      "reference/native/SOURCE_HASHES.json": "021cbcf839136a2d21d20d0181a1c54b221296e98a0717484ab5feddb79eca59",
+      "reference/native/NATIVE_G_AUDIT.json": "82400e01817b5c966b8ca9b7f28c4a2ebf985d1b96d5cac8314bf7d361c43932",
+      "reference/native/RUNTIME.json": "59c0bb1026c5d6a46d4cc852999a2a20399d7e11ec55cda70ad5157f2491a273",
+      "reference/native/G96_NATIVE.npz": "74477ddc99551d16815ece5db27f1eb3773942a63ef83668618bafd2de0a8c7c",
+      "reference/native/G96_SCHEMA.json": "a69f454b473d596f15e1c66ee64c69b2a0e5a6a613d59a44be07770fc354081a",
+      "reference/deepseek/OOF.npz": "3775834dd77f42c0c8bdb06c19f701589ff3b1ba12f658c728e47aa518c549d4",
+      "reference/deepseek/ORIGINAL_SOURCE_HASHES.json": "fb35b1f25c1c54ac9b131b9fb1f4934d04ca5241da17cb13f7acf91f1e3f35cb",
+      "reference/deepseek/PRIMARY_AND_ABLATION.json": "b138ec8cff2f7623bfbd7c5127ed472b9e732df36f7113824c40a43d2f250edd",
+      "reference/deepseek/RUNTIME.json": "cbe276484410cae60d767be37817b8ab93d52d8e141ac62ebf127cfa10fd4163",
+      "cohorts/qwen_generation_aligned/folds.csv": "ca0a106480005dfff23b727b9d219c09685008b699fb4f56ab0bf9c37ae04b20",
+      "cohorts/qwen_generation_aligned/features_label_blind.jsonl": "436551ff0d3b05e09f546b988c4a5e167ba87b2cee6e4eac6fbe46c51bd504ed",
+      "cohorts/qwen_generation_aligned/manifest.jsonl": "0f415b851d9c7d804e3969cba002a1e9fb362fcb409c81f41f344e8b71e05a8b",
+      "cohorts/qwen_generation_aligned/fold_provenance.json": "e2a3dd73bea0d0d09319c1a40f0a78eeddb7942061a78dbe8524da907853e3f0",
+      "cohorts/qwen_generation_aligned/labels.csv": "51fca6abd653ff4525bc2cc50d5de2ef3e1784bb6afcd28f66b04e98c0508539",
+      "cohorts/qwen_generation_aligned/schema.json": "6b4d07ff1e761b13ef1b8cb2e9c658c52e13de77ea14be8ec10f8649cb43c951",
+      "cohorts/deepseek_shared_qwen/folds.csv": "685832c802f87e8b3976f4f3a60b335a4e0f8efd33174a11b75f5b5e3d2dc2b4",
+      "cohorts/deepseek_shared_qwen/features_label_blind.jsonl": "a41953b1f5f3e1814359f41ea71ed8a418256061dea4e9b7a6e2ced19deea8fa",
+      "cohorts/deepseek_shared_qwen/manifest.jsonl": "00f4417201267a7078cbfbfa78ed451dd88e8e4b10a6abf7b3b0807a297ed400",
+      "cohorts/deepseek_shared_qwen/fold_provenance.json": "e49fd88d59430ca31fa8362b62b3adcf05dfb92ae67d6d90b2a2bc8ec6136a56",
+      "cohorts/deepseek_shared_qwen/labels.csv": "ddbb65084bda19c152a0b654839e8d1d940714c3e2662ea6609fed3d626fc347",
+      "cohorts/deepseek_shared_qwen/schema.json": "9897b6e6a8422142e04a2f5603af308e02bfd4f28d532073996fa6990ee81e42",
+      "src/__pycache__/numeric.cpython-313.pyc": "92e3ff07b9a030e88642e30177684f2341fcd2dcb15926dcec1ed90cbd768d9e",
+      "src/__pycache__/evaluation.cpython-313.pyc": "73b19258d5e754829cb6635392271096032b92040d4a1c348fc5d9448bec4e7c"
+    }
+  },
+  "runtime_source_dependency_review": {
+    "benchmark_numeric_evaluation_have_hardcoded_private_source_inputs": false,
+    "runtime_inputs": "local cohorts/reference/protocol, optional local coverage/seal only",
+    "archival_metadata_has_original_absolute_paths": "provenance receipts only; not read as runtime inputs",
+    "offline_prompt_reconstruction": "separate opt-in rebuild_worlds entry, not imported by benchmark"
+  },
+  "canonical_coverage_independent_validation": {
+    "all_passed": true,
+    "checked_utc": "2026-10-01T19:06:03.671192+00:00",
+    "checks": {
+      "total_three_full_frames_6723": true,
+      "exact_three_cohort_names": true,
+      "qwen_generation_aligned_full_ID_unique_and_original_frame_order": true,
+      "qwen_generation_aligned_requested_2225_unrequested_16": true,
+      "qwen_generation_aligned_fixed_exclusion_partitions": true,
+      "qwen_generation_aligned_strict_exact_ID_y_group_order": true,
+      "qwen_generation_aligned_unknown_unrequested_not_promoted_to_success": true,
+      "qwen_generation_aligned_strict_world_numeric_hash_equals_label_hash": true,
+      "qwen_generation_aligned_world_status_summary_recomputed": true,
+      "qwen_generation_aligned_strict_unit_summary_recomputed": true,
+      "deepseek_shared_qwen_full_ID_unique_and_original_frame_order": true,
+      "deepseek_shared_qwen_requested_2225_unrequested_16": true,
+      "deepseek_shared_qwen_fixed_exclusion_partitions": true,
+      "deepseek_shared_qwen_strict_exact_ID_y_group_order": true,
+      "deepseek_shared_qwen_unknown_unrequested_not_promoted_to_success": true,
+      "deepseek_shared_qwen_strict_world_numeric_hash_equals_label_hash": true,
+      "deepseek_shared_qwen_world_status_summary_recomputed": true,
+      "deepseek_shared_qwen_strict_unit_summary_recomputed": true,
+      "deepseek_generation_aligned_full_ID_unique_and_original_frame_order": true,
+      "deepseek_generation_aligned_requested_2225_unrequested_16": true,
+      "deepseek_generation_aligned_fixed_exclusion_partitions": true,
+      "deepseek_generation_aligned_strict_exact_ID_y_group_order": true,
+      "deepseek_generation_aligned_unknown_unrequested_not_promoted_to_success": true,
+      "deepseek_generation_aligned_strict_world_numeric_hash_equals_label_hash": true,
+      "deepseek_generation_aligned_world_status_summary_recomputed": true,
+      "deepseek_generation_aligned_strict_unit_summary_recomputed": true,
+      "three_cohort_frame_ID_group_order_same": true,
+      "native_shared_world_label_membership_same": true,
+      "native_G2050_computed_191_not_computed": true,
+      "strict_native_G_original_label_hash_exact": true,
+      "strict_Qwen_G_original_label_hash_exact": true,
+      "csv_json_6723_identity_status_match": true,
+      "as_before_two_track_4482_retained": true,
+      "summary_model_gold_fit_access_zero": true,
+      "coverage_and_runtime_code_hashes_unchanged_during_check": true
+    },
+    "source_hashes_before": {
+      "coverage/attempted_frame_final.jsonl": "3c08e8b521794abae949bb41f76c4b4d64ee72833a4f47c50e3ae57f1ea1c7dc",
+      "coverage/attempted_frame_final.csv": "d15630c27e2c61df918cd1a05dda4081c18993783a9cf36aef296a7cafe677a3",
+      "coverage/FINAL_SUMMARY.json": "846e63e04d0dd295c5d2a16905df8af7db34aa6d6bf0ea729c12199979683cac",
+      "coverage/FINAL_SUMMARY.csv": "133cf7de7eac20db195b8ad8b0a71aa33eaad9a4dfadfc9b69ea04c2c06d19cd",
+      "coverage/ID_HASHES.json": "0adc631d84d99d9e520ec8c53eb9ab482169cef66bc710913d1f64071d08e44c",
+      "coverage/attempted_frame.jsonl": "f5893888f61b2acbe3b46cb0a136545fc1f542eb552bb309c885c4231ded4f9b",
+      "coverage/attempted_frame.csv": "0946b22cf783c87b4658d9e3901e45fa1caddf8b976b52650664805cd33b9aa6",
+      "src/benchmark.py": "99e3d2115bb2841dd9c85e24d69e728048d4ce89a4ec6a35696dbe4d09b333d8",
+      "src/numeric.py": "df49e09c0c7ee30cac1d3877b483eab6d5bea3beb680d5a051e268070c8698d3",
+      "src/evaluation.py": "34d510043738c0ea4e24c1798dbfdefdb65d9c4b8fb19073e075ab08f62149f8"
+    },
+    "source_hashes_after": {
+      "coverage/attempted_frame_final.jsonl": "3c08e8b521794abae949bb41f76c4b4d64ee72833a4f47c50e3ae57f1ea1c7dc",
+      "coverage/attempted_frame_final.csv": "d15630c27e2c61df918cd1a05dda4081c18993783a9cf36aef296a7cafe677a3",
+      "coverage/FINAL_SUMMARY.json": "846e63e04d0dd295c5d2a16905df8af7db34aa6d6bf0ea729c12199979683cac",
+      "coverage/FINAL_SUMMARY.csv": "133cf7de7eac20db195b8ad8b0a71aa33eaad9a4dfadfc9b69ea04c2c06d19cd",
+      "coverage/ID_HASHES.json": "0adc631d84d99d9e520ec8c53eb9ab482169cef66bc710913d1f64071d08e44c",
+      "coverage/attempted_frame.jsonl": "f5893888f61b2acbe3b46cb0a136545fc1f542eb552bb309c885c4231ded4f9b",
+      "coverage/attempted_frame.csv": "0946b22cf783c87b4658d9e3901e45fa1caddf8b976b52650664805cd33b9aa6",
+      "src/benchmark.py": "99e3d2115bb2841dd9c85e24d69e728048d4ce89a4ec6a35696dbe4d09b333d8",
+      "src/numeric.py": "df49e09c0c7ee30cac1d3877b483eab6d5bea3beb680d5a051e268070c8698d3",
+      "src/evaluation.py": "34d510043738c0ea4e24c1798dbfdefdb65d9c4b8fb19073e075ab08f62149f8"
+    },
+    "requested_exclusions": {
+      "qwen_generation_aligned": 83,
+      "deepseek_shared_qwen": 175,
+      "deepseek_generation_aligned": 175
+    },
+    "full_frames_rows": 6723,
+    "fit_count": 0
+  },
+  "source_hashes_after": {
+    "pecr_qwen_generation_aligned_correction_v1_20261002/src/prepare_and_refit.py": "5593d047ef513750fe3d5b382a93960ead03d0729b9540374a298c9edd482c1c",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/src/evaluation.py": "34d510043738c0ea4e24c1798dbfdefdb65d9c4b8fb19073e075ab08f62149f8",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/protocol/HGB_PARAMS.json": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/data/schema.json": "dc10d0cb2ecc7f9cb99e90cb6852632a815afa10f1147f2b34893096c5f86e41",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/data/strict/features_label_blind.jsonl": "436551ff0d3b05e09f546b988c4a5e167ba87b2cee6e4eac6fbe46c51bd504ed",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/data/strict/manifest.jsonl": "0f415b851d9c7d804e3969cba002a1e9fb362fcb409c81f41f344e8b71e05a8b",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/data/strict/labels.csv": "51fca6abd653ff4525bc2cc50d5de2ef3e1784bb6afcd28f66b04e98c0508539",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/data/strict/folds.csv": "ca0a106480005dfff23b727b9d219c09685008b699fb4f56ab0bf9c37ae04b20",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/results/refit/OOF.npz": "58451523fb527d58239febfd17f69f93f0d8ff2afcb68f237f4b79393dccd14e",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/results/refit/RUNTIME.json": "f6d5d9f9a0cc757671fc79a4980e1aea70515ef9e0ef0869a794d07fa3b52d84",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/audit/QUEUE_FLOW.json": "528df72a79a19080db1d9a654a78c475b76367f53701c7923d036a8bc299e1bc",
+    "pecr_strict_numeric_retrain_export_v1_20261001/src/numeric.py": "1b37344da387839286ddb90e9123aaf12fd49c25359b9217295d62e0477f051b",
+    "pecr_strict_numeric_retrain_export_v1_20261001/schema.json": "dee9e836785b9a37edb1585dbf728801bf0a2ddee6900c081bf6cfca4e379d86",
+    "pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/features_label_blind.jsonl": "a41953b1f5f3e1814359f41ea71ed8a418256061dea4e9b7a6e2ced19deea8fa",
+    "pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/manifest.jsonl": "00f4417201267a7078cbfbfa78ed451dd88e8e4b10a6abf7b3b0807a297ed400",
+    "pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/labels.csv": "ddbb65084bda19c152a0b654839e8d1d940714c3e2662ea6609fed3d626fc347",
+    "pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/folds.csv": "685832c802f87e8b3976f4f3a60b335a4e0f8efd33174a11b75f5b5e3d2dc2b4",
+    "pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/reference/COMPONENT_ABLATION_OOF.npz": "19e05818f282bfedca1b382dcc51262dc4f39dbfb623503287265df94a9140ee",
+    "pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/reference/HISTORICAL_CURVE_HGB_AUDITED_OOF.npz": "00c2f4b78bf41faa9034c263670dfce42416c280282036e26f71fba62a181928",
+    "pecr_oof_sensitivity_native_g_v1_20261002/src/retrain_native_numeric.py": "a8409c6396f548e5699dae1a4eef04da2797b1228c0c9bea83c95d66342db3d2",
+    "pecr_oof_sensitivity_native_g_v1_20261002/results/native_g/G96_NATIVE.npz": "74477ddc99551d16815ece5db27f1eb3773942a63ef83668618bafd2de0a8c7c",
+    "pecr_oof_sensitivity_native_g_v1_20261002/results/native_g/G96_SCHEMA.json": "a69f454b473d596f15e1c66ee64c69b2a0e5a6a613d59a44be07770fc354081a",
+    "pecr_oof_sensitivity_native_g_v1_20261002/results/native_g/OOF.npz": "3ed693b96991c740853187d75f6f119b3d34d821897f91298f458e952cbd10e0",
+    "pecr_oof_sensitivity_native_g_v1_20261002/results/native_g/RUNTIME.json": "59c0bb1026c5d6a46d4cc852999a2a20399d7e11ec55cda70ad5157f2491a273"
+  },
+  "all_24_original_source_hashes_unchanged": true,
+  "initial_clean_70fit_receipt_review": {
+    "root_owned_fit_count": 70,
+    "review_fit_count": 0,
+    "second_repaired_complete_entry_exact": true,
+    "first_failed_export_pass_retained": true,
+    "different_predictions_not_selected": true,
+    "comparisons": {
+      "qwen_generation_aligned": {
+        "methods": {
+          "graph_only": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "raw_three_world": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "full_curve": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_input_normalization": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_curvature_asymmetry": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_direction_information": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          }
+        },
+        "all_predictions_exact": true,
+        "old_primary_modified": false,
+        "no_search_or_retry": true,
+        "saved_evaluation": {
+          "all_saved_points_and_intervals_exact": true,
+          "differences": [],
+          "historical_additional_contrasts_not_recomputed": []
+        }
+      },
+      "deepseek_shared_qwen": {
+        "methods": {
+          "graph_only": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "raw_three_world": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "full_curve": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_input_normalization": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_curvature_asymmetry": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_direction_information": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          }
+        },
+        "all_predictions_exact": true,
+        "old_primary_modified": false,
+        "no_search_or_retry": true,
+        "saved_evaluation": {
+          "all_saved_points_and_intervals_exact": true,
+          "differences": [],
+          "historical_additional_contrasts_not_recomputed": [
+            {
+              "pair": [
+                "no_input_normalization",
+                "raw_three_world"
+              ],
+              "reason": "not in fixed release contrast specification"
+            },
+            {
+              "pair": [
+                "no_curvature_asymmetry",
+                "raw_three_world"
+              ],
+              "reason": "not in fixed release contrast specification"
+            },
+            {
+              "pair": [
+                "no_direction_information",
+                "raw_three_world"
+              ],
+              "reason": "not in fixed release contrast specification"
+            }
+          ]
+        }
+      },
+      "deepseek_native_origin": {
+        "methods": {
+          "native_G_curve": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "native_G_raw": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "shared_G_curve": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "shared_G_raw": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          }
+        },
+        "all_predictions_exact": true,
+        "old_primary_modified": false,
+        "no_search_or_retry": true,
+        "saved_evaluation": {
+          "all_saved_points_and_intervals_exact": true,
+          "differences": [],
+          "historical_additional_contrasts_not_recomputed": []
+        }
+      }
+    }
+  },
+  "native_six_method_reference_completion": {
+    "source_relative": "reference/deepseek_aligned",
+    "new_fit_count": 20,
+    "methods_reused": 2,
+    "new_methods": 4,
+    "new_methods_status": "post_hoc_fixed_suite_completion_not_recovered_history",
+    "validation_additional_fits": 0,
+    "completion_source_hashes_unchanged": true,
+    "independent_validation_all_passed": true
+  },
+  "original_planned_clean_fit_budget": {
+    "qwen_corrected": 30,
+    "deepseek_shared": 30,
+    "deepseek_native_extra": 10,
+    "total": 70
+  },
+  "final_three_track_isolated_numeric_checks": {
+    "checked_utc": "2026-10-01T19:10:12.116791+00:00",
+    "all_passed": true,
+    "checks": {
+      "only_release_core_no_old_siblings_private_inputs": true,
+      "copied_core_no_bytecode": true,
+      "default_root_three_track_validate_zero_fit": true,
+      "explicit_root_three_track_validate_zero_fit": true,
+      "moved_core_hashes_unchanged": true,
+      "launcher_only_has_no_data": true
+    },
+    "temporary_parent": "/tmp/pecr-final-portability-20261002-6r2b5b2r",
+    "fits": 0,
+    "environment": "/tmp/pecr-release-clean-20261002",
+    "copied_core_hashes": {
+      "coverage/attempted_frame_final.jsonl": "3c08e8b521794abae949bb41f76c4b4d64ee72833a4f47c50e3ae57f1ea1c7dc",
+      "coverage/FINAL_ID_HASHES.json": "40ee072b82ba161fa51522bdd52bf7375b2fecd2b610936f449c0a98c66020a7",
+      "coverage/attempted_frame_final.csv": "d15630c27e2c61df918cd1a05dda4081c18993783a9cf36aef296a7cafe677a3",
+      "coverage/native_attempted_frame.csv": "c7878723fdaaeaffe866021af5a3b99403deb38da079d7a43532b8e32b807bdb",
+      "coverage/native_attempted_frame.jsonl": "53ecfeeaefed4714c5941a4e14cf5ad2dbb2eb19997edfe3ea0be3727998cb02",
+      "coverage/SUMMARY.csv": "0ab987c81e7ab7b4d788ad20c50456361b9a6e733bc12cb311d4351c2301abd2",
+      "coverage/ID_HASHES.json": "0adc631d84d99d9e520ec8c53eb9ab482169cef66bc710913d1f64071d08e44c",
+      "coverage/COVERAGE.md": "d99aeb4841729cb0721a32c19d84e240e8ebffad7d6b409e4f59ca279ec2aebd",
+      "coverage/attempted_frame.csv": "0946b22cf783c87b4658d9e3901e45fa1caddf8b976b52650664805cd33b9aa6",
+      "coverage/attempted_frame.jsonl": "f5893888f61b2acbe3b46cb0a136545fc1f542eb552bb309c885c4231ded4f9b",
+      "coverage/FINAL_COVERAGE.md": "fa4d58692e1f0306e3745200cb90e6189841ce98d795c487f408ecb2be4730cb",
+      "coverage/SUMMARY.json": "b0206a9f5ade403d383f7aa5f42450468d78dfa6af8f9708146d0d4aa2a0f6b0",
+      "coverage/FINAL_SUMMARY.json": "846e63e04d0dd295c5d2a16905df8af7db34aa6d6bf0ea729c12199979683cac",
+      "coverage/FINAL_SUMMARY.csv": "133cf7de7eac20db195b8ad8b0a71aa33eaad9a4dfadfc9b69ea04c2c06d19cd",
+      "src/benchmark.py": "99e3d2115bb2841dd9c85e24d69e728048d4ce89a4ec6a35696dbe4d09b333d8",
+      "src/audit_native_generation_binding.py": "4e6de4b0323be9a6a7be96990bc4c9576d78d4db018a7ea98d8769fc40840543",
+      "src/rebuild_worlds.py": "2e8e462c755b7305d891ce72047eb803797b6e6f297950263c5afbde3e115c6e",
+      "src/numeric.py": "df49e09c0c7ee30cac1d3877b483eab6d5bea3beb680d5a051e268070c8698d3",
+      "src/audit_generation_binding.py": "0c0f7b8cad8cbaa71a87dda0e50875770fe8eaf8da9329f2071afc30a3ceec56",
+      "src/build_dist.py": "5dff027993a6b5e3ec801ddca2bedfcf38bf7c43689110eed1cbc4aef406bb1c",
+      "src/evaluation.py": "34d510043738c0ea4e24c1798dbfdefdb65d9c4b8fb19073e075ab08f62149f8",
+      "src/freeze_native_suite.py": "07817fb9c293e1d880b6f1d548d50c68400a1c113677ad62e4f52e29726f94c6",
+      "protocol/RELEASE_SPEC.json": "77a7ff668593e757287360027713c91469779201db1cef4d6a94957b7974e545",
+      "protocol/HGB_PARAMS.json": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482",
+      "protocol/METHODS.json": "b6b435e440d36c787190a64393e02cc68db2a7eef313313747bb0b355d65b35d",
+      "protocol/ALIGNED_TRACK_SPEC.json": "8b7b7c8fc82e8caf6039e585909f5367f97307b84f299f67f9d711d9e1755ec1",
+      "reference/deepseek_aligned/OOF.npz": "ab111df8d1055ce932ecb35d9177e47cb98eeb67c196063852f5ec93047b4ba2",
+      "reference/deepseek_aligned/SHA256SUMS.txt": "03be25941879d7115fc583a284841b0d4c55380db3240d2f7a5aa9ea7b57ebe6",
+      "reference/deepseek_aligned/CHECKPOINT_graph_only.npz": "15f380415a9141dbd19ec5d6b039c15423831ad8ff0cba2d239b1c91d80de076",
+      "reference/deepseek_aligned/METRICS.json": "fe94355345eb68a401f1d0677256719f234e4a8c7421725094c7a683ab981a24",
+      "reference/deepseek_aligned/CHECKPOINT_no_direction_information.npz": "40655741e518aec812782a93f6bc5aaa16d61b189c744d4a2c542f277c3de98d",
+      "reference/deepseek_aligned/VALIDATION.json": "f7cf45c4d417efb3e78c4beb74f8bb2f39949acd221f5044b42c6002c716b044",
+      "reference/deepseek_aligned/OOF.csv": "3e85534e9d95744add53ff20fcb21401a10b290ea0ea725facf72482ed73f87f",
+      "reference/deepseek_aligned/INDEPENDENT_VALIDATION.json": "80389772f4e0c1c74c45c346b5b74d7b97f6f8ea49577a8380a88d9767a80b14",
+      "reference/deepseek_aligned/SOURCE_HASHES.json": "5a1cc58f70be325627fc9be7aa649f722ba1527e40f837c54cd9c7910032442c",
+      "reference/deepseek_aligned/RUNTIME.json": "df431712b940d502dc24918a7779bebcf735f28b11796131044819b0fd65bf72",
+      "reference/deepseek_aligned/CHECKPOINT_no_input_normalization.npz": "4486f65527c7c70c5f05b7aaaf58e4abbbb9257e1bbcd8051cd6a4a743404063",
+      "reference/deepseek_aligned/CHECKPOINT_no_curvature_asymmetry.npz": "6740f93120b3c1a057f50c37434c706962e1f5b43233b4a919262899209e8f95",
+      "reference/qwen/OOF.npz": "58451523fb527d58239febfd17f69f93f0d8ff2afcb68f237f4b79393dccd14e",
+      "reference/qwen/labels_current.csv": "9309604723f563a3f74b67540c0c70ed7183d331657fe7cb4b532b24909665dc",
+      "reference/qwen/METRICS.json": "6d2908efb42bbd5c6b7182616400086a7fd8bafc615f8e09e4afee923d15830f",
+      "reference/qwen/HGB_PARAMS.json": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482",
+      "reference/qwen/generation_map.jsonl": "86e6f9f5878a8ba6e8e16438b5b28b120c4c5a578b2e10c1838d1cfe1efd3118",
+      "reference/qwen/FEATURE_SOURCE_HASHES.json": "3f1d0cdce8ac2a4215c97faf70642ffbfef20c92ea62c033e44440b317cd7365",
+      "reference/qwen/FIXED_CORRECTION_SPEC.json": "5a98038fd2782c474feb7adf9ff52044c8d97ec4314724b0ed0eeca15e53cbdb",
+      "reference/qwen/LABEL_ACCESS_RECEIPT.json": "87aded394aa7a305b996409b7d00c07cbdd25af82b81eba6fe016848741af3d7",
+      "reference/qwen/RUNTIME.json": "f6d5d9f9a0cc757671fc79a4980e1aea70515ef9e0ef0869a794d07fa3b52d84",
+      "reference/qwen/LABEL_SOURCE_HASHES.json": "22bc5ae33afd89567eed5323e518359c16704e0fceacf16362a2f50142ab923e",
+      "reference/qwen/FEATURE_AUDIT.json": "7b2ece2e3fa1edbd7632ef70dbab1d382fa9f06aecce64618fbdde2b543418f8",
+      "reference/native/OOF.npz": "3ed693b96991c740853187d75f6f119b3d34d821897f91298f458e952cbd10e0",
+      "reference/native/METRICS.json": "43864c396089837cd5e161c6d62ff9b6083fedd596b0d37fdd9bf898f9218957",
+      "reference/native/SOURCE_HASHES.json": "021cbcf839136a2d21d20d0181a1c54b221296e98a0717484ab5feddb79eca59",
+      "reference/native/NATIVE_G_AUDIT.json": "82400e01817b5c966b8ca9b7f28c4a2ebf985d1b96d5cac8314bf7d361c43932",
+      "reference/native/RUNTIME.json": "59c0bb1026c5d6a46d4cc852999a2a20399d7e11ec55cda70ad5157f2491a273",
+      "reference/native/G96_NATIVE.npz": "74477ddc99551d16815ece5db27f1eb3773942a63ef83668618bafd2de0a8c7c",
+      "reference/native/G96_SCHEMA.json": "a69f454b473d596f15e1c66ee64c69b2a0e5a6a613d59a44be07770fc354081a",
+      "reference/deepseek/OOF.npz": "3775834dd77f42c0c8bdb06c19f701589ff3b1ba12f658c728e47aa518c549d4",
+      "reference/deepseek/ORIGINAL_SOURCE_HASHES.json": "fb35b1f25c1c54ac9b131b9fb1f4934d04ca5241da17cb13f7acf91f1e3f35cb",
+      "reference/deepseek/PRIMARY_AND_ABLATION.json": "b138ec8cff2f7623bfbd7c5127ed472b9e732df36f7113824c40a43d2f250edd",
+      "reference/deepseek/RUNTIME.json": "cbe276484410cae60d767be37817b8ab93d52d8e141ac62ebf127cfa10fd4163",
+      "cohorts/qwen_generation_aligned/folds.csv": "ca0a106480005dfff23b727b9d219c09685008b699fb4f56ab0bf9c37ae04b20",
+      "cohorts/qwen_generation_aligned/features_label_blind.jsonl": "436551ff0d3b05e09f546b988c4a5e167ba87b2cee6e4eac6fbe46c51bd504ed",
+      "cohorts/qwen_generation_aligned/manifest.jsonl": "0f415b851d9c7d804e3969cba002a1e9fb362fcb409c81f41f344e8b71e05a8b",
+      "cohorts/qwen_generation_aligned/fold_provenance.json": "e2a3dd73bea0d0d09319c1a40f0a78eeddb7942061a78dbe8524da907853e3f0",
+      "cohorts/qwen_generation_aligned/labels.csv": "51fca6abd653ff4525bc2cc50d5de2ef3e1784bb6afcd28f66b04e98c0508539",
+      "cohorts/qwen_generation_aligned/schema.json": "6b4d07ff1e761b13ef1b8cb2e9c658c52e13de77ea14be8ec10f8649cb43c951",
+      "cohorts/deepseek_shared_qwen/folds.csv": "685832c802f87e8b3976f4f3a60b335a4e0f8efd33174a11b75f5b5e3d2dc2b4",
+      "cohorts/deepseek_shared_qwen/features_label_blind.jsonl": "a41953b1f5f3e1814359f41ea71ed8a418256061dea4e9b7a6e2ced19deea8fa",
+      "cohorts/deepseek_shared_qwen/manifest.jsonl": "00f4417201267a7078cbfbfa78ed451dd88e8e4b10a6abf7b3b0807a297ed400",
+      "cohorts/deepseek_shared_qwen/fold_provenance.json": "e49fd88d59430ca31fa8362b62b3adcf05dfb92ae67d6d90b2a2bc8ec6136a56",
+      "cohorts/deepseek_shared_qwen/labels.csv": "ddbb65084bda19c152a0b654839e8d1d940714c3e2662ea6609fed3d626fc347",
+      "cohorts/deepseek_shared_qwen/schema.json": "9897b6e6a8422142e04a2f5603af308e02bfd4f28d532073996fa6990ee81e42",
+      "cohorts/deepseek_generation_aligned/folds.csv": "685832c802f87e8b3976f4f3a60b335a4e0f8efd33174a11b75f5b5e3d2dc2b4",
+      "cohorts/deepseek_generation_aligned/features_label_blind.jsonl": "fbe797801941366f74192ac47ea46e1a729f2ce280ba223bda263f1aee32071f",
+      "cohorts/deepseek_generation_aligned/manifest.jsonl": "00f4417201267a7078cbfbfa78ed451dd88e8e4b10a6abf7b3b0807a297ed400",
+      "cohorts/deepseek_generation_aligned/fold_provenance.json": "e49fd88d59430ca31fa8362b62b3adcf05dfb92ae67d6d90b2a2bc8ec6136a56",
+      "cohorts/deepseek_generation_aligned/labels.csv": "ddbb65084bda19c152a0b654839e8d1d940714c3e2662ea6609fed3d626fc347",
+      "cohorts/deepseek_generation_aligned/schema.json": "9ce7bfc7b6995fc8de459a5926ef16b5d34e7f572f72c9f727f9a713774ff7f1",
+      "src/frozen/three_world_parser.py": "fff476be96529d7b14d4154c7653b2bf67f6bce8757e2b26a238bcf620e42dd3",
+      "src/frozen/SOURCE_HASHES.json": "21e72858256769d07c2773cbf3ef093bdab5dff4a4ad639eea38b417711d3c50",
+      "src/frozen/README.md": "1c72a92ff16b315c0108e01b262f4cc0ebb0fe947111ecd1af60cceee9f8a515",
+      "src/frozen/label_policy.py": "6790468e90a99f54570eb8ecdca0f49722c2aaa6f38de365aef766cbebf2f7bc",
+      "src/frozen/feature_builder.py": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722"
+    },
+    "receipts": {
+      "default_root": {
+        "arguments": [
+          "-I",
+          "-B",
+          "/tmp/pecr-final-portability-20261002-6r2b5b2r/moved-package/src/benchmark.py",
+          "validate"
+        ],
+        "exit_code": 0,
+        "receipt": {
+          "all_passed": true,
+          "cohorts": {
+            "qwen_generation_aligned": {
+              "n": 2142,
+              "groups": 452,
+              "error_1": 1699,
+              "correct_0": 443,
+              "error_prevalence": 0.7931839402427637,
+              "coverage_of_strict": 1.0,
+              "coverage_of_requested": 0.9626966292134832,
+              "coverage_of_full_frame": 0.9558232931726908,
+              "fold_support": [
+                {
+                  "fold": 0,
+                  "n": 429,
+                  "groups": 90,
+                  "error_1": 336,
+                  "correct_0": 93
+                },
+                {
+                  "fold": 1,
+                  "n": 429,
+                  "groups": 91,
+                  "error_1": 334,
+                  "correct_0": 95
+                },
+                {
+                  "fold": 2,
+                  "n": 428,
+                  "groups": 90,
+                  "error_1": 337,
+                  "correct_0": 91
+                },
+                {
+                  "fold": 3,
+                  "n": 428,
+                  "groups": 90,
+                  "error_1": 338,
+                  "correct_0": 90
+                },
+                {
+                  "fold": 4,
+                  "n": 428,
+                  "groups": 91,
+                  "error_1": 354,
+                  "correct_0": 74
+                }
+              ],
+              "matrix_dimensions": {
+                "graph_only": [
+                  2142,
+                  96
+                ],
+                "raw_three_world": [
+                  2142,
+                  113
+                ],
+                "full_curve": [
+                  2142,
+                  129
+                ],
+                "no_input_normalization": [
+                  2142,
+                  124
+                ],
+                "no_curvature_asymmetry": [
+                  2142,
+                  125
+                ],
+                "no_direction_information": [
+                  2142,
+                  121
+                ]
+              }
+            },
+            "deepseek_shared_qwen": {
+              "n": 2050,
+              "groups": 448,
+              "error_1": 1257,
+              "correct_0": 793,
+              "error_prevalence": 0.6131707317073171,
+              "coverage_of_strict": 1.0,
+              "coverage_of_requested": 0.9213483146067416,
+              "coverage_of_full_frame": 0.9147701918786256,
+              "fold_support": [
+                {
+                  "fold": 0,
+                  "n": 410,
+                  "groups": 88,
+                  "error_1": 232,
+                  "correct_0": 178
+                },
+                {
+                  "fold": 1,
+                  "n": 410,
+                  "groups": 89,
+                  "error_1": 263,
+                  "correct_0": 147
+                },
+                {
+                  "fold": 2,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 244,
+                  "correct_0": 166
+                },
+                {
+                  "fold": 3,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 241,
+                  "correct_0": 169
+                },
+                {
+                  "fold": 4,
+                  "n": 410,
+                  "groups": 91,
+                  "error_1": 277,
+                  "correct_0": 133
+                }
+              ],
+              "matrix_dimensions": {
+                "graph_only": [
+                  2050,
+                  96
+                ],
+                "raw_three_world": [
+                  2050,
+                  113
+                ],
+                "full_curve": [
+                  2050,
+                  129
+                ],
+                "no_input_normalization": [
+                  2050,
+                  124
+                ],
+                "no_curvature_asymmetry": [
+                  2050,
+                  125
+                ],
+                "no_direction_information": [
+                  2050,
+                  121
+                ]
+              }
+            },
+            "deepseek_generation_aligned": {
+              "n": 2050,
+              "groups": 448,
+              "error_1": 1257,
+              "correct_0": 793,
+              "error_prevalence": 0.6131707317073171,
+              "coverage_of_strict": 1.0,
+              "coverage_of_requested": 0.9213483146067416,
+              "coverage_of_full_frame": 0.9147701918786256,
+              "fold_support": [
+                {
+                  "fold": 0,
+                  "n": 410,
+                  "groups": 88,
+                  "error_1": 232,
+                  "correct_0": 178
+                },
+                {
+                  "fold": 1,
+                  "n": 410,
+                  "groups": 89,
+                  "error_1": 263,
+                  "correct_0": 147
+                },
+                {
+                  "fold": 2,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 244,
+                  "correct_0": 166
+                },
+                {
+                  "fold": 3,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 241,
+                  "correct_0": 169
+                },
+                {
+                  "fold": 4,
+                  "n": 410,
+                  "groups": 91,
+                  "error_1": 277,
+                  "correct_0": 133
+                }
+              ],
+              "matrix_dimensions": {
+                "graph_only": [
+                  2050,
+                  96
+                ],
+                "raw_three_world": [
+                  2050,
+                  113
+                ],
+                "full_curve": [
+                  2050,
+                  129
+                ],
+                "no_input_normalization": [
+                  2050,
+                  124
+                ],
+                "no_curvature_asymmetry": [
+                  2050,
+                  125
+                ],
+                "no_direction_information": [
+                  2050,
+                  121
+                ]
+              }
+            }
+          },
+          "checks": {
+            "unique_IDs_and_exact_row_order": true,
+            "label_group_fold_reference_alignment": true,
+            "group_disjoint_and_group_only_reconstructed_folds": true,
+            "exact_named_feature_column_order_and_dimensions": true,
+            "finite_pairwise_nonsharing_writable_matrices": true,
+            "Raw17_equals_Curve33_prefix_and_exact_arithmetic": true,
+            "world_raw_curve_have_identical_ID_coverage": true,
+            "saved_native_shared_aliases_equal_primary_OOF": true,
+            "full_attempted_coverage_and_unknown_statuses_verified": true,
+            "aligned_tracks_same_generation_original_feature_binding": true,
+            "native_missing_G_not_filled_with_shared_G": true
+          },
+          "model_API_calls": 0,
+          "corpus_gold_ledger_checkpoint_inputs": false,
+          "fits": 0,
+          "coverage_summary": {
+            "TRAIN_gold_holdout_access": false,
+            "as_before_coverage_retained": true,
+            "cohorts": {
+              "deepseek_generation_aligned": {
+                "G96_computation_status": {
+                  "computed_saved_target_native": 2050,
+                  "not_computed": 191
+                },
+                "frame_groups": 453,
+                "frame_rows": 2241,
+                "mutually_exclusive_partitions": {
+                  "invalid_known_label": 79,
+                  "invalid_unknown_label": 42,
+                  "strict_parsed_labeled": 2050,
+                  "unrequested_construction_exclusion": 16,
+                  "valid_unknown_label": 54
+                },
+                "offline_parser_status": {
+                  "negative": {
+                    "answer_not_numeric": 31,
+                    "missing_json": 40,
+                    "ok": 2154,
+                    "unknown": 16
+                  },
+                  "original": {
+                    "answer_not_numeric": 35,
+                    "missing_json": 8,
+                    "ok": 2182,
+                    "unknown": 16
+                  },
+                  "positive": {
+                    "answer_not_numeric": 34,
+                    "missing_json": 39,
+                    "ok": 2152,
+                    "unknown": 16
+                  }
+                },
+                "requested_not_strict": 175,
+                "requested_rows": 2225,
+                "strict_correct": 793,
+                "strict_error": 1257,
+                "strict_groups": 448,
+                "strict_rows": 2050,
+                "strict_unit_combinations": {
+                  "empty_mismatch": 102,
+                  "empty_same": 51,
+                  "nonempty_mismatch": 279,
+                  "nonempty_same": 1618
+                },
+                "unrequested_rows": 16
+              },
+              "deepseek_shared_qwen": {
+                "G96_computation_status": {
+                  "inherited_saved": 2241
+                },
+                "frame_groups": 453,
+                "frame_rows": 2241,
+                "mutually_exclusive_partitions": {
+                  "invalid_known_label": 79,
+                  "invalid_unknown_label": 42,
+                  "strict_parsed_labeled": 2050,
+                  "unrequested_construction_exclusion": 16,
+                  "valid_unknown_label": 54
+                },
+                "offline_parser_status": {
+                  "negative": {
+                    "answer_not_numeric": 31,
+                    "missing_json": 40,
+                    "ok": 2154,
+                    "unknown": 16
+                  },
+                  "original": {
+                    "answer_not_numeric": 35,
+                    "missing_json": 8,
+                    "ok": 2182,
+                    "unknown": 16
+                  },
+                  "positive": {
+                    "answer_not_numeric": 34,
+                    "missing_json": 39,
+                    "ok": 2152,
+                    "unknown": 16
+                  }
+                },
+                "requested_not_strict": 175,
+                "requested_rows": 2225,
+                "strict_correct": 793,
+                "strict_error": 1257,
+                "strict_groups": 448,
+                "strict_rows": 2050,
+                "strict_unit_combinations": {
+                  "empty_mismatch": 102,
+                  "empty_same": 51,
+                  "nonempty_mismatch": 279,
+                  "nonempty_same": 1618
+                },
+                "unrequested_rows": 16
+              },
+              "qwen_generation_aligned": {
+                "G96_computation_status": {
+                  "inherited_saved": 2241
+                },
+                "frame_groups": 453,
+                "frame_rows": 2241,
+                "mutually_exclusive_partitions": {
+                  "invalid_known_label": 7,
+                  "invalid_unknown_label": 24,
+                  "strict_parsed_labeled": 2142,
+                  "unrequested_construction_exclusion": 16,
+                  "valid_unknown_label": 52
+                },
+                "offline_parser_status": {
+                  "negative": {
+                    "answer_not_numeric": 22,
+                    "missing_json": 1,
+                    "unknown_unrequested": 16,
+                    "valid": 2202
+                  },
+                  "original": {
+                    "answer_not_numeric": 26,
+                    "unknown_unrequested": 16,
+                    "valid": 2199
+                  },
+                  "positive": {
+                    "answer_not_numeric": 22,
+                    "missing_json": 1,
+                    "unknown_unrequested": 16,
+                    "valid": 2202
+                  }
+                },
+                "requested_not_strict": 83,
+                "requested_rows": 2225,
+                "strict_correct": 443,
+                "strict_error": 1699,
+                "strict_groups": 452,
+                "strict_rows": 2142,
+                "strict_unit_combinations": {
+                  "empty_mismatch": 103,
+                  "empty_same": 153,
+                  "nonempty_mismatch": 111,
+                  "nonempty_same": 1775
+                },
+                "unrequested_rows": 16
+              }
+            },
+            "model_API_calls": 0,
+            "native_six_methods_available_after_fixed_supplement": true,
+            "training_fits": 0
+          }
+        },
+        "stderr": ""
+      },
+      "explicit_root": {
+        "arguments": [
+          "-I",
+          "-B",
+          "/tmp/pecr-final-portability-20261002-6r2b5b2r/launcher-only/src/benchmark.py",
+          "--root",
+          "/tmp/pecr-final-portability-20261002-6r2b5b2r/moved-package",
+          "validate"
+        ],
+        "exit_code": 0,
+        "receipt": {
+          "all_passed": true,
+          "cohorts": {
+            "qwen_generation_aligned": {
+              "n": 2142,
+              "groups": 452,
+              "error_1": 1699,
+              "correct_0": 443,
+              "error_prevalence": 0.7931839402427637,
+              "coverage_of_strict": 1.0,
+              "coverage_of_requested": 0.9626966292134832,
+              "coverage_of_full_frame": 0.9558232931726908,
+              "fold_support": [
+                {
+                  "fold": 0,
+                  "n": 429,
+                  "groups": 90,
+                  "error_1": 336,
+                  "correct_0": 93
+                },
+                {
+                  "fold": 1,
+                  "n": 429,
+                  "groups": 91,
+                  "error_1": 334,
+                  "correct_0": 95
+                },
+                {
+                  "fold": 2,
+                  "n": 428,
+                  "groups": 90,
+                  "error_1": 337,
+                  "correct_0": 91
+                },
+                {
+                  "fold": 3,
+                  "n": 428,
+                  "groups": 90,
+                  "error_1": 338,
+                  "correct_0": 90
+                },
+                {
+                  "fold": 4,
+                  "n": 428,
+                  "groups": 91,
+                  "error_1": 354,
+                  "correct_0": 74
+                }
+              ],
+              "matrix_dimensions": {
+                "graph_only": [
+                  2142,
+                  96
+                ],
+                "raw_three_world": [
+                  2142,
+                  113
+                ],
+                "full_curve": [
+                  2142,
+                  129
+                ],
+                "no_input_normalization": [
+                  2142,
+                  124
+                ],
+                "no_curvature_asymmetry": [
+                  2142,
+                  125
+                ],
+                "no_direction_information": [
+                  2142,
+                  121
+                ]
+              }
+            },
+            "deepseek_shared_qwen": {
+              "n": 2050,
+              "groups": 448,
+              "error_1": 1257,
+              "correct_0": 793,
+              "error_prevalence": 0.6131707317073171,
+              "coverage_of_strict": 1.0,
+              "coverage_of_requested": 0.9213483146067416,
+              "coverage_of_full_frame": 0.9147701918786256,
+              "fold_support": [
+                {
+                  "fold": 0,
+                  "n": 410,
+                  "groups": 88,
+                  "error_1": 232,
+                  "correct_0": 178
+                },
+                {
+                  "fold": 1,
+                  "n": 410,
+                  "groups": 89,
+                  "error_1": 263,
+                  "correct_0": 147
+                },
+                {
+                  "fold": 2,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 244,
+                  "correct_0": 166
+                },
+                {
+                  "fold": 3,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 241,
+                  "correct_0": 169
+                },
+                {
+                  "fold": 4,
+                  "n": 410,
+                  "groups": 91,
+                  "error_1": 277,
+                  "correct_0": 133
+                }
+              ],
+              "matrix_dimensions": {
+                "graph_only": [
+                  2050,
+                  96
+                ],
+                "raw_three_world": [
+                  2050,
+                  113
+                ],
+                "full_curve": [
+                  2050,
+                  129
+                ],
+                "no_input_normalization": [
+                  2050,
+                  124
+                ],
+                "no_curvature_asymmetry": [
+                  2050,
+                  125
+                ],
+                "no_direction_information": [
+                  2050,
+                  121
+                ]
+              }
+            },
+            "deepseek_generation_aligned": {
+              "n": 2050,
+              "groups": 448,
+              "error_1": 1257,
+              "correct_0": 793,
+              "error_prevalence": 0.6131707317073171,
+              "coverage_of_strict": 1.0,
+              "coverage_of_requested": 0.9213483146067416,
+              "coverage_of_full_frame": 0.9147701918786256,
+              "fold_support": [
+                {
+                  "fold": 0,
+                  "n": 410,
+                  "groups": 88,
+                  "error_1": 232,
+                  "correct_0": 178
+                },
+                {
+                  "fold": 1,
+                  "n": 410,
+                  "groups": 89,
+                  "error_1": 263,
+                  "correct_0": 147
+                },
+                {
+                  "fold": 2,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 244,
+                  "correct_0": 166
+                },
+                {
+                  "fold": 3,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 241,
+                  "correct_0": 169
+                },
+                {
+                  "fold": 4,
+                  "n": 410,
+                  "groups": 91,
+                  "error_1": 277,
+                  "correct_0": 133
+                }
+              ],
+              "matrix_dimensions": {
+                "graph_only": [
+                  2050,
+                  96
+                ],
+                "raw_three_world": [
+                  2050,
+                  113
+                ],
+                "full_curve": [
+                  2050,
+                  129
+                ],
+                "no_input_normalization": [
+                  2050,
+                  124
+                ],
+                "no_curvature_asymmetry": [
+                  2050,
+                  125
+                ],
+                "no_direction_information": [
+                  2050,
+                  121
+                ]
+              }
+            }
+          },
+          "checks": {
+            "unique_IDs_and_exact_row_order": true,
+            "label_group_fold_reference_alignment": true,
+            "group_disjoint_and_group_only_reconstructed_folds": true,
+            "exact_named_feature_column_order_and_dimensions": true,
+            "finite_pairwise_nonsharing_writable_matrices": true,
+            "Raw17_equals_Curve33_prefix_and_exact_arithmetic": true,
+            "world_raw_curve_have_identical_ID_coverage": true,
+            "saved_native_shared_aliases_equal_primary_OOF": true,
+            "full_attempted_coverage_and_unknown_statuses_verified": true,
+            "aligned_tracks_same_generation_original_feature_binding": true,
+            "native_missing_G_not_filled_with_shared_G": true
+          },
+          "model_API_calls": 0,
+          "corpus_gold_ledger_checkpoint_inputs": false,
+          "fits": 0,
+          "coverage_summary": {
+            "TRAIN_gold_holdout_access": false,
+            "as_before_coverage_retained": true,
+            "cohorts": {
+              "deepseek_generation_aligned": {
+                "G96_computation_status": {
+                  "computed_saved_target_native": 2050,
+                  "not_computed": 191
+                },
+                "frame_groups": 453,
+                "frame_rows": 2241,
+                "mutually_exclusive_partitions": {
+                  "invalid_known_label": 79,
+                  "invalid_unknown_label": 42,
+                  "strict_parsed_labeled": 2050,
+                  "unrequested_construction_exclusion": 16,
+                  "valid_unknown_label": 54
+                },
+                "offline_parser_status": {
+                  "negative": {
+                    "answer_not_numeric": 31,
+                    "missing_json": 40,
+                    "ok": 2154,
+                    "unknown": 16
+                  },
+                  "original": {
+                    "answer_not_numeric": 35,
+                    "missing_json": 8,
+                    "ok": 2182,
+                    "unknown": 16
+                  },
+                  "positive": {
+                    "answer_not_numeric": 34,
+                    "missing_json": 39,
+                    "ok": 2152,
+                    "unknown": 16
+                  }
+                },
+                "requested_not_strict": 175,
+                "requested_rows": 2225,
+                "strict_correct": 793,
+                "strict_error": 1257,
+                "strict_groups": 448,
+                "strict_rows": 2050,
+                "strict_unit_combinations": {
+                  "empty_mismatch": 102,
+                  "empty_same": 51,
+                  "nonempty_mismatch": 279,
+                  "nonempty_same": 1618
+                },
+                "unrequested_rows": 16
+              },
+              "deepseek_shared_qwen": {
+                "G96_computation_status": {
+                  "inherited_saved": 2241
+                },
+                "frame_groups": 453,
+                "frame_rows": 2241,
+                "mutually_exclusive_partitions": {
+                  "invalid_known_label": 79,
+                  "invalid_unknown_label": 42,
+                  "strict_parsed_labeled": 2050,
+                  "unrequested_construction_exclusion": 16,
+                  "valid_unknown_label": 54
+                },
+                "offline_parser_status": {
+                  "negative": {
+                    "answer_not_numeric": 31,
+                    "missing_json": 40,
+                    "ok": 2154,
+                    "unknown": 16
+                  },
+                  "original": {
+                    "answer_not_numeric": 35,
+                    "missing_json": 8,
+                    "ok": 2182,
+                    "unknown": 16
+                  },
+                  "positive": {
+                    "answer_not_numeric": 34,
+                    "missing_json": 39,
+                    "ok": 2152,
+                    "unknown": 16
+                  }
+                },
+                "requested_not_strict": 175,
+                "requested_rows": 2225,
+                "strict_correct": 793,
+                "strict_error": 1257,
+                "strict_groups": 448,
+                "strict_rows": 2050,
+                "strict_unit_combinations": {
+                  "empty_mismatch": 102,
+                  "empty_same": 51,
+                  "nonempty_mismatch": 279,
+                  "nonempty_same": 1618
+                },
+                "unrequested_rows": 16
+              },
+              "qwen_generation_aligned": {
+                "G96_computation_status": {
+                  "inherited_saved": 2241
+                },
+                "frame_groups": 453,
+                "frame_rows": 2241,
+                "mutually_exclusive_partitions": {
+                  "invalid_known_label": 7,
+                  "invalid_unknown_label": 24,
+                  "strict_parsed_labeled": 2142,
+                  "unrequested_construction_exclusion": 16,
+                  "valid_unknown_label": 52
+                },
+                "offline_parser_status": {
+                  "negative": {
+                    "answer_not_numeric": 22,
+                    "missing_json": 1,
+                    "unknown_unrequested": 16,
+                    "valid": 2202
+                  },
+                  "original": {
+                    "answer_not_numeric": 26,
+                    "unknown_unrequested": 16,
+                    "valid": 2199
+                  },
+                  "positive": {
+                    "answer_not_numeric": 22,
+                    "missing_json": 1,
+                    "unknown_unrequested": 16,
+                    "valid": 2202
+                  }
+                },
+                "requested_not_strict": 83,
+                "requested_rows": 2225,
+                "strict_correct": 443,
+                "strict_error": 1699,
+                "strict_groups": 452,
+                "strict_rows": 2142,
+                "strict_unit_combinations": {
+                  "empty_mismatch": 103,
+                  "empty_same": 153,
+                  "nonempty_mismatch": 111,
+                  "nonempty_same": 1775
+                },
+                "unrequested_rows": 16
+              }
+            },
+            "model_API_calls": 0,
+            "native_six_methods_available_after_fixed_supplement": true,
+            "training_fits": 0
+          }
+        },
+        "stderr": ""
+      }
+    }
+  },
+  "final_clean90_independent_receipt_review": {
+    "checked_utc": "2026-10-01T19:13:22.030165+00:00",
+    "all_passed": true,
+    "checks": {
+      "final_clean90fit_threads1_no_systemsite_no_search": true,
+      "full21_parameter_dict_unchanged": true,
+      "all_clean_recorded_input_files_match_final_release": true,
+      "all_clean_result_checksums_match": true,
+      "qwen_generation_aligned_exact_all_metadata_and_predictions": true,
+      "qwen_generation_aligned_difference_csv_header_only": true,
+      "qwen_generation_aligned_independent_points_exact": true,
+      "qwen_generation_aligned_saved_intervals_contrasts_exact": true,
+      "qwen_generation_aligned_B2000_seed20260928_no_degenerate": true,
+      "qwen_generation_aligned_summary_matches_cohort_METRICS": true,
+      "deepseek_shared_qwen_exact_all_metadata_and_predictions": true,
+      "deepseek_shared_qwen_difference_csv_header_only": true,
+      "deepseek_shared_qwen_independent_points_exact": true,
+      "deepseek_shared_qwen_saved_intervals_contrasts_exact": true,
+      "deepseek_shared_qwen_B2000_seed20260928_no_degenerate": true,
+      "deepseek_shared_qwen_summary_matches_cohort_METRICS": true,
+      "deepseek_generation_aligned_exact_all_metadata_and_predictions": true,
+      "deepseek_generation_aligned_difference_csv_header_only": true,
+      "deepseek_generation_aligned_independent_points_exact": true,
+      "deepseek_generation_aligned_saved_intervals_contrasts_exact": true,
+      "deepseek_generation_aligned_B2000_seed20260928_no_degenerate": true,
+      "deepseek_generation_aligned_summary_matches_cohort_METRICS": true,
+      "deepseek_native_origin_exact_all_metadata_and_predictions": true,
+      "deepseek_native_origin_difference_csv_header_only": true,
+      "deepseek_native_origin_independent_points_exact": true,
+      "deepseek_native_origin_saved_intervals_contrasts_exact": true,
+      "deepseek_native_origin_B2000_seed20260928_no_degenerate": true,
+      "deepseek_native_origin_summary_matches_cohort_METRICS": true,
+      "actual_DS_graph_archival_prediction_exact": true,
+      "root_FINAL_ACCEPTANCE_reports_exact90": true,
+      "fit_history_complete250": true
+    },
+    "root_owned_final_fits": 90,
+    "review_fits": 0,
+    "root_owned_and_reference_construction_total_fits": 250,
+    "comparison_receipts": {
+      "qwen_generation_aligned": {
+        "methods": {
+          "graph_only": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "raw_three_world": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "full_curve": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_input_normalization": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_curvature_asymmetry": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_direction_information": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          }
+        },
+        "all_predictions_exact": true,
+        "old_primary_modified": false,
+        "no_search_or_retry": true,
+        "saved_evaluation": {
+          "all_saved_points_and_intervals_exact": true,
+          "differences": [],
+          "historical_additional_contrasts_not_recomputed": []
+        }
+      },
+      "deepseek_shared_qwen": {
+        "methods": {
+          "graph_only": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "raw_three_world": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "full_curve": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_input_normalization": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_curvature_asymmetry": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_direction_information": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          }
+        },
+        "all_predictions_exact": true,
+        "old_primary_modified": false,
+        "no_search_or_retry": true,
+        "saved_evaluation": {
+          "all_saved_points_and_intervals_exact": true,
+          "differences": [],
+          "historical_additional_contrasts_not_recomputed": [
+            {
+              "pair": [
+                "no_input_normalization",
+                "raw_three_world"
+              ],
+              "reason": "not in fixed release contrast specification"
+            },
+            {
+              "pair": [
+                "no_curvature_asymmetry",
+                "raw_three_world"
+              ],
+              "reason": "not in fixed release contrast specification"
+            },
+            {
+              "pair": [
+                "no_direction_information",
+                "raw_three_world"
+              ],
+              "reason": "not in fixed release contrast specification"
+            }
+          ]
+        }
+      },
+      "deepseek_generation_aligned": {
+        "methods": {
+          "graph_only": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "raw_three_world": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "full_curve": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_input_normalization": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_curvature_asymmetry": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "no_direction_information": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          }
+        },
+        "all_predictions_exact": true,
+        "old_primary_modified": false,
+        "no_search_or_retry": true,
+        "saved_evaluation": {
+          "all_saved_points_and_intervals_exact": true,
+          "differences": [],
+          "historical_additional_contrasts_not_recomputed": []
+        }
+      },
+      "deepseek_native_origin": {
+        "methods": {
+          "native_G_curve": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "native_G_raw": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "shared_G_curve": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          },
+          "shared_G_raw": {
+            "exact_prediction_match": true,
+            "different_rows": 0,
+            "max_abs_prediction_difference": 0.0
+          }
+        },
+        "all_predictions_exact": true,
+        "old_primary_modified": false,
+        "no_search_or_retry": true,
+        "saved_evaluation": {
+          "all_saved_points_and_intervals_exact": true,
+          "differences": [],
+          "historical_additional_contrasts_not_recomputed": []
+        }
+      }
+    },
+    "INPUT_HASHES_sha256": "75ae8a6e9324920d0fe77fae3b6bd60d5f357b4607f8d5bf6f7b46a25f64e57c",
+    "RUNTIME_sha256": "b891d02d6e87bf0bbd32ee7f89df627dc71e8f8afb5959f4c2a3787f977a9d99"
+  },
+  "official_final_protocol_and_latest_moved_review": {
+    "all_passed": true,
+    "checked_utc": "2026-10-01T19:15:37.032370+00:00",
+    "checks": {
+      "official_final_methods_contrasts_same_frozen_vectors": true,
+      "official_final_plan_actual90_matches_six_methods_three_tracks_five_folds": true,
+      "bootstrap_protocol_still_B2000_seed20260928": true,
+      "two_aligned_and_one_historical_scope": true,
+      "new_native_completion_explicit_not_recovered_history": true,
+      "native_origin_aliases_no_extra_fit": true,
+      "manifest_correct_dimensions_and_world_order": true,
+      "qwen_generation_aligned_frozen_columns_and_masks_exact": true,
+      "deepseek_shared_qwen_frozen_columns_and_masks_exact": true,
+      "deepseek_generation_aligned_frozen_columns_and_masks_exact": true,
+      "default_root_latest_three_track_validate_zerofit_canonical": true,
+      "explicit_root_latest_three_track_validate_zerofit_canonical": true,
+      "latest_moved_core_hashes_unchanged": true,
+      "latest_launcher_only_has_no_data": true,
+      "metadata_and_training_execution_code_unchanged_during_review": true
+    },
+    "temporary_parent": "/tmp/pecr-final-official-portability-20261002-v4ghvik9",
+    "review_fits": 0,
+    "metadata_hashes": {
+      "protocol/FINAL_RELEASE_SPEC.json": "d248fe55c82aab57f31070de18e6e383f3b643a669fce04aa04bda85b6c502a7",
+      "MANIFEST.json": "63627ff5b49a9f64d2083ce7a8add57c50ba6e7ffbefa370be4f196c794edb39",
+      "src/benchmark.py": "99e3d2115bb2841dd9c85e24d69e728048d4ce89a4ec6a35696dbe4d09b333d8",
+      "src/numeric.py": "df49e09c0c7ee30cac1d3877b483eab6d5bea3beb680d5a051e268070c8698d3",
+      "src/evaluation.py": "34d510043738c0ea4e24c1798dbfdefdb65d9c4b8fb19073e075ab08f62149f8",
+      "protocol/HGB_PARAMS.json": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482"
+    },
+    "copied_core_hashes": {
+      "MANIFEST.json": "63627ff5b49a9f64d2083ce7a8add57c50ba6e7ffbefa370be4f196c794edb39",
+      "coverage/attempted_frame_final.jsonl": "3c08e8b521794abae949bb41f76c4b4d64ee72833a4f47c50e3ae57f1ea1c7dc",
+      "coverage/FINAL_ID_HASHES.json": "40ee072b82ba161fa51522bdd52bf7375b2fecd2b610936f449c0a98c66020a7",
+      "coverage/attempted_frame_final.csv": "d15630c27e2c61df918cd1a05dda4081c18993783a9cf36aef296a7cafe677a3",
+      "coverage/native_attempted_frame.csv": "c7878723fdaaeaffe866021af5a3b99403deb38da079d7a43532b8e32b807bdb",
+      "coverage/native_attempted_frame.jsonl": "53ecfeeaefed4714c5941a4e14cf5ad2dbb2eb19997edfe3ea0be3727998cb02",
+      "coverage/SUMMARY.csv": "0ab987c81e7ab7b4d788ad20c50456361b9a6e733bc12cb311d4351c2301abd2",
+      "coverage/ID_HASHES.json": "0adc631d84d99d9e520ec8c53eb9ab482169cef66bc710913d1f64071d08e44c",
+      "coverage/COVERAGE.md": "d99aeb4841729cb0721a32c19d84e240e8ebffad7d6b409e4f59ca279ec2aebd",
+      "coverage/attempted_frame.csv": "0946b22cf783c87b4658d9e3901e45fa1caddf8b976b52650664805cd33b9aa6",
+      "coverage/attempted_frame.jsonl": "f5893888f61b2acbe3b46cb0a136545fc1f542eb552bb309c885c4231ded4f9b",
+      "coverage/FINAL_COVERAGE.md": "fa4d58692e1f0306e3745200cb90e6189841ce98d795c487f408ecb2be4730cb",
+      "coverage/SUMMARY.json": "b0206a9f5ade403d383f7aa5f42450468d78dfa6af8f9708146d0d4aa2a0f6b0",
+      "coverage/FINAL_SUMMARY.json": "846e63e04d0dd295c5d2a16905df8af7db34aa6d6bf0ea729c12199979683cac",
+      "coverage/FINAL_SUMMARY.csv": "133cf7de7eac20db195b8ad8b0a71aa33eaad9a4dfadfc9b69ea04c2c06d19cd",
+      "src/benchmark.py": "99e3d2115bb2841dd9c85e24d69e728048d4ce89a4ec6a35696dbe4d09b333d8",
+      "src/render_acceptance.py": "33c4156b327e97bc815cf7bc144bc3ca6e2ee719029e2415c525f8dc5f3cc590",
+      "src/audit_native_generation_binding.py": "4e6de4b0323be9a6a7be96990bc4c9576d78d4db018a7ea98d8769fc40840543",
+      "src/rebuild_worlds.py": "2e8e462c755b7305d891ce72047eb803797b6e6f297950263c5afbde3e115c6e",
+      "src/numeric.py": "df49e09c0c7ee30cac1d3877b483eab6d5bea3beb680d5a051e268070c8698d3",
+      "src/audit_generation_binding.py": "0c0f7b8cad8cbaa71a87dda0e50875770fe8eaf8da9329f2071afc30a3ceec56",
+      "src/build_dist.py": "5dff027993a6b5e3ec801ddca2bedfcf38bf7c43689110eed1cbc4aef406bb1c",
+      "src/evaluation.py": "34d510043738c0ea4e24c1798dbfdefdb65d9c4b8fb19073e075ab08f62149f8",
+      "src/freeze_native_suite.py": "07817fb9c293e1d880b6f1d548d50c68400a1c113677ad62e4f52e29726f94c6",
+      "protocol/RELEASE_SPEC.json": "77a7ff668593e757287360027713c91469779201db1cef4d6a94957b7974e545",
+      "protocol/HGB_PARAMS.json": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482",
+      "protocol/FINAL_RELEASE_SPEC.json": "d248fe55c82aab57f31070de18e6e383f3b643a669fce04aa04bda85b6c502a7",
+      "protocol/METHODS.json": "b6b435e440d36c787190a64393e02cc68db2a7eef313313747bb0b355d65b35d",
+      "protocol/ALIGNED_TRACK_SPEC.json": "8b7b7c8fc82e8caf6039e585909f5367f97307b84f299f67f9d711d9e1755ec1",
+      "reference/deepseek_aligned/OOF.npz": "ab111df8d1055ce932ecb35d9177e47cb98eeb67c196063852f5ec93047b4ba2",
+      "reference/deepseek_aligned/SHA256SUMS.txt": "03be25941879d7115fc583a284841b0d4c55380db3240d2f7a5aa9ea7b57ebe6",
+      "reference/deepseek_aligned/CHECKPOINT_graph_only.npz": "15f380415a9141dbd19ec5d6b039c15423831ad8ff0cba2d239b1c91d80de076",
+      "reference/deepseek_aligned/METRICS.json": "fe94355345eb68a401f1d0677256719f234e4a8c7421725094c7a683ab981a24",
+      "reference/deepseek_aligned/CHECKPOINT_no_direction_information.npz": "40655741e518aec812782a93f6bc5aaa16d61b189c744d4a2c542f277c3de98d",
+      "reference/deepseek_aligned/VALIDATION.json": "f7cf45c4d417efb3e78c4beb74f8bb2f39949acd221f5044b42c6002c716b044",
+      "reference/deepseek_aligned/OOF.csv": "3e85534e9d95744add53ff20fcb21401a10b290ea0ea725facf72482ed73f87f",
+      "reference/deepseek_aligned/INDEPENDENT_VALIDATION.json": "80389772f4e0c1c74c45c346b5b74d7b97f6f8ea49577a8380a88d9767a80b14",
+      "reference/deepseek_aligned/SOURCE_HASHES.json": "5a1cc58f70be325627fc9be7aa649f722ba1527e40f837c54cd9c7910032442c",
+      "reference/deepseek_aligned/RUNTIME.json": "df431712b940d502dc24918a7779bebcf735f28b11796131044819b0fd65bf72",
+      "reference/deepseek_aligned/CHECKPOINT_no_input_normalization.npz": "4486f65527c7c70c5f05b7aaaf58e4abbbb9257e1bbcd8051cd6a4a743404063",
+      "reference/deepseek_aligned/CHECKPOINT_no_curvature_asymmetry.npz": "6740f93120b3c1a057f50c37434c706962e1f5b43233b4a919262899209e8f95",
+      "reference/qwen/OOF.npz": "58451523fb527d58239febfd17f69f93f0d8ff2afcb68f237f4b79393dccd14e",
+      "reference/qwen/labels_current.csv": "9309604723f563a3f74b67540c0c70ed7183d331657fe7cb4b532b24909665dc",
+      "reference/qwen/METRICS.json": "6d2908efb42bbd5c6b7182616400086a7fd8bafc615f8e09e4afee923d15830f",
+      "reference/qwen/HGB_PARAMS.json": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482",
+      "reference/qwen/generation_map.jsonl": "86e6f9f5878a8ba6e8e16438b5b28b120c4c5a578b2e10c1838d1cfe1efd3118",
+      "reference/qwen/FEATURE_SOURCE_HASHES.json": "3f1d0cdce8ac2a4215c97faf70642ffbfef20c92ea62c033e44440b317cd7365",
+      "reference/qwen/FIXED_CORRECTION_SPEC.json": "5a98038fd2782c474feb7adf9ff52044c8d97ec4314724b0ed0eeca15e53cbdb",
+      "reference/qwen/LABEL_ACCESS_RECEIPT.json": "87aded394aa7a305b996409b7d00c07cbdd25af82b81eba6fe016848741af3d7",
+      "reference/qwen/RUNTIME.json": "f6d5d9f9a0cc757671fc79a4980e1aea70515ef9e0ef0869a794d07fa3b52d84",
+      "reference/qwen/LABEL_SOURCE_HASHES.json": "22bc5ae33afd89567eed5323e518359c16704e0fceacf16362a2f50142ab923e",
+      "reference/qwen/FEATURE_AUDIT.json": "7b2ece2e3fa1edbd7632ef70dbab1d382fa9f06aecce64618fbdde2b543418f8",
+      "reference/native/OOF.npz": "3ed693b96991c740853187d75f6f119b3d34d821897f91298f458e952cbd10e0",
+      "reference/native/METRICS.json": "43864c396089837cd5e161c6d62ff9b6083fedd596b0d37fdd9bf898f9218957",
+      "reference/native/SOURCE_HASHES.json": "021cbcf839136a2d21d20d0181a1c54b221296e98a0717484ab5feddb79eca59",
+      "reference/native/NATIVE_G_AUDIT.json": "82400e01817b5c966b8ca9b7f28c4a2ebf985d1b96d5cac8314bf7d361c43932",
+      "reference/native/RUNTIME.json": "59c0bb1026c5d6a46d4cc852999a2a20399d7e11ec55cda70ad5157f2491a273",
+      "reference/native/G96_NATIVE.npz": "74477ddc99551d16815ece5db27f1eb3773942a63ef83668618bafd2de0a8c7c",
+      "reference/native/G96_SCHEMA.json": "a69f454b473d596f15e1c66ee64c69b2a0e5a6a613d59a44be07770fc354081a",
+      "reference/deepseek/OOF.npz": "3775834dd77f42c0c8bdb06c19f701589ff3b1ba12f658c728e47aa518c549d4",
+      "reference/deepseek/ORIGINAL_SOURCE_HASHES.json": "fb35b1f25c1c54ac9b131b9fb1f4934d04ca5241da17cb13f7acf91f1e3f35cb",
+      "reference/deepseek/PRIMARY_AND_ABLATION.json": "b138ec8cff2f7623bfbd7c5127ed472b9e732df36f7113824c40a43d2f250edd",
+      "reference/deepseek/RUNTIME.json": "cbe276484410cae60d767be37817b8ab93d52d8e141ac62ebf127cfa10fd4163",
+      "cohorts/qwen_generation_aligned/folds.csv": "ca0a106480005dfff23b727b9d219c09685008b699fb4f56ab0bf9c37ae04b20",
+      "cohorts/qwen_generation_aligned/features_label_blind.jsonl": "436551ff0d3b05e09f546b988c4a5e167ba87b2cee6e4eac6fbe46c51bd504ed",
+      "cohorts/qwen_generation_aligned/manifest.jsonl": "0f415b851d9c7d804e3969cba002a1e9fb362fcb409c81f41f344e8b71e05a8b",
+      "cohorts/qwen_generation_aligned/fold_provenance.json": "e2a3dd73bea0d0d09319c1a40f0a78eeddb7942061a78dbe8524da907853e3f0",
+      "cohorts/qwen_generation_aligned/labels.csv": "51fca6abd653ff4525bc2cc50d5de2ef3e1784bb6afcd28f66b04e98c0508539",
+      "cohorts/qwen_generation_aligned/schema.json": "6b4d07ff1e761b13ef1b8cb2e9c658c52e13de77ea14be8ec10f8649cb43c951",
+      "cohorts/deepseek_shared_qwen/folds.csv": "685832c802f87e8b3976f4f3a60b335a4e0f8efd33174a11b75f5b5e3d2dc2b4",
+      "cohorts/deepseek_shared_qwen/features_label_blind.jsonl": "a41953b1f5f3e1814359f41ea71ed8a418256061dea4e9b7a6e2ced19deea8fa",
+      "cohorts/deepseek_shared_qwen/manifest.jsonl": "00f4417201267a7078cbfbfa78ed451dd88e8e4b10a6abf7b3b0807a297ed400",
+      "cohorts/deepseek_shared_qwen/fold_provenance.json": "e49fd88d59430ca31fa8362b62b3adcf05dfb92ae67d6d90b2a2bc8ec6136a56",
+      "cohorts/deepseek_shared_qwen/labels.csv": "ddbb65084bda19c152a0b654839e8d1d940714c3e2662ea6609fed3d626fc347",
+      "cohorts/deepseek_shared_qwen/schema.json": "9897b6e6a8422142e04a2f5603af308e02bfd4f28d532073996fa6990ee81e42",
+      "cohorts/deepseek_generation_aligned/folds.csv": "685832c802f87e8b3976f4f3a60b335a4e0f8efd33174a11b75f5b5e3d2dc2b4",
+      "cohorts/deepseek_generation_aligned/features_label_blind.jsonl": "fbe797801941366f74192ac47ea46e1a729f2ce280ba223bda263f1aee32071f",
+      "cohorts/deepseek_generation_aligned/manifest.jsonl": "00f4417201267a7078cbfbfa78ed451dd88e8e4b10a6abf7b3b0807a297ed400",
+      "cohorts/deepseek_generation_aligned/fold_provenance.json": "e49fd88d59430ca31fa8362b62b3adcf05dfb92ae67d6d90b2a2bc8ec6136a56",
+      "cohorts/deepseek_generation_aligned/labels.csv": "ddbb65084bda19c152a0b654839e8d1d940714c3e2662ea6609fed3d626fc347",
+      "cohorts/deepseek_generation_aligned/schema.json": "9ce7bfc7b6995fc8de459a5926ef16b5d34e7f572f72c9f727f9a713774ff7f1",
+      "src/frozen/three_world_parser.py": "fff476be96529d7b14d4154c7653b2bf67f6bce8757e2b26a238bcf620e42dd3",
+      "src/frozen/SOURCE_HASHES.json": "21e72858256769d07c2773cbf3ef093bdab5dff4a4ad639eea38b417711d3c50",
+      "src/frozen/README.md": "1c72a92ff16b315c0108e01b262f4cc0ebb0fe947111ecd1af60cceee9f8a515",
+      "src/frozen/label_policy.py": "6790468e90a99f54570eb8ecdca0f49722c2aaa6f38de365aef766cbebf2f7bc",
+      "src/frozen/feature_builder.py": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722"
+    },
+    "receipts": {
+      "default_root": {
+        "arguments": [
+          "-I",
+          "-B",
+          "/tmp/pecr-final-official-portability-20261002-v4ghvik9/moved-package/src/benchmark.py",
+          "validate"
+        ],
+        "exit_code": 0,
+        "receipt": {
+          "all_passed": true,
+          "cohorts": {
+            "qwen_generation_aligned": {
+              "n": 2142,
+              "groups": 452,
+              "error_1": 1699,
+              "correct_0": 443,
+              "error_prevalence": 0.7931839402427637,
+              "coverage_of_strict": 1.0,
+              "coverage_of_requested": 0.9626966292134832,
+              "coverage_of_full_frame": 0.9558232931726908,
+              "fold_support": [
+                {
+                  "fold": 0,
+                  "n": 429,
+                  "groups": 90,
+                  "error_1": 336,
+                  "correct_0": 93
+                },
+                {
+                  "fold": 1,
+                  "n": 429,
+                  "groups": 91,
+                  "error_1": 334,
+                  "correct_0": 95
+                },
+                {
+                  "fold": 2,
+                  "n": 428,
+                  "groups": 90,
+                  "error_1": 337,
+                  "correct_0": 91
+                },
+                {
+                  "fold": 3,
+                  "n": 428,
+                  "groups": 90,
+                  "error_1": 338,
+                  "correct_0": 90
+                },
+                {
+                  "fold": 4,
+                  "n": 428,
+                  "groups": 91,
+                  "error_1": 354,
+                  "correct_0": 74
+                }
+              ],
+              "matrix_dimensions": {
+                "graph_only": [
+                  2142,
+                  96
+                ],
+                "raw_three_world": [
+                  2142,
+                  113
+                ],
+                "full_curve": [
+                  2142,
+                  129
+                ],
+                "no_input_normalization": [
+                  2142,
+                  124
+                ],
+                "no_curvature_asymmetry": [
+                  2142,
+                  125
+                ],
+                "no_direction_information": [
+                  2142,
+                  121
+                ]
+              }
+            },
+            "deepseek_shared_qwen": {
+              "n": 2050,
+              "groups": 448,
+              "error_1": 1257,
+              "correct_0": 793,
+              "error_prevalence": 0.6131707317073171,
+              "coverage_of_strict": 1.0,
+              "coverage_of_requested": 0.9213483146067416,
+              "coverage_of_full_frame": 0.9147701918786256,
+              "fold_support": [
+                {
+                  "fold": 0,
+                  "n": 410,
+                  "groups": 88,
+                  "error_1": 232,
+                  "correct_0": 178
+                },
+                {
+                  "fold": 1,
+                  "n": 410,
+                  "groups": 89,
+                  "error_1": 263,
+                  "correct_0": 147
+                },
+                {
+                  "fold": 2,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 244,
+                  "correct_0": 166
+                },
+                {
+                  "fold": 3,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 241,
+                  "correct_0": 169
+                },
+                {
+                  "fold": 4,
+                  "n": 410,
+                  "groups": 91,
+                  "error_1": 277,
+                  "correct_0": 133
+                }
+              ],
+              "matrix_dimensions": {
+                "graph_only": [
+                  2050,
+                  96
+                ],
+                "raw_three_world": [
+                  2050,
+                  113
+                ],
+                "full_curve": [
+                  2050,
+                  129
+                ],
+                "no_input_normalization": [
+                  2050,
+                  124
+                ],
+                "no_curvature_asymmetry": [
+                  2050,
+                  125
+                ],
+                "no_direction_information": [
+                  2050,
+                  121
+                ]
+              }
+            },
+            "deepseek_generation_aligned": {
+              "n": 2050,
+              "groups": 448,
+              "error_1": 1257,
+              "correct_0": 793,
+              "error_prevalence": 0.6131707317073171,
+              "coverage_of_strict": 1.0,
+              "coverage_of_requested": 0.9213483146067416,
+              "coverage_of_full_frame": 0.9147701918786256,
+              "fold_support": [
+                {
+                  "fold": 0,
+                  "n": 410,
+                  "groups": 88,
+                  "error_1": 232,
+                  "correct_0": 178
+                },
+                {
+                  "fold": 1,
+                  "n": 410,
+                  "groups": 89,
+                  "error_1": 263,
+                  "correct_0": 147
+                },
+                {
+                  "fold": 2,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 244,
+                  "correct_0": 166
+                },
+                {
+                  "fold": 3,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 241,
+                  "correct_0": 169
+                },
+                {
+                  "fold": 4,
+                  "n": 410,
+                  "groups": 91,
+                  "error_1": 277,
+                  "correct_0": 133
+                }
+              ],
+              "matrix_dimensions": {
+                "graph_only": [
+                  2050,
+                  96
+                ],
+                "raw_three_world": [
+                  2050,
+                  113
+                ],
+                "full_curve": [
+                  2050,
+                  129
+                ],
+                "no_input_normalization": [
+                  2050,
+                  124
+                ],
+                "no_curvature_asymmetry": [
+                  2050,
+                  125
+                ],
+                "no_direction_information": [
+                  2050,
+                  121
+                ]
+              }
+            }
+          },
+          "checks": {
+            "unique_IDs_and_exact_row_order": true,
+            "label_group_fold_reference_alignment": true,
+            "group_disjoint_and_group_only_reconstructed_folds": true,
+            "exact_named_feature_column_order_and_dimensions": true,
+            "finite_pairwise_nonsharing_writable_matrices": true,
+            "Raw17_equals_Curve33_prefix_and_exact_arithmetic": true,
+            "world_raw_curve_have_identical_ID_coverage": true,
+            "saved_native_shared_aliases_equal_primary_OOF": true,
+            "full_attempted_coverage_and_unknown_statuses_verified": true,
+            "aligned_tracks_same_generation_original_feature_binding": true,
+            "native_missing_G_not_filled_with_shared_G": true
+          },
+          "model_API_calls": 0,
+          "corpus_gold_ledger_checkpoint_inputs": false,
+          "fits": 0,
+          "coverage_summary": {
+            "TRAIN_gold_holdout_access": false,
+            "as_before_coverage_retained": true,
+            "cohorts": {
+              "deepseek_generation_aligned": {
+                "G96_computation_status": {
+                  "computed_saved_target_native": 2050,
+                  "not_computed": 191
+                },
+                "frame_groups": 453,
+                "frame_rows": 2241,
+                "mutually_exclusive_partitions": {
+                  "invalid_known_label": 79,
+                  "invalid_unknown_label": 42,
+                  "strict_parsed_labeled": 2050,
+                  "unrequested_construction_exclusion": 16,
+                  "valid_unknown_label": 54
+                },
+                "offline_parser_status": {
+                  "negative": {
+                    "answer_not_numeric": 31,
+                    "missing_json": 40,
+                    "ok": 2154,
+                    "unknown": 16
+                  },
+                  "original": {
+                    "answer_not_numeric": 35,
+                    "missing_json": 8,
+                    "ok": 2182,
+                    "unknown": 16
+                  },
+                  "positive": {
+                    "answer_not_numeric": 34,
+                    "missing_json": 39,
+                    "ok": 2152,
+                    "unknown": 16
+                  }
+                },
+                "requested_not_strict": 175,
+                "requested_rows": 2225,
+                "strict_correct": 793,
+                "strict_error": 1257,
+                "strict_groups": 448,
+                "strict_rows": 2050,
+                "strict_unit_combinations": {
+                  "empty_mismatch": 102,
+                  "empty_same": 51,
+                  "nonempty_mismatch": 279,
+                  "nonempty_same": 1618
+                },
+                "unrequested_rows": 16
+              },
+              "deepseek_shared_qwen": {
+                "G96_computation_status": {
+                  "inherited_saved": 2241
+                },
+                "frame_groups": 453,
+                "frame_rows": 2241,
+                "mutually_exclusive_partitions": {
+                  "invalid_known_label": 79,
+                  "invalid_unknown_label": 42,
+                  "strict_parsed_labeled": 2050,
+                  "unrequested_construction_exclusion": 16,
+                  "valid_unknown_label": 54
+                },
+                "offline_parser_status": {
+                  "negative": {
+                    "answer_not_numeric": 31,
+                    "missing_json": 40,
+                    "ok": 2154,
+                    "unknown": 16
+                  },
+                  "original": {
+                    "answer_not_numeric": 35,
+                    "missing_json": 8,
+                    "ok": 2182,
+                    "unknown": 16
+                  },
+                  "positive": {
+                    "answer_not_numeric": 34,
+                    "missing_json": 39,
+                    "ok": 2152,
+                    "unknown": 16
+                  }
+                },
+                "requested_not_strict": 175,
+                "requested_rows": 2225,
+                "strict_correct": 793,
+                "strict_error": 1257,
+                "strict_groups": 448,
+                "strict_rows": 2050,
+                "strict_unit_combinations": {
+                  "empty_mismatch": 102,
+                  "empty_same": 51,
+                  "nonempty_mismatch": 279,
+                  "nonempty_same": 1618
+                },
+                "unrequested_rows": 16
+              },
+              "qwen_generation_aligned": {
+                "G96_computation_status": {
+                  "inherited_saved": 2241
+                },
+                "frame_groups": 453,
+                "frame_rows": 2241,
+                "mutually_exclusive_partitions": {
+                  "invalid_known_label": 7,
+                  "invalid_unknown_label": 24,
+                  "strict_parsed_labeled": 2142,
+                  "unrequested_construction_exclusion": 16,
+                  "valid_unknown_label": 52
+                },
+                "offline_parser_status": {
+                  "negative": {
+                    "answer_not_numeric": 22,
+                    "missing_json": 1,
+                    "unknown_unrequested": 16,
+                    "valid": 2202
+                  },
+                  "original": {
+                    "answer_not_numeric": 26,
+                    "unknown_unrequested": 16,
+                    "valid": 2199
+                  },
+                  "positive": {
+                    "answer_not_numeric": 22,
+                    "missing_json": 1,
+                    "unknown_unrequested": 16,
+                    "valid": 2202
+                  }
+                },
+                "requested_not_strict": 83,
+                "requested_rows": 2225,
+                "strict_correct": 443,
+                "strict_error": 1699,
+                "strict_groups": 452,
+                "strict_rows": 2142,
+                "strict_unit_combinations": {
+                  "empty_mismatch": 103,
+                  "empty_same": 153,
+                  "nonempty_mismatch": 111,
+                  "nonempty_same": 1775
+                },
+                "unrequested_rows": 16
+              }
+            },
+            "model_API_calls": 0,
+            "native_six_methods_available_after_fixed_supplement": true,
+            "training_fits": 0
+          }
+        },
+        "stderr": ""
+      },
+      "explicit_root": {
+        "arguments": [
+          "-I",
+          "-B",
+          "/tmp/pecr-final-official-portability-20261002-v4ghvik9/launcher-only/src/benchmark.py",
+          "--root",
+          "/tmp/pecr-final-official-portability-20261002-v4ghvik9/moved-package",
+          "validate"
+        ],
+        "exit_code": 0,
+        "receipt": {
+          "all_passed": true,
+          "cohorts": {
+            "qwen_generation_aligned": {
+              "n": 2142,
+              "groups": 452,
+              "error_1": 1699,
+              "correct_0": 443,
+              "error_prevalence": 0.7931839402427637,
+              "coverage_of_strict": 1.0,
+              "coverage_of_requested": 0.9626966292134832,
+              "coverage_of_full_frame": 0.9558232931726908,
+              "fold_support": [
+                {
+                  "fold": 0,
+                  "n": 429,
+                  "groups": 90,
+                  "error_1": 336,
+                  "correct_0": 93
+                },
+                {
+                  "fold": 1,
+                  "n": 429,
+                  "groups": 91,
+                  "error_1": 334,
+                  "correct_0": 95
+                },
+                {
+                  "fold": 2,
+                  "n": 428,
+                  "groups": 90,
+                  "error_1": 337,
+                  "correct_0": 91
+                },
+                {
+                  "fold": 3,
+                  "n": 428,
+                  "groups": 90,
+                  "error_1": 338,
+                  "correct_0": 90
+                },
+                {
+                  "fold": 4,
+                  "n": 428,
+                  "groups": 91,
+                  "error_1": 354,
+                  "correct_0": 74
+                }
+              ],
+              "matrix_dimensions": {
+                "graph_only": [
+                  2142,
+                  96
+                ],
+                "raw_three_world": [
+                  2142,
+                  113
+                ],
+                "full_curve": [
+                  2142,
+                  129
+                ],
+                "no_input_normalization": [
+                  2142,
+                  124
+                ],
+                "no_curvature_asymmetry": [
+                  2142,
+                  125
+                ],
+                "no_direction_information": [
+                  2142,
+                  121
+                ]
+              }
+            },
+            "deepseek_shared_qwen": {
+              "n": 2050,
+              "groups": 448,
+              "error_1": 1257,
+              "correct_0": 793,
+              "error_prevalence": 0.6131707317073171,
+              "coverage_of_strict": 1.0,
+              "coverage_of_requested": 0.9213483146067416,
+              "coverage_of_full_frame": 0.9147701918786256,
+              "fold_support": [
+                {
+                  "fold": 0,
+                  "n": 410,
+                  "groups": 88,
+                  "error_1": 232,
+                  "correct_0": 178
+                },
+                {
+                  "fold": 1,
+                  "n": 410,
+                  "groups": 89,
+                  "error_1": 263,
+                  "correct_0": 147
+                },
+                {
+                  "fold": 2,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 244,
+                  "correct_0": 166
+                },
+                {
+                  "fold": 3,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 241,
+                  "correct_0": 169
+                },
+                {
+                  "fold": 4,
+                  "n": 410,
+                  "groups": 91,
+                  "error_1": 277,
+                  "correct_0": 133
+                }
+              ],
+              "matrix_dimensions": {
+                "graph_only": [
+                  2050,
+                  96
+                ],
+                "raw_three_world": [
+                  2050,
+                  113
+                ],
+                "full_curve": [
+                  2050,
+                  129
+                ],
+                "no_input_normalization": [
+                  2050,
+                  124
+                ],
+                "no_curvature_asymmetry": [
+                  2050,
+                  125
+                ],
+                "no_direction_information": [
+                  2050,
+                  121
+                ]
+              }
+            },
+            "deepseek_generation_aligned": {
+              "n": 2050,
+              "groups": 448,
+              "error_1": 1257,
+              "correct_0": 793,
+              "error_prevalence": 0.6131707317073171,
+              "coverage_of_strict": 1.0,
+              "coverage_of_requested": 0.9213483146067416,
+              "coverage_of_full_frame": 0.9147701918786256,
+              "fold_support": [
+                {
+                  "fold": 0,
+                  "n": 410,
+                  "groups": 88,
+                  "error_1": 232,
+                  "correct_0": 178
+                },
+                {
+                  "fold": 1,
+                  "n": 410,
+                  "groups": 89,
+                  "error_1": 263,
+                  "correct_0": 147
+                },
+                {
+                  "fold": 2,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 244,
+                  "correct_0": 166
+                },
+                {
+                  "fold": 3,
+                  "n": 410,
+                  "groups": 90,
+                  "error_1": 241,
+                  "correct_0": 169
+                },
+                {
+                  "fold": 4,
+                  "n": 410,
+                  "groups": 91,
+                  "error_1": 277,
+                  "correct_0": 133
+                }
+              ],
+              "matrix_dimensions": {
+                "graph_only": [
+                  2050,
+                  96
+                ],
+                "raw_three_world": [
+                  2050,
+                  113
+                ],
+                "full_curve": [
+                  2050,
+                  129
+                ],
+                "no_input_normalization": [
+                  2050,
+                  124
+                ],
+                "no_curvature_asymmetry": [
+                  2050,
+                  125
+                ],
+                "no_direction_information": [
+                  2050,
+                  121
+                ]
+              }
+            }
+          },
+          "checks": {
+            "unique_IDs_and_exact_row_order": true,
+            "label_group_fold_reference_alignment": true,
+            "group_disjoint_and_group_only_reconstructed_folds": true,
+            "exact_named_feature_column_order_and_dimensions": true,
+            "finite_pairwise_nonsharing_writable_matrices": true,
+            "Raw17_equals_Curve33_prefix_and_exact_arithmetic": true,
+            "world_raw_curve_have_identical_ID_coverage": true,
+            "saved_native_shared_aliases_equal_primary_OOF": true,
+            "full_attempted_coverage_and_unknown_statuses_verified": true,
+            "aligned_tracks_same_generation_original_feature_binding": true,
+            "native_missing_G_not_filled_with_shared_G": true
+          },
+          "model_API_calls": 0,
+          "corpus_gold_ledger_checkpoint_inputs": false,
+          "fits": 0,
+          "coverage_summary": {
+            "TRAIN_gold_holdout_access": false,
+            "as_before_coverage_retained": true,
+            "cohorts": {
+              "deepseek_generation_aligned": {
+                "G96_computation_status": {
+                  "computed_saved_target_native": 2050,
+                  "not_computed": 191
+                },
+                "frame_groups": 453,
+                "frame_rows": 2241,
+                "mutually_exclusive_partitions": {
+                  "invalid_known_label": 79,
+                  "invalid_unknown_label": 42,
+                  "strict_parsed_labeled": 2050,
+                  "unrequested_construction_exclusion": 16,
+                  "valid_unknown_label": 54
+                },
+                "offline_parser_status": {
+                  "negative": {
+                    "answer_not_numeric": 31,
+                    "missing_json": 40,
+                    "ok": 2154,
+                    "unknown": 16
+                  },
+                  "original": {
+                    "answer_not_numeric": 35,
+                    "missing_json": 8,
+                    "ok": 2182,
+                    "unknown": 16
+                  },
+                  "positive": {
+                    "answer_not_numeric": 34,
+                    "missing_json": 39,
+                    "ok": 2152,
+                    "unknown": 16
+                  }
+                },
+                "requested_not_strict": 175,
+                "requested_rows": 2225,
+                "strict_correct": 793,
+                "strict_error": 1257,
+                "strict_groups": 448,
+                "strict_rows": 2050,
+                "strict_unit_combinations": {
+                  "empty_mismatch": 102,
+                  "empty_same": 51,
+                  "nonempty_mismatch": 279,
+                  "nonempty_same": 1618
+                },
+                "unrequested_rows": 16
+              },
+              "deepseek_shared_qwen": {
+                "G96_computation_status": {
+                  "inherited_saved": 2241
+                },
+                "frame_groups": 453,
+                "frame_rows": 2241,
+                "mutually_exclusive_partitions": {
+                  "invalid_known_label": 79,
+                  "invalid_unknown_label": 42,
+                  "strict_parsed_labeled": 2050,
+                  "unrequested_construction_exclusion": 16,
+                  "valid_unknown_label": 54
+                },
+                "offline_parser_status": {
+                  "negative": {
+                    "answer_not_numeric": 31,
+                    "missing_json": 40,
+                    "ok": 2154,
+                    "unknown": 16
+                  },
+                  "original": {
+                    "answer_not_numeric": 35,
+                    "missing_json": 8,
+                    "ok": 2182,
+                    "unknown": 16
+                  },
+                  "positive": {
+                    "answer_not_numeric": 34,
+                    "missing_json": 39,
+                    "ok": 2152,
+                    "unknown": 16
+                  }
+                },
+                "requested_not_strict": 175,
+                "requested_rows": 2225,
+                "strict_correct": 793,
+                "strict_error": 1257,
+                "strict_groups": 448,
+                "strict_rows": 2050,
+                "strict_unit_combinations": {
+                  "empty_mismatch": 102,
+                  "empty_same": 51,
+                  "nonempty_mismatch": 279,
+                  "nonempty_same": 1618
+                },
+                "unrequested_rows": 16
+              },
+              "qwen_generation_aligned": {
+                "G96_computation_status": {
+                  "inherited_saved": 2241
+                },
+                "frame_groups": 453,
+                "frame_rows": 2241,
+                "mutually_exclusive_partitions": {
+                  "invalid_known_label": 7,
+                  "invalid_unknown_label": 24,
+                  "strict_parsed_labeled": 2142,
+                  "unrequested_construction_exclusion": 16,
+                  "valid_unknown_label": 52
+                },
+                "offline_parser_status": {
+                  "negative": {
+                    "answer_not_numeric": 22,
+                    "missing_json": 1,
+                    "unknown_unrequested": 16,
+                    "valid": 2202
+                  },
+                  "original": {
+                    "answer_not_numeric": 26,
+                    "unknown_unrequested": 16,
+                    "valid": 2199
+                  },
+                  "positive": {
+                    "answer_not_numeric": 22,
+                    "missing_json": 1,
+                    "unknown_unrequested": 16,
+                    "valid": 2202
+                  }
+                },
+                "requested_not_strict": 83,
+                "requested_rows": 2225,
+                "strict_correct": 443,
+                "strict_error": 1699,
+                "strict_groups": 452,
+                "strict_rows": 2142,
+                "strict_unit_combinations": {
+                  "empty_mismatch": 103,
+                  "empty_same": 153,
+                  "nonempty_mismatch": 111,
+                  "nonempty_same": 1775
+                },
+                "unrequested_rows": 16
+              }
+            },
+            "model_API_calls": 0,
+            "native_six_methods_available_after_fixed_supplement": true,
+            "training_fits": 0
+          }
+        },
+        "stderr": ""
+      }
+    },
+    "extra_report_generator_is_not_imported_by_training": true
+  },
+  "all_required_review_checks_passed": true,
+  "native_reference_completion_fits_separately_authorized": 20
+}

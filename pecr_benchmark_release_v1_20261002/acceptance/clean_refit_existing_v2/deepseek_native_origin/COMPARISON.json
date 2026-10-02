@@ -1,0 +1,32 @@
+{
+  "methods": {
+    "native_G_curve": {
+      "exact_prediction_match": true,
+      "different_rows": 0,
+      "max_abs_prediction_difference": 0.0
+    },
+    "native_G_raw": {
+      "exact_prediction_match": true,
+      "different_rows": 0,
+      "max_abs_prediction_difference": 0.0
+    },
+    "shared_G_curve": {
+      "exact_prediction_match": true,
+      "different_rows": 0,
+      "max_abs_prediction_difference": 0.0
+    },
+    "shared_G_raw": {
+      "exact_prediction_match": true,
+      "different_rows": 0,
+      "max_abs_prediction_difference": 0.0
+    }
+  },
+  "all_predictions_exact": true,
+  "old_primary_modified": false,
+  "no_search_or_retry": true,
+  "saved_evaluation": {
+    "all_saved_points_and_intervals_exact": true,
+    "differences": [],
+    "historical_additional_contrasts_not_recomputed": []
+  }
+}

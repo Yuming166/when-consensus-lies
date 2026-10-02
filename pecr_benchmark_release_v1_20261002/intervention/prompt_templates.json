@@ -1,0 +1,21 @@
+{
+  "origins": {
+    "deepseek": {
+      "max_tokens": 8192,
+      "model": "deepseek-flash",
+      "reasoning_effort": "low",
+      "temperature": 0
+    },
+    "qwen": {
+      "max_tokens": 384,
+      "model": "Qwen3.5-4B",
+      "temperature": 0
+    }
+  },
+  "pre_post_text_serialization": "space join with no normalization",
+  "schema_version": "pecr_saved_request_profiles_v1",
+  "system": "You answer quantitative financial questions from only the supplied question and evidence. Do not use outside knowledge. Do not reveal chain-of-thought. Return exactly one JSON object with keys: answer_value, unit, confidence, supporting_evidence. answer_value must be a concise numeric answer as a string (keep signs and decimal precision); unit must be a short string or null; confidence must be a number from 0 to 1; supporting_evidence must be an array of at most three short verbatim snippets copied from the supplied evidence. If the evidence is insufficient, set answer_value to an empty string, unit to null, confidence to 0, and supporting_evidence to []. Do not add other keys or markdown.",
+  "system_utf8_sha256": "acdc959e2d6929fb3db8b3db4eab0799256d47152b394fd9eaf4d32ebdbfb132",
+  "table_serialization": "rows joined by newline, cells str() joined with space-pipe-space",
+  "user_template": "Answer the question using the evidence below. The answer may require arithmetic. Return only the required JSON object.\n\nQUESTION:\n{question}\n\nPRE-TEXT:\n{pre_text}\n\nTABLE:\n{table}\n\nPOST-TEXT:\n{post_text}"
+}

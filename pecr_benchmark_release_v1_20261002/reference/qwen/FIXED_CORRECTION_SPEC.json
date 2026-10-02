@@ -1,0 +1,77 @@
+{
+  "version": "pecr_qwen_generation_aligned_correction_v1_20261002",
+  "written_utc": "2026-10-01T17:37:57.626599+00:00",
+  "status": "fixed post-hoc generation-aligned target correction; not preregistration or independent confirmation",
+  "frame": {
+    "full_rows": 2241,
+    "requested_rows": 2225,
+    "selection": "all requested items in original frozen manifest order; numeric/confidence historical strict parser, existing construction exclusion and frozen answer label eligibility; do not restrict to old1735 or select by correctness"
+  },
+  "generation_equivalence": {
+    "basis": "original answer fields only, before correctness labels; exact Decimal equality using frozen numeric parsing",
+    "classifications": [
+      "equivalent",
+      "changed",
+      "missing"
+    ],
+    "missing": "old or new original numeric answer cannot be recovered/parsed; keep field hashes and unknown metadata; no correctness filtering",
+    "unit_confidence": "record separately, not change equivalence definition"
+  },
+  "labels": {
+    "authorized_gold": "FinQA TRAIN top-level id and qa.answer for requested IDs only",
+    "train_path": "/data/yuanrz/dataset/FinQA/dataset/train.json",
+    "expected_train_sha256": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6",
+    "rule": "frozen V3.1/v3.2 label_policy.py parse_numeric/label_one verbatim; no tolerance, percent scaling or parser changes",
+    "positive_class": "error=1-correct",
+    "no_gold_in_features": true,
+    "only_label_stage_gold_access": true,
+    "gold_values_exported": false
+  },
+  "features": {
+    "G96": "original-side input plus current three-world Qwen original response, frozen feature_builder _graph/_safe; never substitute old Qwen response",
+    "raw17_curve33": "same saved parser/arithmetic/order and finite nonsharing requirements",
+    "safe_failure": "mark invalid/unknown without synthesizing success or old-generation fallback"
+  },
+  "training": {
+    "models": [
+      "graph_only",
+      "raw_three_world",
+      "full_curve",
+      "no_input_normalization",
+      "no_curvature_asymmetry",
+      "no_direction_information"
+    ],
+    "HGB": {
+      "max_iter": 250,
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "l2_regularization": 1.0,
+      "random_state": 20260928
+    },
+    "folds": "GroupKFold(n_splits=5, shuffle=False) on exact source_group in new full eligible queue; folds are newly constructed post-hoc and may differ from old",
+    "threads": 1,
+    "expected_fits": 30,
+    "single_fixed_pass": true,
+    "no_seed_sample_or_parameter_search": true
+  },
+  "evaluation": {
+    "primary": "new labels/new G/new full queue; AUROC/AP; Full-Raw and Full-Graph plus three predefined family-removal contrasts",
+    "bootstrap": {
+      "B": 2000,
+      "seed": 20260928,
+      "unit": "source_group",
+      "paired": true,
+      "ci": "percentile 2.5/97.5",
+      "degenerate_draws": "count/drop without retries"
+    },
+    "common_items": "IDs intersect old1735 and new strict queue, original row matching; old OOF with old/new labels and new OOF with new labels; all/common/added/old-only supports. Differences between trained runs are not isolated label/G/coverage causal effects."
+  },
+  "restrictions": {
+    "new_model_API_requests": false,
+    "holdout_565_read": false,
+    "other_split_gold_read": false,
+    "old_artifacts_written": false,
+    "V17_written": false,
+    "automatic_push": false
+  }
+}

@@ -4,10 +4,31 @@ A curated companion repository for the **"When Consensus Lies"** research line:
 *as-of provenance faithfulness for reliable multi-agent LLM decisions under
 distribution shift*, with S&P 500 as a sequential, as-of-constrained testbed.
 
-This repository intentionally contains **experiment data and documents only**
-(no code, no runtime logs, no model caches). It is the clean showcase of the
-project; the full working tree lives in
+This repository contains curated experiment data, research documents, and
+selected reproducibility code. It excludes model caches and private raw response
+ledgers. The full working tree lives in
 [`Yuming166/SP500_ML`](https://github.com/Yuming166/SP500_ML).
+
+## PECR reproducible benchmark — 2026-10-02
+
+The [generation-aligned benchmark release](pecr_benchmark_release_v1_20261002/README.md)
+provides current Qwen (2,142 items / 452 groups) and DeepSeek native G
+(2,050 / 448) tracks, with six fixed methods per track. The historical
+shared-Qwen G track and source comparison are retained separately.
+Fresh-environment refitting reproduced all saved OOF predictions, estimates
+and paired intervals exactly; these remain post-hoc development results.
+
+- [Data card and claim boundaries](pecr_benchmark_release_v1_20261002/DATA_CARD.md)
+- [Actual acceptance report](pecr_benchmark_release_v1_20261002/acceptance/FINAL_REPORT.md)
+- [Complete coverage, including 83 Qwen requested exclusions](pecr_benchmark_release_v1_20261002/coverage/FINAL_COVERAGE.md)
+- [Executable three-world input reconstruction](pecr_benchmark_release_v1_20261002/intervention/README.md)
+
+The release contains code, numerical answers/features, labels, OOF, schemas,
+coverage and source hashes. It contains no raw ledgers, reasoning, financial
+passages, credentials, model checkpoints or holdout data. The local compressed
+archive is omitted from Git; the [archive acceptance receipt](pecr_benchmark_release_v1_20261002.archive_validation.json)
+records its checksum and independent extraction checks. New model calls require
+new generation-aligned labels, G96 and a versioned strict queue.
 
 ## In one paragraph
 

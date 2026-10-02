@@ -1,0 +1,31 @@
+{
+  "all_passed": true,
+  "fit_history": {
+    "failed_report_pass": 70,
+    "repaired_existing_suite": 70,
+    "posthoc_native_fixed_completion": 20,
+    "final_clean_full_release_retrain": 90,
+    "total_fits_this_release_task": 250,
+    "launcher_or_schema_guard_failures": 0
+  },
+  "final_clean_fits": 90,
+  "system_site_packages": false,
+  "all_primary_component_origin_predictions_exact": true,
+  "all_saved_point_and_paired_intervals_exact": true,
+  "execution_sources_and_numeric_core_identical_to_final_release": {
+    "src/benchmark.py": true,
+    "src/numeric.py": true,
+    "src/evaluation.py": true,
+    "protocol/HGB_PARAMS.json": true,
+    "strict_numerical_files": true,
+    "all_reference_bytes": true
+  },
+  "coverage_canonical_validated": true,
+  "old_primary_or_paper_changed": false,
+  "source_generation_scope": "aligned Qwen and native DeepSeek; shared-Qwen G historical exception",
+  "new_model_API_calls": 0,
+  "gold_label_generation_in_release": false,
+  "holdout_access": false,
+  "input_reconstruction_exact": 13350,
+  "missing_required_source_files": []
+}

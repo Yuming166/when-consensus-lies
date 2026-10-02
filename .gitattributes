@@ -1,2 +1,9 @@
 # Raw data snapshots: keep byte-for-byte (Excel/CSV exports, parquet, jsonl)
 data/** binary
+
+# Preserve sealed PECR benchmark bytes across Git checkouts.
+pecr_benchmark_release_v1_20261002/** -text
+# CSV writers retain CRLF; treat its CR as a line terminator.
+pecr_benchmark_release_v1_20261002/**/*.csv whitespace=cr-at-eol
+# Retain the sealed audit script EOF exactly as recorded in its hashes.
+pecr_benchmark_release_v1_20261002/src/audit_native_generation_binding.py whitespace=-blank-at-eof

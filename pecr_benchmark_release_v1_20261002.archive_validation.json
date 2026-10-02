@@ -1,0 +1,17 @@
+{
+  "all_passed": true,
+  "archive": "pecr_benchmark_release_v1_20261002.tar.gz",
+  "archive_sha256": "4ff0b3b7a15a167eb964e58a830233e8e5f6c2c290ad6370296190adfd1144ca",
+  "archive_bytes": 30410407,
+  "sealed_public_files": 190,
+  "archive_entries": 191,
+  "freshly_extracted_without_old_siblings": true,
+  "numeric_validation_all_passed": true,
+  "full_three_track_coverage_validated": true,
+  "rebuild_request_hashes_exact": 13350,
+  "new_model_API_calls": 0,
+  "gold_or_program_fields_decoded": false,
+  "private_payload_exported": false,
+  "new_fits_in_archive_check": 0,
+  "reproduction_receipt": "pecr_benchmark_release_v1_20261002/acceptance/clean_refit_final/RUNTIME.json"
+}

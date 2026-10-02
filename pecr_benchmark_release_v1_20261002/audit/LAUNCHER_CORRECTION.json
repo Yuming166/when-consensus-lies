@@ -1,0 +1,8 @@
+{
+  "failed_step": "isolated Python -I launcher, before data loading and before fitting",
+  "exception": "ModuleNotFoundError: evaluation",
+  "completed_fits_at_failure": 0,
+  "cause": "Python isolated mode removes script directory from sys.path",
+  "correction": "explicitly add only resolved release src directory to sys.path",
+  "parameters_seeds_samples_changed": false
+}

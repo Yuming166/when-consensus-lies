@@ -1,0 +1,302 @@
+{
+  "source_base": "..",
+  "recorded_utc": "2026-10-01T15:25:19.385933+00:00",
+  "files": [
+    {
+      "path_relative_to_source_base": "pecr_bidirectional_development_v1_20260928/data/construction_audit_dev_train.json",
+      "path_relative_to_bundle": "../pecr_bidirectional_development_v1_20260928/data/construction_audit_dev_train.json",
+      "sha256": "ec7ab89be0c79c1d66b99d370ba27a4e5208ce01cf5c727397d0854fa122c2a2",
+      "bytes": 2793,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_bidirectional_development_v1_20260928/data/construction_manifest_dev_train.jsonl",
+      "path_relative_to_bundle": "../pecr_bidirectional_development_v1_20260928/data/construction_manifest_dev_train.jsonl",
+      "sha256": "e44396734f1f8c1b32cc7e87ef197c642965dc5035870d6b800bee3a5e988de4",
+      "bytes": 12892847,
+      "raw_content_exported": false
+    },
+    {
+      "path_relative_to_source_base": "pecr_bidirectional_development_v1_20260928/data/full_dev/raw_ledger_full_dev.jsonl",
+      "path_relative_to_bundle": "../pecr_bidirectional_development_v1_20260928/data/full_dev/raw_ledger_full_dev.jsonl",
+      "sha256": "dc8d2e8ed5ff5d4990d4a822c71115d6073af599b9a48e1d31884b2687b51470",
+      "bytes": 47891071,
+      "raw_content_exported": false
+    },
+    {
+      "path_relative_to_source_base": "pecr_bidirectional_development_v1_20260928/data/full_dev/selection_freeze.json",
+      "path_relative_to_bundle": "../pecr_bidirectional_development_v1_20260928/data/full_dev/selection_freeze.json",
+      "sha256": "e717fded4d6a26a97c607d45dc39804863fd4e8da84b3bf1711367ea65241929",
+      "bytes": 67500,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_bidirectional_transformer_development_v1_20260928/data/parsed_v2/integrity_audit.json",
+      "path_relative_to_bundle": "../pecr_bidirectional_transformer_development_v1_20260928/data/parsed_v2/integrity_audit.json",
+      "sha256": "4190b74a4f494ea78b52e9316098845b8f0048d1b0574cd2bd5c985ad794ece3",
+      "bytes": 1744,
+      "raw_content_exported": false,
+      "metadata_hash_recorded_utc": "2026-10-01T15:45:05.334327+00:00"
+    },
+    {
+      "path_relative_to_source_base": "pecr_bidirectional_transformer_development_v1_20260928/data/parsed_v2/labeled_features.jsonl",
+      "path_relative_to_bundle": "../pecr_bidirectional_transformer_development_v1_20260928/data/parsed_v2/labeled_features.jsonl",
+      "sha256": "d693fa9505f5ee26702d7d34bace5b00a5b80d418fcc4958cbb943e198e623b5",
+      "bytes": 23574881,
+      "raw_content_exported": false
+    },
+    {
+      "path_relative_to_source_base": "pecr_bidirectional_transformer_development_v1_20260928/src/prepare_bidirectional.py",
+      "path_relative_to_bundle": "../pecr_bidirectional_transformer_development_v1_20260928/src/prepare_bidirectional.py",
+      "sha256": "a42b6d4df1fd6d3ae5c15d7b23acefc01f1ae80b1c3a500e4212a40eb74f67f8",
+      "bytes": 5479,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_crossmodel_deepseek_v1_20261001/data/full_dev/selection_freeze.json",
+      "path_relative_to_bundle": "../pecr_crossmodel_deepseek_v1_20261001/data/full_dev/selection_freeze.json",
+      "sha256": "8b0377a005d06aa51ec99d3b22120f5db45361713b8ddfe4bbf4e588602e6acf",
+      "bytes": 67591,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_crossmodel_deepseek_v1_20261001/src/run_analysis.sh",
+      "path_relative_to_bundle": "../pecr_crossmodel_deepseek_v1_20261001/src/run_analysis.sh",
+      "sha256": "25682bee59e07e89ef536934fba525a7b53330b1afc63ba09d7d610d2d0f490f",
+      "bytes": 1217,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_crossmodel_deepseek_v2_complete_20261001/data/labels_deepseek_v2.csv",
+      "path_relative_to_bundle": "../pecr_crossmodel_deepseek_v2_complete_20261001/data/labels_deepseek_v2.csv",
+      "sha256": "dbc2798c22c8958e19422a6bdd32b2066ab84a5c479b911a06eff264a76fb316",
+      "bytes": 82620,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_crossmodel_deepseek_v2_complete_20261001/data/merged_ledger_v2.jsonl",
+      "path_relative_to_bundle": "../pecr_crossmodel_deepseek_v2_complete_20261001/data/merged_ledger_v2.jsonl",
+      "sha256": "78c9aa03f012bfbf4b3d7d13272bc4809bb0f20e13541818bb4325234026bbda",
+      "bytes": 76583023,
+      "raw_content_exported": false
+    },
+    {
+      "path_relative_to_source_base": "pecr_crossmodel_deepseek_v2_complete_20261001/data/parsed_deepseek_v2/integrity_audit.json",
+      "path_relative_to_bundle": "../pecr_crossmodel_deepseek_v2_complete_20261001/data/parsed_deepseek_v2/integrity_audit.json",
+      "sha256": "11ec58833564d394e194d44e1e00e458df1cdd1a938eccb589ffc587c21a09c7",
+      "bytes": 57304,
+      "raw_content_exported": false,
+      "metadata_hash_recorded_utc": "2026-10-01T15:45:05.334593+00:00"
+    },
+    {
+      "path_relative_to_source_base": "pecr_crossmodel_deepseek_v2_complete_20261001/data/parsed_deepseek_v2/labeled_features.jsonl",
+      "path_relative_to_bundle": "../pecr_crossmodel_deepseek_v2_complete_20261001/data/parsed_deepseek_v2/labeled_features.jsonl",
+      "sha256": "bb5a77f388c734592cfd84e2299a2a8d69393c8df7f94a04ecff70c295fe64d6",
+      "bytes": 27541278,
+      "raw_content_exported": false
+    },
+    {
+      "path_relative_to_source_base": "pecr_crossmodel_deepseek_v2_complete_20261001/reports/COVERAGE_FLOW_DEEPSEEK_V2.json",
+      "path_relative_to_bundle": "../pecr_crossmodel_deepseek_v2_complete_20261001/reports/COVERAGE_FLOW_DEEPSEEK_V2.json",
+      "sha256": "1d3c44576c545df0c166f73ed9b7733ddde12865715bbed87e9fe213ba739f56",
+      "bytes": 3859,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_crossmodel_deepseek_v2_complete_20261001/results/within_deepseek_v2/CURVE_HGB_AUDITED.json",
+      "path_relative_to_bundle": "../pecr_crossmodel_deepseek_v2_complete_20261001/results/within_deepseek_v2/CURVE_HGB_AUDITED.json",
+      "sha256": "2c1d862af00f5adb0316caa0074d7ed0a6ccd58708158977f94f0af696858f1f",
+      "bytes": 3955,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_crossmodel_deepseek_v2_complete_20261001/results/within_deepseek_v2/CURVE_HGB_AUDITED_OOF.npz",
+      "path_relative_to_bundle": "../pecr_crossmodel_deepseek_v2_complete_20261001/results/within_deepseek_v2/CURVE_HGB_AUDITED_OOF.npz",
+      "sha256": "00c2f4b78bf41faa9034c263670dfce42416c280282036e26f71fba62a181928",
+      "bytes": 165546,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_crossmodel_deepseek_v2_complete_20261001/src/run_analysis_v2.sh",
+      "path_relative_to_bundle": "../pecr_crossmodel_deepseek_v2_complete_20261001/src/run_analysis_v2.sh",
+      "sha256": "61e060b92c54bb9b7af59cbfe8f6560018ceef85ad5b243a9ed7fefd7c5c74f8",
+      "bytes": 1108,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_curve_component_ablation_v1_20261001/protocol/PRE_REGISTERED_COMPONENT_ABLATION_V1.json",
+      "path_relative_to_bundle": "../pecr_curve_component_ablation_v1_20261001/protocol/PRE_REGISTERED_COMPONENT_ABLATION_V1.json",
+      "sha256": "043acc1b32dd54b782a5afbd3e5b78366a3a419abf1e5b88344cb3b7e852e03c",
+      "bytes": 2517,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_curve_component_ablation_v1_20261001/protocol/QWEN_REPLICATION_SPEC_V1.json",
+      "path_relative_to_bundle": "../pecr_curve_component_ablation_v1_20261001/protocol/QWEN_REPLICATION_SPEC_V1.json",
+      "sha256": "d1b994df49d87b28407cfbaf18cc44cc2a7e2f7d0ba8176d96c45c5424290670",
+      "bytes": 1222,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_curve_component_ablation_v1_20261001/results/COMPONENT_ABLATION.json",
+      "path_relative_to_bundle": "../pecr_curve_component_ablation_v1_20261001/results/COMPONENT_ABLATION.json",
+      "sha256": "2ae859ab5e4e6742a33875bde6a0a830da68414ed94144f590e5c4d2ec38ef8b",
+      "bytes": 5805,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_curve_component_ablation_v1_20261001/results/COMPONENT_ABLATION_OOF.npz",
+      "path_relative_to_bundle": "../pecr_curve_component_ablation_v1_20261001/results/COMPONENT_ABLATION_OOF.npz",
+      "sha256": "19e05818f282bfedca1b382dcc51262dc4f39dbfb623503287265df94a9140ee",
+      "bytes": 182246,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_curve_component_ablation_v1_20261001/results/qwen_replication/COMPONENT_ABLATION.json",
+      "path_relative_to_bundle": "../pecr_curve_component_ablation_v1_20261001/results/qwen_replication/COMPONENT_ABLATION.json",
+      "sha256": "f289d1654b78069e904bd40bda8b9c2b9e7c7e7f63401fa7108d0307be296986",
+      "bytes": 5824,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_curve_component_ablation_v1_20261001/results/qwen_replication/COMPONENT_ABLATION_OOF.npz",
+      "path_relative_to_bundle": "../pecr_curve_component_ablation_v1_20261001/results/qwen_replication/COMPONENT_ABLATION_OOF.npz",
+      "sha256": "2cfb57cc130949acdb5bf2ef6fe5e009e5edf7c96a72156daaa016a9010231a7",
+      "bytes": 154526,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_curve_component_ablation_v1_20261001/src/run_component_ablation.py",
+      "path_relative_to_bundle": "../pecr_curve_component_ablation_v1_20261001/src/run_component_ablation.py",
+      "sha256": "be84c6feceb4a3fb1fd7bdc12cb437397998b414a8412a1406084de60fa4c4da",
+      "bytes": 10673,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_curve_feature_development_v2_audit_20260928/results/CURVE_HGB_AUDITED.json",
+      "path_relative_to_bundle": "../pecr_curve_feature_development_v2_audit_20260928/results/CURVE_HGB_AUDITED.json",
+      "sha256": "146e167f5de523bb92af4398e9ca77697fdeabd1949fc1a38284c088e2399115",
+      "bytes": 3956,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_curve_feature_development_v2_audit_20260928/results/CURVE_HGB_AUDITED_OOF.npz",
+      "path_relative_to_bundle": "../pecr_curve_feature_development_v2_audit_20260928/results/CURVE_HGB_AUDITED_OOF.npz",
+      "sha256": "903c0df91723524d6c12c503f895695d5b97ccf5526bbcd3738b480ecd5ed546",
+      "bytes": 140346,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_curve_feature_development_v2_audit_20260928/src/run_curve_hgb_audited.py",
+      "path_relative_to_bundle": "../pecr_curve_feature_development_v2_audit_20260928/src/run_curve_hgb_audited.py",
+      "sha256": "1ec98e6e21c8ecaad8145541393ef547a158d07685ff57e437130c9b5ce4d9eb",
+      "bytes": 10408,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_historical_parser_96d_feature_export_v1_20261001/features_96/snapshot/feature_row_map.jsonl",
+      "path_relative_to_bundle": "../pecr_historical_parser_96d_feature_export_v1_20261001/features_96/snapshot/feature_row_map.jsonl",
+      "sha256": "48b4170cefbc495d6eb4fc5e03b7f5ffbcd14bf576207b4a71d9600ddf738e6a",
+      "bytes": 167635,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_historical_parser_96d_feature_export_v1_20261001/features_96/snapshot/feature_schema_96.json",
+      "path_relative_to_bundle": "../pecr_historical_parser_96d_feature_export_v1_20261001/features_96/snapshot/feature_schema_96.json",
+      "sha256": "fcac8d756dec85d5096a9fb42b5c6a7779eed0cc3c0e936fc2e6dbf0072844fe",
+      "bytes": 2945,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_historical_parser_96d_feature_export_v1_20261001/features_96/snapshot/features_prelabel.npz",
+      "path_relative_to_bundle": "../pecr_historical_parser_96d_feature_export_v1_20261001/features_96/snapshot/features_prelabel.npz",
+      "sha256": "6a3e6b57df32a446f5f71e4c1d325884bfa3e94ee84940ad87d044e8738706dd",
+      "bytes": 3052520,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/src/prepare_prelabel.py",
+      "path_relative_to_bundle": "../pecr_trd_delta_method_development_v3_20260926/src/prepare_prelabel.py",
+      "sha256": "767af267272ad3767af64e8d9f5accde9fcf40c1824d8adf83ae669821eaf57b",
+      "bytes": 9184,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_1/data/feature_row_map.jsonl",
+      "path_relative_to_bundle": "../pecr_trd_delta_method_development_v3_20260926/v3_1/data/feature_row_map.jsonl",
+      "sha256": "48b4170cefbc495d6eb4fc5e03b7f5ffbcd14bf576207b4a71d9600ddf738e6a",
+      "bytes": 167635,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_1/data/feature_schema_96.json",
+      "path_relative_to_bundle": "../pecr_trd_delta_method_development_v3_20260926/v3_1/data/feature_schema_96.json",
+      "sha256": "fcac8d756dec85d5096a9fb42b5c6a7779eed0cc3c0e936fc2e6dbf0072844fe",
+      "bytes": 2945,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_1/data/features_prelabel.npz",
+      "path_relative_to_bundle": "../pecr_trd_delta_method_development_v3_20260926/v3_1/data/features_prelabel.npz",
+      "sha256": "6a3e6b57df32a446f5f71e4c1d325884bfa3e94ee84940ad87d044e8738706dd",
+      "bytes": 3052520,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_1/src/feature_builder.py",
+      "path_relative_to_bundle": "../pecr_trd_delta_method_development_v3_20260926/v3_1/src/feature_builder.py",
+      "sha256": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722",
+      "bytes": 10626,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/data/COLLECTION_AUDIT_V2_CORRECTED.json",
+      "path_relative_to_bundle": "../pecr_trd_delta_method_development_v3_20260926/v3_2/data/COLLECTION_AUDIT_V2_CORRECTED.json",
+      "sha256": "7463a90e2a95e69df0da0f742288118fac8d106966a31e9b56f518ee577b394d",
+      "bytes": 1149,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/data/feature_row_map.jsonl",
+      "path_relative_to_bundle": "../pecr_trd_delta_method_development_v3_20260926/v3_2/data/feature_row_map.jsonl",
+      "sha256": "48b4170cefbc495d6eb4fc5e03b7f5ffbcd14bf576207b4a71d9600ddf738e6a",
+      "bytes": 167635,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/data/feature_schema_96.json",
+      "path_relative_to_bundle": "../pecr_trd_delta_method_development_v3_20260926/v3_2/data/feature_schema_96.json",
+      "sha256": "fcac8d756dec85d5096a9fb42b5c6a7779eed0cc3c0e936fc2e6dbf0072844fe",
+      "bytes": 2945,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/data/features_prelabel.npz",
+      "path_relative_to_bundle": "../pecr_trd_delta_method_development_v3_20260926/v3_2/data/features_prelabel.npz",
+      "sha256": "6a3e6b57df32a446f5f71e4c1d325884bfa3e94ee84940ad87d044e8738706dd",
+      "bytes": 3052520,
+      "raw_content_exported": null
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/data/raw_ledger_sealed.jsonl",
+      "path_relative_to_bundle": "../pecr_trd_delta_method_development_v3_20260926/v3_2/data/raw_ledger_sealed.jsonl",
+      "sha256": "8218b82ddf18eacc5673b97b3c88fad90114b6b97336a03948c704c9cbd3e0ae",
+      "bytes": 35434365,
+      "raw_content_exported": false
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/data/student_inputs_allowlisted.jsonl",
+      "path_relative_to_bundle": "../pecr_trd_delta_method_development_v3_20260926/v3_2/data/student_inputs_allowlisted.jsonl",
+      "sha256": "512b219ab65081242a8304e2f55975e82751bdbd009c4248febe32087793ec96",
+      "bytes": 9752224,
+      "raw_content_exported": false
+    },
+    {
+      "path_relative_to_source_base": "pecr_trd_delta_method_development_v3_20260926/v3_2/reports/labels_frozen.csv",
+      "path_relative_to_bundle": "../pecr_trd_delta_method_development_v3_20260926/v3_2/reports/labels_frozen.csv",
+      "sha256": "b7f0877daccc2f06cec8dab814c51aa6331f03b644433fee18cc7fd2ad932740",
+      "bytes": 96261,
+      "raw_content_exported": null
+    }
+  ]
+}

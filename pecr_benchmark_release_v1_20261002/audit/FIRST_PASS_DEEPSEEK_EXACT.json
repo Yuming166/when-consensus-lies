@@ -1,0 +1,12 @@
+{
+  "item_ids": true,
+  "outer_fold": true,
+  "y": true,
+  "groups": true,
+  "full_curve": true,
+  "raw_three_world": true,
+  "no_input_normalization": true,
+  "no_curvature_asymmetry": true,
+  "no_direction_information": true,
+  "graph_only": true
+}

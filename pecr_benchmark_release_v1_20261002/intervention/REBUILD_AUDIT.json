@@ -1,0 +1,63 @@
+{
+  "all_requests_exact": true,
+  "canonicalization": "UTF8 JSON ensure_ascii=False sort_keys=True separators=(comma,colon)",
+  "claim_boundary": "Exact saved input/prompt reconstruction; no new inference, labels, or effectiveness validation.",
+  "counts": {
+    "deepseek_negative_match": 2225,
+    "deepseek_original_match": 2225,
+    "deepseek_positive_match": 2225,
+    "original_text_match": 2225,
+    "qwen_negative_match": 2225,
+    "qwen_original_match": 2225,
+    "qwen_positive_match": 2225
+  },
+  "decoded_train_leaf_allowlist": [
+    "id",
+    "qa.question",
+    "pre_text",
+    "post_text",
+    "table"
+  ],
+  "executed_clean_python": "/tmp/pecr-release-clean-20261002/bin/python",
+  "executed_entrypoint": "src/rebuild_worlds.py --train USER_SUPPLIED_TRAIN --report NEW_TEXT_FREE_AUDIT",
+  "final_complete_validation_executed_after_all_script_changes": true,
+  "final_script_sha256": "2e8e462c755b7305d891ce72047eb803797b6e6f297950263c5afbde3e115c6e",
+  "financial_text_or_payload_written_in_release": false,
+  "forbidden_gold_fields_never_decoded": [
+    "qa.answer",
+    "qa.program",
+    "qa.exe_ans",
+    "exe_ans"
+  ],
+  "frame_rows": 2241,
+  "full_dataset_or_qa_json_decode": false,
+  "intervention_input_hashes": {
+    "edit_spec.jsonl": "2f97ccdfa527741084115e294f6d527f980bb135307f2362bd2d946d8f0828ff",
+    "original_text_hashes.jsonl": "cc9616ed8ac7d064acab32eb63f1121e210e4d365fe68f332ae6abd76634b8a9",
+    "prompt_templates.json": "950fe3796b8021dbb2ccbc060aa95dbab3afe4b6ccf9c0a8b5ee0d5c3a63ade0",
+    "saved_request_hashes.jsonl": "b3864bcf976a5697e6d7c312f345f623630eeea2ada51b935da5bb49d125f93b",
+    "source_hashes.json": "0968b628dde89c5011a50e585b2db003fd30a255f2d737f9da011940f31676b1"
+  },
+  "missing_requested_ids": [],
+  "missing_source_files": [],
+  "model_or_network_calls": 0,
+  "optional_private_inputs_written_outside_release": false,
+  "original_manifest_verified_by_byte_hash_without_decode": true,
+  "original_text_mismatch_ids": [],
+  "post_acceptance_original_sources_unchanged": true,
+  "python_version": "3.13.13",
+  "request_hashes_checked": 13350,
+  "request_hashes_expected": 13350,
+  "requested_groups": 453,
+  "requested_rows": 2225,
+  "runtime": {
+    "decimal_precision": 28
+  },
+  "schema_version": "pecr_offline_world_rebuild_v1",
+  "train_record_count_lexically_scanned": 6251,
+  "train_sha256_expected": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6",
+  "train_sha256_match": true,
+  "train_sha256_observed": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6",
+  "unrequested_rows": 16,
+  "unrequested_status": "unknown_not_requested_not_reconstructed"
+}

@@ -1,0 +1,4 @@
+cohort,frame_rows,frame_groups,requested_rows,unrequested_rows,strict_rows,strict_groups,strict_error,strict_correct,requested_not_strict
+qwen_generation_aligned,2241,453,2225,16,2142,452,1699,443,83
+deepseek_shared_qwen,2241,453,2225,16,2050,448,1257,793,175
+deepseek_generation_aligned,2241,453,2225,16,2050,448,1257,793,175

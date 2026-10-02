@@ -1,0 +1,107 @@
+{
+  "source_root_relative_to_analysis": "..",
+  "files": [
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/features_label_blind.jsonl",
+      "sha256": "a41953b1f5f3e1814359f41ea71ed8a418256061dea4e9b7a6e2ced19deea8fa",
+      "historical_expected_sha256": "a41953b1f5f3e1814359f41ea71ed8a418256061dea4e9b7a6e2ced19deea8fa",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/manifest.jsonl",
+      "sha256": "00f4417201267a7078cbfbfa78ed451dd88e8e4b10a6abf7b3b0807a297ed400",
+      "historical_expected_sha256": "00f4417201267a7078cbfbfa78ed451dd88e8e4b10a6abf7b3b0807a297ed400",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/labels.csv",
+      "sha256": "ddbb65084bda19c152a0b654839e8d1d940714c3e2662ea6609fed3d626fc347",
+      "historical_expected_sha256": "ddbb65084bda19c152a0b654839e8d1d940714c3e2662ea6609fed3d626fc347",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/folds.csv",
+      "sha256": "685832c802f87e8b3976f4f3a60b335a4e0f8efd33174a11b75f5b5e3d2dc2b4",
+      "historical_expected_sha256": "685832c802f87e8b3976f4f3a60b335a4e0f8efd33174a11b75f5b5e3d2dc2b4",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/reference/COMPONENT_ABLATION_OOF.npz",
+      "sha256": "19e05818f282bfedca1b382dcc51262dc4f39dbfb623503287265df94a9140ee",
+      "historical_expected_sha256": "19e05818f282bfedca1b382dcc51262dc4f39dbfb623503287265df94a9140ee",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/cohorts/deepseek_v2_component/reference/COMPONENT_ABLATION.json",
+      "sha256": "2ae859ab5e4e6742a33875bde6a0a830da68414ed94144f590e5c4d2ec38ef8b",
+      "historical_expected_sha256": "2ae859ab5e4e6742a33875bde6a0a830da68414ed94144f590e5c4d2ec38ef8b",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/schema.json",
+      "sha256": "dee9e836785b9a37edb1585dbf728801bf0a2ddee6900c081bf6cfca4e379d86",
+      "historical_expected_sha256": "dee9e836785b9a37edb1585dbf728801bf0a2ddee6900c081bf6cfca4e379d86",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/src/numeric.py",
+      "sha256": "1b37344da387839286ddb90e9123aaf12fd49c25359b9217295d62e0477f051b",
+      "historical_expected_sha256": "1b37344da387839286ddb90e9123aaf12fd49c25359b9217295d62e0477f051b",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/sources/SOURCE_HASHES.json",
+      "sha256": "fb35b1f25c1c54ac9b131b9fb1f4934d04ca5241da17cb13f7acf91f1e3f35cb",
+      "historical_expected_sha256": "fb35b1f25c1c54ac9b131b9fb1f4934d04ca5241da17cb13f7acf91f1e3f35cb",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/attempted/graph_origin_status.jsonl",
+      "sha256": "06bdfc00f107c1f9db01e8ab4237dae9708fab3e5b2893ef27f40e35a71a0f11",
+      "historical_expected_sha256": "06bdfc00f107c1f9db01e8ab4237dae9708fab3e5b2893ef27f40e35a71a0f11",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/audit/GRAPH_ORIGIN.json",
+      "sha256": "a15721cebf7918445fbe247c0de4a7c9842c2e66d038c8abc78b3996ea7ee1da",
+      "historical_expected_sha256": "a15721cebf7918445fbe247c0de4a7c9842c2e66d038c8abc78b3996ea7ee1da",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_trd_delta_method_development_v3_20260926/v3_1/src/feature_builder.py",
+      "sha256": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722",
+      "historical_expected_sha256": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_trd_delta_method_development_v3_20260926/v3_2/data/student_inputs_allowlisted.jsonl",
+      "sha256": "512b219ab65081242a8304e2f55975e82751bdbd009c4248febe32087793ec96",
+      "historical_expected_sha256": "512b219ab65081242a8304e2f55975e82751bdbd009c4248febe32087793ec96",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_crossmodel_deepseek_v2_complete_20261001/data/merged_ledger_v2.jsonl",
+      "sha256": "78c9aa03f012bfbf4b3d7d13272bc4809bb0f20e13541818bb4325234026bbda",
+      "historical_expected_sha256": "78c9aa03f012bfbf4b3d7d13272bc4809bb0f20e13541818bb4325234026bbda",
+      "historical_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "src/run_native_g.py",
+      "sha256": "261496751041f3fd7a75c0cfd8047e889453989ed407664745992b1dd8fd3d31",
+      "historical_expected_sha256": null,
+      "historical_expected_match": null
+    },
+    {
+      "path_relative_to_analysis": "src/evaluation.py",
+      "sha256": "34d510043738c0ea4e24c1798dbfdefdb65d9c4b8fb19073e075ab08f62149f8",
+      "historical_expected_sha256": null,
+      "historical_expected_match": null
+    },
+    {
+      "path_relative_to_analysis": "protocol/FIXED_ANALYSIS_SPEC.json",
+      "sha256": "30bc4c5958249280168162a61808ac98c6d83542bd71cc43a730118f4bf3acda",
+      "historical_expected_sha256": null,
+      "historical_expected_match": null
+    }
+  ]
+}

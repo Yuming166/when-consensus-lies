@@ -1,0 +1,65 @@
+{
+  "methods": [
+    "graph_only",
+    "raw_three_world",
+    "full_curve",
+    "no_input_normalization",
+    "no_curvature_asymmetry",
+    "no_direction_information"
+  ],
+  "primary": "full_curve",
+  "contrasts": {
+    "full_minus_raw": [
+      "full_curve",
+      "raw_three_world"
+    ],
+    "full_minus_graph": [
+      "full_curve",
+      "graph_only"
+    ],
+    "full_minus_no_input_normalization": [
+      "full_curve",
+      "no_input_normalization"
+    ],
+    "full_minus_no_curvature_asymmetry": [
+      "full_curve",
+      "no_curvature_asymmetry"
+    ],
+    "full_minus_no_direction_information": [
+      "full_curve",
+      "no_direction_information"
+    ]
+  },
+  "native_existing_variants": [
+    "shared_G_curve",
+    "shared_G_raw",
+    "native_G_curve",
+    "native_G_raw"
+  ],
+  "native_new_fit_count": 0,
+  "shared_native_aliases_reused": true,
+  "planned_fits": 90,
+  "B": 2000,
+  "bootstrap_seed": 20260928,
+  "missing_native_graph_and_component_ablations": "available_after_fixed_posthoc_completion; four new references, twenty fits; no recovered historical results",
+  "kind": "authoritative final generation-aligned release registry",
+  "primary_aligned_cohorts": [
+    "qwen_generation_aligned",
+    "deepseek_generation_aligned"
+  ],
+  "historical_source_cohort": "deepseek_shared_qwen",
+  "native_suite_reference_completion": {
+    "new_fits": 20,
+    "existing_variants": 2,
+    "new_fixed_variants": 4,
+    "status": "post-hoc completion; not recovered history"
+  },
+  "source_origin_contrast": "aliases native/shared Raw/Full OOF; zero extra fits",
+  "phase1_specs_retained": [
+    "RELEASE_SPEC.json",
+    "METHODS.json"
+  ],
+  "phase_history": "../reports/AS_BEFORE_SCOPE_MAP.md",
+  "methods_and_masks_changed": false,
+  "old_primary_or_manuscript_changed": false
+}

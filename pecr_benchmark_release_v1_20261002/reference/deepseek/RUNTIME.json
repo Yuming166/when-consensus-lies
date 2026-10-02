@@ -1,0 +1,87 @@
+{
+  "started_utc": "2026-10-01T15:27:28.644473+00:00",
+  "python": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:00:33) [GCC 14.3.0]",
+  "python_executable": "/storage/gaoym/miniforge3/bin/python3",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": "unset",
+    "MKL_NUM_THREADS": "unset",
+    "OPENBLAS_NUM_THREADS": "unset"
+  },
+  "threadpool_before": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 56,
+      "prefix": "libscipy_openblas",
+      "filepath": "/storage/gaoym/miniforge3/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 56,
+      "prefix": "libscipy_openblas",
+      "filepath": "/storage/gaoym/miniforge3/lib/python3.13/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 56,
+      "prefix": "libgomp",
+      "filepath": "/storage/gaoym/miniforge3/lib/python3.13/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    }
+  ],
+  "audit_thread_limit": 1,
+  "historical_runtime_versions": "not retained as a lock/receipt in the original component package; unknown",
+  "declared_hgb_parameters": {
+    "max_iter": 250,
+    "max_leaf_nodes": 15,
+    "learning_rate": 0.05,
+    "l2_regularization": 1.0,
+    "random_state": 20260928
+  },
+  "effective_hgb_parameters": {
+    "categorical_features": "from_dtype",
+    "class_weight": null,
+    "early_stopping": "auto",
+    "interaction_cst": null,
+    "l2_regularization": 1.0,
+    "learning_rate": 0.05,
+    "loss": "log_loss",
+    "max_bins": 255,
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_iter": 250,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "monotonic_cst": null,
+    "n_iter_no_change": 10,
+    "random_state": 20260928,
+    "scoring": "loss",
+    "tol": 1e-07,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "new_model_calls": 0,
+  "seed_or_sample_search": false,
+  "historical_primary_edited": false,
+  "entrypoint_hashes": {
+    "numeric.py": "1b37344da387839286ddb90e9123aaf12fd49c25359b9217295d62e0477f051b",
+    "retrain.py": "7a30b9f3394d4f0d23f3a1b0814d0126b81f1d2669544bc088e9af452f4fd215"
+  },
+  "finished_utc": "2026-10-01T15:28:31.788926+00:00"
+}

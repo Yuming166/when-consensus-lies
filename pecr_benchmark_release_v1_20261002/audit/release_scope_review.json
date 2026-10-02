@@ -1,0 +1,229 @@
+{
+  "as_before_phase_boundaries": {
+    "AS_BEFORE_SCOPE_MAP_and_ALIGNED_TRACK_SPEC_resolve_old_inventory": true,
+    "earlier_RELEASE_SPEC_and_GENERATION_BINDING_not_rewritten": true,
+    "final_current_registry_to_be_verified_after_90_fit_gate": true
+  },
+  "coverage_QA": {
+    "cohort_exported_label_support": {
+      "deepseek_generation_aligned": {
+        "correct": 793,
+        "errors": 1257,
+        "groups": 448,
+        "rows": 2050
+      },
+      "deepseek_shared_qwen": {
+        "correct": 793,
+        "errors": 1257,
+        "groups": 448,
+        "rows": 2050
+      },
+      "qwen_generation_aligned": {
+        "correct": 443,
+        "errors": 1699,
+        "groups": 452,
+        "rows": 2142
+      }
+    },
+    "coverage_cohorts": {
+      "deepseek_shared_qwen": {
+        "all_recorded_status_unknown": true,
+        "frame_count": 2241,
+        "partitions": {
+          "invalid_known_label": 79,
+          "invalid_unknown_label": 42,
+          "strict_parsed_labeled": 2050,
+          "unrequested_construction_exclusion": 16,
+          "valid_unknown_label": 54
+        },
+        "strict_count": 2050
+      },
+      "qwen_generation_aligned": {
+        "all_recorded_status_unknown": true,
+        "frame_count": 2241,
+        "partitions": {
+          "invalid_known_label": 7,
+          "invalid_unknown_label": 24,
+          "strict_parsed_labeled": 2142,
+          "unrequested_construction_exclusion": 16,
+          "valid_unknown_label": 52
+        },
+        "strict_count": 2142
+      }
+    },
+    "intervention_all_hashes_equal": true,
+    "intervention_excluded_unknown_count": 16,
+    "intervention_requested_groups": 453,
+    "intervention_saved_and_rebuilt_request_count": 13350,
+    "intervention_unique_frame_count": 2241
+  },
+  "input_reconstruction": {
+    "complete_input_claim_supported": true,
+    "default_audit_only": true,
+    "historical_labels_or_response_aware_G_for_new_answers_reuse_forbidden": true,
+    "new_model_effectiveness_claim_supported": false,
+    "new_model_override_kept_separate_from_saved_profile_exact_check": true,
+    "outside_release_absolute_new_directory_and_no_overwrite_guards_verified": true,
+    "private_payload_export_available": true,
+    "private_payload_export_executed_this_review": false,
+    "raw_HTTP_wire_hash_identity_not_claimed": true,
+    "requested_ids": 2225,
+    "saved_canonical_request_hash_matches": 13350,
+    "unrequested_unknown_ids": 16,
+    "zero_network_source_imports": [
+      "__future__",
+      "argparse",
+      "collections",
+      "decimal",
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re"
+    ]
+  },
+  "licensing": {
+    "local_notice_sha256": "92c0e67bd762c15c07ba60de09558338315a8ebf99aac4f51f487179809ac087",
+    "local_upstream_notice_path": "intervention/FinQA_LICENSE.txt",
+    "ownership_or_legal_clearance_independently_certified": false,
+    "release_authored_notice": "MIT; Copyright (c) 2026 PECR benchmark contributors",
+    "release_license_does_not_relicense_unbundled_financial_evidence": true,
+    "upstream_notice_preserved": true,
+    "upstream_primary_license_url": "https://raw.githubusercontent.com/czyssrs/FinQA/main/LICENSE",
+    "upstream_primary_notice_checked_live": "MIT; Copyright (c) 2021 Zhiyu Chen"
+  },
+  "original_intervention_seal_unchanged": {
+    "intervention/README.md": true,
+    "intervention/REBUILD_AUDIT.json": true,
+    "intervention/REBUILD_GUARDS.json": true,
+    "intervention/edit_spec.jsonl": true,
+    "intervention/original_text_hashes.jsonl": true,
+    "intervention/prompt_templates.json": true,
+    "intervention/rebuilt_request_hashes.jsonl": true,
+    "intervention/saved_request_hashes.jsonl": true,
+    "intervention/source_hashes.json": true,
+    "intervention/world_coverage.jsonl": true,
+    "src/rebuild_worlds.py": true
+  },
+  "phase_gates": {
+    "final_assembly_path_snapshot": {
+      "MANIFEST.json": false,
+      "SHA256SUMS.txt": false,
+      "acceptance/FINAL_REPORT.md": false,
+      "acceptance/clean_refit_final/RESULTS.json": false,
+      "coverage/FINAL_SUMMARY.json": true,
+      "coverage/attempted_frame_final.jsonl": true,
+      "coverage/native_attempted_frame.jsonl": true
+    },
+    "final_clean_90_fits": {
+      "independent_scope_review_does_not_certify": true,
+      "status": "pending_not_started_at_review"
+    },
+    "fixed_native_completion_20_fits": {
+      "CI_and_seal_completion": "outside this scope review; inspected available documents/runtime/OOF, not independently recomputed intervals",
+      "OOF_sha256": "ab111df8d1055ce932ecb35d9177e47cb98eeb67c196063852f5ec93047b4ba2",
+      "cohort_rows": 2050,
+      "completed_fits": 20,
+      "correct": 793,
+      "error": 1257,
+      "groups": 448,
+      "status": "complete_real_runtime_and_six_method_OOF_verified"
+    }
+  },
+  "remaining_release_acceptance_gates": [
+    "Complete the specified clean 90-fit run and inspect final acceptance artifacts.",
+    "Assemble canonical three-track full coverage, MANIFEST, top-level SHA256SUMS and FINAL_REPORT; verify linked paths before release."
+  ],
+  "remaining_scope_blockers": [],
+  "review_input_sha256": {
+    "DATA_CARD.md": "943e52f8580a269efe9bac705312fae2c6db92328599698a7197e1a2de46a02b",
+    "LICENSE": "fbbb5df153c021dcdb23d3e727b2d52ee707f107d6106552760f42847b1cd3bf",
+    "README.md": "34af5e1e56081cf9a84775b7fefc25c24436eb097160a1170d48299d227691fe",
+    "intervention/FinQA_LICENSE.txt": "92c0e67bd762c15c07ba60de09558338315a8ebf99aac4f51f487179809ac087",
+    "intervention/NEW_GENERATION_PROTOCOL.md": "18ad10e39a94d220a037809d4073719cf8ff1667968e190b72039e178ef243cd",
+    "intervention/README.md": "6957726f9ae985c915cbd282f236a60633e2d10a9291984a66ea03e65ddb43df",
+    "intervention/REBUILD_AUDIT.json": "c8185f7412f336a33a5a87a3b623926070be4d34c88b62ea01420dfb2ba2c20e",
+    "intervention/REBUILD_GUARDS.json": "2637b3268c65c5dc135980285f021f2d79b8eafa7c378c7d669abc31bb9c427b",
+    "protocol/ALIGNED_TRACK_SPEC.json": "8b7b7c8fc82e8caf6039e585909f5367f97307b84f299f67f9d711d9e1755ec1",
+    "reference/deepseek_aligned/OOF.npz": "ab111df8d1055ce932ecb35d9177e47cb98eeb67c196063852f5ec93047b4ba2",
+    "reference/deepseek_aligned/RUNTIME.json": "df431712b940d502dc24918a7779bebcf735f28b11796131044819b0fd65bf72",
+    "reference/deepseek_aligned/VALIDATION.json": "f7cf45c4d417efb3e78c4beb74f8bb2f39949acd221f5044b42c6002c716b044",
+    "reports/AS_BEFORE_SCOPE_MAP.md": "1fcb228a7029786b6a28755c96f9cb79f0c2059fe51534cdc9199a2d12560397",
+    "reports/NATIVE_SUITE_COMPLETION.md": "e4b8a32295eea84da38205bfb85a0daaa7485806bea5bfc1e2aaf5b1152ed34d",
+    "src/frozen/README.md": "1c72a92ff16b315c0108e01b262f4cc0ebb0fe947111ecd1af60cceee9f8a515",
+    "src/frozen/SOURCE_HASHES.json": "21e72858256769d07c2773cbf3ef093bdab5dff4a4ad639eea38b417711d3c50",
+    "src/frozen/feature_builder.py": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722",
+    "src/frozen/label_policy.py": "6790468e90a99f54570eb8ecdca0f49722c2aaa6f38de365aef766cbebf2f7bc",
+    "src/frozen/three_world_parser.py": "fff476be96529d7b14d4154c7653b2bf67f6bce8757e2b26a238bcf620e42dd3",
+    "src/rebuild_worlds.py": "2e8e462c755b7305d891ce72047eb803797b6e6f297950263c5afbde3e115c6e"
+  },
+  "review_scope": "read-only document/source/coverage review plus pure synthetic helper QA; no fits, model calls, response/financial-body exports, TRAIN/gold or holdout reads",
+  "reviewed_utc": "2026-10-01T19:05:59.933881+00:00",
+  "schema_version": "pecr_release_scope_independent_review_v1",
+  "scope_contract_passed": true,
+  "synthetic_policy_QA": {
+    "all_passed": true,
+    "checks": {
+      "G96_input_and_response_allowlists_enforced": true,
+      "G96_invalid_original_visible_no_fallback": true,
+      "G96_shape_dtype_finite_duplicate_column_identity": true,
+      "additional_finite_matrix_gate_required": true,
+      "answer_unit_confidence_consumed_from_current_original": true,
+      "feature_builder.py_byte_identical": true,
+      "feature_builder.py_original_source_sha256_match": true,
+      "feature_builder.py_release_sha256_match": true,
+      "historical_nonfinite_parser_behavior_preserved": true,
+      "label_one_returns_correct_not_error": true,
+      "label_policy.py_byte_identical": true,
+      "label_policy.py_original_source_sha256_match": true,
+      "label_policy.py_release_sha256_match": true,
+      "no_fit_network_or_model_call": true,
+      "parser_AST_exact_three_functions": true,
+      "parser_invalid_states_preserved": true,
+      "parser_numeric_normalization": true,
+      "supporting_evidence_validated_but_G96_not_consumed": true,
+      "synthetic_Decimal_tolerance_boundaries": true,
+      "synthetic_only_no_dataset_gold_read": true,
+      "synthetic_percent_not_rescaled": true,
+      "three_world_parser.py_original_source_sha256_match": true,
+      "three_world_parser.py_release_sha256_match": true
+    },
+    "future_adapter_contract": {
+      "correct_to_error": "error=1-correct only when label_one returns known correct",
+      "graph_dtype": "float32 generated then exact float64 persistence",
+      "graph_entrypoint": "_safe and _graph only; FrozenFeatureBuilder.transform is not G96-only",
+      "parser_nonfinite": "finite raw/G/curve matrix gate is additional; historical parse_resp left unchanged"
+    },
+    "scope": "synthetic pure-function QA; no gold files, ledger, payload export, checkpoint or estimator fit",
+    "source_hashes": {
+      "feature_builder.py": {
+        "release_sha256": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722",
+        "source_relative": "pecr_historical_parser_96d_feature_export_v1_20261001/features_96/source/feature_builder.py",
+        "source_sha256": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722",
+        "transformation": "byte-identical reuse of already released frozen dependency"
+      },
+      "label_policy.py": {
+        "release_sha256": "6790468e90a99f54570eb8ecdca0f49722c2aaa6f38de365aef766cbebf2f7bc",
+        "source_relative": "pecr_historical_parser_96d_feature_export_v1_20261001/features_96/source/label_policy.py",
+        "source_sha256": "6790468e90a99f54570eb8ecdca0f49722c2aaa6f38de365aef766cbebf2f7bc",
+        "transformation": "byte-identical reuse of already released frozen dependency"
+      },
+      "three_world_parser.py": {
+        "release_sha256": "fff476be96529d7b14d4154c7653b2bf67f6bce8757e2b26a238bcf620e42dd3",
+        "source_relative": "pecr_historical_parser_96d_feature_export_v1_20261001/parser/bidirectional_v1/prepare_bidirectional.py",
+        "source_sha256": "a42b6d4df1fd6d3ae5c15d7b23acefc01f1ae80b1c3a500e4212a40eb74f67f8",
+        "transformation": "AST-source projection of exactly parse_num/norm_unit/parse_resp; driver/data/model paths omitted"
+      }
+    }
+  },
+  "this_review_process": {
+    "TRAIN_gold_or_holdout_reads": 0,
+    "financial_body_or_raw_ledger_reads": 0,
+    "fits": 0,
+    "model_or_API_calls": 0,
+    "original_files_modified": 0,
+    "python": "3.13.13",
+    "upstream_license_web_read_only": true
+  },
+  "whole_release_numeric_acceptance_claimed": false
+}

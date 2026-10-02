@@ -1,0 +1,228 @@
+{
+  "status": "post-hoc generation-aligned correction, not independent confirmation",
+  "support": {
+    "n": 2142,
+    "groups": 452,
+    "error_1": 1699,
+    "correct_0": 443,
+    "error_prevalence": 0.7931839402427637,
+    "coverage_of_strict": 1.0,
+    "coverage_of_requested": 0.9626966292134832,
+    "coverage_of_full_frame": 0.9558232931726908
+  },
+  "fold_support": [
+    {
+      "fold": 0,
+      "n": 429,
+      "groups": 90,
+      "error_1": 336,
+      "correct_0": 93
+    },
+    {
+      "fold": 1,
+      "n": 429,
+      "groups": 91,
+      "error_1": 334,
+      "correct_0": 95
+    },
+    {
+      "fold": 2,
+      "n": 428,
+      "groups": 90,
+      "error_1": 337,
+      "correct_0": 91
+    },
+    {
+      "fold": 3,
+      "n": 428,
+      "groups": 90,
+      "error_1": 338,
+      "correct_0": 90
+    },
+    {
+      "fold": 4,
+      "n": 428,
+      "groups": 91,
+      "error_1": 354,
+      "correct_0": 74
+    }
+  ],
+  "evaluation": {
+    "metrics": {
+      "graph_only": {
+        "auroc": 0.7516192634892123,
+        "auprc": 0.9103880920612657,
+        "support_n": 2142,
+        "prediction_coverage": 1.0,
+        "auroc_ci95": [
+          0.7240608995801981,
+          0.7768895182505604
+        ],
+        "auprc_ci95": [
+          0.8945675896282351,
+          0.9253763414307566
+        ]
+      },
+      "raw_three_world": {
+        "auroc": 0.8185933300294822,
+        "auprc": 0.9387482516248209,
+        "support_n": 2142,
+        "prediction_coverage": 1.0,
+        "auroc_ci95": [
+          0.7946352723528021,
+          0.8399141946539195
+        ],
+        "auprc_ci95": [
+          0.927597917353626,
+          0.9493889896659672
+        ]
+      },
+      "full_curve": {
+        "auroc": 0.8325904097085391,
+        "auprc": 0.9450448456324341,
+        "support_n": 2142,
+        "prediction_coverage": 1.0,
+        "auroc_ci95": [
+          0.81050326842111,
+          0.853623331572963
+        ],
+        "auprc_ci95": [
+          0.9344030807900588,
+          0.9550211928622067
+        ]
+      },
+      "no_input_normalization": {
+        "auroc": 0.8197904224633532,
+        "auprc": 0.9408683469859512,
+        "support_n": 2142,
+        "prediction_coverage": 1.0,
+        "auroc_ci95": [
+          0.7963616072723665,
+          0.8419081922292169
+        ],
+        "auprc_ci95": [
+          0.9297346758146514,
+          0.9509467713683768
+        ]
+      },
+      "no_curvature_asymmetry": {
+        "auroc": 0.8344345432248687,
+        "auprc": 0.9436807774116873,
+        "support_n": 2142,
+        "prediction_coverage": 1.0,
+        "auroc_ci95": [
+          0.8122044670960993,
+          0.8547098760743357
+        ],
+        "auprc_ci95": [
+          0.9326893957222007,
+          0.9538285678933982
+        ]
+      },
+      "no_direction_information": {
+        "auroc": 0.8208779032148774,
+        "auprc": 0.9377287625391943,
+        "support_n": 2142,
+        "prediction_coverage": 1.0,
+        "auroc_ci95": [
+          0.7979815899545967,
+          0.8439841093418377
+        ],
+        "auprc_ci95": [
+          0.925081296611088,
+          0.9494307634322214
+        ]
+      }
+    },
+    "contrasts": {
+      "full_minus_raw": {
+        "left": "full_curve",
+        "right": "raw_three_world",
+        "delta_auroc": 0.013997079679056945,
+        "delta_auroc_ci95": [
+          0.004301008253140071,
+          0.024177382934443298
+        ],
+        "delta_auprc": 0.0062965940076131766,
+        "delta_auprc_ci95": [
+          0.002147018507354556,
+          0.010292288953454945
+        ]
+      },
+      "full_minus_graph": {
+        "left": "full_curve",
+        "right": "graph_only",
+        "delta_auroc": 0.08097114621932688,
+        "delta_auroc_ci95": [
+          0.05773281229751315,
+          0.1042682718257982
+        ],
+        "delta_auprc": 0.034656753571168375,
+        "delta_auprc_ci95": [
+          0.02374092078634988,
+          0.046146091043284286
+        ]
+      },
+      "full_minus_no_input_normalization": {
+        "left": "full_curve",
+        "right": "no_input_normalization",
+        "delta_auroc": 0.01279998724518594,
+        "delta_auroc_ci95": [
+          0.004961029997746727,
+          0.020569842697553485
+        ],
+        "delta_auprc": 0.00417649864648284,
+        "delta_auprc_ci95": [
+          0.0006342878029242078,
+          0.0077794233960983275
+        ]
+      },
+      "full_minus_no_curvature_asymmetry": {
+        "left": "full_curve",
+        "right": "no_curvature_asymmetry",
+        "delta_auroc": -0.0018441335163295047,
+        "delta_auroc_ci95": [
+          -0.0090816124887585,
+          0.005777774190351896
+        ],
+        "delta_auprc": 0.0013640682207467503,
+        "delta_auprc_ci95": [
+          -0.0024930342632966673,
+          0.005776165832726487
+        ]
+      },
+      "full_minus_no_direction_information": {
+        "left": "full_curve",
+        "right": "no_direction_information",
+        "delta_auroc": 0.011712506493661734,
+        "delta_auroc_ci95": [
+          0.0023023006055423434,
+          0.021873680926624513
+        ],
+        "delta_auprc": 0.0073160830932397225,
+        "delta_auprc_ci95": [
+          0.001827806870566509,
+          0.013315035368356369
+        ]
+      }
+    },
+    "bootstrap": {
+      "attempts": 2000,
+      "seed": 20260928,
+      "unit": "source_group",
+      "paired": true,
+      "percentile": [
+        2.5,
+        97.5
+      ],
+      "degenerate_single_class_draws": 0,
+      "valid_draws": 2000,
+      "retry_degenerate_draws": false,
+      "draw_sequence_sha256": "76d4a74cfd17549f35562afb66053a2d2d4821319364b60c51f5824aec5d8eac"
+    },
+    "status": "evaluated"
+  },
+  "fits": 30,
+  "labels_G_original_generation_aligned": true,
+  "old_primary_or_V17_replaced": false
+}

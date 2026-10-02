@@ -1,0 +1,359 @@
+{
+  "all_passed": true,
+  "scanned_text_files": 164,
+  "secret_pattern_flagged_paths": [],
+  "forbidden_instantiated_content_fields": [],
+  "npz_checks": {
+    "reference/deepseek_aligned/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "reference/deepseek_aligned/CHECKPOINT_graph_only.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "prediction"
+      ],
+      "only_numpy_data": true
+    },
+    "reference/deepseek_aligned/CHECKPOINT_no_direction_information.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "prediction"
+      ],
+      "only_numpy_data": true
+    },
+    "reference/deepseek_aligned/CHECKPOINT_no_input_normalization.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "prediction"
+      ],
+      "only_numpy_data": true
+    },
+    "reference/deepseek_aligned/CHECKPOINT_no_curvature_asymmetry.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "prediction"
+      ],
+      "only_numpy_data": true
+    },
+    "reference/qwen/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "reference/native/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "shared_G_curve",
+        "shared_G_raw",
+        "native_G_curve",
+        "native_G_raw"
+      ],
+      "only_numpy_data": true
+    },
+    "reference/native/G96_NATIVE.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "G96_native"
+      ],
+      "only_numpy_data": true
+    },
+    "reference/deepseek/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "outer_fold",
+        "y",
+        "groups",
+        "full_curve",
+        "raw_three_world",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information",
+        "graph_only"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/failed_export_pass_v1/qwen_generation_aligned/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/failed_export_pass_v1/deepseek_shared_qwen/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_existing_v2/qwen_generation_aligned/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_existing_v2/deepseek_shared_qwen/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_existing_v2/fit_checkpoints/qwen_generation_aligned.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_existing_v2/fit_checkpoints/deepseek_native_origin.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "native_G_curve",
+        "native_G_raw"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_existing_v2/fit_checkpoints/deepseek_shared_qwen.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_existing_v2/deepseek_native_origin/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "native_G_curve",
+        "native_G_raw",
+        "shared_G_curve",
+        "shared_G_raw"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_final/qwen_generation_aligned/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_final/deepseek_shared_qwen/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_final/deepseek_generation_aligned/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_final/fit_checkpoints/qwen_generation_aligned.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_final/fit_checkpoints/deepseek_generation_aligned.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_final/fit_checkpoints/deepseek_shared_qwen.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "graph_only",
+        "raw_three_world",
+        "full_curve",
+        "no_input_normalization",
+        "no_curvature_asymmetry",
+        "no_direction_information"
+      ],
+      "only_numpy_data": true
+    },
+    "acceptance/clean_refit_final/deepseek_native_origin/OOF.npz": {
+      "no_object_arrays": true,
+      "array_fields": [
+        "item_ids",
+        "groups",
+        "y",
+        "outer_fold",
+        "native_G_curve",
+        "native_G_raw",
+        "shared_G_curve",
+        "shared_G_raw"
+      ],
+      "only_numpy_data": true
+    }
+  },
+  "no_bytecode_or_caches_in_release": true,
+  "no_model_weight_extensions": true,
+  "all_python_sources_compile": true,
+  "scanner_scope": "explicit credential patterns and forbidden instantiated body keys; source pointers and generic templates retained; not a universal privacy proof"
+}

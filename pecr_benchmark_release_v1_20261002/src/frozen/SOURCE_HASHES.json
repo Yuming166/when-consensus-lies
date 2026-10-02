@@ -1,0 +1,20 @@
+{
+  "feature_builder.py": {
+    "source_relative": "pecr_historical_parser_96d_feature_export_v1_20261001/features_96/source/feature_builder.py",
+    "source_sha256": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722",
+    "release_sha256": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722",
+    "transformation": "byte-identical reuse of already released frozen dependency"
+  },
+  "label_policy.py": {
+    "source_relative": "pecr_historical_parser_96d_feature_export_v1_20261001/features_96/source/label_policy.py",
+    "source_sha256": "6790468e90a99f54570eb8ecdca0f49722c2aaa6f38de365aef766cbebf2f7bc",
+    "release_sha256": "6790468e90a99f54570eb8ecdca0f49722c2aaa6f38de365aef766cbebf2f7bc",
+    "transformation": "byte-identical reuse of already released frozen dependency"
+  },
+  "three_world_parser.py": {
+    "source_relative": "pecr_historical_parser_96d_feature_export_v1_20261001/parser/bidirectional_v1/prepare_bidirectional.py",
+    "source_sha256": "a42b6d4df1fd6d3ae5c15d7b23acefc01f1ae80b1c3a500e4212a40eb74f67f8",
+    "release_sha256": "fff476be96529d7b14d4154c7653b2bf67f6bce8757e2b26a238bcf620e42dd3",
+    "transformation": "AST-source projection of exactly parse_num/norm_unit/parse_resp; driver/data/model paths omitted"
+  }
+}

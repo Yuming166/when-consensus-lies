@@ -1,0 +1,51 @@
+{
+  "all_passed": true,
+  "fit_history": {
+    "failed_report_pass": 70,
+    "repaired_existing_suite": 70,
+    "posthoc_native_fixed_completion": 20,
+    "final_clean_full_release_retrain": 90,
+    "total_fits_this_release_task": 250,
+    "launcher_or_schema_guard_failures": 0
+  },
+  "final_clean_fits": 90,
+  "system_site_packages": false,
+  "all_primary_component_origin_predictions_exact": true,
+  "all_saved_point_and_paired_intervals_exact": true,
+  "execution_sources_and_numeric_core_identical_to_final_release": {
+    "src/benchmark.py": true,
+    "src/numeric.py": true,
+    "src/evaluation.py": true,
+    "protocol/HGB_PARAMS.json": true,
+    "strict_numerical_files": true,
+    "all_reference_bytes": true
+  },
+  "coverage_canonical_validated": true,
+  "old_primary_or_paper_changed": false,
+  "source_generation_scope": "aligned Qwen and native DeepSeek; shared-Qwen G historical exception",
+  "new_model_API_calls": 0,
+  "gold_label_generation_in_release": false,
+  "holdout_access": false,
+  "input_reconstruction_exact": 13350,
+  "missing_required_source_files": [],
+  "independent_portability_review": "audit/portability_review.json",
+  "independent_review_status": "FINAL_ACCEPTANCE_REVIEW_PASSED",
+  "full_attempted_frame_records": 6723,
+  "all_23_synthetic_frozen_policy_checks_passed": true,
+  "export_allowlist_checks_passed": true,
+  "source_preservation": true,
+  "data_card_and_reconstruction_contract": "DATA_CARD.md",
+  "packaging_status": "local sealed release; archive validation receipt external after build",
+  "checklist": {
+    "generation_aligned_tracks": true,
+    "explicit_shared_G_exception": true,
+    "source_hashes_ID_group_fold_order": true,
+    "fresh_environment_actual_90_fit_reproduction": true,
+    "full_2241_per_track_coverage": true,
+    "Qwen_requested_83_individually_retained": true,
+    "strict_dimensions_order_finite_nonsharing": true,
+    "three_world_executable_input_rebuild_13350_exact": true,
+    "no_model_or_API_requests_or_holdout_or_push": true,
+    "legacy_missing_metadata_not_invented": true
+  }
+}

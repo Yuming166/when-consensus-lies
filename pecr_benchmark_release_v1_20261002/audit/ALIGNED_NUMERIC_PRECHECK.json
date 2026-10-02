@@ -1,0 +1,354 @@
+{
+  "all_passed": true,
+  "cohorts": {
+    "qwen_generation_aligned": {
+      "n": 2142,
+      "groups": 452,
+      "error_1": 1699,
+      "correct_0": 443,
+      "error_prevalence": 0.7931839402427637,
+      "coverage_of_strict": 1.0,
+      "coverage_of_requested": 0.9626966292134832,
+      "coverage_of_full_frame": 0.9558232931726908,
+      "fold_support": [
+        {
+          "fold": 0,
+          "n": 429,
+          "groups": 90,
+          "error_1": 336,
+          "correct_0": 93
+        },
+        {
+          "fold": 1,
+          "n": 429,
+          "groups": 91,
+          "error_1": 334,
+          "correct_0": 95
+        },
+        {
+          "fold": 2,
+          "n": 428,
+          "groups": 90,
+          "error_1": 337,
+          "correct_0": 91
+        },
+        {
+          "fold": 3,
+          "n": 428,
+          "groups": 90,
+          "error_1": 338,
+          "correct_0": 90
+        },
+        {
+          "fold": 4,
+          "n": 428,
+          "groups": 91,
+          "error_1": 354,
+          "correct_0": 74
+        }
+      ],
+      "matrix_dimensions": {
+        "graph_only": [
+          2142,
+          96
+        ],
+        "raw_three_world": [
+          2142,
+          113
+        ],
+        "full_curve": [
+          2142,
+          129
+        ],
+        "no_input_normalization": [
+          2142,
+          124
+        ],
+        "no_curvature_asymmetry": [
+          2142,
+          125
+        ],
+        "no_direction_information": [
+          2142,
+          121
+        ]
+      }
+    },
+    "deepseek_shared_qwen": {
+      "n": 2050,
+      "groups": 448,
+      "error_1": 1257,
+      "correct_0": 793,
+      "error_prevalence": 0.6131707317073171,
+      "coverage_of_strict": 1.0,
+      "coverage_of_requested": 0.9213483146067416,
+      "coverage_of_full_frame": 0.9147701918786256,
+      "fold_support": [
+        {
+          "fold": 0,
+          "n": 410,
+          "groups": 88,
+          "error_1": 232,
+          "correct_0": 178
+        },
+        {
+          "fold": 1,
+          "n": 410,
+          "groups": 89,
+          "error_1": 263,
+          "correct_0": 147
+        },
+        {
+          "fold": 2,
+          "n": 410,
+          "groups": 90,
+          "error_1": 244,
+          "correct_0": 166
+        },
+        {
+          "fold": 3,
+          "n": 410,
+          "groups": 90,
+          "error_1": 241,
+          "correct_0": 169
+        },
+        {
+          "fold": 4,
+          "n": 410,
+          "groups": 91,
+          "error_1": 277,
+          "correct_0": 133
+        }
+      ],
+      "matrix_dimensions": {
+        "graph_only": [
+          2050,
+          96
+        ],
+        "raw_three_world": [
+          2050,
+          113
+        ],
+        "full_curve": [
+          2050,
+          129
+        ],
+        "no_input_normalization": [
+          2050,
+          124
+        ],
+        "no_curvature_asymmetry": [
+          2050,
+          125
+        ],
+        "no_direction_information": [
+          2050,
+          121
+        ]
+      }
+    },
+    "deepseek_generation_aligned": {
+      "n": 2050,
+      "groups": 448,
+      "error_1": 1257,
+      "correct_0": 793,
+      "error_prevalence": 0.6131707317073171,
+      "coverage_of_strict": 1.0,
+      "coverage_of_requested": 0.9213483146067416,
+      "coverage_of_full_frame": 0.9147701918786256,
+      "fold_support": [
+        {
+          "fold": 0,
+          "n": 410,
+          "groups": 88,
+          "error_1": 232,
+          "correct_0": 178
+        },
+        {
+          "fold": 1,
+          "n": 410,
+          "groups": 89,
+          "error_1": 263,
+          "correct_0": 147
+        },
+        {
+          "fold": 2,
+          "n": 410,
+          "groups": 90,
+          "error_1": 244,
+          "correct_0": 166
+        },
+        {
+          "fold": 3,
+          "n": 410,
+          "groups": 90,
+          "error_1": 241,
+          "correct_0": 169
+        },
+        {
+          "fold": 4,
+          "n": 410,
+          "groups": 91,
+          "error_1": 277,
+          "correct_0": 133
+        }
+      ],
+      "matrix_dimensions": {
+        "graph_only": [
+          2050,
+          96
+        ],
+        "raw_three_world": [
+          2050,
+          113
+        ],
+        "full_curve": [
+          2050,
+          129
+        ],
+        "no_input_normalization": [
+          2050,
+          124
+        ],
+        "no_curvature_asymmetry": [
+          2050,
+          125
+        ],
+        "no_direction_information": [
+          2050,
+          121
+        ]
+      }
+    }
+  },
+  "checks": {
+    "unique_IDs_and_exact_row_order": true,
+    "label_group_fold_reference_alignment": true,
+    "group_disjoint_and_group_only_reconstructed_folds": true,
+    "exact_named_feature_column_order_and_dimensions": true,
+    "finite_pairwise_nonsharing_writable_matrices": true,
+    "Raw17_equals_Curve33_prefix_and_exact_arithmetic": true,
+    "world_raw_curve_have_identical_ID_coverage": true,
+    "saved_native_shared_aliases_equal_primary_OOF": true
+  },
+  "model_API_calls": 0,
+  "corpus_gold_ledger_checkpoint_inputs": false,
+  "fits": 0,
+  "coverage_summary": {
+    "TRAIN_gold_holdout_access": false,
+    "cohorts": {
+      "deepseek_shared_qwen": {
+        "frame_groups": 453,
+        "frame_rows": 2241,
+        "mutually_exclusive_partitions": {
+          "invalid_known_label": 79,
+          "invalid_unknown_label": 42,
+          "strict_parsed_labeled": 2050,
+          "unrequested_construction_exclusion": 16,
+          "valid_unknown_label": 54
+        },
+        "requested_not_strict": 175,
+        "requested_rows": 2225,
+        "strict_correct": 793,
+        "strict_coverage_frame": 0.9147701918786256,
+        "strict_coverage_requested": 0.9213483146067416,
+        "strict_error": 1257,
+        "strict_groups": 448,
+        "strict_rows": 2050,
+        "strict_unit_combinations": {
+          "empty_mismatch": 102,
+          "empty_same": 51,
+          "nonempty_mismatch": 279,
+          "nonempty_same": 1618
+        },
+        "unrequested_rows": 16
+      },
+      "qwen_generation_aligned": {
+        "frame_groups": 453,
+        "frame_rows": 2241,
+        "mutually_exclusive_partitions": {
+          "invalid_known_label": 7,
+          "invalid_unknown_label": 24,
+          "strict_parsed_labeled": 2142,
+          "unrequested_construction_exclusion": 16,
+          "valid_unknown_label": 52
+        },
+        "requested_not_strict": 83,
+        "requested_rows": 2225,
+        "strict_correct": 443,
+        "strict_coverage_frame": 0.9558232931726908,
+        "strict_coverage_requested": 0.9626966292134832,
+        "strict_error": 1699,
+        "strict_groups": 452,
+        "strict_rows": 2142,
+        "strict_unit_combinations": {
+          "empty_mismatch": 103,
+          "empty_same": 153,
+          "nonempty_mismatch": 111,
+          "nonempty_same": 1775
+        },
+        "unrequested_rows": 16
+      }
+    },
+    "full_frame_unit_combinations": {
+      "deepseek_shared_qwen": {
+        "empty_mismatch": 126,
+        "empty_same": 77,
+        "nonempty_mismatch": 291,
+        "nonempty_same": 1656,
+        "unknown": 91
+      },
+      "qwen_generation_aligned": {
+        "empty_mismatch": 109,
+        "empty_same": 172,
+        "nonempty_mismatch": 116,
+        "nonempty_same": 1826,
+        "unknown": 18
+      }
+    },
+    "model_API_calls": 0,
+    "recorded_status_policy": "unknown remains unknown even if HTTP200/offline parser valid",
+    "training_fits": 0,
+    "world_offline_parser_status": {
+      "deepseek_shared_qwen": {
+        "negative": {
+          "answer_not_numeric": 31,
+          "missing_json": 40,
+          "ok": 2154,
+          "unknown": 16
+        },
+        "original": {
+          "answer_not_numeric": 35,
+          "missing_json": 8,
+          "ok": 2182,
+          "unknown": 16
+        },
+        "positive": {
+          "answer_not_numeric": 34,
+          "missing_json": 39,
+          "ok": 2152,
+          "unknown": 16
+        }
+      },
+      "qwen_generation_aligned": {
+        "negative": {
+          "answer_not_numeric": 22,
+          "missing_json": 1,
+          "unknown_unrequested": 16,
+          "valid": 2202
+        },
+        "original": {
+          "answer_not_numeric": 26,
+          "unknown_unrequested": 16,
+          "valid": 2199
+        },
+        "positive": {
+          "answer_not_numeric": 22,
+          "missing_json": 1,
+          "unknown_unrequested": 16,
+          "valid": 2202
+        }
+      }
+    }
+  }
+}

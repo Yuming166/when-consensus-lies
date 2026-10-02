@@ -1,0 +1,404 @@
+{
+  "qwen_same_runtime_component": {
+    "support": {
+      "n": 1735,
+      "groups": 424,
+      "error_1": 1375,
+      "correct_0": 360,
+      "error_prevalence": 0.792507204610951,
+      "coverage_of_strict": 1.0,
+      "coverage_of_requested": 0.7797752808988764,
+      "coverage_of_full_frame": 0.7742079428826417
+    },
+    "evaluation": {
+      "metrics": {
+        "full_curve": {
+          "auroc": 0.8153919191919191,
+          "auprc": 0.9352993942198584,
+          "support_n": 1735,
+          "prediction_coverage": 1.0,
+          "auroc_ci95": [
+            0.7873032906916719,
+            0.8418060914403063
+          ],
+          "auprc_ci95": [
+            0.9226168944080855,
+            0.9482516067286124
+          ]
+        },
+        "raw_three_world": {
+          "auroc": 0.8046868686868686,
+          "auprc": 0.9338746158174038,
+          "support_n": 1735,
+          "prediction_coverage": 1.0,
+          "auroc_ci95": [
+            0.7776949647540286,
+            0.8293955033774927
+          ],
+          "auprc_ci95": [
+            0.9219330139888469,
+            0.9459357648346597
+          ]
+        },
+        "no_input_normalization": {
+          "auroc": 0.8098707070707071,
+          "auprc": 0.9341130881523886,
+          "support_n": 1735,
+          "prediction_coverage": 1.0,
+          "auroc_ci95": [
+            0.7820406180145033,
+            0.8358062289830883
+          ],
+          "auprc_ci95": [
+            0.9216815815064894,
+            0.9464438400092011
+          ]
+        },
+        "no_curvature_asymmetry": {
+          "auroc": 0.8109494949494949,
+          "auprc": 0.9330597344760012,
+          "support_n": 1735,
+          "prediction_coverage": 1.0,
+          "auroc_ci95": [
+            0.7836483740293625,
+            0.8370325906215388
+          ],
+          "auprc_ci95": [
+            0.9195697045116676,
+            0.9467259653283755
+          ]
+        },
+        "no_direction_information": {
+          "auroc": 0.8134777777777777,
+          "auprc": 0.9356105580550146,
+          "support_n": 1735,
+          "prediction_coverage": 1.0,
+          "auroc_ci95": [
+            0.788015257920222,
+            0.8371706884887844
+          ],
+          "auprc_ci95": [
+            0.923355391411539,
+            0.9478980563895367
+          ]
+        }
+      },
+      "contrasts": {
+        "full_curve_minus_raw_three_world": {
+          "left": "full_curve",
+          "right": "raw_three_world",
+          "delta_auroc": 0.01070505050505055,
+          "delta_auroc_ci95": [
+            -0.0031852731224722764,
+            0.022966439920199633
+          ],
+          "delta_auprc": 0.001424778402454585,
+          "delta_auprc_ci95": [
+            -0.0052746725100758975,
+            0.00772536009887538
+          ]
+        },
+        "full_curve_minus_no_input_normalization": {
+          "left": "full_curve",
+          "right": "no_input_normalization",
+          "delta_auroc": 0.005521212121212038,
+          "delta_auroc_ci95": [
+            -0.0041623548398555645,
+            0.015230428889160185
+          ],
+          "delta_auprc": 0.0011863060674698334,
+          "delta_auprc_ci95": [
+            -0.004189810257274951,
+            0.006733998839422756
+          ]
+        },
+        "full_curve_minus_no_curvature_asymmetry": {
+          "left": "full_curve",
+          "right": "no_curvature_asymmetry",
+          "delta_auroc": 0.004442424242424248,
+          "delta_auroc_ci95": [
+            -0.00263460869543867,
+            0.011152440916501104
+          ],
+          "delta_auprc": 0.002239659743857203,
+          "delta_auprc_ci95": [
+            -0.0015554488018135915,
+            0.005887360340130912
+          ]
+        },
+        "full_curve_minus_no_direction_information": {
+          "left": "full_curve",
+          "right": "no_direction_information",
+          "delta_auroc": 0.0019141414141413682,
+          "delta_auroc_ci95": [
+            -0.007808983373047515,
+            0.011535926387443295
+          ],
+          "delta_auprc": -0.00031116383515616963,
+          "delta_auprc_ci95": [
+            -0.004653969858956952,
+            0.004171333702438414
+          ]
+        },
+        "no_input_normalization_minus_raw_three_world": {
+          "left": "no_input_normalization",
+          "right": "raw_three_world",
+          "delta_auroc": 0.005183838383838513,
+          "delta_auroc_ci95": [
+            -0.00446669172916814,
+            0.014231194209070793
+          ],
+          "delta_auprc": 0.00023847233498475173,
+          "delta_auprc_ci95": [
+            -0.004407157672099604,
+            0.004411173237977577
+          ]
+        },
+        "no_curvature_asymmetry_minus_raw_three_world": {
+          "left": "no_curvature_asymmetry",
+          "right": "raw_three_world",
+          "delta_auroc": 0.006262626262626303,
+          "delta_auroc_ci95": [
+            -0.005492470479107806,
+            0.017345235787895763
+          ],
+          "delta_auprc": -0.0008148813414026179,
+          "delta_auprc_ci95": [
+            -0.00697732278749551,
+            0.005135874111094931
+          ]
+        },
+        "no_direction_information_minus_raw_three_world": {
+          "left": "no_direction_information",
+          "right": "raw_three_world",
+          "delta_auroc": 0.008790909090909182,
+          "delta_auroc_ci95": [
+            -0.005295472776155474,
+            0.022984874498837873
+          ],
+          "delta_auprc": 0.0017359422376107547,
+          "delta_auprc_ci95": [
+            -0.00494100049553379,
+            0.008740474467961458
+          ]
+        }
+      },
+      "bootstrap": {
+        "attempts": 2000,
+        "seed": 20260928,
+        "unit": "source_group",
+        "paired": true,
+        "percentile": [
+          2.5,
+          97.5
+        ],
+        "degenerate_single_class_draws": 0,
+        "valid_draws": 2000,
+        "retry_degenerate_draws": false,
+        "draw_sequence_sha256": "38da813f95deb92405b861be05b37dbabaf210809412074996e2298ba37e7876"
+      },
+      "status": "evaluated"
+    }
+  },
+  "deepseek_v2_component": {
+    "support": {
+      "n": 2050,
+      "groups": 448,
+      "error_1": 1257,
+      "correct_0": 793,
+      "error_prevalence": 0.6131707317073171,
+      "coverage_of_strict": 1.0,
+      "coverage_of_requested": 0.9213483146067416,
+      "coverage_of_full_frame": 0.9147701918786256
+    },
+    "evaluation": {
+      "metrics": {
+        "full_curve": {
+          "auroc": 0.8411558575884253,
+          "auprc": 0.8653450996691864,
+          "support_n": 2050,
+          "prediction_coverage": 1.0,
+          "auroc_ci95": [
+            0.8200547700753061,
+            0.8601824728413826
+          ],
+          "auprc_ci95": [
+            0.8401375410263995,
+            0.8879094772697586
+          ]
+        },
+        "raw_three_world": {
+          "auroc": 0.8258865109485243,
+          "auprc": 0.8485272510427071,
+          "support_n": 2050,
+          "prediction_coverage": 1.0,
+          "auroc_ci95": [
+            0.8023560865205529,
+            0.8456850606496052
+          ],
+          "auprc_ci95": [
+            0.8209172245357951,
+            0.873294469255383
+          ]
+        },
+        "no_input_normalization": {
+          "auroc": 0.8426034885599031,
+          "auprc": 0.8607905778236554,
+          "support_n": 2050,
+          "prediction_coverage": 1.0,
+          "auroc_ci95": [
+            0.8226105411517664,
+            0.8612114158235336
+          ],
+          "auprc_ci95": [
+            0.8353817686581296,
+            0.8835181588807793
+          ]
+        },
+        "no_curvature_asymmetry": {
+          "auroc": 0.8369162952284358,
+          "auprc": 0.8590179628969574,
+          "support_n": 2050,
+          "prediction_coverage": 1.0,
+          "auroc_ci95": [
+            0.8160549401802248,
+            0.8557800868504867
+          ],
+          "auprc_ci95": [
+            0.8340456097081108,
+            0.8820737346133061
+          ]
+        },
+        "no_direction_information": {
+          "auroc": 0.8376235577612783,
+          "auprc": 0.8619532955955691,
+          "support_n": 2050,
+          "prediction_coverage": 1.0,
+          "auroc_ci95": [
+            0.8162293421486221,
+            0.8561702900503809
+          ],
+          "auprc_ci95": [
+            0.8380551420881647,
+            0.8832737185295423
+          ]
+        }
+      },
+      "contrasts": {
+        "full_curve_minus_raw_three_world": {
+          "left": "full_curve",
+          "right": "raw_three_world",
+          "delta_auroc": 0.015269346639900983,
+          "delta_auroc_ci95": [
+            0.007026495169337055,
+            0.023505465945136684
+          ],
+          "delta_auprc": 0.01681784862647928,
+          "delta_auprc_ci95": [
+            0.0059604592261129465,
+            0.028296169505961897
+          ]
+        },
+        "full_curve_minus_no_input_normalization": {
+          "left": "full_curve",
+          "right": "no_input_normalization",
+          "delta_auroc": -0.0014476309714778202,
+          "delta_auroc_ci95": [
+            -0.007005091563680399,
+            0.0041716285692055335
+          ],
+          "delta_auprc": 0.004554521845530957,
+          "delta_auprc_ci95": [
+            -0.003571396239398619,
+            0.012769060937169428
+          ]
+        },
+        "full_curve_minus_no_curvature_asymmetry": {
+          "left": "full_curve",
+          "right": "no_curvature_asymmetry",
+          "delta_auroc": 0.004239562359989457,
+          "delta_auroc_ci95": [
+            -0.0019984364096026137,
+            0.010543274016185933
+          ],
+          "delta_auprc": 0.006327136772228958,
+          "delta_auprc_ci95": [
+            -0.001672684702487101,
+            0.01436380731082764
+          ]
+        },
+        "full_curve_minus_no_direction_information": {
+          "left": "full_curve",
+          "right": "no_direction_information",
+          "delta_auroc": 0.0035322998271469785,
+          "delta_auroc_ci95": [
+            -0.0037284871401577157,
+            0.010643766701000847
+          ],
+          "delta_auprc": 0.003391804073617277,
+          "delta_auprc_ci95": [
+            -0.005128075588605258,
+            0.012244999031361021
+          ]
+        },
+        "no_input_normalization_minus_raw_three_world": {
+          "left": "no_input_normalization",
+          "right": "raw_three_world",
+          "delta_auroc": 0.016716977611378803,
+          "delta_auroc_ci95": [
+            0.009788207777260397,
+            0.023766317676889356
+          ],
+          "delta_auprc": 0.012263326780948325,
+          "delta_auprc_ci95": [
+            0.0029377744084324755,
+            0.022016972292361662
+          ]
+        },
+        "no_curvature_asymmetry_minus_raw_three_world": {
+          "left": "no_curvature_asymmetry",
+          "right": "raw_three_world",
+          "delta_auroc": 0.011029784279911525,
+          "delta_auroc_ci95": [
+            0.003241682913637084,
+            0.0190514546959009
+          ],
+          "delta_auprc": 0.010490711854250323,
+          "delta_auprc_ci95": [
+            -0.0009092059502744553,
+            0.022564035922377778
+          ]
+        },
+        "no_direction_information_minus_raw_three_world": {
+          "left": "no_direction_information",
+          "right": "raw_three_world",
+          "delta_auroc": 0.011737046812754004,
+          "delta_auroc_ci95": [
+            0.0018700886332850442,
+            0.022032528061699693
+          ],
+          "delta_auprc": 0.013426044552862004,
+          "delta_auprc_ci95": [
+            0.0008866648981443904,
+            0.025997068850126065
+          ]
+        }
+      },
+      "bootstrap": {
+        "attempts": 2000,
+        "seed": 20260928,
+        "unit": "source_group",
+        "paired": true,
+        "percentile": [
+          2.5,
+          97.5
+        ],
+        "degenerate_single_class_draws": 0,
+        "valid_draws": 2000,
+        "retry_degenerate_draws": false,
+        "draw_sequence_sha256": "a3b033a320702a8c4800225cd02f3fc259bae5a53fea55e3a3ca9f2dc58bb694"
+      },
+      "status": "evaluated"
+    }
+  }
+}

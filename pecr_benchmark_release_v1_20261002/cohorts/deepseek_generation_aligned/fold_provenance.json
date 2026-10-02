@@ -1,0 +1,56 @@
+{
+  "status": "post-hoc reconstruction",
+  "generated_utc": "2026-10-01T15:25:19.385933+00:00",
+  "rule": "GroupKFold(n_splits=5, shuffle=False); source_group only; unchanged strict row order",
+  "original_frozen_timestamp": null,
+  "uses_labels_or_predictions_for_assignment": false,
+  "original_item_level_fold_map_retained": false,
+  "original_oof_retained_fields": [
+    "y",
+    "groups",
+    "five method prediction arrays"
+  ],
+  "old_fold_summary_matches": true,
+  "folds": [
+    {
+      "fold": 0,
+      "train_n": 1640,
+      "test_n": 410,
+      "test_groups": 88,
+      "errors": 232,
+      "correct": 178
+    },
+    {
+      "fold": 1,
+      "train_n": 1640,
+      "test_n": 410,
+      "test_groups": 89,
+      "errors": 263,
+      "correct": 147
+    },
+    {
+      "fold": 2,
+      "train_n": 1640,
+      "test_n": 410,
+      "test_groups": 90,
+      "errors": 244,
+      "correct": 166
+    },
+    {
+      "fold": 3,
+      "train_n": 1640,
+      "test_n": 410,
+      "test_groups": 90,
+      "errors": 241,
+      "correct": 169
+    },
+    {
+      "fold": 4,
+      "train_n": 1640,
+      "test_n": 410,
+      "test_groups": 91,
+      "errors": 277,
+      "correct": 133
+    }
+  ]
+}

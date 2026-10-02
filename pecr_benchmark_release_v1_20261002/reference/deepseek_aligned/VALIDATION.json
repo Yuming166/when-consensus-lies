@@ -1,0 +1,14 @@
+{
+  "all_passed": true,
+  "rows": 2050,
+  "groups": 448,
+  "folds": 5,
+  "new_fit_count": 20,
+  "existing_native_predictions_refitted": false,
+  "ids_y_groups_folds_same_saved_order": true,
+  "G96_schema_order_and_saved_matrix_hash_verified": true,
+  "matrices_finite_nonsharing_and_unchanged": true,
+  "numeric_sources_unchanged": true,
+  "bootstrap_valid_draws": 2000,
+  "bootstrap_degenerate_draws": 0
+}

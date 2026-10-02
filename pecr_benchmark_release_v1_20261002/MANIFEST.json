@@ -1,0 +1,68 @@
+{
+  "benchmark": "PECR generation-aligned historical-response risk and intervention reconstruction",
+  "version": "v1_20261002",
+  "release_kind": "local reviewable distribution; not pushed",
+  "license": "MIT for supplied code/derived artifacts; upstream FinQA notice retained separately",
+  "data_card": "DATA_CARD.md",
+  "numerical_entry": "src/benchmark.py",
+  "intervention_entry": "src/rebuild_worlds.py",
+  "final_contract": "protocol/FINAL_RELEASE_SPEC.json",
+  "fixed_parameters": "protocol/HGB_PARAMS.json",
+  "runtime_lock": "environment/requirements.lock",
+  "attempted_frame": "coverage/attempted_frame_final.jsonl",
+  "coverage_summary": "coverage/FINAL_SUMMARY.json",
+  "primary_aligned_tracks": [
+    "qwen_generation_aligned",
+    "deepseek_generation_aligned"
+  ],
+  "historical_source_track": "deepseek_shared_qwen",
+  "reference_origin_contrast": "reference/native/OOF.npz",
+  "clean_retrain_result": "acceptance/clean_refit_final/RESULTS.json",
+  "clean_retrain_fits": 90,
+  "method_order": [
+    "graph_only",
+    "raw_three_world",
+    "full_curve",
+    "no_input_normalization",
+    "no_curvature_asymmetry",
+    "no_direction_information"
+  ],
+  "matrix_dims": [
+    96,
+    113,
+    129,
+    124,
+    125,
+    121
+  ],
+  "world_order": [
+    "original",
+    "positive",
+    "negative"
+  ],
+  "positive_class": "error=1",
+  "attempted_items_per_track": 2241,
+  "requested_per_track": 2225,
+  "unrequested_per_track": 16,
+  "intervention_saved_request_hash_matches": 13350,
+  "new_model_API_calls": 0,
+  "holdout_access": false,
+  "label_regeneration_in_release": false,
+  "original_artifacts_unchanged": true,
+  "phase_history": "reports/AS_BEFORE_SCOPE_MAP.md",
+  "future_generation_contract": "intervention/NEW_GENERATION_PROTOCOL.md",
+  "source_hash_semantics": "Original-source relative paths are provenance only; runtime dependency is self-contained numeric package or user-supplied TRAIN text reconstruction",
+  "unavailable_legacy_metadata": [
+    "original per-row DeepSeek label target hashes/freeze receipts were not retained; new binding is post-hoc",
+    "27 older Qwen original responses unrecoverable as structured assistant JSON; current corrected original answers unaffected",
+    "missing batch/finished/request-recorded statuses remain unknown"
+  ],
+  "missing_required_source_files": [],
+  "model_identity": {
+    "qwen_requested_and_saved_body_model": "Qwen3.5-4B",
+    "deepseek_requested_and_reported_target": "deepseek-flash",
+    "underlying_DeepSeek_architecture_version": "not inferred from collection V2 name"
+  },
+  "distribution_builder": "src/build_dist.py",
+  "release_seal": "SHA256SUMS.txt"
+}

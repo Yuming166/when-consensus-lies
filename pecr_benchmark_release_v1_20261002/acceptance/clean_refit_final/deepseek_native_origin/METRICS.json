@@ -1,0 +1,215 @@
+{
+  "status": "fixed post-hoc development benchmark, not independent confirmation",
+  "support": {
+    "n": 2050,
+    "groups": 448,
+    "error_1": 1257,
+    "correct_0": 793,
+    "error_prevalence": 0.6131707317073171,
+    "coverage_of_strict": 1.0,
+    "coverage_of_requested": 0.9213483146067416,
+    "coverage_of_full_frame": 0.9147701918786256
+  },
+  "fold_support": [
+    {
+      "fold": 0,
+      "n": 410,
+      "groups": 88,
+      "error_1": 232,
+      "correct_0": 178
+    },
+    {
+      "fold": 1,
+      "n": 410,
+      "groups": 89,
+      "error_1": 263,
+      "correct_0": 147
+    },
+    {
+      "fold": 2,
+      "n": 410,
+      "groups": 90,
+      "error_1": 244,
+      "correct_0": 166
+    },
+    {
+      "fold": 3,
+      "n": 410,
+      "groups": 90,
+      "error_1": 241,
+      "correct_0": 169
+    },
+    {
+      "fold": 4,
+      "n": 410,
+      "groups": 91,
+      "error_1": 277,
+      "correct_0": 133
+    }
+  ],
+  "evaluation": {
+    "metrics": {
+      "native_G_curve": {
+        "auroc": 0.8502038019624781,
+        "auprc": 0.8696990645835168,
+        "support_n": 2050,
+        "prediction_coverage": 1.0,
+        "auroc_ci95": [
+          0.8312367790109647,
+          0.8684869416177364
+        ],
+        "auprc_ci95": [
+          0.8458658010774116,
+          0.891626550865964
+        ]
+      },
+      "native_G_raw": {
+        "auroc": 0.8385866386570638,
+        "auprc": 0.8587003123288665,
+        "support_n": 2050,
+        "prediction_coverage": 1.0,
+        "auroc_ci95": [
+          0.8189800580808113,
+          0.8572185496086278
+        ],
+        "auprc_ci95": [
+          0.833597334784711,
+          0.8836994914455691
+        ]
+      },
+      "shared_G_curve": {
+        "auroc": 0.8411558575884253,
+        "auprc": 0.8653450996691864,
+        "support_n": 2050,
+        "prediction_coverage": 1.0,
+        "auroc_ci95": [
+          0.8200547700753061,
+          0.8601824728413826
+        ],
+        "auprc_ci95": [
+          0.8401375410263995,
+          0.8879094772697586
+        ]
+      },
+      "shared_G_raw": {
+        "auroc": 0.8258865109485243,
+        "auprc": 0.8485272510427071,
+        "support_n": 2050,
+        "prediction_coverage": 1.0,
+        "auroc_ci95": [
+          0.8023560865205529,
+          0.8456850606496052
+        ],
+        "auprc_ci95": [
+          0.8209172245357951,
+          0.873294469255383
+        ]
+      }
+    },
+    "contrasts": {
+      "native_curve_minus_raw": {
+        "left": "native_G_curve",
+        "right": "native_G_raw",
+        "delta_auroc": 0.011617163305414291,
+        "delta_auroc_ci95": [
+          0.0044544092573528095,
+          0.018687593146419375
+        ],
+        "delta_auprc": 0.010998752254650301,
+        "delta_auprc_ci95": [
+          0.000802062400201259,
+          0.020705957643240368
+        ]
+      },
+      "shared_curve_minus_raw": {
+        "left": "shared_G_curve",
+        "right": "shared_G_raw",
+        "delta_auroc": 0.015269346639900983,
+        "delta_auroc_ci95": [
+          0.007026495169337055,
+          0.023505465945136684
+        ],
+        "delta_auprc": 0.01681784862647928,
+        "delta_auprc_ci95": [
+          0.0059604592261129465,
+          0.028296169505961897
+        ]
+      },
+      "native_minus_shared_curve": {
+        "left": "native_G_curve",
+        "right": "shared_G_curve",
+        "delta_auroc": 0.009047944374052874,
+        "delta_auroc_ci95": [
+          0.0022726383380227617,
+          0.016210755853872636
+        ],
+        "delta_auprc": 0.004353964914330377,
+        "delta_auprc_ci95": [
+          -0.006020120797793588,
+          0.014527003141584659
+        ]
+      },
+      "native_minus_shared_raw": {
+        "left": "native_G_raw",
+        "right": "shared_G_raw",
+        "delta_auroc": 0.012700127708539566,
+        "delta_auroc_ci95": [
+          0.0051458571224707785,
+          0.020759480429963742
+        ],
+        "delta_auprc": 0.010173061286159357,
+        "delta_auprc_ci95": [
+          -0.0003611037481945384,
+          0.02124246107363004
+        ]
+      }
+    },
+    "bootstrap": {
+      "attempts": 2000,
+      "seed": 20260928,
+      "unit": "source_group",
+      "paired": true,
+      "percentile": [
+        2.5,
+        97.5
+      ],
+      "degenerate_single_class_draws": 0,
+      "valid_draws": 2000,
+      "retry_degenerate_draws": false,
+      "draw_sequence_sha256": "a3b033a320702a8c4800225cd02f3fc259bae5a53fea55e3a3ca9f2dc58bb694"
+    },
+    "status": "evaluated"
+  },
+  "comparison": {
+    "methods": {
+      "native_G_curve": {
+        "exact_prediction_match": true,
+        "different_rows": 0,
+        "max_abs_prediction_difference": 0.0
+      },
+      "native_G_raw": {
+        "exact_prediction_match": true,
+        "different_rows": 0,
+        "max_abs_prediction_difference": 0.0
+      },
+      "shared_G_curve": {
+        "exact_prediction_match": true,
+        "different_rows": 0,
+        "max_abs_prediction_difference": 0.0
+      },
+      "shared_G_raw": {
+        "exact_prediction_match": true,
+        "different_rows": 0,
+        "max_abs_prediction_difference": 0.0
+      }
+    },
+    "all_predictions_exact": true,
+    "old_primary_modified": false,
+    "no_search_or_retry": true,
+    "saved_evaluation": {
+      "all_saved_points_and_intervals_exact": true,
+      "differences": [],
+      "historical_additional_contrasts_not_recomputed": []
+    }
+  }
+}

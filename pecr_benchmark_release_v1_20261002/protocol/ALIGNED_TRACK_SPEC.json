@@ -1,0 +1,14 @@
+{
+  "reason": "user requires original-response features labels and Curve bound to same target generation; shared-Qwen G is historical cross-model track",
+  "primary_aligned_tracks": [
+    "qwen_generation_aligned",
+    "deepseek_generation_aligned"
+  ],
+  "historical_source_track": "deepseek_shared_qwen",
+  "old_primary_or_paper_changed": false,
+  "DeepSeek_frozen_cohort": "2050/448/5; labels Raw Curve folds parameters unchanged",
+  "native_fixed_method_completion": "20 new fits for native Graph-only and 3 existing family-removal masks; 2 native Raw/Curve OOF already saved and cleanly reproduced",
+  "method_search": false,
+  "subsequent_clean_release_retrain": "90 fits, three six-method tracks; source contrast aliases require 0 extra fits",
+  "all_analyses": "post-hoc development evidence, not independent confirmation"
+}

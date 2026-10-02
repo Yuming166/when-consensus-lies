@@ -1,0 +1,64 @@
+{
+  "methods": {
+    "graph_only": {
+      "exact_prediction_match": true,
+      "different_rows": 0,
+      "max_abs_prediction_difference": 0.0
+    },
+    "raw_three_world": {
+      "exact_prediction_match": true,
+      "different_rows": 0,
+      "max_abs_prediction_difference": 0.0
+    },
+    "full_curve": {
+      "exact_prediction_match": true,
+      "different_rows": 0,
+      "max_abs_prediction_difference": 0.0
+    },
+    "no_input_normalization": {
+      "exact_prediction_match": true,
+      "different_rows": 0,
+      "max_abs_prediction_difference": 0.0
+    },
+    "no_curvature_asymmetry": {
+      "exact_prediction_match": true,
+      "different_rows": 0,
+      "max_abs_prediction_difference": 0.0
+    },
+    "no_direction_information": {
+      "exact_prediction_match": true,
+      "different_rows": 0,
+      "max_abs_prediction_difference": 0.0
+    }
+  },
+  "all_predictions_exact": true,
+  "old_primary_modified": false,
+  "no_search_or_retry": true,
+  "saved_evaluation": {
+    "all_saved_points_and_intervals_exact": true,
+    "differences": [],
+    "historical_additional_contrasts_not_recomputed": [
+      {
+        "pair": [
+          "no_input_normalization",
+          "raw_three_world"
+        ],
+        "reason": "not in fixed release contrast specification"
+      },
+      {
+        "pair": [
+          "no_curvature_asymmetry",
+          "raw_three_world"
+        ],
+        "reason": "not in fixed release contrast specification"
+      },
+      {
+        "pair": [
+          "no_direction_information",
+          "raw_three_world"
+        ],
+        "reason": "not in fixed release contrast specification"
+      }
+    ]
+  }
+}

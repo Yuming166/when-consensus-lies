@@ -1,0 +1,276 @@
+{
+  "qwen_generation_aligned": {
+    "full_minus_raw": {
+      "left": "full_curve",
+      "right": "raw_three_world",
+      "delta_auroc": 0.013997079679056945,
+      "delta_auroc_ci95": [
+        0.004301008253140071,
+        0.024177382934443298
+      ],
+      "delta_auprc": 0.0062965940076131766,
+      "delta_auprc_ci95": [
+        0.002147018507354556,
+        0.010292288953454945
+      ]
+    },
+    "full_minus_graph": {
+      "left": "full_curve",
+      "right": "graph_only",
+      "delta_auroc": 0.08097114621932688,
+      "delta_auroc_ci95": [
+        0.05773281229751315,
+        0.1042682718257982
+      ],
+      "delta_auprc": 0.034656753571168375,
+      "delta_auprc_ci95": [
+        0.02374092078634988,
+        0.046146091043284286
+      ]
+    },
+    "full_minus_no_input_normalization": {
+      "left": "full_curve",
+      "right": "no_input_normalization",
+      "delta_auroc": 0.01279998724518594,
+      "delta_auroc_ci95": [
+        0.004961029997746727,
+        0.020569842697553485
+      ],
+      "delta_auprc": 0.00417649864648284,
+      "delta_auprc_ci95": [
+        0.0006342878029242078,
+        0.0077794233960983275
+      ]
+    },
+    "full_minus_no_curvature_asymmetry": {
+      "left": "full_curve",
+      "right": "no_curvature_asymmetry",
+      "delta_auroc": -0.0018441335163295047,
+      "delta_auroc_ci95": [
+        -0.0090816124887585,
+        0.005777774190351896
+      ],
+      "delta_auprc": 0.0013640682207467503,
+      "delta_auprc_ci95": [
+        -0.0024930342632966673,
+        0.005776165832726487
+      ]
+    },
+    "full_minus_no_direction_information": {
+      "left": "full_curve",
+      "right": "no_direction_information",
+      "delta_auroc": 0.011712506493661734,
+      "delta_auroc_ci95": [
+        0.0023023006055423434,
+        0.021873680926624513
+      ],
+      "delta_auprc": 0.0073160830932397225,
+      "delta_auprc_ci95": [
+        0.001827806870566509,
+        0.013315035368356369
+      ]
+    }
+  },
+  "deepseek_shared_qwen": {
+    "full_minus_raw": {
+      "left": "full_curve",
+      "right": "raw_three_world",
+      "delta_auroc": 0.015269346639900983,
+      "delta_auroc_ci95": [
+        0.007026495169337055,
+        0.023505465945136684
+      ],
+      "delta_auprc": 0.01681784862647928,
+      "delta_auprc_ci95": [
+        0.0059604592261129465,
+        0.028296169505961897
+      ]
+    },
+    "full_minus_graph": {
+      "left": "full_curve",
+      "right": "graph_only",
+      "delta_auroc": 0.0739495646573387,
+      "delta_auroc_ci95": [
+        0.054879061945630955,
+        0.09217322096147182
+      ],
+      "delta_auprc": 0.04670297489255948,
+      "delta_auprc_ci95": [
+        0.02833225007185647,
+        0.06515204474528768
+      ]
+    },
+    "full_minus_no_input_normalization": {
+      "left": "full_curve",
+      "right": "no_input_normalization",
+      "delta_auroc": -0.0014476309714778202,
+      "delta_auroc_ci95": [
+        -0.007005091563680399,
+        0.0041716285692055335
+      ],
+      "delta_auprc": 0.004554521845530957,
+      "delta_auprc_ci95": [
+        -0.003571396239398619,
+        0.012769060937169428
+      ]
+    },
+    "full_minus_no_curvature_asymmetry": {
+      "left": "full_curve",
+      "right": "no_curvature_asymmetry",
+      "delta_auroc": 0.004239562359989457,
+      "delta_auroc_ci95": [
+        -0.0019984364096026137,
+        0.010543274016185933
+      ],
+      "delta_auprc": 0.006327136772228958,
+      "delta_auprc_ci95": [
+        -0.001672684702487101,
+        0.01436380731082764
+      ]
+    },
+    "full_minus_no_direction_information": {
+      "left": "full_curve",
+      "right": "no_direction_information",
+      "delta_auroc": 0.0035322998271469785,
+      "delta_auroc_ci95": [
+        -0.0037284871401577157,
+        0.010643766701000847
+      ],
+      "delta_auprc": 0.003391804073617277,
+      "delta_auprc_ci95": [
+        -0.005128075588605258,
+        0.012244999031361021
+      ]
+    }
+  },
+  "deepseek_generation_aligned": {
+    "full_minus_raw": {
+      "left": "full_curve",
+      "right": "raw_three_world",
+      "delta_auroc": 0.011617163305414291,
+      "delta_auroc_ci95": [
+        0.0044544092573528095,
+        0.018687593146419375
+      ],
+      "delta_auprc": 0.010998752254650301,
+      "delta_auprc_ci95": [
+        0.000802062400201259,
+        0.020705957643240368
+      ]
+    },
+    "full_minus_graph": {
+      "left": "full_curve",
+      "right": "graph_only",
+      "delta_auroc": 0.05248991523884927,
+      "delta_auroc_ci95": [
+        0.03591974352505874,
+        0.0696320474825025
+      ],
+      "delta_auprc": 0.03261529244519923,
+      "delta_auprc_ci95": [
+        0.016138073777520502,
+        0.05006314057519596
+      ]
+    },
+    "full_minus_no_input_normalization": {
+      "left": "full_curve",
+      "right": "no_input_normalization",
+      "delta_auroc": -0.0006681373714511052,
+      "delta_auroc_ci95": [
+        -0.005710423467109168,
+        0.004181170985068556
+      ],
+      "delta_auprc": -0.00242321821258773,
+      "delta_auprc_ci95": [
+        -0.010451992673759241,
+        0.005197790915939767
+      ]
+    },
+    "full_minus_no_curvature_asymmetry": {
+      "left": "full_curve",
+      "right": "no_curvature_asymmetry",
+      "delta_auroc": 0.007087673467422451,
+      "delta_auroc_ci95": [
+        0.001516790537519383,
+        0.012776215689803057
+      ],
+      "delta_auprc": 0.007344404505111202,
+      "delta_auprc_ci95": [
+        0.00019417554732586444,
+        0.014828770792513683
+      ]
+    },
+    "full_minus_no_direction_information": {
+      "left": "full_curve",
+      "right": "no_direction_information",
+      "delta_auroc": 0.005107338375463288,
+      "delta_auroc_ci95": [
+        -0.0003931608501031636,
+        0.010357539261292235
+      ],
+      "delta_auprc": 0.005429973635786012,
+      "delta_auprc_ci95": [
+        -0.0020499059497096988,
+        0.012506642097083185
+      ]
+    }
+  },
+  "deepseek_native_origin": {
+    "native_curve_minus_raw": {
+      "left": "native_G_curve",
+      "right": "native_G_raw",
+      "delta_auroc": 0.011617163305414291,
+      "delta_auroc_ci95": [
+        0.0044544092573528095,
+        0.018687593146419375
+      ],
+      "delta_auprc": 0.010998752254650301,
+      "delta_auprc_ci95": [
+        0.000802062400201259,
+        0.020705957643240368
+      ]
+    },
+    "shared_curve_minus_raw": {
+      "left": "shared_G_curve",
+      "right": "shared_G_raw",
+      "delta_auroc": 0.015269346639900983,
+      "delta_auroc_ci95": [
+        0.007026495169337055,
+        0.023505465945136684
+      ],
+      "delta_auprc": 0.01681784862647928,
+      "delta_auprc_ci95": [
+        0.0059604592261129465,
+        0.028296169505961897
+      ]
+    },
+    "native_minus_shared_curve": {
+      "left": "native_G_curve",
+      "right": "shared_G_curve",
+      "delta_auroc": 0.009047944374052874,
+      "delta_auroc_ci95": [
+        0.0022726383380227617,
+        0.016210755853872636
+      ],
+      "delta_auprc": 0.004353964914330377,
+      "delta_auprc_ci95": [
+        -0.006020120797793588,
+        0.014527003141584659
+      ]
+    },
+    "native_minus_shared_raw": {
+      "left": "native_G_raw",
+      "right": "shared_G_raw",
+      "delta_auroc": 0.012700127708539566,
+      "delta_auroc_ci95": [
+        0.0051458571224707785,
+        0.020759480429963742
+      ],
+      "delta_auprc": 0.010173061286159357,
+      "delta_auprc_ci95": [
+        -0.0003611037481945384,
+        0.02124246107363004
+      ]
+    }
+  }
+}

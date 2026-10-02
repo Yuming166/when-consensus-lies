@@ -1,0 +1,49 @@
+{
+  "paths_relative_to_release_root": {
+    "protocol/HGB_PARAMS.json": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482",
+    "src/evaluation.py": "34d510043738c0ea4e24c1798dbfdefdb65d9c4b8fb19073e075ab08f62149f8",
+    "reference/native/G96_NATIVE.npz": "74477ddc99551d16815ece5db27f1eb3773942a63ef83668618bafd2de0a8c7c",
+    "reference/native/G96_SCHEMA.json": "a69f454b473d596f15e1c66ee64c69b2a0e5a6a613d59a44be07770fc354081a",
+    "reference/native/OOF.npz": "3ed693b96991c740853187d75f6f119b3d34d821897f91298f458e952cbd10e0",
+    "reference/native/RUNTIME.json": "59c0bb1026c5d6a46d4cc852999a2a20399d7e11ec55cda70ad5157f2491a273",
+    "cohorts/deepseek_shared_qwen/folds.csv": "685832c802f87e8b3976f4f3a60b335a4e0f8efd33174a11b75f5b5e3d2dc2b4",
+    "cohorts/deepseek_shared_qwen/features_label_blind.jsonl": "a41953b1f5f3e1814359f41ea71ed8a418256061dea4e9b7a6e2ced19deea8fa",
+    "cohorts/deepseek_shared_qwen/manifest.jsonl": "00f4417201267a7078cbfbfa78ed451dd88e8e4b10a6abf7b3b0807a297ed400",
+    "cohorts/deepseek_shared_qwen/fold_provenance.json": "e49fd88d59430ca31fa8362b62b3adcf05dfb92ae67d6d90b2a2bc8ec6136a56",
+    "cohorts/deepseek_shared_qwen/labels.csv": "ddbb65084bda19c152a0b654839e8d1d940714c3e2662ea6609fed3d626fc347",
+    "cohorts/deepseek_shared_qwen/schema.json": "9897b6e6a8422142e04a2f5603af308e02bfd4f28d532073996fa6990ee81e42",
+    "reference/deepseek/OOF.npz": "3775834dd77f42c0c8bdb06c19f701589ff3b1ba12f658c728e47aa518c549d4"
+  },
+  "after": {
+    "protocol/HGB_PARAMS.json": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482",
+    "src/evaluation.py": "34d510043738c0ea4e24c1798dbfdefdb65d9c4b8fb19073e075ab08f62149f8",
+    "reference/native/G96_NATIVE.npz": "74477ddc99551d16815ece5db27f1eb3773942a63ef83668618bafd2de0a8c7c",
+    "reference/native/G96_SCHEMA.json": "a69f454b473d596f15e1c66ee64c69b2a0e5a6a613d59a44be07770fc354081a",
+    "reference/native/OOF.npz": "3ed693b96991c740853187d75f6f119b3d34d821897f91298f458e952cbd10e0",
+    "reference/native/RUNTIME.json": "59c0bb1026c5d6a46d4cc852999a2a20399d7e11ec55cda70ad5157f2491a273",
+    "cohorts/deepseek_shared_qwen/folds.csv": "685832c802f87e8b3976f4f3a60b335a4e0f8efd33174a11b75f5b5e3d2dc2b4",
+    "cohorts/deepseek_shared_qwen/features_label_blind.jsonl": "a41953b1f5f3e1814359f41ea71ed8a418256061dea4e9b7a6e2ced19deea8fa",
+    "cohorts/deepseek_shared_qwen/manifest.jsonl": "00f4417201267a7078cbfbfa78ed451dd88e8e4b10a6abf7b3b0807a297ed400",
+    "cohorts/deepseek_shared_qwen/fold_provenance.json": "e49fd88d59430ca31fa8362b62b3adcf05dfb92ae67d6d90b2a2bc8ec6136a56",
+    "cohorts/deepseek_shared_qwen/labels.csv": "ddbb65084bda19c152a0b654839e8d1d940714c3e2662ea6609fed3d626fc347",
+    "cohorts/deepseek_shared_qwen/schema.json": "9897b6e6a8422142e04a2f5603af308e02bfd4f28d532073996fa6990ee81e42",
+    "reference/deepseek/OOF.npz": "3775834dd77f42c0c8bdb06c19f701589ff3b1ba12f658c728e47aa518c549d4"
+  },
+  "all_numeric_parameter_evaluation_sources_unchanged": true,
+  "training_matrix_hashes": {
+    "graph_only": "9d926bb3f9ca1b9890a18c76de6c0a81a056583b947eb3a789e70b703307b9fc",
+    "raw_three_world": "d32752e8aed5d3998572dbadc66473b124d8b32794c657f5e408683665b092d1",
+    "full_curve": "892def32074ace7bc85547a5a5b1903e9dd24b33cf0970f3f5881ef7dd27437f",
+    "no_input_normalization": "b604bb9ba6513f90fbfbfef0f7fa4153098b6a701047aa5e619cbd942eab2a0d",
+    "no_curvature_asymmetry": "2fc9c3eb1fb5643bdea16fe27f3fddc78059783d0201364416fe26936147889d",
+    "no_direction_information": "e4003872ed1d91dde3f7b4835e9ad0cafb38af732296133eb8a234ccb838bab8"
+  },
+  "loaded_code_hashes_before": {
+    "src/freeze_native_suite.py": "07817fb9c293e1d880b6f1d548d50c68400a1c113677ad62e4f52e29726f94c6",
+    "src/numeric.py": "df49e09c0c7ee30cac1d3877b483eab6d5bea3beb680d5a051e268070c8698d3"
+  },
+  "loaded_code_hashes_after": {
+    "src/freeze_native_suite.py": "07817fb9c293e1d880b6f1d548d50c68400a1c113677ad62e4f52e29726f94c6",
+    "src/numeric.py": "df49e09c0c7ee30cac1d3877b483eab6d5bea3beb680d5a051e268070c8698d3"
+  }
+}

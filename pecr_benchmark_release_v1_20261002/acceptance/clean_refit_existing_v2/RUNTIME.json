@@ -1,0 +1,84 @@
+{
+  "started_utc": "2026-10-01T18:47:52.587367+00:00",
+  "python": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:00:33) [GCC 14.3.0]",
+  "python_prefix": "/tmp/pecr-release-clean-20261002",
+  "base_prefix": "/storage/gaoym/miniforge3",
+  "system_site_packages": false,
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "threadpoolctl": "3.6.0",
+    "joblib": "1.6.0",
+    "narwhals": "2.26.0",
+    "cloudpickle": "3.1.2"
+  },
+  "package_locations": {
+    "numpy": "/tmp/pecr-release-clean-20261002/lib/python3.13/site-packages",
+    "scipy": "/tmp/pecr-release-clean-20261002/lib/python3.13/site-packages",
+    "scikit-learn": "/tmp/pecr-release-clean-20261002/lib/python3.13/site-packages",
+    "threadpoolctl": "/tmp/pecr-release-clean-20261002/lib/python3.13/site-packages"
+  },
+  "effective_HGB_parameters": {
+    "categorical_features": "from_dtype",
+    "class_weight": null,
+    "early_stopping": "auto",
+    "interaction_cst": null,
+    "l2_regularization": 1.0,
+    "learning_rate": 0.05,
+    "loss": "log_loss",
+    "max_bins": 255,
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_iter": 250,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "monotonic_cst": null,
+    "n_iter_no_change": 10,
+    "random_state": 20260928,
+    "scoring": "loss",
+    "tol": 1e-07,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "threads": 1,
+  "planned_fits": 70,
+  "completed_fits": 70,
+  "model_API_calls": 0,
+  "corpus_gold_ledger_checkpoint_inputs": false,
+  "search_or_retry": false,
+  "threadpools_during_fit": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/tmp/pecr-release-clean-20261002/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/tmp/pecr-release-clean-20261002/lib/python3.13/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libgomp",
+      "filepath": "/tmp/pecr-release-clean-20261002/lib/python3.13/site-packages/scikit_learn.libs/libgomp-e985bcbb.so.1.0.0",
+      "version": null
+    }
+  ],
+  "finished_utc": "2026-10-01T18:51:23.225383+00:00",
+  "numeric_inputs_unchanged": true
+}

@@ -1,0 +1,6 @@
+
+# Local benchmark archive and Python runtime residue.
+/pecr_benchmark_release_v1_20261002.tar.gz
+/pecr_benchmark_release_v1_20261002.tar.gz.sha256
+/pecr_benchmark_release_v1_20261002/**/__pycache__/
+/pecr_benchmark_release_v1_20261002/**/*.py[cod]

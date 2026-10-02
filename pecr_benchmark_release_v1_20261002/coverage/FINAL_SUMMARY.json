@@ -1,0 +1,150 @@
+{
+  "TRAIN_gold_holdout_access": false,
+  "as_before_coverage_retained": true,
+  "cohorts": {
+    "deepseek_generation_aligned": {
+      "G96_computation_status": {
+        "computed_saved_target_native": 2050,
+        "not_computed": 191
+      },
+      "frame_groups": 453,
+      "frame_rows": 2241,
+      "mutually_exclusive_partitions": {
+        "invalid_known_label": 79,
+        "invalid_unknown_label": 42,
+        "strict_parsed_labeled": 2050,
+        "unrequested_construction_exclusion": 16,
+        "valid_unknown_label": 54
+      },
+      "offline_parser_status": {
+        "negative": {
+          "answer_not_numeric": 31,
+          "missing_json": 40,
+          "ok": 2154,
+          "unknown": 16
+        },
+        "original": {
+          "answer_not_numeric": 35,
+          "missing_json": 8,
+          "ok": 2182,
+          "unknown": 16
+        },
+        "positive": {
+          "answer_not_numeric": 34,
+          "missing_json": 39,
+          "ok": 2152,
+          "unknown": 16
+        }
+      },
+      "requested_not_strict": 175,
+      "requested_rows": 2225,
+      "strict_correct": 793,
+      "strict_error": 1257,
+      "strict_groups": 448,
+      "strict_rows": 2050,
+      "strict_unit_combinations": {
+        "empty_mismatch": 102,
+        "empty_same": 51,
+        "nonempty_mismatch": 279,
+        "nonempty_same": 1618
+      },
+      "unrequested_rows": 16
+    },
+    "deepseek_shared_qwen": {
+      "G96_computation_status": {
+        "inherited_saved": 2241
+      },
+      "frame_groups": 453,
+      "frame_rows": 2241,
+      "mutually_exclusive_partitions": {
+        "invalid_known_label": 79,
+        "invalid_unknown_label": 42,
+        "strict_parsed_labeled": 2050,
+        "unrequested_construction_exclusion": 16,
+        "valid_unknown_label": 54
+      },
+      "offline_parser_status": {
+        "negative": {
+          "answer_not_numeric": 31,
+          "missing_json": 40,
+          "ok": 2154,
+          "unknown": 16
+        },
+        "original": {
+          "answer_not_numeric": 35,
+          "missing_json": 8,
+          "ok": 2182,
+          "unknown": 16
+        },
+        "positive": {
+          "answer_not_numeric": 34,
+          "missing_json": 39,
+          "ok": 2152,
+          "unknown": 16
+        }
+      },
+      "requested_not_strict": 175,
+      "requested_rows": 2225,
+      "strict_correct": 793,
+      "strict_error": 1257,
+      "strict_groups": 448,
+      "strict_rows": 2050,
+      "strict_unit_combinations": {
+        "empty_mismatch": 102,
+        "empty_same": 51,
+        "nonempty_mismatch": 279,
+        "nonempty_same": 1618
+      },
+      "unrequested_rows": 16
+    },
+    "qwen_generation_aligned": {
+      "G96_computation_status": {
+        "inherited_saved": 2241
+      },
+      "frame_groups": 453,
+      "frame_rows": 2241,
+      "mutually_exclusive_partitions": {
+        "invalid_known_label": 7,
+        "invalid_unknown_label": 24,
+        "strict_parsed_labeled": 2142,
+        "unrequested_construction_exclusion": 16,
+        "valid_unknown_label": 52
+      },
+      "offline_parser_status": {
+        "negative": {
+          "answer_not_numeric": 22,
+          "missing_json": 1,
+          "unknown_unrequested": 16,
+          "valid": 2202
+        },
+        "original": {
+          "answer_not_numeric": 26,
+          "unknown_unrequested": 16,
+          "valid": 2199
+        },
+        "positive": {
+          "answer_not_numeric": 22,
+          "missing_json": 1,
+          "unknown_unrequested": 16,
+          "valid": 2202
+        }
+      },
+      "requested_not_strict": 83,
+      "requested_rows": 2225,
+      "strict_correct": 443,
+      "strict_error": 1699,
+      "strict_groups": 452,
+      "strict_rows": 2142,
+      "strict_unit_combinations": {
+        "empty_mismatch": 103,
+        "empty_same": 153,
+        "nonempty_mismatch": 111,
+        "nonempty_same": 1775
+      },
+      "unrequested_rows": 16
+    }
+  },
+  "model_API_calls": 0,
+  "native_six_methods_available_after_fixed_supplement": true,
+  "training_fits": 0
+}

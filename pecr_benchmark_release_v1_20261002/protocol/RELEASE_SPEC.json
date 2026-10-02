@@ -1,0 +1,16 @@
+{
+  "kind": "post-hoc reusable benchmark release acceptance",
+  "primary_cohorts": [
+    "qwen_generation_aligned",
+    "deepseek_shared_qwen"
+  ],
+  "deepseek_native_role": "fixed existing four-variant feature-origin comparison, no primary replacement",
+  "method_search": false,
+  "network_model_calls": 0,
+  "TRAIN_gold_access": false,
+  "holdout_access": false,
+  "new_environment": "new venv without system-site packages; pinned independent dependencies",
+  "numeric_refit": "fixed existing saved methods, folds and complete effective HGB parameters",
+  "request_reconstruction": "offline hash verification only; no financial body output in public package",
+  "old_outputs_overwritten": false
+}

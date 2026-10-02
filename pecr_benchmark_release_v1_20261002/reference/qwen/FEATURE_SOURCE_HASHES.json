@@ -1,0 +1,87 @@
+{
+  "files": [
+    {
+      "path_relative_to_analysis": "../pecr_bidirectional_development_v1_20260928/data/full_dev/raw_ledger_full_dev.jsonl",
+      "sha256_before": "dc8d2e8ed5ff5d4990d4a822c71115d6073af599b9a48e1d31884b2687b51470",
+      "sha256_after": "dc8d2e8ed5ff5d4990d4a822c71115d6073af599b9a48e1d31884b2687b51470",
+      "unchanged": true,
+      "frozen_expected_sha256": "dc8d2e8ed5ff5d4990d4a822c71115d6073af599b9a48e1d31884b2687b51470",
+      "frozen_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_bidirectional_transformer_development_v1_20260928/src/prepare_bidirectional.py",
+      "sha256_before": "a42b6d4df1fd6d3ae5c15d7b23acefc01f1ae80b1c3a500e4212a40eb74f67f8",
+      "sha256_after": "a42b6d4df1fd6d3ae5c15d7b23acefc01f1ae80b1c3a500e4212a40eb74f67f8",
+      "unchanged": true,
+      "frozen_expected_sha256": "a42b6d4df1fd6d3ae5c15d7b23acefc01f1ae80b1c3a500e4212a40eb74f67f8",
+      "frozen_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_trd_delta_method_development_v3_20260926/v3_1/src/feature_builder.py",
+      "sha256_before": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722",
+      "sha256_after": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722",
+      "unchanged": true,
+      "frozen_expected_sha256": "f99e10f19e2cffd74a275e86ed96f5ea5c0c6f320b1c15b48fa39ef09b40b722",
+      "frozen_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_trd_delta_method_development_v3_20260926/v3_2/data/student_inputs_allowlisted.jsonl",
+      "sha256_before": "512b219ab65081242a8304e2f55975e82751bdbd009c4248febe32087793ec96",
+      "sha256_after": "512b219ab65081242a8304e2f55975e82751bdbd009c4248febe32087793ec96",
+      "unchanged": true,
+      "frozen_expected_sha256": "512b219ab65081242a8304e2f55975e82751bdbd009c4248febe32087793ec96",
+      "frozen_expected_match": true
+    },
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/src/numeric.py",
+      "sha256_before": "1b37344da387839286ddb90e9123aaf12fd49c25359b9217295d62e0477f051b",
+      "sha256_after": "1b37344da387839286ddb90e9123aaf12fd49c25359b9217295d62e0477f051b",
+      "unchanged": true,
+      "frozen_expected_sha256": null,
+      "frozen_expected_match": null
+    },
+    {
+      "path_relative_to_analysis": "../pecr_strict_numeric_retrain_export_v1_20261001/schema.json",
+      "sha256_before": "dee9e836785b9a37edb1585dbf728801bf0a2ddee6900c081bf6cfca4e379d86",
+      "sha256_after": "dee9e836785b9a37edb1585dbf728801bf0a2ddee6900c081bf6cfca4e379d86",
+      "unchanged": true,
+      "frozen_expected_sha256": null,
+      "frozen_expected_match": null
+    },
+    {
+      "path_relative_to_analysis": "data/construction_numeric.jsonl",
+      "sha256_before": "761097ced10f0431be3d60600de7407ba0163213e47a6e8e5d2b3a3200b82cbd",
+      "sha256_after": "761097ced10f0431be3d60600de7407ba0163213e47a6e8e5d2b3a3200b82cbd",
+      "unchanged": true,
+      "frozen_expected_sha256": null,
+      "frozen_expected_match": null
+    },
+    {
+      "path_relative_to_analysis": "audit/CONSTRUCTION_ACCESS.json",
+      "sha256_before": "652d91b771e4eaa9bc8b2a2c53daf6db15b83dd4c352051934663c0f18202fc0",
+      "sha256_after": "652d91b771e4eaa9bc8b2a2c53daf6db15b83dd4c352051934663c0f18202fc0",
+      "unchanged": true,
+      "frozen_expected_sha256": null,
+      "frozen_expected_match": null
+    },
+    {
+      "path_relative_to_analysis": "protocol/FIXED_CORRECTION_SPEC.json",
+      "sha256_before": "5a98038fd2782c474feb7adf9ff52044c8d97ec4314724b0ed0eeca15e53cbdb",
+      "sha256_after": "5a98038fd2782c474feb7adf9ff52044c8d97ec4314724b0ed0eeca15e53cbdb",
+      "unchanged": true,
+      "frozen_expected_sha256": null,
+      "frozen_expected_match": null
+    },
+    {
+      "path_relative_to_analysis": "src/build_aligned_features.py",
+      "sha256_before": "2f7a56988ff819071d38bdc32ad91b31e90e0fed104c17073dd4fbd23363bdc2",
+      "sha256_after": "2f7a56988ff819071d38bdc32ad91b31e90e0fed104c17073dd4fbd23363bdc2",
+      "unchanged": true,
+      "frozen_expected_sha256": null,
+      "frozen_expected_match": null
+    }
+  ],
+  "all_unchanged": true,
+  "raw_construction_manifest_not_read": true,
+  "raw_construction_manifest_provenance_receipt": "audit/CONSTRUCTION_ACCESS.json"
+}

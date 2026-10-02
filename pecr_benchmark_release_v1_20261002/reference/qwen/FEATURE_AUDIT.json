@@ -1,0 +1,174 @@
+{
+  "version": "generation_aligned_qwen_feature_frame_v1_20261002",
+  "checked_utc": "2026-10-01T17:51:18.811949+00:00",
+  "full_frame_rows": 2241,
+  "full_frame_groups": 453,
+  "requested_rows": 2225,
+  "requested_groups": 453,
+  "unrequested_construction_excluded_rows": 16,
+  "ledger_records": 6675,
+  "ledger_records_by_world": {
+    "original": 2225,
+    "positive": 2225,
+    "negative": 2225
+  },
+  "strict_feature_valid_rows": 2194,
+  "strict_feature_valid_groups": 453,
+  "strict_feature_coverage_requested": 0.9860674157303371,
+  "strict_feature_coverage_full_frame": 0.9790272199910754,
+  "current_G96_valid_rows": 2225,
+  "current_G96_invalid_rows": 0,
+  "G96_valid_but_response_strict_invalid_rows": 31,
+  "safe_status": {
+    "currentG_valid": 2225
+  },
+  "parser_world_status": {
+    "original": {
+      "valid": 2199,
+      "answer_not_numeric": 26
+    },
+    "positive": {
+      "valid": 2202,
+      "answer_not_numeric": 22,
+      "missing_json": 1
+    },
+    "negative": {
+      "valid": 2202,
+      "answer_not_numeric": 22,
+      "missing_json": 1
+    }
+  },
+  "feature_partitions": {
+    "strict_feature_valid_label_blind": 2194,
+    "requested_strict_response_parse_invalid": 31,
+    "unrequested_construction_excluded": 16
+  },
+  "original_fourfield_types": {
+    "answer_value": {
+      "str": 2225
+    },
+    "unit": {
+      "str": 1994,
+      "NoneType": 231
+    },
+    "confidence": {
+      "float": 2212,
+      "int": 13
+    },
+    "supporting_evidence": {
+      "list": 2225
+    }
+  },
+  "metadata_presence_counts": {
+    "slot": 6675,
+    "attempt_id": 6675,
+    "status": 0,
+    "utc_started": 6675,
+    "utc_finished": 0,
+    "model_reported": 0,
+    "request_sha256": 6675,
+    "response_sha256": 6675,
+    "previous_record_hash": 6675,
+    "record_hash": 6675
+  },
+  "model_requested": {
+    "Qwen3.5-4B": 6675
+  },
+  "model_reported_from_saved_HTTP_body": {
+    "Qwen3.5-4B": 6675
+  },
+  "HTTP_status": {
+    "200": 6675
+  },
+  "utc_started_range": [
+    "2026-09-28T09:17:16.139049+00:00",
+    "2026-09-28T10:37:42.920123+00:00"
+  ],
+  "recorded_finished_utc": "unknown: absent from source ledger",
+  "recorded_model_reported": "unknown: absent from source ledger; model recovered separately from saved HTTP body",
+  "hash_integrity_failures": {},
+  "final_record_chain_head": "7ee04a2cef09d2320e5fcabc098e8f86923f39455af25c963cb5acb55de6e391",
+  "unit_eligibility_filter": false,
+  "graph_fallback_or_conversion": false,
+  "input_field_allowlist_actual": [
+    "original_response",
+    "post_text",
+    "pre_text",
+    "question",
+    "table_original"
+  ],
+  "response_field_allowlist_actual": [
+    "answer_value",
+    "confidence",
+    "supporting_evidence",
+    "unit"
+  ],
+  "construction_field_allowlist_actual": [
+    "absolute_delta",
+    "absolute_delta_saved",
+    "argument_index",
+    "construction_flags",
+    "construction_status",
+    "graph_row",
+    "group_definition",
+    "item_id",
+    "operand_new",
+    "operand_new_saved",
+    "operand_old",
+    "operand_old_saved",
+    "operation_index",
+    "partition",
+    "program_conditioned_direction",
+    "requested",
+    "row_index",
+    "source_group",
+    "source_status",
+    "table_cell"
+  ],
+  "forbidden_field_guard": [
+    "error",
+    "gold",
+    "gold_answer",
+    "label",
+    "labels",
+    "mutated_program_result",
+    "original_program_result",
+    "qa",
+    "qa.answer",
+    "y"
+  ],
+  "all_input_field_guards_passed": true,
+  "feature_uses_gold_labels_program_results_predictions": false,
+  "TRAIN_gold_or_holdout_read": false,
+  "label_files_read": false,
+  "old_G96_or_old_response_graph_used": false,
+  "supporting_evidence_validated_only": true,
+  "hashed4096_computed": false,
+  "old_directory_pycache_written": false,
+  "finite_correct_shape_order_and_nonsharing": true,
+  "raw_matches_curve_first17_and_prepare_feature_formula": true,
+  "model_API_calls": 0,
+  "training_fits": 0,
+  "all_old_source_hashes_unchanged": true,
+  "actual_input_files_read": [
+    "pecr_bidirectional_development_v1_20260928/data/full_dev/raw_ledger_full_dev.jsonl",
+    "pecr_bidirectional_transformer_development_v1_20260928/src/prepare_bidirectional.py",
+    "pecr_trd_delta_method_development_v3_20260926/v3_1/src/feature_builder.py",
+    "pecr_trd_delta_method_development_v3_20260926/v3_2/data/student_inputs_allowlisted.jsonl",
+    "pecr_strict_numeric_retrain_export_v1_20261001/src/numeric.py",
+    "pecr_strict_numeric_retrain_export_v1_20261001/schema.json",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/data/construction_numeric.jsonl",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/audit/CONSTRUCTION_ACCESS.json",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/protocol/FIXED_CORRECTION_SPEC.json",
+    "pecr_qwen_generation_aligned_correction_v1_20261002/src/build_aligned_features.py",
+    "pecr_strict_numeric_retrain_export_v1_20261001/BUNDLE_SHA256SUMS.txt"
+  ],
+  "label_blind_field_values_only_in_export": true,
+  "original_construction_provenance": {
+    "source_relative": "../pecr_bidirectional_development_v1_20260928/data/construction_manifest_dev_train.jsonl",
+    "source_sha256_from_root_lexical_receipt": "e44396734f1f8c1b32cc7e87ef197c642965dc5035870d6b800bee3a5e988de4",
+    "original_raw_manifest_read_by_feature_stage": false
+  },
+  "frame_sha256": "c1fbe183181f962b53d50643e1027425e9f9a6f79483a2be16f772ac15587de2",
+  "schema_sha256": "dc10d0cb2ecc7f9cb99e90cb6852632a815afa10f1147f2b34893096c5f86e41"
+}

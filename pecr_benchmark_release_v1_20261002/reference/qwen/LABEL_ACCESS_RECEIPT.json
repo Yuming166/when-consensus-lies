@@ -1,0 +1,47 @@
+{
+  "access_scanner_change": "pure lexical string skip; frozen numeric policy unchanged",
+  "access_scanner_script_sha256": "2cc268af05daee72a8911fc9c078685ee84542c7be9b23d8fe25a1e1e29dcc19",
+  "frozen_policy_sha256": "6790468e90a99f54570eb8ecdca0f49722c2aaa6f38de365aef766cbebf2f7bc",
+  "gold_program_or_exe_ans_used": false,
+  "gold_values_exported": false,
+  "gold_values_passed_to_features": false,
+  "label_file_sha256": "9309604723f563a3f74b67540c0c70ed7183d331657fe7cb4b532b24909665dc",
+  "label_rule": "abs(Decimal(pred)-Decimal(gold))<=max(0.0001,0.0001*abs(gold)); no percent rescaling",
+  "labels_full_frame": {
+    "correct": 445,
+    "error": 1704,
+    "unlabeled": 92
+  },
+  "model_api_requests": 0,
+  "old_label_input_revalidation_requested_only": {
+    "known_labels_exact": 1740,
+    "requested_rows_exact": 2225,
+    "unknown_labels_and_reasons_exact": 485
+  },
+  "original_scanner_sha256": "89784e99253f5c26dd358b46c3568515e6e7f500bde5f82993e9085e4b1e061f",
+  "other_gold_values_json_decoded": false,
+  "other_split_or_holdout_read": false,
+  "policy_changed": false,
+  "prelabel_receipt_sha256": "22bc5ae33afd89567eed5323e518359c16704e0fceacf16362a2f50142ab923e",
+  "requested_ids_gold_answers_decoded": 2225,
+  "selected_gold_fields": [
+    "top-level id for selection",
+    "qa.answer for requested ids only"
+  ],
+  "source_generation_map_sha256": "86e6f9f5878a8ba6e8e16438b5b28b120c4c5a578b2e10c1838d1cfe1efd3118",
+  "source_hashes_unchanged": true,
+  "status": "generation_aligned_labels_completed",
+  "train_bytes": 78216616,
+  "train_path": "/data/yuanrz/dataset/FinQA/dataset/train.json",
+  "train_sha256": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6",
+  "train_source_records_lexically_scanned": 6251,
+  "training_fits": 0,
+  "unlabeled_reasons": {
+    "invalid_or_missing_gold_numeric_answer": 52,
+    "invalid_original_numeric_answer": 24,
+    "unrequested_construction_exclusion": 16
+  },
+  "unrequested_ids_gold_answers_decoded": 0,
+  "utc_end": "2026-10-01T17:55:10.478648+00:00",
+  "utc_start": "2026-10-01T17:54:57.628072+00:00"
+}

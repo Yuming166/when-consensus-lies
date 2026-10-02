@@ -1,0 +1,230 @@
+{
+  "rows": 2050,
+  "groups": 448,
+  "native_safe_valid_rows": 2050,
+  "native_fallback_rows": 0,
+  "shared_default_response_rows": 397,
+  "shared_original_parser_valid_rows": 1653,
+  "target_response_field_types": {
+    "answer_value": {
+      "str": 2050
+    },
+    "unit": {
+      "str": 1954,
+      "NoneType": 96
+    },
+    "confidence": {
+      "int": 598,
+      "float": 1452
+    },
+    "supporting_evidence": {
+      "list": 2050
+    }
+  },
+  "target_missing_field_rows": {
+    "answer_value": 0,
+    "unit": 0,
+    "confidence": 0,
+    "supporting_evidence": 0
+  },
+  "target_model_identity_counts": [
+    {
+      "requested": "deepseek-flash",
+      "reported": "deepseek-flash",
+      "rows": 2225
+    }
+  ],
+  "different_rows": 1873,
+  "different_elements": 17919,
+  "different_columns": 33,
+  "max_abs_element_difference": 27.04684066772461,
+  "changed_columns": [
+    {
+      "index": 4,
+      "name": "answer_number_count",
+      "changed_rows": 403
+    },
+    {
+      "index": 5,
+      "name": "all_log_abs_mean",
+      "changed_rows": 1498
+    },
+    {
+      "index": 6,
+      "name": "all_log_abs_max",
+      "changed_rows": 43
+    },
+    {
+      "index": 7,
+      "name": "all_log_abs_std",
+      "changed_rows": 1501
+    },
+    {
+      "index": 8,
+      "name": "all_negative_rate",
+      "changed_rows": 400
+    },
+    {
+      "index": 9,
+      "name": "all_decimal_rate",
+      "changed_rows": 483
+    },
+    {
+      "index": 10,
+      "name": "all_percent_rate",
+      "changed_rows": 560
+    },
+    {
+      "index": 11,
+      "name": "all_currency_rate",
+      "changed_rows": 352
+    },
+    {
+      "index": 26,
+      "name": "answer_log_abs_mean",
+      "changed_rows": 1503
+    },
+    {
+      "index": 27,
+      "name": "answer_log_abs_max",
+      "changed_rows": 1500
+    },
+    {
+      "index": 28,
+      "name": "answer_log_abs_std",
+      "changed_rows": 7
+    },
+    {
+      "index": 29,
+      "name": "answer_negative_rate",
+      "changed_rows": 175
+    },
+    {
+      "index": 30,
+      "name": "answer_decimal_rate",
+      "changed_rows": 420
+    },
+    {
+      "index": 31,
+      "name": "answer_percent_rate",
+      "changed_rows": 475
+    },
+    {
+      "index": 35,
+      "name": "answer_number_count",
+      "changed_rows": 403
+    },
+    {
+      "index": 36,
+      "name": "answer_matches_evidence_count",
+      "changed_rows": 151
+    },
+    {
+      "index": 41,
+      "name": "answer_token_count",
+      "changed_rows": 911
+    },
+    {
+      "index": 42,
+      "name": "answer_confidence",
+      "changed_rows": 1449
+    },
+    {
+      "index": 43,
+      "name": "answer_unit_present",
+      "changed_rows": 482
+    },
+    {
+      "index": 44,
+      "name": "answer_percent_marker",
+      "changed_rows": 475
+    },
+    {
+      "index": 45,
+      "name": "answer_currency_marker",
+      "changed_rows": 58
+    },
+    {
+      "index": 46,
+      "name": "answer_negative_marker",
+      "changed_rows": 175
+    },
+    {
+      "index": 56,
+      "name": "answer_log_abs_value",
+      "changed_rows": 1500
+    },
+    {
+      "index": 57,
+      "name": "answer_rank_in_evidence",
+      "changed_rows": 397
+    },
+    {
+      "index": 58,
+      "name": "answer_near_evidence_value",
+      "changed_rows": 150
+    },
+    {
+      "index": 67,
+      "name": "type_count_percent_answer",
+      "changed_rows": 475
+    },
+    {
+      "index": 69,
+      "name": "type_count_negative_answer",
+      "changed_rows": 175
+    },
+    {
+      "index": 70,
+      "name": "type_count_decimal_answer",
+      "changed_rows": 414
+    },
+    {
+      "index": 88,
+      "name": "answer_has_percent_word",
+      "changed_rows": 362
+    },
+    {
+      "index": 89,
+      "name": "answer_has_currency_word",
+      "changed_rows": 196
+    },
+    {
+      "index": 93,
+      "name": "unit_is_percent",
+      "changed_rows": 362
+    },
+    {
+      "index": 94,
+      "name": "unit_is_currency",
+      "changed_rows": 196
+    },
+    {
+      "index": 95,
+      "name": "unit_is_other",
+      "changed_rows": 268
+    }
+  ],
+  "shared_G96_matrix_sha256": "40757965315b44b9f604e8300b0e0f6c4d6daa20b9acfbdc6f2f7078c889320d",
+  "native_G96_matrix_sha256": "9d926bb3f9ca1b9890a18c76de6c0a81a056583b947eb3a789e70b703307b9fc",
+  "matrix_hash_contract": "SHA256(sorted JSON shape/dtype + newline + C-order bytes)",
+  "finite": true,
+  "pairwise_no_shared_memory": true,
+  "same_row_order": true,
+  "graph_sources": {
+    "shared": "saved Qwen3.5-4B G96, copied unchanged",
+    "native": "same original corpus feature_record; existing DeepSeek original parsed four-field response"
+  },
+  "G96_response_fields_consumed": [
+    "answer_value",
+    "unit",
+    "confidence"
+  ],
+  "supporting_evidence_validated_but_unused_by_G96": true,
+  "native_uses_positive_negative_responses": false,
+  "native_uses_labels_gold_predictions_reasoning": false,
+  "feature_builder_modified": false,
+  "hashed_4096_computed": false,
+  "row_drops": 0,
+  "training_matrices_unchanged_after_fitting": true
+}
