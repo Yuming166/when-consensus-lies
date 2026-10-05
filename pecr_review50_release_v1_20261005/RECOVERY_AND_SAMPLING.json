@@ -1,0 +1,35 @@
+{
+  "status": "FORMS_PUBLISHED_REVIEW_PENDING",
+  "sample_n": 50,
+  "sample_groups": 50,
+  "frame_n": 2241,
+  "frame_groups": 453,
+  "sampling_seed": 20260928,
+  "sampling_algorithm": "Preserve full 2241-row attempted frame order within groups; iterate lexicographically sorted source_group keys; choose one item per group with Python random.Random(seed).choice; shuffle that 453-item list using the same RNG; take first 50. No label/response/strict filtering.",
+  "exact_sample_reproduction": true,
+  "historical_completed_rows_recovered": 0,
+  "historical_adjudications_recovered": 0,
+  "project_lead_50_of_50_valid": "reported only; not independently verified",
+  "new_human_reviews_completed": 0,
+  "valid": null,
+  "invalid": null,
+  "uncertain": null,
+  "pending": 50,
+  "private_source_packet_sha256": "6a3d3416be0d218344dc2316e0a97b328f0b8fdfce8b77ba11a7b7ff6b6a2082",
+  "frame_sha256": "2f97ccdfa527741084115e294f6d527f980bb135307f2362bd2d946d8f0828ff",
+  "source_hashes": {
+    "pecr_curve_feature_development_v2_audit_20260928/review/blind_review_v2/blind_review_packet.jsonl": "6a3d3416be0d218344dc2316e0a97b328f0b8fdfce8b77ba11a7b7ff6b6a2082",
+    "pecr_curve_feature_development_v2_audit_20260928/review/blind_review_v2/PACKAGE_METADATA.json": "b1a8c37bb0661796368858fd7f55b21714abb79ecdc12f2ede5977456e72e797",
+    "pecr_evidence_integration_v1_20260928/review_ops/BLANK_ADJUDICATION_FORM.csv": "b142ef6c847cee07bd8f8cdf403f3991bfb3c27dbab1af0e88c6fb708a5f2d2c",
+    "pecr_evidence_integration_v1_20260928/review_ops/BLIND_REVIEW_SCHEMA.json": "527c2a5e5cbba238c5d341f4d47cd3b21bc285490fd23343a4d97233ba6c067a"
+  },
+  "publication_excludes": [
+    "financial passages and tables",
+    "model answers and reasoning",
+    "gold numeric answers",
+    "labels",
+    "risk scores",
+    "API keys",
+    "checkpoints"
+  ]
+}

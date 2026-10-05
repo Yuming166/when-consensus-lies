@@ -7,3 +7,5 @@ pecr_benchmark_release_v1_20261002/** -text
 pecr_benchmark_release_v1_20261002/**/*.csv whitespace=cr-at-eol
 # Retain the sealed audit script EOF exactly as recorded in its hashes.
 pecr_benchmark_release_v1_20261002/src/audit_native_generation_binding.py whitespace=-blank-at-eof
+
+pecr_review50_release_v1_20261005/historical/BLANK_ADJUDICATION_FORM.csv -text whitespace=cr-at-eol

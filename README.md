@@ -87,3 +87,7 @@ docs/
 ## Disclaimer
 
 Research and education only. Not investment advice.
+
+## PECR construction-review materials
+
+The [50-item review supplement](pecr_review50_release_v1_20261005/README.md) publishes the recovered blank form, exact historical sample, separate reviewer/adjudication templates, and privacy-preserving material-access instructions. Completed verdicts remain unavailable; this is not evidence of 50/50 valid constructions.

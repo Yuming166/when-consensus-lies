@@ -1,0 +1,30 @@
+{
+  "version": "blind_review_schema_v1_20260928",
+  "binary_fields": [
+    "edit_location_correct",
+    "financial_identity_relation_ok",
+    "unit_consistency_ok",
+    "expected_positive_direction_ok",
+    "expected_reverse_direction_ok"
+  ],
+  "binary_values": [
+    "YES",
+    "NO",
+    "UNCERTAIN"
+  ],
+  "overall_status_values": [
+    "VALID",
+    "INVALID",
+    "UNCERTAIN"
+  ],
+  "required_free_text": [
+    "evidence_or_rationale"
+  ],
+  "freeze_fields": [
+    "reviewer_id",
+    "review_date",
+    "adjudication_file_sha256",
+    "independent_review_complete"
+  ],
+  "policy": "Do not inspect model responses, labels, scores, gold results, or holdout items; preserve all sampled rows and do not silently drop UNCERTAIN/INVALID rows."
+}
