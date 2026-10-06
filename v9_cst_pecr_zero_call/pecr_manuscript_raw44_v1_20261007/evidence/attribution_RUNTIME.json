@@ -1,0 +1,15 @@
+{
+  "python": "3.13.13",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.0",
+  "fits": 90,
+  "status": "COMPLETE",
+  "last_fit": [
+    "deepseek_v41",
+    "legacy_g96_raw17_edit",
+    4
+  ],
+  "elapsed_seconds": 106.10340690612793,
+  "source_hashes_unchanged": true
+}

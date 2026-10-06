@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering\small
+\caption{Response patterns and original-answer errors.}
+\label{tab:patterns}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Pattern & Qwen $N$ (error \%) & DeepSeek $N$ (error \%)\\
+\midrule
+Both sides aligned & 1,081 (71.6) & 1,319 (49.0)\\
+Mixed directions & 316 (92.1) & 70 (78.6)\\
+Both sides reversed & 109 (96.3) & 94 (89.4)\\
+One side flat & 43 (97.7) & 18 (100.0)\\
+Both sides flat & 48 (95.8) & 36 (94.4)\\
+\bottomrule
+\end{tabular}
+\par\vspace{3pt}\begin{minipage}{\textwidth}\footnotesize All strict items are retained. Categories are mutually exclusive; flatness is exact zero change. Alignment uses the saved expected direction.\end{minipage}
+\end{table*}

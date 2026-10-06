@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering\small
+\caption{Error ranking on the two generation-aligned response tracks. All methods use the same strict items, five source-group folds, and fixed HGB within each track.}
+\label{tab:main}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+& & & \multicolumn{2}{c}{Qwen3.5-4B} & \multicolumn{2}{c}{DeepSeek V4.1 Flash}\\\cmidrule(lr){4-5}\cmidrule(l){6-7} Input & Dim. & Calls & AUROC & AP & AUROC & AP\\
+\midrule
+Original-answer G96 & 96 & 1 & 0.7379 & 0.9003 & 0.7260 & 0.7490\\
+G96 + construction metadata & 99 & 1 & 0.7421 & 0.9033 & 0.7386 & 0.7622\\
+G96 + Raw16 & 112 & 3 & 0.8023 & 0.9268 & 0.7819 & 0.8140\\
+Raw: G96 + Raw16 + $(h,t)$ & 114 & 3 & 0.8035 & 0.9266 & 0.7818 & 0.8131\\
+G96 + Curve29 & 125 & 3 & 0.8029 & 0.9296 & 0.7839 & 0.8184\\
+\textbf{PECR: Raw + Arithmetic44} & 158 & 3 & \textbf{0.8294} & \textbf{0.9399} & \textbf{0.8068} & \textbf{0.8297}\\
+\bottomrule
+\end{tabular}
+\par\vspace{3pt}\begin{minipage}{\textwidth}\footnotesize Qwen: 1,597 items, 413 groups, 1,258 errors; DeepSeek: 1,537 items, 407 groups, 837 errors. Calls count the response slots consumed by a detector. Construction and its expected direction are supplied benchmark information. AP uses error as the positive class.\end{minipage}
+\end{table*}

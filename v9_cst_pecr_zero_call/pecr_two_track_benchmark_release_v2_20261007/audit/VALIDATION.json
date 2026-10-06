@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "checks": {
+    "schema_dimensions_and_order": true,
+    "unique_ids_groups_folds_features_memory": true,
+    "strict_label_response_generation_binding": true,
+    "label_free_oof_alignment": true,
+    "cross_track_subset_and_folds": true,
+    "no_status_backfilled": true
+  },
+  "tracks": {
+    "qwen35": {
+      "attempted": 1699,
+      "strict": 1597,
+      "groups": 413,
+      "errors": 1258,
+      "correct": 339,
+      "attempted_label_known": 1643,
+      "attempted_label_unknown": 56,
+      "fold_support": {
+        "0": {
+          "items": 324,
+          "errors": 271,
+          "correct": 53
+        },
+        "1": {
+          "items": 317,
+          "errors": 243,
+          "correct": 74
+        },
+        "2": {
+          "items": 320,
+          "errors": 255,
+          "correct": 65
+        },
+        "3": {
+          "items": 317,
+          "errors": 241,
+          "correct": 76
+        },
+        "4": {
+          "items": 319,
+          "errors": 248,
+          "correct": 71
+        }
+      }
+    },
+    "deepseek_v41": {
+      "attempted": 1597,
+      "strict": 1537,
+      "groups": 407,
+      "errors": 837,
+      "correct": 700,
+      "attempted_label_known": 1557,
+      "attempted_label_unknown": 40,
+      "fold_support": {
+        "0": {
+          "items": 308,
+          "errors": 176,
+          "correct": 132
+        },
+        "1": {
+          "items": 307,
+          "errors": 167,
+          "correct": 140
+        },
+        "2": {
+          "items": 311,
+          "errors": 174,
+          "correct": 137
+        },
+        "3": {
+          "items": 306,
+          "errors": 154,
+          "correct": 152
+        },
+        "4": {
+          "items": 305,
+          "errors": 166,
+          "correct": 139
+        }
+      }
+    }
+  },
+  "cross_track_common_strict_ids": 1537,
+  "qwen_strict_minus_deepseek": 60,
+  "deepseek_strict_minus_qwen": 0
+}

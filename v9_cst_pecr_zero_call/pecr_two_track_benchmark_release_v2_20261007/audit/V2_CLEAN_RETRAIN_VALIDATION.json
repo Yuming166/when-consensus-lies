@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "protocol": "fixed HGB, saved five source-group folds, no tuning",
+  "python": "3.13.13",
+  "runtime": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "parameters": {
+    "categorical_features": "from_dtype",
+    "class_weight": null,
+    "early_stopping": "auto",
+    "interaction_cst": null,
+    "l2_regularization": 1.0,
+    "learning_rate": 0.05,
+    "loss": "log_loss",
+    "max_bins": 255,
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_iter": 250,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "monotonic_cst": null,
+    "n_iter_no_change": 10,
+    "random_state": 20260928,
+    "scoring": "loss",
+    "tol": 1e-07,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "tracks": {
+    "qwen35": {
+      "items": 1597,
+      "groups": 413,
+      "errors": 1258,
+      "correct": 339,
+      "fits": 30,
+      "reference_exact_by_view": {
+        "raw": true,
+        "curve": true,
+        "raw_plus_arithmetic44": true,
+        "drop_worldwise_alignment": true,
+        "drop_cross_world_consistency": true,
+        "drop_question_operation_cues": true
+      },
+      "reference_max_abs_error_by_view": {
+        "raw": 0.0,
+        "curve": 0.0,
+        "raw_plus_arithmetic44": 0.0,
+        "drop_worldwise_alignment": 0.0,
+        "drop_cross_world_consistency": 0.0,
+        "drop_question_operation_cues": 0.0
+      },
+      "metrics_from_refit_oof": {
+        "raw": {
+          "auroc": 0.8034842494759205,
+          "auprc": 0.9265990292236004
+        },
+        "curve": {
+          "auroc": 0.8029191346474012,
+          "auprc": 0.9296046315388126
+        },
+        "raw_plus_arithmetic44": {
+          "auroc": 0.8293939436573481,
+          "auprc": 0.9399251917011378
+        },
+        "drop_worldwise_alignment": {
+          "auroc": 0.811741726109243,
+          "auprc": 0.9318971059071997
+        },
+        "drop_cross_world_consistency": {
+          "auroc": 0.8334036795775474,
+          "auprc": 0.9420418184061607
+        },
+        "drop_question_operation_cues": {
+          "auroc": 0.8340274162762451,
+          "auprc": 0.9425452835766183
+        }
+      }
+    },
+    "deepseek_v41": {
+      "items": 1537,
+      "groups": 407,
+      "errors": 837,
+      "correct": 700,
+      "fits": 30,
+      "reference_exact_by_view": {
+        "raw": true,
+        "curve": true,
+        "raw_plus_arithmetic44": true,
+        "drop_worldwise_alignment": true,
+        "drop_cross_world_consistency": true,
+        "drop_question_operation_cues": true
+      },
+      "reference_max_abs_error_by_view": {
+        "raw": 0.0,
+        "curve": 0.0,
+        "raw_plus_arithmetic44": 0.0,
+        "drop_worldwise_alignment": 0.0,
+        "drop_cross_world_consistency": 0.0,
+        "drop_question_operation_cues": 0.0
+      },
+      "metrics_from_refit_oof": {
+        "raw": {
+          "auroc": 0.7818108892302441,
+          "auprc": 0.8131125170176761
+        },
+        "curve": {
+          "auroc": 0.7839025430960914,
+          "auprc": 0.8183798444786821
+        },
+        "raw_plus_arithmetic44": {
+          "auroc": 0.8067997951868919,
+          "auprc": 0.8296913297386763
+        },
+        "drop_worldwise_alignment": {
+          "auroc": 0.8028281276668373,
+          "auprc": 0.8326185835305348
+        },
+        "drop_cross_world_consistency": {
+          "auroc": 0.7927965523126813,
+          "auprc": 0.818531124696792
+        },
+        "drop_question_operation_cues": {
+          "auroc": 0.8015582863969961,
+          "auprc": 0.8284803674797306
+        }
+      }
+    }
+  },
+  "total_fits": 60,
+  "elapsed_seconds": 72.1885666847229,
+  "oof_sha256": "54271e28f67c224ab9e5dd766af58bba8cf69df4d9828bb6a6c2df95019ada2e",
+  "no_model_api_calls": true
+}

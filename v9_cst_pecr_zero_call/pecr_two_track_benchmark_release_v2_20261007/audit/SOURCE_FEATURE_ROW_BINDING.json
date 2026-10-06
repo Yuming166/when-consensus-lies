@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": {
+    "qwen35": {
+      "strict_feature_rows": 1597,
+      "component_row_checks": 4791,
+      "exact_source_feature_match": true
+    },
+    "deepseek_v41": {
+      "strict_feature_rows": 1537,
+      "component_row_checks": 6148,
+      "exact_source_feature_match": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\small
+\caption{Fixed component removals from Arithmetic44 (AUROC). Differences are full PECR minus the ablated variant.}
+\label{tab:ablation}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrlrl@{}}
+\toprule
+& & \multicolumn{2}{c}{Qwen3.5-4B} & \multicolumn{2}{c}{DeepSeek V4.1 Flash}\\\cmidrule(lr){3-4}\cmidrule(l){5-6} Variant & Dim. & AUROC & $\Delta$ [adjusted 95\% CI] & AUROC & $\Delta$ [adjusted 95\% CI]\\
+\midrule
+Full PECR & 158 & 0.8294 & --- & 0.8068 & ---\\
+w/o worldwise (24) & 134 & 0.8117 & +0.0177 [+0.0033,+0.0326] & 0.8028 & +0.0040 [-0.0072,+0.0155]\\
+w/o cross-world (16) & 142 & 0.8334 & -0.0040 [-0.0138,+0.0059] & 0.7928 & +0.0140 [+0.0050,+0.0239]\\
+w/o question cues (4) & 154 & 0.8340 & -0.0046 [-0.0119,+0.0028] & 0.8016 & +0.0052 [-0.0025,+0.0131]\\
+\bottomrule
+\end{tabular}
+\par\vspace{3pt}\begin{minipage}{\textwidth}\footnotesize All variants retain the same Raw block. Intervals use 5,000 paired source-group draws and Bonferroni correction across three block removals in two tracks (six comparisons per metric). A positive difference favors retaining the block.\end{minipage}
+\end{table*}

@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{llrr}
+\toprule
+Model & Removed block & $\Delta$ AUROC & Familywise 95\% CI \\
+\midrule
+Qwen3.5-4B & Per-world alignment & +0.018 & [+0.002, +0.036] \\
+ & Cross-world consistency & -0.004 & [-0.013, +0.005] \\
+ & Question-operation cues & -0.005 & [-0.011, +0.003] \\
+\addlinespace
+DeepSeek V4.1 Flash & Per-world alignment & +0.004 & [-0.007, +0.016] \\
+ & Cross-world consistency & +0.014 & [+0.006, +0.023] \\
+ & Question-operation cues & +0.005 & [-0.002, +0.012] \\
+\bottomrule
+\end{tabular}
+\caption{Company-cluster bootstrap sensitivity for the saved OOF predictions. Each track contains 117 companies. Source-group folds were used for model fitting; companies can therefore occur in more than one fold. Intervals condition on the saved OOF predictions and should be read as a clustering sensitivity analysis, not a company-held-out evaluation.}
+\label{tab:raw44-component-ablation-company}
+\end{table*}

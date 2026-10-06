@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "source_attachment_unchanged": true,
+  "svg_vectors_only": true,
+  "outlined_svg_no_text_or_images": true,
+  "new_text_black": true,
+  "new_text_and_math_within_panel_bounds": true,
+  "pdf_fonts_embedded_Arial_and_Courier_New": true,
+  "visual_review": "Full figure and panel-3 enlargement inspected; three match-set inputs, raw bypass, feature-family merge and downstream fusion arrow checked.",
+  "canvas_pt": [
+    218.27,
+    507
+  ],
+  "minimum_new_text_size_pt": 3.5
+}

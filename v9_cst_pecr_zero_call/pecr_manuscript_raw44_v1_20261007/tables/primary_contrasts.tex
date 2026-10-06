@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\small
+\caption{Paired gains of PECR over equal-call comparators. Differences subtract the comparator from PECR.}
+\label{tab:primary}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}llrlrl@{}}
+\toprule
+Track & Comparator & $\Delta$AUROC & Adjusted 95\% CI & $\Delta$AP & Adjusted 95\% CI\\
+\midrule
+Qwen3.5-4B & Raw & +0.0259 & [+0.0060, +0.0453] & +0.0133 & [+0.0034, +0.0246]\\
+Qwen3.5-4B & Curve29 & +0.0265 & [+0.0067, +0.0456] & +0.0103 & [+0.0017, +0.0197]\\
+DeepSeek V4.1 Flash & Raw & +0.0250 & [+0.0125, +0.0378] & +0.0166 & [+0.0037, +0.0302]\\
+DeepSeek V4.1 Flash & Curve29 & +0.0229 & [+0.0087, +0.0378] & +0.0113 & [-0.0034, +0.0267]\\
+\bottomrule
+\end{tabular}
+\par\vspace{3pt}\begin{minipage}{\textwidth}\footnotesize Intervals retain the saved analyses: 5,000 paired source-group draws; six-contrast campaign correction for Qwen and three-contrast correction for DeepSeek, separately by metric. They condition on saved OOF predictions.\end{minipage}
+\end{table*}

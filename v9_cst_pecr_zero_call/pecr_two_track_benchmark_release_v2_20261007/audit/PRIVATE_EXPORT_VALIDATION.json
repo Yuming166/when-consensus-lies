@@ -1,0 +1,17 @@
+{
+  "directory_mode_octal": "0700",
+  "input_file_mode_octal": "0600",
+  "mode": "private export outside package; evidence payloads not retained in release",
+  "network_or_model_calls": 0,
+  "source_hashes_verified_before_export": 9888,
+  "status": "PASS",
+  "temporary_financial_text_export_cleaned_after_validation": true,
+  "track_world_rows": {
+    "deepseek_v41_negative": 1597,
+    "deepseek_v41_original": 1597,
+    "deepseek_v41_positive": 1597,
+    "qwen35_negative": 1699,
+    "qwen35_original": 1699,
+    "qwen35_positive": 1699
+  }
+}

@@ -1,0 +1,829 @@
+      Diagnosing LLM Errors with Controlled Evidence Interventions:
+            A Benchmark and Arithmetic-Alignment Method
+
+
+                                            Discussion draft
+
+
+
+
+                    Abstract
+   An answer can be conﬁdent, repeatable, and
+   wrong. In document-grounded question an-
+                                                              Teaser: evidence, three responses, and a diagnostic
+   swering, controlled evidence changes offer a                                    question
+   way to probe such errors. Yet even a re-
+   sponse that moves in the expected direction
+   may follow the wrong calculation. The chal-
+   lenge is to connect response behavior to the
+   evidence that could explain it. We intro-
+   duce a reusable ﬁnancial question answering            Figure 1: Does an answer respond for the right nu-
+   benchmark linking dependency-aware numer-              merical reason? Opposite evidence edits reveal how
+   ical edits, saved three-world responses, and           an answer changes; arithmetic correspondences addi-
+   generation-aligned error labels. It contains           tionally describe which calculations remain compatible
+   1,699 human-reviewed constructions and sup-            with those responses. A matching calculation is diag-
+   ports both ofﬂine detector evaluation and re-          nostic evidence, not a certiﬁcate of correctness.
+   construction of model inputs. Building on
+   this benchmark, Program-Executable Coun-
+   terfactual Reliability (PECR) augments bidi-           Sampling-based consistency, semantic uncertainty,
+   rectional responses with arithmetic alignment:         and conﬁdence estimation provide useful signals
+   which cell-level calculations match each an-           for identifying unreliable outputs (Manakul et al.,
+   swer, whether those matches persist across
+                                                          2023; Farquhar et al., 2024; Geng et al., 2024).
+   interventions, and how they relate to the
+   question. A compact 44-dimensional repre-              Nevertheless, models can repeatedly produce the
+   sentation requires no additional model calls.          same incorrect answer, leaving self-consistent er-
+   In grouped evaluations on Qwen3.5-4B and               rors difﬁcult to detect (Tan et al., 2025). This mo-
+   DeepSeek V4.1 Flash, PECR improves AU-                 tivates a complementary question: can the way an
+   ROC over a strong three-response baseline by           answer responds to changes in its supporting ev-
+   2.59 and 2.50 points, with positive adjusted           idence reveal an error that conﬁdence and agree-
+   paired intervals. Construction-information             ment fail to expose?
+   controls and component ablations locate the
+   additional signal beyond edit magnitude and               Recent benchmarks provide systematic settings
+   response geometry.       The benchmark and             for evaluating uncertainty estimators, predicting
+   method make evidence-dependent error diag-             model errors, and testing selective refusal under
+   nosis reproducible and open a path toward              ﬂawed context (Vashurin et al., 2025; Pacchiardi
+   more informative veriﬁcation under limited             et al., 2025; Muhamed et al., 2026). We focus
+   query budgets.                                         on a more speciﬁc connection: whether responses
+                                                          to controlled evidence changes help diagnose the
+1 Introduction                                            correctness of the original answer. Studying this
+                                                          connection requires more than a collection of ques-
+Conﬁdence and agreement can make an incorrect             tions and reference answers. It requires speciﬁed
+answer look reliable. For document-grounded               interventions, their response trajectories, and cor-
+question answering, this is consequential: a              rectness labels tied to the original generations, so
+plausible number may inform an analyst’s deci-            that detectors can be compared using the same ev-
+sions before the underlying calculation is checked.       idence and response budget.
+
+                                                      1
+   Numerical question answering makes this con-             response budget, without an auxiliary veriﬁer or
+nection concrete. Perturbation-based uncertainty            access to hidden states.
+estimation and numerical veracity probes demon-
+strate the value of testing models under modiﬁed            Contributions. (1) We provide a reusable
+inputs (Gao et al., 2024; Aarnes and Setty, 2025).          benchmark for original-answer error diagnosis
+A meaningful numerical edit, however, often calls           with human-reviewed, dependency-aware inter-
+for a predictable change rather than invariance: in-        ventions, generation-aligned targets, and veriﬁ-
+creasing a numerator and increasing a denomina-             able input reconstruction. (2) We introduce an
+tor imply opposite response directions. Even the            arithmetic-alignment representation that connects
+expected direction is insufﬁcient. A model may              three-world behavior to cell-level calculations and
+consistently use the wrong denominator, or cal-             question context. (3) Matched-budget evaluations
+culate from a row belonging to another year. Its            yield AUROC gains of 2.59 points on Qwen3.5-4B
+answers can move smoothly across interventions              and 2.50 on DeepSeek V4.1 Flash over a strong
+while the original answer remains wrong.                    Raw comparator. New construction-information
+   Our central observation is that a response tra-          controls separate the value of edited responses
+jectory becomes more informative when paired                from edit descriptors; ablations reveal different
+with its arithmetic correspondence to the evidence.         useful feature blocks across the two models. To-
+Instead of only asking how much the answer                  gether, these results support evidence correspon-
+changes, we ask which simple calculations could             dence as a productive direction beyond response
+produce it, whether the same calculation remains            geometry alone.
+compatible in all three worlds, and whether the
+associated rows, years, and units ﬁt the question.          2   Related Work
+This makes a distinction that scalar response ge-           Uncertainty and error prediction. SelfCheck-
+ometry cannot make on its own: similar trajecto-            GPT estimates factual reliability from agreement
+ries can correspond to different evidence relation-         across sampled generations (Manakul et al., 2023);
+ships. Figure 1 illustrates this diagnostic question.       semantic entropy groups generations by mean-
+   We introduce a controlled-intervention bench-            ing (Farquhar et al., 2024). Black-box conﬁ-
+mark together with PECR, an error detector that             dence methods combine additional response sig-
+represents these relationships. The benchmark               nals (Chen and Mueller, 2024), while systematic
+turns FinQA examples into linked records of                 studies examine estimator reliability and robust-
+numerical evidence edits, model responses, and              ness (Mahaut et al., 2024; Vashurin et al., 2025).
+original-answer labels. Its construction process            PredictaBoard evaluates assessors that anticipate
+updates evidence-determined dependencies, in-               model failures (Pacchiardi et al., 2025). Self-
+cluding totals and repeated mentions, rather than           consistent errors motivate using information be-
+changing an isolated operand alone. All 1,699               yond repeated-answer agreement, including cross-
+materialized constructions received a recorded hu-          model hidden-state probes (Tan et al., 2025).
+man validity judgment. Versioned edit patches, re-          PECR instead uses controlled input edits and deter-
+sponse bindings, complete coverage records, and             ministic evidence–answer correspondences. Our
+ﬁxed group splits support both comparisons on               comparisons isolate that representation under a
+saved responses and reconstruction of inputs for            ﬁxed response budget.
+another model.
+   PECR combines the three-world response rep-              Perturbations and behavioral evaluation.
+resentation with Arithmetic44: per-world numer-             CheckList and contrast sets test expected behavior
+ical alignment, cross-world persistence of can-             beyond aggregate accuracy (Ribeiro et al., 2020;
+didate calculations, and question-operation cues.           Gardner et al., 2020). SPUQ varies inputs and
+The extractor enumerates bounded one-step arith-            sampling conditions for uncertainty estimation
+metic candidates from the supplied tables; it nei-          (Gao et al., 2024). GSM-Symbolic and NumPert
+ther reads reference answers nor executes the an-           expose weaknesses under numerical changes
+notated solution program. A ﬁxed histogram gra-             (Mirzadeh et al., 2025; Aarnes and Setty, 2025),
+dient boosting (HGB) predictor learns which com-            while RefusalBench uses controlled perturbations
+binations indicate original-answer errors. This             to assess selective refusal (Muhamed et al., 2026).
+adds evidence correspondence at the same three-             We connect such behavioral evidence to a distinct
+
+                                                        2
+target: the error of a particular original generation.       Table 1: Model-speciﬁc coverage in the repaired bench-
+Dependency-aware construction matters because                mark.
+an internally inconsistent intervention can make
+                                                                     Population             Qwen DeepSeek
+an apparently anomalous answer reasonable.
+                                                                     Attempted               1,699    1,597
+                                                                     Strict                  1,597    1,537
+Numerical reasoning resources. FinQA sup-                            Source groups (strict)    413      407
+plies expert questions and executable reasoning                      Errors (strict)         1,258      837
+                                                                     Correct (strict)          339      700
+programs over ﬁnancial reports (Chen et al., 2021);
+                                                                     Attempted, excluded       102       60
+MultiHiertt extends numerical reasoning to hierar-                   Strict / attempted     94.0%    96.2%
+chical tables and text (Zhao et al., 2022). We build
+on existing ﬁnancial questions rather than collect
+a new document corpus. The added resource is the
+binding among interventions, response trajecto-              3.2 Dependency-aware three-world
+ries, model-speciﬁc error targets, and reproducible              construction
+detector evaluation. Arithmetic44 uses simple can-
+didate calculations as features, with no require-            The starting frame contains 2,241 previously ex-
+ment that a candidate reconstruct the annotated so-          plored FinQA TRAIN items; 2,225 were re-
+lution.                                                      quested for construction and 16 were not. A
+                                                             program-to-evidence mapping identiﬁes a seed
+3 The Controlled-Intervention                                operand bi and supplies an expected forward direc-
+  Benchmark                                                  tion ei ∈ {−1, +1}. The two interventions change
+                                                             the seed in opposite directions. They preserve the
+3.1 Task and response-speciﬁc targets                        original question and update dependent evidence
+                                                             where needed.
+An item contains a question and evidence xi =
+(qi , Ei ) with source group gi . For answer model              Construction proceeds in two stages. A drafting
+m, we save                                                   model proposes complete edits to both worlds; un-
+                                                             resolved drafts receive a second model pass. The
+    w
+   rim = (aw     w     w
+           im , cim , uim ),   w ∈ {−, 0, +},     (1)        constructors see the source excerpt and saved edit
+                                                             speciﬁcation, without target-model responses, er-
+where a, c, and u denote numerical answer, re-               ror labels, or reference answers. They must pre-
+ported conﬁdence, and unit. Each world is a sep-             serve units, periods, table structure, and the origi-
+arate call. The detector ranks errors in a0im , using        nal world; propagate evidence-supported changes
+the original and the two edited responses. It does           through totals, roll-forwards, ratios, and repeated
+not predict whether the edited answers are correct.          mentions; and ﬂag dependencies that cannot be re-
+   Labels are tied to the saved original generation.         solved from the excerpt. A deterministic compiler
+If the original answer and FinQA reference a⋆i               applies the edits against exact source values and
+are comparable under the frozen numerical parser,            records the resulting world hashes. Appendix B
+then                                                         gives the construction and review provenance.
+
+          [                                      ]              This procedure yields 1,699 complete drafts,
+ yim = I |a0im − a⋆i | > max(10−4 , 10−4 |a⋆i |) .           with 525 requiring further completion and one un-
+                                                  (2)        constructable. The retained inputs include 1,126
+Otherwise the label is unknown. The parser re-               items with multiple table-cell edits in at least one
+moves supported surface markers without percent-             world and 389 with textual updates. Thus, most
+age rescaling or unit conversion; this is free-text          interventions involve more than replacing a sin-
+numerical scoring, not ofﬁcial FinQA program-                gle number. One human reviewer assessed all
+execution accuracy. Reference answers are ac-                1,699 complete drafts as valid. Separately, 44
+cessed only in the separate labeling stage. Re-              retained items require direction rederivation and
+sponse hashes bind labels, original-side features,           are excluded from the strict detector evaluations.
+and all three endpoints to the same generation.              Validity judgments concern the constructed evi-
+This prevents a detector from learning the error of          dence; they do not depend on whether a detector
+an earlier answer using the features of a later one.         improves.
+
+                                                         3
+3.3 Model tracks and coverage                               signal and adds Arithmetic44, a ﬁxed representa-
+The Qwen3.5-4B track attempted all 1,699 com-               tion of candidate calculations. Figure 3 summa-
+plete constructions. After direction, parsing,              rizes the computation. We suppress model and
+feature, and label requirements, 1,597 items in             item subscripts below.
+413 source groups form its strict cohort. The               4.1 A strong response-based foundation
+DeepSeek V4.1 Flash track attempted those 1,597
+                                                            The raw response block encodes forward changes
+Qwen-strict items; 1,537 in 407 groups meet its
+own strict requirements (Table 1). All represen-                   v + = a+ − a0 ,       v − = a0 − a− ,      (3)
+tations within a track use exactly the same items.
+Candidate arithmetic matches are not an eligibility         their magnitudes and signed relations to e, ﬂatness,
+condition.                                                  symmetry, conﬁdence changes, and unit agree-
+   The two tracks have different targets: 449 of            ment. Together with the direction ﬂag, these form
+their 1,537 shared strict items receive different er-       R16 . We also supply the actual seed edit and its
+ror labels. They therefore constitute separate de-          relative scale,
+tector evaluations. DeepSeek inherits the com-
+mon items’ saved fold assignments, while its re-                                                 h
+                                                                     h = b+ − b0 ,       t=               .   (4)
+sponses, labels, and original-side features are na-                                           |b0 | + ε
+tive to DeepSeek. Neither labels nor original-
+                                                            The original-side vector G ∈ R96 contains typed
+answer features are borrowed across models.
+                                                            numerical, structural, lexical, and answer-derived
+3.4 Two forms of reuse                                      summaries. Our matched Raw baseline is
+The release supports both ofﬂine risk prediction                    B = concat(G, R16 , h, t) ∈ R114 .        (5)
+and new-model intervention evaluation. The
+former uses numerical matrices, separate labels,            Thus, the baseline already sees the same three re-
+saved folds, and reference out-of-fold (OOF)                sponses, expected direction, and edit scale. Arith-
+scores. The latter rebuilds the three-world requests        metic44 must add value beyond these inputs, not
+from versioned patches, prompt proﬁles, and the             merely recover information withheld from the
+exact FinQA source. A local reconstruction au-              comparator. Appendix A speciﬁes the columns,
+dit matches all 9,888 saved request hashes: 5,097           including the historical Raw17 compatibility dis-
+Qwen and 4,791 DeepSeek world slots. A user can             tinction.
+submit these requests through an external client,
+then generate labels and features bound to the new          4.2 Candidate calculations as evidence
+answers. This preserves the intervention while al-              correspondences
+lowing the response population to change.                   Let V contain table coordinates with ﬁnite numeri-
+   The broader frame remains available for cov-             cal values in all three worlds, retaining at most the
+erage accounting (Appendix B). Unknown pars-                ﬁrst 128 in row-major order. Headers are excluded.
+ing and label states are not converted to successes.        A candidate π = (o, j, k) combines distinct cells
+The artifact separates immutable source records             j, k ∈ V using an allowed operation o. The core
+from derived tables and provides positional feature         operations are sum, difference, and ratio. When
+schemas, source hashes, and an ofﬂine retraining            all three reported answer units indicate percent-
+entry point. These bindings allow a changed result          ages, ratio is expressed on a percentage scale and
+to be traced to its inputs, generation, features, or        percentage change is additionally allowed. Candi-
+learner rather than treated as an unexplained head-         dates with zero denominators or nonﬁnite results
+line difference.                                            in any world are discarded; duplicate sums are re-
+                                                            moved.
+4 PECR: Arithmetic Alignment Across                            Write π(E w ) for the candidate’s result in world
+  Worlds                                                    w. Its normalized discrepancy from the saved an-
+                                                            swer is
+The method asks whether a response trajectory
+is compatible with the same arithmetic evidence                               |π(E w ) − aw |
+                                                                     dw (π) =                 ,
+across interventions, and whether that evidence                                    τw                         (6)
+ﬁts the question. PECR retains the raw response                          τw = max(0.01, 10−4 |aw |).
+
+                                                        4
+           Benchmark: reviewed constructions, model-speciﬁc responses, aligned targets, and reusable evaluation
+
+
+
+
+Figure 2: Benchmark organization. Complete edit speciﬁcations reconstruct the original and two edited model
+requests. Each model track binds its own responses, labels, features, and folds. Coverage records retain excluded
+attempts as well as unattempted construction candidates.
+
+
+                                                                 years, known units, and compatible units. Row
+                                                                 and column overlap use token-set Jaccard simi-
+                                                                 larity. Unit compatibility checks typed categories
+                                                                 and explicit scale mismatches without converting
+   PECR: three-world probing → arithmetic candidates
+  and alignment → feature fusion → original-answer risk          values.
+                                                                    These features express why two equally respon-
+                                                                 sive answers need not carry the same evidence. A
+                                                                 candidate supported by the queried year and table
+                                                                 row differs from a coincidental numerical match
+                                                                 elsewhere in the table. The three worldwise sum-
+Figure 3: PECR augments Raw with 44 arithmetic-
+alignment features: 3 × 8 per-world features, 16                 maries contribute 24 dimensions. Four determin-
+cross-world features, and four question-operation cues.          istic question cues—direct reading, ratio, change,
+Gold-derived error labels supervise the training folds           and comparison—allow the predictor to condition
+only. All feature extraction uses the supplied questions,        on the requested operation. They are observable
+worlds, responses, and edit location.                            lexical indicators, not gold-program classes.
+
+                                                                 4.4 Persistence under interventions
+The world-speciﬁc match set is
+                                                                 Cross-world features distinguish a calculation that
+           Mw = {π ∈ P : dw (π) ≤ 1},                  (7)       continues to ﬁt the responses from unrelated
+                                                                 matches that appear separately. Deﬁne
+where P is the bounded candidate pool. The                                    ∩                   ∪
+same tuple identiﬁes a candidate across worlds.                          I=      Mw ,       U=       Mw .        (8)
+Matching tolerance in Equation 6 deﬁnes a feature,                              w                       w
+whereas Equation 2 deﬁnes the separately com-
+                                                                 The persistence and switching summaries are
+puted target; the two serve different purposes.
+   The extractor does not select a single explana-                           |I|
+tion. It preserves ambiguity through match counts,                   J=               ,                                (9)
+                                                                          max(1, |U|)
+                                                                          1 ∑
+uniqueness, and set relations. An absent match is
+                                                                                        |Mu △Mv |
+likewise represented rather than ﬁltered out. Nu-                    S=                                           .   (10)
+                                                                          2             max(1, |Mu ∪ Mv |)
+merical compatibility need not mean the model ac-                             (u,v)∈E
+tually used those cells, or that the calculation an-
+swers the question. The following features make                  Here E = {(−, 0), (0, +)} and △ denotes sym-
+those distinctions available to the learner.                     metric difference. A soft joint-ﬁt feature also re-
+                                                                 tains information when no candidate meets every
+4.3 Worldwise alignment and question                             hard threshold:
+    context
+                                                                                                    1
+For each world, an eight-dimensional map ψw                              Fjoint = max                             ,   (11)
+                                                                                    π∈P 1 + maxw dw (π)
+summarizes Mw : log match count; uniqueness;
+the fraction involving the seed operand; maximum                 with value zero for an empty candidate pool.
+question overlap with operand row and column                       Together with existence, uniqueness, and log-
+labels; and fractions with overlapping question                  count indicators, the joint block summarizes
+
+                                                             5
+whether common candidates involve the seed or               adds the bidirectional response block; Raw addi-
+another changed operand; agree with question-               tionally supplies h, t (Equation 5). Curve29 re-
+operation cues; overlap question years; and have            tains the developed curve representation, includ-
+compatible units and row/column labels. It has              ing normalized slopes, asymmetry, direction, and
+16 dimensions. This construction asks more than             conﬁdence relations. PECR adds Arithmetic44 to
+whether all answers change in the expected di-              Raw. The three ﬁnal methods each consume three
+rection: it asks whether one coordinate-identiﬁed           responses. We evaluate component removals from
+computation continues to explain the trajectory.            Arithmetic44 under the same conﬁguration.
+
+4.5 A ﬁxed error-risk learner                               Training and reproducibility. All predictors
+The ﬁnal alignment vector and predictor are                 use 250 HGB iterations, learning rate .05, at most
+                                                            15 leaves per tree, minimum leaf size 20, L2 reg-
+        A44 = concat(ψ0 , ψ+ , ψ− , χ, ω),      (12)        ularization 1.0, and seed 20260928. No learner
+                                                            tuning is performed for the new attribution con-
+           z = concat(B, A44 ) ∈ R    158
+                                            ,   (13)
+                                                            trols. A fresh environment reproduces all 60 re-
+           s = fθ (z),                          (14)        leased main/ablation ﬁts exactly. The present con-
+                                                            trol expansion performs 90 ﬁxed ﬁts and inde-
+where χ ∈ R16 is the joint block and ω ∈
+                                                            pendently reproduces the Raw, Curve, and PECR
+R4 the question-cue block. All empty-set aver-
+                                                            OOF scores on both tracks. Versions, complete
+ages and maxima are deﬁned as zero, with match-
+                                                            parameters, and positional feature schemas accom-
+existence indicators retaining the missing-match
+                                                            pany the tables.
+distinction. Feature extraction reads no correct-
+ness labels, reference answers, or annotated solu-          Metrics and uncertainty. We report error-
+tion programs. It needs no extra LLM call and               positive AUROC and average precision (AP). The
+enumerates O(|O||V|2 ) one-step candidates per              primary comparison is PECR minus Raw; Curve
+triplet.                                                    is a second equal-call comparator. Paired boot-
+   We ﬁt the same supervised HGB conﬁguration               strap draws resample entire source groups with the
+to each representation. For outer fold k, ﬁtting            two methods’ OOF scores kept together. Main and
+uses only {(zi , yi ) : fold(gi ) ̸= k}; the held-out       ablation analyses use 5,000 draws; the new attri-
+fold receives scores from that ﬁtted predictor. The         bution controls use 10,000. We retain each com-
+score ranks original-answer error risk. Standard            pleted analysis’s multiplicity family, stated with
+tree optimization is unchanged: the contribution is         its table, rather than select the narrowest avail-
+the information supplied to the detector, not a new         able interval. These are development evaluations
+boosting algorithm.                                         on previously explored source questions. Inter-
+                                                            vals condition on saved OOF predictions and do
+5 Experimental Setup                                        not remove earlier method-selection effects. The
+Tracks and splits. The main tracks are                      distinct scope of company-held-out ﬁtting and
+Qwen3.5-4B and DeepSeek V4.1 Flash, with                    company-cluster resampling is documented in Ap-
+strict support reported in Table 1. Collection uses         pendix C.
+non-thinking proﬁles, temperature zero, and a
+384-token output cap for both. We retain ﬁve                6   Results and Analysis
+saved source-group folds; each company/year                 6.1 Arithmetic alignment improves
+report group stays within one test fold. A sep-                 equal-budget diagnosis
+arate risk predictor is ﬁtted per model track.
+                                                            PECR improves AUROC from .8035 to .8294 on
+This evaluates the representation across answer
+                                                            Qwen and from .7818 to .8068 on DeepSeek (Ta-
+models, rather than transferring one ﬁtted clas-
+                                                            ble 2). The gains over Raw are +.0259 and +.0250,
+siﬁer without target-model labels. Appendix C
+                                                            with adjusted paired intervals [.0060,.0453] and
+reports additional Qwen tracks and an existing
+                                                            [.0125,.0378], respectively (Table 3). AP im-
+company-disjoint sensitivity analysis.
+                                                            proves from .9266 to .9399 and from .8131 to
+Comparators. G96 uses the original answer and               .8297. Because the comparators share responses,
+evidence. The construction control adds the ex-             cohorts, original-side features, edit descriptors,
+act clean descriptors [I(e = 1), h, t]. G96+Raw16           and learner settings, these differences isolate the
+
+                                                        6
+Table 2: Error ranking on the two generation-aligned response tracks. All methods use the same strict items, ﬁve
+source-group folds, and ﬁxed HGB within each track.
+
+                                                                 Qwen3.5-4B        DeepSeek V4.1 Flash
+                   Input                         Dim. Calls AUROC            AP AUROC                AP
+                   Original-answer G96             96       1    0.7379   0.9003    0.7260        0.7490
+                   G96 + construction metadata     99       1    0.7421   0.9033    0.7386        0.7622
+                   G96 + Raw16                    112       3    0.8023   0.9268    0.7819        0.8140
+                   Raw: G96 + Raw16 + (h, t)      114       3    0.8035   0.9266    0.7818        0.8131
+                   G96 + Curve29                  125       3    0.8029   0.9296    0.7839        0.8184
+                   PECR: Raw + Arithmetic44       158       3    0.8294   0.9399    0.8068        0.8297
+Qwen: 1,597 items, 413 groups, 1,258 errors; DeepSeek: 1,537 items, 407 groups, 837 errors. Calls count the response slots
+consumed by a detector. Construction and its expected direction are supplied benchmark information. AP uses error as the
+positive class.
+
+  Table 3: Paired gains of PECR over equal-call comparators. Differences subtract the comparator from PECR.
+
+           Track                  Comparator ∆AUROC Adjusted 95% CI                  ∆AP Adjusted 95% CI
+           Qwen3.5-4B             Raw             +0.0259   [+0.0060, +0.0453]     +0.0133   [+0.0034, +0.0246]
+           Qwen3.5-4B             Curve29         +0.0265   [+0.0067, +0.0456]     +0.0103   [+0.0017, +0.0197]
+           DeepSeek V4.1 Flash    Raw             +0.0250   [+0.0125, +0.0378]     +0.0166   [+0.0037, +0.0302]
+           DeepSeek V4.1 Flash    Curve29         +0.0229   [+0.0087, +0.0378]     +0.0113   [-0.0034, +0.0267]
+Intervals retain the saved analyses: 5,000 paired source-group draws; six-contrast campaign correction for Qwen and three-
+contrast correction for DeepSeek, separately by metric. They condition on saved OOF predictions.
+
+
+contribution of the added representation under the                 Adding h, t to G96+Raw16 changes AUROC by
+evaluated protocol.                                             only +.0012 on Qwen and −.0001 on DeepSeek,
+   PECR also improves AUROC over Curve29                        with both intervals spanning zero. Neverthe-
+on both tracks, by .0265 and .0229. Curve it-                   less, Raw retains these inputs, giving the baseline
+self is close to Raw: slightly lower AUROC on                   the same edit-scale information as the proposed
+Qwen and slightly higher on DeepSeek. The                       method. PECR’s additional gain thus cannot be
+main result therefore favors connecting responses               attributed merely to supplying h, t. The control
+to arithmetic evidence over further describing the              covers the construction descriptors used by the
+scalar trajectory alone. AP versus Curve im-                    clean comparator; it does not establish indepen-
+proves on both point estimates, although its ad-                dence from every aspect of program-conditioned
+justed DeepSeek interval includes zero. We re-                  construction.
+tain this distinction between ranking metrics rather
+than treat a positive AUROC interval as evidence                6.3 Different models beneﬁt from different
+for every metric.                                                   alignment blocks
+                                                                Removing the 24 worldwise features reduces
+6.2 The signal is not explained by edit
+                                                                Qwen AUROC from .8294 to .8117, a full-minus-
+    magnitude alone
+                                                                removal difference of .0177 with adjusted interval
+The new controls answer two attribution ques-                   [.0033,.0326]. DeepSeek instead shows its clear-
+tions. First, edited responses add information be-              est loss when the 16 cross-world features are re-
+yond the original answer: G96+Raw16 improves                    moved: AUROC falls from .8068 to .7928, with
+AUROC over G96 by .0644 on Qwen and .0559                       difference .0140 [.0050,.0239]. Per-world evi-
+on DeepSeek, with adjusted intervals above zero.                dence correspondence and persistence across inter-
+Second, this beneﬁt is not reproduced by supply-                ventions therefore make distinct conditional con-
+ing only the clean construction descriptors. Raw                tributions (Table 5).
+exceeds the G96+construction model by .0614 and                    No block is uniformly essential across tracks.
+.0432, again with positive adjusted intervals (Ta-              Qwen’s AUROC rises slightly when the joint or
+ble 4). These results support using the observed                question-cue block is omitted; both adjusted in-
+response dynamics rather than construction meta-                tervals include zero. The question-cue block has
+data alone.                                                     no established incremental gain on either track.
+
+                                                            7
+Table 4: Attribution controls on the same strict cohorts. The construction model is G96 + [I(e = 1), h, t] and
+consumes no edited-world responses.
+
+                                                      Qwen3.5-4B                    DeepSeek V4.1 Flash
+               Contrast                     ∆AUROC Adjusted 95% CI             ∆AUROC Adjusted 95% CI
+               Construction model − G96        +0.0042   [-0.0105, +0.0198]      +0.0126    [-0.0027, +0.0287]
+               (G96 + Raw16) − G96             +0.0644   [+0.0264, +0.1007]      +0.0559    [+0.0269, +0.0855]
+               Raw − (G96 + Raw16)             +0.0012   [-0.0081, +0.0110]      -0.0001    [-0.0105, +0.0106]
+               Raw − construction model        +0.0614   [+0.0236, +0.0995]      +0.0432    [+0.0158, +0.0710]
+Fixed post-hoc controls: 10,000 paired source-group bootstrap draws and Bonferroni correction over these four contrasts in both
+tracks (eight comparisons). AUROC and AP form separate families. G96 includes the original answer; this control isolates
+added construction descriptors, not all possible construction information.
+
+Table 5: Fixed component removals from Arithmetic44 (AUROC). Differences are full PECR minus the ablated
+variant.
+
+                                                    Qwen3.5-4B                          DeepSeek V4.1 Flash
+        Variant                 Dim. AUROC ∆ [adjusted 95% CI]                  AUROC ∆ [adjusted 95% CI]
+        Full PECR                158    0.8294    —                              0.8068    —
+        w/o worldwise (24)       134    0.8117    +0.0177 [+0.0033,+0.0326]      0.8028    +0.0040 [-0.0072,+0.0155]
+        w/o cross-world (16)     142    0.8334    -0.0040 [-0.0138,+0.0059]      0.7928    +0.0140 [+0.0050,+0.0239]
+        w/o question cues (4)    154    0.8340    -0.0046 [-0.0119,+0.0028]      0.8016    +0.0052 [-0.0025,+0.0131]
+All variants retain the same Raw block. Intervals use 5,000 paired source-group draws and Bonferroni correction across three
+block removals in two tracks (six comparisons per metric). A positive difference favors retaining the block.
+
+
+These ﬁxed removals support model-dependent                       and Qwen3.8-Flash analyses give smaller gains
+contributions from alignment features, rather than                and do not establish superiority over both com-
+an additive beneﬁt from every block. Appendix                     parators under their corrected criteria. We retain
+Table 11 reports the AP ablations.                                them alongside the two main tracks: the beneﬁt
+                                                                  is reproducible in the main evaluations, while its
+6.4 Why response direction is not enough                          magnitude and statistical resolution vary with the
+Direction violations are strongly associated with                 response population.
+original-answer errors, but successful directional
+behavior does not resolve the task. Among an-
+swers aligned with the expected direction on both
+sides, 71.6% are still errors on Qwen and 49.0%                   7   Conclusion
+on DeepSeek (Appendix Table 8). These rates are
+lower than each track’s overall error prevalence, so
+direction is informative, yet far from decisive. Flat             Controlled evidence changes provide additional di-
+and reversed responses describe other high-risk                   agnostic evidence beyond an original answer, but
+patterns. Arithmetic alignment supplies an addi-                  response shape alone is an incomplete diagnostic.
+tional view of these behaviors: which calculations                PECR connects a three-world trajectory to arith-
+ﬁt, how many alternatives exist, and whether the                  metic correspondences in the underlying evidence
+same candidate remains compatible across worlds.                  and learns which combinations predict original-
+                                                                  answer errors. Equal-budget gains on Qwen and
+6.5 Robustness and remaining variation                            DeepSeek, construction-information controls, and
+An existing Qwen company-disjoint check holds                     complementary ablation ﬁndings support this di-
+out all years of a company together and aver-                     rection. The accompanying benchmark binds re-
+ages metrics over ﬁve ﬁxed ﬁve-fold partitions.                   viewed interventions, saved generations, labels,
+PECR reaches mean AUROC .8199 versus .7901                        and reproducible evaluation, enabling both ofﬂine
+for Raw, with paired gain .0299 and adjusted                      method comparison and new-model studies. To-
+company-bootstrap interval [.0135,.0471]. This                    gether, they make the relationship between evi-
+supports the main ﬁnding under stricter split gran-               dence use and answer reliability a concrete, in-
+ularity (Appendix C). Additional Qwen3.7-Flash                    spectable object of evaluation.
+
+                                                              8
+Limitations                                                 References
+                                                            Peter Røysland Aarnes and Vinay Setty. 2025.
+The benchmark is program-conditioned and re-                  NumPert: Numerical Perturbations to Probe Lan-
+stricted to numerical ﬁnancial QA. Construction               guage Models for Veracity Prediction. In Proceed-
+direction and seed location are supplied metadata.            ings of the IJCNLP-AACL Student Research Work-
+                                                              shop, pages 78–95.
+All retained constructions received one human va-
+lidity judgment, but there is no independent sec-           Zhiyu Chen, Wenhu Chen, Charese Smiley, Sameena
+ond review, documented blinding, or item-level                Shah, Iana Borova, Dylan Langdon, Reema Moussa,
+subcriterion agreement; dependencies outside the              Matt Beane, Ting-Hao Huang, Bryan Routledge,
+                                                              and William Yang Wang. 2021. FinQA: A Dataset
+supplied excerpt can remain unresolved. Forty-                of Numerical Reasoning over Financial Data. In
+four direction-pending items are excluded from                Proceedings of EMNLP, pages 3697–3711.
+strict ﬁtting. Arithmetic candidates are limited to
+bounded one-step table calculations, and matching           Jiuhai Chen and Jonas Mueller. 2024. Quantifying Un-
+                                                               certainty in Answers from any Language Model and
+does not recover a model’s internal reasoning or               Enhancing their Trustworthiness. In Proceedings of
+certify semantic correctness.                                  ACL, pages 5186–5200.
+   The source population supported method devel-
+                                                            Sebastian Farquhar, Jannik Kossen, Lorenz Kuhn, and
+opment. Grouped OOF evaluation and within-                    Yarin Gal. 2024. Detecting hallucinations in large
+campaign corrections control speciﬁc compar-                  language models using semantic entropy. Nature,
+isons, not the entire development history; new                630:625–630.
+source questions remain necessary for indepen-
+                                                            Xiang Gao, Jiaxin Zhang, Lalla Mouatadid, and Ka-
+dent conﬁrmation. The two main tracks share                   malika Das. 2024. SPUQ: Perturbation-Based Un-
+questions, and a detector is trained on each track’s          certainty Quantiﬁcation for Large Language Models.
+own labels. Additional model results are included             In Proceedings of EACL, pages 2336–2346.
+in the appendix to show variation. We have not
+                                                            Matt Gardner, Yoav Artzi, Victoria Basmov, Jonathan
+run all sampling-based uncertainty baselines at an           Berant, Ben Bogin, Sihao Chen, Pradeep Dasigi,
+equivalent collection budget.                                Dheeru Dua, Yanai Elazar, Ananth Gottumukkala,
+   Performance is conditional on strict parsing and          Nitish Gupta, Hannaneh Hajishirzi, Gabriel Ilharco,
+                                                             Daniel Khashabi, Kevin Lin, Jiangming Liu, Nel-
+label coverage. Labels follow a frozen numeri-               son F. Liu, Phoebe Mulcaire, Qiang Ning, and 7
+cal policy without unit conversion or percentage             others. 2020. Evaluating Models’ Local Decision
+rescaling. Runtime identiﬁers do not indepen-                Boundaries via Contrast Sets. In Findings of the
+dently certify provider checkpoints, and input re-           Association for Computational Linguistics: EMNLP
+                                                             2020, pages 1307–1323.
+construction does not guarantee future output re-
+play. We evaluate ranking rather than calibrated            Jiahui Geng, Fengyu Cai, Yuxia Wang, Heinz Koeppl,
+probabilities, autonomous ﬁnancial decisions, or               Preslav Nakov, and Iryna Gurevych. 2024. A Survey
+realized reviewer time savings.                                of Conﬁdence Estimation and Calibration in Large
+                                                               Language Models. In Proceedings of NAACL, pages
+                                                               6577–6595.
+Ethics and Reproducibility                                  Matéo Mahaut, Laura Aina, Paula Czarnowska, Mom-
+                                                             chil Hardalov, Thomas Müller, and Lluís Màrquez.
+Error-risk scores are intended to prioritize veriﬁca-        2024. Factual Conﬁdence of LLMs: on Reliability
+tion. They should not replace veriﬁcation in ﬁnan-           and Robustness of Current Estimators. In Proceed-
+                                                             ings of ACL, pages 4554–4570.
+cial decisions. The prepared artifact includes nu-
+merical features, separate labels, OOF scores, edit         Potsawee Manakul, Adian Liusie, and Mark Gales.
+patches, provenance hashes, and evaluation code;              2023. SelfCheckGPT: Zero-Resource Black-Box
+it excludes credentials, model weights, raw reason-           Hallucination Detection for Generative Large Lan-
+                                                              guage Models. In Proceedings of EMNLP, pages
+ing, and complete ﬁnancial passages. Rebuilding               9004–9017.
+requests requires the exact FinQA source and re-
+tains its license notice. Source hashes, ﬁxed evalu-        Iman Mirzadeh, Keivan Alizadeh, Hooman Shahrokhi,
+ation folds, and a complete coverage ledger sup-              Oncel Tuzel, Samy Bengio, and Mehrdad Farajtabar.
+                                                              2025. GSM-Symbolic: Understanding the Limita-
+port reproducibility without redistributing com-              tions of Mathematical Reasoning in Large Language
+plete ﬁnancial records.                                       Models. In International Conference on Learning
+                                                              Representations.
+
+
+                                                        9
+Aashiq Muhamed, Leonardo F. R. Ribeiro, Markus
+  Dreyer, Virginia Smith, and Mona T. Diab. 2026.
+  RefusalBench: Generative Evaluation of Selective
+  Refusal in Grounded Language Models. In Proceed-
+  ings of EACL, pages 6811–6856.
+
+Lorenzo Pacchiardi, Konstantinos Voudouris, Ben
+  Slater, Fernando Martínez-Plumed, José Hernández-
+  Orallo, Lexin Zhou, and Wout Schellaert. 2025. Pre-
+  dictaBoard: Benchmarking LLM Score Predictabil-
+  ity. In Findings of ACL, pages 15245–15266.
+
+Marco Tulio Ribeiro, Tongshuang Wu, Carlos Guestrin,
+ and Sameer Singh. 2020. Beyond Accuracy: Behav-
+ ioral Testing of NLP Models with CheckList. In Pro-
+ ceedings of ACL, pages 4902–4912.
+
+Hexiang Tan, Fei Sun, Sha Liu, Du Su, Qi Cao,
+  Xin Chen, Jingang Wang, Xunliang Cai, Yuanzhuo
+  Wang, Huawei Shen, and Xueqi Cheng. 2025. Too
+  Consistent to Detect: A Study of Self-Consistent Er-
+  rors in LLMs. In Proceedings of EMNLP, pages
+  4755–4765.
+
+Roman Vashurin, Ekaterina Fadeeva, Artem Vazhent-
+  sev, Lyudmila Rvanova, Daniil Vasilev, Akim
+  Tsvigun, Sergey Petrakov, Rui Xing, Abdel-
+  rahman Sadallah, Kirill Grishchenkov, Alexan-
+  der Panchenko, Timothy Baldwin, Preslav Nakov,
+  Maxim Panov, and Artem Shelmanov. 2025. Bench-
+  marking Uncertainty Quantiﬁcation Methods for
+  Large Language Models with LM-Polygraph. Trans-
+  actions of the Association for Computational Lin-
+  guistics, 13:220–248.
+
+Yilun Zhao, Yunxiang Li, Chenying Li, and Rui Zhang.
+   2022. MultiHiertt: Numerical Reasoning over Multi
+   Hierarchical Tabular and Textual Data. In Proceed-
+   ings of ACL.
+
+
+
+
+                                                         10
+A Exact Feature and Implementation                            so the main views exclude it on both sides of
+  Speciﬁcation                                                every comparison. Table 6 supplies the requested
+                                                              Raw17 progression as a compatibility diagnostic.
+Original-side G96. G96 concatenates nine ﬁxed
+                                                              Reintroducing µ changes some point estimates;
+feature families: section-wise number counts (5),
+                                                              those values are not substituted into the clean
+log statistics and type rates (28), input structure
+                                                              primary results.
+and response matching (26), typed number counts
+(12), numeric-cell positions and occupancy (5),               Candidate semantics. Sums use unordered dis-
+pair-comparison summaries (4), lexical indicators             tinct cell pairs; differences and ratios use ordered
+(10), missing-region ﬂags (3), and unit ﬂags (3).             distinct pairs. When all reported units contain a
+The sum is 96. All ﬁelds are derived from the orig-           percent marker, ratio becomes 100x/y and per-
+inal question/evidence and the same model’s saved             centage change 100(x/y − 1) is added. Other-
+original answer. G96 is a handcrafted numerical               wise ratio is x/y. A denominator must be nonzero
+and lexical summary, not a graph neural encoder.              in every world. Units are inferred from cell
+A historical duplicated feature name remains dis-             text, row/column labels, and the table corner cell;
+tinguished by its column index.                               known conﬂicting thousand/million/billion scales
+                                                              make a candidate unit-incompatible. Values are
+Raw16 and edit descriptors. For ε = 10−9 , the
+                                                              never converted. Years are recognized in ques-
+raw block is
+                                                              tion and operand row/column text. For a common
+             [                                                candidate, known-unit and compatible-unit sum-
+     R16 = v + , v − , |v + |, |v − |, ev + , ev − ,
+                                                              maries require the corresponding condition in all
+             I(ev + > 0), I(ev − > 0),
+                                                              worlds.
+             I(v + = 0), I(v − = 0), Bv ,                        Question-operation agreement uses ﬁxed lexical
+             c+ − c0 , c− − c0 , Ueq , Upresent ,             cues: ratio cues for ratios, change cues for percent-
+                      ]                                       age change, change or comparison cues for differ-
+             I(e = 1) ,                           (15)
+                                                              ences, and sum cues for addition. No gold-derived
+                  min(|v + |, |v − |)
+          Bv =                           .       (16)         operation category is used. The extractor’s conﬁ-
+                 max(|v + |, |v − |) + ε                      dence ﬁeld is allowlisted for response identity but
+The two unit ﬂags indicate identical normalized               is not read by Arithmetic44. Literal-answer/cell
+unit strings and three nonempty unit strings, re-             equality is recorded in diagnostic traces only and
+spectively. The ﬁrst does not imply the second.               is not an additional feature in the 44-dimensional
+The separate descriptors are the signed actual seed           vector. These details prevent interpretation of the
+edit h = b+ − b0 and t = h/(|b0 | + ε). Primary               vector as a hidden solution-program veriﬁer.
+concatenation order is [G, R16 , h, t].
+                                                              B   Construction, Review, and Coverage
+Curve comparator. The saved Curve33 archive
+                                                              The initial model pass uses the recorded GPT-6.1-
+retains the historical positional schema. The clean
+                                                              Sol service; unresolved drafts receive a GPT-6-
+comparator removes positions 16, 24, 25, and
+                                                              Astra pass. The ﬁnal 1,699 complete construc-
+30 (zero-based): the inherited construction scalar,
+                                                              tions comprise 1,191 completed at the ﬁrst stage
+normalized second difference, slope difference,
+                                                              and 508 completed at the second. Model identi-
+and magnitude-asymmetry feature. The remain-
+                                                              ﬁers record construction provenance rather than
+ing 29 columns include Raw16, h, t, normalized
+                                                              independently veriﬁed checkpoints. Construc-
+slopes and magnitudes, signed slope asymmetry,
+                                                              tion prompts require full positive/negative worlds,
+conﬁdence-direction relations, conﬁdence stabil-
+                                                              source-exact patches, dependency updates, and ex-
+ity, signed response agreement, and a both-nonﬂat
+                                                              plicit unresolved status. They prohibit reference-
+ﬂag. G96+Curve29 has 125 input dimensions. It is
+                                                              answer, correctness-label, target-response, and
+the clean counterpart of the previously developed
+                                                              OOF access. Seed cells and expected directions
+Curve30-A view, not the full original Curve33.
+                                                              originate in the earlier program-conditioned con-
+Historical            Raw17. Raw17               ap-          struction stage; the repair models do not receive
+pends      a      saved     scalar     µ     named            the full annotated program.
+construction_absolute_delta.                     Its             The supplied review records all 1,699 com-
+relation to the repaired construction is unresolved,          plete constructions as Valid. Reviewer iden-
+
+                                                         11
+Table 6: Historical-descriptor compatibility controls, reﬁtted on the current cohorts. These are excluded from the
+main clean comparison.
+
+                                                                     Qwen             DeepSeek
+                       Input                             Dim. AUROC           AP AUROC           AP
+                       G96                                 96     0.7379   0.9003   0.7260   0.7490
+                       G96 + [I(e = 1), µ, h, t]          100     0.7505   0.9029   0.7536   0.7734
+                       G96 + historical Raw17             113     0.8128   0.9311   0.7814   0.8139
+                       G96 + historical Raw17 + (h, t)    115     0.8142   0.9306   0.7824   0.8090
+µ denotes the inherited Raw17[16] scalar named construction_absolute_delta. Its alignment with repaired edits is unresolved;
+it is neither substituted by |h| nor used by the proposed primary method.
+
+Table 7: Arithmetic44 in ﬁxed positional order. Fractions average over the relevant match set. Empty-set fractions,
+maxima, and averages equal zero.
+
+Block             Dim.    Ordered components
+Worldwise ψw     3×8      For w = 0, +, −: log-one-plus match count; unique match; seed-operand fraction; maximum
+                          row/question Jaccard; maximum column/question Jaccard; question-year overlap fraction; known-
+                          unit fraction; compatible-unit fraction.
+Joint χ             16    All worlds have a match; common candidate exists; common candidate unique; log-one-plus com-
+                          mon count; common/union Jaccard J; switch fraction S; common seed fraction; common changed-
+                          operand fraction; common question-operation agreement; common known-year fraction; common
+                          year-overlap fraction; common all-world known-unit fraction; common all-world compatible-unit
+                          fraction; maximum common row/question Jaccard; maximum common column/question Jaccard;
+                          best joint ﬁt Fjoint .
+Question ω            4   Direct-read, ratio, change, comparison cues.
+
+
+
+tity (reviewer1), one-reviewer count, and date                   to DeepSeek. Within-track comparisons preserve
+(2026-10-06) were supplied separately by the                     ID order, group assignments, labels, feature or-
+project lead because the uploaded form’s iden-                   der, and fold assignments. The earlier generation-
+tity/date cells were blank. These attributes are re-             mismatched and shared-Qwen-feature results re-
+tained as reported provenance. Per-criterion ver-                main historical records and are not combined with
+dicts were not recorded; no inter-rater agreement                the current main table.
+or blinding claim is made. The 44 direction-
+pending items remain deferred and outside both                   Request reconstruction. The compact edit
+strict cohorts. The distributed package contains                 speciﬁcation contains table-cell and text-span
+the aggregate review receipt; the original form and              patches relative to the original FinQA evidence.
+derived item-level receipt remain in the project au-             The rebuild script checks the source hash, applies
+dit archive.                                                     patches, renders the saved prompt, and veriﬁes
+                                                                 canonical request hashes. It decodes only the
+   Qwen’s 102 strict exclusions partition into 44
+                                                                 question, table, pre-text, and post-text needed for
+direction-pending, 22 feature/parse-ineligible, and
+                                                                 the request. Full ﬁnancial evidence and instanti-
+36 label-unknown items under the saved prece-
+                                                                 ated prompts are obtained locally from the user’s
+dence rule. DeepSeek retains 1,537 of 1,597 at-
+                                                                 source ﬁle rather than redistributed. The exact
+tempts; all 60 excluded items remain in its cover-
+                                                                 9,888 hash matches establish input reconstruction,
+age record. World-speciﬁc transport, schema, nu-
+                                                                 not replay of a mutable model endpoint’s outputs.
+meric parsing, and label statuses are preserved sep-
+arately. In particular, an attempted item with an
+                                                                 C Evaluation Details and Additional
+unknown label is not treated as an error, and a not-
+                                                                   Controls
+attempted candidate is not a parsing failure.
+                                                                 The reference runtime is Python 3.13.13, NumPy
+Generation alignment. The label source is the                    2.5.3, SciPy 1.18.1, scikit-learn 1.9.0, and thread-
+current original response for each track. G96 uses               poolctl 3.6.0. Each HGB ﬁt uses one CPU thread.
+that same response; Raw and Arithmetic44 use                     At these sample sizes the saved automatic early-
+its three-world triplet. DeepSeek G96 is native                  stopping setting does not activate, and all ﬁtted
+
+                                                            12
+                                 Table 8: Response patterns and original-answer errors.
+
+                               Pattern                Qwen N (error %) DeepSeek N (error %)
+                               Both sides aligned            1,081 (71.6)            1,319 (49.0)
+                               Mixed directions                316 (92.1)               70 (78.6)
+                               Both sides reversed             109 (96.3)               94 (89.4)
+                               One side ﬂat                     43 (97.7)              18 (100.0)
+                               Both sides ﬂat                   48 (95.8)               36 (94.4)
+All strict items are retained. Categories are mutually exclusive; ﬂatness is exact zero change. Alignment uses the saved expected
+direction.
+
+
+Table 9: Full construction-frame accounting. The last                predictions as independent samples. Mean AU-
+three rows partition the 2,225 requested candidates per              ROC is .7901 (Raw), .7995 (Curve29), and .8199
+track; unrequested records remain separate.
+                                                                     (PECR); mean AP is .9235, .9290, and .9362.
+     Partition                        Qwen DeepSeek
+                                                                     Company-paired bootstrap resampling averages
+                                                                     the ﬁve run-level metrics inside each draw. The
+     Requested construction frame        2,225       2,225
+     Unrequested records                    16          16           PECR gains are .0299 [.0135,.0471] over Raw and
+     Requested, not attempted              526         628           .0205 [.0030,.0375] over Curve under the original
+     Attempted, strict                   1,597       1,537           four-comparison correction. This is stricter split
+     Attempted, excluded                   102          60
+                                                                     granularity on the existing development popula-
+                                                                     tion, not new-source conﬁrmation.
+models complete 250 iterations. Reference OOF                        Additional model evidence. Qwen3.7-Flash
+equality is checked numerically, not inferred from                   uses 1,129 items in 371 report groups and 113
+rounded metrics. The new controls retain source                      companies; Qwen3.8-Flash uses 1,430 items in
+hashes and a protocol ﬁxed before their 90 ﬁts.                      401 groups and 116 companies.              Both use
+   AP differences for the construction-information                   generation-aligned native labels and features with
+controls appear in Table 10. AP comparisons are                      the same clean dimensions (114, 125, 158). The
+within track because positive-class prevalence dif-                  smaller Raw-relative gains, .0080 and .0135, are
+fers: 78.8% for Qwen and 54.5% for DeepSeek. A                       retained in Table 12. Their corresponding Curve
+high AP on Qwen must be interpreted against that                     AUROCs are .8312 and .8336. The ﬁrst track
+high error prevalence.                                               does not establish a Raw-relative gain under its
+                                                                     corrected interval; the second does, but not a gain
+Multiplicity families. The saved Qwen main                           over Curve. Coverage and response populations
+campaign corrects six primary comparisons, while                     differ, so these differences do not isolate model ar-
+DeepSeek corrects three; each uses 5,000 paired                      chitecture as the cause.
+source-group draws with seed 20260928. The ab-
+lation corrects three removals across two tracks                     Relationship to earlier experiments. Earlier
+(six AUROC contrasts, with AP handled sepa-                          manuscript versions centered on Curve33, histor-
+rately). The new construction controls correct four                  ical construction semantics, and different original-
+contrasts across two tracks (eight per metric), us-                  response targets. Their headline scores, old Curve-
+ing 10,000 draws and the same bootstrap seed. Per-                   family ablations, MultiHiertt boundary checks,
+centile bounds use α/(2K) and 1 − α/(2K) for                         and neural explorations do not evaluate the current
+family size K and α = .05. These within-analysis                     Raw+Arithmetic44 method on this release. They
+corrections do not represent adjustment for all ear-                 remain archived development evidence rather than
+lier research attempts.                                              being inserted into the new main comparison. The
+                                                                     current manuscript reports the clean Raw/Curve
+Company-disjoint ﬁtting. The Qwen sensitiv-                          controls, repaired-construction cohorts, and Arith-
+ity analysis uses all 1,597 items, 413 reports,                      metic44 component removals consistently.
+and 117 companies. Five predetermined parti-
+tion seeds assign entire companies to ﬁve folds,
+with all ﬁve runs reported. The summary aver-
+ages complete-OOF metrics across runs; it nei-
+ther picks the best partition nor treats repeated
+
+                                                                13
+              Table 10: AP attribution controls with the same eight-comparison correction as Table 4.
+
+                                                         Qwen                           DeepSeek
+                   Contrast                      ∆AP Adjusted 95% CI            ∆AP Adjusted 95% CI
+                   Construction model − G96 +0.0030 [-0.0053, +0.0114] +0.0132 [-0.0062, +0.0333]
+                   (G96 + Raw16) − G96      +0.0264 [+0.0036, +0.0473] +0.0650 [+0.0337, +0.0979]
+                   Raw − (G96 + Raw16)      -0.0002 [-0.0044, +0.0045] -0.0009 [-0.0129, +0.0120]
+                   Raw − construction model +0.0233 [+0.0012, +0.0450] +0.0509 [+0.0207, +0.0805]
+
+
+
+
+Table 11: Fixed component removals from Arithmetic44 (AP). Differences are full PECR minus the ablated variant.
+
+                                                   Qwen3.5-4B                          DeepSeek V4.1 Flash
+         Variant                 Dim.      AP ∆ [adjusted 95% CI]                AP ∆ [adjusted 95% CI]
+         Full PECR                158   0.9399   —                            0.8297    —
+         w/o worldwise (24)       134   0.9319   +0.0080 [-0.0005,+0.0182]    0.8326    -0.0029 [-0.0144,+0.0085]
+         w/o cross-world (16)     142   0.9420   -0.0021 [-0.0063,+0.0024]    0.8185    +0.0112 [+0.0021,+0.0216]
+         w/o question cues (4)    154   0.9425   -0.0026 [-0.0060,+0.0006]    0.8285    +0.0012 [-0.0068,+0.0097]
+All variants retain the same Raw block. Intervals use 5,000 paired source-group draws and Bonferroni correction across three
+block removals in two tracks (six comparisons per metric). A positive difference favors retaining the block.
+
+
+
+
+Table 12: Additional saved Qwen response tracks with the clean feature deﬁnitions. Each track reﬁts its own
+detector on its own labels.
+
+           Track                 N      Raw AUROC      PECR AUROC        PECR − Raw CI         PECR − Curve CI
+           Qwen3.7-Flash      1,129           .8347              .8428   [−.0039,.0200]        [−.0003,.0226]
+           Qwen3.8-Flash      1,430           .8285              .8420   [.0006,.0260]         [−.0033,.0212]
+Intervals retain the saved company-cluster analyses: four-comparison correction for Qwen3.7 (joint with the company-disjoint
+analysis), two-comparison correction for Qwen3.8. Their prediction folds are source-group folds, not company-disjoint folds.
+Neither track meets its corrected criterion of outperforming both comparators.
+
+
+
+
+                                                            14
+

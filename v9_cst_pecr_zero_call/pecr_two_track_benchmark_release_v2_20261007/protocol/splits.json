@@ -1,0 +1,9 @@
+{
+  "fold_count": 5,
+  "scheme": "saved source/report-group outer assignments; package consumes exact recorded assignment.",
+  "shuffle": false,
+  "group_atomicity": "Each source_group is assigned to one outer_fold within a track.",
+  "cross_track_mapping": "DeepSeek strict IDs are a subset of Qwen strict IDs; common items preserve source_group and outer_fold.",
+  "posthoc_fold_reconstruction": false,
+  "company_isolation": "Not enforced; company may cross folds."
+}

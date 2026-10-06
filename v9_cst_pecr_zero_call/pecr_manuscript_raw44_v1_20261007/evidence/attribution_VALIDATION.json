@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "exact_primary_refits": true,
+  "planned_90_fits_completed": true,
+  "finite_independent_matrices": true,
+  "no_group_cross_fold": true,
+  "original_ids_labels_folds_preserved": true,
+  "bootstrap_matches_sklearn": true,
+  "source_hashes_unchanged": true,
+  "no_API_no_gold_no_holdout": true
+}

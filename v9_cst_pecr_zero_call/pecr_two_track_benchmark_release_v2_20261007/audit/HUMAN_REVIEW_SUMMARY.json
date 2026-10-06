@@ -1,0 +1,32 @@
+{
+  "reviewed_rows": 1699,
+  "decision_counts": {
+    "Valid": 1699
+  },
+  "direction_status_counts": {
+    "INHERITED_FROZEN": 1655,
+    "REQUIRES_HUMAN_REDERIVATION": 44
+  },
+  "reviewer_count": 1,
+  "reviewer_id": "reviewer1",
+  "review_date": "2026-10-06",
+  "reviewer_date_provenance": "User-reported; the supplied CSV reviewer/date columns are blank.",
+  "strict_intersections": {
+    "qwen35": {
+      "items": 1597,
+      "Valid": 1597,
+      "INHERITED_FROZEN": 1597
+    },
+    "deepseek_v41": {
+      "items": 1537,
+      "Valid": 1537,
+      "INHERITED_FROZEN": 1537
+    }
+  },
+  "limitations": [
+    "One reviewer only; no second independent review record.",
+    "No documented blinding procedure claimed.",
+    "The 44 direction-rederivation items are outside both strict cohorts.",
+    "The item-level review CSV and notes are not redistributed."
+  ]
+}

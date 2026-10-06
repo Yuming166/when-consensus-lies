@@ -1,0 +1,9 @@
+{
+  "nested_table_edit_records_validated": 8126,
+  "nested_text_patch_records_validated": 2711,
+  "nested_text_span_records_validated": 1067,
+  "rows_validated": 1699,
+  "schema": "intervention/schema.json",
+  "status": "PASS",
+  "validator": "release-local recursive structural validator"
+}

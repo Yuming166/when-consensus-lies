@@ -1,0 +1,20 @@
+% Generated from saved track OOF summaries.
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{llrrrrr}
+\toprule
+Track & Input & $n$ / groups & Error / correct & Dim. & AUROC & AUPRC \\
+\midrule
+Qwen3.5-4B & Raw & 1597 / 413 & 1258 / 339 & 114 & 0.8035 & 0.9266 \\
+Qwen3.5-4B & Curve & 1597 / 413 & 1258 / 339 & 125 & 0.8029 & 0.9296 \\
+Qwen3.5-4B & Raw+Arithmetic44 & 1597 / 413 & 1258 / 339 & 158 & 0.8294 & 0.9399 \\
+\midrule
+DeepSeek V4.1 Flash & Raw & 1537 / 407 & 837 / 700 & 114 & 0.7818 & 0.8131 \\
+DeepSeek V4.1 Flash & Curve & 1537 / 407 & 837 / 700 & 125 & 0.7839 & 0.8184 \\
+DeepSeek V4.1 Flash & Raw+Arithmetic44 & 1537 / 407 & 837 / 700 & 158 & 0.8068 & 0.8297 \\
+\bottomrule
+\end{tabular}
+\caption{Saved out-of-fold risk-prediction results by model track. Raw is the fixed three-world response baseline; Curve is the fixed response-curve representation; Raw+Arithmetic44 adds per-world numeric evidence alignment, cross-world consistency, and question-operation cues to Raw. Cohorts and labels are model-specific and are not pooled.}
+\label{tab:pecr-two-track-primary}
+\end{table*}

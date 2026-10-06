@@ -1,0 +1,1136 @@
+% Complete discussion manuscript, revision V19, 2 October 2026.
+% Canonical editable source, retained in the same editor for follow-up edits.
+% Two author-supplied PDF figures are required from the figures/ subdirectory.
+% Numerical source: public benchmark commit f0c888ea6053c30dac6e714f7578c2d066cb86fd.
+% The inline bibliography enables compilation in a single-file LaTeX editor.
+\documentclass[11pt]{article}
+\makeatletter
+\IfFileExists{acl.sty}{\usepackage[preprint]{acl}}{%
+% BEGIN_INLINE_ACL
+\newif\ifacl@finalcopy \acl@finalcopytrue
+\newif\ifacl@anonymize \acl@anonymizefalse
+\newif\ifacl@linenumbers \acl@linenumbersfalse
+\newif\ifacl@pagenumbers \acl@pagenumberstrue
+\newif\ifacl@hyperref \acl@hyperreftrue
+\typeout{Conference Style for ACL}
+
+\usepackage{xcolor}
+
+\ifacl@linenumbers
+  % Add draft line numbering via the lineno package
+  % https://texblog.org/2012/02/08/adding-line-numbers-to-documents/
+  \usepackage[switch,mathlines]{lineno}
+
+  % Line numbers in gray Helvetica 8pt
+  \font\aclhv = phvb at 8pt
+  \renewcommand\linenumberfont{\aclhv\color{lightgray}}
+
+  % Zero-fill line numbers
+  % NUMBER with left flushed zeros  \fillzeros[<WIDTH>]<NUMBER>
+  \newcount\cv@tmpc@ \newcount\cv@tmpc
+  \def\fillzeros[##1]##2{\cv@tmpc@=##2\relax\ifnum\cv@tmpc@<0\cv@tmpc@=-\cv@tmpc@\fi
+    \cv@tmpc=1 %
+    \loop\ifnum\cv@tmpc@<10 \else \divide\cv@tmpc@ by 10 \advance\cv@tmpc by 1 \fi
+      \ifnum\cv@tmpc@=10\relax\cv@tmpc@=11\relax\fi \ifnum\cv@tmpc@>10 \repeat
+    \ifnum##2<0\advance\cv@tmpc1\relax-\fi
+    \loop\ifnum\cv@tmpc<##1\relax0\advance\cv@tmpc1\relax\fi \ifnum\cv@tmpc<##1 \repeat
+    \cv@tmpc@=##2\relax\ifnum\cv@tmpc@<0\cv@tmpc@=-\cv@tmpc@\fi \relax\the\cv@tmpc@}%
+  \renewcommand\thelinenumber{\fillzeros[3]{\arabic{linenumber}}}
+  \AtBeginDocument{\linenumbers}
+
+  \setlength{\linenumbersep}{1.6cm}
+
+  % Bug: An equation with $$ ... $$ isn't numbered, nor is the previous line.
+
+  % Patch amsmath commands so that the previous line and the equation itself
+  % are numbered. Bug: multline has an extra line number.
+  % https://tex.stackexchange.com/questions/461186/how-to-use-lineno-with-amsmath-align
+  \usepackage{etoolbox} %% <- for \pretocmd, \apptocmd and \patchcmd
+
+  \newcommand*\linenomathpatch[1]{%
+    \expandafter\pretocmd\csname ##1\endcsname {\linenomath}{}{}%
+    \expandafter\pretocmd\csname ##1*\endcsname {\linenomath}{}{}%
+    \expandafter\apptocmd\csname end##1\endcsname {\endlinenomath}{}{}%
+    \expandafter\apptocmd\csname end##1*\endcsname {\endlinenomath}{}{}%
+  }
+  \newcommand*\linenomathpatchAMS[1]{%
+    \expandafter\pretocmd\csname ##1\endcsname {\linenomathAMS}{}{}%
+    \expandafter\pretocmd\csname ##1*\endcsname {\linenomathAMS}{}{}%
+    \expandafter\apptocmd\csname end##1\endcsname {\endlinenomath}{}{}%
+    \expandafter\apptocmd\csname end##1*\endcsname {\endlinenomath}{}{}%
+  }
+
+  %% Definition of \linenomathAMS depends on whether the mathlines option is provided
+  \expandafter\ifx\linenomath\linenomathWithnumbers
+    \let\linenomathAMS\linenomathWithnumbers
+    %% The following line gets rid of an extra line numbers at the bottom:
+    \patchcmd\linenomathAMS{\advance\postdisplaypenalty\linenopenalty}{}{}{}
+  \else
+    \let\linenomathAMS\linenomathNonumbers
+  \fi
+
+  \AtBeginDocument{%
+    \linenomathpatch{equation}%
+    \linenomathpatchAMS{gather}%
+    \linenomathpatchAMS{multline}%
+    \linenomathpatchAMS{align}%
+    \linenomathpatchAMS{alignat}%
+    \linenomathpatchAMS{flalign}%
+  }
+\else
+  % Hack to ignore these commands, which review mode puts into the .aux file.
+  \newcommand{\@LN@col}[1]{}
+  \newcommand{\@LN}[2]{}
+  \newcommand{\nolinenumbers}{}
+\fi
+
+\PassOptionsToPackage{a4paper,margin=2.5cm,heightrounded=true}{geometry}
+\RequirePackage{geometry}
+
+\setlength\columnsep{0.6cm}
+\newlength\titlebox
+\setlength\titlebox{11\baselineskip}
+% \titlebox should be a multiple of \baselineskip so that
+% column height remaining fits an exact number of lines of text
+
+\flushbottom \twocolumn \sloppy
+
+% We're never going to need a table of contents, so just flush it to
+% save space --- suggested by drstrip@sandia-2
+\def\addcontentsline##1##2##3{}
+
+\ifacl@pagenumbers
+    \pagenumbering{arabic}
+\else
+    \thispagestyle{empty}
+    \pagestyle{empty}
+\fi
+
+%% Title and Authors %%
+
+\let\Thanks\thanks % \Thanks and \thanks used to be different, but keep this for backwards compatibility.
+
+\newcommand\outauthor{%
+    \begin{tabular}[t]{c}
+    \ifacl@anonymize
+        \bfseries Anonymous ACL submission
+    \else
+        \bfseries\@author
+    \fi
+    \end{tabular}}
+
+% Mostly taken from deproc.
+\AtBeginDocument{
+\def\maketitle{\par
+ \begingroup
+   \def\thefootnote{\fnsymbol{footnote}}
+   \twocolumn[\@maketitle]
+   \@thanks
+ \endgroup
+ \setcounter{footnote}{0}
+ \let\maketitle\relax
+ \let\@maketitle\relax
+ \gdef\@thanks{}\gdef\@author{}\gdef\@title{}\let\thanks\relax}
+\def\@maketitle{\vbox to \titlebox{\hsize\textwidth
+ \linewidth\hsize \vskip 0.125in minus 0.125in \centering
+ {\Large\bfseries \@title \par} \vskip 0.2in plus 1fil minus 0.1in
+ {\def\and{\unskip\enspace{\rmfamily and}\enspace}%
+  \def\And{\end{tabular}\hss \egroup \hskip 1in plus 2fil
+           \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries}%
+  \def\AND{\end{tabular}\hss\egroup \hfil\hfil\egroup
+          \vskip 0.25in plus 1fil minus 0.125in
+           \hbox to \linewidth\bgroup\large \hfil\hfil
+             \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}\bfseries}
+  \hbox to \linewidth\bgroup\large \hfil\hfil
+    \hbox to 0pt\bgroup\hss
+  \outauthor
+   \hss\egroup
+    \hfil\hfil\egroup}
+  \vskip 0.3in plus 2fil minus 0.1in
+}}
+}
+
+% margins and font size for abstract
+\renewenvironment{abstract}%
+  {\begin{center}\large\textbf{\abstractname}\end{center}%
+    \begin{list}{}%
+      {\setlength{\rightmargin}{0.6cm}%
+        \setlength{\leftmargin}{0.6cm}}%
+      \item[]\ignorespaces%
+      \@setsize\normalsize{12pt}\xpt\@xpt
+  }%
+  {\unskip\end{list}}
+
+% Resizing figure and table captions - SL
+% Support for interacting with the caption, subfigure, and subcaption packages - SL
+\RequirePackage{caption}
+\DeclareCaptionFont{10pt}{\fontsize{10pt}{12pt}\selectfont}
+\captionsetup{font=10pt}
+
+\RequirePackage{natbib}
+% for citation commands in the .tex, authors can use:
+% \citep, \citet, and \citeyearpar for compatibility with natbib, or
+% \cite, \newcite, and \shortcite for compatibility with older ACL .sty files
+\renewcommand\cite{\citep}  % to get "(Author Year)" with natbib
+\newcommand\shortcite{\citeyearpar}% to get "(Year)" with natbib
+\newcommand\newcite{\citet} % to get "Author (Year)" with natbib
+\newcommand{\citeposs}[1]{\citeauthor{##1}'s (\citeyear{##1})} % to get "Author's (Year)"
+
+\bibliographystyle{acl_natbib}
+
+% Bibliography
+
+% Don't put a label in the bibliography at all.  Just use the unlabeled format
+% instead.
+\def\thebibliography##1{\vskip\parskip%
+\vskip\baselineskip%
+\def\baselinestretch{1}%
+\ifx\@currsize\normalsize\@normalsize\else\@currsize\fi%
+\vskip-\parskip%
+\vskip-\baselineskip%
+\section*{References\@mkboth
+ {References}{References}}\list
+ {}{\setlength{\labelwidth}{0pt}\setlength{\leftmargin}{\parindent}
+ \setlength{\itemindent}{-\parindent}}
+ \def\newblock{\hskip .11em plus .33em minus -.07em}
+ \sloppy\clubpenalty4000\widowpenalty4000
+ \sfcode`\.=1000\relax}
+\let\endthebibliography=\endlist
+
+
+% Allow for a bibliography of sources of attested examples
+\def\thesourcebibliography##1{\vskip\parskip%
+\vskip\baselineskip%
+\def\baselinestretch{1}%
+\ifx\@currsize\normalsize\@normalsize\else\@currsize\fi%
+\vskip-\parskip%
+\vskip-\baselineskip%
+\section*{Sources of Attested Examples\@mkboth
+ {Sources of Attested Examples}{Sources of Attested Examples}}\list
+ {}{\setlength{\labelwidth}{0pt}\setlength{\leftmargin}{\parindent}
+ \setlength{\itemindent}{-\parindent}}
+ \def\newblock{\hskip .11em plus .33em minus -.07em}
+ \sloppy\clubpenalty4000\widowpenalty4000
+ \sfcode`\.=1000\relax}
+\let\endthesourcebibliography=\endlist
+
+% sections with less space
+\def\section{\@startsection {section}{1}{\z@}{-2.0ex plus
+    -0.5ex minus -.2ex}{1.5ex plus 0.3ex minus .2ex}{\large\bfseries\raggedright}}
+\def\subsection{\@startsection{subsection}{2}{\z@}{-1.8ex plus
+    -0.5ex minus -.2ex}{0.8ex plus .2ex}{\normalsize\bfseries\raggedright}}
+%% changed by KO to - values to get the initial parindent right
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{-1.5ex plus
+   -0.5ex minus -.2ex}{0.5ex plus .2ex}{\normalsize\bfseries\raggedright}}
+\def\paragraph{\@startsection{paragraph}{4}{\z@}{1.5ex plus
+   0.5ex minus .2ex}{-1em}{\normalsize\bfseries}}
+\def\subparagraph{\@startsection{subparagraph}{5}{\parindent}{1.5ex plus
+   0.5ex minus .2ex}{-1em}{\normalsize\bfseries}}
+
+% Footnotes
+\footnotesep 6.65pt %
+\skip\footins 9pt plus 4pt minus 2pt
+\def\footnoterule{\kern-3pt \hrule width 5pc \kern 2.6pt }
+\setcounter{footnote}{0}
+
+% Lists and paragraphs
+\parindent 1em
+\topsep 4pt plus 1pt minus 2pt
+\partopsep 1pt plus 0.5pt minus 0.5pt
+\itemsep 2pt plus 1pt minus 0.5pt
+\parsep 2pt plus 1pt minus 0.5pt
+
+\leftmargin 2em \leftmargini\leftmargin \leftmarginii 2em
+\leftmarginiii 1.5em \leftmarginiv 1.0em \leftmarginv .5em \leftmarginvi .5em
+\labelwidth\leftmargini\advance\labelwidth-\labelsep \labelsep 5pt
+
+\def\@listi{\leftmargin\leftmargini}
+\def\@listii{\leftmargin\leftmarginii
+   \labelwidth\leftmarginii\advance\labelwidth-\labelsep
+   \topsep 2pt plus 1pt minus 0.5pt
+   \parsep 1pt plus 0.5pt minus 0.5pt
+   \itemsep \parsep}
+\def\@listiii{\leftmargin\leftmarginiii
+    \labelwidth\leftmarginiii\advance\labelwidth-\labelsep
+    \topsep 1pt plus 0.5pt minus 0.5pt
+    \parsep \z@ \partopsep 0.5pt plus 0pt minus 0.5pt
+    \itemsep \topsep}
+\def\@listiv{\leftmargin\leftmarginiv
+     \labelwidth\leftmarginiv\advance\labelwidth-\labelsep}
+\def\@listv{\leftmargin\leftmarginv
+     \labelwidth\leftmarginv\advance\labelwidth-\labelsep}
+\def\@listvi{\leftmargin\leftmarginvi
+     \labelwidth\leftmarginvi\advance\labelwidth-\labelsep}
+
+\abovedisplayskip 7pt plus2pt minus5pt%
+\belowdisplayskip \abovedisplayskip
+\abovedisplayshortskip  0pt plus3pt%
+\belowdisplayshortskip  4pt plus3pt minus3pt%
+
+% Less leading in most fonts (due to the narrow columns)
+% The choices were between 1-pt and 1.5-pt leading
+\def\@normalsize{\@setsize\normalsize{11pt}\xpt\@xpt}
+\def\small{\@setsize\small{10pt}\ixpt\@ixpt}
+\def\footnotesize{\@setsize\footnotesize{10pt}\ixpt\@ixpt}
+\def\scriptsize{\@setsize\scriptsize{8pt}\viipt\@viipt}
+\def\tiny{\@setsize\tiny{7pt}\vipt\@vipt}
+\def\large{\@setsize\large{14pt}\xiipt\@xiipt}
+\def\Large{\@setsize\Large{16pt}\xivpt\@xivpt}
+\def\LARGE{\@setsize\LARGE{20pt}\xviipt\@xviipt}
+\def\huge{\@setsize\huge{23pt}\xxpt\@xxpt}
+\def\Huge{\@setsize\Huge{28pt}\xxvpt\@xxvpt}
+
+% The hyperref manual (section 9) says hyperref should be loaded after natbib
+\ifacl@hyperref
+  \PassOptionsToPackage{breaklinks}{hyperref}
+  \RequirePackage{hyperref}
+  % make links dark blue
+  \definecolor{darkblue}{rgb}{0, 0, 0.5}
+  \hypersetup{colorlinks=true, citecolor=darkblue, linkcolor=darkblue, urlcolor=darkblue}
+\else
+  % This definition is used if the hyperref package is not loaded.
+  % It provides a backup, no-op definiton of \href.
+  % This is necessary because \href command is used in the acl_natbib.bst file.
+  \def\href##1##2{{##2}}
+  \usepackage{url}
+\fi
+
+% END_INLINE_ACL
+}
+\makeatother
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{graphicx}
+\newcommand{\CST}{\textsc{CST}}
+\newcommand{\PECR}{\textsc{PECR}}
+\newcommand{\ind}{\mathbb{I}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\sigmoid}{\operatorname{sigmoid}}
+\newcommand{\logit}{\operatorname{logit}}
+\newcommand{\AUROC}{\operatorname{AUROC}}
+\newcommand{\AP}{\operatorname{AP}}
+\newcommand{\clip}{\operatorname{clip}}
+\newcommand{\Exec}{\operatorname{Exec}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\good}[1]{\textbf{#1}}
+\newcommand{\artifacturl}{https://github.com/Yuming166/when-consensus-lies/tree/f0c888ea6053c30dac6e714f7578c2d066cb86fd/pecr_benchmark_release_v1_20261002}
+\usepackage{tabularx}
+\usepackage{array}
+
+\title{Diagnosing LLM Errors with Controlled Evidence Interventions:\protect\\A Benchmark and Response-Curve Method}
+% Authorship and affiliations should be finalized jointly before submission.
+% The discussion draft deliberately has no anonymous-submission banner.
+\author{Discussion draft}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+% An answer can be confident, repeatable, and wrong. For document-grounded language models, this raises a practical question: what additional evidence can help identify an error in an otherwise plausible answer? We investigate controlled changes to the evidence behind that answer. These interventions reveal how the model responds, but responsiveness alone is ambiguous: our consensus stress tests find that even placebo evidence can trigger frequent answer flips. The challenge is therefore to determine when responses to evidence changes are informative about errors in the original answer. We introduce a reusable benchmark for this question in financial question answering, pairing program-conditioned numerical edits with saved response trajectories and labels tied to each original answer. The benchmark enables controlled comparisons of error detectors at a fixed response budget and systematic analysis of when apparently appropriate responses conceal errors. Building on this testbed, we propose Program-Executable Counterfactual Reliability (\PECR{}), which represents answers under negative, original, and positive edits as a response curve. Edit-normalized changes, directional relations, and two-sided shape describe how the answer depends on the intervention, rather than merely whether it changes. In grouped development evaluations on Qwen and DeepSeek response tracks, the resulting predictor improves error ranking over a matched three-call baseline. Case analyses show why neither invariance nor smooth responses guarantee correctness. Together, the benchmark and response-curve method provide a reusable testbed for studying how evidence-response relations support error diagnosis, opening opportunities for detection across models and verification under limited query budgets.%
+An answer can be confident, repeatable, and wrong. In document-grounded question answering, controlled evidence changes offer a way to probe such errors. Yet a changed answer need not indicate meaningful evidence use: our consensus stress tests show frequent flips even under placebo evidence. The challenge is to determine which response patterns are informative about errors in the original answer. We introduce a reusable financial question answering benchmark that links program-conditioned numerical edits, saved response trajectories, and generation-aligned error labels. It enables matched-budget comparisons of error detectors and analysis of apparently appropriate responses that conceal errors. Building on this benchmark, Program-Executable Counterfactual Reliability (PECR) represents answers under negative, original, and positive edits as a bidirectional response curve. Edit-normalized changes, directional relations, and two-sided shape characterize how the answer responds, beyond whether it changes. In source-group development evaluations on Qwen and DeepSeek tracks, PECR improves error ranking over a matched three-response baseline. Case studies illustrate why neither invariance nor smooth responses guarantee correctness. Together, the benchmark and method support reproducible study of how evidence-response relations inform LLM error diagnosis. % about 180 words %
+\end{abstract}
+
+% Single-column teaser; intended for the first-page right column.
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=\columnwidth]{figures/example fig v2.png}
+    \caption{
+        Confidence alone does not establish correctness.
+        In this example, opposite numerical evidence edits
+        produce answer changes that contradict the
+        program-conditioned expected directions, while
+        self-reported confidence remains at 100\%.
+        Such response patterns motivate intervention-based
+        diagnosis of original-answer errors.
+    }
+    \label{fig:teaser}
+\end{figure}
+
+\section{Introduction}
+% An incorrect answer is especially difficult to detect when a language model gives it confidently and repeatedly. This matters for document-grounded question answering, where a plausible number can enter an analyst's workflow long before anyone verifies the underlying calculation. Recent work has made progress using sampled-answer agreement, semantic uncertainty, and confidence estimation \citep{manakul-etal-2023-selfcheckgpt,farquhar-etal-2024-semantic,geng-etal-2024-survey}. Yet self-consistent errors remain a distinct challenge: repeated samples can agree on the same wrong answer, and confidence estimates can change under semantically equivalent inputs \citep{mahaut-etal-2024-factual,tan-etal-2025-consistent}. Reliability assessment therefore needs evidence about how an answer depends on the information that should determine it.
+
+Confidence and agreement can make an incorrect answer look reliable. For document-grounded question answering, this is consequential: a plausible number may inform an analyst's decisions before the underlying calculation is checked. Sampling-based consistency, semantic uncertainty, and confidence estimation provide useful signals for identifying unreliable outputs \citep{manakul-etal-2023-selfcheckgpt, farquhar-etal-2024-semantic,geng-etal-2024-survey}. Nevertheless, models can repeatedly produce the same incorrect answer, leaving self-consistent errors difficult to detect \citep{tan-etal-2025-consistent}. This motivates a complementary question: can the way an answer responds to changes in its supporting evidence reveal an error that confidence and agreement fail to expose? Figure~\ref{fig:teaser} illustrates this challenge: a model can remain confident even when its responses to controlled evidence changes violate the expected relations.
+
+% A controlled intervention asks a different question from repeated sampling: \emph{does the answer respond appropriately when relevant evidence changes?} Perturbation-based uncertainty methods already show the value of varying prompts \citep{gao-etal-2024-spuq}. For numerical reasoning, however, the desired response is often a change rather than invariance. Increasing a numerator should affect an answer differently from increasing a denominator; an irrelevant edit should ideally leave the answer alone. The challenge is to connect these expected relations to the correctness of the original answer. A large response can reflect evidence use, a misunderstanding, or sensitivity to irrelevant text. A small response can reflect robustness or a failure to use the edited evidence.
+
+Recent benchmarks provide systematic settings for evaluating uncertainty estimators, predicting model errors, and testing selective refusal under flawed context \citep{vashurin-etal-2025-benchmarking, pacchiardi-etal-2025-predictaboard, muhamed-etal-2026-refusalbench}. We focus on a more specific connection: whether responses to controlled evidence changes help diagnose the correctness of the original answer. Studying this connection requires more than a collection of questions and reference answers. It requires specified interventions, the corresponding response trajectories, and correctness labels tied to the original generations, so that alternative detectors can be compared using the same evidence and response budget.
+
+% Our consensus stress testing (\CST{}) study makes this ambiguity concrete. On a contrastive fact-verification cohort, independently generated counter-evidence causes more answer flips than a matched placebo. Nevertheless, the placebo exceeds its prespecified flip-rate ceiling, and the counter-evidence response score has uncertain error-ranking performance. This motivates three separate questions: whether the intervention has a defensible interpretation, whether the model responds selectively, and whether that response helps diagnose its original error. These questions organize our evaluation; none is a substitute for the others.
+
+Numerical question answering makes this connection concrete. Perturbation-based uncertainty estimation and numerical veracity probes demonstrate the value of testing models under modified inputs \citep{gao-etal-2024-spuq,aarnes-setty-2025-numpert}. However, a meaningful numerical edit often calls for a predictable change rather than invariance: for a ratio of
+positive quantities, increasing the numerator and increasing the denominator imply opposite response directions. Simply observing a change is therefore insufficient. Our consensus stress tests (CST) show that even placebo evidence can induce frequent answer flips, while Figure~\ref{fig:teaser} illustrates confident numerical responses that move against the expected edit directions. The challenge is to characterize these \emph{evidence--response relations} and determine when they provide useful information about errors in the original answer.
+
+To address these challenges, we introduce a controlled-intervention benchmark together with PECR, a response-curve method for diagnosing errors in original model answers. Our benchmark turns financial question answering examples into linked records of numerical evidence edits, model-response trajectories, and labels for the corresponding original answers. By fixing the interventions, saved responses, and source-group evaluation, it enables researchers to compare error detectors under the same response budget and investigate when apparently appropriate behavior conceals an error.
+
+Building on this testbed, PECR represents the answers under negative, original, and positive edits as a bidirectional response curve. It combines edit-normalized changes, directional agreement, and two-sided shape with original-input and response features to learn an error-risk predictor. This representation captures distinctions that a change indicator alone cannot express: an answer may remain unchanged despite relevant evidence edits, respond unevenly to opposite edits, or change smoothly while the original answer is still incorrect. Evaluations on Qwen and DeepSeek response tracks show that these curve features provide additional ranking information over a matched three-response predictor.
+
+\paragraph{Contributions.}
+Empirical evaluations show that PECR improves error ranking on both Qwen and DeepSeek, with AUROC gains of 1.40 and 1.16 percentage points over a matched three-response baseline. Our reusable benchmark and response-curve method enable systematic comparison and further development of LLM reliability assessment. Our contributions are twofold: \textbf{(1)} We introduce a reusable benchmark for studying how responses to controlled numerical evidence interventions relate to original-answer errors. It provides saved response trajectories, response-specific labels, reconstructable inputs, and grouped evaluation, supporting controlled detector comparisons and analysis of misleading response patterns. \textbf{(2)} We propose PECR, a program-conditioned response-curve representation that captures edit sensitivity, directional relations, and two-sided response shape. Matched-budget evaluations on two model response tracks demonstrate its incremental value, while component analyses and case studies identify where these signals help and where they remain ambiguous.
+
+\section{Related Work}
+\paragraph{Uncertainty and self-consistent errors.}
+SelfCheckGPT estimates factual reliability from agreement across sampled generations \citep{manakul-etal-2023-selfcheckgpt}. Semantic entropy groups generations by meaning, reducing sensitivity to surface variation \citep{farquhar-etal-2024-semantic}. Black-box confidence methods such as BSDetector combine signals from additional model responses \citep{chen-mueller-2024-quantifying}, while systematic studies compare estimators and document their instability \citep{mahaut-etal-2024-factual,vashurin-etal-2025-benchmarking}. \citet{tan-etal-2025-consistent} show that consistent errors challenge several detector families and propose a cross-model hidden-state probe. We investigate a complementary source of information: responses to specified evidence changes. Our experiments isolate this representation against a matched predictor; they do not establish superiority over the full range of uncertainty estimators.
+
+\paragraph{Perturbations and behavioral evaluation.}
+CheckList and contrast sets established the importance of testing expected behavior beyond aggregate accuracy \citep{ribeiro-etal-2020-beyond,gardner-etal-2020-evaluating}. SPUQ varies inputs and sampling conditions to quantify uncertainty \citep{gao-etal-2024-spuq}. GSM-Symbolic shows that changes to numerical values and irrelevant clauses can expose failures hidden by benchmark accuracy \citep{mirzadeh-etal-2025-gsm}. These studies motivate intervention tests, but robustness under a perturbation and error detection on an original answer remain different outcomes. We connect a specified numerical response relation to the latter task, while using the \CST{} placebo result to examine when behavioral sensitivity is difficult to interpret.
+
+\paragraph{Structured reasoning benchmarks.}
+FinQA supplies expert questions and executable reasoning programs over financial reports \citep{chen-etal-2021-finqa}. MultiHiertt extends numerical reasoning to hierarchical tables and text \citep{zhao-etal-2022-multihiertt}, and VitaminC provides contrastive evidence for fact verification \citep{schuster-etal-2021-vitamin}. Our contribution builds on these resources: it couples evidence transformations with saved response trajectories, response-specific error targets, and reproducible risk evaluation. This differs from collecting a new corpus of financial documents or testing answer accuracy alone.
+
+\begin{table*}[t]
+\centering
+\caption{Related evaluation resources and their primary research interfaces.
+The comparison describes intended evaluation targets, not a ranking of
+resource quality or a claim that other resources cannot be extended.}
+\label{tab:resource_positioning}
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
+\begin{tabularx}{\textwidth}{@{}p{0.17\textwidth}
+  >{\raggedright\arraybackslash}X
+  >{\raggedright\arraybackslash}X
+  >{\raggedright\arraybackslash}X@{}}
+\toprule
+Resource & Primary target & Evaluation interface & Research emphasis \\
+\midrule
+PredictaBoard\newline
+\citep{pacchiardi-etal-2025-predictaboard}
+& Predict an LLM's success on individual task instances
+& Paired evaluation of answer models and score assessors
+& Predictability and rejection under different error tolerances \\
+NumPert\newline
+\citep{aarnes-setty-2025-numpert}
+& Numerical-claim veracity and robustness under perturbation
+& Controlled perturbations of numerical claims and evidence
+& Veracity prediction under changed numerical conditions \\
+RefusalBench\newline
+\citep{muhamed-etal-2026-refusalbench}
+& Selective refusal under flawed grounding context
+& Diagnostic cases generated through controlled linguistic perturbations
+& Whether and how models refuse when context is inadequate \\
+\midrule
+\textbf{Our benchmark}
+& Diagnose numerical errors in a particular saved original answer
+& Program-conditioned bidirectional edits linked to saved responses and
+generation-aligned targets
+& Fixed-response-budget detector comparison and source-group analysis of
+evidence--response relations \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+\section{From Consensus Stress Tests to Error Diagnosis}
+\label{sec:cst}
+\subsection{Why a response change needs a control}
+Let $b_i^0$ be a model's original stance on a claim, and $b_i^c$ its stance under evidence condition $c$. A flip indicator is $F_i(c)=\ind[b_i^c\neq b_i^0]$. For counter-evidence (CE) and matched placebo (PL), the paired contrast is
+\begin{equation}
+ \Delta_{\mathrm{CE}}=\mathbb{E}[F_i(\mathrm{CE})-F_i(\mathrm{PL})].
+ \label{eq:cst}
+\end{equation}
+This contrast measures a difference in observed responsiveness. Its interpretation also depends on the behavior of the placebo and the semantics of the evidence packet.
+
+Our historical strict \CST{} study uses 50 VitaminC items in 25 mirror pairs and five personas. Counter-evidence candidates were generated from the claim alone; assignment to oppose each item's annotated stance occurred offline. The inference packets contained a claim and one evidence unit. Responses were compared with saved original answers, and uncertainty was estimated by resampling mirror pairs. The runtime model was recorded as \texttt{gpt-6-astra}; the archived identifier is the available model provenance.
+
+\begin{table}[t]
+\centering\small
+\caption{The strict \CST{} control. A positive average contrast coexists with a failed placebo gate and uncertain error ranking.}
+\label{tab:cst}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Quantity & Estimate [95\% CI]\\
+\midrule
+Counter-evidence flip rate & .7258 [.6466, .8115]\\
+Placebo flip rate & .5141 [.4600, .5772]\\
+CE minus placebo & +.2118 [.1160, .3097]\\
+Placebo ceiling & $\leq .30$; failed\\
+Error AUROC & .624 [.286, .856]\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:cst} shows why the contrast alone is insufficient. The placebo flips more than half of the answers. Moreover, the error-ranking subset contains only 46 high-consensus items and three errors, making the ranking estimate highly uncertain. The result establishes an average behavioral difference, without establishing a reliable counter-evidence error detector. Additional historical controls and their protocol differences appear in Appendix~\ref{app:cst}.
+
+\subsection{Three distinct evaluation questions}
+We distinguish \emph{construction validity}, \emph{response selectivity}, and \emph{error diagnosis}. Construction validity concerns whether an edit has the intended task-level meaning. Selectivity compares a relevant intervention with a matched neutral condition. Error diagnosis asks whether response-derived scores rank original-answer errors. Formally, a response statistic $S_i$ can correlate with $y_i$, the original error indicator, even when the intervention has confounds. Conversely, a model can respond correctly to new evidence while the response supplies little information about $y_i$.
+
+This distinction motivates the numerical benchmark below. Program annotations provide a more explicit intervention relation than free-form counter-evidence generation, and bidirectional answers provide a richer signal than a flip indicator. The numerical benchmark tests error ranking under these construction descriptors. It does not include a matched sham world, so it does not complete a placebo-selectivity test for \PECR{}.
+
+\section{The Controlled-Intervention Benchmark}
+\label{sec:benchmark}
+\subsection{Response-specific error diagnosis}
+Our benchmark evaluates whether responses to controlled evidence changes help identify errors in an original LLM answer. The evaluation unit is a question paired with a particular model generation: the same question can yield correct and incorrect answers across models or repeated runs. An item contains a question and evidence, $x_i=(q_i,E_i)$, with source group $g_i$. For model $m$, each saved response is $r_{im}^{w} (a_{im}^{w},c_{im}^{w},u_{im}^{w})$, where $w\in\{-,0,+\}$ indexes the negative-edit, original, and positive-edit conditions. The resulting trajectory $\mathbf{R}_{im}=(r_{im}^{-},r_{im}^{0},r_{im}^{+})$ provides behavioral evidence for diagnosing \emph{the original answer} $a_{im}^{0}$. 
+
+The target is response-specific numerical error. Let $a_i^\star$ denote the annotated numerical answer, and let
+$\ell_{im}=1$ when both $a_{im}^{0}$ and $a_i^\star$ are
+numerically comparable under the frozen parsing policy.
+With tolerance
+$\tau_i=\max\{10^{-4},10^{-4}|a_i^\star|\}$,
+we define
+\begin{equation}
+y_{im}=
+\begin{cases}
+\ind\!\left[
+  |a_{im}^{0}-a_i^\star|>\tau_i
+\right], & \ell_{im}=1,\\
+\bot, & \ell_{im}=0.
+\end{cases}
+\label{eq:target}
+\end{equation}
+where $y_{im}=1$ indicates an error and $\bot$ denotes an unknown target rather than an incorrect answer. The policy removes supported surface markers without unit conversion or percentage rescaling. It evaluates free-text numerical answers rather than the official FinQA program-execution metric. Reference answers and target labels are excluded from detector inputs; program-conditioned edit metadata remains available in this annotated setting.
+
+Generation alignment makes these targets interpretable. The release binds each target, original-response feature vector, and original trajectory endpoint to the same saved generation through item IDs and response provenance. Regenerating an answer therefore requires rebinding its label and response-derived features. With trajectories held fixed, researchers can compare detectors at the same response budget without confounding representation differences with new model generations. This supports controlled studies of whether directional relations and two-sided response shape provide error information beyond original-answer confidence or raw numerical changes. Unknown targets remain in the released frame and are accounted for in coverage reporting.
+
+\subsection{Three-world construction}
+We use a fixed FinQA TRAIN frame of 2,241 questions in 453 company/year groups. Program-to-source alignment identifies a table cell with operand $v_i$. A saved edit changes it to $v_i^+$; the reverse edit uses $v_i^-=2v_i-v_i^+$. Each world retains the question and other evidence fields. The original construction uses annotated programs and operand mappings to supply a forward expected direction $d_i\in\{-1,+1\}$. The release preserves these descriptors rather than inferring them from model responses.
+
+Writing $T_i^+$ and $T_i^-$ for the saved transformations, we collect
+\begin{equation}
+ \mathcal{R}_{im}=\{f_m(x_i),f_m(T_i^+x_i),f_m(T_i^-x_i)\}.
+ \label{eq:worlds}
+\end{equation}
+The positive and negative names identify the two input edits; they do not mean that either response is correct. An edited cell can interact with totals, repeated quantities, or nearby prose. Mechanical operand alignment therefore supplies a construction rule, while semantic consistency remains a separate property to inspect.
+
+Sixteen construction exclusions leave 2,225 requested triples per model, or 6,675 requests. The two released tracks are Qwen3.5-4B and the service identifier \texttt{deepseek-flash}. Their actual profiles use temperature zero and token caps of 384 and 8,192, respectively; the latter records low reasoning effort. We preserve the identifiers and profiles in the artifact. The benchmark is not a token-budget-controlled comparison between the answer models.
+
+\subsection{Information available to the predictor}
+The answer model receives the rendered question and evidence. The risk predictor receives parsed answers, original-input/response features, and saved construction descriptors. Its feature computation does not query \texttt{qa.answer} or use correctness labels. Supervised fitting accesses labels only for training groups.
+
+Construction is program-conditioned. In particular, the released Raw and Curve feature sets both contain the expected sign and a saved scalar named \texttt{absolute\_delta}. We denote this scalar by $\mu_i$ and retain it as construction metadata; it is distinct from the operand step $v_i^+-v_i$. We do not assume it is independent of program execution. Thus the setting uses privileged construction information and does not establish an end-to-end oracle-free detector. The shared information budget makes the Raw--Curve contrast a test of the curve representation within that setting.
+
+\subsection{Coverage and reusable release}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/benchmark_v3.png}
+\caption{Coverage of the released benchmark. The two response tracks share a 2,241-item frame, with 2,225 requested triples per model; parsing and label availability yield different strict cohorts. Excluded items remain traceable. The figure's ``correct=0'' means an original answer has error target $y=0$, not that a correctness indicator is false. Coverage measures numerical evaluability, not semantic validation of an edit.}
+\label{fig:benchmark-coverage}
+\end{figure*}
+Figure~\ref{fig:benchmark-coverage} follows each model track from the shared candidate frame to its evaluation cohort. The strict queue requires valid finite three-world features and a known original-answer label. All methods within a track use this identical queue; exact counts and percentages are retained in Appendix Table~\ref{tab:coverage}. Empty or unequal unit strings remain visible through features and audit flags; they are not silently removed. Consequently, strict coverage means numerical evaluability under the published policy, not independently verified semantic validity. The two model tracks overlap in items and groups, so their samples are not independent.
+
+The artifact supports two uses. The \emph{historical-response benchmark} provides numerical responses, feature matrices, targets, fixed folds, out-of-fold (OOF) references, and an offline training entry. The \emph{intervention reconstruction} provides edit specifications, prompts, and code that reconstructs all three inputs from a user-supplied FinQA TRAIN file. Both saved model profiles reproduce all 13,350 canonical request hashes. Financial passages and raw reasoning are not bundled. New model outputs can be evaluated after creating their own aligned targets, features, and coverage records. The public package is available at the project repository.\footnote{\url{https://github.com/Yuming166/when-consensus-lies}; release \texttt{pecr\_benchmark\_release\_v1\_20261002}.}
+
+% ===== BEGIN TABLE 2: BEHAVIORAL PROFILE =====
+\begin{table}[t]
+\centering
+\caption{Original-answer errors conditional on response patterns in the
+generation-aligned strict cohorts. $N$ is the number of items in a pattern;
+Error is its observed error percentage. Alignment refers to the saved
+program-conditioned expected direction.}
+\label{tab:behavioral_profile}
+\sbox{\PECRBehaviorBox}{%
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+& \multicolumn{2}{c}{Qwen} & \multicolumn{2}{c}{DeepSeek} \\
+\cmidrule(lr){2-3}\cmidrule(l){4-5}
+Pattern & $N$ & \shortstack{Error\\(\%)} & $N$ & \shortstack{Error\\(\%)} \\
+\midrule
+Both sides aligned  & 1,385 & 71.8 & 1,662 & 57.9 \\
+Mixed directions    &   432 & 90.0 &   108 & 73.1 \\
+Both sides reversed &   140 & 97.9 &   105 & 89.5 \\
+One side flat       &    79 & 97.5 &    78 & 61.5 \\
+Both sides flat     &   106 & 95.3 &    97 & 75.3 \\
+\midrule
+Overall             & 2,142 & 79.3 & 2,050 & 61.3 \\
+\bottomrule
+\end{tabular}}
+\typeout{BEHAVIOR-TABLE-WIDTH=\the\wd\PECRBehaviorBox}
+\typeout{ACL-COLUMN-WIDTH=\the\columnwidth}
+\ifdim\wd\PECRBehaviorBox>\columnwidth
+  \PackageError{PECR-tables}{Behavioral table exceeds one ACL column}{%
+    Shorten the headings or adjust tabcolsep; do not scale the table image.}
+\fi
+\usebox{\PECRBehaviorBox}
+\par\vspace{3pt}
+\begin{minipage}{\columnwidth}
+\footnotesize
+Patterns are mutually exclusive: mixed directions excludes flat responses;
+flatness uses the published exact-zero rule. The percentages are descriptive
+cohort statistics, not tests of between-model differences or edit validity.
+\end{minipage}
+\end{table}
+% ===== END TABLE 2 =====
+
+\section{PECR: Bidirectional Response Curves}
+\label{sec:method}
+
+Figure~\ref{fig:three-world-method} summarizes \PECR{}.
+The method combines descriptors of the original input and its
+generation-aligned answer with features computed from three-world
+responses to predict whether the original answer is erroneous.
+
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=\columnwidth]{figures/pecr_method_v4.png}
+    \caption{
+    Overview of \PECR{}.
+    Program-conditioned edits produce negative, original, and positive
+    responses. Fixed extractors construct G96 from the original input
+    and its generation-aligned answer. Raw17 is concatenated with
+    16 additional scale, geometry, and consistency descriptors to form
+    Curve33. The resulting 129-dimensional representation feeds a
+    histogram gradient-boosted classifier trained on saved error labels
+    with source-group-disjoint folds.
+    }
+    \label{fig:three-world-method}
+\end{figure}
+\subsection{From response changes to edit sensitivity}
+We omit model and item subscripts when clear. Let $a^0,a^+,a^-$ be the three numerical answers. Orient both response differences in the forward edit direction:
+\begin{equation}
+ \delta^+=a^+-a^0,\qquad \delta^-=a^0-a^-.
+ \label{eq:diffs}
+\end{equation}
+The same absolute response change can correspond to a small or large input perturbation. We therefore normalize by the saved operand step $h=v^+-v$:
+\begin{equation}
+\begin{gathered}
+ s^+=\frac{\delta^+}{|h|+\eps},\qquad
+ s^-=\frac{\delta^-}{|h|+\eps},\\
+ t=\frac{h}{|v|+\eps},
+\end{gathered}
+ \label{eq:slopes}
+\end{equation}
+where $\eps=10^{-9}$. These are finite-difference descriptors in the recorded numerical scale. They are not derivatives of a verified financial function, and the shared denominator follows the frozen implementation even when surface formatting differs between edits.
+
+\subsection{Shape and directional agreement}
+One-sided changes can conceal different response patterns. A model can respond to only one edit, move in the wrong direction, or exhibit a large central bend. We describe the two-sided shape with
+\begin{align}
+ A&=\frac{s^+-s^-}{|s^+|+|s^-|+\eps},\label{eq:asym}\\
+ K&=\frac{a^++a^- -2a^0}{|\delta^+|+|\delta^-|+\eps},\label{eq:curve}\\
+ B&=\frac{\min(|\delta^+|,|\delta^-|)}{\max(|\delta^+|,|\delta^-|)+\eps}.\label{eq:balance}
+\end{align}
+$A$ measures slope asymmetry, $K$ is a normalized central second difference, and $B$ measures balance in the two response magnitudes. We also retain $s^+-s^-$ and the absolute normalized response asymmetry. These descriptors share algebraic structure; their empirical value is evaluated as feature families rather than as independent mechanisms.
+
+The saved expected sign gives forward-oriented agreement indicators
+\begin{equation}
+ D^+=\ind[d\delta^+>0],\qquad D^-=\ind[d\delta^->0].
+ \label{eq:direction}
+\end{equation}
+The representation includes the signed products, flat-response flags, whether both sides move, and whether the two signed changes agree. Confidence differences $c^+-c^0$ and $c^- -c^0$ capture another aspect of the trajectory. Their interactions with $D^+$ and $D^-$, together with unit-presence and unit-agreement flags, let the predictor distinguish numerically similar changes accompanied by different response conditions. The exact vector and removal masks appear in Appendix~\ref{app:features}.
+
+\subsection{Risk learning and the matched comparator}
+Let $\mathbf g\in\R^{96}$ describe the original question, evidence, and response. It includes numerical statistics, table structure, lexical cues, the original answer, unit indicators, and confidence. We call this block \emph{original-response G96}; the archived name ``Graph-only'' does not denote a graph neural network.
+
+The raw-response vector $\mathbf r\in\R^{17}$ contains basic three-world differences, directional flags, confidence changes, units, and construction metadata. The full curve vector $\boldsymbol\phi\in\R^{33}$ contains $\mathbf r$ as its first 17 entries and adds the curve descriptors. The two matched predictors are
+\begin{align}
+ \widehat p_{\mathrm{Raw}}&=\sigmoid(F_{\theta_R}([\mathbf g;\mathbf r])),\\
+ \widehat p_{\mathrm{Curve}}&=\sigmoid(F_{\theta_C}([\mathbf g;\boldsymbol\phi])).
+ \label{eq:predict}
+\end{align}
+Each $F_\theta$ is an HGB classifier trained with binary log loss,
+\begin{equation}
+ \mathcal L(\theta)=-\sum_{i\in\mathcal I_{\mathrm{train}}}
+ \big[y_i\log\widehat p_i+(1-y_i)\log(1-\widehat p_i)\big].
+ \label{eq:loss}
+\end{equation}
+Both methods see the same three responses, original features, targets, folds, and classifier settings. The comparison therefore measures the utility of explicit curve features without adding answer-model calls. The output is evaluated as an error-ranking score; probability calibration is not established by these experiments.
+
+\section{Experimental Settings}
+\label{sec:settings}
+\paragraph{Evaluation tracks.}
+Our main evaluation uses the two generation-aligned FinQA tracks in Figure~\ref{fig:benchmark-coverage} and Appendix Table~\ref{tab:coverage}. We fit a separate risk predictor for each answer-model track. Five fixed \texttt{GroupKFold} folds keep each exact company/year group entirely within one test fold, with no shuffling. This evaluates prediction on held-out groups within the development population. It does not test transfer of one fitted risk predictor between answer models. Error prevalence is 79.32\% for Qwen and 61.32\% for DeepSeek.
+
+\paragraph{Comparators.}
+The original-response G96 predictor uses one answer. Raw three-world and Full Curve use three answers and 113 and 129 input columns, respectively. Raw already includes direction, confidence, unit flags, and basic differences, making it the primary matched comparator. We additionally evaluate the three fixed family removals in Section~\ref{sec:ablations}. Comparisons with the original-response model also reflect two additional calls. Sampling-based uncertainty methods require a different response collection; we discuss them as related approaches rather than reporting unperformed comparisons.
+
+\paragraph{Training.}
+All six released methods use 250 HGB iterations, learning rate .05, at most 15 leaves per tree, minimum leaf size 20, and $L_2$ regularization 1.0, with seed 20260928. The release specifies all library defaults, full dependencies, schemas, and per-row folds. Every strict item receives an OOF prediction. A fresh environment reproduced the saved predictions, estimates, and intervals for 90 fixed fits across the two aligned tracks and one historical feature-source track. No seeds or variants were selected during release acceptance.
+
+\paragraph{Metrics and uncertainty.}
+We report error-positive AUROC and average precision (AP). AP is interpreted relative to each track's error prevalence. For the main contrast,
+\begin{equation}
+ \widehat\Delta=\AUROC(\mathbf y,\widehat{\mathbf p}_{C})-
+ \AUROC(\mathbf y,\widehat{\mathbf p}_{R}),
+ \label{eq:delta}
+\end{equation}
+we resample source groups jointly for both predictors, preserving all items and paired scores in each sampled group. We use 2,000 bootstrap draws and percentile 95\% intervals. These intervals condition on saved OOF predictions. The cohorts supported method development and post-hoc implementation and generation-alignment corrections; the intervals do not account for training variance or repeated method selection. Appendix~\ref{app:provenance} records the corrections once, alongside reproducibility details.
+
+\section{Experimental Results}
+\label{sec:results}
+\subsection{Incremental value at a fixed response budget}
+\begin{table*}[t]
+\centering\small
+\caption{Generation-aligned main results. Larger is better. Within each model track, all methods use the same strict items, labels, source-group folds, and classifier settings. ``Calls'' counts answer-model responses per item. Model tracks have different error prevalence and coverage.}
+\label{tab:main}
+\begin{tabular}{@{}lcrrrrr@{}}
+\toprule
+& & & \multicolumn{2}{c}{Qwen ($n=2,142$)} & \multicolumn{2}{c}{DeepSeek ($n=2,050$)}\\
+\cmidrule(lr){4-5}\cmidrule(l){6-7}
+Method & Calls & Features & AUROC $\uparrow$ & AP $\uparrow$ & AUROC $\uparrow$ & AP $\uparrow$\\
+\midrule
+Original-response G96 & 1 & 96 & .7516 & .9104 & .7977 & .8371\\
+Raw three-world & 3 & 113 & .8186 & .9387 & .8386 & .8587\\
+\textbf{Full Curve (\PECR{})} & 3 & 129 & \good{.8326} & \good{.9450} & \good{.8502} & \good{.8697}\\
+\midrule
+\multicolumn{3}{@{}l}{Curve $-$ Raw} & +.0140 & +.0063 & +.0116 & +.0110\\
+\multicolumn{3}{@{}l}{Paired 95\% CI} & [.0043, .0242] & [.0021, .0103] & [.0045, .0187] & [.0008, .0207]\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+% ===== BEGIN TABLE: EDIT-INFORMATION CONTROLS =====
+\begin{table*}[t]
+\centering
+\caption{Fixed post-hoc controls for input-edit information on the unchanged
+generation-aligned cohorts: Qwen, 2,142 items/452 groups; DeepSeek, 2,050
+items/448 groups. Each model uses its native original-response G96.
+The lower block reports paired differences with 95\% source-group bootstrap
+intervals (2,000 draws). AUROC and AP are higher-is-better ranking metrics.}
+\label{tab:edit_information_controls}
+\sbox{\PECRAttributionBox}{%
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{tabular}{@{}lrcccc@{}}
+\toprule
+& & \multicolumn{2}{c}{Qwen} & \multicolumn{2}{c}{DeepSeek} \\
+\cmidrule(lr){3-4}\cmidrule(l){5-6}
+Representation & Dim. & AUROC & AP & AUROC & AP \\
+\midrule
+G96                       &  96 & .7516 & .9104 & .7977 & .8371 \\
+G96 + construction metadata & 100 & .7582 & .9131 & .8197 & .8534 \\
+G96 + Raw17               & 113 & .8186 & .9387 & .8386 & .8587 \\
+G96 + Raw17 + $(t,h)$     & 115 & .8201 & .9399 & .8444 & .8662 \\
+G96 + Curve33 (Full)      & 129 & .8326 & .9450 & .8502 & .8697 \\
+\midrule
+\multicolumn{2}{@{}l}{Paired contrast}
+& $\Delta$AUROC & $\Delta$AP & $\Delta$AUROC & $\Delta$AP \\
+\midrule
+\multicolumn{2}{@{}l}{Full $-$ (Raw + edit scale)}
+& \PECRPairCell{+.0125}{.0027}{.0229}
+& \PECRPairCell{+.0051}{.0010}{.0095}
+& \PECRPairCell{+.0058}{-.0007}{.0120}
+& \PECRPairCell{+.0035}{-.0044}{.0107} \\
+\addlinespace[3pt]
+\multicolumn{2}{@{}l}{Full $-$ Raw}
+& \PECRPairCell{+.0140}{.0043}{.0242}
+& \PECRPairCell{+.0063}{.0021}{.0103}
+& \PECRPairCell{+.0116}{.0045}{.0187}
+& \PECRPairCell{+.0110}{.0008}{.0207} \\
+\addlinespace[3pt]
+\multicolumn{2}{@{}l}{(Raw + edit scale) $-$ Raw}
+& \PECRPairCell{+.0015}{-.0042}{.0073}
+& \PECRPairCell{+.0012}{-.0013}{.0038}
+& \PECRPairCell{+.0058}{-.0001}{.0124}
+& \PECRPairCell{+.0075}{-.0007}{.0157} \\
+\addlinespace[3pt]
+\multicolumn{2}{@{}l}{Full $-$ construction model}
+& \PECRPairCell{+.0744}{.0503}{.0976}
+& \PECRPairCell{+.0319}{.0212}{.0427}
+& \PECRPairCell{+.0305}{.0186}{.0426}
+& \PECRPairCell{+.0163}{.0034}{.0298} \\
+\addlinespace[3pt]
+\multicolumn{2}{@{}l}{Construction model $-$ G96}
+& \PECRPairCell{+.0066}{-.0056}{.0188}
+& \PECRPairCell{+.0028}{-.0028}{.0084}
+& \PECRPairCell{+.0220}{.0101}{.0343}
+& \PECRPairCell{+.0163}{.0035}{.0289} \\
+\addlinespace[3pt]
+\multicolumn{2}{@{}l}{(Raw + edit scale) $-$ construction model}
+& \PECRPairCell{+.0619}{.0412}{.0836}
+& \PECRPairCell{+.0268}{.0168}{.0368}
+& \PECRPairCell{+.0247}{.0130}{.0366}
+& \PECRPairCell{+.0128}{.0000}{.0258} \\
+\bottomrule
+\end{tabular}}
+\typeout{ATTRIBUTION-TABLE-WIDTH=\the\wd\PECRAttributionBox}
+\typeout{ACL-TEXT-WIDTH=\the\textwidth}
+\ifdim\wd\PECRAttributionBox>\textwidth
+  \PackageError{PECR-tables}{Attribution table exceeds the ACL text width}{%
+    Shorten the contrast labels; do not reduce the font below footnotesize.}
+\fi
+\usebox{\PECRAttributionBox}
+\par\vspace{4pt}
+\begin{minipage}{\textwidth}
+\footnotesize
+All representation names include G96. Edit scale appends the exact published
+columns $(t,h)$, where $h$ is the saved signed operand step and
+$t=h/(|v|+10^{-9})$. Construction metadata comprises
+$\{\mathbb{I}[d=1],\mu,t,h\}$; its model retains original-answer-aware G96
+but no edited-response dynamics. Full versus Raw + edit scale tests the
+remaining 14 derived columns, including confidence and joint-consistency
+features, not geometry alone. Intervals condition on saved OOF predictions
+and do not adjust for retraining variance or multiple comparisons.
+The historical shared-Qwen-G track is reported separately in the source report.
+\end{minipage}
+\end{table*}
+% ===== END TABLE =====
+
+Curve features improve error ranking on both response tracks (Table~\ref{tab:main}). Relative to Raw three-world, the AUROC gains are 1.40 percentage points for Qwen and 1.16 for DeepSeek; both paired intervals are above zero. AP also improves in both tracks. Because the comparator has the same calls and original-response block, the observed improvement is attributable to the evaluated representation change within this protocol, rather than to a larger response budget or cross-model original features.
+
+Both three-world predictors also outperform the original-response model. For Full Curve, the AUROC differences are $+.0810$ $[.0577,.1043]$ on Qwen and $+.0525$ $[.0359,.0696]$ on DeepSeek. These contrasts show that the intervention-based pipeline provides additional information, but they combine representation changes with extra calls. The equal-call Raw comparison is the more specific test of our method contribution.
+
+\subsection{Original-response provenance matters}
+Earlier DeepSeek experiments reused a Qwen-origin G96 block. Recomputing G96 from the same DeepSeek original response as the label and curve raises Curve AUROC from .8412 to .8502, with paired difference $+.0090$ $[.0023,.0162]$. Raw also improves, from .8259 to .8386. This source comparison supports generation alignment as an evaluation requirement; it does not assign the full improvement to Curve. The shared-origin track remains separately reproducible in the release.
+
+The Qwen repair similarly binds labels and features to its current three-world original response. The resulting strict queue retains all 1,735 earlier strict items and adds 407; 138 labels change within the common subset. We therefore compare methods within the corrected queue, rather than interpreting the difference from an older headline as a method gain. Performance and coverage must refer to the same response population.
+
+\subsection{What the benchmark result establishes}
+The main result is a repeated positive representation contrast across two model response tracks on a shared financial QA frame. The error detector is useful here because its ranking exploits how numerical answers respond to edits, beyond the raw three-world feature set. The evidence is narrower than universal factuality or deployment effectiveness. In particular, the predictor uses program-conditioned metadata, the edits have not been exhaustively validated for financial semantics, and repeated development has occurred on these groups. An archived MultiHiertt analysis gives a positive but uncertain cross-dataset contrast (Appendix~\ref{app:additional}); it provides a boundary check rather than an independent confirmation of the current aligned benchmark.
+
+\section{Ablation Studies}
+\label{sec:ablations}
+\begin{table*}[t]
+\centering\small
+\caption{Fixed component removals from Full Curve. Positive differences favor Full. Names denote the published column masks, not removal of every possible signal of that type. All intervals are paired source-group intervals, conditional on the saved OOF predictions.}
+\label{tab:ablation}
+\begin{tabular}{@{}lrlrl@{}}
+\toprule
+& \multicolumn{2}{c}{Qwen} & \multicolumn{2}{c}{DeepSeek, native G96}\\
+\cmidrule(lr){2-3}\cmidrule(l){4-5}
+Variant & AUROC & $\Delta$AUROC [95\% CI] & AUROC & $\Delta$AUROC [95\% CI]\\
+\midrule
+Full Curve & .8326 & --- & .8502 & ---\\
+Remove normalization & .8198 & +.0128 [.0050, .0206] & .8509 & $-$.0007 [$-$.0057, .0042]\\
+Remove curvature/asymmetry & .8344 & $-$.0018 [$-$.0091, .0058] & .8431 & +.0071 [.0015, .0128]\\
+Remove direction & .8209 & +.0117 [.0023, .0219] & .8451 & +.0051 [$-$.0004, .0104]\\
+\bottomrule
+\end{tabular}
+\end{table*}
+The feature families contribute differently across the two models (Table~\ref{tab:ablation}). On Qwen, removing the normalization or direction family reduces both AUROC and AP, with positive Full-minus-removal intervals. Removing curvature/asymmetry slightly increases AUROC, while the paired interval spans zero. On DeepSeek, removing curvature/asymmetry reduces AUROC by .0071 $[.0015,.0128]$ and AP by .0073 $[.0002,.0148]$. The other removals do not establish a loss.
+
+These results support the complete curve representation while qualifying a universal mechanism account. Direction information is particularly useful in the evaluated Qwen track, whereas the DeepSeek track benefits from the published curvature/asymmetry family. A higher point estimate for one removal does not trigger replacement of the specified Full method. The controls were completed as fixed post-hoc analyses, without multiplicity adjustment; they identify useful distinctions to test prospectively.
+
+\paragraph{Why retain a compact learner?}
+Earlier BERT-base residual models combined local edit--response text, global financial context, and numerical curves. Their AUROC point estimates were slightly above an earlier Curve HGB, but paired intervals crossed zero and AP decreased. Because those runs used the older Qwen cohort and targets, we retain them as historical architectural explorations in Appendix~\ref{app:neural}, rather than merging them into the corrected main comparison. The present evidence supports the response representation more clearly than additional neural architecture.
+
+\section{Case Studies}
+\label{sec:cases}
+\paragraph{From one trajectory to an error score.}
+The worked example in Figure~\ref{fig:three-world-method} has answers $6.69\%$, $7.19\%$, and $6.25\%$ under negative, original, and positive edits. Its forward differences therefore have opposite signs: $\delta^-=+0.50$ and $\delta^+=-0.94$. Raw and Curve assign OOF scores of .830 and .857 to the same incorrect original answer. This illustrates the feature-to-score computation, not a stand-alone demonstration of better classification; the evidence for incremental ranking comes from the paired cohort evaluation in Section~\ref{sec:results}.
+\begin{table*}[t]
+\centering\small
+\caption{Descriptive examples from the released Qwen track, checked against current answers and labels. The order is negative, original, positive; all five have expected forward direction ``up.'' Error labels follow Equation~\ref{eq:target}. These cases illustrate response patterns and do not certify the financial semantics of the edited documents.}
+\label{tab:cases}
+\begin{tabular}{@{}lrrrrll@{}}
+\toprule
+Item (short ID) & $a^-$ & $a^0$ & $a^+$ & Error & Unit & Observable pattern\\
+\midrule
+GPN/2008/p95--4 & 30.50 & 33.93 & 37.17 & 0 & \% & Similar two-sided change\\
+ETR/2013/p136--2 & 46,473.3 & 51,637 & 56,800.7 & 1 & thousands & Direction passes; answer wrong\\
+VNO/2010/p88--2 & 100 & 100 & 100 & 1 & index points & Both responses flat\\
+UPS/2012/p51--4 & 91.10 & 86.60 & $-$50.90 & 1 & \% & Both forward directions fail\\
+GIS/2018/p59--1 & 4.78 & 8.10 & 1.42 & 0 & million & Correct original; mixed changes\\
+\bottomrule
+\end{tabular}
+\end{table*}
+\paragraph{Directional agreement is informative but insufficient.}
+GPN/2008 has forward differences of 3.24 and 3.43, consistent with the saved upward direction, and a correct original answer. ETR/2013 is more revealing: its answers copy the edited operand scale, producing equal forward differences of 5,163.7 while the original answer is labeled incorrect. All three reported confidences are 1.0. An apparently smooth, directionally consistent response can therefore accompany an error. Original-response features and learned interactions are needed to interpret the curve.
+
+\paragraph{Flatness and asymmetry expose different behaviors.}
+VNO/2010 returns 100 in all three worlds; the original answer is wrong, while confidence falls from 1.0 to 0.0 in both edited worlds. UPS/2012 instead changes substantially in the wrong forward direction, with a particularly large positive-edit response. These are different failure signatures, even though a generic inconsistency score might only distinguish ``changed'' from ``unchanged.''
+
+\paragraph{A suspicious curve need not imply an original error.}
+GIS/2018 has a correct original answer but mixed directional behavior under the two edits. This case explains why \PECR{} is learned as an error-ranking model rather than a deterministic rule that marks every relation violation wrong. Together, the cases reinforce the lesson from \CST{}: behavior under a changed input is evidence about reliability, not a correctness certificate. They were chosen descriptively from a previously recorded case list; their frequencies are not population estimates. Full IDs and provenance are given in Appendix~\ref{app:cases}.
+
+\section{Conclusion}
+We study how controlled interventions can support the diagnosis of original-answer errors. \CST{} shows why answer flips require careful controls. Our benchmark makes the numerical counterpart reproducible by binding interventions, saved generations, response-specific labels, and grouped evaluation. Within this setting, program-conditioned response curves improve on a matched three-world predictor in both Qwen and DeepSeek tracks. Their component contributions vary across models, and individual examples show why neither agreement nor relation compliance guarantees correctness. The released inputs and numerical evaluation provide a concrete basis for testing these distinctions with future models and stronger construction controls.
+
+\section*{Limitations}
+\paragraph{Construction information and semantic validity.}
+The numerical interventions depend on annotated programs and operand alignments. The predictors retain construction direction and magnitude metadata, so this is an annotated benchmark setting rather than a general reference-free deployment method. Local table edits may conflict with prose or accounting identities. A 50-item review was reported by the project lead, but original completed forms and adjudication metadata are not part of the verified release; we do not use that report to estimate corpus-wide validity. PECR also lacks a matched neutral world, leaving its intervention-selectivity question open.
+
+\paragraph{Development selection and statistical scope.}
+The same FinQA development population supported several method attempts. Generation alignment, earlier parser and feature repairs, and some component controls were post-hoc. Grouped OOF evaluation prevents a group from crossing the fitted train/test boundary within a run, but cannot undo earlier method selection. Reported intervals condition on the fitted OOF predictions and are neither selection-adjusted nor estimates of retraining variance. The two model tracks share source questions, and a separate predictor is fitted per track. External source-group validation and stronger same-budget uncertainty baselines remain useful future tests.
+
+\paragraph{Targets, coverage, and use.}
+The numerical target policy does not convert units or rescale percentages and is not the official FinQA scoring procedure. The strict queues omit cases with unknown labels or unusable features; performance is conditional on their reported coverage. Unequal units remain in the main queue, with flags rather than semantic resolution. Model identifiers and runtime profiles describe the saved endpoints, not an independently verified upstream checkpoint. The artifact supports offline error ranking and reconstructable inputs; calibrated abstention, downstream review savings, and production routing have not been evaluated.
+
+\section*{Ethics and Reproducibility}
+The release contains numerical responses, derived features, labels, manifests, and evaluation code. It omits raw reasoning, credentials, model weights, and financial passages. Reconstruction requires users to obtain the underlying FinQA data under its applicable terms; the source notice is retained. Error-risk scores should support verification rather than replace it. We preserve failed conditions and historical results to make the empirical scope inspectable. The final numerical release is fixed to commit \texttt{f0c888e}; all main and ablation values come from its final saved OOF result set.
+
+% INLINE_BIBLIOGRAPHY_BEGIN
+% Overleaf uses the editable .bib file; the native single-file editor uses the fallback.
+\IfFileExists{references.bib}{\bibliography{references}}{
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{##1}
+
+\bibitem[{Chen and Mueller(2024)}]{chen-mueller-2024-quantifying}
+Jiuhai Chen and Jonas Mueller. 2024.
+\newblock \href {https://aclanthology.org/2024.acl-long.283/} {{Quantifying
+  Uncertainty in Answers from any Language Model and Enhancing their
+  Trustworthiness}}.
+\newblock In \emph{Proceedings of ACL}, pages 5186--5200.
+
+\bibitem[{Chen et~al.(2021)Chen, Chen, Smiley, Shah, Borova, Langdon, Moussa,
+  Beane, Huang, Routledge, and Wang}]{chen-etal-2021-finqa}
+Zhiyu Chen, Wenhu Chen, Charese Smiley, Sameena Shah, Iana Borova, Dylan
+  Langdon, Reema Moussa, Matt Beane, Ting-Hao Huang, Bryan Routledge, and
+  William~Yang Wang. 2021.
+\newblock \href {https://aclanthology.org/2021.emnlp-main.300/} {{FinQA: A
+  Dataset of Numerical Reasoning over Financial Data}}.
+\newblock In \emph{Proceedings of EMNLP}, pages 3697--3711.
+
+\bibitem[{Devlin et~al.(2019)Devlin, Chang, Lee, and
+  Toutanova}]{devlin-etal-2019-bert}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019.
+\newblock \href {https://aclanthology.org/N19-1423/} {{BERT: Pre-training of
+  Deep Bidirectional Transformers for Language Understanding}}.
+\newblock In \emph{Proceedings of NAACL-HLT}, pages 4171--4186.
+
+\bibitem[{Farquhar et~al.(2024)Farquhar, Kossen, Kuhn, and
+  Gal}]{farquhar-etal-2024-semantic}
+Sebastian Farquhar, Jannik Kossen, Lorenz Kuhn, and Yarin Gal. 2024.
+\newblock \href {https://www.nature.com/articles/s41586-024-07421-0}
+  {{Detecting hallucinations in large language models using semantic entropy}}.
+\newblock \emph{Nature}, 630:625--630.
+
+\bibitem[{Gao et~al.(2024)Gao, Zhang, Mouatadid, and Das}]{gao-etal-2024-spuq}
+Xiang Gao, Jiaxin Zhang, Lalla Mouatadid, and Kamalika Das. 2024.
+\newblock \href {https://aclanthology.org/2024.eacl-long.143/} {{SPUQ:
+  Perturbation-Based Uncertainty Quantification for Large Language Models}}.
+\newblock In \emph{Proceedings of EACL}, pages 2336--2346.
+
+\bibitem[{Gardner et~al.(2020)Gardner, Artzi, Basmov, Berant, Bogin, Chen,
+  Dasigi, Dua, Elazar, Gottumukkala, Gupta, Hajishirzi, Ilharco, Khashabi, Lin,
+  Liu, Liu, Mulcaire, Ning, Singh, Smith, Subramanian, Tsarfaty, Wallace,
+  Zhang, and Zhou}]{gardner-etal-2020-evaluating}
+Matt Gardner, Yoav Artzi, Victoria Basmov, Jonathan Berant, Ben Bogin, Sihao
+  Chen, Pradeep Dasigi, Dheeru Dua, Yanai Elazar, Ananth Gottumukkala, Nitish
+  Gupta, Hannaneh Hajishirzi, Gabriel Ilharco, Daniel Khashabi, Kevin Lin,
+  Jiangming Liu, Nelson~F. Liu, Phoebe Mulcaire, Qiang Ning, and 7 others.
+  2020.
+\newblock \href {https://aclanthology.org/2020.findings-emnlp.117/}
+  {{Evaluating Models' Local Decision Boundaries via Contrast Sets}}.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  EMNLP 2020}, pages 1307--1323.
+
+\bibitem[{Geng et~al.(2024)Geng, Cai, Wang, Koeppl, Nakov, and
+  Gurevych}]{geng-etal-2024-survey}
+Jiahui Geng, Fengyu Cai, Yuxia Wang, Heinz Koeppl, Preslav Nakov, and Iryna
+  Gurevych. 2024.
+\newblock \href {https://aclanthology.org/2024.naacl-long.366/} {{A Survey of
+  Confidence Estimation and Calibration in Large Language Models}}.
+\newblock In \emph{Proceedings of NAACL}, pages 6577--6595.
+
+\bibitem[{Mahaut et~al.(2024)Mahaut, Aina, Czarnowska, Hardalov, Müller, and
+  Màrquez}]{mahaut-etal-2024-factual}
+Matéo Mahaut, Laura Aina, Paula Czarnowska, Momchil Hardalov, Thomas Müller,
+  and Lluís Màrquez. 2024.
+\newblock \href {https://aclanthology.org/2024.acl-long.250/} {{Factual
+  Confidence of LLMs: on Reliability and Robustness of Current Estimators}}.
+\newblock In \emph{Proceedings of ACL}, pages 4554--4570.
+
+\bibitem[{Manakul et~al.(2023)Manakul, Liusie, and
+  Gales}]{manakul-etal-2023-selfcheckgpt}
+Potsawee Manakul, Adian Liusie, and Mark Gales. 2023.
+\newblock \href {https://aclanthology.org/2023.emnlp-main.557/} {{SelfCheckGPT:
+  Zero-Resource Black-Box Hallucination Detection for Generative Large Language
+  Models}}.
+\newblock In \emph{Proceedings of EMNLP}, pages 9004--9017.
+
+\bibitem[{Mirzadeh et~al.(2025)Mirzadeh, Alizadeh, Shahrokhi, Tuzel, Bengio,
+  and Farajtabar}]{mirzadeh-etal-2025-gsm}
+Iman Mirzadeh, Keivan Alizadeh, Hooman Shahrokhi, Oncel Tuzel, Samy Bengio, and
+  Mehrdad Farajtabar. 2025.
+\newblock \href
+  {https://proceedings.iclr.cc/paper_files/paper/2025/hash/ec2e7a896f8250986b3907f57621ce94-Abstract-Conference.html}
+  {{GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in
+  Large Language Models}}.
+\newblock In \emph{International Conference on Learning Representations}.
+
+\bibitem[{Ribeiro et~al.(2020)Ribeiro, Wu, Guestrin, and
+  Singh}]{ribeiro-etal-2020-beyond}
+Marco~Tulio Ribeiro, Tongshuang Wu, Carlos Guestrin, and Sameer Singh. 2020.
+\newblock \href {https://aclanthology.org/2020.acl-main.442/} {{Beyond
+  Accuracy: Behavioral Testing of NLP Models with CheckList}}.
+\newblock In \emph{Proceedings of ACL}, pages 4902--4912.
+
+\bibitem[{Schuster et~al.(2021)Schuster, Fisch, and
+  Barzilay}]{schuster-etal-2021-vitamin}
+Tal Schuster, Adam Fisch, and Regina Barzilay. 2021.
+\newblock \href {https://aclanthology.org/2021.naacl-main.52/} {{Get Your
+  Vitamin C! Robust Fact Verification with Contrastive Evidence}}.
+\newblock In \emph{Proceedings of NAACL-HLT}, pages 624--643.
+
+\bibitem[{Tan et~al.(2025)Tan, Sun, Liu, Su, Cao, Chen, Wang, Cai, Wang, Shen,
+  and Cheng}]{tan-etal-2025-consistent}
+Hexiang Tan, Fei Sun, Sha Liu, Du~Su, Qi~Cao, Xin Chen, Jingang Wang, Xunliang
+  Cai, Yuanzhuo Wang, Huawei Shen, and Xueqi Cheng. 2025.
+\newblock \href {https://aclanthology.org/2025.emnlp-main.238/} {{Too
+  Consistent to Detect: A Study of Self-Consistent Errors in LLMs}}.
+\newblock In \emph{Proceedings of EMNLP}, pages 4755--4765.
+
+\bibitem[{Vashurin et~al.(2025)Vashurin, Fadeeva, Vazhentsev, Rvanova, Vasilev,
+  Tsvigun, Petrakov, Xing, Sadallah, Grishchenkov, Panchenko, Baldwin, Nakov,
+  Panov, and Shelmanov}]{vashurin-etal-2025-benchmarking}
+Roman Vashurin, Ekaterina Fadeeva, Artem Vazhentsev, Lyudmila Rvanova, Daniil
+  Vasilev, Akim Tsvigun, Sergey Petrakov, Rui Xing, Abdelrahman Sadallah,
+  Kirill Grishchenkov, Alexander Panchenko, Timothy Baldwin, Preslav Nakov,
+  Maxim Panov, and Artem Shelmanov. 2025.
+\newblock \href {https://aclanthology.org/2025.tacl-1.11/} {{Benchmarking
+  Uncertainty Quantification Methods for Large Language Models with
+  LM-Polygraph}}.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  13:220--248.
+
+\bibitem[{Zhao et~al.(2022)Zhao, Li, Li, and
+  Zhang}]{zhao-etal-2022-multihiertt}
+Yilun Zhao, Yunxiang Li, Chenying Li, and Rui Zhang. 2022.
+\newblock \href {https://aclanthology.org/2022.acl-long.454/} {{MultiHiertt:
+  Numerical Reasoning over Multi Hierarchical Tabular and Textual Data}}.
+\newblock In \emph{Proceedings of ACL}.
+
+\end{thebibliography}
+
+}
+% INLINE_BIBLIOGRAPHY_END
+
+\clearpage
+\appendix
+\section{Exact Feature Specification}
+\label{app:features}
+The schema fixes 96 original-response columns, 17 raw-response columns, and 33 Curve columns. Table~\ref{tab:featurefamilies} summarizes their semantics. Column identity includes both index and name: the historical G96 schema contains two entries named \texttt{answer\_number\_count}, which are preserved in order. G96 is a hand-engineered input/response block and contains no learned graph embedding. The 4,096-dimensional hashed text block in an older export is not used in these 96/113/129-dimensional comparisons.
+
+\begin{table*}[t]
+\centering\small
+\caption{Exact Raw17 prefix and Curve33 extension. $U_{=}$ means all unit strings are equal, including the all-empty case; $U_{+}$ requires all units nonempty. $\mu$ is the preserved construction scalar.}
+\label{tab:featurefamilies}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Block and indices & Features in frozen order\\
+\midrule
+Raw, 1--6 & $\delta^+,\delta^-,|\delta^+|,|\delta^-|,d\delta^+,d\delta^-$\\
+Raw, 7--12 & $D^+,D^-,\ind[\delta^+=0],\ind[\delta^-=0],B,c^+-c^0$\\
+Raw, 13--17 & $c^- -c^0,U_{=},U_{+},\ind[d=1],\mu$\\
+Curve, 18--25 & $t,h,s^+,s^-,|s^+|,|s^-|,A,K$\\
+Curve, 26--33 & $s^+-s^-,Q^+,Q^-,C^+,C^-,M,S,N$\\
+\bottomrule
+\end{tabular}
+\end{table*}
+The remaining terms are
+\begin{align}
+ Q^\pm&=\ind[D^\pm=\ind[c^\pm\geq c^0]],\\
+ C^\pm&=\ind[|c^\pm-c^0|<.05],\\
+ M&=\frac{|\delta^+-\delta^-|}{|\delta^+|+|\delta^-|+\eps},\\
+ S&=\ind[\sgn(d\delta^+)=\sgn(d\delta^-)],\\
+ N&=\ind[|\delta^+|>\eps\ \land\ |\delta^-|>\eps].
+\end{align}
+The confidence-direction indicators reproduce the historical Boolean definitions; they are not assumed to be optimal calibration rules. Likewise, $M$, $A$, and $K$ have algebraic dependencies, especially away from the stabilizer. We keep the evaluated representation intact rather than interpreting each coordinate as an independent theoretical quantity.
+
+The normalization mask removes $t,s^+,s^-,|s^+|,|s^-|$ (five columns). The curvature/asymmetry mask removes $A,K,s^+-s^-,M$ (four). The direction mask removes $d\delta^+,d\delta^-,D^+,D^-,\ind[d=1],Q^+,Q^-,S$ (eight). The resulting total dimensions are 124, 125, and 121. Raw direction information is already present in the primary comparator. Removal names describe these masks and do not imply that correlated information disappears from every retained feature.
+
+\section{Coverage, Generation Alignment, and Provenance}
+\label{app:provenance}
+\begin{table*}[t]
+\centering\small
+\caption{Final released cohorts. Coverage is relative to 2,225 requested questions per model. Unknown labels and feature failures are retained outside the strict evaluation queue. Each track has the same 2,241-item candidate frame and 16 unrequested exclusions.}
+\label{tab:coverage}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Response track & Strict items & Groups & Errors & Correct & Coverage & Outside strict\\
+\midrule
+Qwen & 2,142 & 452 & 1,699 & 443 & 96.27\% & 83\\
+DeepSeek, native original features & 2,050 & 448 & 1,257 & 793 & 92.13\% & 175\\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table}[t]
+\centering\small
+\caption{Mutually exclusive requested-item partitions. The 16 unrequested construction exclusions per track are outside this table.}
+\label{tab:missing}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Requested-item status & Qwen & DeepSeek\\
+\midrule
+Valid features, known label & 2,142 & 2,050\\
+Valid features, unknown label & 52 & 54\\
+Invalid features, known label & 7 & 79\\
+Invalid features, unknown label & 24 & 42\\
+\midrule
+Total & 2,225 & 2,225\\
+\bottomrule
+\end{tabular}
+\end{table}
+All methods within a strict track have 100\% OOF coverage of that track. This is distinct from requested coverage (96.27\% and 92.13\%) and full-frame coverage. Raw HTTP completion, JSON presence, numeric parsing, feature availability, and known labels are separate fields in the released coverage ledger. An unavailable recorded collection status remains unknown even when offline parsing succeeds.
+
+\paragraph{Qwen alignment correction.}
+Earlier labels and original-response features could originate from a different Qwen generation than the three-world responses. The fixed correction starts from all 2,225 requested items, applies the existing label rule to the current original, and rebuilds G96 from that same response. The old/new generation comparison finds 1,091 equivalent, 1,077 changed, and 57 incomparable originals. The corrected strict cohort retains 1,735 old strict items and adds 407. Within the common subset, 138 labels change. Twenty-seven old structured original responses could not be recovered; those old records are not inputs to the corrected generation. This repair changes the analysis population and target alignment, so old and corrected headline differences do not isolate a method effect.
+
+\paragraph{DeepSeek feature source.}
+The native track uses the original response from the same merged DeepSeek generation as its labels and curve. Historical per-response label freeze hashes were not recorded; the binding is reconstructed from the saved label-generation recipe, label-file hash, item IDs, and merged ledger. Audit-added per-item hashes are marked post-hoc. A third released track retains the historical Qwen-origin G96 block and its default response fields. It provides a feature-source comparison, not an additional independent model track.
+
+\paragraph{Versioned implementation history.}
+Earlier development corrected answer-class polarity, a two-world feature path that included negative-world information, shared-array mutation that altered curve columns, and response-generation alignment. Main and component tables in this manuscript use only the final aligned release. Older outputs remain archived under their original versions. The final clean entry reproduces 90 fits: three tracks, six methods, five folds. The release also records an initial report-export failure, its repaired run, and fixed native-suite completion; none changes the selected seeds, labels, or samples in the final entry.
+
+\paragraph{Portability.}
+The verified numerical environment uses Python 3.13.13, NumPy 2.5.3, SciPy 1.18.1, and scikit-learn 1.9.0 with pinned transitive dependencies and single-thread execution. A moved package runs without server paths or sibling artifacts. Exact identity on untested platforms is not implied. The reconstruction tool checks the supplied FinQA file hash and decodes only approved question/evidence fields. It uses the original positive and negative formatters, whose surface conventions differ, and reproduces the saved canonical request objects. New generation, labeling, and feature extraction are distinct operations.
+
+\section{Additional Experimental Context}
+\label{app:additional}
+\paragraph{MultiHiertt.}
+An earlier versioned cross-dataset study collected 4,441 TRAIN and 504 DEV triples on MultiHiertt. The corrected V2 analysis uses 4,183 scoreable training triples and 476 DEV triples in 240 document-proxy groups. These are connected document proxies, not verified company/report identities. DEV contains 417 error and 59 correct targets under a dataset-specific numeric/scale policy. The correction followed an initial target-definition error; it remains a post-hoc analysis.
+
+\begin{table}[t]
+\centering\small
+\caption{Archived MultiHiertt V2 DEV analysis. Its target policy and feature adapter differ from the final FinQA release.}
+\label{tab:multi}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Method & AUROC & AP\\
+\midrule
+Original-response HGB & .6512 & .9195\\
+Two-world HGB & .6432 & .9236\\
+Raw three-world HGB & .7039 & .9415\\
+Curve HGB & .7309 & .9416\\
+\bottomrule
+\end{tabular}
+\end{table}
+The Curve-minus-Raw AUROC difference is $+.0270$ with document-proxy paired interval $[-.0087,.0672]$. Excluding two DEV items sharing a TRAIN document proxy gives $+.0294$ $[-.0078,.0673]$. Thus the direction of the contrast repeats, but its uncertainty includes zero. This result is not pooled with the two aligned FinQA tracks. Its scale-aware label policy also differs from Equation~\ref{eq:target}.
+
+\paragraph{Older relation-only analyses.}
+A separate FinQA TEST pilot had 139 scoreable items out of 157. Its relation-risk AUROC was .7337, but its gain over a fixed-majority-direction comparator was $+.0500$ $[-.0092,.1215]$. A later 565-item collection had only two worlds, with 357 paired evaluable items; the relation-augmented versus original-feature difference also had an interval spanning zero. Neither is a validation of the final three-world Curve representation. They are retained as historical context and are not used to select the current paper's headline result.
+
+\section{Exploratory Neural Alternatives}
+\label{app:neural}
+\begin{table*}[t]
+\centering\small
+\caption{Archived neural development results on the older 1,735-item Qwen cohort and its older labels. They are not directly comparable with Table~\ref{tab:main}.}
+\label{tab:neural}
+\begin{tabular}{@{}lrrl@{}}
+\toprule
+Historical method & AUROC & AP & Difference from historical Curve [95\% CI]\\
+\midrule
+Audited Curve HGB & .8138 & .9371 & ---\\
+Grounded Curve Residual Transformer & .8155 & .9346 & +.0017 [$-$.0113, .0154]\\
+Edit-Anchored Operation-Conditioned BERT & .8165 & .9348 & +.0027 [$-$.0106, .0168]\\
+\bottomrule
+\end{tabular}
+\end{table*}
+Two BERT-base designs \citep{devlin-etal-2019-bert} explored whether text can add information beyond the numerical curve. The \emph{Grounded Curve Residual Transformer} encodes local edit/answer context and global financial text, combines them with numerical features, and predicts a bounded correction to a Curve HGB logit. If $\mathbf h_i^{\rm loc}$ and $\mathbf h_i^{\rm glob}$ are the encoded views, its correction has the form
+\begin{align}
+ \mathbf z_i&=[\mathbf h_i^{\rm loc};\mathbf h_i^{\rm glob};\boldsymbol\phi_i],\\
+ b_i&=\logit(\widehat p_i^{\rm HGB}),\notag\\
+ \eta_i&=.75\tanh h_\theta(\mathbf z_i,\widehat p_i^{\rm HGB}),\\
+ \widehat p_i&=\sigmoid(b_i+\eta_i).
+ \label{eq:neural}
+\end{align}
+Training-fold HGB scores are cross-fitted within the outer training groups before fitting the correction; the outer test scores come from HGB fitted on the full outer training fold. This avoids training the correction on in-sample HGB predictions.
+
+The \emph{Edit-Anchored Operation-Conditioned} variant serializes each world's edit and answer together, adds operation-conditioned information, and uses an auxiliary within-item/batch response-alignment objective. The intended cross-source hard negatives matched by operation, unit, and edit magnitude were not implemented. Accordingly, these runs test the implemented text/numeric fusion rather than the stronger proposed negative-sampling mechanism.
+
+Neither neural candidate establishes an AUROC improvement over its contemporary Curve baseline, and both reduce AP. We therefore retain the compact Curve learner as the main implementation. These negative comparisons concern the particular architectures, training runs, and historical targets; they do not rule out better text encoders or fusion methods.
+
+\section{Historical CST Controls}
+\label{app:cst}
+The strict study in Section~\ref{sec:cst} generated both evidence directions from each claim and assigned the counter direction using the annotated stance offline. Thus generation-input blindness is distinct from gold-independent assignment. Its output parser received a documented post-freeze repair on cached records. The high-consensus ranking set has only three errors, which is insufficient for a strong predictive conclusion.
+
+A separate natural-reverse audit found 3,000/3,000 reverse prompts byte-identical to the paired original prompts. The corresponding agreement rates were 99.97\% for Qwen and 99.63\% for Ling. These observations cannot serve as a test of independent evidence directions.
+
+The exploratory E1 study reused 50 VitaminC items, five personas, and five conditions (new baseline, repeated baseline, two placebo forms, and counter-evidence) for 1,250 logical slots. The runtime model was recorded as \texttt{Ling-3.0-tiny}. Strict parsing accepted 587 outputs; a documented post-hoc relaxed parser recovered the other 663. On all 250 item--persona cases, each placebo flips 153 answers (61.2\%), repeated baseline flips none, and counter-evidence flips 174 (69.6\%). The paired CE-minus-placebo contrast is $+8.4$ percentage points with source-pair interval $[-21.9,+30.4]$. Zero observed repeated-baseline flips describe this collection and do not prove a population flip probability of zero.
+
+The two E1 placebo strings were identical for 48/50 items; 240/250 request pairs matched except for seed, and the relaxed-parser responses matched in all 250 pairs. They are not independent placebo replications. A later V3 construction package completed reviewer forms for 34 attempted items, but all failed the final construction requirements and no model calls were made. These records support a concrete control-design lesson: evidence contrast, placebo behavior, construction validity, and error ranking must be reported separately.
+
+\section{Case Provenance and Interpretation}
+\label{app:cases}
+Table~\ref{tab:cases} uses the previously recorded descriptive candidate list and checks the displayed answers against the current Qwen release. The full IDs are \texttt{GPN/2008/page\_95.pdf-4}, \texttt{ETR/2013/page\_136.pdf-2}, \texttt{VNO/2010/page\_88.pdf-2}, \texttt{UPS/2012/page\_51.pdf-4}, and \texttt{GIS/2018/page\_59.pdf-1}. Their source groups are the corresponding company/year strings. No raw financial passage or hidden reasoning is reproduced.
+
+The ETR case's returned values equal the edited operand values: $51{,}637$, $56{,}800.7$, and $46{,}473.3$. This supports describing the observed scale-copying pattern, but does not identify the model's internal reasoning. The GIS original is correct under the published numerical policy despite a failed positive-direction response. These examples are deliberately heterogeneous; they motivate learning a risk score and preserving context, rather than defining correctness by monotonicity alone.
+
+\end{document}

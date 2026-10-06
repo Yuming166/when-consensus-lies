@@ -1,0 +1,89 @@
+{
+  "algorithm": "SHA-256; canonical JSON uses UTF-8, ensure_ascii=False, sorted keys, compact separators, allow_nan=False",
+  "dataset": {
+    "decoded_fields": [
+      "id",
+      "qa.question",
+      "pre_text",
+      "post_text",
+      "table"
+    ],
+    "expected_file_sha256": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6",
+    "gold_and_program_fields_decoded": false,
+    "name": "FinQA TRAIN"
+  },
+  "generated_artifacts": {
+    "api_credentials_or_checkpoints_in_package": false,
+    "cohort_rows": 1699,
+    "combined_request_hashes": 9888,
+    "complete_original_financial_records_in_package": false,
+    "deepseek_request_hashes": 4791,
+    "edit_spec_schema_sha256": "75562412d61b26ca41f1765b25a5a36892172befaff95b70ee9c93f9139c3e4b",
+    "qwen_request_hashes": 5097,
+    "raw_model_responses_or_answers_in_package": false,
+    "reconstruction_script_sha256": "41313e82bb915ef1abdd47a68060c80e614dfe2352b777841d6fd3b8911b98b8",
+    "text_diffs_are_span_patches_not_complete_passages": true
+  },
+  "project_root_relative_sources": [
+    {
+      "path": "pecr_qwen_repaired_candidate_1699_v1_20261006/private_source/cohort_1699.jsonl",
+      "role": "frozen_repaired_three_worlds_qwen_cohort",
+      "sha256": "c09986b465d8ed20923ba42b5e8af97ff445871bf4fd9c935520086fc7717c96"
+    },
+    {
+      "path": "pecr_deepseek_v41_flash_report_oof_v1_20261006/private_source/INPUTS_1597.jsonl",
+      "role": "deepseek_track_world_input_snapshot",
+      "sha256": "1b03513737317883ee4eb625494f7ec8b3c03c033b57fc53e6a3a4932942a0bf"
+    },
+    {
+      "path": "pecr_gpt6_astra_world_completion_v3_20261005/MERGED_THREE_WORLD_INPUTS.jsonl",
+      "role": "construction_merge",
+      "sha256": "4a1eadbdeb5212914cc0ce8d6a04e3812f22dac23a329133f36f32099636441b"
+    },
+    {
+      "path": "pecr_gpt6_astra_world_completion_v3_20261005/MANIFEST.json",
+      "role": "construction_manifest",
+      "sha256": "d17929fe93438fc86f32a86c93b561c3d05202bd0abac50cda90d4a26f6217e4"
+    },
+    {
+      "path": "pecr_qwen_repaired_candidate_1699_v1_20261006/audit/HUMAN_REVIEW_BLINDED_1699.csv",
+      "role": "user_reported_human_review_csv",
+      "sha256": "36fdbe67594fc21a1bd4724e00c0268dec20eb94068e2bdee812341f6c20e0e0"
+    },
+    {
+      "path": "pecr_qwen_repaired_candidate_1699_v1_20261006/protocol/prompt_templates.json",
+      "role": "qwen_request_profile_source",
+      "sha256": "950fe3796b8021dbb2ccbc060aa95dbab3afe4b6ccf9c0a8b5ee0d5c3a63ade0"
+    },
+    {
+      "path": "pecr_qwen_repaired_candidate_1699_v1_20261006/src/collect.py",
+      "role": "qwen_collector_source",
+      "sha256": "ae2cee81d49f9a331b39f1e7fc8002de66385f216ebf9b58c4a63b43e241e509"
+    },
+    {
+      "path": "pecr_deepseek_v41_flash_report_oof_v1_20261006/protocol/FIXED_SPEC.json",
+      "role": "deepseek_spec_source",
+      "sha256": "3bc338258b10c27014ca8749f94f3cdf93b6dea328a1d99991287a12a4028269"
+    },
+    {
+      "path": "pecr_deepseek_v41_flash_report_oof_v1_20261006/protocol/prompt_templates.json",
+      "role": "deepseek_request_profile_source",
+      "sha256": "950fe3796b8021dbb2ccbc060aa95dbab3afe4b6ccf9c0a8b5ee0d5c3a63ade0"
+    },
+    {
+      "path": "pecr_deepseek_v41_flash_report_oof_v1_20261006/src/collect.py",
+      "role": "deepseek_collector_source",
+      "sha256": "29df0c68cab31c106ea9a1b727520a41159f6f81da1cd49737c24dc17e81a566"
+    },
+    {
+      "path": "private response records (hash fields only; not redistributed)",
+      "role": "qwen_saved_request_identity_manifest",
+      "sha256": "312d07ef7244b390275e6cdb28b3a34fa10dcb049854f4b2a0d1bd11aaa66576"
+    },
+    {
+      "path": "private response records (hash fields only; not redistributed)",
+      "role": "deepseek_saved_request_identity_manifest",
+      "sha256": "33f862ee4d2449e27e6e8387a2adc44b2a96c4a76be1ad327031ee9597b87ca1"
+    }
+  ]
+}

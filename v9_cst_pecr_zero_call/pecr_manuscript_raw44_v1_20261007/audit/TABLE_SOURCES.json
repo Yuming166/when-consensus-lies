@@ -1,0 +1,26 @@
+{
+  "sources": {
+    "pecr_raw44_attribution_controls_v1_20261007/results/RESULTS.json": "e5c892fd16932e1966f8e25dac55ab7c16c82281e5a145f26e6e425c000a59af",
+    "pecr_two_track_benchmark_release_v2_20261007/results/primary_contrasts.csv": "93c00108082556f55c2c78f4deafec17cc5a3d524aee6c9de1dba515fdf60ef4",
+    "pecr_two_track_benchmark_release_v2_20261007/reference/source_reports/two_track_component_ablation.json": "a72624e9d16368c0297b72135937f5bf0ad6ce6782a4d2a179f0f15b72beca17",
+    "pecr_two_track_benchmark_release_v2_20261007/coverage/coverage_summary.json": "dc3c2e6b94296c43674ab3bf4210802ee4535db7fb6b8049ba69747f37a62914",
+    "pecr_two_track_benchmark_release_v2_20261007/schemas/feature_schema.json": "0df60d612d3abbc20d089d7252a1f5e57839276298f23304867109f51d00b984",
+    "pecr_two_track_benchmark_release_v2_20261007/data/qwen35_features_label_blind.npz": "1799411d21dff1d04c2da38d19773036678db641baa46622671d1d35b076ef26",
+    "pecr_two_track_benchmark_release_v2_20261007/data/deepseek_v41_features_label_blind.npz": "ffc46e5edcf807a4a3e89ecd40906761ec86cfd670e39a50e922fe1015f7fc9f",
+    "pecr_two_track_benchmark_release_v2_20261007/labels/qwen35_labels.csv": "407c8898097681ffa883a88ca97cffad8dfa1047089cf70d58ef2f77696e38ce",
+    "pecr_two_track_benchmark_release_v2_20261007/labels/deepseek_v41_labels.csv": "f80dc3db9cf43711c55cdc2d273deb47fc65cb89f8e5ef5d389181e8beb3060f",
+    "pecr_two_track_benchmark_release_v2_20261007/tables/raw44_component_ablation.tex": "7319c5f12d02f9033f09ad0cb365a641eda6fe02fc10b8ccb99a4fb120852df8"
+  },
+  "outputs": {
+    "tables/legacy_controls.tex": "3104a2ccf4da95ebcd1d8da23c88207e84fa2825d9645fcd2d6c0f576eb72d47",
+    "tables/frame.tex": "d5570291c4cb9e5563db912d6da870c3ab506b2d9f08e7ea5d1e4840d7eb929b",
+    "tables/coverage.tex": "2a7d40240b3246fa6f4fa0dae297980b8d4a4a860c70b41340cb00364f77892b",
+    "tables/ablations.tex": "720e177b39fd5bd6f6b058d1e0819f4349a87e9b33eae8923f537e2e857a03c4",
+    "tables/main_results.tex": "294013960e7252aecdee4268ef887e30c72a3215984c6489936334cb7e073013",
+    "tables/patterns.tex": "37d9356b76ffe3233379ffe2d3979b36e3ec57b60e0411e460752a46649dd472",
+    "tables/primary_contrasts.tex": "a5641f035d07a2ccdb6447e9348b646f7d1d9b47cd8e43b73c7576390ccfef4a",
+    "tables/controls.tex": "1519efa45df1c67115dabc909ec8e4bc8452d99ed637d1170354e83bbd794bde",
+    "tables/controls_ap.tex": "68426567ee66efa21421914b7d4c57eba328367ad2ac649f8baa995d08e65c8f",
+    "tables/ablations_ap.tex": "971f72ab53d98ff35413dcb0a37d4019f54b2a349c9243fac092b9d2fceafca4"
+  }
+}

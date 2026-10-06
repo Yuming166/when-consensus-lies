@@ -1,0 +1,442 @@
+{
+  "status": "PASS",
+  "source_svg_sha256": "9ff799b1c683eb6ea5b12986428156b4109e3e30d7129918a98dda155a6ca98b",
+  "source_schema_sha256": "0df60d612d3abbc20d089d7252a1f5e57839276298f23304867109f51d00b984",
+  "extractor_sha256": "81c3738b31ee1398645a1ee0b95efb159b8e8cd64056476548a2bb9d92f062f1",
+  "upper_panels_native_objects_identical": true,
+  "risk_panel_unchanged_except_fusion_formula": true,
+  "arithmetic44_columns": 44,
+  "column_order": [
+    "original",
+    "positive",
+    "negative",
+    "joint16",
+    "question4"
+  ],
+  "feature_dimensions": {
+    "G96": 96,
+    "R18": 18,
+    "Arithmetic44": 44,
+    "fused": 158
+  },
+  "vectors_only": true,
+  "unique_element_ids": true,
+  "observed_example_numbers_added": false,
+  "new_model_calls": 0,
+  "new_fits": 0,
+  "gold_or_holdout_read": false,
+  "size_pt": [
+    218.27,
+    507
+  ],
+  "text_and_formula_bounds": [
+    {
+      "text": "3 Arithmetic response–evidence alignment",
+      "bounds": [
+        20.5,
+        235.7265625,
+        148.85508593749998,
+        242.0917109375
+      ],
+      "font_size": 6.85
+    },
+    {
+      "text": "Three worlds, numeric answers and edited-cell coordinates",
+      "bounds": [
+        40.141828125,
+        248.406359375,
+        178.25817187500002,
+        252.95028125
+      ],
+      "font_size": 5.3
+    },
+    {
+      "text": "One-step candidates",
+      "bounds": [
+        34.218812500000006,
+        260.923375,
+        88.78118749999999,
+        266.105125
+      ],
+      "font_size": 5.6
+    },
+    {
+      "text": "x",
+      "bounds": [
+        29.520898437499998,
+        276.52015625,
+        31.2791015625,
+        278.0
+      ],
+      "font_size": 3.5
+    },
+    {
+      "text": "y",
+      "bounds": [
+        33.822539062500006,
+        280.52015625,
+        35.57746093750001,
+        282.65953125
+      ],
+      "font_size": 3.5
+    },
+    {
+      "formula": "x_u^w+x_v^w,\\quad x_u^w-x_v^w",
+      "bounds": [
+        45.64708775772095,
+        269.547,
+        92.35291224227905,
+        275.9107296875
+      ],
+      "font_size": 6.1
+    },
+    {
+      "formula": "x_u^w/x_v^w\\quad [\\times100\\ \\mathrm{if}\\ \\%]",
+      "bounds": [
+        46.16925499661255,
+        277.8755,
+        91.83074500338745,
+        283.76977421875
+      ],
+      "font_size": 5.65
+    },
+    {
+      "text": "Match saved answer",
+      "bounds": [
+        125.43056250000001,
+        260.991625,
+        179.5694375,
+        265.065625
+      ],
+      "font_size": 5.6
+    },
+    {
+      "formula": "d_w(r)=\\frac{|r(E^w)-a^w|}{\\tau_w}",
+      "bounds": [
+        135.43794312316894,
+        267.64,
+        181.56205687683106,
+        277.0839515625
+      ],
+      "font_size": 7.0
+    },
+    {
+      "formula": "\\tau_w=\\max(0.01,10^{-4}|a^w|)",
+      "bounds": [
+        128.397633384552,
+        278.249,
+        186.802366615448,
+        284.52180625
+      ],
+      "font_size": 5.9
+    },
+    {
+      "text": "Percent triplets also test 100(x/y − 1); at most 128 shared cells.",
+      "bounds": [
+        48.50169921875,
+        288.9061328125,
+        166.49830078125,
+        292.8944921875
+      ],
+      "font_size": 4.25
+    },
+    {
+      "formula": "M^w=\\{r\\in\\mathcal{R}:d_w(r)\\leq1\\},\\quad r=(o,u,v),\\ u\\ne v",
+      "bounds": [
+        40.40625343774414,
+        294.817,
+        174.59374656225586,
+        301.225415625
+      ],
+      "font_size": 7.1
+    },
+    {
+      "text": "Original",
+      "bounds": [
+        38.701750000000004,
+        310.00575,
+        56.29825,
+        314.51025
+      ],
+      "font_size": 4.8
+    },
+    {
+      "formula": "M^{0}",
+      "bounds": [
+        42.921395646972655,
+        314.681,
+        52.078604353027345,
+        320.972709375
+      ],
+      "font_size": 7.1
+    },
+    {
+      "text": "Positive",
+      "bounds": [
+        97.567197147651,
+        310.06425,
+        115.43280285234898,
+        313.55625
+      ],
+      "font_size": 4.8
+    },
+    {
+      "formula": "M^{+}",
+      "bounds": [
+        101.52379564697266,
+        315.32,
+        111.47620435302734,
+        320.9710453125
+      ],
+      "font_size": 7.1
+    },
+    {
+      "text": "Negative",
+      "bounds": [
+        155.770322147651,
+        310.06425,
+        175.229677852349,
+        314.51025
+      ],
+      "font_size": 4.8
+    },
+    {
+      "formula": "M^{-}",
+      "bounds": [
+        160.56107064697267,
+        316.314,
+        170.43892935302733,
+        320.950078125
+      ],
+      "font_size": 7.1
+    },
+    {
+      "text": "24",
+      "bounds": [
+        23.651078124999998,
+        335.80096875000004,
+        29.348921875,
+        339.3
+      ],
+      "font_size": 5.4
+    },
+    {
+      "text": "World alignment",
+      "bounds": [
+        33.5,
+        335.8568828125,
+        72.1045859375,
+        340.4418203125
+      ],
+      "font_size": 4.95
+    },
+    {
+      "text": "3 worlds × 8 summaries",
+      "bounds": [
+        23.183218749999998,
+        344.19375,
+        74.81678125,
+        347.55821875
+      ],
+      "font_size": 4.6
+    },
+    {
+      "text": "log count · unique · edit",
+      "bounds": [
+        25.895312500000003,
+        351.978984375,
+        72.1046875,
+        356.147109375
+      ],
+      "font_size": 4.5
+    },
+    {
+      "text": "row · column · year",
+      "bounds": [
+        30.9497421875,
+        359.922140625,
+        67.0502578125,
+        363.905015625
+      ],
+      "font_size": 4.3
+    },
+    {
+      "text": "unit known · compatible",
+      "bounds": [
+        26.7599296875,
+        367.722140625,
+        71.2400703125,
+        371.654625
+      ],
+      "font_size": 4.3
+    },
+    {
+      "text": "16",
+      "bounds": [
+        84.640109375,
+        335.80096875000004,
+        90.35989062499999,
+        339.3793125
+      ],
+      "font_size": 5.4
+    },
+    {
+      "text": "Cross-world",
+      "bounds": [
+        94.5,
+        335.76015624999997,
+        123.11484375,
+        339.4609375
+      ],
+      "font_size": 5.0
+    },
+    {
+      "formula": "I=M^0\\cap M^+\\cap M^-",
+      "bounds": [
+        85.22083116210938,
+        343.804,
+        136.77916883789064,
+        349.6734
+      ],
+      "font_size": 6.4
+    },
+    {
+      "formula": "J=\\frac{|I|}{\\max(1,|M^0\\cup M^+\\cup M^-|)}",
+      "bounds": [
+        84.5,
+        355.62086388002615,
+        137.5,
+        363.93732935223187
+      ],
+      "font_size": 5.878477252980517
+    },
+    {
+      "text": "switches · joint fit · context",
+      "bounds": [
+        87.8459375,
+        367.888125,
+        134.1540625,
+        371.641875
+      ],
+      "font_size": 4.0
+    },
+    {
+      "text": "4",
+      "bounds": [
+        149.32803125,
+        335.887875,
+        151.67196875000002,
+        339.3
+      ],
+      "font_size": 5.4
+    },
+    {
+      "text": "Question cues",
+      "bounds": [
+        157.5,
+        335.83295312499996,
+        190.811578125,
+        339.751421875
+      ],
+      "font_size": 4.9
+    },
+    {
+      "text": "?",
+      "bounds": [
+        151.701875,
+        348.238125,
+        155.298125,
+        353.3
+      ],
+      "font_size": 7.0
+    },
+    {
+      "text": "read · ratio",
+      "bounds": [
+        163.77325,
+        347.56425,
+        186.22674999999998,
+        351.05625
+      ],
+      "font_size": 4.8
+    },
+    {
+      "text": "change",
+      "bounds": [
+        167.32,
+        355.56425,
+        182.68,
+        360.01025
+      ],
+      "font_size": 4.8
+    },
+    {
+      "text": "comparison",
+      "bounds": [
+        162.854125,
+        363.56425,
+        187.14587500000002,
+        367.954
+      ],
+      "font_size": 4.8
+    },
+    {
+      "text": "Arithmetic44 = 24 + 16 + 4",
+      "bounds": [
+        38.22021484375,
+        381.9981640625,
+        119.77978515625,
+        385.48695312499996
+      ],
+      "font_size": 5.25
+    },
+    {
+      "text": "Raw16 + (h, t)",
+      "bounds": [
+        148.9865,
+        384.28974999999997,
+        188.01350000000002,
+        388.171
+      ],
+      "font_size": 4.8
+    },
+    {
+      "formula": "R18",
+      "bounds": [
+        163.32240644836426,
+        389.312,
+        173.67759355163574,
+        393.866
+      ],
+      "font_size": 6.6
+    },
+    {
+      "text": "Numeric correspondence ≠ verified model reasoning",
+      "bounds": [
+        57.1898828125,
+        399.724140625,
+        160.8101171875,
+        403.947109375
+      ],
+      "font_size": 4.5
+    },
+    {
+      "formula": "\\mathbf{z}=\\operatorname{concat}(G96,R18,Arithmetic44)\\in\\mathbb{R}^{158}",
+      "bounds": [
+        49.05139856567382,
+        434.5,
+        168.94860143432618,
+        442.00126562500003
+      ],
+      "font_size": 7.0
+    }
+  ],
+  "outputs": {
+    "panel3_arithmetic44.png": "06977b9ac64dbb112e023d10c575b0deff9c962b61265b87a796a618526e5d87",
+    "pecr_method_raw44_v1.pdf": "0746da598a7fee93c90dbaecbe80da2754fcc4d736c9d92ce27280b0e49110d3",
+    "pecr_method_raw44_v1.svg": "92fb8aa0825f4bfcbffea428328e9e84c542995cb66c296c7d5fd1b087e7c2d4",
+    "panel3_arithmetic44.svg": "5024b306492c1503d41948040811e447b7a37b459e1f99cc2549f002095c375a",
+    "pecr_method_raw44_v1.png": "e3e21a7790ba6f50f775f0f67bf5d7e44dace0aef2c6d2cc62adce9eee3754ab",
+    "pecr_method_raw44_v1_outlined.svg": "7b4249fc6bd228bc629ed29c9c60d466be1f2a11883e9fd16b004645e773f857"
+  }
+}

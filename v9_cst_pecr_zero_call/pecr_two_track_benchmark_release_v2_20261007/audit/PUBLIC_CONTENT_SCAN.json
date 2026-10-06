@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "api_key_or_bearer_secret_patterns_absent": true,
+    "complete_financial_records_and_passages_absent": true,
+    "complete_instantiated_prompts_absent_from_release": true,
+    "full_sentence_text_patches_absent": true,
+    "raw_answer_or_response_body_fields_absent_from_request_manifest": true
+  },
+  "files_scanned": 61,
+  "intervention_delta_disclosure": {
+    "inserted_characters_total": 8743,
+    "largest_inserted_fragment_characters": 328,
+    "patches_identical_to_full_modified_source_line": 0,
+    "table_cell_updates": "Only changed cell values or short labels are stored; complete tables are not included.",
+    "text_span_patch_count": 2711
+  },
+  "raw_model_responses_or_call_payloads_in_public_package": false,
+  "status": "PASS"
+}

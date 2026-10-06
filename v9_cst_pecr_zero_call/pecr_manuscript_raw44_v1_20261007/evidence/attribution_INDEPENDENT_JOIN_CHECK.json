@@ -1,0 +1,14 @@
+{
+  "qwen35": {
+    "ID_group_fold_join": true,
+    "unique_IDs": true,
+    "no_group_overlap": true,
+    "exact_three_primary_refits": true
+  },
+  "deepseek_v41": {
+    "ID_group_fold_join": true,
+    "unique_IDs": true,
+    "no_group_overlap": true,
+    "exact_three_primary_refits": true
+  }
+}

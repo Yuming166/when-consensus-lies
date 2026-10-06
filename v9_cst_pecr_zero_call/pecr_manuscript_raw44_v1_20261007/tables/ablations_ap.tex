@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\small
+\caption{Fixed component removals from Arithmetic44 (AP). Differences are full PECR minus the ablated variant.}
+\label{tab:ablation-ap}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrlrl@{}}
+\toprule
+& & \multicolumn{2}{c}{Qwen3.5-4B} & \multicolumn{2}{c}{DeepSeek V4.1 Flash}\\\cmidrule(lr){3-4}\cmidrule(l){5-6} Variant & Dim. & AP & $\Delta$ [adjusted 95\% CI] & AP & $\Delta$ [adjusted 95\% CI]\\
+\midrule
+Full PECR & 158 & 0.9399 & --- & 0.8297 & ---\\
+w/o worldwise (24) & 134 & 0.9319 & +0.0080 [-0.0005,+0.0182] & 0.8326 & -0.0029 [-0.0144,+0.0085]\\
+w/o cross-world (16) & 142 & 0.9420 & -0.0021 [-0.0063,+0.0024] & 0.8185 & +0.0112 [+0.0021,+0.0216]\\
+w/o question cues (4) & 154 & 0.9425 & -0.0026 [-0.0060,+0.0006] & 0.8285 & +0.0012 [-0.0068,+0.0097]\\
+\bottomrule
+\end{tabular}
+\par\vspace{3pt}\begin{minipage}{\textwidth}\footnotesize All variants retain the same Raw block. Intervals use 5,000 paired source-group draws and Bonferroni correction across three block removals in two tracks (six comparisons per metric). A positive difference favors retaining the block.\end{minipage}
+\end{table*}

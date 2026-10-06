@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "qwen_attempted": 1699,
+  "qwen_strict": 1597,
+  "deepseek_attempted": 1597,
+  "deepseek_strict": 1537,
+  "same_generation_label_response_hash_binding": true,
+  "strict_shared_id_group_fold_match": true,
+  "strict_human_review_all_valid_inherited_direction": true,
+  "source_hgb_parameters_identical": true,
+  "features_finite": true,
+  "no_raw_response_or_evidence_body_copied": true
+}

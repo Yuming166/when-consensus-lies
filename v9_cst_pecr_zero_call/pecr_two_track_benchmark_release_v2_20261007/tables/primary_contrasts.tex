@@ -1,0 +1,17 @@
+% Intervals carried forward from each immutable source report; see results/primary_contrasts.csv.
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{llrr}
+\toprule
+Track & Contrast & $\Delta$ AUROC & Adjusted 95\% CI \\
+\midrule
+Qwen3.5-4B & Raw+Arithmetic44 - Raw & +0.0259 & [+0.0060, +0.0453] \\
+Qwen3.5-4B & Raw+Arithmetic44 - Curve & +0.0265 & [+0.0067, +0.0456] \\
+DeepSeek V4.1 Flash & Raw+Arithmetic44 - Raw & +0.0250 & [+0.0125, +0.0378] \\
+DeepSeek V4.1 Flash & Raw+Arithmetic44 - Curve & +0.0229 & [+0.0087, +0.0378] \\
+\bottomrule
+\end{tabular}
+\caption{Paired source-group bootstrap contrasts from the saved OOF scores. The adjustment families follow the original track-specific fixed analyses and therefore differ; intervals condition on OOF predictions.}
+\label{tab:pecr-primary-contrasts}
+\end{table*}

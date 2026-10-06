@@ -1,0 +1,15 @@
+{
+  "original_attachment_sha256": "1ef6964e7d7449e80aacf94a672ad84f6ebb38f32d4e640020c1a8e466f3c295",
+  "original_preserved": true,
+  "frozen_release_sources_unchanged": true,
+  "all_cross_references_defined": true,
+  "unique_labels": true,
+  "new_90_fixed_fits_pass": true,
+  "six_primary_OOF_arrays_exact": true,
+  "no_overfull_boxes": true,
+  "no_undefined_citations_or_refs": true,
+  "no_missing_characters": true,
+  "figures": "Three placeholders; no final artwork claimed",
+  "new_API_calls": 0,
+  "gold_or_holdout_read_this_revision": false
+}

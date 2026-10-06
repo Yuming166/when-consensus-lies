@@ -1,0 +1,181 @@
+{
+  "algorithm": "SHA-256",
+  "path_policy": "relative to project root; attachment shown by descriptive name only",
+  "sources": [
+    {
+      "path_relative_to_project": "pecr_qwen_repaired_candidate_1699_v1_20261006/data/STRICT_MATRICES.npz",
+      "role": "qwen35",
+      "sha256": "f24ba0f6f5dd42c729405df19a37683f369091597df527789d1673f469fcb041"
+    },
+    {
+      "path_relative_to_project": "pecr_qwen_repaired_candidate_1699_v1_20261006/data/labels_current_original.csv",
+      "role": "qwen35",
+      "sha256": "dc9e8ec7c22bea40c724588f73e314308e993b1a17c396c071ac65a28cbded0b"
+    },
+    {
+      "path_relative_to_project": "pecr_qwen_repaired_candidate_1699_v1_20261006/data/COVERAGE_1699.jsonl",
+      "role": "qwen35",
+      "sha256": "b46b8a5e277f51c162364420eeaa128f7eb999c835131c101bd6a18dc71991aa"
+    },
+    {
+      "path_relative_to_project": "pecr_qwen_repaired_candidate_1699_v1_20261006/data/features_label_blind_1699.jsonl",
+      "role": "qwen35",
+      "sha256": "983a531bfcb4d71feca72de7cc87a391fb676a91f391d7ec2438bce3324f3982"
+    },
+    {
+      "path_relative_to_project": "pecr_qwen_repaired_candidate_1699_v1_20261006/protocol/EXPERIMENT_SPEC.json",
+      "role": "qwen35",
+      "sha256": "b637fa3daaaf53211bdbe017bff085e2c08026bed17a2a342152b4b7aaa50cad"
+    },
+    {
+      "path_relative_to_project": "pecr_qwen_repaired_candidate_1699_v1_20261006/protocol/schema.json",
+      "role": "qwen35",
+      "sha256": "6b4d07ff1e761b13ef1b8cb2e9c658c52e13de77ea14be8ec10f8649cb43c951"
+    },
+    {
+      "path_relative_to_project": "pecr_qwen_repaired_candidate_1699_v1_20261006/audit/FINAL_EXPERIMENT_VALIDATION.json",
+      "role": "qwen35",
+      "sha256": "85857c62f566d4248226fd9f5e61ba1bbb85068ca314861af1c670da1c76dfd2"
+    },
+    {
+      "path_relative_to_project": "pecr_raw_arithmetic_full_and_chain_screen_v1_20261006/data/phaseA_FEATURES.npz",
+      "role": "qwen35",
+      "sha256": "9a1c91beff20a066d5f06b38f6f94068ad91acfe5e107ab6bf7d73072faadb79"
+    },
+    {
+      "path_relative_to_project": "pecr_raw_arithmetic_full_and_chain_screen_v1_20261006/results/phaseA/OOF.npz",
+      "role": "qwen35",
+      "sha256": "c964271098d772bcdd64569df7e32d880dbcfbf97d582edc98a02edc7bd2fea0"
+    },
+    {
+      "path_relative_to_project": "pecr_raw_arithmetic_full_and_chain_screen_v1_20261006/results/phaseA/METRICS.json",
+      "role": "qwen35",
+      "sha256": "b42286ee822d919f7916f91b565260c5e94cbef1bd09f0f26e505acd116ac692"
+    },
+    {
+      "path_relative_to_project": "pecr_raw_arithmetic_full_and_chain_screen_v1_20261006/protocol/HGB_PARAMS.json",
+      "role": "qwen35",
+      "sha256": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482"
+    },
+    {
+      "path_relative_to_project": "pecr_raw_arithmetic_full_and_chain_screen_v1_20261006/audit/phaseA_FINAL_VALIDATION.json",
+      "role": "qwen35",
+      "sha256": "10337974ccdf95296da14cf381f62f2389bc5dba2793a0e7ba0666411c014ba2"
+    },
+    {
+      "path_relative_to_project": "pecr_deepseek_v41_flash_report_oof_v1_20261006/data/FEATURES_LABEL_BLIND.npz",
+      "role": "deepseek_v41",
+      "sha256": "a40d2df3ac76ef16a8b69f10042600efd0837a59fbd4a5da83794c4523cc3fa8"
+    },
+    {
+      "path_relative_to_project": "pecr_deepseek_v41_flash_report_oof_v1_20261006/data/LABELS_NATIVE_ORIGINAL_ALL_1597.csv",
+      "role": "deepseek_v41",
+      "sha256": "945f730b17b78e72169b95c43321eb2e09255c45b93e763a3623b83c9442636c"
+    },
+    {
+      "path_relative_to_project": "pecr_deepseek_v41_flash_report_oof_v1_20261006/data/FEATURE_FRAME_ALL_1597.jsonl",
+      "role": "deepseek_v41",
+      "sha256": "666e90ae1c58645b09511d5be2cf5a6a7a9c2b02e6bd13427c33c5d9c6ea3e88"
+    },
+    {
+      "path_relative_to_project": "pecr_deepseek_v41_flash_report_oof_v1_20261006/results/OOF.npz",
+      "role": "deepseek_v41",
+      "sha256": "e70d4fea9f91a6beca0176a39083a53f994b580f918f5dcd23e83aa8b3136a9e"
+    },
+    {
+      "path_relative_to_project": "pecr_deepseek_v41_flash_report_oof_v1_20261006/results/METRICS.json",
+      "role": "deepseek_v41",
+      "sha256": "eeb10e8307f276b4e2fb87b2f2ac2b67a260b352be90124dedf5682dcfd90443"
+    },
+    {
+      "path_relative_to_project": "pecr_deepseek_v41_flash_report_oof_v1_20261006/protocol/FIXED_SPEC.json",
+      "role": "deepseek_v41",
+      "sha256": "3bc338258b10c27014ca8749f94f3cdf93b6dea328a1d99991287a12a4028269"
+    },
+    {
+      "path_relative_to_project": "pecr_deepseek_v41_flash_report_oof_v1_20261006/protocol/HGB_PARAMS.json",
+      "role": "deepseek_v41",
+      "sha256": "875daba42fa7eff5268fc7ff7ababf56b8936ac857860b73289badba9af9a482"
+    },
+    {
+      "path_relative_to_project": "pecr_deepseek_v41_flash_report_oof_v1_20261006/audit/FINAL_VALIDATION.json",
+      "role": "deepseek_v41",
+      "sha256": "899ba63228487316c3aec9c0124d2226892b02b82ffff91017ab8f72fea38cbd"
+    },
+    {
+      "path_relative_to_project": "pecr_deepseek_v41_flash_report_oof_v1_20261006/audit/INDEPENDENT_FINAL_VALIDATION.json",
+      "role": "deepseek_v41",
+      "sha256": "3adaca801f7ca575ca9ab83691ebf72a797f7ceeafcc54773b8b906f001cba56"
+    },
+    {
+      "path_relative_to_project": "pecr_raw44_two_model_component_ablation_v1_20261006/protocol/ABLATION_SPEC.json",
+      "role": "ablation",
+      "sha256": "dabcf736f3fad7dbbd655700e856c42dda9a31ac878f172c02eb1f6a1d1f2fdd"
+    },
+    {
+      "path_relative_to_project": "pecr_raw44_two_model_component_ablation_v1_20261006/protocol/ARITHMETIC44_COLUMNS.json",
+      "role": "ablation",
+      "sha256": "c958b0a99506c36134dc840799655344a8cd46a0adabb34475646f192516210b"
+    },
+    {
+      "path_relative_to_project": "pecr_raw44_two_model_component_ablation_v1_20261006/results/OOF.npz",
+      "role": "ablation",
+      "sha256": "9214bd5e44aa4dafb2c807b6304e7bcd9a02c7cb0bbfd5c3670f5cba0d210767"
+    },
+    {
+      "path_relative_to_project": "pecr_raw44_two_model_component_ablation_v1_20261006/results/ABLATION_RESULTS.json",
+      "role": "ablation",
+      "sha256": "a72624e9d16368c0297b72135937f5bf0ad6ce6782a4d2a179f0f15b72beca17"
+    },
+    {
+      "path_relative_to_project": "pecr_raw44_two_model_component_ablation_v1_20261006/audit/VALIDATION.json",
+      "role": "ablation",
+      "sha256": "d2018ac498a2b2a2f4830e8f96239dbaa0ebf8a01ffbd3b2955617dc5e59faf2"
+    },
+    {
+      "path_relative_to_project": "pecr_raw44_two_model_component_ablation_v1_20261006/tables/raw44_component_ablation.tex",
+      "role": "ablation",
+      "sha256": "7319c5f12d02f9033f09ad0cb365a641eda6fe02fc10b8ccb99a4fb120852df8"
+    },
+    {
+      "path_relative_to_project": "pecr_benchmark_release_v1_20261002/cohorts/qwen_generation_aligned/schema.json",
+      "role": "schema_license",
+      "sha256": "6b4d07ff1e761b13ef1b8cb2e9c658c52e13de77ea14be8ec10f8649cb43c951"
+    },
+    {
+      "path_relative_to_project": "pecr_benchmark_release_v1_20261002/cohorts/deepseek_generation_aligned/schema.json",
+      "role": "schema_license",
+      "sha256": "9ce7bfc7b6995fc8de459a5926ef16b5d34e7f572f72c9f727f9a713774ff7f1"
+    },
+    {
+      "path_relative_to_project": "pecr_benchmark_release_v1_20261002/reference/native/G96_SCHEMA.json",
+      "role": "schema_license",
+      "sha256": "a69f454b473d596f15e1c66ee64c69b2a0e5a6a613d59a44be07770fc354081a"
+    },
+    {
+      "path_relative_to_project": "pecr_benchmark_release_v1_20261002/LICENSE",
+      "role": "schema_license",
+      "sha256": "fbbb5df153c021dcdb23d3e727b2d52ee707f107d6106552760f42847b1cd3bf"
+    },
+    {
+      "path_relative_to_project": "pecr_benchmark_release_v1_20261002/intervention/FinQA_LICENSE.txt",
+      "role": "schema_license",
+      "sha256": "92c0e67bd762c15c07ba60de09558338315a8ebf99aac4f51f487179809ac087"
+    },
+    {
+      "path_relative_to_project": "user-provided attachment/HUMAN_REVIEW_BLINDED_1699.csv",
+      "role": "human_review_source",
+      "sha256": "8774f34d644037eb0343658fe6fb436e4a2884e2ad9dc0c06665a95a1d3f1400"
+    },
+    {
+      "path_relative_to_project": "pecr_qwen_repaired_candidate_1699_v1_20261006/protocol/construction_coverage_2225.jsonl",
+      "role": "construction_coverage",
+      "sha256": "828ff5abab55678b17e42ff85e2dfd8a8476aefaef37fb20408c6ef7ac945fed"
+    },
+    {
+      "path_relative_to_project": "pecr_qwen_repaired_candidate_1699_v1_20261006/protocol/unrequested_16.jsonl",
+      "role": "construction_coverage",
+      "sha256": "b4f8a3ca3c89ba9178ba4919325f4b24426f6909736c48a4aed7d9640a97d50a"
+    }
+  ]
+}

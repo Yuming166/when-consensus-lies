@@ -1,0 +1,40 @@
+{
+  "learner": "sklearn.ensemble.HistGradientBoostingClassifier",
+  "parameters": {
+    "categorical_features": "from_dtype",
+    "class_weight": null,
+    "early_stopping": "auto",
+    "interaction_cst": null,
+    "l2_regularization": 1.0,
+    "learning_rate": 0.05,
+    "loss": "log_loss",
+    "max_bins": 255,
+    "max_depth": null,
+    "max_features": 1.0,
+    "max_iter": 250,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "monotonic_cst": null,
+    "n_iter_no_change": 10,
+    "random_state": 20260928,
+    "scoring": "loss",
+    "tol": 1e-07,
+    "validation_fraction": 0.1,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "threads_per_fit": 1,
+  "observed_environment": {
+    "python": "3.13.13",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "historical_lock_recovered": false,
+  "provenance": {
+    "qwen35": "pecr_raw_arithmetic_full_and_chain_screen_v1_20261006/protocol/HGB_PARAMS.json",
+    "deepseek_v41": "pecr_deepseek_v41_flash_report_oof_v1_20261006/protocol/HGB_PARAMS.json",
+    "parameter_dictionaries_identical": true
+  }
+}

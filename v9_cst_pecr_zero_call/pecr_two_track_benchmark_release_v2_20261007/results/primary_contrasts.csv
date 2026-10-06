@@ -1,0 +1,5 @@
+track,contrast,delta_auroc,adjusted_ci_low,adjusted_ci_high,delta_auprc,adjusted_auprc_ci_low,adjusted_auprc_ci_high,interval_source
+Qwen3.5-4B,Raw+Arithmetic44 - Raw,0.025909694181427634,0.006039372050491709,0.0452940684715021,0.013326162477537373,0.003446588219585289,0.024575707049195688,Qwen full-cohort phaseA campaign-adjusted source-group bootstrap
+Qwen3.5-4B,Raw+Arithmetic44 - Curve,0.02647480900994692,0.006717119584674547,0.04561561274966449,0.010320560162325187,0.001707331252295089,0.019670724666266404,Qwen full-cohort phaseA campaign-adjusted source-group bootstrap
+DeepSeek V4.1 Flash,Raw+Arithmetic44 - Raw,0.024988905956647822,0.012480582449244463,0.037751444171764445,0.016578812721000258,0.003657346559961084,0.030243917614008898,DeepSeek fixed three-contrast family-adjusted source-group bootstrap
+DeepSeek V4.1 Flash,Raw+Arithmetic44 - Curve,0.022897252090800513,0.008681269382300323,0.037756776303522734,0.011311485259994258,-0.0033807757837220906,0.026657223925239025,DeepSeek fixed three-contrast family-adjusted source-group bootstrap

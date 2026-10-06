@@ -1,0 +1,332 @@
+{
+  "status": "COMPLETE_FIXED_DEEPSEEK_V41_FLASH_SOURCE_GROUP_OOF",
+  "support": {
+    "attempted": 1597,
+    "strict_paired": 1537,
+    "paired_fraction": 0.9624295554164057,
+    "errors": 837,
+    "correct": 700,
+    "report_groups": 407,
+    "companies": 117,
+    "error_report_groups": 323
+  },
+  "metrics": {
+    "clean_raw": {
+      "auroc": 0.7818108892302441,
+      "auprc": 0.8131125170176761,
+      "review_budget_10pct": 154,
+      "review_errors_found_10pct": 147,
+      "error_recall_at10percent_review": 0.17562724014336917,
+      "error_precision_at10percent_review": 0.9545454545454546,
+      "review_budget_20pct": 308,
+      "review_errors_found_20pct": 266,
+      "error_recall_at20percent_review": 0.31780167264038234,
+      "error_precision_at20percent_review": 0.8636363636363636
+    },
+    "clean_curve": {
+      "auroc": 0.7839025430960914,
+      "auprc": 0.8183798444786821,
+      "review_budget_10pct": 154,
+      "review_errors_found_10pct": 148,
+      "error_recall_at10percent_review": 0.1768219832735962,
+      "error_precision_at10percent_review": 0.961038961038961,
+      "review_budget_20pct": 308,
+      "review_errors_found_20pct": 267,
+      "error_recall_at20percent_review": 0.31899641577060933,
+      "error_precision_at20percent_review": 0.8668831168831169
+    },
+    "clean_raw_arithmetic": {
+      "auroc": 0.8067997951868919,
+      "auprc": 0.8296913297386763,
+      "review_budget_10pct": 154,
+      "review_errors_found_10pct": 146,
+      "error_recall_at10percent_review": 0.17443249701314217,
+      "error_precision_at10percent_review": 0.948051948051948,
+      "review_budget_20pct": 308,
+      "review_errors_found_20pct": 268,
+      "error_recall_at20percent_review": 0.3201911589008363,
+      "error_precision_at20percent_review": 0.8701298701298701
+    }
+  },
+  "source_group_bootstrap": {
+    "contrasts": {
+      "curve_minus_raw": {
+        "left": "clean_curve",
+        "right": "clean_raw",
+        "delta_auroc": 0.0020916538658473094,
+        "delta_auroc_ci95": [
+          -0.006993675891411554,
+          0.011333419367300368
+        ],
+        "delta_auroc_family_ci": [
+          -0.009614145854594143,
+          0.01339095498334093
+        ],
+        "delta_auprc": 0.0052673274610059995,
+        "delta_auprc_ci95": [
+          -0.003617755052531757,
+          0.014531250215630788
+        ],
+        "delta_auprc_family_ci": [
+          -0.005681051488383607,
+          0.016802734069921443
+        ]
+      },
+      "arithmetic_minus_raw": {
+        "left": "clean_raw_arithmetic",
+        "right": "clean_raw",
+        "delta_auroc": 0.024988905956647822,
+        "delta_auroc_ci95": [
+          0.01510839035961429,
+          0.03516264187987682
+        ],
+        "delta_auroc_family_ci": [
+          0.012480582449244463,
+          0.037751444171764445
+        ],
+        "delta_auprc": 0.016578812721000258,
+        "delta_auprc_ci95": [
+          0.0061339057734122295,
+          0.027794768217398687
+        ],
+        "delta_auprc_family_ci": [
+          0.003657346559961084,
+          0.030243917614008898
+        ]
+      },
+      "arithmetic_minus_curve": {
+        "left": "clean_raw_arithmetic",
+        "right": "clean_curve",
+        "delta_auroc": 0.022897252090800513,
+        "delta_auroc_ci95": [
+          0.011302057774438453,
+          0.03516017463742915
+        ],
+        "delta_auroc_family_ci": [
+          0.008681269382300323,
+          0.037756776303522734
+        ],
+        "delta_auprc": 0.011311485259994258,
+        "delta_auprc_ci95": [
+          -0.0006826658641108789,
+          0.023634141168740876
+        ],
+        "delta_auprc_family_ci": [
+          -0.0033807757837220906,
+          0.026657223925239025
+        ]
+      }
+    },
+    "cluster_count": 407,
+    "valid_draws": 5000,
+    "degenerate_draws": 0,
+    "expanded_row_checks": 15,
+    "maximum_error": 2.220446049250313e-16
+  },
+  "company_bootstrap_sensitivity": {
+    "contrasts": {
+      "curve_minus_raw": {
+        "left": "clean_curve",
+        "right": "clean_raw",
+        "delta_auroc": 0.0020916538658473094,
+        "delta_auroc_ci95": [
+          -0.007356200677936142,
+          0.010065155945857981
+        ],
+        "delta_auroc_family_ci": [
+          -0.00975830649197787,
+          0.011785721488229222
+        ],
+        "delta_auprc": 0.0052673274610059995,
+        "delta_auprc_ci95": [
+          -0.003541333004251759,
+          0.01330642278246177
+        ],
+        "delta_auprc_family_ci": [
+          -0.005917230557688393,
+          0.014732947647127187
+        ]
+      },
+      "arithmetic_minus_raw": {
+        "left": "clean_raw_arithmetic",
+        "right": "clean_raw",
+        "delta_auroc": 0.024988905956647822,
+        "delta_auroc_ci95": [
+          0.01456077894576104,
+          0.03554295065259989
+        ],
+        "delta_auroc_family_ci": [
+          0.01233098075830024,
+          0.037848859132604315
+        ],
+        "delta_auprc": 0.016578812721000258,
+        "delta_auprc_ci95": [
+          0.004924040874526012,
+          0.029537432539281448
+        ],
+        "delta_auprc_family_ci": [
+          0.002313105515369675,
+          0.033220170761093896
+        ]
+      },
+      "arithmetic_minus_curve": {
+        "left": "clean_raw_arithmetic",
+        "right": "clean_curve",
+        "delta_auroc": 0.022897252090800513,
+        "delta_auroc_ci95": [
+          0.01149263914629366,
+          0.035888517789515045
+        ],
+        "delta_auroc_family_ci": [
+          0.009075793159553381,
+          0.038390432050139846
+        ],
+        "delta_auprc": 0.011311485259994258,
+        "delta_auprc_ci95": [
+          -0.0013352841967297301,
+          0.025284769819789648
+        ],
+        "delta_auprc_family_ci": [
+          -0.0037515024900197343,
+          0.02835621548020336
+        ]
+      }
+    },
+    "cluster_count": 117,
+    "valid_draws": 5000,
+    "degenerate_draws": 0,
+    "expanded_row_checks": 15,
+    "maximum_error": 2.220446049250313e-16
+  },
+  "fold_results": [
+    {
+      "fold": 0,
+      "train_items": 1229,
+      "test_items": 308,
+      "train_errors": 661,
+      "test_errors": 176,
+      "report_overlap": 0,
+      "company_overlap": 52,
+      "metrics": {
+        "clean_raw": {
+          "auroc": 0.778150826446281,
+          "auprc": 0.8353407641385173
+        },
+        "clean_curve": {
+          "auroc": 0.7983384986225897,
+          "auprc": 0.8547987186338141
+        },
+        "clean_raw_arithmetic": {
+          "auroc": 0.8304063360881544,
+          "auprc": 0.872214560107613
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "train_items": 1230,
+      "test_items": 307,
+      "train_errors": 670,
+      "test_errors": 167,
+      "report_overlap": 0,
+      "company_overlap": 54,
+      "metrics": {
+        "clean_raw": {
+          "auroc": 0.7837467921300256,
+          "auprc": 0.8130057381026615
+        },
+        "clean_curve": {
+          "auroc": 0.774037639007699,
+          "auprc": 0.8030997973019692
+        },
+        "clean_raw_arithmetic": {
+          "auroc": 0.8013686911890505,
+          "auprc": 0.8217649288538782
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_items": 1226,
+      "test_items": 311,
+      "train_errors": 663,
+      "test_errors": 174,
+      "report_overlap": 0,
+      "company_overlap": 52,
+      "metrics": {
+        "clean_raw": {
+          "auroc": 0.7800570517660876,
+          "auprc": 0.8121229958874981
+        },
+        "clean_curve": {
+          "auroc": 0.7733870291131806,
+          "auprc": 0.8066074353588518
+        },
+        "clean_raw_arithmetic": {
+          "auroc": 0.7917610537796795,
+          "auprc": 0.8174807335514458
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train_items": 1231,
+      "test_items": 306,
+      "train_errors": 683,
+      "test_errors": 154,
+      "report_overlap": 0,
+      "company_overlap": 55,
+      "metrics": {
+        "clean_raw": {
+          "auroc": 0.7991285030758717,
+          "auprc": 0.8082650803716304
+        },
+        "clean_curve": {
+          "auroc": 0.8089114832535885,
+          "auprc": 0.8215975794176518
+        },
+        "clean_raw_arithmetic": {
+          "auroc": 0.8362098427887902,
+          "auprc": 0.8329698481855226
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "train_items": 1232,
+      "test_items": 305,
+      "train_errors": 671,
+      "test_errors": 166,
+      "report_overlap": 0,
+      "company_overlap": 57,
+      "metrics": {
+        "clean_raw": {
+          "auroc": 0.7720811302765018,
+          "auprc": 0.8065436716311085
+        },
+        "clean_curve": {
+          "auroc": 0.7696324867816591,
+          "auprc": 0.8150629875705271
+        },
+        "clean_raw_arithmetic": {
+          "auroc": 0.7847794053913496,
+          "auprc": 0.8075186435614617
+        }
+      }
+    }
+  ],
+  "comparison_gain_checks": {
+    "curve_minus_raw": false,
+    "arithmetic_minus_raw": true,
+    "arithmetic_minus_curve": true
+  },
+  "planned_and_actual_fits": 15,
+  "model": "deepseek-v4.1-flash",
+  "checkpoint_identity": "UNKNOWN_BEYOND_PROVIDER_REPORTED_ALIAS",
+  "target_native_labels_and_features": true,
+  "classifier_retrained_on_target_model_labels": true,
+  "zero_target_label_transfer": false,
+  "same_old1597_question_set": true,
+  "new_source_independent_confirmation": false,
+  "extra_samples_or_hyperparameter_search": false
+}

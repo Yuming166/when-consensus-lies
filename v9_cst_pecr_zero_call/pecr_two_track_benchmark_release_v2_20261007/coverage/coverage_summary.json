@@ -1,0 +1,76 @@
+{
+  "qwen35": {
+    "attempted": 1699,
+    "strict": 1597,
+    "strict_groups": 413,
+    "strict_error": 1258,
+    "strict_correct": 339,
+    "attempted_label_known": 1643,
+    "attempted_label_unknown": 56,
+    "strict_excluded": 102,
+    "eligibility_status": {
+      "DIRECTION_PENDING": 44,
+      "FEATURE_OR_PARSE_INELIGIBLE": 22,
+      "LABEL_UNKNOWN": 36,
+      "PRIMARY_ELIGIBLE": 1597
+    },
+    "world_state_counts": {
+      "original": {
+        "NON_NUMERIC_ANSWER_HASHED": 11,
+        "PARSED": 1679,
+        "answer_not_numeric": 9
+      },
+      "positive": {
+        "NON_NUMERIC_ANSWER_HASHED": 8,
+        "PARSED": 1686,
+        "answer_not_numeric": 5
+      },
+      "negative": {
+        "CONTENT_JSON_INVALID": 1,
+        "NON_NUMERIC_ANSWER_HASHED": 7,
+        "PARSED": 1685,
+        "answer_not_numeric": 6
+      }
+    }
+  },
+  "deepseek_v41": {
+    "attempted": 1597,
+    "strict": 1537,
+    "strict_groups": 407,
+    "strict_error": 837,
+    "strict_correct": 700,
+    "attempted_label_known": 1557,
+    "attempted_label_unknown": 40,
+    "strict_excluded": 60,
+    "feature_valid": 1537,
+    "world_state_counts": {
+      "original": {
+        "PARSED": 1557,
+        "STRUCTURED_SCHEMA_OR_NUMERIC_FAILURE": 18,
+        "answer_not_numeric": 22
+      },
+      "positive": {
+        "PARSED": 1563,
+        "STRUCTURED_SCHEMA_OR_NUMERIC_FAILURE": 10,
+        "TRANSPORT_ERROR": 1,
+        "answer_not_numeric": 23
+      },
+      "negative": {
+        "PARSED": 1563,
+        "STRUCTURED_SCHEMA_OR_NUMERIC_FAILURE": 14,
+        "TRANSPORT_ERROR": 1,
+        "answer_not_numeric": 19
+      }
+    }
+  },
+  "cross_track": {
+    "common_strict_items": 1537,
+    "deepseek_subset_of_qwen": true,
+    "shared_id_group_fold_mismatches": 0,
+    "labels_model_specific": true,
+    "shared_strict_ids_with_known_labels": 1537,
+    "shared_label_disagreements": 449,
+    "shared_label_agreement": 1088
+  },
+  "scope": "Exact observed per-track attempts only; not full 2,225-item historical request universe."
+}

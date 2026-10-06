@@ -1,0 +1,18 @@
+{
+  "release_type": "historical_response_risk_prediction_benchmark",
+  "tracks": [
+    "Qwen3.5-4B",
+    "DeepSeek V4.1 Flash"
+  ],
+  "recallable_intervention_inputs_included": false,
+  "original_three_world_text_included": false,
+  "new_model_execution_api_included": false,
+  "unsupported_claims": [
+    "new-question independent confirmation",
+    "complete re-callable intervention benchmark",
+    "pooled cross-model target",
+    "certified model reasoning provenance"
+  ],
+  "observed_requests": "Qwen 1,699; DeepSeek 1,597, selected from Qwen strict 1,597.",
+  "selection": "Previously explored program-conditioned FinQA TRAIN cohort."
+}

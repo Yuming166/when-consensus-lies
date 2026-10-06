@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering\small
+\caption{Historical-descriptor compatibility controls, refitted on the current cohorts. These are excluded from the main clean comparison.}
+\label{tab:legacy}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+& & \multicolumn{2}{c}{Qwen} & \multicolumn{2}{c}{DeepSeek}\\\cmidrule(lr){3-4}\cmidrule(l){5-6} Input & Dim. & AUROC & AP & AUROC & AP\\
+\midrule
+G96 & 96 & 0.7379 & 0.9003 & 0.7260 & 0.7490\\
+G96 + $[\mathbb{I}(e=1),\mu,h,t]$ & 100 & 0.7505 & 0.9029 & 0.7536 & 0.7734\\
+G96 + historical Raw17 & 113 & 0.8128 & 0.9311 & 0.7814 & 0.8139\\
+G96 + historical Raw17 + $(h,t)$ & 115 & 0.8142 & 0.9306 & 0.7824 & 0.8090\\
+\bottomrule
+\end{tabular}
+\par\vspace{3pt}\begin{minipage}{\textwidth}\footnotesize $\mu$ denotes the inherited Raw17[16] scalar named construction\_absolute\_delta. Its alignment with repaired edits is unresolved; it is neither substituted by $|h|$ nor used by the proposed primary method.\end{minipage}
+\end{table*}

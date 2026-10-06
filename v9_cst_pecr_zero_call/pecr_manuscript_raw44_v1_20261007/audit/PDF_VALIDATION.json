@@ -1,0 +1,14 @@
+{
+  "total_pages": 14,
+  "main_text_ends_page": 8,
+  "limitations_start_page": 9,
+  "figure_placeholders": 3,
+  "single_file_and_modular_PDF_text_identical": true,
+  "both_compile_without_overflow_missing_glyphs_or_undefined_references": true,
+  "visually_checked_pages": [
+    1,
+    5,
+    7,
+    8
+  ]
+}

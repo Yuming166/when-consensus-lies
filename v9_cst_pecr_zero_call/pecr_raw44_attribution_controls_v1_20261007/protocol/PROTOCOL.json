@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "fixed_before_new_fits_utc": "2026-10-06T18:35:51.557597+00:00",
+  "tracks": [
+    "qwen35",
+    "deepseek_v41"
+  ],
+  "source_release": "pecr_two_track_benchmark_release_v2_20261007",
+  "source_sha256": {
+    "data/qwen35_features_label_blind.npz": "1799411d21dff1d04c2da38d19773036678db641baa46622671d1d35b076ef26",
+    "data/deepseek_v41_folds.csv": "80ae0f5bc4c349b5f8cd8fa12e5d3425a810bab343c652add84f660e090a47cb",
+    "data/qwen35_folds.csv": "62e3c9909232c6a5aeda59df27366b59008b6dc45f4fa8eb8bce6976e73c1e1b",
+    "data/deepseek_v41_features_label_blind.npz": "ffc46e5edcf807a4a3e89ecd40906761ec86cfd670e39a50e922fe1015f7fc9f",
+    "labels/qwen35_labels.csv": "407c8898097681ffa883a88ca97cffad8dfa1047089cf70d58ef2f77696e38ce",
+    "labels/deepseek_v41_labels.csv": "f80dc3db9cf43711c55cdc2d273deb47fc65cb89f8e5ef5d389181e8beb3060f",
+    "reference/oof/qwen35_oof_scores_label_blind.npz": "e43235fea574dc6a25a48a09baa8e6baaa1a69e4555cb66d339e7c79e9e69e20",
+    "reference/oof/deepseek_v41_oof_scores_label_blind.npz": "3defac82822f3c2a2cdb8cfe00b680a442b40d26554a039d7b3193e6e6b38ee3",
+    "schemas/feature_schema.json": "0df60d612d3abbc20d089d7252a1f5e57839276298f23304867109f51d00b984",
+    "protocol/HGB_PARAMS.json": "74d22f761c26853da399d8c47afbf2045bb08b99cf2b23000b7d40f85065600e",
+    "protocol/splits.json": "c3e59f20fc73c3acaf91b054130a158b87f1ecb1768a3e9cbc8db462dba935e3",
+    "protocol/label_policy.json": "3c6874cb9cc8678ec1a8081813ccfa930214cd65d809e3f10aed7cd0ea114d03",
+    "protocol/benchmark_scope.json": "16aeea5fb8cca0f6636af613e50274e776a3770e1eb362840d579c88791a1ec9"
+  },
+  "methods": {
+    "g96": 96,
+    "g96_construction": 99,
+    "g96_raw16": 112,
+    "raw": 114,
+    "curve": 125,
+    "raw_plus_arithmetic44": 158,
+    "legacy_g96_construction": 100,
+    "legacy_g96_raw17": 113,
+    "legacy_g96_raw17_edit": 115
+  },
+  "planned_fits": 90,
+  "clean_construction_columns": [
+    15,
+    18,
+    17
+  ],
+  "clean_construction_definition": "expected_direction_up, signed actual operand edit h, relative edit t; no altered-world response inputs",
+  "legacy_construction_columns": [
+    15,
+    16,
+    18,
+    17
+  ],
+  "legacy_note": "Unresolved inherited construction_absolute_delta column retained only as a diagnostic, excluded from clean primary. Not reinterpreted as abs(h).",
+  "raw16_definition": "Curve33[:,0:16]",
+  "primary_raw_definition": "concat(G96,Raw16,Curve33[:,[18,17]])",
+  "refit_exact_checks": [
+    "raw",
+    "curve",
+    "raw_plus_arithmetic44"
+  ],
+  "controls": {
+    "construction_minus_g96": [
+      "g96_construction",
+      "g96"
+    ],
+    "raw16_minus_g96": [
+      "g96_raw16",
+      "g96"
+    ],
+    "edit_minus_raw16": [
+      "raw",
+      "g96_raw16"
+    ],
+    "raw_minus_construction": [
+      "raw",
+      "g96_construction"
+    ]
+  },
+  "bootstrap": {
+    "B": 10000,
+    "seed": 20260928,
+    "unit": "source_group",
+    "paired": true,
+    "metrics": [
+      "auroc",
+      "auprc"
+    ],
+    "ci95": [
+      0.025,
+      0.975
+    ],
+    "family_size": 8,
+    "family_scope": "Four contrasts across two tracks, separately for each metric",
+    "familywise_quantiles": [
+      0.003125,
+      0.996875
+    ],
+    "skip_degenerate_no_retry": true,
+    "interpretation": "post-hoc attribution; conditional on fixed OOF; not independent confirmation or retraining-variance interval"
+  },
+  "constraints": [
+    "No cohort, labels, fold or parameter changes",
+    "No API, gold or holdout access",
+    "No seed/feature search",
+    "Preserve every result; no overwrite of sources"
+  ]
+}

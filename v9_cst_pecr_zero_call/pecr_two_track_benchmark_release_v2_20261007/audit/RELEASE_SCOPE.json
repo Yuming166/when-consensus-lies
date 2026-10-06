@@ -1,0 +1,32 @@
+{
+  "full_recallable_intervention_status": "verified for exact historical request objects in the observed current-track queues; future model output replay is not guaranteed",
+  "github_push": false,
+  "included_derived_material": [
+    "compact source-derived text edit fragments needed for exact intervention reconstruction"
+  ],
+  "intervention_reconstruction": {
+    "api_calls": 0,
+    "combined_saved_request_hashes_matched": 9888,
+    "deepseek_v41_items": 1597,
+    "deepseek_v41_world_requests": 4791,
+    "finqa_train_sha256": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6",
+    "method": "apply source-bound saved edit patches to allow-listed FinQA TRAIN text, rebuild saved request objects, compare canonical hashes",
+    "qwen35_items": 1699,
+    "qwen35_world_requests": 5097,
+    "status": "EXACT_SAVED_REQUEST_RECONSTRUCTION"
+  },
+  "not_included": [
+    "complete financial evidence passages",
+    "complete instantiated request bodies",
+    "raw model response ledgers",
+    "model checkpoints",
+    "API credentials"
+  ],
+  "old_release_modified": false,
+  "release": "pecr_two_track_benchmark_release_v2_20261007",
+  "track_identity": {
+    "deepseek_v41": "DeepSeek V4.1 Flash; provider-reported alias observed, exact backend checkpoint unknown",
+    "qwen35": "Qwen3.5-4B; request profile and request hashes verified, local runtime checkpoint hash unavailable"
+  },
+  "type": "two model-specific historical-response risk tracks with executable offline intervention-input reconstruction"
+}

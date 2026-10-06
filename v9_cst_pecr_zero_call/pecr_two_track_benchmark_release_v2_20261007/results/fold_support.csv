@@ -1,0 +1,11 @@
+track,outer_fold,items,groups,error,correct
+qwen35,0,324,83,271,53
+qwen35,1,317,82,243,74
+qwen35,2,320,83,255,65
+qwen35,3,317,83,241,76
+qwen35,4,319,82,248,71
+deepseek_v41,0,308,82,176,132
+deepseek_v41,1,307,81,167,140
+deepseek_v41,2,311,82,174,137
+deepseek_v41,3,306,83,154,152
+deepseek_v41,4,305,79,166,139

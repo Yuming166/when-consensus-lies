@@ -1,0 +1,187 @@
+{
+  "$defs": {
+    "edits": {
+      "additionalProperties": false,
+      "properties": {
+        "table_cells": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "column": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "new_value": {},
+              "old_value_sha256": {
+                "$ref": "#/$defs/sha256"
+              },
+              "row": {
+                "minimum": 0,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "row",
+              "column",
+              "old_value_sha256",
+              "new_value"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "text_spans": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "field": {
+                "enum": [
+                  "pre_text",
+                  "post_text"
+                ]
+              },
+              "line_index": {
+                "minimum": 0,
+                "type": "integer"
+              },
+              "patches": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "end_char": {
+                      "minimum": 0,
+                      "type": "integer"
+                    },
+                    "removed_sha256": {
+                      "$ref": "#/$defs/sha256"
+                    },
+                    "replacement": {
+                      "type": "string"
+                    },
+                    "start_char": {
+                      "minimum": 0,
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "start_char",
+                    "end_char",
+                    "removed_sha256",
+                    "replacement"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "source_line_sha256": {
+                "$ref": "#/$defs/sha256"
+              }
+            },
+            "required": [
+              "field",
+              "line_index",
+              "source_line_sha256",
+              "patches"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "table_cells",
+        "text_spans"
+      ],
+      "type": "object"
+    },
+    "sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    }
+  },
+  "$id": "urn:pecr:two-track-intervention-edit-row:v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "construction_status": {
+      "type": "string"
+    },
+    "direction": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "direction_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "item_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "row_index": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "source_group": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "source_row_index": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "world_edits": {
+      "additionalProperties": false,
+      "properties": {
+        "negative": {
+          "$ref": "#/$defs/edits"
+        },
+        "positive": {
+          "$ref": "#/$defs/edits"
+        }
+      },
+      "required": [
+        "positive",
+        "negative"
+      ],
+      "type": "object"
+    },
+    "world_sha256": {
+      "additionalProperties": false,
+      "properties": {
+        "negative": {
+          "$ref": "#/$defs/sha256"
+        },
+        "original": {
+          "$ref": "#/$defs/sha256"
+        },
+        "positive": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "original",
+        "positive",
+        "negative"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "row_index",
+    "item_id",
+    "source_group",
+    "source_row_index",
+    "construction_status",
+    "direction",
+    "direction_status",
+    "world_sha256",
+    "world_edits"
+  ],
+  "title": "PECR two-track saved intervention edit row",
+  "type": "object"
+}

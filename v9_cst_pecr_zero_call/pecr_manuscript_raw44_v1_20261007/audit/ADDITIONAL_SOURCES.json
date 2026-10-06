@@ -1,0 +1,26 @@
+{
+  "sources_sha256": {
+    "pecr_two_track_benchmark_release_v2_20261007/intervention/edit_spec.jsonl": "a17836ba7486792fa2d52561c056b3d1028b60b2f736db1209a939a8c9d7767a",
+    "pecr_two_track_benchmark_release_v2_20261007/audit/HUMAN_REVIEW_SUMMARY.json": "5b609e60f0d81ed658cdf1354f4bd3efe639f1a84fd79bc2f4d4317bc5a24696",
+    "pecr_two_track_benchmark_release_v2_20261007/audit/INTERVENTION_REBUILD_AUDIT.json": "5c290a54b03a947612f21f1d430819007fc3b54a16bebd0980fc07aedc02f92a",
+    "pecr_two_track_benchmark_release_v2_20261007/audit/V2_CLEAN_RETRAIN_VALIDATION.json": "b1a6c06f5429c2d58561ad2c16a02bfc52115ffb330ea029db92543d1813a68f",
+    "pecr_company_split_and_qwen37_arithmetic_v1_20261006/results/company/RESULTS.md": "5b5367f09d5eb6cee4f770dd6db4963460ded454791b6e398d0c4f457fa09fdb",
+    "pecr_company_split_and_qwen37_arithmetic_v1_20261006/results/flash/RESULTS.md": "5e73463646467ba8814f237069d6246cda9d2f4395326e454355b24ced3cd4de",
+    "pecr_company_split_and_qwen37_arithmetic_v1_20261006/protocol/FIXED_SPEC.json": "32f6f2e2b8ea7aca48195cad6f231b57c6faf9a47fe051058bcde86c57b7e619",
+    "pecr_qwen38_flash_raw44_cross_model_v1_20261006/results/RESULTS.md": "cb206404ce264718989f06844d2be6f1e96d35059bb2eab8bdfe9651e2d05521",
+    "pecr_deepseek_v41_flash_report_oof_v1_20261006/src/arithmetic.py": "81c3738b31ee1398645a1ee0b95efb159b8e8cd64056476548a2bb9d92f062f1",
+    "pecr_deepseek_v41_flash_report_oof_v1_20261006/src/label_policy.py": "6790468e90a99f54570eb8ecdca0f49722c2aaa6f38de365aef766cbebf2f7bc",
+    "pecr_gpt6_astra_world_completion_v3_20261005/INSTRUCTIONS.md": "36024c720ad3d64caf53b62c0d6db6a70c306793d3d6f201ab67484094f8868e",
+    "pecr_gpt6_astra_world_completion_v3_20261005/PROGRESS.json": "d2b854057e34756314f8e1bb4ba6bde16d5817f150c476fded0775dc6dcc9667"
+  },
+  "construction_patch_counts": {
+    "unique_items": 1699,
+    "any_world_multiple_table_edits": 1126,
+    "any_world_text_patch": 389
+  },
+  "added_citations_verified": {
+    "NumPert": "https://aclanthology.org/2025.ijcnlp-srw.8/",
+    "PredictaBoard": "https://aclanthology.org/2025.findings-acl.790/",
+    "RefusalBench": "https://aclanthology.org/2026.eacl-long.321/"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "all_saved_request_hashes_exact": true,
+  "claim_boundary": "Exact reconstruction of historical request objects for the saved Qwen3.5-4B and DeepSeek V4.1 Flash aliases; this does not pin provider checkpoints or reproduce model outputs.",
+  "construction_rows_rebuilt": 1699,
+  "counts": {
+    "deepseek_v41_negative_match": 1597,
+    "deepseek_v41_original_match": 1597,
+    "deepseek_v41_positive_match": 1597,
+    "qwen35_negative_match": 1699,
+    "qwen35_original_match": 1699,
+    "qwen35_positive_match": 1699
+  },
+  "decoded_train_leaf_allowlist": [
+    "id",
+    "qa.question",
+    "pre_text",
+    "post_text",
+    "table"
+  ],
+  "deepseek_ids_subset_of_qwen_ids": true,
+  "deepseek_v41_items": 1597,
+  "full_financial_passages_embedded_in_package": false,
+  "gold_answer_and_program_fields_decoded": false,
+  "holdout_accessed": false,
+  "network_or_model_calls": 0,
+  "private_export_available": true,
+  "qwen35_items": 1699,
+  "request_hashes_checked": 9888,
+  "request_hashes_expected": 9888,
+  "saved_responses_labels_and_reasoning_embedded_in_intervention": false,
+  "schema_version": "pecr_two_track_intervention_rebuild_v1",
+  "small_text_edit_fragments_embedded": true,
+  "status": "EXACT_SAVED_REQUEST_RECONSTRUCTION",
+  "train_record_count_scanned": 6251,
+  "train_sha256_expected": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6",
+  "train_sha256_match": true,
+  "train_sha256_observed": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6",
+  "worlds": [
+    "original",
+    "positive",
+    "negative"
+  ]
+}

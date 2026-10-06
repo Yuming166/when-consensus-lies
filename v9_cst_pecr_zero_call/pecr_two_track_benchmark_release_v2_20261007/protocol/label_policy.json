@@ -1,0 +1,15 @@
+{
+  "target": "error",
+  "positive_class": 1,
+  "meaning": "saved original answer is incorrect under inherited numeric answer comparison.",
+  "labels_are_model_specific": true,
+  "qwen35": {
+    "source": "Existing Qwen3.5-4B current-original labels; exact source rule name in labels CSV.",
+    "gold_scope": "FinQA TRAIN qa.answer used upstream; gold values are not included."
+  },
+  "deepseek_v41": {
+    "source": "Existing native-original DeepSeek labels; fixed specification records qa.answer-only label generation."
+  },
+  "unknown_labels": "UNKNOWN rows have empty error values.",
+  "separation": "Labels are separate from numeric feature and OOF score files; no gold or programs exported."
+}

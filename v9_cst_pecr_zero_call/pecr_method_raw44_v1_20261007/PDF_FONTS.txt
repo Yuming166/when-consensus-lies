@@ -1,0 +1,9 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+EHKUYQ+ArialMT                       TrueType          WinAnsi          yes yes yes      7  0
+CMKBBZ+ArialMT                       CID TrueType      Identity-H       yes yes yes      8  0
+NJGETR+Arial-BoldMT                  TrueType          WinAnsi          yes yes yes      9  0
+ZEIZWQ+CourierNewPSMT                TrueType          WinAnsi          yes yes yes     10  0
+YRTFJU+CourierNewPSMT                CID TrueType      Identity-H       yes yes yes     11  0
+AARPLW+CourierNewPS-BoldMT           TrueType          WinAnsi          yes yes yes     12  0
+USRRRG+CourierNewPS-BoldMT           CID TrueType      Identity-H       yes yes yes     13  0

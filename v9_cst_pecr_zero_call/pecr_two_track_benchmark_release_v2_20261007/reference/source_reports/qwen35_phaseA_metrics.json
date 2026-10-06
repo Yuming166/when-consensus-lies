@@ -1,0 +1,912 @@
+{
+  "phase": "phaseA",
+  "support": {
+    "items": 1597,
+    "groups": 413,
+    "error": 1258,
+    "correct": 339
+  },
+  "fold_support": [
+    {
+      "fold": 0,
+      "test_items": 324,
+      "test_groups": 83,
+      "test_errors": 271,
+      "test_correct": 53,
+      "group_overlap": 0
+    },
+    {
+      "fold": 1,
+      "test_items": 317,
+      "test_groups": 82,
+      "test_errors": 243,
+      "test_correct": 74,
+      "group_overlap": 0
+    },
+    {
+      "fold": 2,
+      "test_items": 320,
+      "test_groups": 83,
+      "test_errors": 255,
+      "test_correct": 65,
+      "group_overlap": 0
+    },
+    {
+      "fold": 3,
+      "test_items": 317,
+      "test_groups": 83,
+      "test_errors": 241,
+      "test_correct": 76,
+      "group_overlap": 0
+    },
+    {
+      "fold": 4,
+      "test_items": 319,
+      "test_groups": 82,
+      "test_errors": 248,
+      "test_correct": 71,
+      "group_overlap": 0
+    }
+  ],
+  "metrics": {
+    "clean_raw": {
+      "auroc": 0.8034842494759205,
+      "auprc": 0.9265990292236004,
+      "review_budget_10pct": 160,
+      "review_errors_found_10pct": 153,
+      "error_recall_at10percent_review": 0.12162162162162163,
+      "error_precision_at10percent_review": 0.95625,
+      "review_budget_20pct": 320,
+      "review_errors_found_20pct": 309,
+      "error_recall_at20percent_review": 0.24562798092209856,
+      "error_precision_at20percent_review": 0.965625,
+      "auroc_ci95": [
+        0.7745579666595184,
+        0.8306553138629958
+      ],
+      "auprc_ci95": [
+        0.9095166182508724,
+        0.942343921717851
+      ]
+    },
+    "clean_curve": {
+      "auroc": 0.8029191346474012,
+      "auprc": 0.9296046315388126,
+      "review_budget_10pct": 160,
+      "review_errors_found_10pct": 156,
+      "error_recall_at10percent_review": 0.12400635930047695,
+      "error_precision_at10percent_review": 0.975,
+      "review_budget_20pct": 320,
+      "review_errors_found_20pct": 310,
+      "error_recall_at20percent_review": 0.246422893481717,
+      "error_precision_at20percent_review": 0.96875,
+      "auroc_ci95": [
+        0.7744373617533258,
+        0.830282381344241
+      ],
+      "auprc_ci95": [
+        0.9144909660182581,
+        0.9437439558942124
+      ]
+    },
+    "clean_raw_arithmetic": {
+      "auroc": 0.8293939436573481,
+      "auprc": 0.9399251917011378,
+      "review_budget_10pct": 160,
+      "review_errors_found_10pct": 158,
+      "error_recall_at10percent_review": 0.12559618441971382,
+      "error_precision_at10percent_review": 0.9875,
+      "review_budget_20pct": 320,
+      "review_errors_found_20pct": 312,
+      "error_recall_at20percent_review": 0.2480127186009539,
+      "error_precision_at20percent_review": 0.975,
+      "auroc_ci95": [
+        0.8028815976290937,
+        0.8549908991009001
+      ],
+      "auprc_ci95": [
+        0.925856007024944,
+        0.952734645382102
+      ]
+    },
+    "clean_curve_arithmetic": {
+      "auroc": 0.8227556030783516,
+      "auprc": 0.9364531134482879,
+      "review_budget_10pct": 160,
+      "review_errors_found_10pct": 155,
+      "error_recall_at10percent_review": 0.1232114467408585,
+      "error_precision_at10percent_review": 0.96875,
+      "review_budget_20pct": 320,
+      "review_errors_found_20pct": 311,
+      "error_recall_at20percent_review": 0.24721780604133545,
+      "error_precision_at20percent_review": 0.971875,
+      "auroc_ci95": [
+        0.7961965805987135,
+        0.8484626025293651
+      ],
+      "auprc_ci95": [
+        0.9217462823277638,
+        0.9495641321172945
+      ]
+    },
+    "legacy_raw": {
+      "auroc": 0.8142085344063479,
+      "auprc": 0.930599360734004,
+      "review_budget_10pct": 160,
+      "review_errors_found_10pct": 153,
+      "error_recall_at10percent_review": 0.12162162162162163,
+      "error_precision_at10percent_review": 0.95625,
+      "review_budget_20pct": 320,
+      "review_errors_found_20pct": 308,
+      "error_recall_at20percent_review": 0.24483306836248012,
+      "error_precision_at20percent_review": 0.9625,
+      "auroc_ci95": [
+        0.7864294302843069,
+        0.8415021579152966
+      ],
+      "auprc_ci95": [
+        0.9145203170326257,
+        0.9458443204132099
+      ]
+    },
+    "legacy_curve": {
+      "auroc": 0.8247147459797122,
+      "auprc": 0.9372256504671208,
+      "review_budget_10pct": 160,
+      "review_errors_found_10pct": 156,
+      "error_recall_at10percent_review": 0.12400635930047695,
+      "error_precision_at10percent_review": 0.975,
+      "review_budget_20pct": 320,
+      "review_errors_found_20pct": 308,
+      "error_recall_at20percent_review": 0.24483306836248012,
+      "error_precision_at20percent_review": 0.9625,
+      "auroc_ci95": [
+        0.7975150691117097,
+        0.8520643917149628
+      ],
+      "auprc_ci95": [
+        0.9230849976983742,
+        0.9507257810762806
+      ]
+    },
+    "legacy_raw_arithmetic": {
+      "auroc": 0.8441572754430641,
+      "auprc": 0.946083694813777,
+      "review_budget_10pct": 160,
+      "review_errors_found_10pct": 158,
+      "error_recall_at10percent_review": 0.12559618441971382,
+      "error_precision_at10percent_review": 0.9875,
+      "review_budget_20pct": 320,
+      "review_errors_found_20pct": 313,
+      "error_recall_at20percent_review": 0.24880763116057233,
+      "error_precision_at20percent_review": 0.978125,
+      "auroc_ci95": [
+        0.8201622562960885,
+        0.86798666228581
+      ],
+      "auprc_ci95": [
+        0.9334344103724939,
+        0.9575756477079927
+      ]
+    },
+    "legacy_curve_arithmetic": {
+      "auroc": 0.8404195450004925,
+      "auprc": 0.9441508849316754,
+      "review_budget_10pct": 160,
+      "review_errors_found_10pct": 159,
+      "error_recall_at10percent_review": 0.12639109697933226,
+      "error_precision_at10percent_review": 0.99375,
+      "review_budget_20pct": 320,
+      "review_errors_found_20pct": 312,
+      "error_recall_at20percent_review": 0.2480127186009539,
+      "error_precision_at20percent_review": 0.975,
+      "auroc_ci95": [
+        0.8146835104356523,
+        0.8653537612765889
+      ],
+      "auprc_ci95": [
+        0.9317398323627433,
+        0.9556858244482855
+      ]
+    }
+  },
+  "contrasts": {
+    "raw_arithmetic_minus_raw": {
+      "left": "clean_raw_arithmetic",
+      "right": "clean_raw",
+      "delta_auroc": 0.025909694181427634,
+      "delta_auroc_ci95": [
+        0.011155659627795361,
+        0.040918425180504744
+      ],
+      "delta_auroc_family_ci": [
+        0.008885359064226347,
+        0.04279502184563404
+      ],
+      "delta_auroc_campaign_ci": [
+        0.006039372050491709,
+        0.0452940684715021
+      ],
+      "delta_auprc": 0.013326162477537373,
+      "delta_auprc_ci95": [
+        0.005942143211543613,
+        0.021469125751867015
+      ],
+      "delta_auprc_family_ci": [
+        0.004973152001169408,
+        0.022751771033540952
+      ],
+      "delta_auprc_campaign_ci": [
+        0.003446588219585289,
+        0.024575707049195688
+      ],
+      "delta_recall10": 0.0039745627980921905,
+      "fold_delta_auroc": [
+        0.034185058831720516,
+        -0.0030864197530863224,
+        0.0024736048265459054,
+        0.06890150687923124,
+        0.022376192639709358
+      ],
+      "positive_folds": 4
+    },
+    "raw_arithmetic_minus_curve": {
+      "left": "clean_raw_arithmetic",
+      "right": "clean_curve",
+      "delta_auroc": 0.02647480900994692,
+      "delta_auroc_ci95": [
+        0.011767572163055828,
+        0.04067096735688493
+      ],
+      "delta_auroc_family_ci": [
+        0.009522669971718911,
+        0.04308091335053219
+      ],
+      "delta_auroc_campaign_ci": [
+        0.006717119584674547,
+        0.04561561274966449
+      ],
+      "delta_auprc": 0.010320560162325187,
+      "delta_auprc_ci95": [
+        0.0038657330867049146,
+        0.01685783668749036
+      ],
+      "delta_auprc_family_ci": [
+        0.0030514104165506486,
+        0.017730728153020285
+      ],
+      "delta_auprc_campaign_ci": [
+        0.001707331252295089,
+        0.019670724666266404
+      ],
+      "delta_recall10": 0.0015898251192368734,
+      "fold_delta_auroc": [
+        0.016152614356332085,
+        0.002141029918807713,
+        0.0036199095022624306,
+        0.06573487661061361,
+        0.03685824625170375
+      ],
+      "positive_folds": 5
+    },
+    "legacy_raw_arithmetic_minus_raw": {
+      "left": "legacy_raw_arithmetic",
+      "right": "legacy_raw",
+      "delta_auroc": 0.029948741036716187,
+      "delta_auroc_ci95": [
+        0.015258288126586498,
+        0.04470429753883975
+      ],
+      "delta_auroc_family_ci": null,
+      "delta_auroc_campaign_ci": null,
+      "delta_auprc": 0.01548433407977301,
+      "delta_auprc_ci95": [
+        0.007777465629082422,
+        0.023556777162504726
+      ],
+      "delta_auprc_family_ci": null,
+      "delta_auprc_campaign_ci": null,
+      "delta_recall10": 0.0039745627980921905,
+      "fold_delta_auroc": [
+        0.03119125530877942,
+        0.01879657435212989,
+        0.012850678733031584,
+        0.050884472592269026,
+        0.025783734666060987
+      ],
+      "positive_folds": 5
+    },
+    "legacy_raw_arithmetic_minus_curve": {
+      "left": "legacy_raw_arithmetic",
+      "right": "legacy_curve",
+      "delta_auroc": 0.0194425294633519,
+      "delta_auroc_ci95": [
+        0.004986091008384858,
+        0.033107774931379376
+      ],
+      "delta_auroc_family_ci": null,
+      "delta_auroc_campaign_ci": null,
+      "delta_auprc": 0.008858044346656158,
+      "delta_auprc_ci95": [
+        0.00235946602630773,
+        0.01542753671633639
+      ],
+      "delta_auprc_family_ci": null,
+      "delta_auprc_campaign_ci": null,
+      "delta_recall10": 0.0015898251192368734,
+      "fold_delta_auroc": [
+        0.026039128315811344,
+        0.016377488599710777,
+        0.006153846153845954,
+        0.029100240227123764,
+        0.020104497955474754
+      ],
+      "positive_folds": 5
+    },
+    "curve_arithmetic_minus_raw_arithmetic": {
+      "left": "clean_curve_arithmetic",
+      "right": "clean_raw_arithmetic",
+      "delta_auroc": -0.006638340578996482,
+      "delta_auroc_ci95": [
+        -0.015407874826540048,
+        0.0014593267294191992
+      ],
+      "delta_auroc_family_ci": null,
+      "delta_auroc_campaign_ci": null,
+      "delta_auprc": -0.0034720782528498972,
+      "delta_auprc_ci95": [
+        -0.008101101783449843,
+        0.000754602325662776
+      ],
+      "delta_auprc_family_ci": null,
+      "delta_auprc_campaign_ci": null,
+      "delta_recall10": -0.002384737678855317,
+      "fold_delta_auroc": [
+        0.0006962333774280793,
+        0.0008341675008340932,
+        0.00042232277526410567,
+        -0.02473247433937542,
+        -0.0068150840527033685
+      ],
+      "positive_folds": 3
+    }
+  },
+  "fold_metrics": {
+    "clean_raw": [
+      {
+        "auroc": 0.7940541669567638,
+        "auprc": 0.9353306758595242,
+        "review_budget_10pct": 33,
+        "review_errors_found_10pct": 30,
+        "error_recall_at10percent_review": 0.11070110701107011,
+        "error_precision_at10percent_review": 0.9090909090909091,
+        "review_budget_20pct": 65,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.22878228782287824,
+        "error_precision_at20percent_review": 0.9538461538461539
+      },
+      {
+        "auroc": 0.8157323990657324,
+        "auprc": 0.9191109393754368,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 30,
+        "error_recall_at10percent_review": 0.12345679012345678,
+        "error_precision_at10percent_review": 0.9375,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 61,
+        "error_recall_at20percent_review": 0.25102880658436216,
+        "error_precision_at20percent_review": 0.953125
+      },
+      {
+        "auroc": 0.8447662141779789,
+        "auprc": 0.9479955054882939,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.12156862745098039,
+        "error_precision_at10percent_review": 0.96875,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 63,
+        "error_recall_at20percent_review": 0.24705882352941178,
+        "error_precision_at20percent_review": 0.984375
+      },
+      {
+        "auroc": 0.7682354225813497,
+        "auprc": 0.9102654186227499,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.13278008298755187,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.2572614107883817,
+        "error_precision_at20percent_review": 0.96875
+      },
+      {
+        "auroc": 0.7923103134938663,
+        "auprc": 0.9181959654640302,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.125,
+        "error_precision_at10percent_review": 0.96875,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 61,
+        "error_recall_at20percent_review": 0.24596774193548387,
+        "error_precision_at20percent_review": 0.953125
+      }
+    ],
+    "clean_curve": [
+      {
+        "auroc": 0.8120866114321522,
+        "auprc": 0.943859119678839,
+        "review_budget_10pct": 33,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.11439114391143912,
+        "error_precision_at10percent_review": 0.9393939393939394,
+        "review_budget_20pct": 65,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.22878228782287824,
+        "error_precision_at20percent_review": 0.9538461538461539
+      },
+      {
+        "auroc": 0.8105049493938383,
+        "auprc": 0.924811472594175,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.12757201646090535,
+        "error_precision_at10percent_review": 0.96875,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.2551440329218107,
+        "error_precision_at20percent_review": 0.96875
+      },
+      {
+        "auroc": 0.8436199095022624,
+        "auprc": 0.9511222815778393,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.12549019607843137,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 63,
+        "error_recall_at20percent_review": 0.24705882352941178,
+        "error_precision_at20percent_review": 0.984375
+      },
+      {
+        "auroc": 0.7714020528499673,
+        "auprc": 0.9094757750903159,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.13278008298755187,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.2572614107883817,
+        "error_precision_at20percent_review": 0.96875
+      },
+      {
+        "auroc": 0.7778282598818719,
+        "auprc": 0.9142836321743479,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.125,
+        "error_precision_at10percent_review": 0.96875,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 61,
+        "error_recall_at20percent_review": 0.24596774193548387,
+        "error_precision_at20percent_review": 0.953125
+      }
+    ],
+    "clean_raw_arithmetic": [
+      {
+        "auroc": 0.8282392257884843,
+        "auprc": 0.9423933513993137,
+        "review_budget_10pct": 33,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.11439114391143912,
+        "error_precision_at10percent_review": 0.9393939393939394,
+        "review_budget_20pct": 65,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.22878228782287824,
+        "error_precision_at20percent_review": 0.9538461538461539
+      },
+      {
+        "auroc": 0.812645979312646,
+        "auprc": 0.928446635508896,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.13168724279835392,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.2551440329218107,
+        "error_precision_at20percent_review": 0.96875
+      },
+      {
+        "auroc": 0.8472398190045248,
+        "auprc": 0.951680564228442,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.12549019607843137,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.24313725490196078,
+        "error_precision_at20percent_review": 0.96875
+      },
+      {
+        "auroc": 0.8371369294605809,
+        "auprc": 0.9387667792449004,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.13278008298755187,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.2572614107883817,
+        "error_precision_at20percent_review": 0.96875
+      },
+      {
+        "auroc": 0.8146865061335756,
+        "auprc": 0.9359604265250847,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.12903225806451613,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 64,
+        "error_recall_at20percent_review": 0.25806451612903225,
+        "error_precision_at20percent_review": 1.0
+      }
+    ],
+    "clean_curve_arithmetic": [
+      {
+        "auroc": 0.8289354591659124,
+        "auprc": 0.9450607405163082,
+        "review_budget_10pct": 33,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.11439114391143912,
+        "error_precision_at10percent_review": 0.9393939393939394,
+        "review_budget_20pct": 65,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.22878228782287824,
+        "error_precision_at20percent_review": 0.9538461538461539
+      },
+      {
+        "auroc": 0.8134801468134801,
+        "auprc": 0.9262417792513089,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.12757201646090535,
+        "error_precision_at10percent_review": 0.96875,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.2551440329218107,
+        "error_precision_at20percent_review": 0.96875
+      },
+      {
+        "auroc": 0.8476621417797889,
+        "auprc": 0.9482466419647937,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.12156862745098039,
+        "error_precision_at10percent_review": 0.96875,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.24313725490196078,
+        "error_precision_at20percent_review": 0.96875
+      },
+      {
+        "auroc": 0.8124044551212055,
+        "auprc": 0.9264730634332641,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.13278008298755187,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 63,
+        "error_recall_at20percent_review": 0.26141078838174275,
+        "error_precision_at20percent_review": 0.984375
+      },
+      {
+        "auroc": 0.8078714220808723,
+        "auprc": 0.9336089147035567,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.12903225806451613,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 64,
+        "error_recall_at20percent_review": 0.25806451612903225,
+        "error_precision_at20percent_review": 1.0
+      }
+    ],
+    "legacy_raw": [
+      {
+        "auroc": 0.81104226136601,
+        "auprc": 0.9420050644746611,
+        "review_budget_10pct": 33,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.11439114391143912,
+        "error_precision_at10percent_review": 0.9393939393939394,
+        "review_budget_20pct": 65,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.22878228782287824,
+        "error_precision_at20percent_review": 0.9538461538461539
+      },
+      {
+        "auroc": 0.8162050939828718,
+        "auprc": 0.9185989619199396,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 29,
+        "error_recall_at10percent_review": 0.11934156378600823,
+        "error_precision_at10percent_review": 0.90625,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 60,
+        "error_recall_at20percent_review": 0.24691358024691357,
+        "error_precision_at20percent_review": 0.9375
+      },
+      {
+        "auroc": 0.8473604826546003,
+        "auprc": 0.9478059200734082,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.12156862745098039,
+        "error_precision_at10percent_review": 0.96875,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 63,
+        "error_recall_at20percent_review": 0.24705882352941178,
+        "error_precision_at20percent_review": 0.984375
+      },
+      {
+        "auroc": 0.7889823105481546,
+        "auprc": 0.9183153398958156,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.13278008298755187,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.2572614107883817,
+        "error_precision_at20percent_review": 0.96875
+      },
+      {
+        "auroc": 0.8133234893230349,
+        "auprc": 0.9294680429806846,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.125,
+        "error_precision_at10percent_review": 0.96875,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 61,
+        "error_recall_at20percent_review": 0.24596774193548387,
+        "error_precision_at20percent_review": 0.953125
+      }
+    ],
+    "legacy_curve": [
+      {
+        "auroc": 0.8161943883589781,
+        "auprc": 0.9475733198251769,
+        "review_budget_10pct": 33,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.11808118081180811,
+        "error_precision_at10percent_review": 0.9696969696969697,
+        "review_budget_20pct": 65,
+        "review_errors_found_20pct": 63,
+        "error_recall_at20percent_review": 0.23247232472324722,
+        "error_precision_at20percent_review": 0.9692307692307692
+      },
+      {
+        "auroc": 0.8186241797352909,
+        "auprc": 0.9246917543304367,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 30,
+        "error_recall_at10percent_review": 0.12345679012345678,
+        "error_precision_at10percent_review": 0.9375,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 61,
+        "error_recall_at20percent_review": 0.25102880658436216,
+        "error_precision_at20percent_review": 0.953125
+      },
+      {
+        "auroc": 0.8540573152337859,
+        "auprc": 0.951707268091917,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.12156862745098039,
+        "error_precision_at10percent_review": 0.96875,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 63,
+        "error_recall_at20percent_review": 0.24705882352941178,
+        "error_precision_at20percent_review": 0.984375
+      },
+      {
+        "auroc": 0.8107665429132999,
+        "auprc": 0.9251948344107155,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.13278008298755187,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.2572614107883817,
+        "error_precision_at20percent_review": 0.96875
+      },
+      {
+        "auroc": 0.8190027260336211,
+        "auprc": 0.9321260157670506,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.125,
+        "error_precision_at10percent_review": 0.96875,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 61,
+        "error_recall_at20percent_review": 0.24596774193548387,
+        "error_precision_at20percent_review": 0.953125
+      }
+    ],
+    "legacy_raw_arithmetic": [
+      {
+        "auroc": 0.8422335166747894,
+        "auprc": 0.9517778192259132,
+        "review_budget_10pct": 33,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.11808118081180811,
+        "error_precision_at10percent_review": 0.9696969696969697,
+        "review_budget_20pct": 65,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.22878228782287824,
+        "error_precision_at20percent_review": 0.9538461538461539
+      },
+      {
+        "auroc": 0.8350016683350017,
+        "auprc": 0.9338695477093005,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.13168724279835392,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.2551440329218107,
+        "error_precision_at20percent_review": 0.96875
+      },
+      {
+        "auroc": 0.8602111613876319,
+        "auprc": 0.9579455418032718,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.12549019607843137,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 64,
+        "error_recall_at20percent_review": 0.25098039215686274,
+        "error_precision_at20percent_review": 1.0
+      },
+      {
+        "auroc": 0.8398667831404236,
+        "auprc": 0.9380534015899364,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.13278008298755187,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 61,
+        "error_recall_at20percent_review": 0.25311203319502074,
+        "error_precision_at20percent_review": 0.953125
+      },
+      {
+        "auroc": 0.8391072239890959,
+        "auprc": 0.9472086971118348,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.12903225806451613,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 64,
+        "error_recall_at20percent_review": 0.25806451612903225,
+        "error_precision_at20percent_review": 1.0
+      }
+    ],
+    "legacy_curve_arithmetic": [
+      {
+        "auroc": 0.8366636496553645,
+        "auprc": 0.949932469564859,
+        "review_budget_10pct": 33,
+        "review_errors_found_10pct": 31,
+        "error_recall_at10percent_review": 0.11439114391143912,
+        "error_precision_at10percent_review": 0.9393939393939394,
+        "review_budget_20pct": 65,
+        "review_errors_found_20pct": 63,
+        "error_recall_at20percent_review": 0.23247232472324722,
+        "error_precision_at20percent_review": 0.9692307692307692
+      },
+      {
+        "auroc": 0.8324991658324992,
+        "auprc": 0.9337713244420098,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.13168724279835392,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 62,
+        "error_recall_at20percent_review": 0.2551440329218107,
+        "error_precision_at20percent_review": 0.96875
+      },
+      {
+        "auroc": 0.8631070889894419,
+        "auprc": 0.9557281903875615,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.12549019607843137,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 63,
+        "error_recall_at20percent_review": 0.24705882352941178,
+        "error_precision_at20percent_review": 0.984375
+      },
+      {
+        "auroc": 0.8291111596418432,
+        "auprc": 0.9342527035405238,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.13278008298755187,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 63,
+        "error_recall_at20percent_review": 0.26141078838174275,
+        "error_precision_at20percent_review": 0.984375
+      },
+      {
+        "auroc": 0.8411517492049069,
+        "auprc": 0.9460416915001495,
+        "review_budget_10pct": 32,
+        "review_errors_found_10pct": 32,
+        "error_recall_at10percent_review": 0.12903225806451613,
+        "error_precision_at10percent_review": 1.0,
+        "review_budget_20pct": 64,
+        "review_errors_found_20pct": 64,
+        "error_recall_at20percent_review": 0.25806451612903225,
+        "error_precision_at20percent_review": 1.0
+      }
+    ]
+  },
+  "feature_dimensions": {
+    "clean_raw": 114,
+    "clean_curve": 125,
+    "clean_raw_arithmetic": 158,
+    "clean_curve_arithmetic": 169,
+    "legacy_raw": 115,
+    "legacy_curve": 126,
+    "legacy_raw_arithmetic": 159,
+    "legacy_curve_arithmetic": 170
+  },
+  "completed_fits": 40,
+  "bootstrap": {
+    "primary_metric": "AUROC",
+    "secondary_metrics": [
+      "AUPRC",
+      "error recall and precision at10% and20% review"
+    ],
+    "draws": 5000,
+    "seed": 20260928,
+    "paired_unit": "source_group",
+    "campaign_family_size": 6,
+    "intervals": "nominal95%, phase family correction and six-primary-comparison campaign correction; no correction of prior project searches",
+    "conditional_on_saved_oof": true,
+    "training_and_prior_selection_variance_included": false,
+    "review_order": "descending risk score then lexical item ID",
+    "phase_family_size": 2,
+    "valid_draws": 5000,
+    "degenerate_draws": 0
+  },
+  "gate": {
+    "screen_passed": true,
+    "campaign_intervals_all_positive": true,
+    "status": "DEVELOPMENT_SCREEN_PASSED",
+    "independent_confirmation": false,
+    "additional_candidates_or_calls_launched": false
+  },
+  "new_target_answer_calls": 0,
+  "new_auxiliary_qwen_calls": 0,
+  "all_requested_cases_retained": true,
+  "no_gold_or_program_data_read": true
+}
